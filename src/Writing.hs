@@ -22,7 +22,7 @@ import qualified Data.Yaml.Aeson as Y
 import qualified Data.ByteString as BS
 
 import Authors (Author(..), authors)
-import WebsiteTools (AuthorCat(..), classify, doiToLink, sHtml)
+import WebsiteTools (AuthorCat(..), doiToLink, sHtml)
 
 data YamlTest = YT { str :: Text } deriving (Eq, Show)
 
