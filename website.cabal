@@ -18,8 +18,8 @@ executable website
   other-modules:       Authors
                      , Links
                      , Page.Index
+                     , Page.Presentation
                      , PageTemplate
-                     , Presentations
                      , Website
                      , WebsiteTools
                      , Writing

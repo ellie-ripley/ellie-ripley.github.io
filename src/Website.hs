@@ -18,46 +18,9 @@ import PageTemplate (navbarJS, pageFrom, topLabel)
 import Links
 import Authors (Author, authors, makeAuthorLink)
 import Writing (pieces, WritingPiece(..), wpAuthorTags, wpVenue, wpBibtex)
-import Presentations (Presentation(..), extrasMarks, presentations)
 
 import Page.Index (indexPage)
-
-
---SECTION: presentation page
-
-presentationPage :: [Presentation] -> Html ()
-presentationPage pres = pageFrom (presentationBody pres) (navbarJS "presentationlink")
-
-
-presentationAuthors :: AuthorCat -> Html ()
-presentationAuthors Solo = mempty
-presentationAuthors CERvR = presentationAuthors (Other [ "pabloCobreros", "paulEgre", "me", "robertVanRooij" ])
-presentationAuthors (Other as) =
-  p_ [class_ "presentation-authors" ]
-     (mconcat $ intersperse ", " (map (makeAuthorLink authors) as))
-
-
-presRow :: Presentation -> Html ()
-presRow p =
-  row_ [class_ "presentation-row"] $ do
-    div_ [class_ "col-md-10 pres-bubble"] $ do
-        row_ [] $ do 
-            div_ [class_ "col-md-5"]
-                 ((p_ [class_ "talktitle"] (toHtml $ presTitle p))
-                    <> presentationAuthors (presAuthors p))
-            div_ [class_ "col-md-7"]
-                 (ul_ [class_ "presentation-venue"]
-                      (listItems [class_ "presentation-venue"] (map toHtml $ presLocations p)))
-    extrasMarks p
-
-
-presentationBody :: [Presentation] -> Html ()
-presentationBody pres = do
-  topLabel "Presentations"
-  container_ $ do
-    div_ [class_ "mainbits"] $ do
-        pileUp (map presRow pres)
-        
+import Page.Presentation (presentationPage)
 
 
 --SECTION: writing page
@@ -239,8 +202,8 @@ websiteMain :: IO ()
 websiteMain = do
   System.Directory.createDirectoryIfMissing True dirPrefix
   Data.Text.Lazy.IO.writeFile (dirPrefix <> "index.html") (renderText indexPage)
-  mpres <- presentations
-  Data.Text.Lazy.IO.writeFile (dirPrefix <> "presentations.html") (renderText . presentationPage $ either (const []) id mpres)
+  pPage <- presentationPage
+  Data.Text.Lazy.IO.writeFile (dirPrefix <> "presentations.html") (renderText pPage)
   mpieces <- pieces
   Data.Text.Lazy.IO.writeFile (dirPrefix <> "writing.html") (renderText . writingPage $ either (const []) id mpieces)
   Data.Text.Lazy.IO.writeFile (dirPrefix <> "emu.html") (renderText exercisePage)
