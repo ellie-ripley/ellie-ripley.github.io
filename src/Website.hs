@@ -14,7 +14,7 @@ import Lucid
 import Lucid.Bootstrap
 
 import WebsiteTools (AuthorCat(..), classify, listItems, pileUp, lk)
-import PageTemplate
+import PageTemplate (navbarJS, pageFrom, topLabel)
 import Links
 import Authors (Author, authors, makeAuthorLink)
 import Writing (pieces, WritingPiece(..), wpAuthorTags, wpVenue, wpBibtex)
