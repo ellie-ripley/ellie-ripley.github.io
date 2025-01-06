@@ -17,6 +17,7 @@ executable website
   main-is:             Main.hs
   other-modules:       Authors
                      , Links
+                     , Page.Index
                      , PageTemplate
                      , Presentations
                      , Website
