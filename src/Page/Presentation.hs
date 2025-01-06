@@ -4,7 +4,6 @@
 
 module Page.Presentation (presentationPage) where
 
--- import Data.Aeson
 import Data.Aeson.TH
 import Data.List (intersperse)
 import Data.Monoid (mempty, (<>))
