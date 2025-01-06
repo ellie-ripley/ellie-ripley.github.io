@@ -1,4 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TemplateHaskell #-}
+
 module Authors (Author(..), authors, makeAuthorLink) where
 
 import Data.Text (Text)
@@ -7,15 +9,24 @@ import qualified Data.Map as M
 import Data.Maybe (fromJust)
 import Lucid
 
-data Author = Author { name :: Text, authorUrl  :: Text } deriving (Show, Read, Eq)
+import Data.Aeson
+import Data.Aeson.TH
+import qualified Data.Yaml.Aeson as Y
+import qualified Data.ByteString as BS
+
+data Author = Author { name :: Text
+                     , authorUrl  :: Text }
+            deriving (Show, Read, Eq)
 type AuthorMap = Map Text Author
 
-makeAuthorLink :: Text -> Html ()
-makeAuthorLink tg = case (authorUrl auth) of
+deriveJSON defaultOptions ''Author
+
+makeAuthorLink :: AuthorMap -> Text -> Html ()
+makeAuthorLink amp tg = case (authorUrl auth) of
                       "" -> toHtml (name auth)
                       x  -> a_ [href_ x, target_ "_blank"] (toHtml (name auth))
                     where
-                      auth = fromJust (M.lookup tg authors)
+                      auth = fromJust (M.lookup tg amp)
 
 authors :: AuthorMap
 authors = M.fromList

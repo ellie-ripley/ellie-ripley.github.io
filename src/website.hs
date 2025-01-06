@@ -183,7 +183,9 @@ presentationPage pres = pageFrom (presentationBody pres) (navbarJS "presentation
 presentationAuthors :: AuthorCat -> Html ()
 presentationAuthors Solo = mempty
 presentationAuthors CERvR = presentationAuthors (Other [ "pabloCobreros", "paulEgre", "me", "robertVanRooij" ])
-presentationAuthors (Other as) = p_ [class_ "presentation-authors" ] (mconcat $ intersperse ", " (map makeAuthorLink as))
+presentationAuthors (Other as) =
+  p_ [class_ "presentation-authors" ]
+     (mconcat $ intersperse ", " (map (makeAuthorLink authors) as))
 
 
 presRow :: Presentation -> Html ()
@@ -280,7 +282,7 @@ paperTitleHead p =
 makeEntry :: (WritingPiece, Int) -> Html ()
 makeEntry (p, n) = 
   let cls = "paperbubble " <> (classify $ authorCat p)
-      auths = map makeAuthorLink (wpAuthorTags p)
+      auths = map (makeAuthorLink authors) (wpAuthorTags p)
       nt = T.pack $ show n
       ci = "citation" <> nt
       ai = "abstract" <> nt

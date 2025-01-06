@@ -14,8 +14,6 @@ import qualified Data.ByteString as BS
 import WebsiteTools (AuthorCat(..), listItems, lk, pileUp)
 import Links
 
-data Link = Link Text (Html ()) 
-
 data PresExtraType = Slides | Handout | Video | OtherExtra deriving (Eq)
 
 
