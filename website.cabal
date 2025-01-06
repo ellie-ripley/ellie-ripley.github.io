@@ -5,9 +5,9 @@ description:         Please see README.md
 homepage:            http://davewripley.rocks
 license:             BSD3
 license-file:        LICENSE
-author:              David Ripley 
+author:              Ellie Ripley
 maintainer:          davewripley@gmail.com
-copyright:           2015 David Ripley
+copyright:           2015 Ellie (David) Ripley
 category:            Web
 build-type:          Simple
 cabal-version:       2.0

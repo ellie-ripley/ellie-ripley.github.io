@@ -16,7 +16,7 @@
   presAuthors:
     Other:
       - paulEgre
-      - davidRipley
+      - me
   presExtras:
   - - Slides
     - ./docs/pcr-slides-brisbane.pdf
@@ -472,7 +472,7 @@
   presAuthors:
     Other:
     - rohanFrench
-    - davidRipley
+    - me
   presExtras:
   - - Video
     - https://itunes.apple.com/itunes-u/id654728467
@@ -556,7 +556,7 @@
   presAuthors:
     Other:
     - oleHjortland
-    - davidRipley
+    - me
   presExtras: []
 
 - presLocations:
@@ -573,7 +573,7 @@
     Other:
     - paulEgre
     - vincentDeGardelle
-    - davidRipley
+    - me
   presExtras: []
 
 - presLocations:
@@ -728,7 +728,7 @@
   presAuthors:
     Other:
     - ericMandelbaum
-    - davidRipley
+    - me
   presExtras: []
 
 - presLocations:
@@ -800,5 +800,5 @@
     Other:
     - felipeDeBrigard
     - ericMandelbaum
-    - davidRipley
+    - me
   presExtras: []

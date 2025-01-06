@@ -19,11 +19,11 @@ makeAuthorLink tg = case (authorUrl auth) of
 
 authors :: AuthorMap
 authors = M.fromList
-  [("allenHazen"
-   ,Author {name = "Allen P. Hazen"
+  [("me"
+   ,Author {name = "Ellie Ripley"
            , authorUrl = ""})
-  ,("davidRipley"
-   ,Author {name = "David Ripley"
+  ,("allenHazen"
+   ,Author {name = "Allen P. Hazen"
            , authorUrl = ""})
   ,("dominicHyde"
    ,Author {name = "Dominic Hyde"

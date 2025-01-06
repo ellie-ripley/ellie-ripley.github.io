@@ -12,7 +12,7 @@
   authorCat:
     Other:
       - emmaVanDijk
-      - davidRipley
+      - me
       - julianGutierrez
   bibtag: vdrg:ctt
 
@@ -46,7 +46,7 @@
     Other:
       - rohanFrench
       - patrickGirard
-      - davidRipley
+      - me
   bibtag: fgr:clco
 
 - tag: Paper
@@ -79,7 +79,7 @@
     Other:
       - andrewTedder
       - gracePaterson
-      - davidRipley
+      - me
   bibtag: prt:qua-0-qua
 
 - tag: Paper
@@ -96,7 +96,7 @@
   authorCat:
     Other:
       - rohanFrench
-      - davidRipley
+      - me
   bibtag: fr:ttavmt
 
 - tag: Paper
@@ -161,7 +161,7 @@
     Other:
       - samBaron
       - markColyvan
-      - davidRipley
+      - me
   bibtag: bcr:caem
 
 - tag: Book
@@ -170,7 +170,7 @@
     Other:
      - jcBeall
      - michaelGlanzberg
-     - davidRipley
+     - me
   writingUrl: https://ndpr.nd.edu/news/formal-theories-of-truth/
   bibtag: bgr:ftot
   abstract: "This book is our attempt at a brief sketch of the landscape in formal theories of truth."
@@ -192,7 +192,7 @@
   authorCat:
     Other:
      - paulEgre
-     - davidRipley
+     - me
      - stevenVerheyen
   bibtag: erv:spp
 
@@ -210,7 +210,7 @@
   authorCat:
     Other:
       - rohanFrench
-      - davidRipley
+      - me
   bibtag: fr:vals
 
 - tag: Paper
@@ -229,7 +229,7 @@
     - franzBerto
     - rohanFrench
     - grahamPriest
-    - davidRipley
+    - me
   bibtag: bfpr:woc
 
 - tag: Paper
@@ -347,7 +347,7 @@
     Other:
     - samBaron
     - markColyvan
-    - davidRipley
+    - me
   bibtag: bcr:hmmd
 
 - tag: Paper
@@ -390,7 +390,7 @@
   authorCat:
     Other:
     - rohanFrench
-    - davidRipley
+    - me
   bibtag: fr:cncr
 
 - tag: Paper
@@ -459,7 +459,7 @@
   authorCat:
     Other:
     - zachWeber
-    - davidRipley
+    - me
     - grahamPriest
     - dominicHyde
     - markColyvan
@@ -628,7 +628,7 @@
   authorCat:
     Other:
     - jcBeall
-    - davidRipley
+    - me
   bibtag: br:nctt
 
 - tag: Chapter
@@ -674,7 +674,7 @@
     Other:
     - paulEgre
     - vincentDeGardelle
-    - davidRipley
+    - me
   bibtag: egr:voe
 
 - tag: Paper
@@ -813,7 +813,7 @@
   authorCat:
     Other:
     - ericMandelbaum
-    - davidRipley
+    - me
   bibtag: mr:nbar
 
 - tag: Paper
@@ -921,7 +921,7 @@
     - robertMeyer
     - grahamPriest
     - gregRestall
-    - davidRipley
+    - me
     - johnSlaney
     - richardSylvan
   bibtag: ternary
@@ -1032,7 +1032,7 @@
     Other:
     - felipeDeBrigard
     - ericMandelbaum
-    - davidRipley
+    - me
   bibtag: dbmr:rbs
 
 - tag: Paper
@@ -1049,5 +1049,5 @@
   authorCat:
     Other:
     - jcBeall
-    - davidRipley
+    - me
   bibtag: br:ad

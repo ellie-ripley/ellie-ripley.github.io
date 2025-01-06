@@ -31,9 +31,9 @@ htmlHeadBits = meta_ [charset_ "utf-8"]
                <> meta_ [httpEquiv_ "X-UA-Compatible", content_ "IE=edge"]
                <> meta_ [name_ "viewport"
                         , content_ "width=device-width, intial-scale=1"]
-               <> meta_ [name_ "description", content_ "David Ripley's website"]
-               <> meta_ [name_ "author", content_ "David Ripley"]
-               <> title_ "David Ripley"
+               <> meta_ [name_ "description", content_ "Ellie Ripley's website"]
+               <> meta_ [name_ "author", content_ "Ellie Ripley"]
+               <> title_ "Ellie Ripley"
                <> link_ [ href_ "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
                         , rel_ "stylesheet" 
                         , integrity_ "sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
@@ -69,7 +69,7 @@ pageHeader =
       a_ [ class_ "navbar-brand indexlink"
            , id_ "indexlink-id"
            , href_ "./index.html"
-           ] "David Ripley"
+           ] "Ellie Ripley"
       button_ [ class_ "navbar-toggler"
               , type_ "button"
               , term "data-bs-toggle" "collapse"
@@ -160,7 +160,7 @@ indexBody =
 indexBodyText :: Html ()
 indexBodyText =
      h1_ [class_ "good-morning"] "Good morning!"
-  <> p_ ("I'm David Ripley, a member of the "
+  <> p_ ("I'm Ellie Ripley, a member of the "
         <> monashPhilLink "philosophy department"
         <> " at Monash University.")
   <> p_ "My research focuses on languages, logics, and the relations between them."
@@ -182,7 +182,7 @@ presentationPage pres = pageFrom (presentationBody pres) (navbarJS "presentation
 
 presentationAuthors :: AuthorCat -> Html ()
 presentationAuthors Solo = mempty
-presentationAuthors CERvR = presentationAuthors (Other [ "pabloCobreros", "paulEgre", "davidRipley", "robertVanRooij" ])
+presentationAuthors CERvR = presentationAuthors (Other [ "pabloCobreros", "paulEgre", "me", "robertVanRooij" ])
 presentationAuthors (Other as) = p_ [class_ "presentation-authors" ] (mconcat $ intersperse ", " (map makeAuthorLink as))
 
 
@@ -240,7 +240,7 @@ searchFilters = div_ $ do
              , (term "data-bs-trigger") "hover"
              , title_ "CERvR is:"
              , (term "data-bs-html") "true"
-             , (term "data-bs-content") "Pablo Cobreros, <br> Paul Egré, <br> David Ripley, <br> Robert van Rooij"
+             , (term "data-bs-content") "Pablo Cobreros, <br> Paul Egré, <br> Ellie Ripley, <br> Robert van Rooij"
              ] "[?]"))
     (p_ [class_ "searchcheck"] $ (input_ [type_ "checkbox", name_ "check-other"]) <> " Other combinations"))
 
