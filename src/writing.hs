@@ -148,7 +148,9 @@ wpBibtex p@(Paper{..}) = T.concat $
   , ",\n   author = {", bibTeXauths p
   , "},\n   title = {", title
   , "},\n   journal = {", journal
-  , "},\n   "
+  , "},\n   writingUrl = {", writingUrl
+  , "},\n   abstract = {", abst
+  , "}"
   ] ++ rest ++
   [ "}\n" ]
   where 
@@ -163,6 +165,7 @@ wpBibtex p@(Paper{..}) = T.concat $
              Nothing -> [ "note = {Forthcoming}\n" ]
     vol = maybe mempty write volume
     nmb = maybe mempty write number
+    abst = maybe mempty id abstract
 wpBibtex c@(Chapter{..}) = T.concat $
   [ "@incollection{", bibtag
   , ",\n   author = {", bibTeXauths c
@@ -171,6 +174,8 @@ wpBibtex c@(Chapter{..}) = T.concat $
   , "},\n   editor = {"
   , btChars . T.intercalate " and " $ editor
   , "},\n   publisher = {", publisher
+  , "},\n   abstract = {", abst
+  , "},\n   writingUrl = {", writingUrl
   , "},\n   "
   ] ++ rest ++
   [ "}\n" ]
@@ -182,11 +187,14 @@ wpBibtex c@(Chapter{..}) = T.concat $
                                   , "}\n"
                                   ]
              Nothing -> [ "note = {Forthcoming}\n" ]
+    abst = maybe mempty id abstract
 wpBibtex b@(Book{..}) = T.concat $
   [ "@book{", bibtag
   , ",\n   author = {", bibTeXauths b
   , "},\n   title = {", title
   , "},\n   publisher = {", publisher
+  , "},\n   abstract = {", abst
+  , "},\n   writingUrl = {", writingUrl
   , "},\n   "
   ] ++ rest ++
   [ "}\n" ]
@@ -194,6 +202,7 @@ wpBibtex b@(Book{..}) = T.concat $
     rest = case year of
              Just yr -> [ "year = {", write yr, "}\n" ]
              Nothing -> [ "note = {Forthcoming}\n" ]
+    abst = maybe mempty id abstract
 
 wpFile :: FilePath
 wpFile = "./src/writing.yaml"

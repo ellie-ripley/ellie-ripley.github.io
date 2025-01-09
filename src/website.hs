@@ -393,5 +393,7 @@ websiteMain = do
   mpres <- presentations
   Data.Text.Lazy.IO.writeFile (dirPrefix <> "presentations.html") (renderText . presentationPage $ either (const []) id mpres)
   mpieces <- pieces
+  let exp = either (const "") (mconcat . map wpBibtex) mpieces
+  Prelude.writeFile (dirPrefix <> "export.bib") (T.unpack exp)
   Data.Text.Lazy.IO.writeFile (dirPrefix <> "writing.html") (renderText . writingPage $ either (const []) id mpieces)
   Data.Text.Lazy.IO.writeFile (dirPrefix <> "emu.html") (renderText exercisePage)
