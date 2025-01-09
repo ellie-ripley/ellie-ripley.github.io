@@ -6,13 +6,10 @@ module Authors (Author(..), authors, makeAuthorLink) where
 import Data.Text (Text)
 import Data.Map (Map)
 import qualified Data.Map as M
-import Data.Maybe (fromJust)
 import Lucid
 
 import Data.Aeson
 import Data.Aeson.TH
-import qualified Data.Yaml.Aeson as Y
-import qualified Data.ByteString as BS
 
 data Author = Author { name :: Text
                      , authorUrl  :: Text }
@@ -22,11 +19,12 @@ type AuthorMap = Map Text Author
 deriveJSON defaultOptions ''Author
 
 makeAuthorLink :: AuthorMap -> Text -> Html ()
-makeAuthorLink amp tg = case (authorUrl auth) of
+makeAuthorLink amp tg =
+  case M.lookup tg amp of
+    Nothing -> toHtml $ "Error: " <> tg
+    Just auth -> case (authorUrl auth) of
                       "" -> toHtml (name auth)
                       x  -> a_ [href_ x, target_ "_blank"] (toHtml (name auth))
-                    where
-                      auth = fromJust (M.lookup tg amp)
 
 authors :: AuthorMap
 authors = M.fromList

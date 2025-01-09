@@ -4,19 +4,11 @@
 
 module Website (websiteMain) where
 
-import Data.Monoid ((<>), mempty, mconcat)
-import Data.Text (Text)
-import qualified Data.Text as T
 import Data.Text.Lazy.IO (writeFile)
-import Data.List (intersperse, sortBy)
 import System.Directory (createDirectoryIfMissing)
 import Lucid
-import Lucid.Bootstrap
 
-import WebsiteTools (AuthorCat(..), classify, listItems, pileUp, lk)
 import PageTemplate (navbarJS, pageFrom, topLabel)
-import Links
-import Authors (Author, authors, makeAuthorLink)
 
 import Page.Index (indexPage)
 import Page.Presentation (presentationPage)

@@ -6,7 +6,6 @@ module Page.Presentation (presentationPage) where
 
 import Data.Aeson.TH
 import Data.List (intersperse)
-import Data.Monoid (mempty, (<>))
 import Data.Text (Text)
 import qualified Data.Yaml.Aeson as Y
 import qualified Data.ByteString as BS

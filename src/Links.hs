@@ -3,7 +3,6 @@
 module Links where
 
 import Lucid
-import Data.Text (Text)
 
 import WebsiteTools (lk)
 

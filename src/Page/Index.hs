@@ -3,12 +3,11 @@
 
 module Page.Index (indexPage) where
 
-import Data.Text (Text)
 import Lucid
 import Lucid.Bootstrap
 
 import Links
-import PageTemplate (navbarJS, pageFrom, topLabel)
+import PageTemplate (navbarJS, pageFrom)
 
 indexPage :: Html ()
 indexPage = pageFrom indexBody (navbarJS "indexlink")

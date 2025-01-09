@@ -1,28 +1,46 @@
 {-# LANGUAGE ExtendedDefaultRules #-}
+{-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TemplateHaskell #-}
 
 module Page.Writing (writingPage) where
 
-import Data.List (intersperse, sortBy)
-import Data.Monoid (mempty, (<>))
-import Data.Text (Text)
+import Data.List (intercalate, intersperse, sortBy)
 import qualified Data.Text as T
 import Lucid
 import Lucid.Bootstrap
+import Text.BibTeX.Entry (T(..))
+import Text.BibTeX.Parse
+import Text.Parsec.Error (ParseError)
+import Text.Parsec.String (parseFromFile)
 
 import Authors (authors, makeAuthorLink)
 import PageTemplate (navbarJS, pageFrom, topLabel)
-import WebsiteTools (AuthorCat(..), classify, listItems, lk, pileUp)
-import Writing (pieces, WritingPiece(..), wpAuthorTags, wpVenue, wpBibtex)
+import WebsiteTools (AuthorCat(..), classify, leftsRights, lk, pileUp)
+import Writing (WritingPiece(..), toWritingPiece, wpAuthorTags, wpVenue, wpBibtex)
+
+-- SECTION: Load the data
+
+wpFile :: FilePath
+wpFile = "./src/writing.bib"
+
+eitherWritingBibEntries :: IO (Either ParseError [T])
+eitherWritingBibEntries = parseFromFile (skippingLeadingSpace file) wpFile
+
 
 -- SECTION: Build the page
 
 writingPage :: IO (Html ())
 writingPage = do
-  ePs <- pieces
-  let ps = either (const []) id ePs
-  return $ pageFrom (writingBody ps) (navbarJS "writinglink" <> searchJS <> popoverJS)
+  ewbe <- eitherWritingBibEntries
+  case ewbe of
+    Left perr -> do
+      putStrLn $ "Couldn't read file " <> wpFile <> ": " <> show perr
+      return $ pageFrom (toHtml $ show perr) (navbarJS "writinglink")
+    Right wps -> do
+      let (errs, ps) = leftsRights (map toWritingPiece wps)
+      putStrLn $ "Couldn't read bibtex entries: " <> intercalate ", " errs
+      return $ pageFrom (writingBody ps) (navbarJS "writinglink" <> searchJS <> popoverJS)
 
 searchJS :: Html ()
 searchJS = script_ [src_ "./js/search.js"] ""
@@ -86,7 +104,7 @@ paperTitleHead p =
              , class_ "title-link"
              , target_ "_blank"
              ] pt
-  where pt = toHtml (title p)
+  where pt = toHtml . filter (\c -> c /= '{' && c /= '}') . T.unpack $ title p
 
 makeEntry :: (WritingPiece, Int) -> Html ()
 makeEntry (p, n) =
@@ -164,11 +182,11 @@ makeEntry (p, n) =
 pieceSort :: WritingPiece -> WritingPiece -> Ordering
 pieceSort p1 p2 =
   case (year p1, year p2) of
-    (Nothing, Nothing) -> nameSort p1 p2
+    (Nothing, Nothing) -> nameSort
     (Nothing, _)       -> LT
     (_      , Nothing) -> GT
     (Just y1, Just z1) -> case z1 `compare` y1 of
-                            EQ -> nameSort p1 p2
+                            EQ -> nameSort
                             x  -> x
   where
-    nameSort p1 p2 = (title p1) `compare` (title p2)
+    nameSort = (title p1) `compare` (title p2)
