@@ -150,7 +150,7 @@ wpBibtex p@(Paper{..}) = T.concat $
   , "},\n   journal = {", journal
   , "},\n   writingUrl = {", writingUrl
   , "},\n   abstract = {", abst
-  , "}"
+  , "},"
   ] ++ rest ++
   [ "}\n" ]
   where 
