@@ -14,7 +14,7 @@ import Text.BibTeX.Parse
 import Text.Parsec.Error (ParseError)
 import Text.Parsec.String (parseFromFile)
 
-import Authors (authors, makeAuthorLink)
+import Authors (Author(..), authorFile, eAuthors, makeAuthorLink)
 import PageTemplate (navbarJS, pageFrom, topLabel)
 import WebsiteTools (AuthorCat(..), classify, leftsRights, lk, pileUp)
 import Writing (WritingPiece(..), toWritingPiece, wpAuthorTags, wpVenue, wpBibtex)
@@ -36,11 +36,19 @@ writingPage = do
   case ewbe of
     Left perr -> do
       putStrLn $ "Couldn't read file " <> wpFile <> ": " <> show perr
-      return $ pageFrom (toHtml $ show perr) (navbarJS "writinglink")
+      return mempty
     Right wps -> do
       let (errs, ps) = leftsRights (map toWritingPiece wps)
-      putStrLn $ "Couldn't read bibtex entries: " <> intercalate ", " errs
-      return $ pageFrom (writingBody ps) (navbarJS "writinglink" <> searchJS <> popoverJS)
+      if null errs
+        then putStrLn "All bibtex entries read without error."
+        else putStrLn $ "Couldn't read bibtex entries: " <> intercalate ", " errs
+      eAuths <- eAuthors
+      case eAuths of
+        Left aerr -> do
+          putStrLn $ "Couldn't read file " <> authorFile <> ": " <> show aerr
+          return mempty
+        Right auths ->
+          return $ pageFrom (writingBody auths ps) (navbarJS "writinglink" <> searchJS <> popoverJS)
 
 searchJS :: Html ()
 searchJS = script_ [src_ "./js/search.js"] ""
@@ -86,15 +94,15 @@ alsoSeeBit = p_ [class_ "also-see"]
                     <> (lk "https://orcid.org/0000-0002-3356-0771" "ORCID page")
                     <> ".")
 
-writingBody :: [WritingPiece] -> Html ()
-writingBody ps = do
+writingBody :: [Author] -> [WritingPiece] -> Html ()
+writingBody as ps = do
     topLabel "Writing"
     container_ [class_ "mainbits"] $
       row_ $ do
         div_ [class_ "col-md-3 searchbar"]
             (searchBar <> searchSort <> searchFilters <> alsoSeeBit)
         div_ [class_ "col-md-9 searchresults"]
-            (ul_ [class_ "writingdisplay"] (pileUp $ map makeEntry (zip (sortBy pieceSort ps) [1..])))
+            (ul_ [class_ "writingdisplay"] (pileUp $ map (makeEntry as) (zip (sortBy pieceSort ps) [1..])))
 
 paperTitleHead :: WritingPiece -> Html ()
 paperTitleHead p =
@@ -106,10 +114,10 @@ paperTitleHead p =
              ] pt
   where pt = toHtml . filter (\c -> c /= '{' && c /= '}') . T.unpack $ title p
 
-makeEntry :: (WritingPiece, Int) -> Html ()
-makeEntry (p, n) =
+makeEntry :: [Author] -> (WritingPiece, Int) -> Html ()
+makeEntry as (p, n) =
   let cls = "paperbubble " <> (classify $ authorCat p)
-      auths = map (makeAuthorLink authors) (wpAuthorTags p)
+      auths = map (makeAuthorLink as) (wpAuthorTags p)
       nt = T.pack $ show n
       ci = "citation" <> nt
       ai = "abstract" <> nt
@@ -174,7 +182,7 @@ makeEntry (p, n) =
                           , id_ bi
                           , term "aria-labelledby" (bi <> "-pill")
                           ]
-                          (p_ [class_ "bibtex"] (pre_ [class_ "bibtex"] (toHtml $ wpBibtex p)))
+                          (p_ [class_ "bibtex"] (pre_ [class_ "bibtex"] (toHtml $ wpBibtex as p)))
 
 
 

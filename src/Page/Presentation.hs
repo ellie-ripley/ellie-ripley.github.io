@@ -12,7 +12,7 @@ import qualified Data.ByteString as BS
 import Lucid
 import Lucid.Bootstrap
 
-import Authors (authors, makeAuthorLink)
+import Authors (Author(..), eAuthors, makeAuthorLink)
 import PageTemplate (navbarJS, pageFrom, topLabel)
 import WebsiteTools (AuthorCat(..), listItems, pileUp)
 
@@ -49,24 +49,26 @@ presFile = "./src/presentations.yaml"
 presentationPage :: IO (Html ())
 presentationPage = do
   ePres <- presentations
+  eAuths <- eAuthors
   let pres = either (const []) id ePres
-  return $ pageFrom (presentationBody pres) (navbarJS "presentationlink")
+      auths = either (const []) id eAuths
+  return $ pageFrom (presentationBody auths pres) (navbarJS "presentationlink")
 
-presentationBody :: [Presentation] -> Html ()
-presentationBody pres = do
+presentationBody :: [Author] -> [Presentation] -> Html ()
+presentationBody auths pres = do
   topLabel "Presentations"
   container_ $ do
     div_ [class_ "mainbits"] $ do
-        pileUp (map presRow pres)
+        pileUp (map (presRow auths) pres)
 
-presRow :: Presentation -> Html ()
-presRow p =
+presRow :: [Author] -> Presentation -> Html ()
+presRow auths p =
   row_ [class_ "presentation-row"] $ do
     div_ [class_ "col-md-10 pres-bubble"] $ do
         row_ [] $ do
             div_ [class_ "col-md-5"]
                  ((p_ [class_ "talktitle"] (toHtml $ presTitle p))
-                    <> presentationAuthors (presAuthors p))
+                    <> presentationAuthors auths (presAuthors p))
             div_ [class_ "col-md-7"]
                  (ul_ [class_ "presentation-venue"]
                       (listItems [class_ "presentation-venue"] (map toHtml $ presLocations p)))
@@ -93,9 +95,10 @@ extrasMarks p
                     (table_ $ (pileUp $ map extraRow pes))
   where pes = presExtras p
 
-presentationAuthors :: AuthorCat -> Html ()
-presentationAuthors Solo = mempty
-presentationAuthors CERvR = presentationAuthors (Other [ "pabloCobreros", "paulEgre", "me", "robertVanRooij" ])
-presentationAuthors (Other as) =
+presentationAuthors :: [Author] -> AuthorCat -> Html ()
+presentationAuthors _ Solo = mempty
+presentationAuthors auths CERvR =
+  presentationAuthors auths(Other [ "pabloCobreros", "paulEgre", "me", "robertVanRooij" ])
+presentationAuthors auths (Other as) =
   p_ [class_ "presentation-authors" ]
-     (mconcat $ intersperse ", " (map (makeAuthorLink authors) as))
+     (mconcat $ intersperse ", " (map (makeAuthorLink auths) as))

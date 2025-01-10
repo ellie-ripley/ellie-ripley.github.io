@@ -13,7 +13,7 @@ import Data.List (intersperse)
 import Text.BibTeX.Entry ( T(..) )
 import Text.Read (readMaybe)
 
-import Authors (Author(..), authors)
+import Authors (Author(..), authorLookup)
 import WebsiteTools (AuthorCat(..), sHtml, splitOn)
 
 
@@ -67,9 +67,6 @@ readACat t =
       let tags = splitOn ',' (filter (/= ' ') fld)
       in Just $ Other (map pack tags)
 
-
-getAuth :: Text -> Maybe Author
-getAuth tg = M.lookup tg authors
 
 dropLeadingHyphens :: String -> String
 dropLeadingHyphens ('-':rest) = dropLeadingHyphens rest
@@ -204,8 +201,8 @@ wpVenue Book{..} = (toHtml publisher) <> " "
                                       <> (maybe "forthcoming." (\y -> (sHtml y) <> ".") year)
 
 
-authname :: Text -> Maybe Text
-authname t = name <$> M.lookup t authors
+authname :: [Author] -> Text -> Maybe Text
+authname auths t = name <$> authorLookup t auths
 
 getText :: Maybe Text -> Text
 getText m =
@@ -213,8 +210,8 @@ getText m =
     Just t -> t
     Nothing -> mempty
 
-bibTeXauths :: WritingPiece -> Text
-bibTeXauths = btChars . T.intercalate " and " . map (getText . authname) . wpAuthorTags
+bibTeXauths :: [Author] -> WritingPiece -> Text
+bibTeXauths auths = btChars . T.intercalate " and " . map (getText . authname auths) . wpAuthorTags
 
 btChars :: Text -> Text
 btChars = T.concatMap cleanup
@@ -230,14 +227,14 @@ btChars = T.concatMap cleanup
 write :: Show a => a -> Text
 write = T.pack . show
 
-wpBibtex :: WritingPiece -> Text
-wpBibtex p@(Paper{..}) = T.concat $
+wpBibtex :: [Author] -> WritingPiece -> Text
+wpBibtex auths p@(Paper{..}) = T.concat $
   [ "@article{", bibtag
-  , ",\n   author = {", bibTeXauths p
+  , ",\n   author = {", bibTeXauths auths p
   , "},\n   title = {", title
   , "},\n   journal = {", journal
   , "},\n   "
-  ] ++ rest ++
+  ] ++ rest ++ di ++
   [ "}\n" ]
   where 
     rest = case (yrSpEp p) of
@@ -246,14 +243,17 @@ wpBibtex p@(Paper{..}) = T.concat $
                                   , "},\n   number = {", nmb
                                   , "},\n   pages = {"
                                   , (write sp) <> "--" <> (write ep)
-                                  , "}\n"
+                                  , "},\n   "
                                   ]
              Nothing -> [ "note = {Forthcoming}\n" ]
+    di = case doi of
+           Nothing -> []
+           Just d -> ["doi = {", d, "},\n"]
     vol = maybe mempty write volume
     nmb = maybe mempty write number
-wpBibtex c@(Chapter{..}) = T.concat $
+wpBibtex auths c@(Chapter{..}) = T.concat $
   [ "@incollection{", bibtag
-  , ",\n   author = {", bibTeXauths c
+  , ",\n   author = {", bibTeXauths auths c
   , "},\n   title = {", title
   , "},\n   booktitle = {", booktitle
   , "},\n   editor = {"
@@ -270,9 +270,9 @@ wpBibtex c@(Chapter{..}) = T.concat $
                                   , "}\n"
                                   ]
              Nothing -> [ "note = {Forthcoming}\n" ]
-wpBibtex b@(Book{..}) = T.concat $
+wpBibtex auths b@(Book{..}) = T.concat $
   [ "@book{", bibtag
-  , ",\n   author = {", bibTeXauths b
+  , ",\n   author = {", bibTeXauths auths b
   , "},\n   title = {", title
   , "},\n   publisher = {", publisher
   , "},\n   "

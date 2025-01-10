@@ -1,127 +1,49 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE TemplateHaskell #-}
 
-module Authors (Author(..), authors, makeAuthorLink) where
+module Authors (Author(..), authorFile, eAuthors, authorLookup, makeAuthorLink) where
 
 import Data.Text (Text)
+import qualified Data.Text as T
 import Data.Map (Map)
 import qualified Data.Map as M
+import qualified Data.Yaml.Aeson as Y
+import qualified Data.ByteString as BS
 import Lucid
 
 import Data.Aeson
 import Data.Aeson.TH
+import Data.Text.Array (new)
 
 data Author = Author { name :: Text
-                     , authorUrl  :: Text }
-            deriving (Show, Read, Eq)
-type AuthorMap = Map Text Author
+                     , authorUrl :: Text
+                     , otherNames :: [Text]
+                     } deriving (Show, Eq)
 
 deriveJSON defaultOptions ''Author
 
-makeAuthorLink :: AuthorMap -> Text -> Html ()
+-- SECTION: Read the data
+
+authorFile :: FilePath
+authorFile = "./src/authors.yaml"
+
+eAuthors :: IO (Either Y.ParseException [Author])
+eAuthors = do
+  aData <- BS.readFile authorFile
+  return (Y.decodeEither' aData)
+
+authorLookup :: Text -> [Author] -> Maybe Author
+authorLookup _ [] = Nothing
+authorLookup nm (a@(Author{..}) : as)
+  | nm == name = Just a
+  | nm `elem` otherNames = Just a
+  | otherwise = authorLookup nm as
+
+makeAuthorLink :: [Author] -> Text -> Html ()
 makeAuthorLink amp tg =
-  case M.lookup tg amp of
+  case authorLookup tg amp of
     Nothing -> toHtml $ "Error: " <> tg
     Just auth -> case (authorUrl auth) of
                       "" -> toHtml (name auth)
                       x  -> a_ [href_ x, target_ "_blank"] (toHtml (name auth))
-
-authors :: AuthorMap
-authors = M.fromList
-  [("me"
-   ,Author {name = "Ellie Ripley"
-           , authorUrl = ""})
-  ,("allenHazen"
-   ,Author {name = "Allen P. Hazen"
-           , authorUrl = ""})
-  ,("dominicHyde"
-   ,Author {name = "Dominic Hyde"
-           , authorUrl = "http://hapi.uq.edu.au/profile/388/dominic-hyde"})
-  ,("edwinMares"
-   ,Author {name = "Edwin Mares"
-           , authorUrl = "http://www.victoria.ac.nz/hppi/about/staff/edwin-mares"})
-  ,("ericMandelbaum"
-   ,Author {name = "Eric Mandelbaum"
-           , authorUrl = "http://www.ericmandelbaum.com"})
-  ,("felipeDeBrigard"
-   ,Author {name = "Felipe De Brigard"
-           , authorUrl = "http://www.felipedebrigard.com/"})
-  ,("franzBerto"
-   ,Author {name = "Francesco Berto"
-           , authorUrl = ""})
-  ,("grahamPriest"
-   ,Author {name = "Graham Priest"
-           , authorUrl = "http://www.grahampriest.net"})
-  ,("gregRestall"
-   ,Author {name = "Greg Restall"
-           , authorUrl = "http://consequently.org"})
-  ,("jcBeall"
-   ,Author {name = "Jc Beall"
-           , authorUrl = "http://entailments.net"})
-  ,("johnSlaney"
-   ,Author {name = "John Slaney"
-           , authorUrl = "http://users.cecs.anu.edu.au/~jks/"})
-  ,("killripLemistery"
-   ,Author {name = "Killrip Lemistery"
-           , authorUrl = ""})
-  ,("markColyvan"
-   ,Author {name = "Mark Colyvan"
-           , authorUrl = "http://www.colyvan.com"})
-  ,("michaelDunn"
-   ,Author {name = "J. Michael Dunn"
-           , authorUrl = "http://www.indiana.edu/~phil/people/dunn.shtml"})
-  ,("oleHjortland"
-   ,Author {name = "Ole Hjortland"
-           , authorUrl = "http://www.olehjortland.net"})
-  ,("pabloCobreros"
-   ,Author {name = "Pablo Cobreros"
-           , authorUrl = "http://www.unav.es/adi/servlet/Cv2.ara?personid=74116"})
-  ,("paulEgre"
-   ,Author {name = "Paul Egr\233"
-           , authorUrl = "http://paulegre.free.fr"})
-  ,("richardSylvan"
-   ,Author {name = "Richard Sylvan"
-           , authorUrl = "http://en.wikipedia.org/wiki/Richard_Sylvan"})
-  ,("robertMeyer"
-   ,Author {name = "Robert K. Meyer"
-           , authorUrl = "http://en.wikipedia.org/wiki/Bob_Meyer_%28logician%29"})
-  ,("robertVanRooij"
-   ,Author {name = "Robert van Rooij"
-           , authorUrl = "http://www.uva.nl/over-de-uva/organisatie/medewerkers/content/r/o/r.a.m.vanrooij/r.a.m.van-rooij.html"})
-  ,("rohanFrench"
-   ,Author {name = "Rohan French"
-           , authorUrl = "http://rohan-french.github.io/"})
-  ,("rossBrady"
-   ,Author {name = "Ross Brady"
-           , authorUrl = "http://www.latrobe.edu.au/humanities/about/staff/profile?uname=RTBrady"})
-  ,("samBaron"
-   ,Author {name = "Sam Baron"
-           , authorUrl = "http://sambaron.horse"})
-  ,("vincentDeGardelle"
-   ,Author {name = "Vincent de Gardelle"
-           , authorUrl = "https://sites.google.com/site/vincentdegardelle/home"})
-  ,("zachWeber"
-   ,Author {name = "Zach Weber"
-           , authorUrl = "https://sites.google.com/site/doctorzachweber/home"})
-  ,("stevenVerheyen"
-   ,Author {name = "Steven Verheyen"
-           ,authorUrl = "http://www.stevenverheyen.com"})
-  ,("andrewTedder"
-   ,Author {name = "Andrew Tedder"
-           ,authorUrl = "https://sites.google.com/view/andrewjtedder/home"})
-  ,("gracePaterson"
-   ,Author {name = "Grace Paterson"
-           ,authorUrl = "https://sites.google.com/view/gracepaterson"})
-  ,("patrickGirard"
-   ,Author {name = "Patrick Girard"
-           ,authorUrl = "https://philpeople.org/profiles/patrick-girard"})
-  ,("michaelGlanzberg"
-   ,Author {name = "Michael Glanzberg"
-           ,authorUrl = "https://michaelglanzberg.org/"})
-  ,("emmaVanDijk"
-   ,Author {name = "Emma van Dijk"
-           ,authorUrl = ""})
-  ,("julianGutierrez"
-   ,Author {name = "Julian Gutierrez"
-           ,authorUrl = "https://research.monash.edu/en/persons/julian-gutierrez-santiago"})
-  ]
