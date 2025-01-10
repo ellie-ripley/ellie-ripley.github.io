@@ -16,7 +16,7 @@ import Text.Parsec.String (parseFromFile)
 
 import Authors (Author(..), authorFile, eAuthors, makeAuthorLink)
 import PageTemplate (navbarJS, pageFrom, topLabel)
-import WebsiteTools (AuthorCat(..), classify, leftsRights, lk, pileUp)
+import WebsiteTools (classify, leftsRights, lk, pileUp)
 import Writing (WritingPiece(..), toWritingPiece, wpAuthorTags, wpVenue, wpBibtex)
 
 -- SECTION: Load the data
