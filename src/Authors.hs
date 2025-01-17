@@ -5,16 +5,12 @@
 module Authors (Author(..), authorFile, eAuthors, authorLookup, makeAuthorLink) where
 
 import Data.Text (Text)
-import qualified Data.Text as T
-import Data.Map (Map)
-import qualified Data.Map as M
 import qualified Data.Yaml.Aeson as Y
 import qualified Data.ByteString as BS
 import Lucid
 
 import Data.Aeson
 import Data.Aeson.TH
-import Data.Text.Array (new)
 
 data Author = Author { name :: Text
                      , authorUrl :: Text
@@ -40,10 +36,10 @@ authorLookup nm (a@(Author{..}) : as)
   | nm `elem` otherNames = Just a
   | otherwise = authorLookup nm as
 
-makeAuthorLink :: [Author] -> Text -> Html ()
+makeAuthorLink :: [Author] -> Text -> Either Text (Html ())
 makeAuthorLink amp tg =
   case authorLookup tg amp of
-    Nothing -> toHtml $ "Error: " <> tg
-    Just auth -> case (authorUrl auth) of
-                      "" -> toHtml (name auth)
-                      x  -> a_ [href_ x, target_ "_blank"] (toHtml (name auth))
+    Nothing -> Left $ "Author lookup failed: " <> tg <> "\n"
+    Just auth -> Right $ case (authorUrl auth) of
+                            "" -> toHtml (name auth)
+                            x  -> a_ [href_ x, target_ "_blank"] (toHtml (name auth))

@@ -23,6 +23,10 @@ instance Classify AuthorCat where
 pileUp :: [Html ()] -> Html ()
 pileUp = foldr (<>) mempty
 
+pileUpPair :: (Monoid a, Monoid b) => [(a, b)] -> (a, b)
+pileUpPair ab = (mconcat as, mconcat bs)
+  where (as, bs) = unzip ab
+
 listItems :: [Attribute] -> [Html ()] -> Html ()
 listItems atts ts = pileUp (map listItem ts)
   where

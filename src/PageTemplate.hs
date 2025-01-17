@@ -107,7 +107,7 @@ pageFooter =
             (table_ $ do
               (tr_ $ do
                 (td_ [class_ "contact-icon"] (span_ [class_ "fa fa-fw fa-inbox"] ""))
-                (td_ (emailLink "davewripley@gmail.com"))))
+                (td_ (emailLinkFull))))
           div_ [class_ "snail col-md-6"]
             (table_ $ do
               (tr_ $ do

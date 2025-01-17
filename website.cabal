@@ -1,13 +1,13 @@
 name:                website
-version:             0.1.0.0
+version:             0.2.0.0
 synopsis:            Website
 description:         Please see README.md
-homepage:            http://davewripley.rocks
+homepage:            http://negation.rocks
 license:             BSD3
 license-file:        LICENSE
 author:              Ellie Ripley
-maintainer:          davewripley@gmail.com
-copyright:           2015 Ellie (David) Ripley
+maintainer:          Ellie Ripley
+copyright:           2015 Ellie Ripley
 category:            Web
 build-type:          Simple
 cabal-version:       2.0

@@ -4,7 +4,6 @@ module Writing (WritingPiece(..), toWritingPiece, wpAuthorTags, wpVenue, wpBibte
 
 import Data.Text (Text, pack)
 import qualified Data.Text as T
-import qualified Data.Map as M
 import Data.Maybe (catMaybes)
 import Lucid ( i_, Html, ToHtml(toHtml) )
 import Data.List (intersperse)
