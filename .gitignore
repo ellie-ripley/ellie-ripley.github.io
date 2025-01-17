@@ -1,6 +1,6 @@
-for-upload/
+for-upload/.auctex-auto/
 .stack-work/
 dist-newstyle/
-!for-upload/css/ripley.css
 .DS_Store
 stack.yaml.lock
+src/.auctex-auto/

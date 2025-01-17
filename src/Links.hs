@@ -2,8 +2,8 @@
 
 module Links where
 
-import Lucid
 import Data.Text (Text)
+import Lucid
 
 import WebsiteTools (lk)
 
@@ -25,14 +25,23 @@ ajlLink = lk "http://ojs.victoria.ac.nz/ajl"
 aslLink :: Html () -> Html ()
 aslLink = lk "http://www.aslonline.org"
 
+myEmailAddress :: Text
+myEmailAddress = "ripley@negation.rocks"
+
 emailLink :: Html () -> Html ()
-emailLink = lk "mailto:davewripley@gmail.com"
+emailLink = lk $ "mailto:" <> myEmailAddress
+
+emailLinkFull :: Html ()
+emailLinkFull = emailLink $ toHtml myEmailAddress
 
 ijnLink :: Html () -> Html ()
 ijnLink = lk "http://www.institutnicod.org"
 
 ijnLinkFull :: Html ()
 ijnLinkFull = ijnLink "Insitut Jean Nicod"
+
+lllLink :: Html () -> Html ()
+lllLink = lk "https://sites.google.com/view/aalogic/curios/logicians-liberation-league"
 
 mcmpLink :: Html () -> Html ()
 mcmpLink = lk "http://www.mcmp.philosophie.uni-muenchen.de/index.html"
@@ -60,9 +69,6 @@ openAccessLink = lk "http://www.jasonmkelly.com/2013/01/27/green-gold-and-diamon
 
 rslLink :: Html () -> Html ()
 rslLink = lk "http://journals.cambridge.org/RSL"
-
-twitterLink :: Html () -> Html ()
-twitterLink = lk "http://twitter.com/davewripley"
 
 uconnLink :: Html () -> Html ()
 uconnLink = lk "http://www.uconn.edu"

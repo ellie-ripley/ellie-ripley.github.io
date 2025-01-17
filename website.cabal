@@ -1,13 +1,13 @@
 name:                website
-version:             0.1.0.0
+version:             0.2.0.0
 synopsis:            Website
 description:         Please see README.md
-homepage:            http://davewripley.rocks
+homepage:            http://negation.rocks
 license:             BSD3
 license-file:        LICENSE
 author:              Ellie Ripley
-maintainer:          davewripley@gmail.com
-copyright:           2015 Ellie (David) Ripley
+maintainer:          Ellie Ripley
+copyright:           2015 Ellie Ripley
 category:            Web
 build-type:          Simple
 cabal-version:       2.0
@@ -15,16 +15,22 @@ cabal-version:       2.0
 executable website
   hs-source-dirs:      src
   main-is:             Main.hs
+  ghc-options: -Wall -Wno-type-defaults
   other-modules:       Authors
                      , Links
-                     , Presentations
+                     , Page.Index
+                     , Page.Presentation
+                     , Page.Writing
+                     , PageTemplate
                      , Website
                      , WebsiteTools
                      , Writing
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
                      , aeson >= 1.5
+                     , bibtex >= 0.1.0.7
                      , lucid >= 2.9.12
+                     , parsec >= 3.1
                      , text ^>= 1.2.4
                      , containers ^>= 0.6
                      , bytestring >= 0.10.12

@@ -1,30 +1,20 @@
-{-# LANGUAGE OverloadedStrings, TemplateHaskell, RecordWildCards #-}
+{-# LANGUAGE OverloadedStrings, RecordWildCards #-}
 
-module Writing (pieces, WritingPiece(..), wpAuthorTags, wpVenue, wpBibtex) where
+module Writing (WritingPiece(..), toWritingPiece, wpAuthorTags, wpVenue, wpBibtex) where
 
-import Data.Aeson
-import Control.Applicative ((<$>), (<*>))
-import Control.Monad (mzero)
-import Data.Text (Text)
+import Data.Text (Text, pack)
 import qualified Data.Text as T
-import Data.ByteString.Lazy (readFile, ByteString)
-import Data.Map (Map)
-import qualified Data.Map as M
-import Data.Maybe (fromJust, catMaybes)
-import Lucid
-import Data.Monoid ((<>), mempty, mconcat)
+import Data.Maybe (catMaybes)
+import Lucid ( i_, Html, ToHtml(toHtml) )
 import Data.List (intersperse)
 
-import Data.Aeson
-import Data.Aeson.TH
-import qualified Data.Yaml.Aeson as Y
 
-import qualified Data.ByteString as BS
+import Text.BibTeX.Entry ( T(..) )
+import Text.Read (readMaybe)
 
-import Authors (Author(..), authors)
-import WebsiteTools (AuthorCat(..), classify, doiToLink, sHtml)
+import Authors (Author(..), authorLookup)
+import WebsiteTools (AuthorCat(..), sHtml, splitOn)
 
-data YamlTest = YT { str :: Text } deriving (Eq, Show)
 
 data WritingPiece =
       Paper { title :: Text
@@ -63,9 +53,105 @@ data WritingPiece =
    deriving (Show, Eq)
 
 
-deriveJSON defaultOptions ''WritingPiece
-deriveJSON defaultOptions ''YamlTest
 
+-- Converting BibTeX to WritingPiece
+
+readACat :: T -> Maybe AuthorCat
+readACat t =
+  case lookup "acat" (fields t) of
+    Nothing -> Nothing
+    Just "Solo" -> Just Solo
+    Just "CERvR" -> Just CERvR
+    Just fld ->
+      let tags = splitOn ',' (filter (/= ' ') fld)
+      in Just $ Other (map pack tags)
+
+
+dropLeadingHyphens :: String -> String
+dropLeadingHyphens ('-':rest) = dropLeadingHyphens rest
+dropLeadingHyphens str = str
+
+maybePages :: String -> (Maybe Int, Maybe Int)
+maybePages str =
+  let (msp, s2) = break (== '-') str
+      mep = dropLeadingHyphens s2
+  in  (readMaybe msp, readMaybe mep)
+
+maybeArticle :: T -> Maybe WritingPiece
+maybeArticle t
+  | entryType t /= "article" = Nothing
+  | otherwise = do
+      let look k = lookup k (fields t)
+      mpgs <- look "pages"
+      let (msp, mep) = maybePages mpgs
+      ttl <- look "title"
+      jnl <- look "journal"
+      wurl <- look "writingUrl"
+      acat <- readACat t
+      return $ Paper { title = pack ttl
+                     , authorCat = acat
+                     , writingUrl = pack wurl
+                     , bibtag = pack $ identifier t
+                     , abstract = pack <$> look "abstract"
+                     , year = look "year" >>= readMaybe
+                     , startPage = msp
+                     , endPage = mep
+                     , journal = pack jnl
+                     , volume = look "volume" >>= readMaybe
+                     , number = look "number" >>= readMaybe
+                     , doi = pack <$> look "doi"
+                     }
+
+maybeBook :: T -> Maybe WritingPiece
+maybeBook t
+  | entryType t /= "book" = Nothing
+  | otherwise = do
+      let look = \k -> lookup k (fields t)
+      ttl <- look "title"
+      wurl <- look "writingUrl"
+      pub <- look "publisher"
+      acat <- readACat t
+      return $ Book { title = pack ttl
+                    , authorCat = acat
+                    , writingUrl = pack wurl
+                    , bibtag = pack $ identifier t
+                    , abstract = pack <$> look "abstract"
+                    , year = look "year" >>= readMaybe
+                    , publisher = pack pub
+                    }
+
+maybeChapter :: T -> Maybe WritingPiece
+maybeChapter t
+  | entryType t /= "incollection" = Nothing
+  | otherwise = do
+      let look = \k -> lookup k (fields t)
+      mpgs <- look "pages"
+      let (msp, mep) = maybePages mpgs
+      ttl <- look "title"
+      wurl <- look "writingUrl"
+      bkt <- look "booktitle"
+      edstring <- look "editor"
+      pub <- look "publisher"
+      acat <- readACat t
+      return $ Chapter { title = pack ttl
+                       , authorCat = acat
+                       , writingUrl = pack wurl
+                       , bibtag = pack $ identifier t
+                       , abstract = pack <$> look "abstract"
+                       , year = look "year" >>= readMaybe
+                       , startPage = msp
+                       , endPage = mep
+                       , booktitle = pack bkt
+                       , editor = [pack edstring]
+                       , publisher = pack pub
+                       }
+
+toWritingPiece :: T -> Either String WritingPiece
+toWritingPiece t
+  | Just a <- maybeArticle t = Right a
+  | Just b <- maybeBook t    = Right b
+  | Just c <- maybeChapter t = Right c
+  | otherwise = Left (identifier t)
 
 --Accessors:
 
@@ -76,10 +162,7 @@ yrSpEp (Paper{..}) = case (catMaybes [year, startPage, endPage]) of
 yrSpEp (Chapter{..}) = case (catMaybes [year, startPage, endPage]) of
   [yr, sp, ep] -> Just (yr, sp, ep)
   _            -> Nothing
-yrSpEp (Book{..}) = Nothing
-
-getAuth :: Text -> Author
-getAuth tg = fromJust (M.lookup tg authors)
+yrSpEp (Book{}) = Nothing
 
 wpAuthorTags :: WritingPiece -> [Text]
 wpAuthorTags p = case authorCat p of
@@ -116,8 +199,9 @@ wpVenue c@(Chapter{..}) = "In " <> (i_ $ toHtml booktitle)
 wpVenue Book{..} = (toHtml publisher) <> " "
                                       <> (maybe "forthcoming." (\y -> (sHtml y) <> ".") year)
 
-authname :: Text -> Maybe Text
-authname t = name <$> M.lookup t authors
+
+authname :: [Author] -> Text -> Maybe Text
+authname auths t = name <$> authorLookup t auths
 
 getText :: Maybe Text -> Text
 getText m =
@@ -125,8 +209,8 @@ getText m =
     Just t -> t
     Nothing -> mempty
 
-bibTeXauths :: WritingPiece -> Text
-bibTeXauths = btChars . T.intercalate " and " . map (getText . authname) . wpAuthorTags
+bibTeXauths :: [Author] -> WritingPiece -> Text
+bibTeXauths auths = btChars . T.intercalate " and " . map (getText . authname auths) . wpAuthorTags
 
 btChars :: Text -> Text
 btChars = T.concatMap cleanup
@@ -142,16 +226,16 @@ btChars = T.concatMap cleanup
 write :: Show a => a -> Text
 write = T.pack . show
 
-wpBibtex :: WritingPiece -> Text
-wpBibtex p@(Paper{..}) = T.concat $
+wpBibtex :: [Author] -> WritingPiece -> Text
+wpBibtex auths p@(Paper{..}) = T.concat $
   [ "@article{", bibtag
-  , ",\n   author = {", bibTeXauths p
+  , ",\n   author = {", bibTeXauths auths p
   , "},\n   title = {", title
   , "},\n   journal = {", journal
   , "},\n   writingUrl = {", writingUrl
   , "},\n   abstract = {", abst
   , "},\n   "
-  ] ++ rest ++
+  ] ++ rest ++ di ++
   [ "}\n" ]
   where 
     rest = case (yrSpEp p) of
@@ -160,15 +244,17 @@ wpBibtex p@(Paper{..}) = T.concat $
                                   , "},\n   number = {", nmb
                                   , "},\n   pages = {"
                                   , (write sp) <> "--" <> (write ep)
-                                  , "}\n"
+                                  , "},\n   "
                                   ]
              Nothing -> [ "note = {Forthcoming}\n" ]
+    di = case doi of
+           Nothing -> []
+           Just d -> ["doi = {", d, "},\n"]
     vol = maybe mempty write volume
     nmb = maybe mempty write number
-    abst = maybe mempty id abstract
-wpBibtex c@(Chapter{..}) = T.concat $
+wpBibtex auths c@(Chapter{..}) = T.concat $
   [ "@incollection{", bibtag
-  , ",\n   author = {", bibTeXauths c
+  , ",\n   author = {", bibTeXauths auths c
   , "},\n   title = {", title
   , "},\n   booktitle = {", booktitle
   , "},\n   editor = {"
@@ -187,10 +273,9 @@ wpBibtex c@(Chapter{..}) = T.concat $
                                   , "}\n"
                                   ]
              Nothing -> [ "note = {Forthcoming}\n" ]
-    abst = maybe mempty id abstract
-wpBibtex b@(Book{..}) = T.concat $
+wpBibtex auths b@(Book{..}) = T.concat $
   [ "@book{", bibtag
-  , ",\n   author = {", bibTeXauths b
+  , ",\n   author = {", bibTeXauths auths b
   , "},\n   title = {", title
   , "},\n   publisher = {", publisher
   , "},\n   abstract = {", abst
@@ -202,12 +287,3 @@ wpBibtex b@(Book{..}) = T.concat $
     rest = case year of
              Just yr -> [ "year = {", write yr, "}\n" ]
              Nothing -> [ "note = {Forthcoming}\n" ]
-    abst = maybe mempty id abstract
-
-wpFile :: FilePath
-wpFile = "./src/writing.yaml"
-
-pieces :: IO (Either Y.ParseException [WritingPiece])
-pieces = do
-  pData <- BS.readFile wpFile
-  return (Y.decodeEither' pData)
