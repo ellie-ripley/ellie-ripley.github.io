@@ -32,7 +32,8 @@ exerciseBody = do
 --SECTION: generation
 
 dirPrefix :: FilePath
-dirPrefix = "./for-upload/"
+dirPrefix = "./docs/"
+
 
 websiteMain :: IO ()
 websiteMain = do

@@ -252,6 +252,7 @@ wpBibtex auths p@(Paper{..}) = T.concat $
            Just d -> ["doi = {", d, "},\n"]
     vol = maybe mempty write volume
     nmb = maybe mempty write number
+    abst = maybe mempty id abstract
 wpBibtex auths c@(Chapter{..}) = T.concat $
   [ "@incollection{", bibtag
   , ",\n   author = {", bibTeXauths auths c
@@ -273,6 +274,7 @@ wpBibtex auths c@(Chapter{..}) = T.concat $
                                   , "}\n"
                                   ]
              Nothing -> [ "note = {Forthcoming}\n" ]
+    abst = maybe mempty id abstract
 wpBibtex auths b@(Book{..}) = T.concat $
   [ "@book{", bibtag
   , ",\n   author = {", bibTeXauths auths b
@@ -287,3 +289,4 @@ wpBibtex auths b@(Book{..}) = T.concat $
     rest = case year of
              Just yr -> [ "year = {", write yr, "}\n" ]
              Nothing -> [ "note = {Forthcoming}\n" ]
+    abst = maybe mempty id abstract
