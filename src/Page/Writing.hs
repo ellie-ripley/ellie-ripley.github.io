@@ -5,8 +5,7 @@
 
 module Page.Writing (writingPage) where
 
-import Data.List (intercalate, intersperse, sortBy)
-import Data.Text (Text)
+import Data.List (intersperse, sortBy)
 import qualified Data.Text as T
 import Lucid
 import Lucid.Bootstrap
@@ -15,44 +14,57 @@ import Text.BibTeX.Parse
 import Text.Parsec.Error (ParseError)
 import Text.Parsec.String (parseFromFile)
 
-import Authors (Author(..), authorFile, eAuthors, makeAuthorLink)
+import Authors (makeAuthorLink)
 import PageTemplate (navbarJS, pageFrom, topLabel)
-import WebsiteTools (classify, leftsRights, lk, pileUpPair)
-import Writing (WritingPiece(..), toWritingPiece, wpAuthorTags, wpVenue, wpBibtex)
+import WebsiteTools
+import Writing ( WritingPieceRaw(..)
+               , WritingPiece(..)
+               , elaborateWPs
+               , toWritingPieceRaw
+               , wpVenue
+               , wpBibtex
+               )
 
 -- SECTION: Load the data
 
 wpFile :: FilePath
 wpFile = "./src/writing.bib"
 
-eitherWritingBibEntries :: IO (Either ParseError [T])
-eitherWritingBibEntries = parseFromFile (skippingLeadingSpace file) wpFile
+getWritingBibEntries :: IO (Either ParseError [T])
+getWritingBibEntries = parseFromFile (skippingLeadingSpace file) wpFile
 
+writingPieceRaws :: IO [WritingPieceRaw]
+writingPieceRaws = do
+  eBEs <- getWritingBibEntries
+  case eBEs of
+    Left pex -> do
+      putStrLn $ "ERROR: Couldn't parse writing file: " <> show wpFile
+      putStrLn $ show pex
+      return []
+    Right bes -> do
+      putStrLn $ "Successfully parsed writing file: " <> show wpFile
+      putStrLn $ "     " <> (show (length bes)) <> " records"
+      let (errs, wprs) = leftsRights $ map toWritingPieceRaw bes
+          msg = if null errs
+                  then "     All writing entries understood."
+                  else "     Failed to understand writing entries: " <>
+                       mconcat (intersperse ", " errs)
+      putStrLn msg
+      return wprs
 
 -- SECTION: Build the page
 
-writingPage :: IO (Html ())
-writingPage = do
-  ewbe <- eitherWritingBibEntries
-  case ewbe of
-    Left perr -> do
-      putStrLn $ "Couldn't read file " <> wpFile <> ": " <> show perr
-      return mempty
-    Right wps -> do
-      let (bibErrs, ps) = leftsRights (map toWritingPiece wps)
-      if null bibErrs
-        then putStrLn "All bibtex entries read without error."
-        else putStrLn $ "Couldn't read bibtex entries: " <> intercalate ", " bibErrs
-      eAuths <- eAuthors
-      case eAuths of
-        Left aerr -> do
-          putStrLn $ "Couldn't read file " <> authorFile <> ": " <> show aerr
-          return mempty
-        Right auths -> do
-          putStrLn $ "Successfully read authors file."
-          let (bdyErrs, bdy) = writingBody auths ps
-          mapM_ (putStrLn . T.unpack) bdyErrs
-          return $ pageFrom bdy (navbarJS "writinglink" <> searchJS <> popoverJS)
+writingPage :: [Author] -> IO (Html ())
+writingPage auths = do
+  bes <- writingPieceRaws
+  let (authErrs, wps) = elaborateWPs auths bes
+      msg = if null authErrs
+               then "All writing authors found."
+               else ""
+  putStrLn msg
+  let bdy = writingBody wps
+  mapM_ (putStrLn . T.unpack) authErrs
+  return $ pageFrom bdy (navbarJS "writinglink" <> searchJS <> popoverJS)
 
 searchJS :: Html ()
 searchJS = script_ [src_ "./js/search.js"] ""
@@ -93,10 +105,9 @@ alsoSeeBit = p_ [class_ "also-see"]
                     <> (lk "https://orcid.org/0000-0002-3356-0771" "ORCID page")
                     <> ".")
 
--- | [Text] in return type is errors to be printed at console
-writingBody :: [Author] -> [WritingPiece] -> ([Text], Html ())
-writingBody as ps = (errs, bdy)
-    where (errs, pcs) = pileUpPair $ map (makeEntry as) (zip (sortBy pieceSort ps) [1..])
+writingBody :: [WritingPiece] -> Html ()
+writingBody ps = bdy
+    where pcs = mconcat $ map makeEntry (zip (sortBy pieceSort ps) [1..])
           bdy = do
                     topLabel "Writing"
                     container_ [class_ "mainbits"] $
@@ -106,7 +117,7 @@ writingBody as ps = (errs, bdy)
                         div_ [class_ "col-md-9 searchresults"]
                             (ul_ [class_ "writingdisplay"] pcs)
 
-paperTitleHead :: WritingPiece -> Html ()
+paperTitleHead :: WritingPieceRaw -> Html ()
 paperTitleHead p =
   case (writingUrl p) of
     "" -> pt
@@ -118,15 +129,15 @@ paperTitleHead p =
 
 
 -- | returns pair of Html entry and list of errors to be printed at console
-makeEntry :: [Author] -> (WritingPiece, Int) -> ([Text], Html ())
-makeEntry as (p, n) = (errs, ent)
-  where cls = "paperbubble " <> (classify $ authorCat p)
-        (errs, auths) = leftsRights $ map (makeAuthorLink as) (wpAuthorTags p)
+makeEntry :: (WritingPiece, Int) -> Html ()
+makeEntry (p@(WritingPiece (wpr, as)), n) = ent
+  where cls = "paperbubble " <> (classify $ internalAuthors wpr)
+        auths = map makeAuthorLink as
         nt = T.pack $ show n
         ci = "citation" <> nt
         ai = "abstract" <> nt
         bi = "bibtex" <> nt
-        atab = case abstract p of
+        atab = case abstract wpr of
                     Nothing -> mempty
                     Just _  -> button_ [ class_ "nav-link"
                                        , id_ (ai <> "-tab")
@@ -137,7 +148,7 @@ makeEntry as (p, n) = (errs, ent)
                                        , term "aria-controls" ai
                                        , term "aria-selected" "false"
                                        ] "Abstract"
-        apane = case abstract p of
+        apane = case abstract wpr of
                     Nothing -> mempty
                     Just ab -> div_ [ role_ "tabpanel"
                                     , class_ "tab-pane"
@@ -146,7 +157,7 @@ makeEntry as (p, n) = (errs, ent)
                                     (p_ [class_ "abstract"] (toHtml ab))
         ent = li_ [class_ cls] $ do
                    div_ [class_ "row"] $ do
-                     p_ [class_ "ptitle"] (paperTitleHead p)
+                     p_ [class_ "ptitle"] (paperTitleHead wpr)
                      p_ [class_ "pauthors"] (mconcat $ intersperse ", " auths)
                      div_ [class_ "col paperinfo"] $ do
                           nav_ [] (div_ [ class_ "nav nav-tabs"
@@ -179,20 +190,20 @@ makeEntry as (p, n) = (errs, ent)
                                     , id_ ci
                                     , term "aria-labelledby" (ci <> "-pill")
                                     ]
-                                    (p_ [class_ "pvenue"] (wpVenue p))
+                                    (p_ [class_ "pvenue"] (wpVenue wpr))
                                apane
                                div_ [ role_ "tabpanel"
                                     , class_ "tab-pane"
                                     , id_ bi
                                     , term "aria-labelledby" (bi <> "-pill")
                                     ]
-                                    (p_ [class_ "bibtex"] (pre_ [class_ "bibtex"] (toHtml $ wpBibtex as p)))
+                                    (p_ [class_ "bibtex"] (pre_ [class_ "bibtex"] (toHtml $ wpBibtex p)))
 
 
 
 
 pieceSort :: WritingPiece -> WritingPiece -> Ordering
-pieceSort p1 p2 =
+pieceSort (WritingPiece (p1, _)) (WritingPiece (p2, _)) =
   case (year p1, year p2) of
     (Nothing, Nothing) -> nameSort
     (Nothing, _)       -> LT

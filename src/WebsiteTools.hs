@@ -3,10 +3,19 @@
 module WebsiteTools where
 
 import Lucid
+import Data.List (stripPrefix)
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 
 import Data.Aeson
 import Data.Aeson.TH
+
+data Author = Author { name :: Text
+                     , authorUrl :: Text
+                     , otherNames :: [Text]
+                     } deriving (Show, Eq)
+
+deriveJSON defaultOptions ''Author
 
 data AuthorCat = Solo | CERvR | Other [Text] deriving (Show, Eq)
 
@@ -20,15 +29,12 @@ instance Classify AuthorCat where
   classify CERvR = "cervr"
   classify (Other _) = "other"
 
-pileUp :: [Html ()] -> Html ()
-pileUp = foldr (<>) mempty
-
 pileUpPair :: (Monoid a, Monoid b) => [(a, b)] -> (a, b)
 pileUpPair ab = (mconcat as, mconcat bs)
   where (as, bs) = unzip ab
 
 listItems :: [Attribute] -> [Html ()] -> Html ()
-listItems atts ts = pileUp (map listItem ts)
+listItems atts ts = mconcat (map listItem ts)
   where
     listItem t = li_ atts t
 
@@ -41,6 +47,17 @@ doiToLink d = lk lnk "DOI link"
 
 sHtml :: (Show a, Monad m) => a -> HtmlT m ()
 sHtml = toHtml . show
+
+dropInitialComma :: String -> String
+dropInitialComma s = fromMaybe s (stripPrefix "," s)
+
+splitAtCommasRemoveSpaces :: String -> [String]
+splitAtCommasRemoveSpaces s =
+  let (firstWord, rest) = break (== ',') s
+      removeSpacesAndCommas = filter (\c -> c /= ' ' && c /= ',')
+  in if null rest
+     then [removeSpacesAndCommas s]
+     else (removeSpacesAndCommas firstWord) : splitAtCommasRemoveSpaces (dropInitialComma rest)
 
 mapFst :: (a -> b) -> (a, c) -> (b, c)
 mapFst f (x, y) = (f x, y)

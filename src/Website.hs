@@ -10,6 +10,7 @@ import Lucid
 
 import PageTemplate (navbarJS, pageFrom, topLabel)
 
+import Authors (authors)
 import Page.Index (indexPage)
 import Page.Presentation (presentationPage)
 import Page.Writing (writingPage)
@@ -39,8 +40,9 @@ websiteMain :: IO ()
 websiteMain = do
   System.Directory.createDirectoryIfMissing True dirPrefix
   Data.Text.Lazy.IO.writeFile (dirPrefix <> "index.html") (renderText indexPage)
-  pPage <- presentationPage
+  auths <- authors
+  pPage <- presentationPage auths
   Data.Text.Lazy.IO.writeFile (dirPrefix <> "presentations.html") (renderText pPage)
-  wPage <- writingPage
+  wPage <- writingPage auths
   Data.Text.Lazy.IO.writeFile (dirPrefix <> "writing.html") (renderText wPage)
   Data.Text.Lazy.IO.writeFile (dirPrefix <> "emu.html") (renderText exercisePage)
