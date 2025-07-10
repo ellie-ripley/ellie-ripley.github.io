@@ -1,4 +1,14 @@
 - presLocations:
+  - AAP 2025, University of Queensland, July 2025
+  presTitle: "Vagueness and nonclassical probability"
+  presAuthors:
+    Solo: []
+  presExtras:
+  - - Slides
+    - ./docs/vnp-slides-aap.pdf
+    - Slides
+
+- presLocations:
   - Monash Department Workshop, November 2024
   presTitle: "Implicit assertion and drawing conclusions"
   presAuthors:
