@@ -42,6 +42,7 @@ data WritingPieceRaw =
               , booktitle :: Text
               , editor :: [Text]
               , publisher :: Text
+              , doi :: Maybe Text
               }
    |  Book { title :: Text
            , internalAuthors :: AuthorCat
@@ -145,6 +146,7 @@ maybeChapter t
                        , booktitle = pack bkt
                        , editor = [pack edstring]
                        , publisher = pack pub
+                       , doi = pack <$> look "doi"
                        }
 
 elaborateWP :: [Author] -> WritingPieceRaw -> Either Text WritingPiece
@@ -275,17 +277,20 @@ wpBibtex (WritingPiece (wpr, as)) =
         , "},\n   abstract = {", abst
         , "},\n   writingUrl = {", writingUrl
         , "},\n   "
-        ] ++ rest ++
+        ] ++ rest ++ di ++
         [ "}\n" ]
         where
           rest = case (yrSpEp c) of
                   Just (yr, sp, ep) -> [ "year = {", write yr
                                         , "},\n   pages = {"
                                         , (write sp) <> "--" <> (write ep)
-                                        , "}\n"
+                                        , "},\n   "
                                         ]
                   Nothing -> [ "note = {Forthcoming}\n" ]
           abst = maybe mempty id abstract
+          di = case doi of
+                 Nothing -> []
+                 Just d -> ["doi = {", d, "},\n"]
     (Book{..}) -> T.concat $
         [ "@book{", bibtag
         , ",\n   author = {", bibTeXauths as
@@ -295,7 +300,7 @@ wpBibtex (WritingPiece (wpr, as)) =
         , "},\n   writingUrl = {", writingUrl
         , "},\n   "
         ] ++ rest ++
-        [ "}\n" ]
+        [ "},\n   " ]
         where
           rest = case year of
                   Just yr -> [ "year = {", write yr, "}\n" ]
