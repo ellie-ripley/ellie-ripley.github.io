@@ -259,7 +259,7 @@ wpBibtex (WritingPiece (wpr, as)) =
                                         , (write sp) <> "--" <> (write ep)
                                         , "},\n   "
                                         ]
-                  Nothing -> [ "note = {Forthcoming}\n" ]
+                  Nothing -> [ "note = {Forthcoming},\n   " ]
           di = case doi of
                 Nothing -> []
                 Just d -> ["doi = {", d, "},\n"]
