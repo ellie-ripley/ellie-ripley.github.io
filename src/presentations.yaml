@@ -1,4 +1,14 @@
 - presLocations:
+  - Reasoning in Language Models and in Logic, Melbourne, December 2025
+  presTitle: "What does Frege's argument show (about cognition)?"
+  presAuthors:
+    Solo: []
+  presExtras:
+  - - Slides
+    - ./docs/wfas-slides.html
+    - Slides
+
+- presLocations:
   - AAP 2025, University of Queensland, July 2025
   presTitle: "Vagueness and nonclassical probability"
   presAuthors:
