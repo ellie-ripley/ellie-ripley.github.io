@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>22</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/0040/</fr:uri>
+    <fr:display-uri>0040</fr:display-uri>
+    <fr:route>/0040/</fr:route>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>These lectures are an evolving thing; this semester marks a big shift: from pdf to the web-based format you're currently looking at, which uses the excellent <fr:link href="https://www.forester-notes.org/0052/index.xml" type="external">Forester</fr:link> tool.
+Some lectures are not yet converted over; they will appear as we go.</html:p>
+    <html:p>If you find any errors or face any difficulties with these lectures, please let me know!
+These lectures have benefitted tremendously from the experiences, suggestions, and ideas that past students have offered.
+Future students can benefit from your experiences as well; just let me know any sugggestions!
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>22</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003Z/</fr:uri>
+            <fr:display-uri>003Z</fr:display-uri>
+            <fr:route>/003Z/</fr:route>
+            <fr:title text="Unit structure">Unit structure</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>In addition to the assessment tasks (discussed below), the unit consists of lectures and tutorials.</html:p>
+            <html:p>You're in the lectures right now; they are written in form, and interlinked.
+The <fr:link href="/0004/" title="Table of Contents" uri="https://www.my-great-forest.net/0004/" display-uri="0004" type="local">Table of Contents</fr:link> is a great place to get an overview of the semester.
+There are 12 numbered lectures and 12 teaching weeks of the semester: a lucky coincidence!
+Each week, you should make sure you read that week's lecture and understand it as well as you can before you come to tutorial.
+(That said, if you haven't read the lecture on a given week, you are still very much welcome to come to tutorial!)</html:p>
+            <html:p>The lectures are written (rather than audio or video) so that they can serve a double purpose: they will introduce you to our material, but they will also serve as reference material for you.
+You do not need to memorise anything in this unit; you can always go back to the lectures and check.</html:p>
+            <html:p>(At least if you're in one of my tutes, you may well get sick of hearing me say "check the lectures" in response to some questions.
+But I only say it so much because it's good advice!
+When you have a question about exactly how something works, the answer is often in the lectures.
+Going through the work of digging the answer up when you need it will help you learn, much more than me just telling you the answer would.)</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>22</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0040/</fr:uri>
+                <fr:display-uri>0040</fr:display-uri>
+                <fr:route>/0040/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>These lectures are an evolving thing; this semester marks a big shift: from pdf to the web-based format you're currently looking at, which uses the excellent <fr:link href="https://www.forester-notes.org/0052/index.xml" type="external">Forester</fr:link> tool.
+Some lectures are not yet converted over; they will appear as we go.</html:p>
+                <html:p>If you find any errors or face any difficulties with these lectures, please let me know!
+These lectures have benefitted tremendously from the experiences, suggestions, and ideas that past students have offered.
+Future students can benefit from your experiences as well; just let me know any sugggestions!
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>Tutorials are where most of your learning will happen in this unit.
+No attendance is taken at tutorials, and no part of your semester mark depends on them; they are pure learning opportunities for you and nothing more.
+Each week, your tutor will give you a range of exercises (more straightforward) and puzzles (more devious) that you'll work on in various ways, and also answer any questions you have about the material.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

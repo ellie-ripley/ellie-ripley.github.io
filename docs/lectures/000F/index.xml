@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>1</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/000F/</fr:uri>
+    <fr:display-uri>000F</fr:display-uri>
+    <fr:route>/000F/</fr:route>
+    <fr:title text="Logicians' Weird Habit 2">Logicians' Weird Habit 2</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+
+            This is the weirder one.
+            Whenever I say something like "Every BLAH is a SUCH-AND-SUCH", I always mean to <html:em>include</html:em> the case where there are no BLAHs at all.
+            Again, I won"t bother with any special qualifications; you can always take this for granted.
+            So, for example, I"m perfectly happy to say: "All unicorns breathe fire".
+            Since there are no unicorns, my "all" claim is all good.
+
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>1</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/000C/</fr:uri>
+            <fr:display-uri>000C</fr:display-uri>
+            <fr:route>/000C/</fr:route>
+            <fr:title text="Logicians' weird habits">Logicians' weird habits</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        There are a few logicians' habits you should know about, to be able to make the most of these lectures and our conversations.
+        These are habits of expression that are completely standard among logicians, but can throw you off if you're not used to them.
+        I'm flagging these habits here so that you can be ready. 
+        I'll try to remember to flag them as well where I use them, but these are so ingrained in me by now that it's entirely likely I won't notice some.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000D/</fr:uri>
+                <fr:display-uri>000D</fr:display-uri>
+                <fr:route>/000D/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>If you notice some that I haven't flagged, let me know!
+        That way, I can correct the lectures.
+        The same goes for any typos or errors of any sort, or recommendations in general.
+        These lectures get revised every time the unit runs; they've improved a lot (to their present ok-but-not-exactly-gonna-change-the-world state) as a result of past students' input.
+        I really appreciate their input, and I'll really appreciate yours!</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000E/</fr:uri>
+                <fr:display-uri>000E</fr:display-uri>
+                <fr:route>/000E/</fr:route>
+                <fr:title text="Logicians' Weird Habit 1">Logicians' Weird Habit 1</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+             Whenever I say something like "BLAH or SUCH-AND-SUCH", I always mean to <html:em>include</html:em> the case where both BLAH and SUCH-AND-SUCH happen.
+            I won't bother with any extra qualification like "or both", or anything like that.
+            You can always take for granted that I mean to include the both case.
+            So, for example, I'd be perfectly happy to say: "Melbourne is in Victoria or Mercury is the closest planet to the Sun".
+            Both of these are true, so my "or" claim is all good.
+
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000F/</fr:uri>
+                <fr:display-uri>000F</fr:display-uri>
+                <fr:route>/000F/</fr:route>
+                <fr:title text="Logicians' Weird Habit 2">Logicians' Weird Habit 2</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+
+            This is the weirder one.
+            Whenever I say something like "Every BLAH is a SUCH-AND-SUCH", I always mean to <html:em>include</html:em> the case where there are no BLAHs at all.
+            Again, I won"t bother with any special qualifications; you can always take this for granted.
+            So, for example, I"m perfectly happy to say: "All unicorns breathe fire".
+            Since there are no unicorns, my "all" claim is all good.
+
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>
+        For both of these, there's a case to be made that what I'm doing is out of step with what "or" or "all" mean in English (Note the use of <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">Habit 1</fr:link> there!), and there's a case to be made that it isn't.
+        But for our purposes, it's not important to settle that question.
+        What <html:em>is</html:em> important is that you see precisely what I mean when I say "or" or "all", and keeping these logicians' habits in mind is key for that.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>17</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/002M/</fr:uri>
+            <fr:display-uri>002M</fr:display-uri>
+            <fr:route>/002M/</fr:route>
+            <fr:title text="Subsets">Subsets</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p> The most important kind of relationship between sets is the <html:strong>subset</html:strong> relation.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002N/</fr:uri>
+                <fr:display-uri>002N</fr:display-uri>
+                <fr:route>/002N/</fr:route>
+                <fr:title text="Subset">Subset</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a <html:strong>subset</html:strong> of a set <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> iff: every member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is also a member of <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
+There's a symbol for this: <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Delta ]]></fr:tex> means that <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>In the above definition, <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> are capital Greek letters: <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is Gamma and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> is Delta.
+It's common to use lots of different alphabets in logic, with the Greek alphabet probably the most common one other than our own Latin alphabet.
+I'll use capital Greek letters like these particularly for sets of things, usually sets of formulas.
+</html:p>
+            <html:p>
+When <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Delta ]]></fr:tex>, we know that everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> as well.
+There might be some other things also in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> as well, or there might not; that doesn't matter.
+(If there isn't anything else in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, then by extensionality <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> must be the same set.)
+</html:p>
+            <html:p> Some things to note about subsets:
+<html:ul><html:li>There is an important difference between being a <html:em>subset</html:em> of a set and being a <html:em>member</html:em> of the set.
+        For example, <fr:tex display="inline"><![CDATA[\{p, q\}]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex>, since every member of the former is also a member of the latter.
+        But <fr:tex display="inline"><![CDATA[\{p, q\}]]></fr:tex> is not a member of <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex>; only <fr:tex display="inline"><![CDATA[p]]></fr:tex>, <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and <fr:tex display="inline"><![CDATA[r]]></fr:tex> are members of this set.</html:li>
+  <html:li>Every set is a subset of itself.
+        For example, consider the set <fr:tex display="inline"><![CDATA[\{p, q \land  r\}]]></fr:tex>.
+        This has two members: <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \land  r]]></fr:tex>.
+        And both of these members are indeed also members of <fr:tex display="inline"><![CDATA[\{p, q \land  r\}]]></fr:tex>, so the definition of subsethood is met.
+        More generally, for any set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, all the members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are indeed members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, so <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is always a subset of itself, for any <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</html:li>
+  <html:li>The empty set is a subset of absolutely any set.
+        This might be a surprise, but remember logicians' weird habit number 2!
+        To check whether the empty set is a subset of some set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, we need to check whether all the members of the empty set are also members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+        Since there are no members of the empty set, indeed it <html:em>is</html:em> true that all the members of the empty set are members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>---no matter what <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is.
+        (Using <fr:link href="/000F/" title="Logicians' Weird Habit 2" uri="https://www.my-great-forest.net/000F/" display-uri="000F" type="local">logicians' weird habit number 2</fr:link>, it's even true that all the members of the empty set are square circles, that they're all plants with mammal-like brains, and that they're all behind you right now.)</html:li></html:ul></html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>3</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/001D/</fr:uri>
+            <fr:display-uri>001D</fr:display-uri>
+            <fr:route>/001D/</fr:route>
+            <fr:title text="Method 1: preserve the main connective, apply to components">Method 1: preserve the main connective, apply to components</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+Given a sentence and a substitution, if the sentence is atomic we already know how to apply the substitution to it.
+But what if the sentence is compound?
+Then the result we're after is this: we preserve the main connective, and apply the substitution to each of the components.
+</html:p>
+            <html:p>So, for example, take our substitution <fr:tex display="inline"><![CDATA[h]]></fr:tex> from above.
+What is <fr:tex display="inline"><![CDATA[h(q \rightarrow  r)]]></fr:tex>?
+This is compound, so we want to preserve the main connective <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex>, and apply the substitution to each of the components: our result should be <fr:tex display="inline"><![CDATA[h(q) \rightarrow  h(r)]]></fr:tex>.
+And what is that?
+Well, both <fr:tex display="inline"><![CDATA[q]]></fr:tex> and <fr:tex display="inline"><![CDATA[r]]></fr:tex> are atomic, so we know how to apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to them: <fr:tex display="inline"><![CDATA[h(q) = p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[h(r) = q]]></fr:tex>.
+So <fr:tex display="inline"><![CDATA[h(q \rightarrow  r) = h(q) \rightarrow  h(r) = (p \land  q) \rightarrow  q]]></fr:tex>.
+(Note the parentheses!)
+</html:p>
+            <html:p>
+For a more complex example, think about <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot ))]]></fr:tex>.
+This is compound, so we want to keep the main connective as it is and apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to the components.
+This gets us to <fr:tex display="inline"><![CDATA[h(p) \land  h(q \lor  \bot )]]></fr:tex>.
+Now, <fr:tex display="inline"><![CDATA[h(p)]]></fr:tex> is good to go, since we know <fr:tex display="inline"><![CDATA[h(p) = q]]></fr:tex>.
+So our result should be <fr:tex display="inline"><![CDATA[q \land  h(q \lor  \bot )]]></fr:tex>; but <fr:tex display="inline"><![CDATA[q \lor  \bot ]]></fr:tex> is not atomic, so we've got more work still to do.
+</html:p>
+            <html:p>What is <fr:tex display="inline"><![CDATA[h(q \lor  \bot )]]></fr:tex>, then?
+Well, we preserve the main connective and apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to the components.
+So it's <fr:tex display="inline"><![CDATA[h(q) \lor  h(\bot )]]></fr:tex>.
+And we know <fr:tex display="inline"><![CDATA[h(q) = p \land  q]]></fr:tex>, so <fr:tex display="inline"><![CDATA[h(q \lor  \bot ) = (p \land  q) \lor  h(\bot )]]></fr:tex>.
+Putting this together with what we already knew, we're getting closer: now we have that <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot )) = q \land  ((p \land  q) \lor  h(\bot ))]]></fr:tex>.
+</html:p>
+            <html:p>That just leaves <fr:tex display="inline"><![CDATA[h(\bot )]]></fr:tex> to sort out.
+Remember that <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is compound, not atomic, so we still can't just apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> like any normal function; we need to stick to the plan.
+That is, we keep the main connective the same and apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to all the components.
+In this case, the main connective of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, and there are no components.
+So <fr:tex display="inline"><![CDATA[h(\bot ) = \bot ]]></fr:tex>.
+(Remember <fr:link href="/000F/" title="Logicians' Weird Habit 2" uri="https://www.my-great-forest.net/000F/" display-uri="000F" type="local">Logicians' Weird Habit 2</fr:link>: we automatically count as succeeding at applying <fr:tex display="inline"><![CDATA[h]]></fr:tex> to <html:em>all</html:em> the components: all zero of them.)
+</html:p>
+            <html:p>Putting this all together, we get our result: <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot )) = q \land  ((p \land  q) \lor  \bot )]]></fr:tex>.
+Note that it's not just the main connective of this sentence that stayed put: <html:em>all</html:em> the connectives in the sentence have stayed just as they were.
+In effect, we've just acted on the atomics <html:em>inside</html:em> the sentence, replacing each of them with whatever the substitution <fr:tex display="inline"><![CDATA[h]]></fr:tex> says.
+That's the key idea of applying a substitution.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

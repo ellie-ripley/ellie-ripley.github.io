@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>1</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/000U/</fr:uri>
+    <fr:display-uri>000U</fr:display-uri>
+    <fr:route>/000U/</fr:route>
+    <fr:title text="Compound sentence">Compound sentence</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>A <html:strong>compound sentence</html:strong> is any sentence that is not atomic.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>1</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/000T/</fr:uri>
+            <fr:display-uri>000T</fr:display-uri>
+            <fr:route>/000T/</fr:route>
+            <fr:title text="Atomic vs compound sentences">Atomic vs compound sentences</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>            We already know about atomic sentences.
+            A compound sentence is just any sentence that isn't atomic:
+            <fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>1</fr:month><fr:day>29</fr:day></fr:date><fr:uri>https://www.my-great-forest.net/000U/</fr:uri><fr:display-uri>000U</fr:display-uri><fr:route>/000U/</fr:route><fr:title text="Compound sentence">Compound sentence</fr:title><fr:taxon>Definition</fr:taxon></fr:frontmatter><fr:mainmatter><html:p>A <html:strong>compound sentence</html:strong> is any sentence that is not atomic.</html:p></fr:mainmatter></fr:tree>
+            So sentences like <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>, or <fr:tex display="inline"><![CDATA[\neg  r]]></fr:tex>, or <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> are all compound sentences.
+            Another way to think of it is: a compound sentence is any sentence that contains a connective.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

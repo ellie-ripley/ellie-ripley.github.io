@@ -1,0 +1,2483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>20</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/0034/</fr:uri>
+    <fr:display-uri>0034</fr:display-uri>
+    <fr:route>/0034/</fr:route>
+    <fr:title text="Lecture 4: Structures">Lecture 4: Structures</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p> In the first week, we learned about the kinds of languages we're going to work with this semester.
+These languages contain sentences like <fr:tex display="inline"><![CDATA[p \land  \neg  (q \lor  \bot )]]></fr:tex> and so on.
+At the moment, this is just an unintelligible string of symbols.
+This week we'll take our first steps into endowing our languages with meaning.
+For now, we won't worry about connecting arguments and logics to this work on meaning just yet; we'll bring it all together next week.
+This week, we're focusing just on languages.
+(Recall that our default language, the one to focus on for now, uses infinitely many atomic formulas, plus the connectives <fr:tex display="inline"><![CDATA[\land , \lor , \rightarrow , \neg , \bot ]]></fr:tex> with arities 2, 2, 2, 1, 0, respectively.
+If you have any question about what that all means, check back to <fr:link href="/0005/" title="Lecture 1: Introduction and languages" uri="https://www.my-great-forest.net/0005/" display-uri="0005" type="local">lecture 1</fr:link>!)
+</html:p>
+    <html:p> The approach we're going to start with for bringing meaning to these sentences uses <html:em>truth values</html:em>.
+These start to give us a limited grip on something like meaning.
+Real sentences, in languages like English, are true or false, when they are, in part because of what they mean.
+The sentence "There are at least nine planets in our solar system" is false, in part because of what bodies are out there in space, but also in part because of a convention about the word "planet" adopted by the International Astronomical Union in 2006.
+(Before this convention was adopted, Pluto was also considered a planet, making the sentence true.)
+Of course, there's much more to the meaning of a real sentence than just whether it's true or false!
+But truth and falsity are at least wrapped up in the meaning of real sentences, so we're at least in the right area to be poking around.
+</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>20</fr:day>
+        </fr:date>
+        <fr:uri>https://www.my-great-forest.net/0035/</fr:uri>
+        <fr:display-uri>0035</fr:display-uri>
+        <fr:route>/0035/</fr:route>
+        <fr:title text="A first example: two truth values">A first example: two truth values</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>    Let's start out by sup posing that there are only two possibilities for a sentence: either it's true or else it's false.
+    Furthermore, let's suppose that no sentence can ever be both true and false.
+    (In a moment, we'll look at relaxing these assumptions, but it simplifies things to start out with them in place.)
+    This gives us two truth values.
+    I'll call them <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, but it doesn't really matter what we call them; we just need some names or other, and I'll use these.
+</html:p>
+        <html:p>     We will connect our language to these truth values in two stages.
+    The first stage involves just the atomic sentences of our language, and is characterised by <html:em>total freedom</html:em>.
+    For each atomic sentence, we choose one of the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> for it to have.
+    Any way of making such a choice for every atomic sentence is called a <html:em>valuation</html:em>.
+    So, for example, there is a valuation that assigns the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to every atomic sentence; and there is another valuation that assigns <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> to every atomic sentence.
+    There is a valuation that assigns <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> just to <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[r]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> to all the other atomic sentences.
+    And there are very many other valuations besides.
+</html:p>
+        <html:p>     Some notation: if we have a valuation named <fr:tex display="inline"><![CDATA[v]]></fr:tex>, then we can talk about the value it assigns to an atomic sentence <fr:tex display="inline"><![CDATA[p]]></fr:tex> by writing <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex>.
+    So if <fr:tex display="inline"><![CDATA[v]]></fr:tex> assigns the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>, then we can record this more efficiently by saying that <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {F}}]]></fr:tex>.
+    And if a different valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> assigns the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>, then we can record this by saying that <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {T}}]]></fr:tex>.
+</html:p>
+        <html:p>     When we work with these valuations, we're again bumping into infinity here, in two ways.
+    First, since we have infinitely many atomic sentences, each individual valuation is itself infinite; it must assign one or the other of <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> to <html:em>every one</html:em> of the infinitely many atomic sentences.
+    For this reason, while it's possible to fully specify a few example valuations, as I did two paragraphs ago, there are a lot of valuations out there that can't be fully specified at all, since they don't fit any kind of neat pattern.
+</html:p>
+        <html:p>     Second, not only is each valuation infinite, but there are <html:em>infinitely many</html:em> different valuations.
+    We're going to handle both of these sources of infinity in <fr:link href="/000K/" title="Infinity; or, more than about six" uri="https://www.my-great-forest.net/000K/" display-uri="000K" type="local">our usual blase way</fr:link>.
+    The second source we can ignore entirely; it just doesn't really matter for our purposes how many valuations there are.
+    The fact that there are so staggeringly many may be interesting, but isn't actually going to affect us at all.
+    The first, though, we'll need to make some provision for.
+    For the most part, this will be pretty subtle, and you won't need to lose any sleep over it, but I'll point it out here.
+</html:p>
+        <html:p>     In the course of an example, I might say something like "Take a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>".
+    What I want to note here is that this does not fully specify a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>.
+    A valuation must assign some value to <html:em>every</html:em> atomic sentence, and we're supposing a language with infinitely many.
+    Lots of different valuations will meet the above condition on <fr:tex display="inline"><![CDATA[v]]></fr:tex>.
+    What I'm saying when I put something forward like this is just to take <html:em>any</html:em> valuation that meets the specification.
+    The fact that lots of different valuations meet the specification is fine.
+</html:p>
+        <html:p>     So that's our first stage of connecting our language to the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>: we use valuations, which are ways of assigning these values to the atomic sentences of the language.
+    Absolutely any such way of assigning counts as a valuation, so there are lots of different valuations.
+    In our second stage, we move on to compound sentences, letting each valuation assign values to these as well.
+    Here, though, in contrast with the atomic sentences, there is <html:em>zero</html:em> freedom.
+    A valuation can assign any values at all to the atomic sentences, but once that assignment is made, that fully determines what value the valuation will assign to every compound sentence.
+</html:p>
+        <html:p>     This difference between atomic and compound sentences---total freedom for atomics, and total constraint for compounds---is the key to how we're going to put these valuations to use.
+    We need total freedom for the atomic sentences because, well, there's not much to them.
+    There's nothing about <fr:tex display="inline"><![CDATA[p]]></fr:tex> that means it should get the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+    It's just a structureless atom.
+    Like, we might in one application let <fr:tex display="inline"><![CDATA[p]]></fr:tex> represent the claim "Carl is a good dog"; in that case it's very definitely true.
+    But we might in another application let <fr:tex display="inline"><![CDATA[p]]></fr:tex> represent the claim "Hexing the moon is a good idea"; in that case it's probably false.
+    Or we might deal with applications that let <fr:tex display="inline"><![CDATA[p]]></fr:tex> represent a particular electronic component that can be on or off, with the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> standing for these two states.
+    So rather than prejudging anything, we consider every possible way of assigning values to the atomics.
+</html:p>
+        <html:p>     Compounds, on the other hand, give us something to work with: their main connective.
+    By choosing a scheme for determining the values of compounds based on the values of their components, we endow our connectives with a certain kind of meaning.
+    In other words, we're using valuations to give our <html:em>connectives</html:em> meanings, while leaving our atomic sentences fully unspecified.
+    Let's see how it works.
+</html:p>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/0036/</fr:uri>
+            <fr:display-uri>0036</fr:display-uri>
+            <fr:route>/0036/</fr:route>
+            <fr:title text="Boolean valuations: negation">Boolean valuations: negation</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>         The scheme we'll start with is a very standard one.
+        These valuations are often called `Boolean valuations', after the logicians George and Mary Everest Boole, although there are some small differences from the logical approach they developed.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0037/</fr:uri>
+                <fr:display-uri>0037</fr:display-uri>
+                <fr:route>/0037/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>George and Mary Everest Boole lived and wrote in England and Ireland in the 19th century, and Mary into the 20th as well.
+George is typically credited alone for the logical work he published, but I think it's worth noting that Mary was an author in her own right, their relationship was clearly an intellectual one, and George's most influential book, <html:em>The Laws of Thought</html:em>, was written during the time their relationship was beginning.
+So I think it's entirely likely that Mary had some influence on George's work, although how much and of what kind is something I could only speculate on.</html:p>
+                <html:p>         Incidentally, here's Mary Everest Boole's advice for students encountering infinity:</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>3</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/001B/</fr:uri>
+                    <fr:display-uri>001B</fr:display-uri>
+                    <fr:route>/001B/</fr:route>
+                    <fr:taxon>Quotation</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>"Angels, and square roots of negative quantities, and the other things that have no existence in three dimensions [she later explicitly includes infinity as an angel], do not come to us to gossip about themselves; or the place they came from; or where they are going to; or where we are going to in the far future. They are messengers from the As-Yet-Unknown; and come to tell us where we are to go next; and the shortest road to get there; and where we ought not to go just at present. 
+        When square root of minus one comes to you, behave reasonably about him. 
+        Treat him logically, exactly as if he were six or nine; only always remember to keep well in front of you <html:em>the fact of your own ignorance</html:em>. 
+        You may never find out any more about him than you know now; but if you treat him sensibly he will tell you plenty of truths about your <fr:tex display="inline"><![CDATA[x]]></fr:tex>s and <fr:tex display="inline"><![CDATA[y]]></fr:tex>s, and other unknown things".</html:p>
+                    <html:p>From Mary Everest Boole, <html:em>Philosophy and Fun of Algebra</html:em>, 1909.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>         And here's her advice for me (and maybe also for you):</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>20</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0038/</fr:uri>
+                    <fr:display-uri>0038</fr:display-uri>
+                    <fr:route>/0038/</fr:route>
+                    <fr:taxon>Quotation</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>"You may some day become a teacher. 
+        If ever you are teaching a class how to set down a sum or an equation, say 'This is my way', or 'This is the way which I think you will find most convenient', or 'This is the way in which the Government Inspector requires you to do the sums at present, and therefore you must learn it'. 
+        But do not take in vain the names of great unseen powers to back up either your own limitations, or your own authority, or the Inspector's authority. 
+        Never say, or imply, 'Arithmetic requires you to do this; your sum will come wrong if you do it differently'. 
+        Remember that arithmetic requires nothing from you except absolute honesty and patient work. You get no blessing from the Unseen Powers of Number by slipshod statements used to make your own path easy."
+</html:p>
+                    <html:p>From Mary Everest Boole, <html:em>Philosophy and Fun of Algebra</html:em>, 1909.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>This last one, I think, is of some importance when it comes to logic.
+Unfortunately, the world has no shortage of people who are tempted to say "<html:em>Logic</html:em> tells us..." and then they fill in something they're trying to convince you of.
+<html:strong>Don't fall for it.</html:strong>
+Logic is about carefulness, orientation to detail, and discerning what you do and don't have support for.
+It does not require you to believe or disbelieve <html:em>anything</html:em>.
+(Rant over.)
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>         To calculate the value that a compound sentence takes on a given valuation, we need to know two things: the main connective of the sentence, and the values that its components take on the valuation.
+        For Boolean valuations, here's how the dependence goes.
+        If we have a negation---that is, a sentence whose main connective is <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>---then that sentence takes the opposite value from its component.
+        So if we have a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> such that <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(\neg  p) = \mathsf {\mathbf {F}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[v(\neg \neg  p) = \mathsf {\mathbf {T}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[v(\neg \neg \neg  p) = \mathsf {\mathbf {F}}]]></fr:tex>, and so on.
+        I'll use a table like the following to record this:
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003J/</fr:uri>
+                <fr:display-uri>003J</fr:display-uri>
+                <fr:route>/003J/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[A]]></fr:tex></html:td>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p> This table tells you, for any value that a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> might have on a Boolean valuation, what value the sentence <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> must then have on that Boolean valuation.
+    To use the table, if you know the value that a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> has on a Boolean valuation, find the row in the table that displays that value in the "<fr:tex display="inline"><![CDATA[A]]></fr:tex>" column.
+    Then you can read the value that that same row has in the "<fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex>" column to see what value <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> must have.
+        Boolean negation is simple enough that you probably won't need this table for very long, or maybe not at all; but we'll look at other options in a moment, so it's good to be able to read a table like this.
+</html:p>
+            <html:p>         Why this table, rather than some other?
+        That is, why have we chosen to set things up so that negations always take the opposite value from their components, rather than, say, always the same value, or always <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>, or always <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>?
+        (Note that those are the only four options, given our setup.)
+        Those other options are all perfectly good options for a unary connective.
+        The reason we've gone with the one we have is that we want <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> to have something to do with <html:em>negation</html:em>, with the idea of something <html:em>not</html:em> being the case.
+        The truth-value-reversal idea we've gone with is one way to try to get at that.
+        In English, if I say that the moon is made of green cheese, then what I've said is false; and so if I say it's <html:em>not</html:em> made of green cheese, then what I've said is true.
+        The idea is to try to endow <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> with a meaning at least something like the meaning of "not"; and this particular table is one attempt to do that, probably the best choice we can make given our current limitations.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/0039/</fr:uri>
+            <fr:display-uri>0039</fr:display-uri>
+            <fr:route>/0039/</fr:route>
+            <fr:title text="Boolean valuations: conjunction">Boolean valuations: conjunction</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>         The same idea comes to the fore when we look at the remaining connectives in this language.
+        In each case, we'll choose how to deal with them based on their intended interpretation: <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> as something like "and"; <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> as something like "or"; <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex> as something like "implies" or "if...then"; and <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> as, well, we'll get to them in a minute.
+        We're working with a very simple and coarse-grained setup here, so the match might not be perfect.
+        But thinking about how "and" and "or" and "if...then" work can get us some way along the path to seeing what we're doing with these connectives, just like thinking about "not" can help with understanding <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>.
+        Here's how Boolean valuations deal with conjunctions: a conjunction <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on a given valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> exactly when <html:em>both</html:em> of its components <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> get value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on the valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>.
+        Otherwise, the conjunction <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+</html:p>
+            <html:p>         Why deal with conjunction this way?
+        Think, for example, about the claim "The moon is made of green cheese, and Carl is a good dog".
+        Is this claim true or false?
+        Well, "the moon is made of green cheese" is false, and "Carl is a good dog" is true.
+        So if someone said to us "the moon is made of green cheese and Carl is a good dog", then what they've said is false: the falsity of the first part undermines the whole claim.
+        They in effect said that both of these were true, and that's not so; so what they've said is false.
+        This is why, for <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>, we go with a setup that requires both components to be true on a valuation for the conjunction itself to be true on that valuation.
+        Just as with negation, we can record this information in a table:            
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003K/</fr:uri>
+                <fr:display-uri>003K</fr:display-uri>
+                <fr:route>/003K/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\land ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>Since this table is for a binary connective rather than a unary one, we read it slightly differently from the table for negation.
+Let's say you want to use this table to calculate <fr:tex display="inline"><![CDATA[w(p \land  q)]]></fr:tex> on some valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> where you know that <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {F}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {T}}]]></fr:tex>.
+        Use the left component of the conjunction to choose a row of the table, by finding the appropriate value along the left edge.
+        In this case, the left component is <fr:tex display="inline"><![CDATA[p]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {F}}]]></fr:tex>, so you choose the bottom row of the table.
+        Then, use the right component of the conjunction to choose a column of the table, by finding the appropriate value along the top edge.
+        In this case, the right component is <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {T}}]]></fr:tex>, so you choose the column headed by <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>.
+        By finding the entry where this row and column meet, you find the value your conjunction must take; in this case, this tells us that <fr:tex display="inline"><![CDATA[w(p \land  q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+        As with negation, you might find that you don't need the table for long, that it's enough to remember that both components must be true for the conjunction to be true.
+        But as with negation, we're going to see more complex alternatives in a moment, so it's good to be able to read these tables.
+</html:p>
+            <html:p>         The value of a negation or a conjunction, in a Boolean valuation, depends only on the values of its component(s).
+        This is so even when the components are themselves compound sentences.
+        So, for example, consider a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = v(q) = \mathsf {\mathbf {T}}]]></fr:tex>; you now know enough to calculate <fr:tex display="inline"><![CDATA[v(\neg (p \land  \neg  q))]]></fr:tex>.
+        Do it step by step: first <fr:tex display="inline"><![CDATA[v(\neg  q) = \mathsf {\mathbf {F}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(p \land  \neg  q) = \mathsf {\mathbf {F}}]]></fr:tex>, and finally <fr:tex display="inline"><![CDATA[v(\neg (p \land  \neg  q)) = \mathsf {\mathbf {T}}]]></fr:tex>.
+        So once you know the Boolean tables for each connective, you will be able to calculate the value of any formula on any Boolean valuation, no matter how complex the formula is, so long as you know the values of the atomic formulas it contains.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003A/</fr:uri>
+            <fr:display-uri>003A</fr:display-uri>
+            <fr:route>/003A/</fr:route>
+            <fr:title text="Boolean valuations: disjunction">Boolean valuations: disjunction</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>         For disjunction, Boolean valuations work the following way: they make a disjunction <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex> true exactly when they make <html:em>at least one</html:em> of the components <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> true.
+        To see why, think about "the moon is made of green cheese or Carl is a good dog".
+        Is this true or false?
+        This seems to be true: the truth of the second part is enough for the whole thing to be true.
+        So for disjunction, we want to be sure to pick a table that respects this.
+        The only way for a disjunction to be false, on this way of proceeding, is for both of its components to be false; any other combination makes the disjunction true.</html:p>
+            <html:p>Note in particular the connection between <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \lor  \mathsf {\mathbf {T}} = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link>.
+        Whenever I say "or" in these notes, I mean to include the possibility of both sides of the "or" being true.
+        And that's just what <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> does as well, on this scheme.
+        This is a case of life imitating art; what's happening here is that uses of the English word "or" among communities of logicians are strongly influenced by experiences with the connective <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>.
+</html:p>
+            <html:p>         Just as with conjunction, we can record this policy in a table:
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003L/</fr:uri>
+                <fr:display-uri>003L</fr:display-uri>
+                <fr:route>/003L/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\lor ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003B/</fr:uri>
+            <fr:display-uri>003B</fr:display-uri>
+            <fr:route>/003B/</fr:route>
+            <fr:title text="Boolean valuations: implication">Boolean valuations: implication</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>     This is the weird one.
+    I won't make excuses; Boolean implication is not a very good approximation of "if...then".
+    Don't lean too hard, then, on the understanding you already have of "if...then"; just roll with it.
+    Here's the table:
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003M/</fr:uri>
+                <fr:display-uri>003M</fr:display-uri>
+                <fr:route>/003M/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>    That is, <fr:tex display="inline"><![CDATA[v(p \rightarrow  q)]]></fr:tex> comes out to <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> in all cases except the one case where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+    It's relatively uncontroversial that <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> should be false when <fr:tex display="inline"><![CDATA[p]]></fr:tex> is true and <fr:tex display="inline"><![CDATA[q]]></fr:tex> is false; if <fr:tex display="inline"><![CDATA[p]]></fr:tex> really did imply <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and <fr:tex display="inline"><![CDATA[p]]></fr:tex> is true, then <fr:tex display="inline"><![CDATA[q]]></fr:tex> should be true as well, or at least so goes a pretty plausible line of reasoning.
+    So the upper-right corner of the table is pretty strongly supported.
+    But all of the other three entries can be (and have been) contested.
+</html:p>
+            <html:p>     Note that, given the above table, we have <fr:tex display="inline"><![CDATA[v(p \rightarrow  q) = v(\neg  p \lor  q)]]></fr:tex> for every Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>, no matter what <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex> are.
+    (Later this week, we'll pick up a word for that: <html:em>equivalence</html:em>.)
+    This might be the best way to see what's behind the table above: if <fr:tex display="inline"><![CDATA[p]]></fr:tex> implies <fr:tex display="inline"><![CDATA[q]]></fr:tex>, then we might think that either <fr:tex display="inline"><![CDATA[p]]></fr:tex> isn't the case or else it is, and if it is, then since it implies <fr:tex display="inline"><![CDATA[q]]></fr:tex> we can conclude that <fr:tex display="inline"><![CDATA[q]]></fr:tex> would be as well.
+    So if <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> is true, this might lead us to think that <fr:tex display="inline"><![CDATA[\neg  p \lor  q]]></fr:tex> should also be true.
+    Conversely, suppose that <fr:tex display="inline"><![CDATA[\neg  p \lor  q]]></fr:tex> is true.
+    Then what could we conclude if <fr:tex display="inline"><![CDATA[p]]></fr:tex> were to be true?
+    Well, since <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> can't both be true, it would imply that <fr:tex display="inline"><![CDATA[q]]></fr:tex> must be the true component of <fr:tex display="inline"><![CDATA[\neg  p \lor  q]]></fr:tex>.
+    That is, <fr:tex display="inline"><![CDATA[p]]></fr:tex> would imply <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+    There's a lot you could quarrel with in these lines of reasoning, but I think something like them is probably the best motivation for this table for implication.
+    Regardless, this is how Boolean implication works, and we'll work with it in this form.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003C/</fr:uri>
+                <fr:display-uri>003C</fr:display-uri>
+                <fr:route>/003C/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>There was, alas, an embarrassing moment, mainly from the 1950s to the 1990s or so, where a decent number of philosophers genuinely defended the idea that the Boolean implication is not just an approximation, but actually fully gives the truth conditions for English "if...then" statements.
+    To see that this doesn't work, here's an old facetious proof of the existence of God:</html:p>
+                <html:p>It's false to say that if there's a God, then the prayers of the wicked will be answered.
+    So, by the Boolean truth table, the antecedent of that "if...then" must be true; so there is a God.</html:p>
+                <html:p>Even theists should (and do) reject this line of reasoning; it's pretty obviously bad reasoning.
+    Embarrassments like this for the idea that English conditionals are Boolean implications can be multiplied more or less endlessly; the view is as refuted as anything ever gets.
+    But if you happen across certain philosophy from around that time period, you should be aware that many authors did in fact believe this, despite the obvious problems.
+</html:p>
+                <html:p>
+If you're interested in learning more about this, I recommend the book <fr:link href="/003D/" title="https://www.my-great-forest.net/003D/" uri="https://www.my-great-forest.net/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
+Note that this was written during the period in question!
+It's good fun, and it gives a particularly vitriolic (and particularly Australian) takedown of what was at the time practically an accepted orthodoxy. 
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003E/</fr:uri>
+            <fr:display-uri>003E</fr:display-uri>
+            <fr:route>/003E/</fr:route>
+            <fr:title text="Boolean valuations: verum and falsum">Boolean valuations: verum and falsum</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>     Finally, verum and falsum.
+    These don't really have great natural-language equivalents.
+    But the idea is pretty simple: <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> is meant to be like the truest possible thing, MAXIMUM TRUE; and <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is meant to be like the falsest possible thing, MAXIMUM FALSE.</html:p>
+            <html:p>What do we need to specify about these?
+    Well, like with any connective, we need to say how to determine a value for any sentence with <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> or <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> as its main connective, given values for all its components.
+    And: sentences with nullary connectives as their main connectives have <html:em>no</html:em> components; these sentences are just the connectives themselves.
+    </html:p>
+            <html:p>
+    So we need to give values for <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> and for <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> to take on every Boolean valuation.
+    Given their intended interpretations, the choice is clear.
+    For any Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> at all, we have <fr:tex display="inline"><![CDATA[v(\top ) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(\bot ) = \mathsf {\mathbf {F}}]]></fr:tex>.</html:p>
+            <html:p>For uniformity, we can put these in "tables":</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003I/</fr:uri>
+                <fr:display-uri>003I</fr:display-uri>
+                <fr:route>/003I/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\top ]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+                <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\bot ]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003F/</fr:uri>
+            <fr:display-uri>003F</fr:display-uri>
+            <fr:route>/003F/</fr:route>
+            <fr:title text="Boolean valuations: putting it all together">Boolean valuations: putting it all together</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>         For the language we're currently focused on, that's the whole story about Boolean valuations.
+        With the above tables, if you know what values a valuation gives to all the atomic sentences, you can calculate what values that valuation gives to every sentence in our language.
+        Of course, you usually <html:em>won't</html:em> know, of any particular valuation, what values it gives to all the atomic sentences, since that's infinite! 
+        But to calculate what a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> says about any particular sentence, it's enough to know what <fr:tex display="inline"><![CDATA[v]]></fr:tex> says about just the atomic sentences that actually occur in that sentence; and this is always finite.
+</html:p>
+            <html:p>         For example, consider any valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> such that <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {T}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {F}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(r) = \mathsf {\mathbf {T}}]]></fr:tex>, and suppose you want to know what <fr:tex display="inline"><![CDATA[w(p \land  \neg  (q \lor  r))]]></fr:tex> is.
+        By looking at the table for disjunction, you can see that <fr:tex display="inline"><![CDATA[w(q \lor  r)]]></fr:tex> must be <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>; then by looking at the table for negation, you can see that <fr:tex display="inline"><![CDATA[w(\neg  (q \lor  r))]]></fr:tex> must be <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>; and finally by looking at the table for conjunction you can conclude that <fr:tex display="inline"><![CDATA[w(p \land  \neg  (q \lor  r))]]></fr:tex> is <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+        By contrast, if we were thinking about a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(r) = \mathsf {\mathbf {F}}]]></fr:tex>, then we would find that <fr:tex display="inline"><![CDATA[v(p \land  \neg  (q \lor  r)) = \mathsf {\mathbf {T}}]]></fr:tex>.
+        (Make sure you think that one through, to see how I got the answer!)
+</html:p>
+            <html:p>         You now know enough to be able to do this for any sentence in our language.
+        It's a good idea to get some practice in; this is the topic of an exercise type on <fr:link href="https://binchicken.one/" type="external">https://binchicken.one</fr:link>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003G/</fr:uri>
+            <fr:display-uri>003G</fr:display-uri>
+            <fr:route>/003G/</fr:route>
+            <fr:title text="The Boolean structure">The Boolean structure</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>         Now I'm going to give you a slightly different way to think about what we've just gone over.
+        This way is conceptually a bit more out there, but I think it makes it easier to do the calculations, and eventually even makes it easier to consider other possibilities.
+        Don't worry too much if this section seems a bit much at first; but if it does, make sure you return here after you've had some more practice!
+        What's here will in fact make things easier, once you grok it.
+</html:p>
+            <html:p>         The conceptual move is this: we don't have to think about connectives as only acting within the language, forming compound sentences from their components.
+        It can help to think of connectives as living a double life, acting on truth values directly.
+        Rather than saying something like "for any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> and any valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>, if <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {T}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(\neg A) = \mathsf {\mathbf {F}}]]></fr:tex>", we can say the same thing much more simply by just reporting that <fr:tex display="inline"><![CDATA[\neg \mathsf {\mathbf {T}} = \mathsf {\mathbf {F}}]]></fr:tex>.
+        By saying this, we're <html:em>not</html:em> saying that <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> are sentences.
+        They're not.
+        They're still truth values, which are something else.
+        What we're doing is extending our connectives so that they have the ability to act on truth values too.
+        You can read all our earlier connective tables in this way.
+        So, for example, you can consult the disjunction table to see that <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \lor  \mathsf {\mathbf {F}} = \mathsf {\mathbf {T}}]]></fr:tex>, or that <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}} \lor  \mathsf {\mathbf {F}} = \mathsf {\mathbf {F}}]]></fr:tex>.
+</html:p>
+            <html:p>         Thinking this way brings at least two benefits: one practical and one conceptual.
+        Practically, I find it makes it easier to calculate the value a compound sentence should take on a valuation.
+        Think again about a valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> such that <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {T}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {F}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(r) = \mathsf {\mathbf {T}}]]></fr:tex>, and suppose you want to know what <fr:tex display="inline"><![CDATA[w(p \land  \neg  (q \lor  r))]]></fr:tex> is.
+        (This is one of the examples we just looked at.)
+        Now we can proceed as follows: since we know <fr:tex display="inline"><![CDATA[w(p), w(q),]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(r)]]></fr:tex>, we can dig into our compound sentence and <html:em>replace</html:em> those atomic sentences by the truth values they take on the valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex>.
+        This gives us <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \land  \neg  (\mathsf {\mathbf {F}} \lor  \mathsf {\mathbf {T}})]]></fr:tex>.
+        And now we can proceed step-by-step just as before:
+        <html:ul><html:li><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \land  \neg  (\mathsf {\mathbf {F}} \lor  \mathsf {\mathbf {T}})]]></fr:tex></html:li>
+            <html:li><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \land  \neg  \mathsf {\mathbf {T}}]]></fr:tex></html:li>
+            <html:li><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \land  \mathsf {\mathbf {F}}]]></fr:tex></html:li>
+            <html:li><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:li></html:ul>
+        This is just another way to arrive at the same answer, and we're doing the same things along the way.
+        The difference is that going this way gives you a useful notation for writing down <html:em>intermediate</html:em> results.
+        That can get really important; the more you try to hold in your head at once, the more likely you are to make a slip-up.
+        By having a simple notation for intermediate results, you can make it much easier to make it through an entire calculation correctly.
+</html:p>
+            <html:p>         If you want to see this in action, you can check out <fr:link href="https://negation.rocks/emu.html" type="external">https://negation.rocks/emu.html</fr:link>, which is another site I've made for logic practice.
+        (You don't log in to this one, so it's not any part of your assessment; it can be a handy source of practice nonetheless, though.)
+        If you head over there, you'll see that this is also the method I've used there to explain the correct answers for some exercises.
+        Just as having a good notation for intermediate results can be useful in arriving at the right answer, it's also useful for explaining how the correct answer was arrived at, and hopefully it will be useful for you to be able to zero in on the missteps you make as you practice.
+        (And of course you will make missteps!
+        That's how learning works.)
+</html:p>
+            <html:p>         So that's the practical benefit.
+        The conceptual benefit is this: it lets us package up everything we know about Boolean valuations into something called a <html:strong>structure</html:strong>.
+        A structure is a set of values, in this case <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, together with an account of how our connectives act on these values.
+    </html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003H/</fr:uri>
+                <fr:display-uri>003H</fr:display-uri>
+                <fr:route>/003H/</fr:route>
+                <fr:title text="Structure">Structure</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>structure</html:strong> for a language is a set of values, together with an account of how every connective in the language acts on those values.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>And given a structure, we can say what it takes to be a <html:strong>valuation</html:strong> in that structure:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003O/</fr:uri>
+                <fr:display-uri>003O</fr:display-uri>
+                <fr:route>/003O/</fr:route>
+                <fr:title text="Valuation">Valuation</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>valuation</html:strong> in a structure for a language is a function from sentences of the language to values in the structure, where the value of every compound sentence in the language is related to the values of its components in the way the structure indicates.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>(Note that since <html:em>any</html:em> such function is a valuation, that means that valuations are not restricted at all when it comes to the values they assign to atomic sentences.)</html:p>
+            <html:p>    This means that you can specify everything about how our Boolean valuations work just by putting down the tables we've already seen:
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003N/</fr:uri>
+                <fr:display-uri>003N</fr:display-uri>
+                <fr:route>/003N/</fr:route>
+                <fr:title text="The Boolean structure">The Boolean structure</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>21</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003J/</fr:uri>
+                    <fr:display-uri>003J</fr:display-uri>
+                    <fr:route>/003J/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[A]]></fr:tex></html:td>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>21</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003K/</fr:uri>
+                    <fr:display-uri>003K</fr:display-uri>
+                    <fr:route>/003K/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\land ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>21</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003L/</fr:uri>
+                    <fr:display-uri>003L</fr:display-uri>
+                    <fr:route>/003L/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\lor ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>21</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003M/</fr:uri>
+                    <fr:display-uri>003M</fr:display-uri>
+                    <fr:route>/003M/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>21</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003I/</fr:uri>
+                    <fr:display-uri>003I</fr:display-uri>
+                    <fr:route>/003I/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\top ]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+                    <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\bot ]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>         In giving a structure via tables like this, there's no need to separately specify the set of values, since you can read those off the edges of the tables.
+        By packaging everything up into a structure in this way, we make it easy to change from one structure to another, to think about different kinds of valuations we might want to draw on, beyond just Boolean ones.
+        In a moment, we'll look at a few other example structures, besides this Boolean one.
+        But first, I want to look a bit at some uses of Boolean valuations.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003P/</fr:uri>
+            <fr:display-uri>003P</fr:display-uri>
+            <fr:route>/003P/</fr:route>
+            <fr:title text="Uses of Boolean valuations: possible worlds">Uses of Boolean valuations: possible worlds</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>         One way Boolean valuations get put to use is as surrogates for <html:em>possible worlds</html:em>.
+        In certain areas of philosophy, talk of possible worlds is very common.
+        This began, as far as I know, as an attempt to explain what we mean by saying that some eventuality is possible.
+        To understand what we mean when we say that something is <html:em>possible</html:em>, some philosophers have proposed that this is the same as to say that it's <html:em>true somewhere</html:em>---just maybe somewhere else, at some <html:em>possible</html:em> world.
+        And to understand what we mean when we say that something is <html:em>necessary</html:em>, some philosophers have proposed that this is the same as to say that it's <html:em>true everywhere</html:em>---that is, at every possible world.
+        But even philosophers who don't accept this view as an analysis of possibility and necessity sometimes find it convenient to frame their views as involving possible worlds.
+</html:p>
+            <html:p>         Exactly what these possible worlds <html:em>are</html:em> is a topic that much exercises metaphysicians, and for our purposes is best left to one side.
+        Whatever possible worlds <html:em>are</html:em>, one thing they are often understood to <html:em>do</html:em> is to determine a truth value for every proposition, every claim about how things are.
+        Moreover, there are meant to be many different possible worlds, determining these truth values in many different ways.
+        These two features make them a lot like our valuations: every valuation fixes a truth value for every sentence in our language, and there are lots of different valuations, fixing these truth values in different ways.
+</html:p>
+            <html:p>         For this reason, these Boolean valuations are often brought in for study as surrogates for possible worlds.
+        This is particularly common among thinkers who actually believe, what we have only supposed, that every sentence really is either true or false, and no sentence is both---and moreover, who believe that this not only happens to be the case, but is necessary.
+        That view fits well with the two-valued setting Boolean valuations provide.</html:p>
+            <html:p>        These valuations are only surrogates, though and not the worlds themselves.
+ This is because possible worlds are meant to settle actual claims.
+        For example, <html:em>Ellie likes to dance</html:em> is true in the actual world, but not in some other possible worlds; but nothing in our toy logical language has to represent <html:em>Ellie likes to dance</html:em>.
+        We just have <fr:tex display="inline"><![CDATA[p]]></fr:tex>s and <fr:tex display="inline"><![CDATA[q]]></fr:tex>s and such, and their compounds, not any real claims.
+        Still, the analogy is close enough that it has sustained a lot of philosophical work on possible worlds.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003Q/</fr:uri>
+            <fr:display-uri>003Q</fr:display-uri>
+            <fr:route>/003Q/</fr:route>
+            <fr:title text="Uses of Boolean valuations: circuitry">Uses of Boolean valuations: circuitry</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>         Another way Boolean valuations get used is in understanding certain kinds of <html:em>electrical circuits</html:em>.
+        In particular, Boolean valuations are of most use for considering circuits where every component has only one of two states: on or off.
+        Consider, for example, a light installed in the ceiling that can be controlled from either of two switches.
+        Each switch has two possible states: on or off.
+        And the light has two possible states: on or off.
+        These states are related to each other in a somewhat complex way, and we can use our language, and Boolean valuations, to understand it.
+</html:p>
+            <html:p>         Let's understand the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> now, not as truth values at all, but instead as the states <html:em>on</html:em> and <html:em>off</html:em>, respectively; and let's understand our components---the two switches and the light---as sentences in our language.
+        Call one switch <fr:tex display="inline"><![CDATA[p]]></fr:tex> and the other switch <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+        Just as we have valuations that give us every possible combination of values for <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>, so too we can run around the room and set up every possible combination of states of the two switches.
+</html:p>
+            <html:p>         What sentence should we associate with the light? 
+        Well, how should the light respond to the switches?
+        We want to set things up so that, no matter what state things are currently in, and no matter which switch we're nearest to, we can always change the state of the light by changing the nearest switch.
+        A diagram might help here.
+        We have four possible states of the switches, which I'll call <fr:tex display="inline"><![CDATA[v_{1}]]></fr:tex>--<fr:tex display="inline"><![CDATA[v_{4}]]></fr:tex>, and we can move between these states as shown here:
+</html:p>
+            <fr:resource hash="f876a7b141306f00c5006d4b702eeff5">
+              <fr:resource-content>
+                <html:img src="/f876a7b141306f00c5006d4b702eeff5.svg" />
+              </fr:resource-content>
+              <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz}]]></fr:resource-source>
+              <fr:resource-source type="latex" part="body"><![CDATA[ 
+        \begin {tikzpicture}[auto]
+          \node  (v1) at (0,3) {$v_{1}$: $p$ off, $q$ off};
+          \node  (v2) at (5,3) {$v_{2}$: $p$ on, $q$ off};
+          \node  (v3) at (0,0) {$v_{3}$: $p$ off, $q$ on};
+          \node  (v4) at (5,0) {$v_{4}$: $p$ on, $q$ on};
+          \draw  (v1) to node {switch $p$} (v2);
+          \draw  (v2) to node {switch $q$} (v4);
+          \draw  (v1) to node {switch $q$} (v3);
+          \draw  (v3) to node {switch $p$} (v4);
+
+
+        \end {tikzpicture}
+        ]]></fr:resource-source>
+            </fr:resource>
+            <html:p>         We can think of these states as Boolean valuations on a language with the two atomic sentences <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+        For example, we'd have <fr:tex display="inline"><![CDATA[v_{2}(p) = \mathsf {\mathbf {T}}]]></fr:tex>, since switch <fr:tex display="inline"><![CDATA[p]]></fr:tex> is on in state <fr:tex display="inline"><![CDATA[v_{2}]]></fr:tex>; and <fr:tex display="inline"><![CDATA[v_{2}(q) = \mathsf {\mathbf {F}}]]></fr:tex>, since switch <fr:tex display="inline"><![CDATA[q]]></fr:tex> is off there.
+</html:p>
+            <html:p>         We want to wire up a light now so that, whichever one of these states we happen to be in, flipping <fr:tex display="inline"><![CDATA[p]]></fr:tex> will change whether the light is on or off, <html:em>and</html:em> so that, whichever one of these states we happen to be in, flipping <fr:tex display="inline"><![CDATA[q]]></fr:tex> will also change whether the light is on or off.
+        That is, we want the light either to be on in states <fr:tex display="inline"><![CDATA[v_{1}, v_{4}]]></fr:tex> and off in states <fr:tex display="inline"><![CDATA[v_{2}, v_{3}]]></fr:tex>, or vice versa.
+        Can we build a sentence, then, using the atomic sentences <fr:tex display="inline"><![CDATA[p, q]]></fr:tex> and our connectives <fr:tex display="inline"><![CDATA[\land , \lor , \neg ]]></fr:tex>, that works like this?
+        If we can, the structure of such a sentence will tell us how to wire up the light.
+        (That is, it will tell us how to wire up the light if we have electrical components that correspond to the connectives <fr:tex display="inline"><![CDATA[\land , \lor ]]></fr:tex>, and <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>!
+        Such components are standardly called AND, OR, and NOT gates, respectively.)
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003R/</fr:uri>
+                <fr:display-uri>003R</fr:display-uri>
+                <fr:route>/003R/</fr:route>
+                <fr:taxon>Check your understanding</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter><html:p>Can you find such a sentence?</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>21</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:p>         In fact, there are infinitely many sentences that would work here (although there are also infinitely many that don't work!).
+        Consider, for example, the sentence <fr:tex display="inline"><![CDATA[(p \lor  q) \land  \neg  (p \land  q)]]></fr:tex>.
+        If you do your Boolean calculations out, you will see that this sentence takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on valuations <fr:tex display="inline"><![CDATA[v_{2}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v_{3}]]></fr:tex>, and takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> on valuations <fr:tex display="inline"><![CDATA[v_{1}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v_{4}]]></fr:tex>; that makes it an example of what we're looking for.
+        But there are infinitely many other sentences that work equally well here; it's great if you came up with a different one!
+</html:p>
+
+</fr:mainmatter></fr:tree></fr:mainmatter>
+            </fr:tree>
+            <html:p>         If you've ever made even a small redstone device in Minecraft, you've almost certainly made use of Boolean valuations in this way; redstone torches are the component corresponding to <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>, and just running two lines of redstone together corresponds to <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>.</html:p>
+            <html:p>There is no simple block in Minecraft that calculates <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>; instead, there are various ways to combine <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> that produce the same results.
+        For example, consider the two sentences <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg (\neg  p \lor  \neg  q)]]></fr:tex>.
+        By checking all the possible values <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> can take, you can see that these two compound sentences have the same value as each other in every valuation.
+        So even if you don't have a component that calculates <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> directly, so long as you have components for <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>, you can get the job done.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003S/</fr:uri>
+                <fr:display-uri>003S</fr:display-uri>
+                <fr:route>/003S/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>However, Minecraft redstone, like real wiring, is way more complex than this!
+        Only some Minecraft devices are on/off the way Boolean valuations are.
+        Basically anything involving a comparator, you'd want to be thinking in terms of a sixteen-valued logic, not a two-valued logic.
+        (For an introduction to this sixteen-valued logic, you can see <fr:link href="https://www.youtube.com/watch?v=2PspFj8sS8I" type="external">this talk by the logician Roy Cook</fr:link>.)
+        Concerns about timing and spatial arrangement, which are central to redstone (and real!) wiring, are also not captured by Boolean valuations.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>         And the flash memory in your phone is almost certainly what's known as NAND flash memory, because it's based on a circuit that calculates something known as NAND.
+        NAND is another binary connective, one we won't be taking much of a look at this semester.
+        But it too can be built from what we do have: <fr:tex display="inline"><![CDATA[p]]></fr:tex> NAND <fr:tex display="inline"><![CDATA[q]]></fr:tex> always has the same value as <fr:tex display="inline"><![CDATA[\neg  (p \land  q)]]></fr:tex>.
+        Indeed, this is why it's called "NAND"; the name comes from "not-and".
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003T/</fr:uri>
+                <fr:display-uri>003T</fr:display-uri>
+                <fr:route>/003T/</fr:route>
+                <fr:title text="Zeroes and ones">Zeroes and ones</fr:title>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>You might have heard that computers, at their most basic level, deal only with zeroes and ones.
+Taken literally, this is just plain not true.
+But you're now in a position to understand the thing that <html:em>is</html:em> true that explains why people say this.</html:p>
+                <html:p>An electrical conductor can carry varying amounts of <html:em>electric potential</html:em> (this is the thing that's measured in volts).
+In most computers, however, the conductors that carry and hold information are not treated in a way that varies smoothly; they are kept either at a high voltage or at a low voltage.
+<html:em>That's</html:em> what computers deal with at a basic level: high voltage and low voltage.</html:p>
+                <html:p>It's conventional to represent that high voltage with the number 1 and the low voltage with the number 0 for <html:em>human readability</html:em>.
+So it's not that computers use lots of zeroes and ones; it's that <html:em>we</html:em> use lots of zeroes and ones to represent differing voltage levels.
+Computers use these differing voltage levels.</html:p>
+                <html:p>But why zero and one? Why not the actual voltage measurements, or the symbols <fr:tex display="inline"><![CDATA[L]]></fr:tex> and <fr:tex display="inline"><![CDATA[H]]></fr:tex>, or anything else?
+The answer goes back (again) to the Booles.</html:p>
+                <html:p>In <html:em>The Laws of Thought</html:em>, George Boole draws a connection between conjunction between properties and <html:em>multiplication</html:em> on numbers.
+But he notices a disanalogy: for most numbers <fr:tex display="inline"><![CDATA[n]]></fr:tex>, we do not have <fr:tex display="inline"><![CDATA[n \times  n = n]]></fr:tex>.
+However, for any property <fr:tex display="inline"><![CDATA[P]]></fr:tex>, being <fr:tex display="inline"><![CDATA[P]]></fr:tex> <html:em>and</html:em> <fr:tex display="inline"><![CDATA[P]]></fr:tex> is the same (so Boole says) as being <fr:tex display="inline"><![CDATA[P]]></fr:tex>.
+This might seem to threaten the analogy between conjunction and multiplication---but Boole pulls a tricky turn.
+</html:p>
+                <html:p>Note that we <fr:tex display="inline"><![CDATA[do]]></fr:tex> have <fr:tex display="inline"><![CDATA[n \times  n = n]]></fr:tex> in the special cases where <fr:tex display="inline"><![CDATA[n]]></fr:tex> is either zero or one.
+So Boole says that properties behave not like just any numbers, but like the numbers zero and one in particular, because these are the numbers that are their own squares.
+As far as I can tell, this is the origin of the zero/one notation that we still see today.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003D/</fr:uri>
+            <fr:display-uri>003D</fr:display-uri>
+            <fr:route>/003D/</fr:route>
+            <fr:taxon>Reference</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p><html:em>Relevant Logics and their Rivals, vol. 1</html:em> (1982). Richard Routley, Val Plumwood, Robert K. Meyer, Ross T. Brady. Ridgeview Publishing.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>11</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/0004/</fr:uri>
+            <fr:display-uri>0004</fr:display-uri>
+            <fr:route>/0004/</fr:route>
+            <fr:title text="Table of Contents">Table of Contents</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:ul><html:li><fr:link href="/0002/" title="About this unit" uri="https://www.my-great-forest.net/0002/" display-uri="0002" type="local">About this unit</fr:link></html:li>
+  <html:li>Section A: Preliminaries
+  <html:ul><html:li><fr:link href="/0005/" title="Lecture 1: Introduction and languages" uri="https://www.my-great-forest.net/0005/" display-uri="0005" type="local">Lecture 1: Introduction and languages</fr:link></html:li>
+    <html:li><fr:link href="/0011/" title="Lecture 2: Functions and substitutions" uri="https://www.my-great-forest.net/0011/" display-uri="0011" type="local">Lecture 2: Functions and substitutions</fr:link></html:li>
+    <html:li><fr:link href="/002H/" title="Lecture 3: Sets, arguments, and logics" uri="https://www.my-great-forest.net/002H/" display-uri="002H" type="local">Lecture 3: Sets, arguments, and logics</fr:link></html:li></html:ul></html:li>
+  <html:li>Section B: Structures and matrices
+  <html:ul><html:li><fr:link href="/0034/" title="Lecture 4: Structures" uri="https://www.my-great-forest.net/0034/" display-uri="0034" type="local">Lecture 4: Structures</fr:link></html:li>
+    <html:li>[Lecture 5: Matrices and counterexamples]</html:li>
+    <html:li>[Lecture 6: Using matrices to compare logics]</html:li>
+    <html:li>[Lecture 7: The limits of matrices]</html:li></html:ul></html:li>
+  <html:li>Section C: Exploring intuitionistic logic
+  <html:ul><html:li>Lecture 8: Natural deduction</html:li>
+    <html:li>Lecture 9: Intuitionistic logic</html:li>
+    <html:li>Lecture 10: Intuitionistic models</html:li>
+    <html:li>Lecture 11: Harmony</html:li></html:ul></html:li>
+  <html:li>[Lecture 12: further directions]</html:li></html:ul>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>1</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/0005/</fr:uri>
+            <fr:display-uri>0005</fr:display-uri>
+            <fr:route>/0005/</fr:route>
+            <fr:title text="Lecture 1: Introduction and languages">Lecture 1: Introduction and languages</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0006/</fr:uri>
+                <fr:display-uri>0006</fr:display-uri>
+                <fr:route>/0006/</fr:route>
+                <fr:title text="Introduction">Introduction</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Welcome to symbolic logic class!
+I bet I'm going to have a fun semester in here, and I hope you do too.
+</html:p>
+                <html:p>
+To start out, you might expect me to tell you what logic is.
+       But I've been a logician for a while now, and I don't know the answer to that, so that's not how I'm going to start out.
+       I can tell you, though, that logic is <html:em>abstract</html:em> and requires <html:em>close attention to detail</html:em>; that will help you start to get the vibe.
+</html:p>
+                <html:p>    We're going to spend the semester looking at some things that logicians do.
+    These things might be hard to see at first.
+    They're pretty mathsy, but there are no numbers.
+    They have something to do with the languages we speak, but only indirectly.
+    A ton of logic is done by philosophers, but it's then put to use in places like electrical engineering and computer science, where philosophy isn't typically applied.
+    One thing is for sure: there's a lot of weird symbols.
+    (Hence <html:em>symbolic</html:em> logic.)
+</html:p>
+                <html:p>    The reason we're going to use lots of weird symbols is the same reason logic turns out to be useful in lots of different endeavours: because of how <html:em>abstract</html:em> it is.
+    It turns out, for example, that views held by some philosophers thinking deeply about the nature of truth map exactly on to microscopic structures in the flash storage in your phone.
+    This semester, we won't be thinking too deeply (other than recreationally) about either the nature of truth or about how flash storage works---but we will see and study closely what they have in common.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors />
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/000A/</fr:uri>
+                    <fr:display-uri>000A</fr:display-uri>
+                    <fr:route>/000A/</fr:route>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+Throughout these lectures, I'll include a number of side notes like this one, marked "Side note".
+These are not essential to understanding the core of the unit, but they might be of interest.
+(Of course, they might not!)
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors />
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0009/</fr:uri>
+                    <fr:display-uri>0009</fr:display-uri>
+                    <fr:route>/0009/</fr:route>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>    The word "logic" gets used in a lot of different ways.
+    Sometimes, it's associated with a certain style of debate, involving DESTROYING an opponent with FACTS and LOGIC.
+    That's got nothing to do with what logicians actually do.
+    Our work this semester is constructive, not destructive; doesn't involve opponents at all; and centers delicate and precise reasoning, not cheap dunks.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>    Working at an abstract level means that what we do can at the same time be <html:em>shallow</html:em> and <html:em>widely applicable</html:em>.
+    By lifting ourselves out of the details of individual topics, we lose a lot of important sensitivity to the way those topics work. 
+    </html:p>
+                <html:p>
+    At the same time, it helps us think thoughts that turn out to be useful in surprisingly diverse ways, and to find patterns in one area that recur in another area, even when those areas don't seem related.
+    Most of the time, then, we're going to be operating at too abstract a level to be guided by ordinary intuitions.
+    And without the details of individual applications to keep us honest, we won't be able to say things like "oh, you know what I mean".
+</html:p>
+                <html:p>
+    That's why close attention to detail becomes so important; it's all we'll really have to hang on to.
+    You <html:em>do</html:em> develop logical intuitions over time, through practice and exposure.
+    But that can take years, and has to kind of happen on its own.
+    In this class, then, instead of intuition, we'll be focusing on doing things explicitly, carefully, and deliberately.
+</html:p>
+                <html:p>    The kinds of activities we'll be looking at and doing this semester have a history: they really kicked off in the mid to late 19th century in Europe and the US, among some philosophers and mathematicians.
+    Between then and now, these activities have turned out to be central to one of the most important developments of the 20th century: computers.
+    Logic is directly involved in both the hardware and the software of all computers; it was instrumental in their invention, has been a constant companion in their development, and today guides the development of a wide range of computer systems.
+    As computers have come to take a central place in our societies, then, so too has logic.
+</html:p>
+                <html:p>    Logic is certainly not limited to applications involving computers, though.
+    (For example, it's still a central part of philosophy, where it is rarely connected to computers at all.)
+    Nowadays, you can find logic all over the world, and you can find logicians working in philosophy, mathematics, linguistics, computer science, electrical engineering, artificial intelligence, cognitive science, psychology, and elsewhere.
+    Logic also tends to be done in relatively identifiable geographic styles: there's identifiable Dutch logic and Brazilian logic and Australian logic, among others.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0008/</fr:uri>
+                    <fr:display-uri>0008</fr:display-uri>
+                    <fr:route>/0008/</fr:route>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>I'm originally from the US, and I was educated there.
+    But I had the good fortune to encounter the Australian tradition early on in my logical life (thanks to a professor who had spent years working in Australia).
+    It's this Australian logical tradition that brought me to Australia in the first place.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/000B/</fr:uri>
+                    <fr:display-uri>000B</fr:display-uri>
+                    <fr:route>/000B/</fr:route>
+                    <fr:title text="Enough sales pitch already; what are we going to do?">Enough sales pitch already; what are we going to <html:em>do</html:em>?</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        Mainly we're going to focus on a few different ways to think about information, meaning, content, that kind of thing.
+        When we think about meaning, it's often useful to distinguish the <html:em>thing that carries meaning</html:em> from the <html:em>meaning itself</html:em>.
+        Lots of different things carry meaning: pictures, sounds, sentences, books, social media posts, this very lecture, and so on.
+        We're going to work with vehicles for meaning that are <html:em>abstract</html:em> and <html:em>symbolic</html:em>.
+        These vehicles will be introduced presently; they make up what we'll call our <html:em>languages</html:em>.
+</html:p>
+                    <html:p>        The languages give us vehicles for meaning, but they don't on their own have any meaning; they're just empty carriers.
+        Over the course of the semester, we'll look at two different ways logicians study for giving meaning to these languages.
+        One way involves thinking about connecting the languages to something outside of themselves, things like truth values, propositions, possible worlds, or states of an electric wire.
+        We'll call this way <html:em>model-theoretic</html:em>.
+        The other way involves thinking about interconnections <html:em>within</html:em> a language, rather than connections to something else.
+        We'll call this way <html:em>proof-theoretic</html:em>.
+        The two approaches are complementary, and once we have them both on the table, we'll move back and forth between them and look at some important ways they're connected.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/000C/</fr:uri>
+                    <fr:display-uri>000C</fr:display-uri>
+                    <fr:route>/000C/</fr:route>
+                    <fr:title text="Logicians' weird habits">Logicians' weird habits</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        There are a few logicians' habits you should know about, to be able to make the most of these lectures and our conversations.
+        These are habits of expression that are completely standard among logicians, but can throw you off if you're not used to them.
+        I'm flagging these habits here so that you can be ready. 
+        I'll try to remember to flag them as well where I use them, but these are so ingrained in me by now that it's entirely likely I won't notice some.
+</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors />
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000D/</fr:uri>
+                        <fr:display-uri>000D</fr:display-uri>
+                        <fr:route>/000D/</fr:route>
+                        <fr:taxon>Side note</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>If you notice some that I haven't flagged, let me know!
+        That way, I can correct the lectures.
+        The same goes for any typos or errors of any sort, or recommendations in general.
+        These lectures get revised every time the unit runs; they've improved a lot (to their present ok-but-not-exactly-gonna-change-the-world state) as a result of past students' input.
+        I really appreciate their input, and I'll really appreciate yours!</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000E/</fr:uri>
+                        <fr:display-uri>000E</fr:display-uri>
+                        <fr:route>/000E/</fr:route>
+                        <fr:title text="Logicians' Weird Habit 1">Logicians' Weird Habit 1</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>
+             Whenever I say something like "BLAH or SUCH-AND-SUCH", I always mean to <html:em>include</html:em> the case where both BLAH and SUCH-AND-SUCH happen.
+            I won't bother with any extra qualification like "or both", or anything like that.
+            You can always take for granted that I mean to include the both case.
+            So, for example, I'd be perfectly happy to say: "Melbourne is in Victoria or Mercury is the closest planet to the Sun".
+            Both of these are true, so my "or" claim is all good.
+
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000F/</fr:uri>
+                        <fr:display-uri>000F</fr:display-uri>
+                        <fr:route>/000F/</fr:route>
+                        <fr:title text="Logicians' Weird Habit 2">Logicians' Weird Habit 2</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>
+
+            This is the weirder one.
+            Whenever I say something like "Every BLAH is a SUCH-AND-SUCH", I always mean to <html:em>include</html:em> the case where there are no BLAHs at all.
+            Again, I won"t bother with any special qualifications; you can always take this for granted.
+            So, for example, I"m perfectly happy to say: "All unicorns breathe fire".
+            Since there are no unicorns, my "all" claim is all good.
+
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>
+        For both of these, there's a case to be made that what I'm doing is out of step with what "or" or "all" mean in English (Note the use of <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">Habit 1</fr:link> there!), and there's a case to be made that it isn't.
+        But for our purposes, it's not important to settle that question.
+        What <html:em>is</html:em> important is that you see precisely what I mean when I say "or" or "all", and keeping these logicians' habits in mind is key for that.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000G/</fr:uri>
+                <fr:display-uri>000G</fr:display-uri>
+                <fr:route>/000G/</fr:route>
+                <fr:title text="Languages">Languages</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>    Just about everything we're going to do (maybe actually everything!) will involve what we call <html:em>languages</html:em>.
+    Our languages will be relatively simple, though; we won't look at anything as complex as a language like English.
+    We won't even come close to that degree of complexity!
+</html:p>
+                <html:p>
+    The languages we use instead have been built by logicians to be particularly suited for doing logic.
+    That way, we can practice (and develop) logical techniques and approaches in a simple and controlled setting, without having to worry about the complications of real-world languages.
+    (Also, it means that what we do can be applied to things that might not at first seem particuarly languagey.)
+</html:p>
+                <html:p> We will have a <fr:link href="/000H/" title="The standard language" uri="https://www.my-great-forest.net/000H/" display-uri="000H" type="local">standard language</fr:link> that will be our main language for the semester, but we will sometimes think about other languages, too. 
+Each language we work with will have some set of building blocks to start with, and some methods for composing larger units out of smaller ones.
+    The languages will differ from each other in terms of what the building blocks are, and what methods for putting things together they have.
+    Whatever we can put together from these ingredients in a given language we'll call the <html:em>sentences</html:em> or <html:em>formulas</html:em> of the language.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors />
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/000I/</fr:uri>
+                    <fr:display-uri>000I</fr:display-uri>
+                    <fr:route>/000I/</fr:route>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+       In some areas of logic, there is an important difference between "sentences" and "formulas"; "formula" is the more general word, with "sentences" needing to meet more restrictions.
+       We won't worry about that at all in this unit; the distinction won't come up for any system we look at, so we can treat these words as synonyms.
+       But do note that if you read other material on logic (or if you have in the past), these words are very much <html:em>not</html:em> synonyms in general!
+</html:p>
+                    <html:p>       This also shows one of the things I'll do with these side notes.
+       Students in this class come from a very wide range of backgrounds; many of you have never dealt with logic before at all, but some of you have seen some logic before.
+       One of my goals is to keep the class accessible to people with no logic experience, but still to allow for people who have seen some logic to draw connections between this class and what they've already seen.
+       So there will be a fair few notes like this one about "sentences" and "formulas": off the main track and completely ignoreable, but intended to give a bit more context to people who may have encountered logic in some other situation.
+       (If you continue your study in logic, I hope that these notes might also help you draw connections between what you're learning now and what you learn in the future!)
+       </html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>
+       You can think of these languages as playing the same kind of role for logicians that model organisms like <html:em>E. coli</html:em> or <html:em>Drosophila melanogaster</html:em> (fruit flies) play for biologists: they're simple and easy to study, and have become standardised among researchers for this reason.
+       We hope, of course, that what we learn about such simple things contains lessons for more complex things as well---but one thing at a time.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/000J/</fr:uri>
+                    <fr:display-uri>000J</fr:display-uri>
+                    <fr:route>/000J/</fr:route>
+                    <fr:title text="Atomic formulas">Atomic formulas</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        The basic building blocks of each language are called its <html:em>atomic formulas</html:em>.
+        They could be anything at all; we'll use the letters <fr:tex display="inline"><![CDATA[p, q, r, \ldots ]]></fr:tex> for them.
+        Why do we start at <fr:tex display="inline"><![CDATA[p]]></fr:tex>?
+        I dunno!
+        My best guess is that it stands for "proposition", but that's really just a guess.
+        It's very standard nowadays, but I don't know how far back it goes.
+        (Feel free to let me know, if you know!)
+</html:p>
+                    <html:p>        "Atom" comes from ancient Greek for "not divisible", and that's how we're going to use these formulas.
+        Each of them counts as a full formula in its own right, and as far as we're concerned there's no internal structure: no subject, no predicate, no copula, etc.
+        Each atomic formula is totally structureless: just <fr:tex display="inline"><![CDATA[p]]></fr:tex>, or just <fr:tex display="inline"><![CDATA[q]]></fr:tex>, or cetera.
+</html:p>
+                    <html:p>        To specify a language, part of what we need to do is say what its atomic formulas are.
+        One language might have just the single atomic formula <fr:tex display="inline"><![CDATA[p]]></fr:tex>; another might have just the three atomic formulas <fr:tex display="inline"><![CDATA[p, q, r]]></fr:tex>; another might have seventeen atomic formulas; another might have infinitely many; and another might have none at all.
+        However many atomic formulas a language has, though, all of these atomic formulas count as formulas of the language.
+        There can be other formulas too, but the atomic formulas of a language are its starting point for formulas.</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000K/</fr:uri>
+                        <fr:display-uri>000K</fr:display-uri>
+                        <fr:route>/000K/</fr:route>
+                        <fr:title text="Infinity; or, more than about six">Infinity; or, more than about six</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>            The last paragraph gave us our first brush with infinity.
+            I allowed there that some languages might start from <html:em>infinitely many</html:em> atomic sentences.
+            In fact, almost all of the logical languages that people actually use, and most of the ones we'll use this semester, do start from infintely many atomic sentences.
+</html:p>
+                        <html:p>
+            Infinite collections will accompany us throughout the semester, so it's good to get used to them.
+            The idea of infinity can seem a bit weird at first, but that's mostly just because it's unfamiliar.
+            We won't need to do anything fancy with infinity; we just need to be aware that it's there.
+</html:p>
+                        <html:p>            Most of the techniques we use to deal with infinite collections are the very same techniques we'd use to deal with finite collections that are very big.
+            For example, if we think about a language with infinitely many atomic sentences, there might seem to be an immediate problem: we can't list them all!
+            But that's not really an issue of infinity.
+            After all, if we just had a language with, say, <fr:tex display="inline"><![CDATA[10^{100}]]></fr:tex> atomic sentences, that would be a finite collection, but we still couldn't list them all.
+            That's more atomic sentences than there are particles in the observable universe, more atomic sentences than seconds since the Big Bang, etc.
+            It's a <html:em>really</html:em> big number!
+</html:p>
+                        <html:p>
+            And since we're using lowercase letters for our atomic sentences, we start to run into trouble much lower indeed: what if we have just 27 atomic sentences?
+            Even if we wrap around the alphabet from <fr:tex display="inline"><![CDATA[z]]></fr:tex> to <fr:tex display="inline"><![CDATA[a]]></fr:tex>, we run out after 26.
+            Worst of all, I'm lazy and easily distracted, so I wouldn't ever want to have to list more than like seven or eight things at most.
+</html:p>
+                        <html:p>            There are lots of different methods we can use to handle infinities, but we're going to use the best and most standard method: <html:em>not worrying about it</html:em>.
+            As it happens, when we're doing exercises or looking at examples, we'll never need to actually make use of more than five or six atomic sentences at once, and rarely even that many.
+            More than that and it mainly just gets too unmanageable.
+            So in these notes, I'll just always work with at most <fr:tex display="inline"><![CDATA[p, q, r, s, t, u]]></fr:tex>, and that will be enough, for all the examples and exercises we need.
+            Really just <fr:tex display="inline"><![CDATA[p, q, r]]></fr:tex> are usually plenty.
+            When a language has more atomic sentences than this, it's enough for us to just <html:em>know that they're there</html:em>; we don't actually need to have a separate symbol for each individual one.
+</html:p>
+                        <html:p>            So once we're working in a language with more than six or so atomic sentences, we won't ever bother listing them all.
+            And that means that having infinitely many atomic sentences doesn't cause any special problems.
+            We can't list them all, but we're never going to try, so no problem.
+            It's enough to know that they're there.
+            This method---the method of not worrying about it---will be the key method we use for handling infinite collections throughout the semester.
+            This is probably the same method you've used to understand the infinity of counting numbers for most of your life.
+            The kinds of infinity we'll deal with in here are pretty manageable like this.
+</html:p>
+                        <html:p>            You might wonder why we use infinite collections at all, if we're not going to think very hard about the fact that they're infinite.
+            For our atomic sentences, there's no real reason; we could get by just fine for most of our purposes with finitely many.
+            But in other contexts, infinity will just naturally arise on its own, so we need to be prepared.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/000L/</fr:uri>
+                    <fr:display-uri>000L</fr:display-uri>
+                    <fr:route>/000L/</fr:route>
+                    <fr:title text="Putting more complex sentences together">Putting more complex sentences together</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        Besides the atomic sentences, the other thing we need to specify to give a language is how more complex sentences can be put together out of simpler ones.
+        Each way of combining sentences takes a certain fixed number of component sentences, and produces a combination of them.
+        We'll also associate different symbols with different ways of combining sentences.
+        These symbols, and the ways of combining they're associated with, are called <html:em>connectives</html:em>.
+        To specify a language in full, we give a collection of atomic sentences and a collection of connectives.
+</html:p>
+                    <html:p>        One connective we'll use a lot this semester is <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>; we'll always use this symbol for a connective that combines <html:em>two</html:em> components.
+        Because it combines two components, it's called a <html:em>binary</html:em> connective.
+        For now, it's got no special meaning; it's just a symbol.
+        (We're saying <html:em>which things are sentences</html:em>, not yet saying anything about what those sentences mean.)
+        I'll pronounce this symbol "and" and call it "conjunction", which gives some foreshadowing of what we're going to use it for.
+</html:p>
+                    <html:p>        Let's consider a simple language, then, that has just the two atomic sentences <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and the single binary connective <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>.
+        The sentences of this language are everything we can make from these ingredients.
+        At first, that might not seem like much: we've got <fr:tex display="inline"><![CDATA[p]]></fr:tex>, we've got <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and we've got the sentence that uses <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine <fr:tex display="inline"><![CDATA[p]]></fr:tex> with <fr:tex display="inline"><![CDATA[q]]></fr:tex>, which we write <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>.
+        In fact, though, there's a lot more than this.
+</html:p>
+                    <html:p>        First, <html:em>order matters</html:em> for binary connectives.
+        So in addition to <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>, we also have the different sentence <fr:tex display="inline"><![CDATA[q \land  p]]></fr:tex>.
+        Second, <html:em>we can reuse</html:em> atomic sentences; we can have as many <fr:tex display="inline"><![CDATA[p]]></fr:tex>s and as many <fr:tex display="inline"><![CDATA[q]]></fr:tex>s as we want.
+        So we also have the sentences <fr:tex display="inline"><![CDATA[p \land  p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \land  q]]></fr:tex>.
+</html:p>
+                    <html:p>
+        But most importantly, connectives can build on <html:em>any</html:em> sentence in the language.
+        So since we have the sentences <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \land  p]]></fr:tex>, we also have the sentence that <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> builds from these two (in that order), which we write <fr:tex display="inline"><![CDATA[p \land  (q \land  p)]]></fr:tex>.
+        And since we have the sentences <fr:tex display="inline"><![CDATA[p \land  p]]></fr:tex> and <fr:tex display="inline"><![CDATA[p \land  (q \land  p)]]></fr:tex>, we also have the sentence that <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> builds from these two (in that order), which we write <fr:tex display="inline"><![CDATA[(p \land  p) \land  (p \land  (q \land  p))]]></fr:tex>.
+        And so on.
+</html:p>
+                    <html:p>        You can see why it was important for us to be ready for infinite collections!
+        Even with just two atomic sentences and just this one binary connective, this language has infinitely many sentences in it.
+        This is because we can use <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine any two sentences (in either order), including sentences that we've already produced using <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> itself, and so the process of building sentences can go on forever.
+</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000M/</fr:uri>
+                        <fr:display-uri>000M</fr:display-uri>
+                        <fr:route>/000M/</fr:route>
+                        <fr:title text="Parentheses">Parentheses</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>            You probably noticed that I've used parentheses above in giving sentences like <fr:tex display="inline"><![CDATA[p \land  (q \land  p)]]></fr:tex>.
+            This is really important.
+            The connective <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> is <html:em>binary</html:em>: it needs exactly <html:em>two</html:em> sentences to put together.
+            So something like "<fr:tex display="inline"><![CDATA[p \land  q \land  p]]></fr:tex>" doesn't pick out a sentence at all, since it doesn't give us two components to combine via ${\land }.
+            The sentence <fr:tex display="inline"><![CDATA[p \land  (q \land  p)]]></fr:tex>, on the other hand, is fine, since it uses <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine the two sentences <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \land  p]]></fr:tex>.
+            Similarly, the sentence <fr:tex display="inline"><![CDATA[(p \land  q) \land  p]]></fr:tex> is also fine---but it is a different sentence.
+            It uses <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine the two sentences <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[p]]></fr:tex></html:p>
+                        <html:p>            To help you build sentences properly, it can help to picture a downward-branching tree kind of structure, where each binary connective branches into two, and each atomic sentence sits at the tip of a branch.
+            For example, we could picture the sentence <fr:tex display="inline"><![CDATA[p \land  (q \land  p)]]></fr:tex> like this:
+</html:p>
+                        <fr:resource hash="639ea58556e756193721b604f6eb2d00">
+                          <fr:resource-content>
+                            <html:img src="/639ea58556e756193721b604f6eb2d00.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {forest}
+  [$\land $, for tree={s sep=10mm}
+    [$p$]
+    [$\land $
+      [$q$]
+      [$p$]
+    ]
+  ]
+\end {forest}
+]]></fr:resource-source>
+                        </fr:resource>
+                        <html:p>             And we can picture the sentence <fr:tex display="inline"><![CDATA[(p \land  q) \land  p]]></fr:tex> like this:
+</html:p>
+                        <fr:resource hash="0bc7ac89c1b7eb41dcdd0ee63d11afd9">
+                          <fr:resource-content>
+                            <html:img src="/0bc7ac89c1b7eb41dcdd0ee63d11afd9.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {forest}
+  [$\land $, for tree={s sep=10mm}
+    [$\land $
+      [$p$]
+      [$q$]
+    ]
+    [$p$]
+  ]
+\end {forest}
+]]></fr:resource-source>
+                        </fr:resource>
+                        <html:p>     As you can see, these are different trees, which shows that these are different sentences.
+</html:p>
+                        <html:p>            You can think of our sentences as "really" being trees in this way, if you like.
+            Keeping this kind of tree in the back (or even the front) of your mind can be helpful as you get started with our sentences.
+            When we're writing sentences normally, we use parentheses to indicate the same kind of structure that's encoded in these trees.
+            There's nothing special about the parentheses; they're just a more space-efficient way to write the same thing. 
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000N/</fr:uri>
+                        <fr:display-uri>000N</fr:display-uri>
+                        <fr:route>/000N/</fr:route>
+                        <fr:title text="Another binary connective: \lor ">Another binary connective: <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex></fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>            Many of our languages will involve more than one binary connective.
+            Another binary connective we'll use a lot is <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>, which I'll pronounce "or" and call "disjunction".
+            Again, don't worry about its meaning yet; for now we're just seeing how to build up sentences using connectives.
+</html:p>
+                        <html:p>            Let's think about a slightly more complex language now, one with the two atomic sentences <fr:tex display="inline"><![CDATA[p, q]]></fr:tex> and the two binary connectives <fr:tex display="inline"><![CDATA[\land , \lor ]]></fr:tex>.
+            Every sentence that was in our simple language with just <fr:tex display="inline"><![CDATA[p, q]]></fr:tex> and <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> is also a sentence of this more complex language, since we have all those ingredients.
+            But there are a lot of sentences in this new language that weren't in the old one.
+</html:p>
+                        <html:p>            First, there are all the sentences that make use of the new binary connective <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>, sentences like <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, like <fr:tex display="inline"><![CDATA[p \lor  (p \lor  p)]]></fr:tex>, and like <fr:tex display="inline"><![CDATA[(q \lor  q) \lor  (p \lor  (q \lor  p))]]></fr:tex>.
+            But there are also sentences that use <html:em>both</html:em> binary connectives, like <fr:tex display="inline"><![CDATA[(p \lor  q) \land  q]]></fr:tex>, like <fr:tex display="inline"><![CDATA[p \land  (p \lor  p)]]></fr:tex>, and like <fr:tex display="inline"><![CDATA[(q \land  (p \lor  p)) \lor  (p \land  q)]]></fr:tex>.
+</html:p>
+                        <html:p>            Consider the last of these: <fr:tex display="inline"><![CDATA[(q \land  (p \lor  p)) \lor  (p \land  q)]]></fr:tex>. 
+            This uses the binary connective <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> to combine the two sentences <fr:tex display="inline"><![CDATA[q \land  (p \lor  p)]]></fr:tex> and <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>, in that order.
+            Those sentences themselves each use the connective <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine two component sentences.
+            We can again picture the whole sentence as a tree, putting two branches at binary connectives and atomic sentences at the tips of branches, like so:
+</html:p>
+                        <fr:resource hash="92a71145b1fbdf124b4a2b86b5cc1afe">
+                          <fr:resource-content>
+                            <html:img src="/92a71145b1fbdf124b4a2b86b5cc1afe.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm}             [$\lor $,for tree={s sep=10mm}
+                    [$\land $
+                        [$q$ ]
+                        [$\lor $
+                            [$p$ ]   
+                            [$p$ ]
+                        ]
+                    ]
+                    [$\land $
+                        [$p$ ]
+                        [$q$ ]
+                    ]
+                  ]
+ \end {forest}]]></fr:resource-source>
+                        </fr:resource>
+                        <html:p>            This tree shows the same structure that the parentheses indicate in <fr:tex display="inline"><![CDATA[(q \land  (p \lor  p)) \lor  (p \land  q)]]></fr:tex>.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000O/</fr:uri>
+                        <fr:display-uri>000O</fr:display-uri>
+                        <fr:route>/000O/</fr:route>
+                        <fr:title text="A third binary connective: \rightarrow ">A third binary connective: <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex></fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>            A third binary connective we'll use this semester is <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex>, which I'll pronounce "implies" and call "implication".
+            As a connective, it's just another binary connective, and works the same way as <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>: given any two sentences, we can combine them with <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex> in between them to get a new sentence.
+            All three of these binary connectives can be mixed freely, so we now have such wonderful sentences as <fr:tex display="inline"><![CDATA[p \rightarrow  (p \lor  (q \land  (r \rightarrow  s)))]]></fr:tex> or <fr:tex display="inline"><![CDATA[((p \lor  q) \rightarrow  (r \land  q)) \lor  (r \rightarrow  p)]]></fr:tex>.
+            And again, you can think of these as trees if you like, so that last example spells out to:</html:p>
+                        <fr:resource hash="eb24852154f5b3eeaf6ad4a70ed634e1">
+                          <fr:resource-content>
+                            <html:img src="/eb24852154f5b3eeaf6ad4a70ed634e1.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\lor $, for tree={s sep=10mm}
+  [$\rightarrow $
+    [$\lor $
+      [$p$]
+      [$q$]
+    ]
+    [$\land $
+      [$r$]
+      [$q$]
+    ]
+  ]
+  [$\rightarrow $
+    [$r$]
+    [$p$]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+                        </fr:resource>
+                        <html:p><html:strong>A good idea:</html:strong> Grab a pen and paper, and draw out the tree for the other example above: <fr:tex display="inline"><![CDATA[p \rightarrow  (p \lor  (q \land  (r \rightarrow  s)))]]></fr:tex>.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000P/</fr:uri>
+                        <fr:display-uri>000P</fr:display-uri>
+                        <fr:route>/000P/</fr:route>
+                        <fr:title text="Nonbinary connectives">Nonbinary connectives</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>            Not all connectives, however, are binary.
+            We can have connectives that combine any number of sentences together.
+            Some connectives might be ternary, for example, combining three sentences into one.
+            Or some might be quaternary, combining four sentences into one.
+            The number of sentences a connective combines is called the <html:em>arity</html:em> of the connective.
+            Binary connectives, then, have an arity of 2; ternary connectives have an arity of 3; and so on.
+</html:p>
+                        <html:p>            In fact, though, we won't spend much time on connectives with arities higher than 2.
+               In part, this is because these are just less used in lots of logic.
+            In part, it's because there's not a super-convenient way to write them! 
+            With a binary connective, you can just put it between the things it combines, as we've done with <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>.
+            But that doesn't work as well for higher arities.
+            (No problem putting them in trees, though; just use three branches for a ternary connective, four for a quaternary, and so on.)
+            We will, though, spend a lot of time with connectives with <html:em>lower</html:em> arities: 1 and 0.
+            These are called <html:em>unary</html:em> and <html:em>nullary</html:em> connectives, respectively.
+</html:p>
+                        <html:p> Let me pause to lay out our first <html:em>definition</html:em>.
+            Definitions are key in logic, and we'll meet a lot of them this semester.
+</html:p>
+                        <fr:tree show-metadata="false">
+                          <fr:frontmatter>
+                            <fr:authors>
+                              <fr:author>
+                                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                              </fr:author>
+                            </fr:authors>
+                            <fr:date>
+                              <fr:year>2026</fr:year>
+                              <fr:month>1</fr:month>
+                              <fr:day>29</fr:day>
+                            </fr:date>
+                            <fr:uri>https://www.my-great-forest.net/000S/</fr:uri>
+                            <fr:display-uri>000S</fr:display-uri>
+                            <fr:route>/000S/</fr:route>
+                            <fr:title text="Arity, binary, unary, nullary">Arity, binary, unary, nullary</fr:title>
+                            <fr:taxon>Definition</fr:taxon>
+                          </fr:frontmatter>
+                          <fr:mainmatter>
+                            <html:p>
+                              <html:ul><html:li>Every connective has an <html:strong>arity</html:strong>, which is the number of sentences the connective takes to form a sentence.</html:li>
+<html:li>A <html:strong>binary</html:strong> connective is a connective with an arity of 2.</html:li>
+<html:li>A <html:strong>unary</html:strong> connective is a connective with an arity of 1.</html:li>
+<html:li>A <html:strong>nullary</html:strong> connective is a connective with an arity of 0.</html:li></html:ul>
+                            </html:p>
+                          </fr:mainmatter>
+                        </fr:tree>
+                        <html:p>            Unary first.
+            The unary connective we'll use a lot uses the symbol <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>.
+            This connective takes <html:em>one</html:em> component sentence to make a new sentence.
+            I'll pronounce this "not", and call this connective "negation".
+            Suppose we're working in a language with just the single atomic sentence <fr:tex display="inline"><![CDATA[p]]></fr:tex> and the sole connective <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>.
+            Then we have all of the following as sentences: <fr:tex display="inline"><![CDATA[p, \neg  p, \neg  \neg  p, \neg  \neg \neg  p, \neg \neg \neg \neg  p]]></fr:tex>, and so on.
+            (Indeed, all the sentences in this language have some number (maybe 0) of negations followed by <fr:tex display="inline"><![CDATA[p]]></fr:tex>.)
+</html:p>
+                        <html:p>            Note that we don't need any parentheses for these sentences.
+            The sentence <fr:tex display="inline"><![CDATA[\neg  \neg  p]]></fr:tex> applies <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> to the sentence <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>; there's no other way to read it.
+            However, when we start to combine unary and binary connectives, sometimes parentheses are still necessary.
+            For example, consider a language with atomic sentences <fr:tex display="inline"><![CDATA[p, q]]></fr:tex> and connectives <fr:tex display="inline"><![CDATA[\land , \neg ]]></fr:tex>. 
+            Compare the two sentences <fr:tex display="inline"><![CDATA[(\neg  p) \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  (p \land  q)]]></fr:tex>.
+            The first of these uses <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> with <fr:tex display="inline"><![CDATA[q]]></fr:tex>; the second uses <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> with the single sentence <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>.
+            Both are perfectly good sentences, but they are different, and the difference is important.
+</html:p>
+                        <html:p>            We can again see the difference using trees.
+            Binary connectives still make two branches, and unary connectives make just a single branch.
+            So these two sentences produce the following two trees.
+            Make sure you pause to see which is which.
+</html:p>
+                        <fr:resource hash="75baa4ea9a84e46f304522680253acf1">
+                          <fr:resource-content>
+                            <html:img src="/75baa4ea9a84e46f304522680253acf1.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\land $
+  [$\neg $
+    [$p$]
+  ]
+  [$q$]
+]
+ \end {forest}]]></fr:resource-source>
+                        </fr:resource>
+                        <fr:resource hash="bc0491fd72426f3979fdba4c5e91412f">
+                          <fr:resource-content>
+                            <html:img src="/bc0491fd72426f3979fdba4c5e91412f.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\neg $
+  [$\land $
+    [$p$]
+    [$q$]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+                        </fr:resource>
+                        <html:p>            Sometimes, the number of parentheses we need can get a little bit out of control.
+            For the most part, the answer is just practice: getting used to dealing with three or four parentheses deep is very doable, and you'll probably be totally fine even if you're just comfy with like two layers.
+            However, there's a common convention I'll use to save on some parentheses, and you'll need to know how to read it.
+</html:p>
+                        <html:p>
+            The convention is this: unary connectives always attach to the <html:em>smallest</html:em> sentence they can.
+            So if I write something like "<fr:tex display="inline"><![CDATA[\neg  p \land  q]]></fr:tex>", it might seem ambiguous: is <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> combining with just <fr:tex display="inline"><![CDATA[p]]></fr:tex>, or with <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>?
+            Since <fr:tex display="inline"><![CDATA[p]]></fr:tex> is smaller, though, the convention says that it combines with <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+            So <fr:tex display="inline"><![CDATA[\neg  p \land  q]]></fr:tex> is the very same sentence as <fr:tex display="inline"><![CDATA[(\neg  p) \land  q]]></fr:tex>.
+            If we want <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> to combine with <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>, then parentheses are needed: <fr:tex display="inline"><![CDATA[\neg  (p \land  q)]]></fr:tex>.
+</html:p>
+                        <html:p>
+When you write a sentence like <fr:tex display="inline"><![CDATA[(\neg  p) \land  q]]></fr:tex>, you can include the parentheses or not; that's totally up to you, and either way is perfectly correct.
+But you'll need to know what <html:em>I</html:em> mean when I write something like <fr:tex display="inline"><![CDATA[\neg  p \land  q]]></fr:tex>: it's always <fr:tex display="inline"><![CDATA[(\neg  p) \land  q]]></fr:tex>.
+And you'll need to include parentheses when what you mean is <fr:tex display="inline"><![CDATA[\neg  (p \land  q)]]></fr:tex>; there's no other way to write this.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000Q/</fr:uri>
+                        <fr:display-uri>000Q</fr:display-uri>
+                        <fr:route>/000Q/</fr:route>
+                        <fr:title text="Nullary connectives">Nullary connectives</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>            Finally, we have nullary connectives: connectives that take <html:em>zero</html:em> component sentences to make a new sentence.
+            That is, a nullary connective is already a formula on its own.
+            So for the purposes of building up formulas in our languages, a nullary connective is like an atomic formula.
+            However, a nullary connective is <html:em>not</html:em> an atomic formula; so when we start doing things (as we will) that depend on the difference between atomic and nonatomic formulas, nullary connectives will go in with the other connectives, not with the atomic formulas.
+</html:p>
+                        <html:p>            My favourite nullary connective is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>; I'll pronounce it "falsum".
+            On its own, it is a sentence; and so it works with our various other connectives just as any sentence would.
+            For example, take a language with atomic sentences <fr:tex display="inline"><![CDATA[p, q, r]]></fr:tex>, and connectives <fr:tex display="inline"><![CDATA[\land , \bot ]]></fr:tex>.
+            The sentences of this language include things like <fr:tex display="inline"><![CDATA[\bot  \land  p]]></fr:tex>, like <fr:tex display="inline"><![CDATA[(p \land  \bot ) \land  (\bot  \land  \bot )]]></fr:tex>, and like <fr:tex display="inline"><![CDATA[p \land  (\bot  \land  p)]]></fr:tex>.
+            </html:p>
+                        <html:p>
+Another nullary connective we'll make use of is <fr:tex display="inline"><![CDATA[\top ]]></fr:tex>; I'll pronounce this one "verum".
+Since it's a nullary connective, it too is already a sentence.
+</html:p>
+                        <html:p><html:strong>A good idea:</html:strong> Come up with a few different sentences in a language with no atomic sentences at all, but that includes all the connectives <fr:tex display="inline"><![CDATA[\land , \lor , \rightarrow , \neg , \bot , \top ]]></fr:tex>.</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/000R/</fr:uri>
+                    <fr:display-uri>000R</fr:display-uri>
+                    <fr:route>/000R/</fr:route>
+                    <fr:title text="Talking about sentences">Talking about sentences</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        So that's how all our languages will work.
+        To specify a language, you say what atomic sentences it has, and what connectives it has.
+        It's important to specify an arity for each connective.
+        For our purposes, whenever you see connectives that use the symbols <fr:tex display="inline"><![CDATA[\land , \lor , \rightarrow , \neg , \bot , \top ]]></fr:tex>, these will have arities 2, 2, 2, 1, 0, 0, respectively.
+        Any other connectives we look at will need to have their arities specified as they're introduced.
+</html:p>
+                    <html:p>        We're mainly going to stick to a particular language: one with infinitely many atomic sentences, all the connectives we've seen so far, and no other connectives.
+        This is simple enough to be relatively manageable, while still having enough complexity in it to allow us to explore a range of ideas.
+        Whenever another language is not explicitly specified, you can safely assume the language at issue is this one.
+        I will call it the <html:em>standard language</html:em>:
+</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000H/</fr:uri>
+                        <fr:display-uri>000H</fr:display-uri>
+                        <fr:route>/000H/</fr:route>
+                        <fr:title text="The standard language">The standard language</fr:title>
+                        <fr:taxon>Definition</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>
+Our <html:strong>standard language</html:strong> for this semester has:
+<html:ul><html:li>infinitely many atomic sentences, written <fr:tex display="inline"><![CDATA[p]]></fr:tex>, <fr:tex display="inline"><![CDATA[q]]></fr:tex>, <fr:tex display="inline"><![CDATA[r]]></fr:tex>, and so on;</html:li>
+<html:li>three binary connectives: <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>, <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>, and <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex>;</html:li>
+<html:li>one unary connective: <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>; and</html:li>
+<html:li>two nullary connectives: <fr:tex display="inline"><![CDATA[\top ]]></fr:tex>, <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.</html:li></html:ul></html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>        Once we have a language specified, it's important to be able to categorize its sentences in a few different ways.
+        This section will introduce some of the vocabulary we'll be using throughout the semester to do this.</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000T/</fr:uri>
+                        <fr:display-uri>000T</fr:display-uri>
+                        <fr:route>/000T/</fr:route>
+                        <fr:title text="Atomic vs compound sentences">Atomic vs compound sentences</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>            We already know about atomic sentences.
+            A compound sentence is just any sentence that isn't atomic:
+            <fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>1</fr:month><fr:day>29</fr:day></fr:date><fr:uri>https://www.my-great-forest.net/000U/</fr:uri><fr:display-uri>000U</fr:display-uri><fr:route>/000U/</fr:route><fr:title text="Compound sentence">Compound sentence</fr:title><fr:taxon>Definition</fr:taxon></fr:frontmatter><fr:mainmatter><html:p>A <html:strong>compound sentence</html:strong> is any sentence that is not atomic.</html:p></fr:mainmatter></fr:tree>
+            So sentences like <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>, or <fr:tex display="inline"><![CDATA[\neg  r]]></fr:tex>, or <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> are all compound sentences.
+            Another way to think of it is: a compound sentence is any sentence that contains a connective.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000V/</fr:uri>
+                        <fr:display-uri>000V</fr:display-uri>
+                        <fr:route>/000V/</fr:route>
+                        <fr:title text="Main connectives">Main connectives</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>            Every compound sentence has a <html:em>main connective</html:em>.
+            If you think of a sentence as being put together in stages, the main connective is the <html:em>last</html:em> connective used in assembling the sentence.
+            If you write the sentence as a tree, the main connective is the one at the very top of the tree.
+            No sentence can have more than one main connective: atomic sentences don't have any main connective at all (since they don't contain any connectives!), and every compound sentence has exactly one main connective.
+</html:p>
+                        <html:p>            So, for example, in the sentence <fr:tex display="inline"><![CDATA[p \land  (q \lor  \bot )]]></fr:tex>, the main connective is conjunction, <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>.
+            At the last stage of its construction, this sentence uses <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine two other sentences: <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \lor  \bot ]]></fr:tex>.
+            So while other connectives, <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, do occur in the sentence, they're not its main connective.
+            Its tree looks like this:
+</html:p>
+                        <fr:resource hash="e5d213388a36c37e6bb48abdc0e69cf5">
+                          <fr:resource-content>
+                            <html:img src="/e5d213388a36c37e6bb48abdc0e69cf5.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\land $
+  [$p$]
+  [$\lor $
+    [$q$]
+    [$\bot $]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+                        </fr:resource>
+                        <html:p>            As you can see, this tree has the connective <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> at the very top; that's another way to see that <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> is the main connective of this sentence.
+            (Note that nullary connectives like <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> go into trees in just the same way as atomic sentences: at the tips of branches.)
+</html:p>
+                        <html:p>            As another example, the main connective of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+            This sentence is its own main connective, since that's the last connective used in building the sentence.
+            Another one: the main connective of <fr:tex display="inline"><![CDATA[\neg  (p \lor  p)]]></fr:tex> is <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>.
+            Here's its tree:
+</html:p>
+                        <fr:resource hash="b148428602240ab64793b14806d6db6d">
+                          <fr:resource-content>
+                            <html:img src="/b148428602240ab64793b14806d6db6d.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\neg $
+  [$\lor $
+    [$p$]
+    [$p$]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+                        </fr:resource>
+                        <html:p>            It's often useful to categorize sentences by their main connective.
+            So for example, we might want to think about all the sentences whose main connective is conjunction, <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>.
+            These sentences are called <html:em>conjunctions</html:em>; the category of sentences just takes its name from the connective name.
+            Similarly, the sentences whose main connective is disjunction <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> are called <html:em>disjunctions</html:em>; the sentences whose main connective is negation <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> are called <html:em>negations</html:em>; and we will do the same kind of thing for every connective we come across.
+            (There is only one sentence whose main connective is falsum: just <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> itself.
+            The same happens for any nullary connective.)
+            To sum this up:
+</html:p>
+                        <fr:tree show-metadata="false">
+                          <fr:frontmatter>
+                            <fr:authors>
+                              <fr:author>
+                                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                              </fr:author>
+                            </fr:authors>
+                            <fr:date>
+                              <fr:year>2026</fr:year>
+                              <fr:month>1</fr:month>
+                              <fr:day>29</fr:day>
+                            </fr:date>
+                            <fr:uri>https://www.my-great-forest.net/000W/</fr:uri>
+                            <fr:display-uri>000W</fr:display-uri>
+                            <fr:route>/000W/</fr:route>
+                            <fr:title text="Main connectives">Main connectives</fr:title>
+                            <fr:taxon>Definition</fr:taxon>
+                          </fr:frontmatter>
+                          <fr:mainmatter>
+                            <html:p>
+The <html:strong>main connective</html:strong> of a compound sentence is the last connective used in forming the sentence.
+Atomic sentences have no main connective.
+</html:p>
+                            <html:p>Sentences can be categorised by their main connectives.
+So a <html:strong>conjunction</html:strong> is a sentence whose main connective is conjunction; a <html:strong>implication</html:strong> is a sentence whose main connective is implication; and so on for any connective.</html:p>
+                          </fr:mainmatter>
+                        </fr:tree>
+                        <html:p>            In general, we'll be working with sentences in different ways depending on their main connective.
+            So it's important to be completely fluent in taking a sentence and identifying its main connective.
+            To that end, the first exercise type you'll see at <fr:link href="https://binchicken.one/" type="external">https://binchicken.one</fr:link> will give you practice with this: it will give you a random sentence, and your task is to identify the main connective of that sentence.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>1</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/000X/</fr:uri>
+                        <fr:display-uri>000X</fr:display-uri>
+                        <fr:route>/000X/</fr:route>
+                        <fr:title text="Compounds and components">Compounds and components</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>            Every compound sentence has some number of <html:em>components</html:em>.
+            Its components are the sentences used by the main connective in building up the compound sentence.
+            As a result, the number of components a compound sentence has is always the same as the arity of its main connective.
+</html:p>
+                        <html:p>            So, for example, all conjunctions have two components; and the components of the conjunction <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> are <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+            To keep track of the order they occur in, we call <fr:tex display="inline"><![CDATA[p]]></fr:tex> its <html:strong>left component</html:strong> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> its <html:strong>right component</html:strong>.
+            Every sentence whose main connective is binary has a left component and a right component.
+            Let's look at some examples: the right component of <fr:tex display="inline"><![CDATA[(\neg  q \lor  p) \land  \bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>; the left component of <fr:tex display="inline"><![CDATA[(\neg  q \lor  p) \land  \bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\neg  q \lor  p]]></fr:tex>; and the right component of the left component of <fr:tex display="inline"><![CDATA[(\neg  q \lor  p) \land  \bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[p]]></fr:tex></html:p>
+                        <html:p>            For sentences whose main connective is unary, there is only one component.
+            Here are some examples: the component of <fr:tex display="inline"><![CDATA[\neg \neg \neg  (p \lor  q)]]></fr:tex> is <fr:tex display="inline"><![CDATA[\neg \neg  (p \lor  q)]]></fr:tex>; the component of <fr:tex display="inline"><![CDATA[\neg  \bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>; and the left component of the component of <fr:tex display="inline"><![CDATA[\neg  (\bot  \land  q)]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+</html:p>
+                        <html:p><html:strong>A good idea:</html:strong>Double-check all these examples, so that you can see the idea for yourself!
+            Remember, this is <html:em>symbolic</html:em> logic; there are going to be a lot of symbols.
+            It's important to build good habits right away---don't let your eyes glaze over this stuff.
+            Read carefully; re-read.
+</html:p>
+                        <html:p>            Sentences whose main connective is nullary have 0 components; that is, they don't have any components.
+            The same goes for atomic sentences: no components at all.
+            Only sentences with a main connective with arity 1 or more have components.
+</html:p>
+                        <fr:tree show-metadata="false">
+                          <fr:frontmatter>
+                            <fr:authors>
+                              <fr:author>
+                                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                              </fr:author>
+                            </fr:authors>
+                            <fr:date>
+                              <fr:year>2026</fr:year>
+                              <fr:month>1</fr:month>
+                              <fr:day>29</fr:day>
+                            </fr:date>
+                            <fr:uri>https://www.my-great-forest.net/000Y/</fr:uri>
+                            <fr:display-uri>000Y</fr:display-uri>
+                            <fr:route>/000Y/</fr:route>
+                            <fr:title text="Components">Components</fr:title>
+                            <fr:taxon>Definition</fr:taxon>
+                          </fr:frontmatter>
+                          <fr:mainmatter>
+                            <html:p>
+The <html:strong>components</html:strong> of a compound sentence are the sentences combined by its main connective.
+There are as many components as the arity of that main connective.
+Atomic sentences do not have any components.
+
+When a sentence's main connective is binary, it has two components, which are called its <html:strong>left component</html:strong> and its <html:strong>right component</html:strong>.
+</html:p>
+                          </fr:mainmatter>
+                        </fr:tree>
+                        <fr:tree show-metadata="false">
+                          <fr:frontmatter>
+                            <fr:authors>
+                              <fr:author>
+                                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                              </fr:author>
+                            </fr:authors>
+                            <fr:date>
+                              <fr:year>2026</fr:year>
+                              <fr:month>1</fr:month>
+                              <fr:day>29</fr:day>
+                            </fr:date>
+                            <fr:uri>https://www.my-great-forest.net/000Z/</fr:uri>
+                            <fr:display-uri>000Z</fr:display-uri>
+                            <fr:route>/000Z/</fr:route>
+                            <fr:title text="Special names for components">Special names for components</fr:title>
+                            <fr:taxon>Definition</fr:taxon>
+                          </fr:frontmatter>
+                          <fr:mainmatter>
+                            <html:p>
+Depending on the main connective of a sentence, there are special names sometimes given to its components:
+</html:p>
+                            <html:ul><html:li>when a sentence is a conjunction, its components are called its <html:strong>conjuncts</html:strong>;</html:li>
+<html:li>when a sentence is a disjunction, its components are called its <html:strong>disjuncts</html:strong>;</html:li>
+<html:li>when a sentence is an implication, its left component is called its <html:strong>antecedent</html:strong>;</html:li>
+<html:li>when a sentence is an implication, its right component is called its <html:strong>consequent</html:strong>; and</html:li>
+<html:li>when a sentence is a negation, its component is called its <html:strong>negatum</html:strong>.</html:li></html:ul>
+                          </fr:mainmatter>
+                        </fr:tree>
+                      </fr:mainmatter>
+                    </fr:tree>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0010/</fr:uri>
+                <fr:display-uri>0010</fr:display-uri>
+                <fr:route>/0010/</fr:route>
+                <fr:title text="Summing up">Summing up</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        So that gives us a start on languages.
+        Here's a quick summary.
+</html:p>
+                <html:p>        A language consists of some collection of atomic sentences and some collection of connectives.
+        Each connective has an <html:em>arity</html:em>, a fixed number of sentences it can combine.
+        The connectives <fr:tex display="inline"><![CDATA[\land , \lor , \rightarrow ]]></fr:tex> are all <html:em>binary</html:em>, which means their arity is 2; they're called conjunction, disjunction, and implication, respectively.
+        The connective <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> is <html:em>unary</html:em>, which means its arity is 1; it's called negation.
+        The connectives <fr:tex display="inline"><![CDATA[\bot , \top ]]></fr:tex> are <html:em>nullary</html:em>, which means their arity is 0; they're called falsum and verum, respectively.
+        Other connectives are possible, too; these are just some standard ones we'll use.
+</html:p>
+                <html:p>
+        The sentences of a language are all the things that can be built up from the atomic sentences of the language by using the connectives of the language.
+        Our <html:em>standard language</html:em> has infinitely many atomic sentences and uses all the above-listed connectives.
+</html:p>
+                <html:p>        A sentence that is not atomic is called <html:em>compound</html:em>.
+        A compound sentence always contains at least one connective, and it might contain many.
+        Every compound sentence has a unique <html:em>main connective</html:em>: the connective that's used last in the construction of the sentence.
+        Sentences are categorized by their main connectives: a sentence with conjunction as its main connective, for example, is called a conjunction, and similarly for other connectives.
+        A compound sentence has as many components as the arity of its main connective.
+        In case the main connective is binary, these are called its left component and its right component.
+</html:p>
+                <html:p>        The most important skill for you to take away from this is the ability to look at a sentence and identify its main connective.
+        Since we'll be dealing with different sentences differently depending on their main connectives, you need to become fluent with this as soon as possible.
+        The first exercise type at <fr:link href="https://binchicken.one/" type="external">https://binchicken.one</fr:link> will help.
+</html:p>
+                <html:p>        For now, this might all seem weird and pointless.
+        What are these languages and their sentences <html:em>for</html:em>?
+        What are they <html:em>about</html:em>?
+        These are good questions, and we'll spend much of the rest of the semester seeing possible answers.
+        Don't worry, then, if you don't feel like you have a total grasp yet.
+        On the other hand, if you <html:em>do</html:em> feel like you have a total grasp already, that's almost certainly an illusion.
+        More next time!
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

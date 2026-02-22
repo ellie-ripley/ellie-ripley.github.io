@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>10</fr:month>
+      <fr:day>26</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/0001/</fr:uri>
+    <fr:display-uri>0001</fr:display-uri>
+    <fr:route>/0001/</fr:route>
+    <fr:title text="Ellie Ripley">Ellie Ripley</fr:title>
+    <fr:taxon>Person</fr:taxon>
+    <fr:meta name="external">https://negation.rocks</fr:meta>
+    <fr:meta name="orcid">0000-0002-3356-0771</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/0001/" title="Ellie Ripley" uri="https://www.my-great-forest.net/0001/" display-uri="0001" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>10</fr:month>
+              <fr:day>26</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/0002/</fr:uri>
+            <fr:display-uri>0002</fr:display-uri>
+            <fr:route>/0002/</fr:route>
+            <fr:title text="About this book">About this book</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+This book is lots of bite-size subsections, organised together into sections, which are then organised into chapters.
+It's intended to be read in order, together with <fr:link href="/0001/" title="Ellie Ripley" uri="https://www.my-great-forest.net/0001/" display-uri="0001" type="local">Ellie Ripley's</fr:link> logic class.
+Along the way, there are exercises to help you practice the material as you learn it.
+</html:p>
+            <html:p>
+At the end of the table of contents, you can also find "Reference" links.
+These allow you to take a more direct and efficient view on the material: just the facts, definitions, and so on, without any of the discursive framing, metaphors, and intuitions that I try to convey in the main text.
+These links can be handy if you're trying to look up an idea quickly!
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://www.my-great-forest.net/index/</fr:uri>
+            <fr:display-uri>index</fr:display-uri>
+            <fr:route>/index/</fr:route>
+            <fr:title text="The Binchicken Lectures">The Binchicken Lectures</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Eat trash. Learn logic.</html:p>
+            <html:ul><html:li><fr:link href="/0001/" title="Ellie Ripley" uri="https://www.my-great-forest.net/0001/" display-uri="0001" type="local">My Person tree</fr:link></html:li>
+  <html:li><fr:link href="/0002/" title="About this book" uri="https://www.my-great-forest.net/0002/" display-uri="0002" type="local">About this book</fr:link></html:li>
+  <html:li><fr:link href="/0003/" title="On proving and untangling necklaces" uri="https://www.my-great-forest.net/0003/" display-uri="0003" type="local">On proving and untangling necklaces</fr:link></html:li></html:ul>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

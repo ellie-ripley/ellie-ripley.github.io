@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>3</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/0014/</fr:uri>
+    <fr:display-uri>0014</fr:display-uri>
+    <fr:route>/0014/</fr:route>
+    <fr:title text="Types of inputs and outputs">Types of inputs and outputs</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>That caution leads me to an important point: as far as we're concerned in here, every function is <html:em>from</html:em> some type of thing and <html:em>to</html:em> some type of thing.
+You can see that in the examples we've looked at so far:
+<html:ul><html:li>a function from numeric grades to letter grades</html:li>
+<html:li>a function from people to days</html:li>
+<html:li>a function from compound sentences to connectives</html:li></html:ul></html:p>
+    <html:p>
+Whenever we look at a function in here, you can always ask yourself (or your tutor!): what type of thing does this function take as inputs?
+What type of thing does it return as outputs?</html:p>
+    <html:p>
+Building the habit of asking these questions will make your logic learning easier. 
+That's because it can save you from exploring a lot of dead ends!
+If you know, for example, that a function only takes connectives as inputs, then you know not to worry about what it does with any other input---it just can't take any other input.
+</html:p>
+    <html:p>
+For example, last time we learned about <html:em>arity</html:em>.
+You can think of arity as a function that takes connectives as inputs and returns their arities as outputs: this is a function from connectives to numbers.
+So if you find yourself wondering something like "what is the arity of <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>?", you can short-circuit that wonder.
+It doesn't make any sense: <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> isn't a connective, so it isn't the right type of thing to have an arity.
+Or if you find yourself wondering: "is there a connective with arity <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>?", again you can short-circuit that wonder: arities are numbers, not connectives, so the question doesn't make any sense.
+</html:p>
+    <html:p>
+I recommend making it a habit to pay attention to what <html:em>type</html:em> of thing you're looking at, whenever you're thinking about logic.
+Is it a connective?
+Is it a sentence?
+(Is it both, like <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> are?)
+Is it a function?
+And so on.
+This habit of mind will save you lots of time along the way!
+</html:p>
+    <html:p>
+This way of thinking leads to a field of study known as <html:em>type theory</html:em>.
+Type theory is very cool and awesome, and has applications both in the design of programming languages (where management of different types of data is important) and also in developing computer-checkable proofs of mathematical claims.
+Type theory has deep links with logic, and we'll be learning some logic later in the semester that is right next door to it.
+</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>3</fr:day>
+        </fr:date>
+        <fr:uri>https://www.my-great-forest.net/0016/</fr:uri>
+        <fr:display-uri>0016</fr:display-uri>
+        <fr:route>/0016/</fr:route>
+        <fr:title text="Functions in mathematics">Functions in mathematics</fr:title>
+        <fr:taxon>Side note</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>You may have encountered the idea of a function before, in mathematics.
+If you haven't, don't worry about it: you're encountering the idea now, in this lecture!
+But if you <html:em>have</html:em> seen the idea in mathematics, it really is the very same idea we're using here.
+Like, you might have at some point in your life drawn a graph of a function given to you by an equation like <fr:tex display="inline"><![CDATA[y = x^2]]></fr:tex>; it looks like this:
+</html:p>
+        <fr:resource hash="ccf30daf4a231aa04fb7f3db64fb9936">
+          <fr:resource-content>
+            <html:img src="/ccf30daf4a231aa04fb7f3db64fb9936.svg" />
+          </fr:resource-content>
+          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {pgfplots}]]></fr:resource-source>
+          <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {tikzpicture}[scale=.7]
+  \begin {axis}[axis lines=center]
+    \addplot  [domain=-2:2,
+              thick,
+              ]  {x^2};
+  \end {axis}
+\end {tikzpicture}
+]]></fr:resource-source>
+        </fr:resource>
+        <html:p>
+This graph represents a function from numbers to numbers.
+Each point along the horizontal (<fr:tex display="inline"><![CDATA[x]]></fr:tex>) axis represents one possible input to this function, and the height of the curve above that point represents the function's output for that input, which in this case is the square of the input.
+</html:p>
+        <html:p>The functions we'll use in this class are just the same kind of thing---except since we don't use numbers hardly at all, we won't have such pretty pictures.
+Still, the input/output idea is just the same.
+</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>3</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/0012/</fr:uri>
+            <fr:display-uri>0012</fr:display-uri>
+            <fr:route>/0012/</fr:route>
+            <fr:title text="Functions">Functions</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p> A function is something that takes an <html:em>input</html:em> and produces an <html:em>output</html:em> based entirely on that input.
+Whenever a function receives a particular input, it must produce the very same output.
+If it can produce different outputs based on the same input, it's not a function.
+</html:p>
+            <html:p> For example, at the end of this semester you'll have some numeric grade in this unit: some number between 0 and 100 (inclusive).
+That numeric grade will determine a letter grade: HD, D, or whatever.
+There is a function that takes as inputs numeric grades, and gives as outputs letter grades.
+The output letter is fully determined by the input number, so this is a function.
+</html:p>
+            <html:p> As another example, we can define a function that takes people as inputs and gives their birthdays as outputs.
+This isn't a function from numbers to numbers; it's a function from people to days.
+But it's still a function: everyone has exactly one birthday, so the output of this function really is determined by its input.</html:p>
+            <html:p>(You might wonder about people born overnight, where the labor starts one day and ends the next.
+If such people don't really have a unique birthday, then this isn't really a function from people to days.)</html:p>
+            <html:p>
+Many of the functions we'll be concerned with this semester take sentences from our language as their inputs.
+For example, last time you learned how to find the main connective of a compound formula.
+There is a function that takes compound formulas as inputs and gives back their main connective as output: you learned how to calculate this function.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0013/</fr:uri>
+                <fr:display-uri>0013</fr:display-uri>
+                <fr:route>/0013/</fr:route>
+                <fr:taxon>Caution</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+This main connective function takes <html:em>compound sentences</html:em> as inputs, not just any old sentences!
+Recall that atomic sentences have no main connective.
+So the main connective function could not return any output if it received, say, the atomic sentence <fr:tex display="inline"><![CDATA[r]]></fr:tex> as input.
+That means that it can't take <fr:tex display="inline"><![CDATA[r]]></fr:tex> as an input at all, if it is to be a function.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0014/</fr:uri>
+                <fr:display-uri>0014</fr:display-uri>
+                <fr:route>/0014/</fr:route>
+                <fr:title text="Types of inputs and outputs">Types of inputs and outputs</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>That caution leads me to an important point: as far as we're concerned in here, every function is <html:em>from</html:em> some type of thing and <html:em>to</html:em> some type of thing.
+You can see that in the examples we've looked at so far:
+<html:ul><html:li>a function from numeric grades to letter grades</html:li>
+<html:li>a function from people to days</html:li>
+<html:li>a function from compound sentences to connectives</html:li></html:ul></html:p>
+                <html:p>
+Whenever we look at a function in here, you can always ask yourself (or your tutor!): what type of thing does this function take as inputs?
+What type of thing does it return as outputs?</html:p>
+                <html:p>
+Building the habit of asking these questions will make your logic learning easier. 
+That's because it can save you from exploring a lot of dead ends!
+If you know, for example, that a function only takes connectives as inputs, then you know not to worry about what it does with any other input---it just can't take any other input.
+</html:p>
+                <html:p>
+For example, last time we learned about <html:em>arity</html:em>.
+You can think of arity as a function that takes connectives as inputs and returns their arities as outputs: this is a function from connectives to numbers.
+So if you find yourself wondering something like "what is the arity of <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>?", you can short-circuit that wonder.
+It doesn't make any sense: <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> isn't a connective, so it isn't the right type of thing to have an arity.
+Or if you find yourself wondering: "is there a connective with arity <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>?", again you can short-circuit that wonder: arities are numbers, not connectives, so the question doesn't make any sense.
+</html:p>
+                <html:p>
+I recommend making it a habit to pay attention to what <html:em>type</html:em> of thing you're looking at, whenever you're thinking about logic.
+Is it a connective?
+Is it a sentence?
+(Is it both, like <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> are?)
+Is it a function?
+And so on.
+This habit of mind will save you lots of time along the way!
+</html:p>
+                <html:p>
+This way of thinking leads to a field of study known as <html:em>type theory</html:em>.
+Type theory is very cool and awesome, and has applications both in the design of programming languages (where management of different types of data is important) and also in developing computer-checkable proofs of mathematical claims.
+Type theory has deep links with logic, and we'll be learning some logic later in the semester that is right next door to it.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>3</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0016/</fr:uri>
+                    <fr:display-uri>0016</fr:display-uri>
+                    <fr:route>/0016/</fr:route>
+                    <fr:title text="Functions in mathematics">Functions in mathematics</fr:title>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>You may have encountered the idea of a function before, in mathematics.
+If you haven't, don't worry about it: you're encountering the idea now, in this lecture!
+But if you <html:em>have</html:em> seen the idea in mathematics, it really is the very same idea we're using here.
+Like, you might have at some point in your life drawn a graph of a function given to you by an equation like <fr:tex display="inline"><![CDATA[y = x^2]]></fr:tex>; it looks like this:
+</html:p>
+                    <fr:resource hash="ccf30daf4a231aa04fb7f3db64fb9936">
+                      <fr:resource-content>
+                        <html:img src="/ccf30daf4a231aa04fb7f3db64fb9936.svg" />
+                      </fr:resource-content>
+                      <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {pgfplots}]]></fr:resource-source>
+                      <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {tikzpicture}[scale=.7]
+  \begin {axis}[axis lines=center]
+    \addplot  [domain=-2:2,
+              thick,
+              ]  {x^2};
+  \end {axis}
+\end {tikzpicture}
+]]></fr:resource-source>
+                    </fr:resource>
+                    <html:p>
+This graph represents a function from numbers to numbers.
+Each point along the horizontal (<fr:tex display="inline"><![CDATA[x]]></fr:tex>) axis represents one possible input to this function, and the height of the curve above that point represents the function's output for that input, which in this case is the square of the input.
+</html:p>
+                    <html:p>The functions we'll use in this class are just the same kind of thing---except since we don't use numbers hardly at all, we won't have such pretty pictures.
+Still, the input/output idea is just the same.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0015/</fr:uri>
+                <fr:display-uri>0015</fr:display-uri>
+                <fr:route>/0015/</fr:route>
+                <fr:title text="Many functions have the same types">Many functions have the same types</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Saying what type of thing a function is <html:em>from</html:em>, and what kind of thing a function is <html:em>to</html:em>, is not enough to specify a particular function.
+Typically, there are <html:em>lots</html:em> of different functions with the same types of inputs and outputs.</html:p>
+                <html:p>For example, think of functions that take books as inputs and give numbers as outputs.
+Here are just a few examples of such functions:
+<html:ul><html:li>the function that takes each book to its number of pages</html:li>
+<html:li>the function that takes each book to its number of words</html:li>
+<html:li>the function that takes each book to the number of the year of its first publication</html:li>
+<html:li>the function that takes each book to the number 23</html:li>
+<html:li>the function that takes each book to the number 24</html:li></html:ul>
+And the list could go on.
+All of the above functions are different from each other, since they all disagree with each other on the output assigned to at least some book.
+So there is more to a function than just its input and output types!
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0019/</fr:uri>
+                <fr:display-uri>0019</fr:display-uri>
+                <fr:route>/0019/</fr:route>
+                <fr:title text="Notation and vocabulary: Applying functions">Notation and vocabulary: Applying functions</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>When we use a function on an input, that's called <html:strong>applying</html:strong> the function to that input, and the <html:strong>result</html:strong> of that application is the output.
+(Note well: we're applying the <html:em>function</html:em> to the <html:em>input</html:em>, not the other way around.)</html:p>
+                <html:p>So, for example, think about the function this class will use at the end of the semester to turn numeric grades into letter grades; call this function <fr:tex display="inline"><![CDATA[f]]></fr:tex>.
+Suppose, say, that you get an 87 for the semester (nice work!).
+Then some Monash system off in some inscrutable and unaccountable office will <html:em>apply</html:em> the function <fr:tex display="inline"><![CDATA[f]]></fr:tex> to the number 87, and the <html:em>result</html:em> will be an HD.
+</html:p>
+                <html:p>
+Another way to say the same thing is this: the function <fr:tex display="inline"><![CDATA[f]]></fr:tex> <html:strong>takes</html:strong> 87 <html:strong>to</html:strong> HD.
+This is kind of picturesque: you can think of a function as like an individualised transit system, where every passenger (input) gets taken to a particular place (output).
+Nothing needs to actually be moving in space for <fr:tex display="inline"><![CDATA[f]]></fr:tex> to take the number 87 to the mark HD, of course.
+But it's a convenient figure of speech.
+</html:p>
+                <html:p>
+There's a standard piece of notation that we'll use a lot for applying functions.
+If we have a function <fr:tex display="inline"><![CDATA[f]]></fr:tex>, and we apply it to an input <fr:tex display="inline"><![CDATA[x]]></fr:tex>, the result is <fr:tex display="inline"><![CDATA[f(x)]]></fr:tex>. 
+And we use the symbol <fr:tex display="inline"><![CDATA[=]]></fr:tex> to mean equality, as usual.
+So, to continue the above example, we can say that <fr:tex display="inline"><![CDATA[f(87) = \text {HD}]]></fr:tex>.
+This just says that the function <fr:tex display="inline"><![CDATA[f]]></fr:tex> gives the result HD when it is applied to the input 87; and that's the same as saying that <fr:tex display="inline"><![CDATA[f]]></fr:tex> takes 87 to HD.
+The notation <fr:tex display="inline"><![CDATA[f(87) = \text {HD}]]></fr:tex> says this in a more efficient and compact way.
+</html:p>
+                <html:p>
+This notation for functions and application will be with us throughout the semester: it's very handy!
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

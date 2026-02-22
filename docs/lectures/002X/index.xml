@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>17</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/002X/</fr:uri>
+    <fr:display-uri>002X</fr:display-uri>
+    <fr:route>/002X/</fr:route>
+    <fr:title text="Valid and invalid">Valid and invalid</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>An argument is <html:strong>valid in a logic</html:strong> iff it is a member of the logic; otherwise it is <html:strong>invalid</html:strong> in that logic.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>17</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/002W/</fr:uri>
+            <fr:display-uri>002W</fr:display-uri>
+            <fr:route>/002W/</fr:route>
+            <fr:title text="Validity and invalidity">Validity and invalidity</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>         The arguments contained in a logic, the ones counted as "good" according to that logic, are called <html:strong>valid</html:strong> in that logic, and the others are called <html:strong>invalid</html:strong>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002X/</fr:uri>
+                <fr:display-uri>002X</fr:display-uri>
+                <fr:route>/002X/</fr:route>
+                <fr:title text="Valid and invalid">Valid and invalid</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>An argument is <html:strong>valid in a logic</html:strong> iff it is a member of the logic; otherwise it is <html:strong>invalid</html:strong> in that logic.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>Note that it doesn't make sense, on this definition, to talk about an argument's being just plain valid or just plain invalid: it's only with some logic in mind that notions of validity or invalidity make sense.
+Saying that an argument is <html:em>valid</html:em> is like saying that someone is <html:em>ready</html:em>.
+Ready for what?
+Usually, people are ready for some things and not for others.
+Similarly, any argument is valid in some logics and not in others.
+It's only with some particular logic in view that calling an argument valid or invalid is meaningful.
+</html:p>
+            <html:p>
+        There's not much to say in full generality about validity and invalidity; they really ar  just tags for "in a logic" and "out of a logic".
+        We'll look at particular logics with particular applications, though, and then we'll be able to see what validity in these particular cases amounts to; this will vary from logic to logic and application to application.
+</html:p>
+            <html:p>         In full generality, though, I can at least warn you off a potential confusion.
+        As we'll use the terms, it is <html:em>only arguments</html:em> that can ever be valid or invalid.
+        It doesn't make any sense, for example, to call a sentence valid.
+
+</html:p>
+            <html:p>If you read around, you might find some older sources that will sometimes call a sentence valid.
+        They usually mean by that what we would mean by considering the argument with no premises and that sentence as its conclusion, and calling that <html:em>argument</html:em> valid.
+        Here, we'll just avoid ever calling sentences valid or invalid, which makes things simpler.</html:p>
+            <html:p>So if you ever find yourself saying something like "I think this sentence is invalid", you know something's gone wrong.
+        Only arguments can ever be valid or invalid, nothing else; and in its purest sense, this is just a different way of saying that the argument is in a particular logic or not in it.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

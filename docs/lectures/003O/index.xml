@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>21</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/003O/</fr:uri>
+    <fr:display-uri>003O</fr:display-uri>
+    <fr:route>/003O/</fr:route>
+    <fr:title text="Valuation">Valuation</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>A <html:strong>valuation</html:strong> in a structure for a language is a function from sentences of the language to values in the structure, where the value of every compound sentence in the language is related to the values of its components in the way the structure indicates.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003G/</fr:uri>
+            <fr:display-uri>003G</fr:display-uri>
+            <fr:route>/003G/</fr:route>
+            <fr:title text="The Boolean structure">The Boolean structure</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>         Now I'm going to give you a slightly different way to think about what we've just gone over.
+        This way is conceptually a bit more out there, but I think it makes it easier to do the calculations, and eventually even makes it easier to consider other possibilities.
+        Don't worry too much if this section seems a bit much at first; but if it does, make sure you return here after you've had some more practice!
+        What's here will in fact make things easier, once you grok it.
+</html:p>
+            <html:p>         The conceptual move is this: we don't have to think about connectives as only acting within the language, forming compound sentences from their components.
+        It can help to think of connectives as living a double life, acting on truth values directly.
+        Rather than saying something like "for any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> and any valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>, if <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {T}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(\neg A) = \mathsf {\mathbf {F}}]]></fr:tex>", we can say the same thing much more simply by just reporting that <fr:tex display="inline"><![CDATA[\neg \mathsf {\mathbf {T}} = \mathsf {\mathbf {F}}]]></fr:tex>.
+        By saying this, we're <html:em>not</html:em> saying that <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> are sentences.
+        They're not.
+        They're still truth values, which are something else.
+        What we're doing is extending our connectives so that they have the ability to act on truth values too.
+        You can read all our earlier connective tables in this way.
+        So, for example, you can consult the disjunction table to see that <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \lor  \mathsf {\mathbf {F}} = \mathsf {\mathbf {T}}]]></fr:tex>, or that <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}} \lor  \mathsf {\mathbf {F}} = \mathsf {\mathbf {F}}]]></fr:tex>.
+</html:p>
+            <html:p>         Thinking this way brings at least two benefits: one practical and one conceptual.
+        Practically, I find it makes it easier to calculate the value a compound sentence should take on a valuation.
+        Think again about a valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> such that <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {T}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {F}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(r) = \mathsf {\mathbf {T}}]]></fr:tex>, and suppose you want to know what <fr:tex display="inline"><![CDATA[w(p \land  \neg  (q \lor  r))]]></fr:tex> is.
+        (This is one of the examples we just looked at.)
+        Now we can proceed as follows: since we know <fr:tex display="inline"><![CDATA[w(p), w(q),]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(r)]]></fr:tex>, we can dig into our compound sentence and <html:em>replace</html:em> those atomic sentences by the truth values they take on the valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex>.
+        This gives us <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \land  \neg  (\mathsf {\mathbf {F}} \lor  \mathsf {\mathbf {T}})]]></fr:tex>.
+        And now we can proceed step-by-step just as before:
+        <html:ul><html:li><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \land  \neg  (\mathsf {\mathbf {F}} \lor  \mathsf {\mathbf {T}})]]></fr:tex></html:li>
+            <html:li><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \land  \neg  \mathsf {\mathbf {T}}]]></fr:tex></html:li>
+            <html:li><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \land  \mathsf {\mathbf {F}}]]></fr:tex></html:li>
+            <html:li><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:li></html:ul>
+        This is just another way to arrive at the same answer, and we're doing the same things along the way.
+        The difference is that going this way gives you a useful notation for writing down <html:em>intermediate</html:em> results.
+        That can get really important; the more you try to hold in your head at once, the more likely you are to make a slip-up.
+        By having a simple notation for intermediate results, you can make it much easier to make it through an entire calculation correctly.
+</html:p>
+            <html:p>         If you want to see this in action, you can check out <fr:link href="https://negation.rocks/emu.html" type="external">https://negation.rocks/emu.html</fr:link>, which is another site I've made for logic practice.
+        (You don't log in to this one, so it's not any part of your assessment; it can be a handy source of practice nonetheless, though.)
+        If you head over there, you'll see that this is also the method I've used there to explain the correct answers for some exercises.
+        Just as having a good notation for intermediate results can be useful in arriving at the right answer, it's also useful for explaining how the correct answer was arrived at, and hopefully it will be useful for you to be able to zero in on the missteps you make as you practice.
+        (And of course you will make missteps!
+        That's how learning works.)
+</html:p>
+            <html:p>         So that's the practical benefit.
+        The conceptual benefit is this: it lets us package up everything we know about Boolean valuations into something called a <html:strong>structure</html:strong>.
+        A structure is a set of values, in this case <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, together with an account of how our connectives act on these values.
+    </html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003H/</fr:uri>
+                <fr:display-uri>003H</fr:display-uri>
+                <fr:route>/003H/</fr:route>
+                <fr:title text="Structure">Structure</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>structure</html:strong> for a language is a set of values, together with an account of how every connective in the language acts on those values.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>And given a structure, we can say what it takes to be a <html:strong>valuation</html:strong> in that structure:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003O/</fr:uri>
+                <fr:display-uri>003O</fr:display-uri>
+                <fr:route>/003O/</fr:route>
+                <fr:title text="Valuation">Valuation</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>valuation</html:strong> in a structure for a language is a function from sentences of the language to values in the structure, where the value of every compound sentence in the language is related to the values of its components in the way the structure indicates.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>(Note that since <html:em>any</html:em> such function is a valuation, that means that valuations are not restricted at all when it comes to the values they assign to atomic sentences.)</html:p>
+            <html:p>    This means that you can specify everything about how our Boolean valuations work just by putting down the tables we've already seen:
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003N/</fr:uri>
+                <fr:display-uri>003N</fr:display-uri>
+                <fr:route>/003N/</fr:route>
+                <fr:title text="The Boolean structure">The Boolean structure</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>21</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003J/</fr:uri>
+                    <fr:display-uri>003J</fr:display-uri>
+                    <fr:route>/003J/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[A]]></fr:tex></html:td>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>21</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003K/</fr:uri>
+                    <fr:display-uri>003K</fr:display-uri>
+                    <fr:route>/003K/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\land ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>21</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003L/</fr:uri>
+                    <fr:display-uri>003L</fr:display-uri>
+                    <fr:route>/003L/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\lor ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>21</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003M/</fr:uri>
+                    <fr:display-uri>003M</fr:display-uri>
+                    <fr:route>/003M/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>21</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003I/</fr:uri>
+                    <fr:display-uri>003I</fr:display-uri>
+                    <fr:route>/003I/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\top ]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+                    <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\bot ]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>         In giving a structure via tables like this, there's no need to separately specify the set of values, since you can read those off the edges of the tables.
+        By packaging everything up into a structure in this way, we make it easy to change from one structure to another, to think about different kinds of valuations we might want to draw on, beyond just Boolean ones.
+        In a moment, we'll look at a few other example structures, besides this Boolean one.
+        But first, I want to look a bit at some uses of Boolean valuations.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

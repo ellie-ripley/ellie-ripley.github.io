@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="https://www.my-great-forest.net/0001/" type="external">0001</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>11</fr:month>
+      <fr:day>11</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/0003/</fr:uri>
+    <fr:display-uri>0003</fr:display-uri>
+    <fr:route>/0003/</fr:route>
+    <fr:title text="On proving and untangling necklaces">On proving and untangling necklaces</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>I just untangled a knot of about 25 necklaces.
+(I've just moved house, and all my necklaces got twisted and tangled together in the move.)
+It took about half an hour, maybe a bit more.
+It started because I was getting dressed for the day, and I wanted one necklace in particular: I had a goal in mind.
+But it became apparent after about a minute or two that going after the necklace I wanted was going nowhere: it was too tangled up with the others, which were too tangled up with each other in turn.
+I was not going to get the necklace I was after without a much larger-scale untangling.
+</html:p>
+    <html:p>So I figure, fine.
+I need to untangle these all to put them away at some point, and that's a job I'd been putting off.
+No need to do the whole thing now, but if I can get five or six necklaces free, including the one I'm after, that puts a dent in it, and leaves me less to do later.
+So I start untangling.</html:p>
+    <html:p>In the course of the next half hour or so, I ended up untangling the entire mess.
+Along the way, I was struck by a number of parallels between the untangling I was doing and the process of solving a logic puzzle.
+Here's what I can recall immediately afterwards:</html:p>
+    <html:ul><html:li>For most of the time, the goal I'm after (the thing to be proved or discovered, the necklace I intend to wear today) is not---and cannot be---at the forefront of my mind.
+  Instead, I'm thinking mainly about *what I can do from where I am*: which necklace I see wrapped around which other necklace in a way where I can clarify things by taking a step.
+  Then I take the step, even if I don't see how it connects to the overall project of untangling.</html:li>
+  <html:li>For most of those steps taken along the way, I *never* come to see how they contribute; I just do them and forget them immediately, working directly with the new simpler tangle.</html:li>
+  <html:li>Probably a number of those steps in fact made things *worse* overall in ways I don't see; it would be kind of a miracle if this wasn't the case. But overall *enough* of them make it *enough* better to be worth it.</html:li>
+  <html:li>Even though I'm acting *kind of* at random, it's definitely not *totally* at random.
+  Picking up the tangle and shaking it, for example, is not something I ever do.
+  (Even though the process is frustrating and it would feel good.)
+  I know that doing *that* would make things worse, so I avoid it.</html:li>
+  <html:li>I'm put in mind of a particular student from last semester, who would get frustrated (of course!) at times, but never once gave up.
+  I try to bring her energy to the present task.</html:li>
+  <html:li>Cheap answers and shortcuts are great when they work---but they're not the kind of thing to do without a plan.
+Sometimes I can take a "shortcut" by opening a necklace's clasp, freeing up two ends that I can then snake out individually.
+  But I think that just opening up all the clasps at once at the start would leave me with an even worse mess.
+  So I don't open up any clasps until I can see directly that opening *this* clasp *now* will let me free a particular necklace.
+  When I see an opportunity to do that, though, I take it right away.</html:li>
+  Cheap answers and shortcuts are great when they work---but they're not the kind of thing to do without a plan.
+  <html:li>Along the way, there are a few times where I just find a necklace sitting on the ground: things I'd done to other necklaces had freed it, but I hadn't noticed when it happened, only later.</html:li>
+  <html:li>The necklace I started out intending to free was in fact like the third one from the end to get free.
+  Sometimes solving the particular problem in view requires solving a much larger and more general problem first.</html:li>
+  <html:li>About two-thirds of the way through, I release a different necklace from the one I'd initially wanted to wear today, and I decide to wear that one instead.
+  Then I keep going.</html:li>
+  <html:li>I never do develop any real understanding of the tangle I began with.
+  The first time I get anything like an overview of the situation, I'm already almost done: like five or so necklaces left.
+  Up until then, it stays too complex to have an overview.
+  Understanding comes *late*: it arrives, if it ever does, when you're almost done.</html:li></html:ul>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

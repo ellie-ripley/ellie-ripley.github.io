@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="true" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:contributor>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:contributor>
+    </fr:authors>
+    <fr:uri>https://www.my-great-forest.net/index/</fr:uri>
+    <fr:display-uri>index</fr:display-uri>
+    <fr:route>/index/</fr:route>
+    <fr:title text="The Binchicken Lectures">The Binchicken Lectures</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Eat trash. Learn logic.</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2025</fr:year>
+          <fr:month>11</fr:month>
+          <fr:day>29</fr:day>
+        </fr:date>
+        <fr:uri>https://www.my-great-forest.net/0004/</fr:uri>
+        <fr:display-uri>0004</fr:display-uri>
+        <fr:route>/0004/</fr:route>
+        <fr:title text="Table of Contents">Table of Contents</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:ul><html:li><fr:link href="/0002/" title="About this unit" uri="https://www.my-great-forest.net/0002/" display-uri="0002" type="local">About this unit</fr:link></html:li>
+  <html:li>Section A: Preliminaries
+  <html:ul><html:li><fr:link href="/0005/" title="Lecture 1: Introduction and languages" uri="https://www.my-great-forest.net/0005/" display-uri="0005" type="local">Lecture 1: Introduction and languages</fr:link></html:li>
+    <html:li><fr:link href="/0011/" title="Lecture 2: Functions and substitutions" uri="https://www.my-great-forest.net/0011/" display-uri="0011" type="local">Lecture 2: Functions and substitutions</fr:link></html:li>
+    <html:li><fr:link href="/002H/" title="Lecture 3: Sets, arguments, and logics" uri="https://www.my-great-forest.net/002H/" display-uri="002H" type="local">Lecture 3: Sets, arguments, and logics</fr:link></html:li></html:ul></html:li>
+  <html:li>Section B: Structures and matrices
+  <html:ul><html:li><fr:link href="/0034/" title="Lecture 4: Structures" uri="https://www.my-great-forest.net/0034/" display-uri="0034" type="local">Lecture 4: Structures</fr:link></html:li>
+    <html:li>[Lecture 5: Matrices and counterexamples]</html:li>
+    <html:li>[Lecture 6: Using matrices to compare logics]</html:li>
+    <html:li>[Lecture 7: The limits of matrices]</html:li></html:ul></html:li>
+  <html:li>Section C: Exploring intuitionistic logic
+  <html:ul><html:li>Lecture 8: Natural deduction</html:li>
+    <html:li>Lecture 9: Intuitionistic logic</html:li>
+    <html:li>Lecture 10: Intuitionistic models</html:li>
+    <html:li>Lecture 11: Harmony</html:li></html:ul></html:li>
+  <html:li>[Lecture 12: further directions]</html:li></html:ul>
+      </fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

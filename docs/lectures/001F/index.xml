@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>3</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/001F/</fr:uri>
+    <fr:display-uri>001F</fr:display-uri>
+    <fr:route>/001F/</fr:route>
+    <fr:title text="Higher-order functions">Higher-order functions</fr:title>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>It gets worse/better!
+In effect what I've done here is to give you a particular <html:em>function</html:em> that takes a <html:em>substitution</html:em> as an input and gives you a <html:em>function from sentences to sentences</html:em> as its output.
+</html:p>
+    <html:p>Sometimes people use the term "higher-order function" to mean a function that takes <html:em>functions</html:em> as inputs: since a substitution is a kind of function, the way I've shown you to extend a substitution here is itself such a higher-order function.
+We won't be doing much with higher-order functions this semester, but this also isn't the last one we'll see.
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>3</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/001C/</fr:uri>
+            <fr:display-uri>001C</fr:display-uri>
+            <fr:route>/001C/</fr:route>
+            <fr:title text="Applying a substitution">Applying a substitution</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Since a substitution is just a certain kind of function, we can apply it just as we would apply any other function.
+Building on the example substitutions from above, we have some example results:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[f(p) = p]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[f(q) = q]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[g(p) = p \lor  (q \rightarrow  r)]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[g(q) = p \lor  (q \rightarrow  r)]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[h(p) = q]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[h(q) = p \land  q]]></fr:tex></html:li></html:ul></html:p>
+            <html:p>So far so usual.
+But substitutions have a little trick to them: given a substitution, we often treat it like a function from <html:em>all</html:em> sentences to all sentences in a particular way.
+Once you see the idea, it's not too bad, but it takes a bunch of words to explain; I'll come at it in two ways.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001D/</fr:uri>
+                <fr:display-uri>001D</fr:display-uri>
+                <fr:route>/001D/</fr:route>
+                <fr:title text="Method 1: preserve the main connective, apply to components">Method 1: preserve the main connective, apply to components</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Given a sentence and a substitution, if the sentence is atomic we already know how to apply the substitution to it.
+But what if the sentence is compound?
+Then the result we're after is this: we preserve the main connective, and apply the substitution to each of the components.
+</html:p>
+                <html:p>So, for example, take our substitution <fr:tex display="inline"><![CDATA[h]]></fr:tex> from above.
+What is <fr:tex display="inline"><![CDATA[h(q \rightarrow  r)]]></fr:tex>?
+This is compound, so we want to preserve the main connective <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex>, and apply the substitution to each of the components: our result should be <fr:tex display="inline"><![CDATA[h(q) \rightarrow  h(r)]]></fr:tex>.
+And what is that?
+Well, both <fr:tex display="inline"><![CDATA[q]]></fr:tex> and <fr:tex display="inline"><![CDATA[r]]></fr:tex> are atomic, so we know how to apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to them: <fr:tex display="inline"><![CDATA[h(q) = p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[h(r) = q]]></fr:tex>.
+So <fr:tex display="inline"><![CDATA[h(q \rightarrow  r) = h(q) \rightarrow  h(r) = (p \land  q) \rightarrow  q]]></fr:tex>.
+(Note the parentheses!)
+</html:p>
+                <html:p>
+For a more complex example, think about <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot ))]]></fr:tex>.
+This is compound, so we want to keep the main connective as it is and apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to the components.
+This gets us to <fr:tex display="inline"><![CDATA[h(p) \land  h(q \lor  \bot )]]></fr:tex>.
+Now, <fr:tex display="inline"><![CDATA[h(p)]]></fr:tex> is good to go, since we know <fr:tex display="inline"><![CDATA[h(p) = q]]></fr:tex>.
+So our result should be <fr:tex display="inline"><![CDATA[q \land  h(q \lor  \bot )]]></fr:tex>; but <fr:tex display="inline"><![CDATA[q \lor  \bot ]]></fr:tex> is not atomic, so we've got more work still to do.
+</html:p>
+                <html:p>What is <fr:tex display="inline"><![CDATA[h(q \lor  \bot )]]></fr:tex>, then?
+Well, we preserve the main connective and apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to the components.
+So it's <fr:tex display="inline"><![CDATA[h(q) \lor  h(\bot )]]></fr:tex>.
+And we know <fr:tex display="inline"><![CDATA[h(q) = p \land  q]]></fr:tex>, so <fr:tex display="inline"><![CDATA[h(q \lor  \bot ) = (p \land  q) \lor  h(\bot )]]></fr:tex>.
+Putting this together with what we already knew, we're getting closer: now we have that <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot )) = q \land  ((p \land  q) \lor  h(\bot ))]]></fr:tex>.
+</html:p>
+                <html:p>That just leaves <fr:tex display="inline"><![CDATA[h(\bot )]]></fr:tex> to sort out.
+Remember that <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is compound, not atomic, so we still can't just apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> like any normal function; we need to stick to the plan.
+That is, we keep the main connective the same and apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to all the components.
+In this case, the main connective of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, and there are no components.
+So <fr:tex display="inline"><![CDATA[h(\bot ) = \bot ]]></fr:tex>.
+(Remember <fr:link href="/000F/" title="Logicians' Weird Habit 2" uri="https://www.my-great-forest.net/000F/" display-uri="000F" type="local">Logicians' Weird Habit 2</fr:link>: we automatically count as succeeding at applying <fr:tex display="inline"><![CDATA[h]]></fr:tex> to <html:em>all</html:em> the components: all zero of them.)
+</html:p>
+                <html:p>Putting this all together, we get our result: <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot )) = q \land  ((p \land  q) \lor  \bot )]]></fr:tex>.
+Note that it's not just the main connective of this sentence that stayed put: <html:em>all</html:em> the connectives in the sentence have stayed just as they were.
+In effect, we've just acted on the atomics <html:em>inside</html:em> the sentence, replacing each of them with whatever the substitution <fr:tex display="inline"><![CDATA[h]]></fr:tex> says.
+That's the key idea of applying a substitution.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001E/</fr:uri>
+                <fr:display-uri>001E</fr:display-uri>
+                <fr:route>/001E/</fr:route>
+                <fr:title text="Method 2: think about trees, replace the atomics directly">Method 2: think about trees, replace the atomics directly</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Another way to think about it---and this will give the same results, as long as you're doing everything correctly---is to return to visualising formulas as trees, like we did <fr:link href="/000L/" title="Putting more complex sentences together" uri="https://www.my-great-forest.net/000L/" display-uri="000L" type="local">in the previous lecture</fr:link>.</html:p>
+                <html:p>
+Remember that the leaves of these trees, the very tips of the branches, are all either atomic sentences or nullary connectives.
+To apply a substitution to a sentence, when you think of the sentence as a tree like this, you leave the whole innards of the tree in place, and you also leave the nullary connectives at the leaves in place.
+You only change the leaves with atomic sentences.
+At each of these atomic leaves, you graft on the tree for whatever sentence your substitution assigns to the atomic that was there.
+</html:p>
+                <html:p>Let's look at the same example, but from this new perspective.
+We want to find <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot ))]]></fr:tex>.
+The first step is to draw out the tree for <fr:tex display="inline"><![CDATA[p \land  (q \lor  \bot )]]></fr:tex>:
+</html:p>
+                <fr:resource hash="e5d213388a36c37e6bb48abdc0e69cf5">
+                  <fr:resource-content>
+                    <html:img src="/e5d213388a36c37e6bb48abdc0e69cf5.svg" />
+                  </fr:resource-content>
+                  <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                  <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\land $
+  [$p$]
+  [$\lor $
+    [$q$]
+    [$\bot $]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+                </fr:resource>
+                <html:p>Then we look at the atomic leaves of the tree: in this case they are <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+So we know we need to make trees for <fr:tex display="inline"><![CDATA[h(p)]]></fr:tex> and <fr:tex display="inline"><![CDATA[h(q)]]></fr:tex> as well.
+These are
+<fr:resource hash="9434a9e6fe4f3eeab439035c6bca8cad"><fr:resource-content><html:img src="/9434a9e6fe4f3eeab439035c6bca8cad.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$q$]
+ \end {forest}]]></fr:resource-source></fr:resource>
+and
+<fr:resource hash="3c1c96cc4172018089f69750d90cbc2d"><fr:resource-content><html:img src="/3c1c96cc4172018089f69750d90cbc2d.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\land $
+  [$p$]
+  [$q$]
+]
+ \end {forest}]]></fr:resource-source></fr:resource>, respectively.</html:p>
+                <html:p>Finally, we graft that tree for <fr:tex display="inline"><![CDATA[h(p)]]></fr:tex> on to every leaf with a <fr:tex display="inline"><![CDATA[p]]></fr:tex> in our input tree, and we graft the tre for <fr:tex display="inline"><![CDATA[h(q)]]></fr:tex> on to every leaf with a <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+This gives us:
+</html:p>
+                <fr:resource hash="96271b38a32d583182233ed645777c43">
+                  <fr:resource-content>
+                    <html:img src="/96271b38a32d583182233ed645777c43.svg" />
+                  </fr:resource-content>
+                  <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                  <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\land $
+  [$q$]
+  [$\lor $
+    [$\land $
+      [$p$]
+      [$q$]
+    ]
+    [$\bot $]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+                </fr:resource>
+                <html:p>That tree specifies the formula <fr:tex display="inline"><![CDATA[q \land  ((p \land  q) \lor  \bot )]]></fr:tex>: just the same result for <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot ))]]></fr:tex> that we arrived at with Method 1.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>Whichever way you want to think about substitutions, the result should be the same.
+Think about what makes the most sense to you!</html:p>
+            <html:p><html:strong>If you want to be picky:</html:strong> One way to think about what we've done here is to say that we're not <html:em>really</html:em> applying the substitution to all sentences.
+Instead, we've picked a particular way, given any substitution, to determine a <html:em>new</html:em> function that goes from sentences to sentences.
+That's a fine way to think about it, too; but I'll keep talking about applying the substitution, even to compound sentences.
+You now know what I mean by that!
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001F/</fr:uri>
+                <fr:display-uri>001F</fr:display-uri>
+                <fr:route>/001F/</fr:route>
+                <fr:title text="Higher-order functions">Higher-order functions</fr:title>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>It gets worse/better!
+In effect what I've done here is to give you a particular <html:em>function</html:em> that takes a <html:em>substitution</html:em> as an input and gives you a <html:em>function from sentences to sentences</html:em> as its output.
+</html:p>
+                <html:p>Sometimes people use the term "higher-order function" to mean a function that takes <html:em>functions</html:em> as inputs: since a substitution is a kind of function, the way I've shown you to extend a substitution here is itself such a higher-order function.
+We won't be doing much with higher-order functions this semester, but this also isn't the last one we'll see.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

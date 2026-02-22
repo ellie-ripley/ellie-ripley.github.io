@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>17</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/002P/</fr:uri>
+    <fr:display-uri>002P</fr:display-uri>
+    <fr:route>/002P/</fr:route>
+    <fr:title text="Intersection and union">Intersection and union</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Given sets <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, their <html:strong>intersection</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cap  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>both</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
+Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cup  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>either</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> or <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
+(Remember <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>17</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/002O/</fr:uri>
+            <fr:display-uri>002O</fr:display-uri>
+            <fr:route>/002O/</fr:route>
+            <fr:title text="Intersections (and unions)">Intersections (and unions)</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>There are a couple of operations on sets that are useful to know about, called <html:strong>intersection</html:strong> and <html:strong>union</html:strong>.
+These are not super-central to this unit, but they will come up now and again.
+(Intersection will turn out to be more useful for our purposes than union.)</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002P/</fr:uri>
+                <fr:display-uri>002P</fr:display-uri>
+                <fr:route>/002P/</fr:route>
+                <fr:title text="Intersection and union">Intersection and union</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Given sets <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, their <html:strong>intersection</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cap  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>both</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
+Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cup  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>either</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> or <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
+(Remember <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>For example, the intersection of <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\{q, r, s\}]]></fr:tex> is <fr:tex display="inline"><![CDATA[\{q, r\}]]></fr:tex>; and the union of these same two sets is <fr:tex display="inline"><![CDATA[\{p, q, r, s\}]]></fr:tex>.
+</html:p>
+            <html:p>Intersections and unions don't need to be between exactly two sets: you can take the intersection of a whole bunch of sets, and it contains whatever they <html:em>all</html:em> have in common; and you can likewise take the union of a whole bunch of sets, and it contains whatever is contained in <html:em>any</html:em> of them.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>1</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/000E/</fr:uri>
+            <fr:display-uri>000E</fr:display-uri>
+            <fr:route>/000E/</fr:route>
+            <fr:title text="Logicians' Weird Habit 1">Logicians' Weird Habit 1</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+             Whenever I say something like "BLAH or SUCH-AND-SUCH", I always mean to <html:em>include</html:em> the case where both BLAH and SUCH-AND-SUCH happen.
+            I won't bother with any extra qualification like "or both", or anything like that.
+            You can always take for granted that I mean to include the both case.
+            So, for example, I'd be perfectly happy to say: "Melbourne is in Victoria or Mercury is the closest planet to the Sun".
+            Both of these are true, so my "or" claim is all good.
+
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

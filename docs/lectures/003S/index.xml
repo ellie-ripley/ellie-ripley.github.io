@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>21</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/003S/</fr:uri>
+    <fr:display-uri>003S</fr:display-uri>
+    <fr:route>/003S/</fr:route>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>However, Minecraft redstone, like real wiring, is way more complex than this!
+        Only some Minecraft devices are on/off the way Boolean valuations are.
+        Basically anything involving a comparator, you'd want to be thinking in terms of a sixteen-valued logic, not a two-valued logic.
+        (For an introduction to this sixteen-valued logic, you can see <fr:link href="https://www.youtube.com/watch?v=2PspFj8sS8I" type="external">this talk by the logician Roy Cook</fr:link>.)
+        Concerns about timing and spatial arrangement, which are central to redstone (and real!) wiring, are also not captured by Boolean valuations.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003Q/</fr:uri>
+            <fr:display-uri>003Q</fr:display-uri>
+            <fr:route>/003Q/</fr:route>
+            <fr:title text="Uses of Boolean valuations: circuitry">Uses of Boolean valuations: circuitry</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>         Another way Boolean valuations get used is in understanding certain kinds of <html:em>electrical circuits</html:em>.
+        In particular, Boolean valuations are of most use for considering circuits where every component has only one of two states: on or off.
+        Consider, for example, a light installed in the ceiling that can be controlled from either of two switches.
+        Each switch has two possible states: on or off.
+        And the light has two possible states: on or off.
+        These states are related to each other in a somewhat complex way, and we can use our language, and Boolean valuations, to understand it.
+</html:p>
+            <html:p>         Let's understand the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> now, not as truth values at all, but instead as the states <html:em>on</html:em> and <html:em>off</html:em>, respectively; and let's understand our components---the two switches and the light---as sentences in our language.
+        Call one switch <fr:tex display="inline"><![CDATA[p]]></fr:tex> and the other switch <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+        Just as we have valuations that give us every possible combination of values for <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>, so too we can run around the room and set up every possible combination of states of the two switches.
+</html:p>
+            <html:p>         What sentence should we associate with the light? 
+        Well, how should the light respond to the switches?
+        We want to set things up so that, no matter what state things are currently in, and no matter which switch we're nearest to, we can always change the state of the light by changing the nearest switch.
+        A diagram might help here.
+        We have four possible states of the switches, which I'll call <fr:tex display="inline"><![CDATA[v_{1}]]></fr:tex>--<fr:tex display="inline"><![CDATA[v_{4}]]></fr:tex>, and we can move between these states as shown here:
+</html:p>
+            <fr:resource hash="f876a7b141306f00c5006d4b702eeff5">
+              <fr:resource-content>
+                <html:img src="/f876a7b141306f00c5006d4b702eeff5.svg" />
+              </fr:resource-content>
+              <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz}]]></fr:resource-source>
+              <fr:resource-source type="latex" part="body"><![CDATA[ 
+        \begin {tikzpicture}[auto]
+          \node  (v1) at (0,3) {$v_{1}$: $p$ off, $q$ off};
+          \node  (v2) at (5,3) {$v_{2}$: $p$ on, $q$ off};
+          \node  (v3) at (0,0) {$v_{3}$: $p$ off, $q$ on};
+          \node  (v4) at (5,0) {$v_{4}$: $p$ on, $q$ on};
+          \draw  (v1) to node {switch $p$} (v2);
+          \draw  (v2) to node {switch $q$} (v4);
+          \draw  (v1) to node {switch $q$} (v3);
+          \draw  (v3) to node {switch $p$} (v4);
+
+
+        \end {tikzpicture}
+        ]]></fr:resource-source>
+            </fr:resource>
+            <html:p>         We can think of these states as Boolean valuations on a language with the two atomic sentences <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+        For example, we'd have <fr:tex display="inline"><![CDATA[v_{2}(p) = \mathsf {\mathbf {T}}]]></fr:tex>, since switch <fr:tex display="inline"><![CDATA[p]]></fr:tex> is on in state <fr:tex display="inline"><![CDATA[v_{2}]]></fr:tex>; and <fr:tex display="inline"><![CDATA[v_{2}(q) = \mathsf {\mathbf {F}}]]></fr:tex>, since switch <fr:tex display="inline"><![CDATA[q]]></fr:tex> is off there.
+</html:p>
+            <html:p>         We want to wire up a light now so that, whichever one of these states we happen to be in, flipping <fr:tex display="inline"><![CDATA[p]]></fr:tex> will change whether the light is on or off, <html:em>and</html:em> so that, whichever one of these states we happen to be in, flipping <fr:tex display="inline"><![CDATA[q]]></fr:tex> will also change whether the light is on or off.
+        That is, we want the light either to be on in states <fr:tex display="inline"><![CDATA[v_{1}, v_{4}]]></fr:tex> and off in states <fr:tex display="inline"><![CDATA[v_{2}, v_{3}]]></fr:tex>, or vice versa.
+        Can we build a sentence, then, using the atomic sentences <fr:tex display="inline"><![CDATA[p, q]]></fr:tex> and our connectives <fr:tex display="inline"><![CDATA[\land , \lor , \neg ]]></fr:tex>, that works like this?
+        If we can, the structure of such a sentence will tell us how to wire up the light.
+        (That is, it will tell us how to wire up the light if we have electrical components that correspond to the connectives <fr:tex display="inline"><![CDATA[\land , \lor ]]></fr:tex>, and <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>!
+        Such components are standardly called AND, OR, and NOT gates, respectively.)
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003R/</fr:uri>
+                <fr:display-uri>003R</fr:display-uri>
+                <fr:route>/003R/</fr:route>
+                <fr:taxon>Check your understanding</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter><html:p>Can you find such a sentence?</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>21</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:p>         In fact, there are infinitely many sentences that would work here (although there are also infinitely many that don't work!).
+        Consider, for example, the sentence <fr:tex display="inline"><![CDATA[(p \lor  q) \land  \neg  (p \land  q)]]></fr:tex>.
+        If you do your Boolean calculations out, you will see that this sentence takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on valuations <fr:tex display="inline"><![CDATA[v_{2}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v_{3}]]></fr:tex>, and takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> on valuations <fr:tex display="inline"><![CDATA[v_{1}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v_{4}]]></fr:tex>; that makes it an example of what we're looking for.
+        But there are infinitely many other sentences that work equally well here; it's great if you came up with a different one!
+</html:p>
+
+</fr:mainmatter></fr:tree></fr:mainmatter>
+            </fr:tree>
+            <html:p>         If you've ever made even a small redstone device in Minecraft, you've almost certainly made use of Boolean valuations in this way; redstone torches are the component corresponding to <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>, and just running two lines of redstone together corresponds to <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>.</html:p>
+            <html:p>There is no simple block in Minecraft that calculates <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>; instead, there are various ways to combine <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> that produce the same results.
+        For example, consider the two sentences <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg (\neg  p \lor  \neg  q)]]></fr:tex>.
+        By checking all the possible values <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> can take, you can see that these two compound sentences have the same value as each other in every valuation.
+        So even if you don't have a component that calculates <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> directly, so long as you have components for <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>, you can get the job done.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003S/</fr:uri>
+                <fr:display-uri>003S</fr:display-uri>
+                <fr:route>/003S/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>However, Minecraft redstone, like real wiring, is way more complex than this!
+        Only some Minecraft devices are on/off the way Boolean valuations are.
+        Basically anything involving a comparator, you'd want to be thinking in terms of a sixteen-valued logic, not a two-valued logic.
+        (For an introduction to this sixteen-valued logic, you can see <fr:link href="https://www.youtube.com/watch?v=2PspFj8sS8I" type="external">this talk by the logician Roy Cook</fr:link>.)
+        Concerns about timing and spatial arrangement, which are central to redstone (and real!) wiring, are also not captured by Boolean valuations.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>         And the flash memory in your phone is almost certainly what's known as NAND flash memory, because it's based on a circuit that calculates something known as NAND.
+        NAND is another binary connective, one we won't be taking much of a look at this semester.
+        But it too can be built from what we do have: <fr:tex display="inline"><![CDATA[p]]></fr:tex> NAND <fr:tex display="inline"><![CDATA[q]]></fr:tex> always has the same value as <fr:tex display="inline"><![CDATA[\neg  (p \land  q)]]></fr:tex>.
+        Indeed, this is why it's called "NAND"; the name comes from "not-and".
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003T/</fr:uri>
+                <fr:display-uri>003T</fr:display-uri>
+                <fr:route>/003T/</fr:route>
+                <fr:title text="Zeroes and ones">Zeroes and ones</fr:title>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>You might have heard that computers, at their most basic level, deal only with zeroes and ones.
+Taken literally, this is just plain not true.
+But you're now in a position to understand the thing that <html:em>is</html:em> true that explains why people say this.</html:p>
+                <html:p>An electrical conductor can carry varying amounts of <html:em>electric potential</html:em> (this is the thing that's measured in volts).
+In most computers, however, the conductors that carry and hold information are not treated in a way that varies smoothly; they are kept either at a high voltage or at a low voltage.
+<html:em>That's</html:em> what computers deal with at a basic level: high voltage and low voltage.</html:p>
+                <html:p>It's conventional to represent that high voltage with the number 1 and the low voltage with the number 0 for <html:em>human readability</html:em>.
+So it's not that computers use lots of zeroes and ones; it's that <html:em>we</html:em> use lots of zeroes and ones to represent differing voltage levels.
+Computers use these differing voltage levels.</html:p>
+                <html:p>But why zero and one? Why not the actual voltage measurements, or the symbols <fr:tex display="inline"><![CDATA[L]]></fr:tex> and <fr:tex display="inline"><![CDATA[H]]></fr:tex>, or anything else?
+The answer goes back (again) to the Booles.</html:p>
+                <html:p>In <html:em>The Laws of Thought</html:em>, George Boole draws a connection between conjunction between properties and <html:em>multiplication</html:em> on numbers.
+But he notices a disanalogy: for most numbers <fr:tex display="inline"><![CDATA[n]]></fr:tex>, we do not have <fr:tex display="inline"><![CDATA[n \times  n = n]]></fr:tex>.
+However, for any property <fr:tex display="inline"><![CDATA[P]]></fr:tex>, being <fr:tex display="inline"><![CDATA[P]]></fr:tex> <html:em>and</html:em> <fr:tex display="inline"><![CDATA[P]]></fr:tex> is the same (so Boole says) as being <fr:tex display="inline"><![CDATA[P]]></fr:tex>.
+This might seem to threaten the analogy between conjunction and multiplication---but Boole pulls a tricky turn.
+</html:p>
+                <html:p>Note that we <fr:tex display="inline"><![CDATA[do]]></fr:tex> have <fr:tex display="inline"><![CDATA[n \times  n = n]]></fr:tex> in the special cases where <fr:tex display="inline"><![CDATA[n]]></fr:tex> is either zero or one.
+So Boole says that properties behave not like just any numbers, but like the numbers zero and one in particular, because these are the numbers that are their own squares.
+As far as I can tell, this is the origin of the zero/one notation that we still see today.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>4</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/001K/</fr:uri>
+    <fr:display-uri>001K</fr:display-uri>
+    <fr:route>/001K/</fr:route>
+    <fr:title text="What are those capital letters about?">What are those capital letters about?</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>The other thing that might (should!) seem unfamiliar in the above definition is its use of capital letters: it talks about "a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>" and "a sentence <fr:tex display="inline"><![CDATA[B]]></fr:tex>".
+Nothing in anything I've said about languages so far allows for this. So what's up?
+</html:p>
+    <html:p>Sometimes in logic, we want to talk about particular individual sentences, like <fr:tex display="inline"><![CDATA[r]]></fr:tex> or <fr:tex display="inline"><![CDATA[\bot  \rightarrow  (p \lor  s)]]></fr:tex>.
+That mostly happens in giving particular illustrative examples.
+More often, though, our concerns are more general: we want to say something about <html:em>all</html:em> sentences, or about all sentences with such-and-such a feature.
+To make these generalisations, in this class we'll use capital <fr:tex display="inline"><![CDATA[A]]></fr:tex>, <fr:tex display="inline"><![CDATA[B]]></fr:tex>, etc.
+</html:p>
+    <html:p>These are not specific sentences: there is no such sentence as just "<fr:tex display="inline"><![CDATA[A]]></fr:tex>", for example.
+Rather, they allow us to talk about sentences in general.
+The above definition, then, applies to any sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> at all, saying exactly what it takes for <fr:tex display="inline"><![CDATA[A]]></fr:tex>
+ to be a substitution instance of <fr:tex display="inline"><![CDATA[B]]></fr:tex>.</html:p>
+    <html:p>So, for example, it follows from this definition that <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> is a substitution instance of <fr:tex display="inline"><![CDATA[q]]></fr:tex>, since there is a substitution that takes <fr:tex display="inline"><![CDATA[q]]></fr:tex> to <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>: our running example substitution <fr:tex display="inline"><![CDATA[h]]></fr:tex> does this, for example.</html:p>
+    <html:p>And it also follows from this definition that <fr:tex display="inline"><![CDATA[p \land  (r \rightarrow  \bot )]]></fr:tex> is a substitution instance of <fr:tex display="inline"><![CDATA[q \land  s]]></fr:tex>.
+I haven't given you an example substitution that shows this, but it is indeed the case!
+Can you find a substitution that shows this?
+</html:p>
+    <html:p>It also follows from the above definition that <fr:tex display="inline"><![CDATA[q \rightarrow  p]]></fr:tex> is a substitution instance of <fr:tex display="inline"><![CDATA[q \rightarrow  p]]></fr:tex>.
+(Indeed, the substitution that takes every atomic sentence to itself also takes every <html:em>sentence</html:em> to itself, and this shows that <html:em>every</html:em> sentence is a substitution instance of itself.)
+This is an important example: it shows that <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> can even be the <html:em>same</html:em> sentence, as we interpret the definition, even though "<fr:tex display="inline"><![CDATA[A]]></fr:tex>" and "<fr:tex display="inline"><![CDATA[B]]></fr:tex>" are different letters. 
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>3</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/001H/</fr:uri>
+            <fr:display-uri>001H</fr:display-uri>
+            <fr:route>/001H/</fr:route>
+            <fr:title text="Substitution instances">Substitution instances</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Substitutions allow us to make useful generalisations about whole categories of sentences.
+The key idea here is the idea of a <html:strong>substitution instance</html:strong>:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001I/</fr:uri>
+                <fr:display-uri>001I</fr:display-uri>
+                <fr:route>/001I/</fr:route>
+                <fr:title text="Substitution instance">Substitution instance</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a <html:strong>substitution instance</html:strong> of a sentence <fr:tex display="inline"><![CDATA[B]]></fr:tex> iff: there is some substitution <fr:tex display="inline"><![CDATA[f]]></fr:tex> with <fr:tex display="inline"><![CDATA[f(B) = A]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>Now, that definition itself makes use of two important ideas we haven't looked at yet, so our first task is to break it down and see what it says.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001J/</fr:uri>
+                <fr:display-uri>001J</fr:display-uri>
+                <fr:route>/001J/</fr:route>
+                <fr:title text="&quot;Iff&quot;">"Iff"</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>The first thing to think about is that word "iff".
+That's not a normal word, and it's not a typo for "if".</html:p>
+                <html:p>"Iff" is an abbreviation for "if and only if", and that's how it's pronounced, too: just like "if and only if".
+(I mean, you can absolutely pronounce it "ifffffffff" if you want to! (or iff you want to?)
+But it's more usually pronounced "if and only if".)
+</html:p>
+                <html:p>It's common for logicians (and philosophers more broadly) to use "iff" in definitions.
+Like in this case, I want to tell you <html:em>exactly</html:em> what it takes for one sentence to be a substitution instance of  another.
+I don't just want to tell you that "if such-and-such is the case, it's a substitution instance", because that would leave open what happens when such-and-such is <html:em>not</html:em> the case.
+I want to tell you "if such and such is the case, it's a substitution instance; and otherwise it isn't"; this is just what "iff" means.
+</html:p>
+                <html:p>Sometimes, people will just use "if" in definitions to mean "if and only if"; this is more common among mathematicians, in my experience.
+The idea is that, since you know when you're being given a definition, you should know to interpret "if" in that context as meaning "if and only if".
+But I won't do that, at least not deliberately; I'll say "iff" when I mean it. (Assuming no typos.)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>4</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001K/</fr:uri>
+                <fr:display-uri>001K</fr:display-uri>
+                <fr:route>/001K/</fr:route>
+                <fr:title text="What are those capital letters about?">What are those capital letters about?</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>The other thing that might (should!) seem unfamiliar in the above definition is its use of capital letters: it talks about "a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>" and "a sentence <fr:tex display="inline"><![CDATA[B]]></fr:tex>".
+Nothing in anything I've said about languages so far allows for this. So what's up?
+</html:p>
+                <html:p>Sometimes in logic, we want to talk about particular individual sentences, like <fr:tex display="inline"><![CDATA[r]]></fr:tex> or <fr:tex display="inline"><![CDATA[\bot  \rightarrow  (p \lor  s)]]></fr:tex>.
+That mostly happens in giving particular illustrative examples.
+More often, though, our concerns are more general: we want to say something about <html:em>all</html:em> sentences, or about all sentences with such-and-such a feature.
+To make these generalisations, in this class we'll use capital <fr:tex display="inline"><![CDATA[A]]></fr:tex>, <fr:tex display="inline"><![CDATA[B]]></fr:tex>, etc.
+</html:p>
+                <html:p>These are not specific sentences: there is no such sentence as just "<fr:tex display="inline"><![CDATA[A]]></fr:tex>", for example.
+Rather, they allow us to talk about sentences in general.
+The above definition, then, applies to any sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> at all, saying exactly what it takes for <fr:tex display="inline"><![CDATA[A]]></fr:tex>
+ to be a substitution instance of <fr:tex display="inline"><![CDATA[B]]></fr:tex>.</html:p>
+                <html:p>So, for example, it follows from this definition that <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> is a substitution instance of <fr:tex display="inline"><![CDATA[q]]></fr:tex>, since there is a substitution that takes <fr:tex display="inline"><![CDATA[q]]></fr:tex> to <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>: our running example substitution <fr:tex display="inline"><![CDATA[h]]></fr:tex> does this, for example.</html:p>
+                <html:p>And it also follows from this definition that <fr:tex display="inline"><![CDATA[p \land  (r \rightarrow  \bot )]]></fr:tex> is a substitution instance of <fr:tex display="inline"><![CDATA[q \land  s]]></fr:tex>.
+I haven't given you an example substitution that shows this, but it is indeed the case!
+Can you find a substitution that shows this?
+</html:p>
+                <html:p>It also follows from the above definition that <fr:tex display="inline"><![CDATA[q \rightarrow  p]]></fr:tex> is a substitution instance of <fr:tex display="inline"><![CDATA[q \rightarrow  p]]></fr:tex>.
+(Indeed, the substitution that takes every atomic sentence to itself also takes every <html:em>sentence</html:em> to itself, and this shows that <html:em>every</html:em> sentence is a substitution instance of itself.)
+This is an important example: it shows that <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> can even be the <html:em>same</html:em> sentence, as we interpret the definition, even though "<fr:tex display="inline"><![CDATA[A]]></fr:tex>" and "<fr:tex display="inline"><![CDATA[B]]></fr:tex>" are different letters. 
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>22</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/003U/</fr:uri>
+    <fr:display-uri>003U</fr:display-uri>
+    <fr:route>/003U/</fr:route>
+    <fr:title text="Assessment overview">Assessment overview</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Your mark this semester is determined by four components.
+Here, I say a bit about each, in increasing order of difficulty.</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>22</fr:day>
+        </fr:date>
+        <fr:uri>https://www.my-great-forest.net/003V/</fr:uri>
+        <fr:display-uri>003V</fr:display-uri>
+        <fr:route>/003V/</fr:route>
+        <fr:title text="Weekly Moodle quizzes: 30%">Weekly Moodle quizzes: 30%</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>There is a Moodle quiz on the content of each lecture.
+These quizzes are multiple choice and allow for unlimited attempts; only your best mark counts.
+Due dates are as listed on the Moodle.</html:p>
+        <html:p>These quizzes are basic and overviewy; they look just at main ideas.
+The purpose of these quizzes is twofold:</html:p>
+        <html:ul><html:li>To make sure that you get credit for keeping up with the unit and grasping the main ideas</html:li>
+<html:li>To help reinforce the main points of the lectures in your mind</html:li></html:ul>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>22</fr:day>
+        </fr:date>
+        <fr:uri>https://www.my-great-forest.net/003W/</fr:uri>
+        <fr:display-uri>003W</fr:display-uri>
+        <fr:route>/003W/</fr:route>
+        <fr:title text="Binchicken: 35%">Binchicken: 35%</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>NOTE: Binchicken is currently down for between-semester maintenance.
+It will be up in the first few weeks of semester, and you will receive an announcement.
+Please do not email me about this.</html:p>
+        <html:p>You will do a number of your logic exercises at the website <fr:link href="https://binchicken.one/" type="external">https://binchicken.one</fr:link>.
+This is a site that I've made to automatically generate and mark a range of different types of logic exercises.
+This semester, there will be ten different exercise types in total.
+Each exercise type has three ranks you can reach; to earn the full 35%, reach rank 3 in every exercise type.
+You cannot lose ranks once you gain them.</html:p>
+        <html:p>To reach ranks 1 and 2 in any exercise type, all that matters is the total number of exercises of that type that you've gotten correct.
+Incorrect responses don't count for you or against you, so you can try as many exercises as you like of any given type until you reach the needed total correct.
+To reach rank 3 of any exercise type, you need to get a streak of correct answers of a certain length.
+For rank 3, any incorrect answers will break your streak, and you'll need to start again; but incorrect answers don't count against you other than that.
+There is no limit to the number of exercises you can do; each is randomly generated, so you will never run out.</html:p>
+        <html:p>It's important to me to avoid, as much as I can, penalising you for getting things wrong.
+Learning logic, like learning any other skill, takes <html:em>practice</html:em>.
+Practice often looks like getting things wrong for a while before starting to get them right.
+I wouldn't want to push you away from practicing!</html:p>
+        <html:p>That's why the Binchicken marks work as they do: once you can get a streak of a certain length correct, you've shown that you understand that exercise type well enough for full marks on it.
+I don't care at all how many mistaken attempts it takes you to get there!
+I just want to help you get there.</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>22</fr:day>
+        </fr:date>
+        <fr:uri>https://www.my-great-forest.net/003X/</fr:uri>
+        <fr:display-uri>003X</fr:display-uri>
+        <fr:route>/003X/</fr:route>
+        <fr:title text="Workshops: 20%">Workshops: 20%</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p> There are two workshops timetabled for this semester.
+These will be whole-class in-person activities where you'll have group-based tasks to complete.
+One will be an escape room and one a murder mystery.
+Details will be provided in class and at the workshops themselves.
+Each workshop is worth 10% of the semester, for a total of 20%.
+</html:p>
+        <html:p> By the nature of these workshops, of course, it's not possible to have an extension in the usual way---they happen at the time they happen, and when they're over they're over.
+If you do need special consideration for one of these workshops, we'll arrange an oral exam as a substitute assessment.</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>22</fr:day>
+        </fr:date>
+        <fr:uri>https://www.my-great-forest.net/003Y/</fr:uri>
+        <fr:display-uri>003Y</fr:display-uri>
+        <fr:route>/003Y/</fr:route>
+        <fr:title text="Puzzle-solving session: 15%">Puzzle-solving session: 15%</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>The most challenging (and correspondingly most interesting) part of your assessment will be a puzzle-solving session, where you and another student will work together on solving a logical puzzle.</html:p>
+        <html:p>This is a brand-new form of assessment this semester, so you are the guinea pigs for it.
+I'll include example puzzles of the kind that will feature in this session in the lectures, and give you ideas of approaches that you can use to work on them.</html:p>
+        <html:p>A rubric for this session, and the procedure we'll use to schedule them, will be made available in the first few weeks of class.
+Like the workshops, it doesn't really make sense to have extensions for these; any approved special consideration will have to take the form of an alternate assessment, again an oral exam.</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>10</fr:month>
+              <fr:day>26</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/0002/</fr:uri>
+            <fr:display-uri>0002</fr:display-uri>
+            <fr:route>/0002/</fr:route>
+            <fr:title text="About this unit">About this unit</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>These are the lectures for Monash ATS2866, running in Semester 1 2026, taught by Ellie Ripley.
+Welcome!</html:p>
+            <html:p>If you just want to check out the lectures, feel free to poke around.
+This note is about the structure of the unit, its assessment, etc.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>22</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003Z/</fr:uri>
+                <fr:display-uri>003Z</fr:display-uri>
+                <fr:route>/003Z/</fr:route>
+                <fr:title text="Unit structure">Unit structure</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>In addition to the assessment tasks (discussed below), the unit consists of lectures and tutorials.</html:p>
+                <html:p>You're in the lectures right now; they are written in form, and interlinked.
+The <fr:link href="/0004/" title="Table of Contents" uri="https://www.my-great-forest.net/0004/" display-uri="0004" type="local">Table of Contents</fr:link> is a great place to get an overview of the semester.
+There are 12 numbered lectures and 12 teaching weeks of the semester: a lucky coincidence!
+Each week, you should make sure you read that week's lecture and understand it as well as you can before you come to tutorial.
+(That said, if you haven't read the lecture on a given week, you are still very much welcome to come to tutorial!)</html:p>
+                <html:p>The lectures are written (rather than audio or video) so that they can serve a double purpose: they will introduce you to our material, but they will also serve as reference material for you.
+You do not need to memorise anything in this unit; you can always go back to the lectures and check.</html:p>
+                <html:p>(At least if you're in one of my tutes, you may well get sick of hearing me say "check the lectures" in response to some questions.
+But I only say it so much because it's good advice!
+When you have a question about exactly how something works, the answer is often in the lectures.
+Going through the work of digging the answer up when you need it will help you learn, much more than me just telling you the answer would.)</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>22</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0040/</fr:uri>
+                    <fr:display-uri>0040</fr:display-uri>
+                    <fr:route>/0040/</fr:route>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>These lectures are an evolving thing; this semester marks a big shift: from pdf to the web-based format you're currently looking at, which uses the excellent <fr:link href="https://www.forester-notes.org/0052/index.xml" type="external">Forester</fr:link> tool.
+Some lectures are not yet converted over; they will appear as we go.</html:p>
+                    <html:p>If you find any errors or face any difficulties with these lectures, please let me know!
+These lectures have benefitted tremendously from the experiences, suggestions, and ideas that past students have offered.
+Future students can benefit from your experiences as well; just let me know any sugggestions!
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>Tutorials are where most of your learning will happen in this unit.
+No attendance is taken at tutorials, and no part of your semester mark depends on them; they are pure learning opportunities for you and nothing more.
+Each week, your tutor will give you a range of exercises (more straightforward) and puzzles (more devious) that you'll work on in various ways, and also answer any questions you have about the material.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>22</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003U/</fr:uri>
+                <fr:display-uri>003U</fr:display-uri>
+                <fr:route>/003U/</fr:route>
+                <fr:title text="Assessment overview">Assessment overview</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Your mark this semester is determined by four components.
+Here, I say a bit about each, in increasing order of difficulty.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>22</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003V/</fr:uri>
+                    <fr:display-uri>003V</fr:display-uri>
+                    <fr:route>/003V/</fr:route>
+                    <fr:title text="Weekly Moodle quizzes: 30%">Weekly Moodle quizzes: 30%</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>There is a Moodle quiz on the content of each lecture.
+These quizzes are multiple choice and allow for unlimited attempts; only your best mark counts.
+Due dates are as listed on the Moodle.</html:p>
+                    <html:p>These quizzes are basic and overviewy; they look just at main ideas.
+The purpose of these quizzes is twofold:</html:p>
+                    <html:ul><html:li>To make sure that you get credit for keeping up with the unit and grasping the main ideas</html:li>
+<html:li>To help reinforce the main points of the lectures in your mind</html:li></html:ul>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>22</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003W/</fr:uri>
+                    <fr:display-uri>003W</fr:display-uri>
+                    <fr:route>/003W/</fr:route>
+                    <fr:title text="Binchicken: 35%">Binchicken: 35%</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>NOTE: Binchicken is currently down for between-semester maintenance.
+It will be up in the first few weeks of semester, and you will receive an announcement.
+Please do not email me about this.</html:p>
+                    <html:p>You will do a number of your logic exercises at the website <fr:link href="https://binchicken.one/" type="external">https://binchicken.one</fr:link>.
+This is a site that I've made to automatically generate and mark a range of different types of logic exercises.
+This semester, there will be ten different exercise types in total.
+Each exercise type has three ranks you can reach; to earn the full 35%, reach rank 3 in every exercise type.
+You cannot lose ranks once you gain them.</html:p>
+                    <html:p>To reach ranks 1 and 2 in any exercise type, all that matters is the total number of exercises of that type that you've gotten correct.
+Incorrect responses don't count for you or against you, so you can try as many exercises as you like of any given type until you reach the needed total correct.
+To reach rank 3 of any exercise type, you need to get a streak of correct answers of a certain length.
+For rank 3, any incorrect answers will break your streak, and you'll need to start again; but incorrect answers don't count against you other than that.
+There is no limit to the number of exercises you can do; each is randomly generated, so you will never run out.</html:p>
+                    <html:p>It's important to me to avoid, as much as I can, penalising you for getting things wrong.
+Learning logic, like learning any other skill, takes <html:em>practice</html:em>.
+Practice often looks like getting things wrong for a while before starting to get them right.
+I wouldn't want to push you away from practicing!</html:p>
+                    <html:p>That's why the Binchicken marks work as they do: once you can get a streak of a certain length correct, you've shown that you understand that exercise type well enough for full marks on it.
+I don't care at all how many mistaken attempts it takes you to get there!
+I just want to help you get there.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>22</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003X/</fr:uri>
+                    <fr:display-uri>003X</fr:display-uri>
+                    <fr:route>/003X/</fr:route>
+                    <fr:title text="Workshops: 20%">Workshops: 20%</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p> There are two workshops timetabled for this semester.
+These will be whole-class in-person activities where you'll have group-based tasks to complete.
+One will be an escape room and one a murder mystery.
+Details will be provided in class and at the workshops themselves.
+Each workshop is worth 10% of the semester, for a total of 20%.
+</html:p>
+                    <html:p> By the nature of these workshops, of course, it's not possible to have an extension in the usual way---they happen at the time they happen, and when they're over they're over.
+If you do need special consideration for one of these workshops, we'll arrange an oral exam as a substitute assessment.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>22</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/003Y/</fr:uri>
+                    <fr:display-uri>003Y</fr:display-uri>
+                    <fr:route>/003Y/</fr:route>
+                    <fr:title text="Puzzle-solving session: 15%">Puzzle-solving session: 15%</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>The most challenging (and correspondingly most interesting) part of your assessment will be a puzzle-solving session, where you and another student will work together on solving a logical puzzle.</html:p>
+                    <html:p>This is a brand-new form of assessment this semester, so you are the guinea pigs for it.
+I'll include example puzzles of the kind that will feature in this session in the lectures, and give you ideas of approaches that you can use to work on them.</html:p>
+                    <html:p>A rubric for this session, and the procedure we'll use to schedule them, will be made available in the first few weeks of class.
+Like the workshops, it doesn't really make sense to have extensions for these; any approved special consideration will have to take the form of an alternate assessment, again an oral exam.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

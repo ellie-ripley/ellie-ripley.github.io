@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>3</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/001B/</fr:uri>
+    <fr:display-uri>001B</fr:display-uri>
+    <fr:route>/001B/</fr:route>
+    <fr:taxon>Quotation</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>"Angels, and square roots of negative quantities, and the other things that have no existence in three dimensions [she later explicitly includes infinity as an angel], do not come to us to gossip about themselves; or the place they came from; or where they are going to; or where we are going to in the far future. They are messengers from the As-Yet-Unknown; and come to tell us where we are to go next; and the shortest road to get there; and where we ought not to go just at present. 
+        When square root of minus one comes to you, behave reasonably about him. 
+        Treat him logically, exactly as if he were six or nine; only always remember to keep well in front of you <html:em>the fact of your own ignorance</html:em>. 
+        You may never find out any more about him than you know now; but if you treat him sensibly he will tell you plenty of truths about your <fr:tex display="inline"><![CDATA[x]]></fr:tex>s and <fr:tex display="inline"><![CDATA[y]]></fr:tex>s, and other unknown things".</html:p>
+    <html:p>From Mary Everest Boole, <html:em>Philosophy and Fun of Algebra</html:em>, 1909.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/0037/</fr:uri>
+            <fr:display-uri>0037</fr:display-uri>
+            <fr:route>/0037/</fr:route>
+            <fr:taxon>Side note</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>George and Mary Everest Boole lived and wrote in England and Ireland in the 19th century, and Mary into the 20th as well.
+George is typically credited alone for the logical work he published, but I think it's worth noting that Mary was an author in her own right, their relationship was clearly an intellectual one, and George's most influential book, <html:em>The Laws of Thought</html:em>, was written during the time their relationship was beginning.
+So I think it's entirely likely that Mary had some influence on George's work, although how much and of what kind is something I could only speculate on.</html:p>
+            <html:p>         Incidentally, here's Mary Everest Boole's advice for students encountering infinity:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001B/</fr:uri>
+                <fr:display-uri>001B</fr:display-uri>
+                <fr:route>/001B/</fr:route>
+                <fr:taxon>Quotation</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>"Angels, and square roots of negative quantities, and the other things that have no existence in three dimensions [she later explicitly includes infinity as an angel], do not come to us to gossip about themselves; or the place they came from; or where they are going to; or where we are going to in the far future. They are messengers from the As-Yet-Unknown; and come to tell us where we are to go next; and the shortest road to get there; and where we ought not to go just at present. 
+        When square root of minus one comes to you, behave reasonably about him. 
+        Treat him logically, exactly as if he were six or nine; only always remember to keep well in front of you <html:em>the fact of your own ignorance</html:em>. 
+        You may never find out any more about him than you know now; but if you treat him sensibly he will tell you plenty of truths about your <fr:tex display="inline"><![CDATA[x]]></fr:tex>s and <fr:tex display="inline"><![CDATA[y]]></fr:tex>s, and other unknown things".</html:p>
+                <html:p>From Mary Everest Boole, <html:em>Philosophy and Fun of Algebra</html:em>, 1909.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>         And here's her advice for me (and maybe also for you):</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0038/</fr:uri>
+                <fr:display-uri>0038</fr:display-uri>
+                <fr:route>/0038/</fr:route>
+                <fr:taxon>Quotation</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>"You may some day become a teacher. 
+        If ever you are teaching a class how to set down a sum or an equation, say 'This is my way', or 'This is the way which I think you will find most convenient', or 'This is the way in which the Government Inspector requires you to do the sums at present, and therefore you must learn it'. 
+        But do not take in vain the names of great unseen powers to back up either your own limitations, or your own authority, or the Inspector's authority. 
+        Never say, or imply, 'Arithmetic requires you to do this; your sum will come wrong if you do it differently'. 
+        Remember that arithmetic requires nothing from you except absolute honesty and patient work. You get no blessing from the Unseen Powers of Number by slipshod statements used to make your own path easy."
+</html:p>
+                <html:p>From Mary Everest Boole, <html:em>Philosophy and Fun of Algebra</html:em>, 1909.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>This last one, I think, is of some importance when it comes to logic.
+Unfortunately, the world has no shortage of people who are tempted to say "<html:em>Logic</html:em> tells us..." and then they fill in something they're trying to convince you of.
+<html:strong>Don't fall for it.</html:strong>
+Logic is about carefulness, orientation to detail, and discerning what you do and don't have support for.
+It does not require you to believe or disbelieve <html:em>anything</html:em>.
+(Rant over.)
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

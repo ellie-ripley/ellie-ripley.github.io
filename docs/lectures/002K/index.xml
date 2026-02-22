@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>16</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/002K/</fr:uri>
+    <fr:display-uri>002K</fr:display-uri>
+    <fr:route>/002K/</fr:route>
+    <fr:title text="Extensionality">Extensionality</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p> All that matters to a set is what's in it, what its members are.
+There isn't anything else to the identity of a set than the identities of its members.
+This property of sets is called <html:strong>extensionality</html:strong>.
+This means that the set <fr:tex display="inline"><![CDATA[\{]]></fr:tex>Melbourne, Sydney, Brisbane, Adelaide, Perth, Hobart, Darwin, Canberra<fr:tex display="inline"><![CDATA[\}]]></fr:tex> is <html:em>the very same set</html:em> as the set of Australian state and internal territory capitals.
+Same members, same set.
+</html:p>
+    <html:p> This also means that there's a potential for misunderstanding that we need to head off: although we can (and we very much will) use lists to specify some sets, <html:em>sets are not lists</html:em>.
+The reason is that there is more to lists than just what things they contain: lists also have <html:em>order</html:em>, and can contain the same thing <html:em>multiple times</html:em>.
+Sets, though, do not have order, and they do not contain things any particular number of times---they either contain them or they do not, full stop.
+</html:p>
+    <html:p> So think about the list "Melbourne, Sydney, Brisbane, Adelaide, Perth, Hobart, Darwin, Canberra".
+This is <html:em>not</html:em> the same list as "Canberra, Melbourne, Sydney, Melbourne, Brisbane, Darwin, Hobart, Perth, Melbourne, Adelaide".
+The two lists differ in order, and the first one contains Melbourne just once, while the second contains it three times.
+</html:p>
+    <html:p> But although these are not the same list, the <html:em>set</html:em> <fr:tex display="inline"><![CDATA[\{]]></fr:tex>Melbourne, Sydney, Brisbane, Adelaide, Perth, Hobart, Darwin, Canberra<fr:tex display="inline"><![CDATA[\}]]></fr:tex> is the very same set as the set <fr:tex display="inline"><![CDATA[\{]]></fr:tex>Canberra, Melbourne, Sydney, Melbourne, Brisbane, Darwin, Hobart, Perth, Melbourne, Adelaide<fr:tex display="inline"><![CDATA[\}]]></fr:tex>.
+That's because these sets contain the very same things: just these eight cities, and nothing else.
+Even though I've used two different lists to talk about this set, the set I'm talking about remains the same.
+This is key to thinking about sets: all that matters is which things are members.
+It doesn't matter what we call those things, or what order we list them in, or whether we list things more than once.
+</html:p>
+    <html:p> There's another upshot of this: a set can't <html:em>change</html:em> which things are its members.
+Any supposed change in membership just means we're talking about a different set.
+Like, consider the set of students enrolled in ATS2866.
+That's a set containing certain people and not others.
+If your friend enrols in ATS2866 tomorrow, it's not that <html:em>that very set</html:em> would come to contain a new member; that's not possible.
+It's rather that the description "the set of students enrolled in ATS2866" would come to indicate a different set than it currently does: one that includes your friend as well.
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>16</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/002I/</fr:uri>
+            <fr:display-uri>002I</fr:display-uri>
+            <fr:route>/002I/</fr:route>
+            <fr:title text="Sets">Sets</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p> A <html:strong>set</html:strong> is a collection of things, any things at all, thought about as if the collection were its own separate thing.
+For example, there is a set of the students enrolled in ATS2866, and there is a set of all the Facebook accounts, and there is a set of all the even natural numbers.
+(The "natural numbers" are <fr:tex display="inline"><![CDATA[0, 1, 2, \ldots ]]></fr:tex>.)
+</html:p>
+            <html:p> Let's take the set of the students enrolled in ATS2866.
+You are (probably) a member of this set.
+(I mean, you're more than welcome to be reading this even if you're not!
+It's just that I suspect that most readers are.)
+The set itself is not a student; it is something else: a set.
+If you smell metaphysics lurking around the corner here, you're not mistaken.
+But let's not turn that corner; let's just see how we work with sets.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002J/</fr:uri>
+                <fr:display-uri>002J</fr:display-uri>
+                <fr:route>/002J/</fr:route>
+                <fr:title text="Writing about sets">Writing about sets</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p> In working with sets, we need to know how to indicate which set we're talking about.
+There are two standard ways we can use to talk about particular sets: by <html:em>listing</html:em> the members, or by giving a <html:em>description</html:em> of something that the members have in common, and that nothing else has.
+</html:p>
+                <html:p> To give a set by listing the members, we give the list between curly braces.
+So, for example, <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex> is a set that contains the three atomic formulas <fr:tex display="inline"><![CDATA[p, q, r]]></fr:tex>, and doesn't contain anything else.
+And <fr:tex display="inline"><![CDATA[\{]]></fr:tex>Melbourne, Sydney, Brisbane, Adelaide, Perth, Hobart, Darwin, Canberra<fr:tex display="inline"><![CDATA[\}]]></fr:tex> is a set that contains those eight cities and doesn't contain anything else.
+</html:p>
+                <html:p> To give a set by description, we just say what's in it.
+So when I say "the set of students enrolled in ATS2866", I've specified a set in this way.
+I didn't list all the students; I just gave a description that applies to all and only the students enrolled in ATS2866.
+This is the other main way of specifying a set.
+As another example, we can think of the set of all the Australian state and internal territory capitals.
+This set contains the same eight cities as the set listed above.
+(The Jervis Bay Territory is another internal territory, but it has no capital.)
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002K/</fr:uri>
+                <fr:display-uri>002K</fr:display-uri>
+                <fr:route>/002K/</fr:route>
+                <fr:title text="Extensionality">Extensionality</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p> All that matters to a set is what's in it, what its members are.
+There isn't anything else to the identity of a set than the identities of its members.
+This property of sets is called <html:strong>extensionality</html:strong>.
+This means that the set <fr:tex display="inline"><![CDATA[\{]]></fr:tex>Melbourne, Sydney, Brisbane, Adelaide, Perth, Hobart, Darwin, Canberra<fr:tex display="inline"><![CDATA[\}]]></fr:tex> is <html:em>the very same set</html:em> as the set of Australian state and internal territory capitals.
+Same members, same set.
+</html:p>
+                <html:p> This also means that there's a potential for misunderstanding that we need to head off: although we can (and we very much will) use lists to specify some sets, <html:em>sets are not lists</html:em>.
+The reason is that there is more to lists than just what things they contain: lists also have <html:em>order</html:em>, and can contain the same thing <html:em>multiple times</html:em>.
+Sets, though, do not have order, and they do not contain things any particular number of times---they either contain them or they do not, full stop.
+</html:p>
+                <html:p> So think about the list "Melbourne, Sydney, Brisbane, Adelaide, Perth, Hobart, Darwin, Canberra".
+This is <html:em>not</html:em> the same list as "Canberra, Melbourne, Sydney, Melbourne, Brisbane, Darwin, Hobart, Perth, Melbourne, Adelaide".
+The two lists differ in order, and the first one contains Melbourne just once, while the second contains it three times.
+</html:p>
+                <html:p> But although these are not the same list, the <html:em>set</html:em> <fr:tex display="inline"><![CDATA[\{]]></fr:tex>Melbourne, Sydney, Brisbane, Adelaide, Perth, Hobart, Darwin, Canberra<fr:tex display="inline"><![CDATA[\}]]></fr:tex> is the very same set as the set <fr:tex display="inline"><![CDATA[\{]]></fr:tex>Canberra, Melbourne, Sydney, Melbourne, Brisbane, Darwin, Hobart, Perth, Melbourne, Adelaide<fr:tex display="inline"><![CDATA[\}]]></fr:tex>.
+That's because these sets contain the very same things: just these eight cities, and nothing else.
+Even though I've used two different lists to talk about this set, the set I'm talking about remains the same.
+This is key to thinking about sets: all that matters is which things are members.
+It doesn't matter what we call those things, or what order we list them in, or whether we list things more than once.
+</html:p>
+                <html:p> There's another upshot of this: a set can't <html:em>change</html:em> which things are its members.
+Any supposed change in membership just means we're talking about a different set.
+Like, consider the set of students enrolled in ATS2866.
+That's a set containing certain people and not others.
+If your friend enrols in ATS2866 tomorrow, it's not that <html:em>that very set</html:em> would come to contain a new member; that's not possible.
+It's rather that the description "the set of students enrolled in ATS2866" would come to indicate a different set than it currently does: one that includes your friend as well.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002L/</fr:uri>
+                <fr:display-uri>002L</fr:display-uri>
+                <fr:route>/002L/</fr:route>
+                <fr:title text="The empty set">The empty set</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p> There is a set with <html:em>no</html:em> members, called the <html:strong>empty set</html:strong>.
+We can talk about the empty set using our list-the-members notation by writing <fr:tex display="inline"><![CDATA[\{\}]]></fr:tex>---the curly braces with nothing listed inside them---or just by saying "the empty set".
+Note that, by extensionality, there can only be <html:em>one</html:em> empty set.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002M/</fr:uri>
+                <fr:display-uri>002M</fr:display-uri>
+                <fr:route>/002M/</fr:route>
+                <fr:title text="Subsets">Subsets</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p> The most important kind of relationship between sets is the <html:strong>subset</html:strong> relation.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>17</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/002N/</fr:uri>
+                    <fr:display-uri>002N</fr:display-uri>
+                    <fr:route>/002N/</fr:route>
+                    <fr:title text="Subset">Subset</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>A set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a <html:strong>subset</html:strong> of a set <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> iff: every member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is also a member of <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
+There's a symbol for this: <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Delta ]]></fr:tex> means that <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>In the above definition, <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> are capital Greek letters: <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is Gamma and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> is Delta.
+It's common to use lots of different alphabets in logic, with the Greek alphabet probably the most common one other than our own Latin alphabet.
+I'll use capital Greek letters like these particularly for sets of things, usually sets of formulas.
+</html:p>
+                <html:p>
+When <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Delta ]]></fr:tex>, we know that everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> as well.
+There might be some other things also in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> as well, or there might not; that doesn't matter.
+(If there isn't anything else in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, then by extensionality <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> must be the same set.)
+</html:p>
+                <html:p> Some things to note about subsets:
+<html:ul><html:li>There is an important difference between being a <html:em>subset</html:em> of a set and being a <html:em>member</html:em> of the set.
+        For example, <fr:tex display="inline"><![CDATA[\{p, q\}]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex>, since every member of the former is also a member of the latter.
+        But <fr:tex display="inline"><![CDATA[\{p, q\}]]></fr:tex> is not a member of <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex>; only <fr:tex display="inline"><![CDATA[p]]></fr:tex>, <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and <fr:tex display="inline"><![CDATA[r]]></fr:tex> are members of this set.</html:li>
+  <html:li>Every set is a subset of itself.
+        For example, consider the set <fr:tex display="inline"><![CDATA[\{p, q \land  r\}]]></fr:tex>.
+        This has two members: <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \land  r]]></fr:tex>.
+        And both of these members are indeed also members of <fr:tex display="inline"><![CDATA[\{p, q \land  r\}]]></fr:tex>, so the definition of subsethood is met.
+        More generally, for any set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, all the members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are indeed members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, so <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is always a subset of itself, for any <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</html:li>
+  <html:li>The empty set is a subset of absolutely any set.
+        This might be a surprise, but remember logicians' weird habit number 2!
+        To check whether the empty set is a subset of some set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, we need to check whether all the members of the empty set are also members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+        Since there are no members of the empty set, indeed it <html:em>is</html:em> true that all the members of the empty set are members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>---no matter what <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is.
+        (Using <fr:link href="/000F/" title="Logicians' Weird Habit 2" uri="https://www.my-great-forest.net/000F/" display-uri="000F" type="local">logicians' weird habit number 2</fr:link>, it's even true that all the members of the empty set are square circles, that they're all plants with mammal-like brains, and that they're all behind you right now.)</html:li></html:ul></html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002O/</fr:uri>
+                <fr:display-uri>002O</fr:display-uri>
+                <fr:route>/002O/</fr:route>
+                <fr:title text="Intersections (and unions)">Intersections (and unions)</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>There are a couple of operations on sets that are useful to know about, called <html:strong>intersection</html:strong> and <html:strong>union</html:strong>.
+These are not super-central to this unit, but they will come up now and again.
+(Intersection will turn out to be more useful for our purposes than union.)</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>17</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/002P/</fr:uri>
+                    <fr:display-uri>002P</fr:display-uri>
+                    <fr:route>/002P/</fr:route>
+                    <fr:title text="Intersection and union">Intersection and union</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Given sets <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, their <html:strong>intersection</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cap  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>both</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
+Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cup  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>either</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> or <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
+(Remember <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>For example, the intersection of <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\{q, r, s\}]]></fr:tex> is <fr:tex display="inline"><![CDATA[\{q, r\}]]></fr:tex>; and the union of these same two sets is <fr:tex display="inline"><![CDATA[\{p, q, r, s\}]]></fr:tex>.
+</html:p>
+                <html:p>Intersections and unions don't need to be between exactly two sets: you can take the intersection of a whole bunch of sets, and it contains whatever they <html:em>all</html:em> have in common; and you can likewise take the union of a whole bunch of sets, and it contains whatever is contained in <html:em>any</html:em> of them.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

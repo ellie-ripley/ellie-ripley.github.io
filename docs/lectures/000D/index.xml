@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>1</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/000D/</fr:uri>
+    <fr:display-uri>000D</fr:display-uri>
+    <fr:route>/000D/</fr:route>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>If you notice some that I haven't flagged, let me know!
+        That way, I can correct the lectures.
+        The same goes for any typos or errors of any sort, or recommendations in general.
+        These lectures get revised every time the unit runs; they've improved a lot (to their present ok-but-not-exactly-gonna-change-the-world state) as a result of past students' input.
+        I really appreciate their input, and I'll really appreciate yours!</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>1</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/000C/</fr:uri>
+            <fr:display-uri>000C</fr:display-uri>
+            <fr:route>/000C/</fr:route>
+            <fr:title text="Logicians' weird habits">Logicians' weird habits</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        There are a few logicians' habits you should know about, to be able to make the most of these lectures and our conversations.
+        These are habits of expression that are completely standard among logicians, but can throw you off if you're not used to them.
+        I'm flagging these habits here so that you can be ready. 
+        I'll try to remember to flag them as well where I use them, but these are so ingrained in me by now that it's entirely likely I won't notice some.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000D/</fr:uri>
+                <fr:display-uri>000D</fr:display-uri>
+                <fr:route>/000D/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>If you notice some that I haven't flagged, let me know!
+        That way, I can correct the lectures.
+        The same goes for any typos or errors of any sort, or recommendations in general.
+        These lectures get revised every time the unit runs; they've improved a lot (to their present ok-but-not-exactly-gonna-change-the-world state) as a result of past students' input.
+        I really appreciate their input, and I'll really appreciate yours!</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000E/</fr:uri>
+                <fr:display-uri>000E</fr:display-uri>
+                <fr:route>/000E/</fr:route>
+                <fr:title text="Logicians' Weird Habit 1">Logicians' Weird Habit 1</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+             Whenever I say something like "BLAH or SUCH-AND-SUCH", I always mean to <html:em>include</html:em> the case where both BLAH and SUCH-AND-SUCH happen.
+            I won't bother with any extra qualification like "or both", or anything like that.
+            You can always take for granted that I mean to include the both case.
+            So, for example, I'd be perfectly happy to say: "Melbourne is in Victoria or Mercury is the closest planet to the Sun".
+            Both of these are true, so my "or" claim is all good.
+
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000F/</fr:uri>
+                <fr:display-uri>000F</fr:display-uri>
+                <fr:route>/000F/</fr:route>
+                <fr:title text="Logicians' Weird Habit 2">Logicians' Weird Habit 2</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+
+            This is the weirder one.
+            Whenever I say something like "Every BLAH is a SUCH-AND-SUCH", I always mean to <html:em>include</html:em> the case where there are no BLAHs at all.
+            Again, I won"t bother with any special qualifications; you can always take this for granted.
+            So, for example, I"m perfectly happy to say: "All unicorns breathe fire".
+            Since there are no unicorns, my "all" claim is all good.
+
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>
+        For both of these, there's a case to be made that what I'm doing is out of step with what "or" or "all" mean in English (Note the use of <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">Habit 1</fr:link> there!), and there's a case to be made that it isn't.
+        But for our purposes, it's not important to settle that question.
+        What <html:em>is</html:em> important is that you see precisely what I mean when I say "or" or "all", and keeping these logicians' habits in mind is key for that.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

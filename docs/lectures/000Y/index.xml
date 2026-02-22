@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>1</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/000Y/</fr:uri>
+    <fr:display-uri>000Y</fr:display-uri>
+    <fr:route>/000Y/</fr:route>
+    <fr:title text="Components">Components</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+The <html:strong>components</html:strong> of a compound sentence are the sentences combined by its main connective.
+There are as many components as the arity of that main connective.
+Atomic sentences do not have any components.
+
+When a sentence's main connective is binary, it has two components, which are called its <html:strong>left component</html:strong> and its <html:strong>right component</html:strong>.
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>1</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/000X/</fr:uri>
+            <fr:display-uri>000X</fr:display-uri>
+            <fr:route>/000X/</fr:route>
+            <fr:title text="Compounds and components">Compounds and components</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>            Every compound sentence has some number of <html:em>components</html:em>.
+            Its components are the sentences used by the main connective in building up the compound sentence.
+            As a result, the number of components a compound sentence has is always the same as the arity of its main connective.
+</html:p>
+            <html:p>            So, for example, all conjunctions have two components; and the components of the conjunction <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> are <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+            To keep track of the order they occur in, we call <fr:tex display="inline"><![CDATA[p]]></fr:tex> its <html:strong>left component</html:strong> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> its <html:strong>right component</html:strong>.
+            Every sentence whose main connective is binary has a left component and a right component.
+            Let's look at some examples: the right component of <fr:tex display="inline"><![CDATA[(\neg  q \lor  p) \land  \bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>; the left component of <fr:tex display="inline"><![CDATA[(\neg  q \lor  p) \land  \bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\neg  q \lor  p]]></fr:tex>; and the right component of the left component of <fr:tex display="inline"><![CDATA[(\neg  q \lor  p) \land  \bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[p]]></fr:tex></html:p>
+            <html:p>            For sentences whose main connective is unary, there is only one component.
+            Here are some examples: the component of <fr:tex display="inline"><![CDATA[\neg \neg \neg  (p \lor  q)]]></fr:tex> is <fr:tex display="inline"><![CDATA[\neg \neg  (p \lor  q)]]></fr:tex>; the component of <fr:tex display="inline"><![CDATA[\neg  \bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>; and the left component of the component of <fr:tex display="inline"><![CDATA[\neg  (\bot  \land  q)]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+</html:p>
+            <html:p><html:strong>A good idea:</html:strong>Double-check all these examples, so that you can see the idea for yourself!
+            Remember, this is <html:em>symbolic</html:em> logic; there are going to be a lot of symbols.
+            It's important to build good habits right away---don't let your eyes glaze over this stuff.
+            Read carefully; re-read.
+</html:p>
+            <html:p>            Sentences whose main connective is nullary have 0 components; that is, they don't have any components.
+            The same goes for atomic sentences: no components at all.
+            Only sentences with a main connective with arity 1 or more have components.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000Y/</fr:uri>
+                <fr:display-uri>000Y</fr:display-uri>
+                <fr:route>/000Y/</fr:route>
+                <fr:title text="Components">Components</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+The <html:strong>components</html:strong> of a compound sentence are the sentences combined by its main connective.
+There are as many components as the arity of that main connective.
+Atomic sentences do not have any components.
+
+When a sentence's main connective is binary, it has two components, which are called its <html:strong>left component</html:strong> and its <html:strong>right component</html:strong>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000Z/</fr:uri>
+                <fr:display-uri>000Z</fr:display-uri>
+                <fr:route>/000Z/</fr:route>
+                <fr:title text="Special names for components">Special names for components</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Depending on the main connective of a sentence, there are special names sometimes given to its components:
+</html:p>
+                <html:ul><html:li>when a sentence is a conjunction, its components are called its <html:strong>conjuncts</html:strong>;</html:li>
+<html:li>when a sentence is a disjunction, its components are called its <html:strong>disjuncts</html:strong>;</html:li>
+<html:li>when a sentence is an implication, its left component is called its <html:strong>antecedent</html:strong>;</html:li>
+<html:li>when a sentence is an implication, its right component is called its <html:strong>consequent</html:strong>; and</html:li>
+<html:li>when a sentence is a negation, its component is called its <html:strong>negatum</html:strong>.</html:li></html:ul>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

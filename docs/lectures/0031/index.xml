@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>17</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/0031/</fr:uri>
+    <fr:display-uri>0031</fr:display-uri>
+    <fr:route>/0031/</fr:route>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>To say that a logic X is <html:strong>stronger</html:strong> than a logic Y means exactly the same as to say that Y is <html:strong>weaker</html:strong> than X, and they both mean exactly this: that Y is a <html:em>subset</html:em> of X.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>17</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/0030/</fr:uri>
+            <fr:display-uri>0030</fr:display-uri>
+            <fr:route>/0030/</fr:route>
+            <fr:title text="Stronger and weaker">Stronger and weaker</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>     There's some vocabulary that often gets used to talk about relationships between logics: we can say that some logic is <html:strong>stronger</html:strong> or <html:strong>weaker</html:strong> than another.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0031/</fr:uri>
+                <fr:display-uri>0031</fr:display-uri>
+                <fr:route>/0031/</fr:route>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>To say that a logic X is <html:strong>stronger</html:strong> than a logic Y means exactly the same as to say that Y is <html:strong>weaker</html:strong> than X, and they both mean exactly this: that Y is a <html:em>subset</html:em> of X.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>    This isn't a new idea; it's just a couple of new words that we use for the idea of one logic's being a subset of another.
+    So, for example the empty logic is weaker than every logic, and the universal logic is stronger than every logic; that's just a way of saying what you already know about these logics and the subset relation.
+</html:p>
+            <html:p>     Note that there's a potentially confusing feature here: saying that logic X is stronger than logic Y does <html:em>not</html:em> mean that X and Y are different logics!
+    Indeed, every logic is both stronger and weaker than itself, since every set is a subset of itself.
+    Again, there's nothing <html:em>conceptually</html:em> new here, but the phrasing can be confusing at first; make sure to be careful!
+</html:p>
+            <html:p>     Note, too, that the only way for a logic X to be both stronger and weaker than a logic Y is for X and Y to be the very same logic (by extensionality).
+    But it is common, given two different logics, for neither of them to be stronger or weaker than the other.
+    All it takes is for each of them to contain some argument that the other does not.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0033/</fr:uri>
+                <fr:display-uri>0033</fr:display-uri>
+                <fr:route>/0033/</fr:route>
+                <fr:taxon>Check your understanding</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter><html:p>Now, return to the <fr:link href="/002Z/" title="Some more example logics" uri="https://www.my-great-forest.net/002Z/" display-uri="002Z" type="local">five example logics above</fr:link>.
+    Which of these, if any, are stronger or weaker than which of these?
+    Take a moment to think this through before you go on.
+</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>20</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:ul><html:li>Logic 1 is weaker than logic 2, which is to say that 2 is stronger than 1.</html:li>
+<html:li>Logic 1 is weaker than logic 4, which is to say that 4 is stronger than 1.</html:li>
+<html:li>Each of logics 1--5, like any logic, is both stronger and weaker than itself.</html:li>
+<html:li>There are no other relations of strength among these examples.</html:li></html:ul>
+</fr:mainmatter></fr:tree></fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

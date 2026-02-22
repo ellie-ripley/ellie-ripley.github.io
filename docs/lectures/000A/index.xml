@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>1</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/000A/</fr:uri>
+    <fr:display-uri>000A</fr:display-uri>
+    <fr:route>/000A/</fr:route>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+Throughout these lectures, I'll include a number of side notes like this one, marked "Side note".
+These are not essential to understanding the core of the unit, but they might be of interest.
+(Of course, they might not!)
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>1</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/0006/</fr:uri>
+            <fr:display-uri>0006</fr:display-uri>
+            <fr:route>/0006/</fr:route>
+            <fr:title text="Introduction">Introduction</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+Welcome to symbolic logic class!
+I bet I'm going to have a fun semester in here, and I hope you do too.
+</html:p>
+            <html:p>
+To start out, you might expect me to tell you what logic is.
+       But I've been a logician for a while now, and I don't know the answer to that, so that's not how I'm going to start out.
+       I can tell you, though, that logic is <html:em>abstract</html:em> and requires <html:em>close attention to detail</html:em>; that will help you start to get the vibe.
+</html:p>
+            <html:p>    We're going to spend the semester looking at some things that logicians do.
+    These things might be hard to see at first.
+    They're pretty mathsy, but there are no numbers.
+    They have something to do with the languages we speak, but only indirectly.
+    A ton of logic is done by philosophers, but it's then put to use in places like electrical engineering and computer science, where philosophy isn't typically applied.
+    One thing is for sure: there's a lot of weird symbols.
+    (Hence <html:em>symbolic</html:em> logic.)
+</html:p>
+            <html:p>    The reason we're going to use lots of weird symbols is the same reason logic turns out to be useful in lots of different endeavours: because of how <html:em>abstract</html:em> it is.
+    It turns out, for example, that views held by some philosophers thinking deeply about the nature of truth map exactly on to microscopic structures in the flash storage in your phone.
+    This semester, we won't be thinking too deeply (other than recreationally) about either the nature of truth or about how flash storage works---but we will see and study closely what they have in common.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000A/</fr:uri>
+                <fr:display-uri>000A</fr:display-uri>
+                <fr:route>/000A/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Throughout these lectures, I'll include a number of side notes like this one, marked "Side note".
+These are not essential to understanding the core of the unit, but they might be of interest.
+(Of course, they might not!)
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0009/</fr:uri>
+                <fr:display-uri>0009</fr:display-uri>
+                <fr:route>/0009/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>    The word "logic" gets used in a lot of different ways.
+    Sometimes, it's associated with a certain style of debate, involving DESTROYING an opponent with FACTS and LOGIC.
+    That's got nothing to do with what logicians actually do.
+    Our work this semester is constructive, not destructive; doesn't involve opponents at all; and centers delicate and precise reasoning, not cheap dunks.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>    Working at an abstract level means that what we do can at the same time be <html:em>shallow</html:em> and <html:em>widely applicable</html:em>.
+    By lifting ourselves out of the details of individual topics, we lose a lot of important sensitivity to the way those topics work. 
+    </html:p>
+            <html:p>
+    At the same time, it helps us think thoughts that turn out to be useful in surprisingly diverse ways, and to find patterns in one area that recur in another area, even when those areas don't seem related.
+    Most of the time, then, we're going to be operating at too abstract a level to be guided by ordinary intuitions.
+    And without the details of individual applications to keep us honest, we won't be able to say things like "oh, you know what I mean".
+</html:p>
+            <html:p>
+    That's why close attention to detail becomes so important; it's all we'll really have to hang on to.
+    You <html:em>do</html:em> develop logical intuitions over time, through practice and exposure.
+    But that can take years, and has to kind of happen on its own.
+    In this class, then, instead of intuition, we'll be focusing on doing things explicitly, carefully, and deliberately.
+</html:p>
+            <html:p>    The kinds of activities we'll be looking at and doing this semester have a history: they really kicked off in the mid to late 19th century in Europe and the US, among some philosophers and mathematicians.
+    Between then and now, these activities have turned out to be central to one of the most important developments of the 20th century: computers.
+    Logic is directly involved in both the hardware and the software of all computers; it was instrumental in their invention, has been a constant companion in their development, and today guides the development of a wide range of computer systems.
+    As computers have come to take a central place in our societies, then, so too has logic.
+</html:p>
+            <html:p>    Logic is certainly not limited to applications involving computers, though.
+    (For example, it's still a central part of philosophy, where it is rarely connected to computers at all.)
+    Nowadays, you can find logic all over the world, and you can find logicians working in philosophy, mathematics, linguistics, computer science, electrical engineering, artificial intelligence, cognitive science, psychology, and elsewhere.
+    Logic also tends to be done in relatively identifiable geographic styles: there's identifiable Dutch logic and Brazilian logic and Australian logic, among others.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0008/</fr:uri>
+                <fr:display-uri>0008</fr:display-uri>
+                <fr:route>/0008/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>I'm originally from the US, and I was educated there.
+    But I had the good fortune to encounter the Australian tradition early on in my logical life (thanks to a professor who had spent years working in Australia).
+    It's this Australian logical tradition that brought me to Australia in the first place.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000B/</fr:uri>
+                <fr:display-uri>000B</fr:display-uri>
+                <fr:route>/000B/</fr:route>
+                <fr:title text="Enough sales pitch already; what are we going to do?">Enough sales pitch already; what are we going to <html:em>do</html:em>?</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        Mainly we're going to focus on a few different ways to think about information, meaning, content, that kind of thing.
+        When we think about meaning, it's often useful to distinguish the <html:em>thing that carries meaning</html:em> from the <html:em>meaning itself</html:em>.
+        Lots of different things carry meaning: pictures, sounds, sentences, books, social media posts, this very lecture, and so on.
+        We're going to work with vehicles for meaning that are <html:em>abstract</html:em> and <html:em>symbolic</html:em>.
+        These vehicles will be introduced presently; they make up what we'll call our <html:em>languages</html:em>.
+</html:p>
+                <html:p>        The languages give us vehicles for meaning, but they don't on their own have any meaning; they're just empty carriers.
+        Over the course of the semester, we'll look at two different ways logicians study for giving meaning to these languages.
+        One way involves thinking about connecting the languages to something outside of themselves, things like truth values, propositions, possible worlds, or states of an electric wire.
+        We'll call this way <html:em>model-theoretic</html:em>.
+        The other way involves thinking about interconnections <html:em>within</html:em> a language, rather than connections to something else.
+        We'll call this way <html:em>proof-theoretic</html:em>.
+        The two approaches are complementary, and once we have them both on the table, we'll move back and forth between them and look at some important ways they're connected.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000C/</fr:uri>
+                <fr:display-uri>000C</fr:display-uri>
+                <fr:route>/000C/</fr:route>
+                <fr:title text="Logicians' weird habits">Logicians' weird habits</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        There are a few logicians' habits you should know about, to be able to make the most of these lectures and our conversations.
+        These are habits of expression that are completely standard among logicians, but can throw you off if you're not used to them.
+        I'm flagging these habits here so that you can be ready. 
+        I'll try to remember to flag them as well where I use them, but these are so ingrained in me by now that it's entirely likely I won't notice some.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors />
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/000D/</fr:uri>
+                    <fr:display-uri>000D</fr:display-uri>
+                    <fr:route>/000D/</fr:route>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>If you notice some that I haven't flagged, let me know!
+        That way, I can correct the lectures.
+        The same goes for any typos or errors of any sort, or recommendations in general.
+        These lectures get revised every time the unit runs; they've improved a lot (to their present ok-but-not-exactly-gonna-change-the-world state) as a result of past students' input.
+        I really appreciate their input, and I'll really appreciate yours!</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/000E/</fr:uri>
+                    <fr:display-uri>000E</fr:display-uri>
+                    <fr:route>/000E/</fr:route>
+                    <fr:title text="Logicians' Weird Habit 1">Logicians' Weird Habit 1</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+             Whenever I say something like "BLAH or SUCH-AND-SUCH", I always mean to <html:em>include</html:em> the case where both BLAH and SUCH-AND-SUCH happen.
+            I won't bother with any extra qualification like "or both", or anything like that.
+            You can always take for granted that I mean to include the both case.
+            So, for example, I'd be perfectly happy to say: "Melbourne is in Victoria or Mercury is the closest planet to the Sun".
+            Both of these are true, so my "or" claim is all good.
+
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/000F/</fr:uri>
+                    <fr:display-uri>000F</fr:display-uri>
+                    <fr:route>/000F/</fr:route>
+                    <fr:title text="Logicians' Weird Habit 2">Logicians' Weird Habit 2</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+
+            This is the weirder one.
+            Whenever I say something like "Every BLAH is a SUCH-AND-SUCH", I always mean to <html:em>include</html:em> the case where there are no BLAHs at all.
+            Again, I won"t bother with any special qualifications; you can always take this for granted.
+            So, for example, I"m perfectly happy to say: "All unicorns breathe fire".
+            Since there are no unicorns, my "all" claim is all good.
+
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>
+        For both of these, there's a case to be made that what I'm doing is out of step with what "or" or "all" mean in English (Note the use of <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">Habit 1</fr:link> there!), and there's a case to be made that it isn't.
+        But for our purposes, it's not important to settle that question.
+        What <html:em>is</html:em> important is that you see precisely what I mean when I say "or" or "all", and keeping these logicians' habits in mind is key for that.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

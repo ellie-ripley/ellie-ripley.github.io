@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>21</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/003C/</fr:uri>
+    <fr:display-uri>003C</fr:display-uri>
+    <fr:route>/003C/</fr:route>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>There was, alas, an embarrassing moment, mainly from the 1950s to the 1990s or so, where a decent number of philosophers genuinely defended the idea that the Boolean implication is not just an approximation, but actually fully gives the truth conditions for English "if...then" statements.
+    To see that this doesn't work, here's an old facetious proof of the existence of God:</html:p>
+    <html:p>It's false to say that if there's a God, then the prayers of the wicked will be answered.
+    So, by the Boolean truth table, the antecedent of that "if...then" must be true; so there is a God.</html:p>
+    <html:p>Even theists should (and do) reject this line of reasoning; it's pretty obviously bad reasoning.
+    Embarrassments like this for the idea that English conditionals are Boolean implications can be multiplied more or less endlessly; the view is as refuted as anything ever gets.
+    But if you happen across certain philosophy from around that time period, you should be aware that many authors did in fact believe this, despite the obvious problems.
+</html:p>
+    <html:p>
+If you're interested in learning more about this, I recommend the book <fr:link href="/003D/" title="https://www.my-great-forest.net/003D/" uri="https://www.my-great-forest.net/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
+Note that this was written during the period in question!
+It's good fun, and it gives a particularly vitriolic (and particularly Australian) takedown of what was at the time practically an accepted orthodoxy. 
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003D/</fr:uri>
+            <fr:display-uri>003D</fr:display-uri>
+            <fr:route>/003D/</fr:route>
+            <fr:taxon>Reference</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p><html:em>Relevant Logics and their Rivals, vol. 1</html:em> (1982). Richard Routley, Val Plumwood, Robert K. Meyer, Ross T. Brady. Ridgeview Publishing.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003B/</fr:uri>
+            <fr:display-uri>003B</fr:display-uri>
+            <fr:route>/003B/</fr:route>
+            <fr:title text="Boolean valuations: implication">Boolean valuations: implication</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>     This is the weird one.
+    I won't make excuses; Boolean implication is not a very good approximation of "if...then".
+    Don't lean too hard, then, on the understanding you already have of "if...then"; just roll with it.
+    Here's the table:
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003M/</fr:uri>
+                <fr:display-uri>003M</fr:display-uri>
+                <fr:route>/003M/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>    That is, <fr:tex display="inline"><![CDATA[v(p \rightarrow  q)]]></fr:tex> comes out to <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> in all cases except the one case where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+    It's relatively uncontroversial that <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> should be false when <fr:tex display="inline"><![CDATA[p]]></fr:tex> is true and <fr:tex display="inline"><![CDATA[q]]></fr:tex> is false; if <fr:tex display="inline"><![CDATA[p]]></fr:tex> really did imply <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and <fr:tex display="inline"><![CDATA[p]]></fr:tex> is true, then <fr:tex display="inline"><![CDATA[q]]></fr:tex> should be true as well, or at least so goes a pretty plausible line of reasoning.
+    So the upper-right corner of the table is pretty strongly supported.
+    But all of the other three entries can be (and have been) contested.
+</html:p>
+            <html:p>     Note that, given the above table, we have <fr:tex display="inline"><![CDATA[v(p \rightarrow  q) = v(\neg  p \lor  q)]]></fr:tex> for every Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>, no matter what <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex> are.
+    (Later this week, we'll pick up a word for that: <html:em>equivalence</html:em>.)
+    This might be the best way to see what's behind the table above: if <fr:tex display="inline"><![CDATA[p]]></fr:tex> implies <fr:tex display="inline"><![CDATA[q]]></fr:tex>, then we might think that either <fr:tex display="inline"><![CDATA[p]]></fr:tex> isn't the case or else it is, and if it is, then since it implies <fr:tex display="inline"><![CDATA[q]]></fr:tex> we can conclude that <fr:tex display="inline"><![CDATA[q]]></fr:tex> would be as well.
+    So if <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> is true, this might lead us to think that <fr:tex display="inline"><![CDATA[\neg  p \lor  q]]></fr:tex> should also be true.
+    Conversely, suppose that <fr:tex display="inline"><![CDATA[\neg  p \lor  q]]></fr:tex> is true.
+    Then what could we conclude if <fr:tex display="inline"><![CDATA[p]]></fr:tex> were to be true?
+    Well, since <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> can't both be true, it would imply that <fr:tex display="inline"><![CDATA[q]]></fr:tex> must be the true component of <fr:tex display="inline"><![CDATA[\neg  p \lor  q]]></fr:tex>.
+    That is, <fr:tex display="inline"><![CDATA[p]]></fr:tex> would imply <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+    There's a lot you could quarrel with in these lines of reasoning, but I think something like them is probably the best motivation for this table for implication.
+    Regardless, this is how Boolean implication works, and we'll work with it in this form.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/003C/</fr:uri>
+                <fr:display-uri>003C</fr:display-uri>
+                <fr:route>/003C/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>There was, alas, an embarrassing moment, mainly from the 1950s to the 1990s or so, where a decent number of philosophers genuinely defended the idea that the Boolean implication is not just an approximation, but actually fully gives the truth conditions for English "if...then" statements.
+    To see that this doesn't work, here's an old facetious proof of the existence of God:</html:p>
+                <html:p>It's false to say that if there's a God, then the prayers of the wicked will be answered.
+    So, by the Boolean truth table, the antecedent of that "if...then" must be true; so there is a God.</html:p>
+                <html:p>Even theists should (and do) reject this line of reasoning; it's pretty obviously bad reasoning.
+    Embarrassments like this for the idea that English conditionals are Boolean implications can be multiplied more or less endlessly; the view is as refuted as anything ever gets.
+    But if you happen across certain philosophy from around that time period, you should be aware that many authors did in fact believe this, despite the obvious problems.
+</html:p>
+                <html:p>
+If you're interested in learning more about this, I recommend the book <fr:link href="/003D/" title="https://www.my-great-forest.net/003D/" uri="https://www.my-great-forest.net/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
+Note that this was written during the period in question!
+It's good fun, and it gives a particularly vitriolic (and particularly Australian) takedown of what was at the time practically an accepted orthodoxy. 
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

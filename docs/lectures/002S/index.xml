@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>17</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/002S/</fr:uri>
+    <fr:display-uri>002S</fr:display-uri>
+    <fr:route>/002S/</fr:route>
+    <fr:title text="Do we have to use sets for premises?">Do we have to use sets for premises?</fr:title>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>There certainly are <fr:link href="https://plato.stanford.edu/entries/logic-substructural/" type="external">logics where premises have more texture than this</fr:link>!
+It's not like a law of nature or anything that we use sets here; we can do logic using lists instead, or things called multisets, or really any way you can think of to collect sentences into some larger whole; or we can abandon the idea of collecting up sentences and just look at a single sentence here; or we can do much more besides.
+But sets give us plenty to work with already for this semester, so we'll stick with them.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>17</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/002Q/</fr:uri>
+            <fr:display-uri>002Q</fr:display-uri>
+            <fr:route>/002Q/</fr:route>
+            <fr:title text="Arguments">Arguments</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p> That barely scratches the surface of what can be said about sets, but it's enough for us to go on.
+One way sets are involved in what we'll do is through the idea of an <html:em>argument</html:em>, which will absolutely central for this semester.
+Just like our logical "languages" have something in common with real languages, but are highly idealized, our logical "arguments" too will have a very simple and very precise shape, unlike real arguments.
+</html:p>
+            <html:p>         The kind of argument you should be thinking of here is not a debate or exchange between two parties.
+        It's rather a collection of premises offered in support of a conclusion.
+        (This is the most usual sense of the word "argument" in philosophy.)
+        For our purposes, an argument is always taken from some particular language, and has two parts: a set of premises, which are all sentences of the language, and a single conclusion, which is a sentence of the language.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002R/</fr:uri>
+                <fr:display-uri>002R</fr:display-uri>
+                <fr:route>/002R/</fr:route>
+                <fr:title text="Argument">Argument</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>An <html:strong>argument</html:strong> is a set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> of sentences, called the <html:strong>premises</html:strong> of the argument, together with a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, called the <html:strong>conclusion</html:strong> of the argument.
+It is written <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>In writing out particular arguments, I'll often abbreviate by omitting the set braces <fr:tex display="inline"><![CDATA[\{]]></fr:tex> and <fr:tex display="inline"><![CDATA[\}]]></fr:tex>.
+        So, for example, in the argument <fr:tex display="inline"><![CDATA[p \land  q, \neg  r \;/\; \neg  p \lor  r]]></fr:tex>, there are two premises: <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  r]]></fr:tex>; and the conclusion is <fr:tex display="inline"><![CDATA[\neg  p \lor  r]]></fr:tex>.
+        The set of premises in this argument is <fr:tex display="inline"><![CDATA[\{p \land  q, \neg  r\}]]></fr:tex>.</html:p>
+            <html:p>Even when we don't write the set braces, though, the premises of the argument still make up a <html:em>set</html:em>, not a list.
+So the argument <fr:tex display="inline"><![CDATA[p \land  q, \neg  r \;/\; \neg  p \lor  r]]></fr:tex> is the <html:em>very same argument</html:em> as the argument <fr:tex display="inline"><![CDATA[\neg  r, p \land  q \;/\; \neg  p \lor  r]]></fr:tex>: it has the same set of premises and the same conclusion.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002S/</fr:uri>
+                <fr:display-uri>002S</fr:display-uri>
+                <fr:route>/002S/</fr:route>
+                <fr:title text="Do we have to use sets for premises?">Do we have to use sets for premises?</fr:title>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>There certainly are <fr:link href="https://plato.stanford.edu/entries/logic-substructural/" type="external">logics where premises have more texture than this</fr:link>!
+It's not like a law of nature or anything that we use sets here; we can do logic using lists instead, or things called multisets, or really any way you can think of to collect sentences into some larger whole; or we can abandon the idea of collecting up sentences and just look at a single sentence here; or we can do much more besides.
+But sets give us plenty to work with already for this semester, so we'll stick with them.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>         However, the conclusion of an argument is separate---which sentence is the conclusion really does matter.
+        The argument <fr:tex display="inline"><![CDATA[p \land  q, \neg  r \;/\; \neg  p \lor  r]]></fr:tex> is a completely different argument from <fr:tex display="inline"><![CDATA[p \land  q, \neg  p \lor  r \;/\; \neg  r]]></fr:tex>: these two arguments have different sets of premises as well as different conclusions.
+</html:p>
+            <html:p>         An argument always has one conclusion, but it can have any number of premises.
+        That includes some extreme cases: an argument can have <html:em>zero</html:em> premises, when it has the empty set of premises; and it can have <html:em>infinitely many</html:em> premises.
+        Even when an argument has zero premises, it's important to remember that the argument is still not the same thing as its conclusion.
+        The conclusion is a sentence; the argument is an argument; and these are different kinds of things.
+        For example, the argument <fr:tex display="inline"><![CDATA[\;/\; p \lor  \neg  p]]></fr:tex> has no premises, and has the sentence <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex> as its conclusion; but the argument and the sentence remain distinct.
+</html:p>
+            <html:p>         You might worry about how we're going to handle arguments with infinitely many premises.
+        After all, I certainly can't list out infinitely many premises, so I won't be able to write out any such argument in full.
+        But again, this isn't really a problem with infinity: just a big finite argument would already be too much to write out in full.
+        We'll deal with this in <fr:link href="/000K/" title="Infinity; or, more than about six" uri="https://www.my-great-forest.net/000K/" display-uri="000K" type="local">the same old way we've dealt with other infinities</fr:link>: by not worrying about it.
+        There are arguments with infinitely many premises; they're out there, they're harmless, and they mostly won't occupy us.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

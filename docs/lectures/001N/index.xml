@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>4</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/001N/</fr:uri>
+    <fr:display-uri>001N</fr:display-uri>
+    <fr:route>/001N/</fr:route>
+    <fr:title text="Summing up">Summing up</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>This time, we learned about <html:strong>functions</html:strong> and <html:strong>substitutions</html:strong>.</html:p>
+    <html:p>A function is something that takes an input and produces an output based entirely on that input.
+Functions take inputs of a certain type and give outputs of a certain type: for example, there are functions from numbers to letters, from people to days, from numbers to numbers, from atomic sentences to sentences, and so on.</html:p>
+    <html:p>Giving a function an input is called <html:strong>applying</html:strong> the function to its input; the <html:strong>result</html:strong> is the output that the function determines.
+When <fr:tex display="inline"><![CDATA[f]]></fr:tex> is a function and <fr:tex display="inline"><![CDATA[x]]></fr:tex> an input of the appropriate type, we write <fr:tex display="inline"><![CDATA[f(x)]]></fr:tex> to mean the result of applying <fr:tex display="inline"><![CDATA[f]]></fr:tex> to <fr:tex display="inline"><![CDATA[x]]></fr:tex>.</html:p>
+    <html:p>A <html:strong>substitution</html:strong> is a function from atomic sentences to sentences.
+But they're a bit special: we also treat a substitution as a function from <html:em>all</html:em> sentences to sentences, in a particular way.
+(Basically, we leave all the connectives in the input sentence just as they are, and replace all the atomic bits of the input sentence with whatever the substitution says about those atomics.)</html:p>
+    <html:p>When there is a substitution <fr:tex display="inline"><![CDATA[f]]></fr:tex> such that <fr:tex display="inline"><![CDATA[f(A) = B]]></fr:tex>, we say that <fr:tex display="inline"><![CDATA[B]]></fr:tex> is a <html:strong>substitution instance of</html:strong> <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</html:p>
+    <html:p>These <fr:tex display="inline"><![CDATA[A]]></fr:tex>s and <fr:tex display="inline"><![CDATA[B]]></fr:tex>s and the like can be used to make <html:strong>sentence forms</html:strong>, which we use to generalise about all sentences, or about all sentences with a certain structure.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>3</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/0011/</fr:uri>
+            <fr:display-uri>0011</fr:display-uri>
+            <fr:route>/0011/</fr:route>
+            <fr:title text="Lecture 2: Functions and substitutions">Lecture 2: Functions and substitutions</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>One idea that we'll use a <html:em>lot</html:em> this semester is the idea of a <html:strong>function</html:strong>.
+This is something we'll use in a variety of different ways; we'll see a lot of functions as we move forward.
+One kind of functions that we'll start to use very soon: <html:strong>substitutions</html:strong>.
+The purpose of this lecture is to introduce you to these ideas: first functions in general, and then substitutions in particular.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0012/</fr:uri>
+                <fr:display-uri>0012</fr:display-uri>
+                <fr:route>/0012/</fr:route>
+                <fr:title text="Functions">Functions</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p> A function is something that takes an <html:em>input</html:em> and produces an <html:em>output</html:em> based entirely on that input.
+Whenever a function receives a particular input, it must produce the very same output.
+If it can produce different outputs based on the same input, it's not a function.
+</html:p>
+                <html:p> For example, at the end of this semester you'll have some numeric grade in this unit: some number between 0 and 100 (inclusive).
+That numeric grade will determine a letter grade: HD, D, or whatever.
+There is a function that takes as inputs numeric grades, and gives as outputs letter grades.
+The output letter is fully determined by the input number, so this is a function.
+</html:p>
+                <html:p> As another example, we can define a function that takes people as inputs and gives their birthdays as outputs.
+This isn't a function from numbers to numbers; it's a function from people to days.
+But it's still a function: everyone has exactly one birthday, so the output of this function really is determined by its input.</html:p>
+                <html:p>(You might wonder about people born overnight, where the labor starts one day and ends the next.
+If such people don't really have a unique birthday, then this isn't really a function from people to days.)</html:p>
+                <html:p>
+Many of the functions we'll be concerned with this semester take sentences from our language as their inputs.
+For example, last time you learned how to find the main connective of a compound formula.
+There is a function that takes compound formulas as inputs and gives back their main connective as output: you learned how to calculate this function.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>3</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0013/</fr:uri>
+                    <fr:display-uri>0013</fr:display-uri>
+                    <fr:route>/0013/</fr:route>
+                    <fr:taxon>Caution</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+This main connective function takes <html:em>compound sentences</html:em> as inputs, not just any old sentences!
+Recall that atomic sentences have no main connective.
+So the main connective function could not return any output if it received, say, the atomic sentence <fr:tex display="inline"><![CDATA[r]]></fr:tex> as input.
+That means that it can't take <fr:tex display="inline"><![CDATA[r]]></fr:tex> as an input at all, if it is to be a function.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>3</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0014/</fr:uri>
+                    <fr:display-uri>0014</fr:display-uri>
+                    <fr:route>/0014/</fr:route>
+                    <fr:title text="Types of inputs and outputs">Types of inputs and outputs</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>That caution leads me to an important point: as far as we're concerned in here, every function is <html:em>from</html:em> some type of thing and <html:em>to</html:em> some type of thing.
+You can see that in the examples we've looked at so far:
+<html:ul><html:li>a function from numeric grades to letter grades</html:li>
+<html:li>a function from people to days</html:li>
+<html:li>a function from compound sentences to connectives</html:li></html:ul></html:p>
+                    <html:p>
+Whenever we look at a function in here, you can always ask yourself (or your tutor!): what type of thing does this function take as inputs?
+What type of thing does it return as outputs?</html:p>
+                    <html:p>
+Building the habit of asking these questions will make your logic learning easier. 
+That's because it can save you from exploring a lot of dead ends!
+If you know, for example, that a function only takes connectives as inputs, then you know not to worry about what it does with any other input---it just can't take any other input.
+</html:p>
+                    <html:p>
+For example, last time we learned about <html:em>arity</html:em>.
+You can think of arity as a function that takes connectives as inputs and returns their arities as outputs: this is a function from connectives to numbers.
+So if you find yourself wondering something like "what is the arity of <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>?", you can short-circuit that wonder.
+It doesn't make any sense: <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> isn't a connective, so it isn't the right type of thing to have an arity.
+Or if you find yourself wondering: "is there a connective with arity <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>?", again you can short-circuit that wonder: arities are numbers, not connectives, so the question doesn't make any sense.
+</html:p>
+                    <html:p>
+I recommend making it a habit to pay attention to what <html:em>type</html:em> of thing you're looking at, whenever you're thinking about logic.
+Is it a connective?
+Is it a sentence?
+(Is it both, like <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> are?)
+Is it a function?
+And so on.
+This habit of mind will save you lots of time along the way!
+</html:p>
+                    <html:p>
+This way of thinking leads to a field of study known as <html:em>type theory</html:em>.
+Type theory is very cool and awesome, and has applications both in the design of programming languages (where management of different types of data is important) and also in developing computer-checkable proofs of mathematical claims.
+Type theory has deep links with logic, and we'll be learning some logic later in the semester that is right next door to it.
+</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>2</fr:month>
+                          <fr:day>3</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/0016/</fr:uri>
+                        <fr:display-uri>0016</fr:display-uri>
+                        <fr:route>/0016/</fr:route>
+                        <fr:title text="Functions in mathematics">Functions in mathematics</fr:title>
+                        <fr:taxon>Side note</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>You may have encountered the idea of a function before, in mathematics.
+If you haven't, don't worry about it: you're encountering the idea now, in this lecture!
+But if you <html:em>have</html:em> seen the idea in mathematics, it really is the very same idea we're using here.
+Like, you might have at some point in your life drawn a graph of a function given to you by an equation like <fr:tex display="inline"><![CDATA[y = x^2]]></fr:tex>; it looks like this:
+</html:p>
+                        <fr:resource hash="ccf30daf4a231aa04fb7f3db64fb9936">
+                          <fr:resource-content>
+                            <html:img src="/ccf30daf4a231aa04fb7f3db64fb9936.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {pgfplots}]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {tikzpicture}[scale=.7]
+  \begin {axis}[axis lines=center]
+    \addplot  [domain=-2:2,
+              thick,
+              ]  {x^2};
+  \end {axis}
+\end {tikzpicture}
+]]></fr:resource-source>
+                        </fr:resource>
+                        <html:p>
+This graph represents a function from numbers to numbers.
+Each point along the horizontal (<fr:tex display="inline"><![CDATA[x]]></fr:tex>) axis represents one possible input to this function, and the height of the curve above that point represents the function's output for that input, which in this case is the square of the input.
+</html:p>
+                        <html:p>The functions we'll use in this class are just the same kind of thing---except since we don't use numbers hardly at all, we won't have such pretty pictures.
+Still, the input/output idea is just the same.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>3</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0015/</fr:uri>
+                    <fr:display-uri>0015</fr:display-uri>
+                    <fr:route>/0015/</fr:route>
+                    <fr:title text="Many functions have the same types">Many functions have the same types</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Saying what type of thing a function is <html:em>from</html:em>, and what kind of thing a function is <html:em>to</html:em>, is not enough to specify a particular function.
+Typically, there are <html:em>lots</html:em> of different functions with the same types of inputs and outputs.</html:p>
+                    <html:p>For example, think of functions that take books as inputs and give numbers as outputs.
+Here are just a few examples of such functions:
+<html:ul><html:li>the function that takes each book to its number of pages</html:li>
+<html:li>the function that takes each book to its number of words</html:li>
+<html:li>the function that takes each book to the number of the year of its first publication</html:li>
+<html:li>the function that takes each book to the number 23</html:li>
+<html:li>the function that takes each book to the number 24</html:li></html:ul>
+And the list could go on.
+All of the above functions are different from each other, since they all disagree with each other on the output assigned to at least some book.
+So there is more to a function than just its input and output types!
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>3</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0019/</fr:uri>
+                    <fr:display-uri>0019</fr:display-uri>
+                    <fr:route>/0019/</fr:route>
+                    <fr:title text="Notation and vocabulary: Applying functions">Notation and vocabulary: Applying functions</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>When we use a function on an input, that's called <html:strong>applying</html:strong> the function to that input, and the <html:strong>result</html:strong> of that application is the output.
+(Note well: we're applying the <html:em>function</html:em> to the <html:em>input</html:em>, not the other way around.)</html:p>
+                    <html:p>So, for example, think about the function this class will use at the end of the semester to turn numeric grades into letter grades; call this function <fr:tex display="inline"><![CDATA[f]]></fr:tex>.
+Suppose, say, that you get an 87 for the semester (nice work!).
+Then some Monash system off in some inscrutable and unaccountable office will <html:em>apply</html:em> the function <fr:tex display="inline"><![CDATA[f]]></fr:tex> to the number 87, and the <html:em>result</html:em> will be an HD.
+</html:p>
+                    <html:p>
+Another way to say the same thing is this: the function <fr:tex display="inline"><![CDATA[f]]></fr:tex> <html:strong>takes</html:strong> 87 <html:strong>to</html:strong> HD.
+This is kind of picturesque: you can think of a function as like an individualised transit system, where every passenger (input) gets taken to a particular place (output).
+Nothing needs to actually be moving in space for <fr:tex display="inline"><![CDATA[f]]></fr:tex> to take the number 87 to the mark HD, of course.
+But it's a convenient figure of speech.
+</html:p>
+                    <html:p>
+There's a standard piece of notation that we'll use a lot for applying functions.
+If we have a function <fr:tex display="inline"><![CDATA[f]]></fr:tex>, and we apply it to an input <fr:tex display="inline"><![CDATA[x]]></fr:tex>, the result is <fr:tex display="inline"><![CDATA[f(x)]]></fr:tex>. 
+And we use the symbol <fr:tex display="inline"><![CDATA[=]]></fr:tex> to mean equality, as usual.
+So, to continue the above example, we can say that <fr:tex display="inline"><![CDATA[f(87) = \text {HD}]]></fr:tex>.
+This just says that the function <fr:tex display="inline"><![CDATA[f]]></fr:tex> gives the result HD when it is applied to the input 87; and that's the same as saying that <fr:tex display="inline"><![CDATA[f]]></fr:tex> takes 87 to HD.
+The notation <fr:tex display="inline"><![CDATA[f(87) = \text {HD}]]></fr:tex> says this in a more efficient and compact way.
+</html:p>
+                    <html:p>
+This notation for functions and application will be with us throughout the semester: it's very handy!
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0017/</fr:uri>
+                <fr:display-uri>0017</fr:display-uri>
+                <fr:route>/0017/</fr:route>
+                <fr:title text="Substitutions">Substitutions</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>One special kind of function you'll need to know about this semester is <html:strong>substitutions</html:strong>.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>3</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0018/</fr:uri>
+                    <fr:display-uri>0018</fr:display-uri>
+                    <fr:route>/0018/</fr:route>
+                    <fr:title text="Substitution">Substitution</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>A <html:strong>substitution</html:strong> for a language is any function from the atomic sentences of that language to the sentences of that language.
+(If no particular language is specified, assume our standard language.)
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>Note the types here: a substitution takes <html:em>atomic</html:em> sentences as inputs, but can produce any sentences at all as outputs.</html:p>
+                <html:p>There are very many substitutions for our standard language.
+Here are just a few examples:
+<html:ul><html:li>the substitution <fr:tex display="inline"><![CDATA[f]]></fr:tex> that takes every atomic sentence to itself</html:li>
+<html:li>the substitution <fr:tex display="inline"><![CDATA[g]]></fr:tex> that takes every atomic sentence to <fr:tex display="inline"><![CDATA[p \lor  (q \rightarrow  r)]]></fr:tex></html:li>
+<html:li>the substitution <fr:tex display="inline"><![CDATA[h]]></fr:tex> that takes:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[p]]></fr:tex> to <fr:tex display="inline"><![CDATA[q]]></fr:tex></html:li>
+  <html:li><fr:tex display="inline"><![CDATA[q]]></fr:tex> to <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex></html:li>
+  <html:li><fr:tex display="inline"><![CDATA[r]]></fr:tex> to <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and</html:li>
+  <html:li>all other atomic sentences to <fr:tex display="inline"><![CDATA[q \lor  q]]></fr:tex></html:li></html:ul></html:li></html:ul></html:p>
+                <html:p>
+Since a substitution needs to assign some sentence to <html:em>every</html:em> atomic sentence, and since there are infinitely many atomic sentences in our standard language, specifying any particular substitution for this language requires settling infinitely many questions.
+So there are very many substitutions that it wouldn't be practical to describe the way I've described the above three: these will work as examples for us, but they are just examples.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>3</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/001A/</fr:uri>
+                    <fr:display-uri>001A</fr:display-uri>
+                    <fr:route>/001A/</fr:route>
+                    <fr:title text="Sizes of infinity">Sizes of infinity</fr:title>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>You may have heard that there are many different sizes of infinity.
+If you haven't, then let me tell you the good news: there are many different sizes of infinity.
+(Indeed, there are infinitely many!)
+</html:p>
+                    <html:p>Last time, I told you that our standard language has infinitely many atomic sentences, but I didn't get any more specific than that.
+As I said then, for where we're going in this class it doesn't much matter; as long as there are at least like six or seven atomic sentences that's plenty for our purposes, and past that it's kind of a who cares.</html:p>
+                    <html:p>
+But it turns out that whatever infinity we pick for how many atomic sentences to have, we end up with <html:em>more</html:em> substitutions than that!
+For example, we might pick the smallest infinity to be how many atomic sentences we have.
+(There is no biggest infinity, but there is a smallest!)
+This is called <fr:tex display="inline"><![CDATA[\aleph _0]]></fr:tex> or <fr:tex display="inline"><![CDATA[\beth _0]]></fr:tex> (these are the Hebrew letters aleph and beth); if you're interested to learn more, you can check out <fr:link href="https://en.wikipedia.org/wiki/Aleph_number" type="external">aleph numbers</fr:link> or <fr:link href="https://en.wikipedia.org/wiki/Beth_number" type="external">beth numbers</fr:link>.
+</html:p>
+                    <html:p>
+If we have <fr:tex display="inline"><![CDATA[\aleph _0]]></fr:tex> atomic sentences, then we end up also with <fr:tex display="inline"><![CDATA[\aleph _0]]></fr:tex> total sentences in the language; our connectives give us lots of new sentences (all the compound ones!), but no <html:em>more</html:em> in total. 
+This is the kind of thing that happens around infinity.
+</html:p>
+                    <html:p>Anyhow, if we have <fr:tex display="inline"><![CDATA[\aleph _0]]></fr:tex> atomic sentences, then to specify a substitution we need to make <fr:tex display="inline"><![CDATA[\aleph _0]]></fr:tex> different choices, and since each of these atomic sentences can be assigned to any sentence at all, each of these choices is a choice from among <fr:tex display="inline"><![CDATA[\aleph _0]]></fr:tex> options.
+So there are <fr:tex display="inline"><![CDATA[(\aleph _0)^{\aleph _0}]]></fr:tex> many substitutions in total: this is a bigger infinity also known as <fr:tex display="inline"><![CDATA[\beth _1]]></fr:tex>, which is terrifyingly large (but still quite small, as infinities go).</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>3</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/001C/</fr:uri>
+                    <fr:display-uri>001C</fr:display-uri>
+                    <fr:route>/001C/</fr:route>
+                    <fr:title text="Applying a substitution">Applying a substitution</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Since a substitution is just a certain kind of function, we can apply it just as we would apply any other function.
+Building on the example substitutions from above, we have some example results:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[f(p) = p]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[f(q) = q]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[g(p) = p \lor  (q \rightarrow  r)]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[g(q) = p \lor  (q \rightarrow  r)]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[h(p) = q]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[h(q) = p \land  q]]></fr:tex></html:li></html:ul></html:p>
+                    <html:p>So far so usual.
+But substitutions have a little trick to them: given a substitution, we often treat it like a function from <html:em>all</html:em> sentences to all sentences in a particular way.
+Once you see the idea, it's not too bad, but it takes a bunch of words to explain; I'll come at it in two ways.
+</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>2</fr:month>
+                          <fr:day>3</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/001D/</fr:uri>
+                        <fr:display-uri>001D</fr:display-uri>
+                        <fr:route>/001D/</fr:route>
+                        <fr:title text="Method 1: preserve the main connective, apply to components">Method 1: preserve the main connective, apply to components</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>
+Given a sentence and a substitution, if the sentence is atomic we already know how to apply the substitution to it.
+But what if the sentence is compound?
+Then the result we're after is this: we preserve the main connective, and apply the substitution to each of the components.
+</html:p>
+                        <html:p>So, for example, take our substitution <fr:tex display="inline"><![CDATA[h]]></fr:tex> from above.
+What is <fr:tex display="inline"><![CDATA[h(q \rightarrow  r)]]></fr:tex>?
+This is compound, so we want to preserve the main connective <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex>, and apply the substitution to each of the components: our result should be <fr:tex display="inline"><![CDATA[h(q) \rightarrow  h(r)]]></fr:tex>.
+And what is that?
+Well, both <fr:tex display="inline"><![CDATA[q]]></fr:tex> and <fr:tex display="inline"><![CDATA[r]]></fr:tex> are atomic, so we know how to apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to them: <fr:tex display="inline"><![CDATA[h(q) = p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[h(r) = q]]></fr:tex>.
+So <fr:tex display="inline"><![CDATA[h(q \rightarrow  r) = h(q) \rightarrow  h(r) = (p \land  q) \rightarrow  q]]></fr:tex>.
+(Note the parentheses!)
+</html:p>
+                        <html:p>
+For a more complex example, think about <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot ))]]></fr:tex>.
+This is compound, so we want to keep the main connective as it is and apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to the components.
+This gets us to <fr:tex display="inline"><![CDATA[h(p) \land  h(q \lor  \bot )]]></fr:tex>.
+Now, <fr:tex display="inline"><![CDATA[h(p)]]></fr:tex> is good to go, since we know <fr:tex display="inline"><![CDATA[h(p) = q]]></fr:tex>.
+So our result should be <fr:tex display="inline"><![CDATA[q \land  h(q \lor  \bot )]]></fr:tex>; but <fr:tex display="inline"><![CDATA[q \lor  \bot ]]></fr:tex> is not atomic, so we've got more work still to do.
+</html:p>
+                        <html:p>What is <fr:tex display="inline"><![CDATA[h(q \lor  \bot )]]></fr:tex>, then?
+Well, we preserve the main connective and apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to the components.
+So it's <fr:tex display="inline"><![CDATA[h(q) \lor  h(\bot )]]></fr:tex>.
+And we know <fr:tex display="inline"><![CDATA[h(q) = p \land  q]]></fr:tex>, so <fr:tex display="inline"><![CDATA[h(q \lor  \bot ) = (p \land  q) \lor  h(\bot )]]></fr:tex>.
+Putting this together with what we already knew, we're getting closer: now we have that <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot )) = q \land  ((p \land  q) \lor  h(\bot ))]]></fr:tex>.
+</html:p>
+                        <html:p>That just leaves <fr:tex display="inline"><![CDATA[h(\bot )]]></fr:tex> to sort out.
+Remember that <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is compound, not atomic, so we still can't just apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> like any normal function; we need to stick to the plan.
+That is, we keep the main connective the same and apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to all the components.
+In this case, the main connective of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, and there are no components.
+So <fr:tex display="inline"><![CDATA[h(\bot ) = \bot ]]></fr:tex>.
+(Remember <fr:link href="/000F/" title="Logicians' Weird Habit 2" uri="https://www.my-great-forest.net/000F/" display-uri="000F" type="local">Logicians' Weird Habit 2</fr:link>: we automatically count as succeeding at applying <fr:tex display="inline"><![CDATA[h]]></fr:tex> to <html:em>all</html:em> the components: all zero of them.)
+</html:p>
+                        <html:p>Putting this all together, we get our result: <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot )) = q \land  ((p \land  q) \lor  \bot )]]></fr:tex>.
+Note that it's not just the main connective of this sentence that stayed put: <html:em>all</html:em> the connectives in the sentence have stayed just as they were.
+In effect, we've just acted on the atomics <html:em>inside</html:em> the sentence, replacing each of them with whatever the substitution <fr:tex display="inline"><![CDATA[h]]></fr:tex> says.
+That's the key idea of applying a substitution.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>2</fr:month>
+                          <fr:day>3</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/001E/</fr:uri>
+                        <fr:display-uri>001E</fr:display-uri>
+                        <fr:route>/001E/</fr:route>
+                        <fr:title text="Method 2: think about trees, replace the atomics directly">Method 2: think about trees, replace the atomics directly</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>Another way to think about it---and this will give the same results, as long as you're doing everything correctly---is to return to visualising formulas as trees, like we did <fr:link href="/000L/" title="Putting more complex sentences together" uri="https://www.my-great-forest.net/000L/" display-uri="000L" type="local">in the previous lecture</fr:link>.</html:p>
+                        <html:p>
+Remember that the leaves of these trees, the very tips of the branches, are all either atomic sentences or nullary connectives.
+To apply a substitution to a sentence, when you think of the sentence as a tree like this, you leave the whole innards of the tree in place, and you also leave the nullary connectives at the leaves in place.
+You only change the leaves with atomic sentences.
+At each of these atomic leaves, you graft on the tree for whatever sentence your substitution assigns to the atomic that was there.
+</html:p>
+                        <html:p>Let's look at the same example, but from this new perspective.
+We want to find <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot ))]]></fr:tex>.
+The first step is to draw out the tree for <fr:tex display="inline"><![CDATA[p \land  (q \lor  \bot )]]></fr:tex>:
+</html:p>
+                        <fr:resource hash="e5d213388a36c37e6bb48abdc0e69cf5">
+                          <fr:resource-content>
+                            <html:img src="/e5d213388a36c37e6bb48abdc0e69cf5.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\land $
+  [$p$]
+  [$\lor $
+    [$q$]
+    [$\bot $]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+                        </fr:resource>
+                        <html:p>Then we look at the atomic leaves of the tree: in this case they are <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+So we know we need to make trees for <fr:tex display="inline"><![CDATA[h(p)]]></fr:tex> and <fr:tex display="inline"><![CDATA[h(q)]]></fr:tex> as well.
+These are
+<fr:resource hash="9434a9e6fe4f3eeab439035c6bca8cad"><fr:resource-content><html:img src="/9434a9e6fe4f3eeab439035c6bca8cad.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$q$]
+ \end {forest}]]></fr:resource-source></fr:resource>
+and
+<fr:resource hash="3c1c96cc4172018089f69750d90cbc2d"><fr:resource-content><html:img src="/3c1c96cc4172018089f69750d90cbc2d.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\land $
+  [$p$]
+  [$q$]
+]
+ \end {forest}]]></fr:resource-source></fr:resource>, respectively.</html:p>
+                        <html:p>Finally, we graft that tree for <fr:tex display="inline"><![CDATA[h(p)]]></fr:tex> on to every leaf with a <fr:tex display="inline"><![CDATA[p]]></fr:tex> in our input tree, and we graft the tre for <fr:tex display="inline"><![CDATA[h(q)]]></fr:tex> on to every leaf with a <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+This gives us:
+</html:p>
+                        <fr:resource hash="96271b38a32d583182233ed645777c43">
+                          <fr:resource-content>
+                            <html:img src="/96271b38a32d583182233ed645777c43.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\land $
+  [$q$]
+  [$\lor $
+    [$\land $
+      [$p$]
+      [$q$]
+    ]
+    [$\bot $]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+                        </fr:resource>
+                        <html:p>That tree specifies the formula <fr:tex display="inline"><![CDATA[q \land  ((p \land  q) \lor  \bot )]]></fr:tex>: just the same result for <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot ))]]></fr:tex> that we arrived at with Method 1.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>Whichever way you want to think about substitutions, the result should be the same.
+Think about what makes the most sense to you!</html:p>
+                    <html:p><html:strong>If you want to be picky:</html:strong> One way to think about what we've done here is to say that we're not <html:em>really</html:em> applying the substitution to all sentences.
+Instead, we've picked a particular way, given any substitution, to determine a <html:em>new</html:em> function that goes from sentences to sentences.
+That's a fine way to think about it, too; but I'll keep talking about applying the substitution, even to compound sentences.
+You now know what I mean by that!
+</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>2</fr:month>
+                          <fr:day>3</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/001F/</fr:uri>
+                        <fr:display-uri>001F</fr:display-uri>
+                        <fr:route>/001F/</fr:route>
+                        <fr:title text="Higher-order functions">Higher-order functions</fr:title>
+                        <fr:taxon>Side note</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>It gets worse/better!
+In effect what I've done here is to give you a particular <html:em>function</html:em> that takes a <html:em>substitution</html:em> as an input and gives you a <html:em>function from sentences to sentences</html:em> as its output.
+</html:p>
+                        <html:p>Sometimes people use the term "higher-order function" to mean a function that takes <html:em>functions</html:em> as inputs: since a substitution is a kind of function, the way I've shown you to extend a substitution here is itself such a higher-order function.
+We won't be doing much with higher-order functions this semester, but this also isn't the last one we'll see.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>3</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/001H/</fr:uri>
+                    <fr:display-uri>001H</fr:display-uri>
+                    <fr:route>/001H/</fr:route>
+                    <fr:title text="Substitution instances">Substitution instances</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Substitutions allow us to make useful generalisations about whole categories of sentences.
+The key idea here is the idea of a <html:strong>substitution instance</html:strong>:</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>2</fr:month>
+                          <fr:day>3</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/001I/</fr:uri>
+                        <fr:display-uri>001I</fr:display-uri>
+                        <fr:route>/001I/</fr:route>
+                        <fr:title text="Substitution instance">Substitution instance</fr:title>
+                        <fr:taxon>Definition</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>A sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a <html:strong>substitution instance</html:strong> of a sentence <fr:tex display="inline"><![CDATA[B]]></fr:tex> iff: there is some substitution <fr:tex display="inline"><![CDATA[f]]></fr:tex> with <fr:tex display="inline"><![CDATA[f(B) = A]]></fr:tex>.</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>Now, that definition itself makes use of two important ideas we haven't looked at yet, so our first task is to break it down and see what it says.</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>2</fr:month>
+                          <fr:day>3</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/001J/</fr:uri>
+                        <fr:display-uri>001J</fr:display-uri>
+                        <fr:route>/001J/</fr:route>
+                        <fr:title text="&quot;Iff&quot;">"Iff"</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>The first thing to think about is that word "iff".
+That's not a normal word, and it's not a typo for "if".</html:p>
+                        <html:p>"Iff" is an abbreviation for "if and only if", and that's how it's pronounced, too: just like "if and only if".
+(I mean, you can absolutely pronounce it "ifffffffff" if you want to! (or iff you want to?)
+But it's more usually pronounced "if and only if".)
+</html:p>
+                        <html:p>It's common for logicians (and philosophers more broadly) to use "iff" in definitions.
+Like in this case, I want to tell you <html:em>exactly</html:em> what it takes for one sentence to be a substitution instance of  another.
+I don't just want to tell you that "if such-and-such is the case, it's a substitution instance", because that would leave open what happens when such-and-such is <html:em>not</html:em> the case.
+I want to tell you "if such and such is the case, it's a substitution instance; and otherwise it isn't"; this is just what "iff" means.
+</html:p>
+                        <html:p>Sometimes, people will just use "if" in definitions to mean "if and only if"; this is more common among mathematicians, in my experience.
+The idea is that, since you know when you're being given a definition, you should know to interpret "if" in that context as meaning "if and only if".
+But I won't do that, at least not deliberately; I'll say "iff" when I mean it. (Assuming no typos.)</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>2</fr:month>
+                          <fr:day>4</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/001K/</fr:uri>
+                        <fr:display-uri>001K</fr:display-uri>
+                        <fr:route>/001K/</fr:route>
+                        <fr:title text="What are those capital letters about?">What are those capital letters about?</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>The other thing that might (should!) seem unfamiliar in the above definition is its use of capital letters: it talks about "a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>" and "a sentence <fr:tex display="inline"><![CDATA[B]]></fr:tex>".
+Nothing in anything I've said about languages so far allows for this. So what's up?
+</html:p>
+                        <html:p>Sometimes in logic, we want to talk about particular individual sentences, like <fr:tex display="inline"><![CDATA[r]]></fr:tex> or <fr:tex display="inline"><![CDATA[\bot  \rightarrow  (p \lor  s)]]></fr:tex>.
+That mostly happens in giving particular illustrative examples.
+More often, though, our concerns are more general: we want to say something about <html:em>all</html:em> sentences, or about all sentences with such-and-such a feature.
+To make these generalisations, in this class we'll use capital <fr:tex display="inline"><![CDATA[A]]></fr:tex>, <fr:tex display="inline"><![CDATA[B]]></fr:tex>, etc.
+</html:p>
+                        <html:p>These are not specific sentences: there is no such sentence as just "<fr:tex display="inline"><![CDATA[A]]></fr:tex>", for example.
+Rather, they allow us to talk about sentences in general.
+The above definition, then, applies to any sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> at all, saying exactly what it takes for <fr:tex display="inline"><![CDATA[A]]></fr:tex>
+ to be a substitution instance of <fr:tex display="inline"><![CDATA[B]]></fr:tex>.</html:p>
+                        <html:p>So, for example, it follows from this definition that <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> is a substitution instance of <fr:tex display="inline"><![CDATA[q]]></fr:tex>, since there is a substitution that takes <fr:tex display="inline"><![CDATA[q]]></fr:tex> to <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>: our running example substitution <fr:tex display="inline"><![CDATA[h]]></fr:tex> does this, for example.</html:p>
+                        <html:p>And it also follows from this definition that <fr:tex display="inline"><![CDATA[p \land  (r \rightarrow  \bot )]]></fr:tex> is a substitution instance of <fr:tex display="inline"><![CDATA[q \land  s]]></fr:tex>.
+I haven't given you an example substitution that shows this, but it is indeed the case!
+Can you find a substitution that shows this?
+</html:p>
+                        <html:p>It also follows from the above definition that <fr:tex display="inline"><![CDATA[q \rightarrow  p]]></fr:tex> is a substitution instance of <fr:tex display="inline"><![CDATA[q \rightarrow  p]]></fr:tex>.
+(Indeed, the substitution that takes every atomic sentence to itself also takes every <html:em>sentence</html:em> to itself, and this shows that <html:em>every</html:em> sentence is a substitution instance of itself.)
+This is an important example: it shows that <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> can even be the <html:em>same</html:em> sentence, as we interpret the definition, even though "<fr:tex display="inline"><![CDATA[A]]></fr:tex>" and "<fr:tex display="inline"><![CDATA[B]]></fr:tex>" are different letters. 
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>4</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/001L/</fr:uri>
+                    <fr:display-uri>001L</fr:display-uri>
+                    <fr:route>/001L/</fr:route>
+                    <fr:title text="Sentence forms">Sentence forms</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>This brings us to the last idea for this lecture: the idea of a <html:strong>sentence form</html:strong>.
+This is something we'll use all the time in the weeks to come.</html:p>
+                    <html:p>Sentence forms (or just <html:strong>forms</html:strong>) mix capital letters with connectives, in ways that let us generalise over sentences more precisely.
+For example, I can ask you to consider all sentences of the form <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>; this is another way of asking you to consider all the conjunctions.
+That is, to have the form <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>, a sentence must have conjunction as its main connective, but then its conjuncts can be anything at all.
+Examples of sentences that have the form <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[p \land  p]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[(q \rightarrow  \bot ) \land  (r \land  (p \land  q))]]></fr:tex></html:li></html:ul></html:p>
+                    <html:p>Here's another example: consider all sentences of the form <fr:tex display="inline"><![CDATA[\bot  \rightarrow  (A \lor  B)]]></fr:tex>.
+These sentences include:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[\bot  \rightarrow  (p \lor  q)]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[\bot  \rightarrow  ((r \land  s) \lor  (r \rightarrow  \neg  s))]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[\bot  \rightarrow  (\bot  \lor  \bot )]]></fr:tex></html:li></html:ul></html:p>
+                    <html:p>It's not just the connectives in a form that matter, though; repeating a letter in a form can also matter.
+For example, consider all sentences of the form <fr:tex display="inline"><![CDATA[A \rightarrow  (B \rightarrow  A)]]></fr:tex>.
+Here are some example sentences of this form:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[p \rightarrow  (q \rightarrow  p)]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[(r \land  q) \rightarrow  ((r \land  q) \rightarrow  (r \land  q))]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[\bot  \rightarrow  ((p \rightarrow  (q \rightarrow  p)) \rightarrow  \bot )]]></fr:tex></html:li></html:ul>
+However, the following sentences do not have this form, since the two <fr:tex display="inline"><![CDATA[A]]></fr:tex>s in the form are filled in differently:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[p \rightarrow  (p \rightarrow  q)]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[\bot  \rightarrow  ((p \rightarrow  q) \rightarrow  (p \rightarrow  \bot ))]]></fr:tex></html:li></html:ul></html:p>
+                    <html:p>Forms allow us to make complex generalisations very efficiently, and we will use them constantly throughout the semester.
+But it's important to keep in mind that whenever you see <fr:tex display="inline"><![CDATA[A, B, C, \ldots ]]></fr:tex>, you're not looking at a particular sentence---you're looking at a form instead.
+Some kind of generalisation is afoot.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>4</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001N/</fr:uri>
+                <fr:display-uri>001N</fr:display-uri>
+                <fr:route>/001N/</fr:route>
+                <fr:title text="Summing up">Summing up</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>This time, we learned about <html:strong>functions</html:strong> and <html:strong>substitutions</html:strong>.</html:p>
+                <html:p>A function is something that takes an input and produces an output based entirely on that input.
+Functions take inputs of a certain type and give outputs of a certain type: for example, there are functions from numbers to letters, from people to days, from numbers to numbers, from atomic sentences to sentences, and so on.</html:p>
+                <html:p>Giving a function an input is called <html:strong>applying</html:strong> the function to its input; the <html:strong>result</html:strong> is the output that the function determines.
+When <fr:tex display="inline"><![CDATA[f]]></fr:tex> is a function and <fr:tex display="inline"><![CDATA[x]]></fr:tex> an input of the appropriate type, we write <fr:tex display="inline"><![CDATA[f(x)]]></fr:tex> to mean the result of applying <fr:tex display="inline"><![CDATA[f]]></fr:tex> to <fr:tex display="inline"><![CDATA[x]]></fr:tex>.</html:p>
+                <html:p>A <html:strong>substitution</html:strong> is a function from atomic sentences to sentences.
+But they're a bit special: we also treat a substitution as a function from <html:em>all</html:em> sentences to sentences, in a particular way.
+(Basically, we leave all the connectives in the input sentence just as they are, and replace all the atomic bits of the input sentence with whatever the substitution says about those atomics.)</html:p>
+                <html:p>When there is a substitution <fr:tex display="inline"><![CDATA[f]]></fr:tex> such that <fr:tex display="inline"><![CDATA[f(A) = B]]></fr:tex>, we say that <fr:tex display="inline"><![CDATA[B]]></fr:tex> is a <html:strong>substitution instance of</html:strong> <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</html:p>
+                <html:p>These <fr:tex display="inline"><![CDATA[A]]></fr:tex>s and <fr:tex display="inline"><![CDATA[B]]></fr:tex>s and the like can be used to make <html:strong>sentence forms</html:strong>, which we use to generalise about all sentences, or about all sentences with a certain structure.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

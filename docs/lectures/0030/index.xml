@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>17</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/0030/</fr:uri>
+    <fr:display-uri>0030</fr:display-uri>
+    <fr:route>/0030/</fr:route>
+    <fr:title text="Stronger and weaker">Stronger and weaker</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>     There's some vocabulary that often gets used to talk about relationships between logics: we can say that some logic is <html:strong>stronger</html:strong> or <html:strong>weaker</html:strong> than another.</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>17</fr:day>
+        </fr:date>
+        <fr:uri>https://www.my-great-forest.net/0031/</fr:uri>
+        <fr:display-uri>0031</fr:display-uri>
+        <fr:route>/0031/</fr:route>
+        <fr:taxon>Definition</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>To say that a logic X is <html:strong>stronger</html:strong> than a logic Y means exactly the same as to say that Y is <html:strong>weaker</html:strong> than X, and they both mean exactly this: that Y is a <html:em>subset</html:em> of X.</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <html:p>    This isn't a new idea; it's just a couple of new words that we use for the idea of one logic's being a subset of another.
+    So, for example the empty logic is weaker than every logic, and the universal logic is stronger than every logic; that's just a way of saying what you already know about these logics and the subset relation.
+</html:p>
+    <html:p>     Note that there's a potentially confusing feature here: saying that logic X is stronger than logic Y does <html:em>not</html:em> mean that X and Y are different logics!
+    Indeed, every logic is both stronger and weaker than itself, since every set is a subset of itself.
+    Again, there's nothing <html:em>conceptually</html:em> new here, but the phrasing can be confusing at first; make sure to be careful!
+</html:p>
+    <html:p>     Note, too, that the only way for a logic X to be both stronger and weaker than a logic Y is for X and Y to be the very same logic (by extensionality).
+    But it is common, given two different logics, for neither of them to be stronger or weaker than the other.
+    All it takes is for each of them to contain some argument that the other does not.
+</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>20</fr:day>
+        </fr:date>
+        <fr:uri>https://www.my-great-forest.net/0033/</fr:uri>
+        <fr:display-uri>0033</fr:display-uri>
+        <fr:route>/0033/</fr:route>
+        <fr:taxon>Check your understanding</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter><html:p>Now, return to the <fr:link href="/002Z/" title="Some more example logics" uri="https://www.my-great-forest.net/002Z/" display-uri="002Z" type="local">five example logics above</fr:link>.
+    Which of these, if any, are stronger or weaker than which of these?
+    Take a moment to think this through before you go on.
+</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>20</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:ul><html:li>Logic 1 is weaker than logic 2, which is to say that 2 is stronger than 1.</html:li>
+<html:li>Logic 1 is weaker than logic 4, which is to say that 4 is stronger than 1.</html:li>
+<html:li>Each of logics 1--5, like any logic, is both stronger and weaker than itself.</html:li>
+<html:li>There are no other relations of strength among these examples.</html:li></html:ul>
+</fr:mainmatter></fr:tree></fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>17</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/002T/</fr:uri>
+            <fr:display-uri>002T</fr:display-uri>
+            <fr:route>/002T/</fr:route>
+            <fr:title text="Logics">Logics</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>         Given a language, we can build up lots of different arguments.
+        Sticking for the moment with an interpretation where an argument is meant to contain premises that support its conclusion, you might notice that different arguments seem to do this more and less well.
+</html:p>
+            <html:p>         For one example, consider the argument <fr:tex display="inline"><![CDATA[p \land  q \;/\; p]]></fr:tex>.
+        Using your intuitions about "and" to interpret <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>, you can see that this argument's premise seems to support its conclusion.
+        If we suppose that the moon is made of green cheese and Carl is a good dog, we can conclude from that supposition that the moon is made of green cheese.
+        Of course, the moon isn't really made of green cheese, but that's just a reason to question the premise of this argument.
+        As long as we take the premise for granted, it really does support the conclusion.
+</html:p>
+            <html:p>         For a different kind of example, consider the argument <fr:tex display="inline"><![CDATA[p \land  q \;/\; r]]></fr:tex>.
+        Here, the conclusion doesn't seem to have anything to do with the premise.
+        If we suppose that the moon is made of green cheese and Carl is a good dog, that doesn't give us any support at all for the claim that Melbourne is in Victoria.
+        Of course, Melbourne really is in Victoria, but that's beside the point; what matters is that this isn't supported by the premise given.
+        Even if we take the premise for granted, the conclusion just doesn't follow.
+</html:p>
+            <html:p>         We're going to start drawing divisions between arguments, between those like <fr:tex display="inline"><![CDATA[p \land  q \;/\; p]]></fr:tex>, where the premises do seem to suffice for the conclusion, and those like <fr:tex display="inline"><![CDATA[p \land  q \;/\; r]]></fr:tex>, where they do not.
+        But again, we're going to do this in an abstract, and so open-minded, way.
+        Rather than fixing once and for all on a single division between good arguments and bad arguments, we're going to consider <html:em>all</html:em> such divisions.
+        Each one is called a <html:strong>logic</html:strong>.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002U/</fr:uri>
+                <fr:display-uri>002U</fr:display-uri>
+                <fr:route>/002U/</fr:route>
+                <fr:title text="Logic">Logic</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>logic</html:strong> is a set of arguments.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>         That is, a logic is a set of arguments to be counted as the good ones; any other arguments, outside the set, are to be counted as the bad ones.
+        So any way of choosing a set of arguments gives you a logic.
+        Since there are lots of different sets of arguments you could choose, there are lots of different logics.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002V/</fr:uri>
+                <fr:display-uri>002V</fr:display-uri>
+                <fr:route>/002V/</fr:route>
+                <fr:title text="How many logics are there?">How many logics are there?</fr:title>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>How many?
+          This gets further into some differences between different sizes of infinity that we've <fr:link href="/001A/" title="Sizes of infinity" uri="https://www.my-great-forest.net/001A/" display-uri="001A" type="local">brushed up against before</fr:link>.
+          The smallest infinity has a few names; it's called both <fr:tex display="inline"><![CDATA[\aleph _{0}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\beth _{0}]]></fr:tex>, and it's the size of the natural numbers <fr:tex display="inline"><![CDATA[0, 1, 2, \ldots ]]></fr:tex>.
+          (<fr:tex display="inline"><![CDATA[\aleph ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\beth ]]></fr:tex> are the letters aleph and beth, the first two letters of the Hebrew alphabet; the word `alphabet' comes from the names of these two letters.
+          I told you logicians like our alphabets!)
+</html:p>
+                <html:p>           Since we're using a language with infinitely many atomic formulas, if we're going to be precise we need to choose <html:em>how many</html:em> that is; let's say we use <fr:tex display="inline"><![CDATA[\beth _{0}]]></fr:tex>, the smallest infinity, as the number of atomic formulas we start from.
+          Then, even after we add all the compound formulas we can form with our connectives, we have <fr:tex display="inline"><![CDATA[\beth _{0}]]></fr:tex> many formulas in total---we've added a lot more formulas (indeed, <fr:tex display="inline"><![CDATA[\beth _{0}]]></fr:tex> many), but the total number has not gone up: <fr:tex display="inline"><![CDATA[\beth _{0} + \beth _{0} = \beth _{0}]]></fr:tex>.
+</html:p>
+                <html:p>           How many arguments can we form with <fr:tex display="inline"><![CDATA[\beth _{0}]]></fr:tex> formulas?
+          Well, each argument starts from a set of premises, and has a conclusion; it turns out that this means that there are <fr:tex display="inline"><![CDATA[\beth _{1}]]></fr:tex> many different arguments.
+          This is a new size of infinity, staggeringly large---it is the same as the number of real numbers (every number on the number line, including like <fr:tex display="inline"><![CDATA[- \pi ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\sqrt {200}]]></fr:tex>).
+</html:p>
+                <html:p>           And then, given <fr:tex display="inline"><![CDATA[\beth _{1}]]></fr:tex> arguments, how many different logics are there?
+          The answer turns out to be <fr:tex display="inline"><![CDATA[\beth _{2}]]></fr:tex>, and I have to tell you that my ability to even slightly comprehend the size of this infinity is now completely drowned out.
+          This is <html:em>beyond</html:em> beyond unfathomably large.
+          (And, as the notation might suggest, this is really just getting started.
+          How about <fr:tex display="inline"><![CDATA[\beth _{23}]]></fr:tex>?)
+</html:p>
+                <html:p>           This is the kind of thing that set theorists do end up working with, but we won't need it here; I just put it in in case you're interested.
+          If you do want to learn more, you might start at <fr:link href="https://en.wikipedia.org/wiki/Aleph_number" type="external">https://en.wikipedia.org/wiki/Aleph_number</fr:link> or <fr:link href="https://en.wikipedia.org/wiki/Beth_number" type="external">https://en.wikipedia.org/wiki/Beth_number</fr:link>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002W/</fr:uri>
+                <fr:display-uri>002W</fr:display-uri>
+                <fr:route>/002W/</fr:route>
+                <fr:title text="Validity and invalidity">Validity and invalidity</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>         The arguments contained in a logic, the ones counted as "good" according to that logic, are called <html:strong>valid</html:strong> in that logic, and the others are called <html:strong>invalid</html:strong>.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>17</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/002X/</fr:uri>
+                    <fr:display-uri>002X</fr:display-uri>
+                    <fr:route>/002X/</fr:route>
+                    <fr:title text="Valid and invalid">Valid and invalid</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>An argument is <html:strong>valid in a logic</html:strong> iff it is a member of the logic; otherwise it is <html:strong>invalid</html:strong> in that logic.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>Note that it doesn't make sense, on this definition, to talk about an argument's being just plain valid or just plain invalid: it's only with some logic in mind that notions of validity or invalidity make sense.
+Saying that an argument is <html:em>valid</html:em> is like saying that someone is <html:em>ready</html:em>.
+Ready for what?
+Usually, people are ready for some things and not for others.
+Similarly, any argument is valid in some logics and not in others.
+It's only with some particular logic in view that calling an argument valid or invalid is meaningful.
+</html:p>
+                <html:p>
+        There's not much to say in full generality about validity and invalidity; they really ar  just tags for "in a logic" and "out of a logic".
+        We'll look at particular logics with particular applications, though, and then we'll be able to see what validity in these particular cases amounts to; this will vary from logic to logic and application to application.
+</html:p>
+                <html:p>         In full generality, though, I can at least warn you off a potential confusion.
+        As we'll use the terms, it is <html:em>only arguments</html:em> that can ever be valid or invalid.
+        It doesn't make any sense, for example, to call a sentence valid.
+
+</html:p>
+                <html:p>If you read around, you might find some older sources that will sometimes call a sentence valid.
+        They usually mean by that what we would mean by considering the argument with no premises and that sentence as its conclusion, and calling that <html:em>argument</html:em> valid.
+        Here, we'll just avoid ever calling sentences valid or invalid, which makes things simpler.</html:p>
+                <html:p>So if you ever find yourself saying something like "I think this sentence is invalid", you know something's gone wrong.
+        Only arguments can ever be valid or invalid, nothing else; and in its purest sense, this is just a different way of saying that the argument is in a particular logic or not in it.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002Y/</fr:uri>
+                <fr:display-uri>002Y</fr:display-uri>
+                <fr:route>/002Y/</fr:route>
+                <fr:title text="Logics are sets">Logics are sets</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>         Since a logic is a set of arguments, you can use everything you know about sets to understand logics.
+        For example, any argument is either in a particular logic or not; it's not in it in any particular order or any particular number of times.
+        There can't be two different logics that have exactly the same valid arguments as each other; that would be just one logic, by extensionality.
+</html:p>
+                <html:p>         There is an <html:em>empty logic</html:em>: the empty set.
+        According to the empty logic, no argument is valid, since no argument is in the empty set.
+        And, once we fix a particular language (say our usual one), there is a <html:em>universal logic</html:em>, the set of all arguments in that language.
+        According to the universal logic, every argument is valid, since every argument is in that set.
+</html:p>
+                <html:p>         Since logics are sets, they can bear the subset relation to each other as well.
+        For example, the empty logic is a subset of every logic (since the empty set is a subset of every set).
+        As another example, every logic is a subset of the universal logic: any set of arguments must be a subset of the set of all arguments.
+</html:p>
+                <html:p>And logics have intersections and unions, again since they are sets.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002Z/</fr:uri>
+                <fr:display-uri>002Z</fr:display-uri>
+                <fr:route>/002Z/</fr:route>
+                <fr:title text="Some more example logics">Some more example logics</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>         In the weeks to come, we'll meet a number of particular logics and explore a lot of their individual quirks, commonalities, and applications.
+        For now, though, I'll just give you a few more example logics, to help the idea come into focus.
+</html:p>
+                <html:p>         Remember, any set of arguments is a logic, so there's a ton of freedom here.
+        You already know about the empty and universal logics.
+        Here are some more examples.
+        <html:ol><html:li>the logic that contains only the two arguments <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex> and <fr:tex display="inline"><![CDATA[p \land  q \;/\; p]]></fr:tex>;</html:li>
+          <html:li>the logic that contains all and only the arguments with the conclusion <fr:tex display="inline"><![CDATA[p]]></fr:tex>;</html:li>
+          <html:li>the logic that contains an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> if and only if <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>;</html:li>
+          <html:li>the logic that contains all and only the arguments with a finite set of premises;</html:li>
+          <html:li>the logic that contains all and only the arguments with an infinite set of premises.</html:li></html:ol></html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/0030/</fr:uri>
+                <fr:display-uri>0030</fr:display-uri>
+                <fr:route>/0030/</fr:route>
+                <fr:title text="Stronger and weaker">Stronger and weaker</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>     There's some vocabulary that often gets used to talk about relationships between logics: we can say that some logic is <html:strong>stronger</html:strong> or <html:strong>weaker</html:strong> than another.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>17</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0031/</fr:uri>
+                    <fr:display-uri>0031</fr:display-uri>
+                    <fr:route>/0031/</fr:route>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>To say that a logic X is <html:strong>stronger</html:strong> than a logic Y means exactly the same as to say that Y is <html:strong>weaker</html:strong> than X, and they both mean exactly this: that Y is a <html:em>subset</html:em> of X.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>    This isn't a new idea; it's just a couple of new words that we use for the idea of one logic's being a subset of another.
+    So, for example the empty logic is weaker than every logic, and the universal logic is stronger than every logic; that's just a way of saying what you already know about these logics and the subset relation.
+</html:p>
+                <html:p>     Note that there's a potentially confusing feature here: saying that logic X is stronger than logic Y does <html:em>not</html:em> mean that X and Y are different logics!
+    Indeed, every logic is both stronger and weaker than itself, since every set is a subset of itself.
+    Again, there's nothing <html:em>conceptually</html:em> new here, but the phrasing can be confusing at first; make sure to be careful!
+</html:p>
+                <html:p>     Note, too, that the only way for a logic X to be both stronger and weaker than a logic Y is for X and Y to be the very same logic (by extensionality).
+    But it is common, given two different logics, for neither of them to be stronger or weaker than the other.
+    All it takes is for each of them to contain some argument that the other does not.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>20</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0033/</fr:uri>
+                    <fr:display-uri>0033</fr:display-uri>
+                    <fr:route>/0033/</fr:route>
+                    <fr:taxon>Check your understanding</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter><html:p>Now, return to the <fr:link href="/002Z/" title="Some more example logics" uri="https://www.my-great-forest.net/002Z/" display-uri="002Z" type="local">five example logics above</fr:link>.
+    Which of these, if any, are stronger or weaker than which of these?
+    Take a moment to think this through before you go on.
+</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>20</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:ul><html:li>Logic 1 is weaker than logic 2, which is to say that 2 is stronger than 1.</html:li>
+<html:li>Logic 1 is weaker than logic 4, which is to say that 4 is stronger than 1.</html:li>
+<html:li>Each of logics 1--5, like any logic, is both stronger and weaker than itself.</html:li>
+<html:li>There are no other relations of strength among these examples.</html:li></html:ul>
+</fr:mainmatter></fr:tree></fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

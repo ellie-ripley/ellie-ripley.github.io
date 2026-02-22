@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>5</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/001V/</fr:uri>
+    <fr:display-uri>001V</fr:display-uri>
+    <fr:route>/001V/</fr:route>
+    <fr:title text="It's not omniscience, and it's not infallibility">It's not omniscience, and it's not infallibility</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p> This doesn't mean that maths is all tapped out.
+New mathematical truths are discovered all the time.
+This semester, you may well discover some new ones yourself!
+The extent of our mathematical ignorance is unfathomably huge, even though our knowledge is constantly growing.
+</html:p>
+    <html:p> Euclid was in this boat, too; his mathematical beliefs were staggeringly <html:em>reliable</html:em>, but not <html:em>total</html:em>.
+Euclid knew a heck of a lot, but he wasn't anything like omniscient, even just about mathematical ideas.
+For example, you probably learned a thing or two about negative numbers pretty early in your life, but Euclid didn't know about them at all.
+(Nor, for that matter, did anyone else at that time---it would be another hundredish years before <fr:link href="https://en.wikipedia.org/wiki/Liu_Hui" type="external">Liu Hui</fr:link>.)
+</html:p>
+    <html:p> So whatever's going on here, it's not a matter of just <html:em>knowing everything</html:em>; nothing like that at all.
+Mathematical discoveries are made step by step, often building on previous discoveries, by investigators asking particular questions, which they sometimes manage to answer and sometimes don't.
+This just deepens the puzzle, though; in this regard, people learning about mathematics look just like people learning about anything else.
+And yet there is this massive difference in the reliability of the results.
+How?
+</html:p>
+    <html:p> Another complication: we do---at least <html:em>I</html:em> often do---develop false mathematical beliefs all the time, for example any time we make a calculation error.
+("Whoops! For a moment I thought that <fr:tex display="inline"><![CDATA[751 - 248]]></fr:tex> was <fr:tex display="inline"><![CDATA[503]]></fr:tex>, but it's really <fr:tex display="inline"><![CDATA[493]]></fr:tex>." That's the kind of thing I do all the time.)
+Your mathematical education almost certainly involved your making a lot of errors.
+(If it didn't, it should have!
+That's how learning skills works: you start out bad and practice until you get better.)
+This, though, only deepens the puzzle yet again.
+</html:p>
+    <html:p> We're clearly not mathematically infallible; very very far from it.
+And yet, on a large scale, like society-wide, it looks a lot like we <html:em>are</html:em>?
+That can't be right---but still, mathematical truths, once discovered, <html:em>stay</html:em> discovered, through millennia, through unthinkably vast cultural changes, and through massive increases in all our knowledge.
+How can this be---and why is it just maths?</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>5</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/001R/</fr:uri>
+            <fr:display-uri>001R</fr:display-uri>
+            <fr:route>/001R/</fr:route>
+            <fr:title text="Ancient proofs">Ancient proofs</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p> Let's rewind the clock for a moment.
+We're going pretty far back: to the founding-slash-renaming of Alexandria in Egypt in 332 BCE, at the western edge of the delta where the Nile River flows into the Mediterranean Sea.
+</html:p>
+            <html:p> We're back before globalization, before electricity was harnessed, before colonization, before capitalism and before feudalism, before Muhammad and before Jesus.
+ London and Paris wouldn't be founded for another four hundred years; Rome the city existed, but not yet the empire.
+This is during the Warring States period in China, just before the rise of the Maurya Empire in India, during the Second Temple period in Jerusalem.
+New Zealand and Iceland had no people at all, and would stay that way for another thousand years.
+African, Australian, and American cultures were all underway, but would not leave written records until much later.
+Confucius, Siddhartha Gautama, and Socrates had all lived just a few generations before.
+(It's wild that those three were basically contemporaries, right?)
+</html:p>
+            <html:p> Alexandria is "Alexandria" because of Alexander the Great (hence the name); today it is Egypt's second-largest city, a bit more populous than Melbourne.
+It was built on a grid, with a main avenue 30 metres wide; it would have been an astonishing sight for anyone who saw it.
+Underground plumbing in clay pipes brought fresh water from the Nile into the city.
+</html:p>
+            <html:p> Soon after the city's founding, Alexander died, and his empire was divided among his close companions.
+Egypt came to be ruled by Ptolemy, who declared himself Pharaoh, moving the capital downriver from Memphis to Alexandria.
+This began the so-called "Ptolemaic Dynasty" of Egyptian Pharaohs, which would rule Egypt for about three hundred years, until Octavian annexed Egypt, creating the Roman Empire and bringing the position of Pharaoh to an end, closing a book that had been open for more than three millennia.
+</html:p>
+            <html:p> From the start, Alexandria was renowned as a city of learning.
+The Ptolemies aimed to build their own prestige, and the city's, by collecting massive amounts of knowledge, and the Library of Alexandria (and the larger Mouseion that housed it) is still regarded as one of the greatest centres of learning of all time.
+It is even reported that city customs officials would confiscate all books carried into the city on ships, have the books copied, and return the <html:em>copies</html:em> to the owners.
+The originals went into the Library.
+Before long, the Library held half a million scrolls and tens of thousands of books.
+</html:p>
+            <html:p> Because of its location at the meeting of the Nile and the Mediterranean, and because it was founded by Hellenic conquerors in Egpyt, Alexandria was from its very start a multicultural city, and it drew together ideas and knowledge from a wide range of sources.
+Its main populations were Egyptian, Greek, and Jewish; it contained the largest Jewish population anywhere at the time, and was the location where the Hebrew Bible was first translated into Greek.
+These three cultures all contributed substantially to the intellectual life of the city in its early days.
+Now, I'm not saying it was a cosmopolitan utopia; it wasn't.
+There were separate quarters of the city for Greeks, Egyptians, and Jews, and the Greek population unmistakably held the power.
+But the city still created unique opportunities for these traditions to mix and influence each other, and for centuries it was the intellectual heart of the Mediterranean world.
+</html:p>
+            <html:p> Anyway, enough scene-setting.
+We're here to pay a visit to two writers in particular whose ideas have survived from Alexandria to the present day, at least enough for us to know something about them: Erasistratus and Euclid.
+Both lived in Alexandria around 300 BCE, and both became known for their scholarly work.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>5</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001S/</fr:uri>
+                <fr:display-uri>001S</fr:display-uri>
+                <fr:route>/001S/</fr:route>
+                <fr:title text="Erasistratus">Erasistratus</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p> Erasistratus was a physician and anatomist, and a contributor to the "methodic school" of medicine, which focused on the direct treatment of symptoms (rather than, say, searching for some underlying cause and addressing that cause instead).
+He worked in Alexandria, performing a number of human dissections and perhaps vivisections, and is credited with a number of early and important discoveries, such as that the heart is a pump, and that both veins and arteries stem from it.
+</html:p>
+                <html:p> Unsurprisingly, he also had a number of beliefs that seem strange to us today.
+(Remember how long ago this is!)
+For example, he believed that in a healthy person, the arteries would carry only πνεῦμα (pneuma), a kind of spiritualised air.
+In fact, Erasistratus believed in at least two types of πνεῦμα, "psychic" pneuma from the head and "vital" pneuma from the heart.
+It was only in the case of damage to an artery, Erasistratus thought, that some blood would leak <html:em>in</html:em> to the artery, displacing πνεῦμα and causing disease.
+A healthy person wouldn't have any blood in their arteries at all.
+</html:p>
+                <html:p> Importantly for my purposes here, this wasn't just an incidental belief Erasistratus happened to hold.
+Like, you might imagine someone at the time being very concerned with muscles, joints, and skeletons, and really focused intently on these mechanical aspects of human bodies.
+Such a person maybe wouldn't notice that healthy peoples' arteries contain blood rather than πνεῦμα, because they would be developing their expertise elsewhere, and not necessarily asking anything about arteries.</html:p>
+                <html:p>But Erasistratus wasn't like this at all; he was one of the foremost experts <html:em>on arteries</html:em>!
+He probably had access to more writings on medicine than anyone in the Mediterranean world at the time, and he was able to conduct a range of experiments with a very (problematically) free hand, and he was very concerned to discover the truth about arteries.
+But all this evidence still misled him, even on the very topics of his central concern.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>5</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001T/</fr:uri>
+                <fr:display-uri>001T</fr:display-uri>
+                <fr:route>/001T/</fr:route>
+                <fr:title text="Euclid">Euclid</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p> Around the same time, there was another intellectual in Alexandria named Euclid.
+Euclid is much more famous nowadays than Erasistratus; he was the author of the <html:strong>Elements</html:strong>, a textbook on geometry that has been speculated to be the book with the second-most separate print runs of all time (after the Bible).
+Euclid doesn't tend to be credited with any particular geometric discoveries; his main contributions appear to have been in systematisation, compilation, and presentation.
+</html:p>
+                <html:p>
+Here's the thing, though: basically everything in the <html:strong>Elements</html:strong> is <html:em>right</html:em>.
+Later developments in geometry have shown much <html:em>more</html:em> than Euclid knew, and have developed theories beyond anything Euclid could have imagined.
+But they have not shown that what Euclid demonstrated in the <html:strong>Elements</html:strong> is <html:em>wrong</html:em>, because it isn't.
+</html:p>
+                <html:p>From our perspective, then, Euclid might seem not to know much, or to be narrowminded.
+But what he <html:em>does</html:em> think he knows, he's right about.
+He's thus a very different sort of case from Erasistratus.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>5</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001U/</fr:uri>
+                <fr:display-uri>001U</fr:display-uri>
+                <fr:route>/001U/</fr:route>
+                <fr:title text="What's all this about?">What's all this about?</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p> Now, I told you all that so that I could ask you a question: why did Erasistratus get a whole lot wrong, while Euclid got basically nothing wrong?</html:p>
+                <html:p>
+We can rule out right away explanations that have to do with their personal qualities, for three reasons.
+First, this is all so long ago that we really can't say much about them as individuals, other than pure speculation.
+Second, they were both prime examples of learned expertise, in one of the most intellectually rich environments that had ever been; it's <html:em>very</html:em> unlikely that Erasistratus was a bumbling fool.
+But third, and most importantly, the real issue here isn't just about Euclid and Erasistratus at all, or even just about Alexandria or the Mediterranean; the pattern here is a much broader one, in fact a global and panhistorical one: mathematical knowledge is far more secure and reliable than medical knowledge.
+</html:p>
+                <html:p>We're mostly trained these days, for what I take to be very good reasons, to be skeptical of claims like the one I just made: claims of global and panhistorical patterns.
+I certainly tend to be skeptical of this kind of claim, anyhow; and I think you should be too.
+But that (warranted!) default skepticism doesn't mean that no such claim <html:em>can</html:em> be true; and I think that this one, surprisingly, is.
+</html:p>
+                <html:p> It's a commonplace today that scientific advances come from realizing that what earlier theories held to be true is in fact false.
+For example, it was a significant advance in medicine when people sorted out that the arteries carry blood and not pneuma.
+I'm sure you can multiply examples like this.
+And we ourselves almost certainly hold many scientific beliefs now that will turn out, in the fullness of time and evidence, not to be true (at least if the practice of science goes on long enough), although of course we can't say which of our beliefs these are.
+Our medical experts know much more than Erasistratus did, but their position is not different in kind.
+</html:p>
+                <html:p> And it's not just science; humanistic inquiry is like this too.
+Here some people are more hesitant to talk about "getting it wrong", but at the very least most of us nowadays don't think that people who believed (or for that matter who do still believe) in things like "natural slavery" were (or are) getting anything <html:em>right</html:em>.
+Our beliefs about human value, about purpose, history, religion, politics, are all <html:em>at least</html:em> as fallible as our more "scientific" beliefs.
+</html:p>
+                <html:p> It might be tempting to think that this is just the human condition: we do the best we can, and if you're an optimist you might think that with the right mix of luck, skill, and perseverence we at least can trend towards getting more things right over time.
+Still, at any given time, we've got a lot of false beliefs, and that's just how it is.
+But---and here is the point I've been driving towards---<html:strong>this doesn't happen in maths</html:strong>.
+Our precursors, as far back as Euclid (and in fact much farther), basically got it right.
+As far as I know, there is not a single other area of human inquiry this is true of.
+</html:p>
+                <html:p> That strikes me, and I hope it strikes you, as <html:em>deeply</html:em> weird.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>5</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001V/</fr:uri>
+                <fr:display-uri>001V</fr:display-uri>
+                <fr:route>/001V/</fr:route>
+                <fr:title text="It's not omniscience, and it's not infallibility">It's not omniscience, and it's not infallibility</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p> This doesn't mean that maths is all tapped out.
+New mathematical truths are discovered all the time.
+This semester, you may well discover some new ones yourself!
+The extent of our mathematical ignorance is unfathomably huge, even though our knowledge is constantly growing.
+</html:p>
+                <html:p> Euclid was in this boat, too; his mathematical beliefs were staggeringly <html:em>reliable</html:em>, but not <html:em>total</html:em>.
+Euclid knew a heck of a lot, but he wasn't anything like omniscient, even just about mathematical ideas.
+For example, you probably learned a thing or two about negative numbers pretty early in your life, but Euclid didn't know about them at all.
+(Nor, for that matter, did anyone else at that time---it would be another hundredish years before <fr:link href="https://en.wikipedia.org/wiki/Liu_Hui" type="external">Liu Hui</fr:link>.)
+</html:p>
+                <html:p> So whatever's going on here, it's not a matter of just <html:em>knowing everything</html:em>; nothing like that at all.
+Mathematical discoveries are made step by step, often building on previous discoveries, by investigators asking particular questions, which they sometimes manage to answer and sometimes don't.
+This just deepens the puzzle, though; in this regard, people learning about mathematics look just like people learning about anything else.
+And yet there is this massive difference in the reliability of the results.
+How?
+</html:p>
+                <html:p> Another complication: we do---at least <html:em>I</html:em> often do---develop false mathematical beliefs all the time, for example any time we make a calculation error.
+("Whoops! For a moment I thought that <fr:tex display="inline"><![CDATA[751 - 248]]></fr:tex> was <fr:tex display="inline"><![CDATA[503]]></fr:tex>, but it's really <fr:tex display="inline"><![CDATA[493]]></fr:tex>." That's the kind of thing I do all the time.)
+Your mathematical education almost certainly involved your making a lot of errors.
+(If it didn't, it should have!
+That's how learning skills works: you start out bad and practice until you get better.)
+This, though, only deepens the puzzle yet again.
+</html:p>
+                <html:p> We're clearly not mathematically infallible; very very far from it.
+And yet, on a large scale, like society-wide, it looks a lot like we <html:em>are</html:em>?
+That can't be right---but still, mathematical truths, once discovered, <html:em>stay</html:em> discovered, through millennia, through unthinkably vast cultural changes, and through massive increases in all our knowledge.
+How can this be---and why is it just maths?</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>5</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/001W/</fr:uri>
+                <fr:display-uri>001W</fr:display-uri>
+                <fr:route>/001W/</fr:route>
+                <fr:title text="It's proof!">It's proof!</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p> Here's my best stab at an (incomplete) answer: the difference is <html:strong>proof</html:strong>.
+The standard for a mathematician to make a mathematical claim is to have <html:em>proved it</html:em>, and this is not so in any other area of inquiry.
+</html:p>
+                <html:p> Here's how that answers our question.
+Suppose, for a moment, that it's genuinely impossible to prove incorrect claims, that if we have a proof of some claim it really must be true.
+Then the reliability of Euclid's mathematical beliefs would be explained.
+The <html:strong>Elements</html:strong> is full of proofs; it's one proof after another.
+Erasistratus, on the other hand, couldn't have had a proof that healthy arteries don't contain blood, since that isn't true.
+So however Erasistratus formed this belief, it wasn't this way.
+And indeed, if we look at Erasistratus's methods, they don't look anything like proofs.
+(Proofs are typically much less gruesome.)
+</html:p>
+                <html:p> As with any good answer, though, this one just leads to more questions, like: What is a proof of something?
+How does having a proof really guarantee the truth of what's proved?
+Why don't we pursue all our inquiries via proof, if it's so effective? Why just maths?
+And so on.
+</html:p>
+                <html:p> We won't approach all these questions in this class, but we will look at some of them.
+In particular, we'll look at a family of ideas about what a proof is in the first place, and some different answers that have been given about how proofs guarantee the truth of what's proved.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

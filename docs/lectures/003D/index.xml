@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>21</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/003D/</fr:uri>
+    <fr:display-uri>003D</fr:display-uri>
+    <fr:route>/003D/</fr:route>
+    <fr:taxon>Reference</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p><html:em>Relevant Logics and their Rivals, vol. 1</html:em> (1982). Richard Routley, Val Plumwood, Robert K. Meyer, Ross T. Brady. Ridgeview Publishing.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/003C/</fr:uri>
+            <fr:display-uri>003C</fr:display-uri>
+            <fr:route>/003C/</fr:route>
+            <fr:taxon>Side note</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>There was, alas, an embarrassing moment, mainly from the 1950s to the 1990s or so, where a decent number of philosophers genuinely defended the idea that the Boolean implication is not just an approximation, but actually fully gives the truth conditions for English "if...then" statements.
+    To see that this doesn't work, here's an old facetious proof of the existence of God:</html:p>
+            <html:p>It's false to say that if there's a God, then the prayers of the wicked will be answered.
+    So, by the Boolean truth table, the antecedent of that "if...then" must be true; so there is a God.</html:p>
+            <html:p>Even theists should (and do) reject this line of reasoning; it's pretty obviously bad reasoning.
+    Embarrassments like this for the idea that English conditionals are Boolean implications can be multiplied more or less endlessly; the view is as refuted as anything ever gets.
+    But if you happen across certain philosophy from around that time period, you should be aware that many authors did in fact believe this, despite the obvious problems.
+</html:p>
+            <html:p>
+If you're interested in learning more about this, I recommend the book <fr:link href="/003D/" title="https://www.my-great-forest.net/003D/" uri="https://www.my-great-forest.net/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
+Note that this was written during the period in question!
+It's good fun, and it gives a particularly vitriolic (and particularly Australian) takedown of what was at the time practically an accepted orthodoxy. 
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>6</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/0021/</fr:uri>
+    <fr:display-uri>0021</fr:display-uri>
+    <fr:route>/0021/</fr:route>
+    <fr:taxon>Example</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:table>
+
+<html:tr>
+  <html:td>1</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[(p \rightarrow  (q \rightarrow  p)) \rightarrow  ((q \rightarrow  (q \rightarrow  q)) \rightarrow  (p \rightarrow  (q \rightarrow  p)))]]></fr:tex></html:td>
+  <html:td><html:strong>K</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>2</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[p \rightarrow  (q \rightarrow  p)]]></fr:tex></html:td>
+  <html:td><html:strong>K</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>3</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[(q \rightarrow  (q \rightarrow  q)) \rightarrow  (p \rightarrow  (q \rightarrow  p))]]></fr:tex></html:td>
+  <html:td><html:strong>MP</html:strong>: 1, 2</html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>4</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[q \rightarrow  (q \rightarrow  q)]]></fr:tex></html:td>
+  <html:td><html:strong>K</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>5</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[p \rightarrow  (q \rightarrow  p)]]></fr:tex></html:td>
+  <html:td><html:strong>MP</html:strong>: 3, 4</html:td>
+</html:tr>
+</html:table>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

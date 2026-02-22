@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>1</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/000Q/</fr:uri>
+    <fr:display-uri>000Q</fr:display-uri>
+    <fr:route>/000Q/</fr:route>
+    <fr:title text="Nullary connectives">Nullary connectives</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>            Finally, we have nullary connectives: connectives that take <html:em>zero</html:em> component sentences to make a new sentence.
+            That is, a nullary connective is already a formula on its own.
+            So for the purposes of building up formulas in our languages, a nullary connective is like an atomic formula.
+            However, a nullary connective is <html:em>not</html:em> an atomic formula; so when we start doing things (as we will) that depend on the difference between atomic and nonatomic formulas, nullary connectives will go in with the other connectives, not with the atomic formulas.
+</html:p>
+    <html:p>            My favourite nullary connective is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>; I'll pronounce it "falsum".
+            On its own, it is a sentence; and so it works with our various other connectives just as any sentence would.
+            For example, take a language with atomic sentences <fr:tex display="inline"><![CDATA[p, q, r]]></fr:tex>, and connectives <fr:tex display="inline"><![CDATA[\land , \bot ]]></fr:tex>.
+            The sentences of this language include things like <fr:tex display="inline"><![CDATA[\bot  \land  p]]></fr:tex>, like <fr:tex display="inline"><![CDATA[(p \land  \bot ) \land  (\bot  \land  \bot )]]></fr:tex>, and like <fr:tex display="inline"><![CDATA[p \land  (\bot  \land  p)]]></fr:tex>.
+            </html:p>
+    <html:p>
+Another nullary connective we'll make use of is <fr:tex display="inline"><![CDATA[\top ]]></fr:tex>; I'll pronounce this one "verum".
+Since it's a nullary connective, it too is already a sentence.
+</html:p>
+    <html:p><html:strong>A good idea:</html:strong> Come up with a few different sentences in a language with no atomic sentences at all, but that includes all the connectives <fr:tex display="inline"><![CDATA[\land , \lor , \rightarrow , \neg , \bot , \top ]]></fr:tex>.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>1</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/000L/</fr:uri>
+            <fr:display-uri>000L</fr:display-uri>
+            <fr:route>/000L/</fr:route>
+            <fr:title text="Putting more complex sentences together">Putting more complex sentences together</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        Besides the atomic sentences, the other thing we need to specify to give a language is how more complex sentences can be put together out of simpler ones.
+        Each way of combining sentences takes a certain fixed number of component sentences, and produces a combination of them.
+        We'll also associate different symbols with different ways of combining sentences.
+        These symbols, and the ways of combining they're associated with, are called <html:em>connectives</html:em>.
+        To specify a language in full, we give a collection of atomic sentences and a collection of connectives.
+</html:p>
+            <html:p>        One connective we'll use a lot this semester is <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>; we'll always use this symbol for a connective that combines <html:em>two</html:em> components.
+        Because it combines two components, it's called a <html:em>binary</html:em> connective.
+        For now, it's got no special meaning; it's just a symbol.
+        (We're saying <html:em>which things are sentences</html:em>, not yet saying anything about what those sentences mean.)
+        I'll pronounce this symbol "and" and call it "conjunction", which gives some foreshadowing of what we're going to use it for.
+</html:p>
+            <html:p>        Let's consider a simple language, then, that has just the two atomic sentences <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and the single binary connective <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>.
+        The sentences of this language are everything we can make from these ingredients.
+        At first, that might not seem like much: we've got <fr:tex display="inline"><![CDATA[p]]></fr:tex>, we've got <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and we've got the sentence that uses <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine <fr:tex display="inline"><![CDATA[p]]></fr:tex> with <fr:tex display="inline"><![CDATA[q]]></fr:tex>, which we write <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>.
+        In fact, though, there's a lot more than this.
+</html:p>
+            <html:p>        First, <html:em>order matters</html:em> for binary connectives.
+        So in addition to <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>, we also have the different sentence <fr:tex display="inline"><![CDATA[q \land  p]]></fr:tex>.
+        Second, <html:em>we can reuse</html:em> atomic sentences; we can have as many <fr:tex display="inline"><![CDATA[p]]></fr:tex>s and as many <fr:tex display="inline"><![CDATA[q]]></fr:tex>s as we want.
+        So we also have the sentences <fr:tex display="inline"><![CDATA[p \land  p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \land  q]]></fr:tex>.
+</html:p>
+            <html:p>
+        But most importantly, connectives can build on <html:em>any</html:em> sentence in the language.
+        So since we have the sentences <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \land  p]]></fr:tex>, we also have the sentence that <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> builds from these two (in that order), which we write <fr:tex display="inline"><![CDATA[p \land  (q \land  p)]]></fr:tex>.
+        And since we have the sentences <fr:tex display="inline"><![CDATA[p \land  p]]></fr:tex> and <fr:tex display="inline"><![CDATA[p \land  (q \land  p)]]></fr:tex>, we also have the sentence that <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> builds from these two (in that order), which we write <fr:tex display="inline"><![CDATA[(p \land  p) \land  (p \land  (q \land  p))]]></fr:tex>.
+        And so on.
+</html:p>
+            <html:p>        You can see why it was important for us to be ready for infinite collections!
+        Even with just two atomic sentences and just this one binary connective, this language has infinitely many sentences in it.
+        This is because we can use <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine any two sentences (in either order), including sentences that we've already produced using <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> itself, and so the process of building sentences can go on forever.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000M/</fr:uri>
+                <fr:display-uri>000M</fr:display-uri>
+                <fr:route>/000M/</fr:route>
+                <fr:title text="Parentheses">Parentheses</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>            You probably noticed that I've used parentheses above in giving sentences like <fr:tex display="inline"><![CDATA[p \land  (q \land  p)]]></fr:tex>.
+            This is really important.
+            The connective <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> is <html:em>binary</html:em>: it needs exactly <html:em>two</html:em> sentences to put together.
+            So something like "<fr:tex display="inline"><![CDATA[p \land  q \land  p]]></fr:tex>" doesn't pick out a sentence at all, since it doesn't give us two components to combine via ${\land }.
+            The sentence <fr:tex display="inline"><![CDATA[p \land  (q \land  p)]]></fr:tex>, on the other hand, is fine, since it uses <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine the two sentences <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \land  p]]></fr:tex>.
+            Similarly, the sentence <fr:tex display="inline"><![CDATA[(p \land  q) \land  p]]></fr:tex> is also fine---but it is a different sentence.
+            It uses <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine the two sentences <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[p]]></fr:tex></html:p>
+                <html:p>            To help you build sentences properly, it can help to picture a downward-branching tree kind of structure, where each binary connective branches into two, and each atomic sentence sits at the tip of a branch.
+            For example, we could picture the sentence <fr:tex display="inline"><![CDATA[p \land  (q \land  p)]]></fr:tex> like this:
+</html:p>
+                <fr:resource hash="639ea58556e756193721b604f6eb2d00">
+                  <fr:resource-content>
+                    <html:img src="/639ea58556e756193721b604f6eb2d00.svg" />
+                  </fr:resource-content>
+                  <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                  <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {forest}
+  [$\land $, for tree={s sep=10mm}
+    [$p$]
+    [$\land $
+      [$q$]
+      [$p$]
+    ]
+  ]
+\end {forest}
+]]></fr:resource-source>
+                </fr:resource>
+                <html:p>             And we can picture the sentence <fr:tex display="inline"><![CDATA[(p \land  q) \land  p]]></fr:tex> like this:
+</html:p>
+                <fr:resource hash="0bc7ac89c1b7eb41dcdd0ee63d11afd9">
+                  <fr:resource-content>
+                    <html:img src="/0bc7ac89c1b7eb41dcdd0ee63d11afd9.svg" />
+                  </fr:resource-content>
+                  <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                  <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {forest}
+  [$\land $, for tree={s sep=10mm}
+    [$\land $
+      [$p$]
+      [$q$]
+    ]
+    [$p$]
+  ]
+\end {forest}
+]]></fr:resource-source>
+                </fr:resource>
+                <html:p>     As you can see, these are different trees, which shows that these are different sentences.
+</html:p>
+                <html:p>            You can think of our sentences as "really" being trees in this way, if you like.
+            Keeping this kind of tree in the back (or even the front) of your mind can be helpful as you get started with our sentences.
+            When we're writing sentences normally, we use parentheses to indicate the same kind of structure that's encoded in these trees.
+            There's nothing special about the parentheses; they're just a more space-efficient way to write the same thing. 
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000N/</fr:uri>
+                <fr:display-uri>000N</fr:display-uri>
+                <fr:route>/000N/</fr:route>
+                <fr:title text="Another binary connective: \lor ">Another binary connective: <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex></fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>            Many of our languages will involve more than one binary connective.
+            Another binary connective we'll use a lot is <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>, which I'll pronounce "or" and call "disjunction".
+            Again, don't worry about its meaning yet; for now we're just seeing how to build up sentences using connectives.
+</html:p>
+                <html:p>            Let's think about a slightly more complex language now, one with the two atomic sentences <fr:tex display="inline"><![CDATA[p, q]]></fr:tex> and the two binary connectives <fr:tex display="inline"><![CDATA[\land , \lor ]]></fr:tex>.
+            Every sentence that was in our simple language with just <fr:tex display="inline"><![CDATA[p, q]]></fr:tex> and <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> is also a sentence of this more complex language, since we have all those ingredients.
+            But there are a lot of sentences in this new language that weren't in the old one.
+</html:p>
+                <html:p>            First, there are all the sentences that make use of the new binary connective <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>, sentences like <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, like <fr:tex display="inline"><![CDATA[p \lor  (p \lor  p)]]></fr:tex>, and like <fr:tex display="inline"><![CDATA[(q \lor  q) \lor  (p \lor  (q \lor  p))]]></fr:tex>.
+            But there are also sentences that use <html:em>both</html:em> binary connectives, like <fr:tex display="inline"><![CDATA[(p \lor  q) \land  q]]></fr:tex>, like <fr:tex display="inline"><![CDATA[p \land  (p \lor  p)]]></fr:tex>, and like <fr:tex display="inline"><![CDATA[(q \land  (p \lor  p)) \lor  (p \land  q)]]></fr:tex>.
+</html:p>
+                <html:p>            Consider the last of these: <fr:tex display="inline"><![CDATA[(q \land  (p \lor  p)) \lor  (p \land  q)]]></fr:tex>. 
+            This uses the binary connective <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> to combine the two sentences <fr:tex display="inline"><![CDATA[q \land  (p \lor  p)]]></fr:tex> and <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>, in that order.
+            Those sentences themselves each use the connective <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine two component sentences.
+            We can again picture the whole sentence as a tree, putting two branches at binary connectives and atomic sentences at the tips of branches, like so:
+</html:p>
+                <fr:resource hash="92a71145b1fbdf124b4a2b86b5cc1afe">
+                  <fr:resource-content>
+                    <html:img src="/92a71145b1fbdf124b4a2b86b5cc1afe.svg" />
+                  </fr:resource-content>
+                  <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                  <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm}             [$\lor $,for tree={s sep=10mm}
+                    [$\land $
+                        [$q$ ]
+                        [$\lor $
+                            [$p$ ]   
+                            [$p$ ]
+                        ]
+                    ]
+                    [$\land $
+                        [$p$ ]
+                        [$q$ ]
+                    ]
+                  ]
+ \end {forest}]]></fr:resource-source>
+                </fr:resource>
+                <html:p>            This tree shows the same structure that the parentheses indicate in <fr:tex display="inline"><![CDATA[(q \land  (p \lor  p)) \lor  (p \land  q)]]></fr:tex>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000O/</fr:uri>
+                <fr:display-uri>000O</fr:display-uri>
+                <fr:route>/000O/</fr:route>
+                <fr:title text="A third binary connective: \rightarrow ">A third binary connective: <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex></fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>            A third binary connective we'll use this semester is <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex>, which I'll pronounce "implies" and call "implication".
+            As a connective, it's just another binary connective, and works the same way as <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>: given any two sentences, we can combine them with <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex> in between them to get a new sentence.
+            All three of these binary connectives can be mixed freely, so we now have such wonderful sentences as <fr:tex display="inline"><![CDATA[p \rightarrow  (p \lor  (q \land  (r \rightarrow  s)))]]></fr:tex> or <fr:tex display="inline"><![CDATA[((p \lor  q) \rightarrow  (r \land  q)) \lor  (r \rightarrow  p)]]></fr:tex>.
+            And again, you can think of these as trees if you like, so that last example spells out to:</html:p>
+                <fr:resource hash="eb24852154f5b3eeaf6ad4a70ed634e1">
+                  <fr:resource-content>
+                    <html:img src="/eb24852154f5b3eeaf6ad4a70ed634e1.svg" />
+                  </fr:resource-content>
+                  <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                  <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\lor $, for tree={s sep=10mm}
+  [$\rightarrow $
+    [$\lor $
+      [$p$]
+      [$q$]
+    ]
+    [$\land $
+      [$r$]
+      [$q$]
+    ]
+  ]
+  [$\rightarrow $
+    [$r$]
+    [$p$]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+                </fr:resource>
+                <html:p><html:strong>A good idea:</html:strong> Grab a pen and paper, and draw out the tree for the other example above: <fr:tex display="inline"><![CDATA[p \rightarrow  (p \lor  (q \land  (r \rightarrow  s)))]]></fr:tex>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000P/</fr:uri>
+                <fr:display-uri>000P</fr:display-uri>
+                <fr:route>/000P/</fr:route>
+                <fr:title text="Nonbinary connectives">Nonbinary connectives</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>            Not all connectives, however, are binary.
+            We can have connectives that combine any number of sentences together.
+            Some connectives might be ternary, for example, combining three sentences into one.
+            Or some might be quaternary, combining four sentences into one.
+            The number of sentences a connective combines is called the <html:em>arity</html:em> of the connective.
+            Binary connectives, then, have an arity of 2; ternary connectives have an arity of 3; and so on.
+</html:p>
+                <html:p>            In fact, though, we won't spend much time on connectives with arities higher than 2.
+               In part, this is because these are just less used in lots of logic.
+            In part, it's because there's not a super-convenient way to write them! 
+            With a binary connective, you can just put it between the things it combines, as we've done with <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>.
+            But that doesn't work as well for higher arities.
+            (No problem putting them in trees, though; just use three branches for a ternary connective, four for a quaternary, and so on.)
+            We will, though, spend a lot of time with connectives with <html:em>lower</html:em> arities: 1 and 0.
+            These are called <html:em>unary</html:em> and <html:em>nullary</html:em> connectives, respectively.
+</html:p>
+                <html:p> Let me pause to lay out our first <html:em>definition</html:em>.
+            Definitions are key in logic, and we'll meet a lot of them this semester.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>1</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/000S/</fr:uri>
+                    <fr:display-uri>000S</fr:display-uri>
+                    <fr:route>/000S/</fr:route>
+                    <fr:title text="Arity, binary, unary, nullary">Arity, binary, unary, nullary</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+                      <html:ul><html:li>Every connective has an <html:strong>arity</html:strong>, which is the number of sentences the connective takes to form a sentence.</html:li>
+<html:li>A <html:strong>binary</html:strong> connective is a connective with an arity of 2.</html:li>
+<html:li>A <html:strong>unary</html:strong> connective is a connective with an arity of 1.</html:li>
+<html:li>A <html:strong>nullary</html:strong> connective is a connective with an arity of 0.</html:li></html:ul>
+                    </html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>            Unary first.
+            The unary connective we'll use a lot uses the symbol <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>.
+            This connective takes <html:em>one</html:em> component sentence to make a new sentence.
+            I'll pronounce this "not", and call this connective "negation".
+            Suppose we're working in a language with just the single atomic sentence <fr:tex display="inline"><![CDATA[p]]></fr:tex> and the sole connective <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>.
+            Then we have all of the following as sentences: <fr:tex display="inline"><![CDATA[p, \neg  p, \neg  \neg  p, \neg  \neg \neg  p, \neg \neg \neg \neg  p]]></fr:tex>, and so on.
+            (Indeed, all the sentences in this language have some number (maybe 0) of negations followed by <fr:tex display="inline"><![CDATA[p]]></fr:tex>.)
+</html:p>
+                <html:p>            Note that we don't need any parentheses for these sentences.
+            The sentence <fr:tex display="inline"><![CDATA[\neg  \neg  p]]></fr:tex> applies <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> to the sentence <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>; there's no other way to read it.
+            However, when we start to combine unary and binary connectives, sometimes parentheses are still necessary.
+            For example, consider a language with atomic sentences <fr:tex display="inline"><![CDATA[p, q]]></fr:tex> and connectives <fr:tex display="inline"><![CDATA[\land , \neg ]]></fr:tex>. 
+            Compare the two sentences <fr:tex display="inline"><![CDATA[(\neg  p) \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  (p \land  q)]]></fr:tex>.
+            The first of these uses <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> with <fr:tex display="inline"><![CDATA[q]]></fr:tex>; the second uses <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> with the single sentence <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>.
+            Both are perfectly good sentences, but they are different, and the difference is important.
+</html:p>
+                <html:p>            We can again see the difference using trees.
+            Binary connectives still make two branches, and unary connectives make just a single branch.
+            So these two sentences produce the following two trees.
+            Make sure you pause to see which is which.
+</html:p>
+                <fr:resource hash="75baa4ea9a84e46f304522680253acf1">
+                  <fr:resource-content>
+                    <html:img src="/75baa4ea9a84e46f304522680253acf1.svg" />
+                  </fr:resource-content>
+                  <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                  <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\land $
+  [$\neg $
+    [$p$]
+  ]
+  [$q$]
+]
+ \end {forest}]]></fr:resource-source>
+                </fr:resource>
+                <fr:resource hash="bc0491fd72426f3979fdba4c5e91412f">
+                  <fr:resource-content>
+                    <html:img src="/bc0491fd72426f3979fdba4c5e91412f.svg" />
+                  </fr:resource-content>
+                  <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+                  <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\neg $
+  [$\land $
+    [$p$]
+    [$q$]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+                </fr:resource>
+                <html:p>            Sometimes, the number of parentheses we need can get a little bit out of control.
+            For the most part, the answer is just practice: getting used to dealing with three or four parentheses deep is very doable, and you'll probably be totally fine even if you're just comfy with like two layers.
+            However, there's a common convention I'll use to save on some parentheses, and you'll need to know how to read it.
+</html:p>
+                <html:p>
+            The convention is this: unary connectives always attach to the <html:em>smallest</html:em> sentence they can.
+            So if I write something like "<fr:tex display="inline"><![CDATA[\neg  p \land  q]]></fr:tex>", it might seem ambiguous: is <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> combining with just <fr:tex display="inline"><![CDATA[p]]></fr:tex>, or with <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>?
+            Since <fr:tex display="inline"><![CDATA[p]]></fr:tex> is smaller, though, the convention says that it combines with <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+            So <fr:tex display="inline"><![CDATA[\neg  p \land  q]]></fr:tex> is the very same sentence as <fr:tex display="inline"><![CDATA[(\neg  p) \land  q]]></fr:tex>.
+            If we want <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> to combine with <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>, then parentheses are needed: <fr:tex display="inline"><![CDATA[\neg  (p \land  q)]]></fr:tex>.
+</html:p>
+                <html:p>
+When you write a sentence like <fr:tex display="inline"><![CDATA[(\neg  p) \land  q]]></fr:tex>, you can include the parentheses or not; that's totally up to you, and either way is perfectly correct.
+But you'll need to know what <html:em>I</html:em> mean when I write something like <fr:tex display="inline"><![CDATA[\neg  p \land  q]]></fr:tex>: it's always <fr:tex display="inline"><![CDATA[(\neg  p) \land  q]]></fr:tex>.
+And you'll need to include parentheses when what you mean is <fr:tex display="inline"><![CDATA[\neg  (p \land  q)]]></fr:tex>; there's no other way to write this.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000Q/</fr:uri>
+                <fr:display-uri>000Q</fr:display-uri>
+                <fr:route>/000Q/</fr:route>
+                <fr:title text="Nullary connectives">Nullary connectives</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>            Finally, we have nullary connectives: connectives that take <html:em>zero</html:em> component sentences to make a new sentence.
+            That is, a nullary connective is already a formula on its own.
+            So for the purposes of building up formulas in our languages, a nullary connective is like an atomic formula.
+            However, a nullary connective is <html:em>not</html:em> an atomic formula; so when we start doing things (as we will) that depend on the difference between atomic and nonatomic formulas, nullary connectives will go in with the other connectives, not with the atomic formulas.
+</html:p>
+                <html:p>            My favourite nullary connective is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>; I'll pronounce it "falsum".
+            On its own, it is a sentence; and so it works with our various other connectives just as any sentence would.
+            For example, take a language with atomic sentences <fr:tex display="inline"><![CDATA[p, q, r]]></fr:tex>, and connectives <fr:tex display="inline"><![CDATA[\land , \bot ]]></fr:tex>.
+            The sentences of this language include things like <fr:tex display="inline"><![CDATA[\bot  \land  p]]></fr:tex>, like <fr:tex display="inline"><![CDATA[(p \land  \bot ) \land  (\bot  \land  \bot )]]></fr:tex>, and like <fr:tex display="inline"><![CDATA[p \land  (\bot  \land  p)]]></fr:tex>.
+            </html:p>
+                <html:p>
+Another nullary connective we'll make use of is <fr:tex display="inline"><![CDATA[\top ]]></fr:tex>; I'll pronounce this one "verum".
+Since it's a nullary connective, it too is already a sentence.
+</html:p>
+                <html:p><html:strong>A good idea:</html:strong> Come up with a few different sentences in a language with no atomic sentences at all, but that includes all the connectives <fr:tex display="inline"><![CDATA[\land , \lor , \rightarrow , \neg , \bot , \top ]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>1</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/000S/</fr:uri>
+    <fr:display-uri>000S</fr:display-uri>
+    <fr:route>/000S/</fr:route>
+    <fr:title text="Arity, binary, unary, nullary">Arity, binary, unary, nullary</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+      <html:ul><html:li>Every connective has an <html:strong>arity</html:strong>, which is the number of sentences the connective takes to form a sentence.</html:li>
+<html:li>A <html:strong>binary</html:strong> connective is a connective with an arity of 2.</html:li>
+<html:li>A <html:strong>unary</html:strong> connective is a connective with an arity of 1.</html:li>
+<html:li>A <html:strong>nullary</html:strong> connective is a connective with an arity of 0.</html:li></html:ul>
+    </html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>1</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/000P/</fr:uri>
+            <fr:display-uri>000P</fr:display-uri>
+            <fr:route>/000P/</fr:route>
+            <fr:title text="Nonbinary connectives">Nonbinary connectives</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>            Not all connectives, however, are binary.
+            We can have connectives that combine any number of sentences together.
+            Some connectives might be ternary, for example, combining three sentences into one.
+            Or some might be quaternary, combining four sentences into one.
+            The number of sentences a connective combines is called the <html:em>arity</html:em> of the connective.
+            Binary connectives, then, have an arity of 2; ternary connectives have an arity of 3; and so on.
+</html:p>
+            <html:p>            In fact, though, we won't spend much time on connectives with arities higher than 2.
+               In part, this is because these are just less used in lots of logic.
+            In part, it's because there's not a super-convenient way to write them! 
+            With a binary connective, you can just put it between the things it combines, as we've done with <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>.
+            But that doesn't work as well for higher arities.
+            (No problem putting them in trees, though; just use three branches for a ternary connective, four for a quaternary, and so on.)
+            We will, though, spend a lot of time with connectives with <html:em>lower</html:em> arities: 1 and 0.
+            These are called <html:em>unary</html:em> and <html:em>nullary</html:em> connectives, respectively.
+</html:p>
+            <html:p> Let me pause to lay out our first <html:em>definition</html:em>.
+            Definitions are key in logic, and we'll meet a lot of them this semester.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000S/</fr:uri>
+                <fr:display-uri>000S</fr:display-uri>
+                <fr:route>/000S/</fr:route>
+                <fr:title text="Arity, binary, unary, nullary">Arity, binary, unary, nullary</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <html:ul><html:li>Every connective has an <html:strong>arity</html:strong>, which is the number of sentences the connective takes to form a sentence.</html:li>
+<html:li>A <html:strong>binary</html:strong> connective is a connective with an arity of 2.</html:li>
+<html:li>A <html:strong>unary</html:strong> connective is a connective with an arity of 1.</html:li>
+<html:li>A <html:strong>nullary</html:strong> connective is a connective with an arity of 0.</html:li></html:ul>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>            Unary first.
+            The unary connective we'll use a lot uses the symbol <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>.
+            This connective takes <html:em>one</html:em> component sentence to make a new sentence.
+            I'll pronounce this "not", and call this connective "negation".
+            Suppose we're working in a language with just the single atomic sentence <fr:tex display="inline"><![CDATA[p]]></fr:tex> and the sole connective <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>.
+            Then we have all of the following as sentences: <fr:tex display="inline"><![CDATA[p, \neg  p, \neg  \neg  p, \neg  \neg \neg  p, \neg \neg \neg \neg  p]]></fr:tex>, and so on.
+            (Indeed, all the sentences in this language have some number (maybe 0) of negations followed by <fr:tex display="inline"><![CDATA[p]]></fr:tex>.)
+</html:p>
+            <html:p>            Note that we don't need any parentheses for these sentences.
+            The sentence <fr:tex display="inline"><![CDATA[\neg  \neg  p]]></fr:tex> applies <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> to the sentence <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>; there's no other way to read it.
+            However, when we start to combine unary and binary connectives, sometimes parentheses are still necessary.
+            For example, consider a language with atomic sentences <fr:tex display="inline"><![CDATA[p, q]]></fr:tex> and connectives <fr:tex display="inline"><![CDATA[\land , \neg ]]></fr:tex>. 
+            Compare the two sentences <fr:tex display="inline"><![CDATA[(\neg  p) \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  (p \land  q)]]></fr:tex>.
+            The first of these uses <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> with <fr:tex display="inline"><![CDATA[q]]></fr:tex>; the second uses <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> with the single sentence <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>.
+            Both are perfectly good sentences, but they are different, and the difference is important.
+</html:p>
+            <html:p>            We can again see the difference using trees.
+            Binary connectives still make two branches, and unary connectives make just a single branch.
+            So these two sentences produce the following two trees.
+            Make sure you pause to see which is which.
+</html:p>
+            <fr:resource hash="75baa4ea9a84e46f304522680253acf1">
+              <fr:resource-content>
+                <html:img src="/75baa4ea9a84e46f304522680253acf1.svg" />
+              </fr:resource-content>
+              <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+              <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\land $
+  [$\neg $
+    [$p$]
+  ]
+  [$q$]
+]
+ \end {forest}]]></fr:resource-source>
+            </fr:resource>
+            <fr:resource hash="bc0491fd72426f3979fdba4c5e91412f">
+              <fr:resource-content>
+                <html:img src="/bc0491fd72426f3979fdba4c5e91412f.svg" />
+              </fr:resource-content>
+              <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+              <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\neg $
+  [$\land $
+    [$p$]
+    [$q$]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+            </fr:resource>
+            <html:p>            Sometimes, the number of parentheses we need can get a little bit out of control.
+            For the most part, the answer is just practice: getting used to dealing with three or four parentheses deep is very doable, and you'll probably be totally fine even if you're just comfy with like two layers.
+            However, there's a common convention I'll use to save on some parentheses, and you'll need to know how to read it.
+</html:p>
+            <html:p>
+            The convention is this: unary connectives always attach to the <html:em>smallest</html:em> sentence they can.
+            So if I write something like "<fr:tex display="inline"><![CDATA[\neg  p \land  q]]></fr:tex>", it might seem ambiguous: is <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> combining with just <fr:tex display="inline"><![CDATA[p]]></fr:tex>, or with <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>?
+            Since <fr:tex display="inline"><![CDATA[p]]></fr:tex> is smaller, though, the convention says that it combines with <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+            So <fr:tex display="inline"><![CDATA[\neg  p \land  q]]></fr:tex> is the very same sentence as <fr:tex display="inline"><![CDATA[(\neg  p) \land  q]]></fr:tex>.
+            If we want <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> to combine with <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>, then parentheses are needed: <fr:tex display="inline"><![CDATA[\neg  (p \land  q)]]></fr:tex>.
+</html:p>
+            <html:p>
+When you write a sentence like <fr:tex display="inline"><![CDATA[(\neg  p) \land  q]]></fr:tex>, you can include the parentheses or not; that's totally up to you, and either way is perfectly correct.
+But you'll need to know what <html:em>I</html:em> mean when I write something like <fr:tex display="inline"><![CDATA[\neg  p \land  q]]></fr:tex>: it's always <fr:tex display="inline"><![CDATA[(\neg  p) \land  q]]></fr:tex>.
+And you'll need to include parentheses when what you mean is <fr:tex display="inline"><![CDATA[\neg  (p \land  q)]]></fr:tex>; there's no other way to write this.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

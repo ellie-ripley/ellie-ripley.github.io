@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>17</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/002N/</fr:uri>
+    <fr:display-uri>002N</fr:display-uri>
+    <fr:route>/002N/</fr:route>
+    <fr:title text="Subset">Subset</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>A set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a <html:strong>subset</html:strong> of a set <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> iff: every member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is also a member of <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
+There's a symbol for this: <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Delta ]]></fr:tex> means that <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>17</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/002M/</fr:uri>
+            <fr:display-uri>002M</fr:display-uri>
+            <fr:route>/002M/</fr:route>
+            <fr:title text="Subsets">Subsets</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p> The most important kind of relationship between sets is the <html:strong>subset</html:strong> relation.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>17</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002N/</fr:uri>
+                <fr:display-uri>002N</fr:display-uri>
+                <fr:route>/002N/</fr:route>
+                <fr:title text="Subset">Subset</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a <html:strong>subset</html:strong> of a set <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> iff: every member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is also a member of <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
+There's a symbol for this: <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Delta ]]></fr:tex> means that <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>In the above definition, <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> are capital Greek letters: <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is Gamma and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> is Delta.
+It's common to use lots of different alphabets in logic, with the Greek alphabet probably the most common one other than our own Latin alphabet.
+I'll use capital Greek letters like these particularly for sets of things, usually sets of formulas.
+</html:p>
+            <html:p>
+When <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Delta ]]></fr:tex>, we know that everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> as well.
+There might be some other things also in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> as well, or there might not; that doesn't matter.
+(If there isn't anything else in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, then by extensionality <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> must be the same set.)
+</html:p>
+            <html:p> Some things to note about subsets:
+<html:ul><html:li>There is an important difference between being a <html:em>subset</html:em> of a set and being a <html:em>member</html:em> of the set.
+        For example, <fr:tex display="inline"><![CDATA[\{p, q\}]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex>, since every member of the former is also a member of the latter.
+        But <fr:tex display="inline"><![CDATA[\{p, q\}]]></fr:tex> is not a member of <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex>; only <fr:tex display="inline"><![CDATA[p]]></fr:tex>, <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and <fr:tex display="inline"><![CDATA[r]]></fr:tex> are members of this set.</html:li>
+  <html:li>Every set is a subset of itself.
+        For example, consider the set <fr:tex display="inline"><![CDATA[\{p, q \land  r\}]]></fr:tex>.
+        This has two members: <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \land  r]]></fr:tex>.
+        And both of these members are indeed also members of <fr:tex display="inline"><![CDATA[\{p, q \land  r\}]]></fr:tex>, so the definition of subsethood is met.
+        More generally, for any set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, all the members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are indeed members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, so <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is always a subset of itself, for any <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</html:li>
+  <html:li>The empty set is a subset of absolutely any set.
+        This might be a surprise, but remember logicians' weird habit number 2!
+        To check whether the empty set is a subset of some set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, we need to check whether all the members of the empty set are also members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+        Since there are no members of the empty set, indeed it <html:em>is</html:em> true that all the members of the empty set are members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>---no matter what <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is.
+        (Using <fr:link href="/000F/" title="Logicians' Weird Habit 2" uri="https://www.my-great-forest.net/000F/" display-uri="000F" type="local">logicians' weird habit number 2</fr:link>, it's even true that all the members of the empty set are square circles, that they're all plants with mammal-like brains, and that they're all behind you right now.)</html:li></html:ul></html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

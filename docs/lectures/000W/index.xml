@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>1</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/000W/</fr:uri>
+    <fr:display-uri>000W</fr:display-uri>
+    <fr:route>/000W/</fr:route>
+    <fr:title text="Main connectives">Main connectives</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+The <html:strong>main connective</html:strong> of a compound sentence is the last connective used in forming the sentence.
+Atomic sentences have no main connective.
+</html:p>
+    <html:p>Sentences can be categorised by their main connectives.
+So a <html:strong>conjunction</html:strong> is a sentence whose main connective is conjunction; a <html:strong>implication</html:strong> is a sentence whose main connective is implication; and so on for any connective.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>1</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/000V/</fr:uri>
+            <fr:display-uri>000V</fr:display-uri>
+            <fr:route>/000V/</fr:route>
+            <fr:title text="Main connectives">Main connectives</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>            Every compound sentence has a <html:em>main connective</html:em>.
+            If you think of a sentence as being put together in stages, the main connective is the <html:em>last</html:em> connective used in assembling the sentence.
+            If you write the sentence as a tree, the main connective is the one at the very top of the tree.
+            No sentence can have more than one main connective: atomic sentences don't have any main connective at all (since they don't contain any connectives!), and every compound sentence has exactly one main connective.
+</html:p>
+            <html:p>            So, for example, in the sentence <fr:tex display="inline"><![CDATA[p \land  (q \lor  \bot )]]></fr:tex>, the main connective is conjunction, <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>.
+            At the last stage of its construction, this sentence uses <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> to combine two other sentences: <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \lor  \bot ]]></fr:tex>.
+            So while other connectives, <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, do occur in the sentence, they're not its main connective.
+            Its tree looks like this:
+</html:p>
+            <fr:resource hash="e5d213388a36c37e6bb48abdc0e69cf5">
+              <fr:resource-content>
+                <html:img src="/e5d213388a36c37e6bb48abdc0e69cf5.svg" />
+              </fr:resource-content>
+              <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+              <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\land $
+  [$p$]
+  [$\lor $
+    [$q$]
+    [$\bot $]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+            </fr:resource>
+            <html:p>            As you can see, this tree has the connective <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> at the very top; that's another way to see that <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> is the main connective of this sentence.
+            (Note that nullary connectives like <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> go into trees in just the same way as atomic sentences: at the tips of branches.)
+</html:p>
+            <html:p>            As another example, the main connective of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+            This sentence is its own main connective, since that's the last connective used in building the sentence.
+            Another one: the main connective of <fr:tex display="inline"><![CDATA[\neg  (p \lor  p)]]></fr:tex> is <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>.
+            Here's its tree:
+</html:p>
+            <fr:resource hash="b148428602240ab64793b14806d6db6d">
+              <fr:resource-content>
+                <html:img src="/b148428602240ab64793b14806d6db6d.svg" />
+              </fr:resource-content>
+              <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
+              <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+[$\neg $
+  [$\lor $
+    [$p$]
+    [$p$]
+  ]
+]
+ \end {forest}]]></fr:resource-source>
+            </fr:resource>
+            <html:p>            It's often useful to categorize sentences by their main connective.
+            So for example, we might want to think about all the sentences whose main connective is conjunction, <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>.
+            These sentences are called <html:em>conjunctions</html:em>; the category of sentences just takes its name from the connective name.
+            Similarly, the sentences whose main connective is disjunction <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> are called <html:em>disjunctions</html:em>; the sentences whose main connective is negation <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> are called <html:em>negations</html:em>; and we will do the same kind of thing for every connective we come across.
+            (There is only one sentence whose main connective is falsum: just <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> itself.
+            The same happens for any nullary connective.)
+            To sum this up:
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>1</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/000W/</fr:uri>
+                <fr:display-uri>000W</fr:display-uri>
+                <fr:route>/000W/</fr:route>
+                <fr:title text="Main connectives">Main connectives</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+The <html:strong>main connective</html:strong> of a compound sentence is the last connective used in forming the sentence.
+Atomic sentences have no main connective.
+</html:p>
+                <html:p>Sentences can be categorised by their main connectives.
+So a <html:strong>conjunction</html:strong> is a sentence whose main connective is conjunction; a <html:strong>implication</html:strong> is a sentence whose main connective is implication; and so on for any connective.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>            In general, we'll be working with sentences in different ways depending on their main connective.
+            So it's important to be completely fluent in taking a sentence and identifying its main connective.
+            To that end, the first exercise type you'll see at <fr:link href="https://binchicken.one/" type="external">https://binchicken.one</fr:link> will give you practice with this: it will give you a random sentence, and your task is to identify the main connective of that sentence.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

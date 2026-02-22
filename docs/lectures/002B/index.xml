@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>16</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/002B/</fr:uri>
+    <fr:display-uri>002B</fr:display-uri>
+    <fr:route>/002B/</fr:route>
+    <fr:title text="More examples and handy forms">More examples and handy forms</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Let's look at some more example axiomatic proofs in these systems.
+In the course of this, I'll introduce three more forms: <html:strong>B</html:strong>, <html:strong>C</html:strong>, and <html:strong>W</html:strong>.
+We won't use these forms to add any additional axioms, or to develop any new proof systems.
+Rather, we'll use them to think a bit about what we can <html:em>already</html:em> show in the systems we have.
+(Also, remember that you don't need to memorise these forms, or anything else for that matter!
+You can always come back to these lectures whenever you need to.)</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>16</fr:day>
+        </fr:date>
+        <fr:uri>https://www.my-great-forest.net/002E/</fr:uri>
+        <fr:display-uri>002E</fr:display-uri>
+        <fr:route>/002E/</fr:route>
+        <fr:title text="The form B">The form <html:strong>B</html:strong></fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>Have a look at this example proof:</html:p>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>16</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/002G/</fr:uri>
+            <fr:display-uri>002G</fr:display-uri>
+            <fr:route>/002G/</fr:route>
+            <fr:title text="Proving B">Proving <html:strong>B</html:strong></fr:title>
+            <fr:taxon>Example</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:table>
+
+<html:tr>
+  <html:td />
+  <html:td><fr:tex display="inline"><![CDATA[(p \rightarrow  q) \rightarrow  (r \rightarrow  p) \rightarrow  r \rightarrow  q]]></fr:tex></html:td>
+  <html:td><html:strong>MP</html:strong>: </html:td>
+</html:tr>
+</html:table>
+          </fr:mainmatter>
+        </fr:tree>
+        <html:p>This is a proof of the sentence <fr:tex display="inline"><![CDATA[(p \rightarrow  q) \rightarrow  (r \rightarrow  p) \rightarrow  r \rightarrow  q]]></fr:tex>.</html:p>
+        <html:p>The form we'll call <html:strong>B</html:strong> is <fr:tex display="inline"><![CDATA[(A \rightarrow  B) \rightarrow  (C \rightarrow  A) \rightarrow  C \rightarrow  B]]></fr:tex>; note the relation between this form and the sentence proved above.
+Every instance of <html:strong>B</html:strong> is also a <fr:link href="/001I/" title="Substitution instance" uri="https://www.my-great-forest.net/001I/" display-uri="001I" type="local">substitution instance</fr:link> of <fr:tex display="inline"><![CDATA[(p \rightarrow  q) \rightarrow  (r \rightarrow  p) \rightarrow  r \rightarrow  q]]></fr:tex>. 
+</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>16</fr:day>
+        </fr:date>
+        <fr:uri>https://www.my-great-forest.net/002C/</fr:uri>
+        <fr:display-uri>002C</fr:display-uri>
+        <fr:route>/002C/</fr:route>
+        <fr:title text="The relation between SK and SKI">The relation between <html:strong>SK</html:strong> and <html:strong>SKI</html:strong></fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>Have a look at the following example proof:</html:p>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>16</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/002D/</fr:uri>
+            <fr:display-uri>002D</fr:display-uri>
+            <fr:route>/002D/</fr:route>
+            <fr:title text="Proving I from S, K">Proving <html:strong>I</html:strong> from <html:strong>S</html:strong>, <html:strong>K</html:strong></fr:title>
+            <fr:taxon>Example</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:table>
+
+<html:tr>
+  <html:td>1</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[(p \rightarrow  (q \rightarrow  p) \rightarrow  p) \rightarrow  (p \rightarrow  q \rightarrow  p) \rightarrow  p \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>S</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>2</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[p \rightarrow  (q \rightarrow  p) \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>K</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>3</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[(p \rightarrow  q \rightarrow  p) \rightarrow  p \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>MP</html:strong>: 1, 2</html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>4</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[p \rightarrow  q \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>K</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>5</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[p \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>MP</html:strong>: 3, 4</html:td>
+</html:tr>
+</html:table>
+          </fr:mainmatter>
+        </fr:tree>
+        <html:p>This is a proof of <fr:tex display="inline"><![CDATA[p \rightarrow  p]]></fr:tex> in <html:strong>SK</html:strong>.
+And since the theorems of <html:strong>SK</html:strong> are closed under substitution, this means that every instance of <html:strong>I</html:strong> has a proof in <html:strong>SK</html:strong>.
+What does this tell us about the relationship between <html:strong>SK</html:strong> and <html:strong>SKI</html:strong>?</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>6</fr:day>
+            </fr:date>
+            <fr:uri>https://www.my-great-forest.net/0022/</fr:uri>
+            <fr:display-uri>0022</fr:display-uri>
+            <fr:route>/0022/</fr:route>
+            <fr:title text="Three proof systems">Three proof systems</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>That gives us enough materials to present the three proof systems <html:strong>SK</html:strong>, <html:strong>SKI</html:strong>, and <html:strong>SKIP</html:strong>.
+Each of these systems has modus ponens as its only rule; they differ from each other in what they have as axioms:
+<html:ul><html:li>in <html:strong>SK</html:strong>, all instances of <html:strong>S</html:strong> and <html:strong>K</html:strong> are axioms;</html:li>
+<html:li>in <html:strong>SKI</html:strong>, all instances of <html:strong>S</html:strong>, <html:strong>K</html:strong>, and <html:strong>I</html:strong> are axioms; and</html:li>
+<html:li>in <html:strong>SKIP</html:strong>, all instances of <html:strong>S</html:strong>, <html:strong>K</html:strong>, <html:strong>I</html:strong>, and <html:strong>P</html:strong> are axioms.</html:li></html:ul></html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002A/</fr:uri>
+                <fr:display-uri>002A</fr:display-uri>
+                <fr:route>/002A/</fr:route>
+                <fr:title text="Writing axiomatic proofs">Writing axiomatic proofs</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>The next thing to learn is how to <html:em>write</html:em> an axiomatic proof in any of these systems.
+Here's how we'll do it: as a grid with three columns and some number of rows.
+Let me give you an example proof in here, and then we'll discuss how it works:
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>16</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0028/</fr:uri>
+                    <fr:display-uri>0028</fr:display-uri>
+                    <fr:route>/0028/</fr:route>
+                    <fr:title text="first example proof">first example proof</fr:title>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table>
+
+<html:tr>
+  <html:td>1</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[(p \rightarrow  q \rightarrow  p) \rightarrow  (q \rightarrow  q \rightarrow  q) \rightarrow  p \rightarrow  q \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>K</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>2</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[p \rightarrow  q \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>K</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>3</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[(q \rightarrow  q \rightarrow  q) \rightarrow  p \rightarrow  q \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>MP</html:strong>: 1, 2</html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>4</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[(q \rightarrow  q) \rightarrow  q \rightarrow  q \rightarrow  q]]></fr:tex></html:td>
+  <html:td><html:strong>K</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>5</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[q \rightarrow  q]]></fr:tex></html:td>
+  <html:td><html:strong>I</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>6</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[q \rightarrow  q \rightarrow  q]]></fr:tex></html:td>
+  <html:td><html:strong>MP</html:strong>: 4, 5</html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>7</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[p \rightarrow  q \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>MP</html:strong>: 3, 6</html:td>
+</html:tr>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>Every line in this proof has three ingredients: a number, a sentence, and a justification.
+The numbers are just line numbers.
+They count upwards; there's nothing special going on there.</html:p>
+                <html:p>The sentences are what we're proving.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>16</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/0029/</fr:uri>
+                    <fr:display-uri>0029</fr:display-uri>
+                    <fr:route>/0029/</fr:route>
+                    <fr:title text="proof of, proves">proof of, proves</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>An axiomatic proof is a <html:strong>proof of</html:strong> a sentence iff that sentence occurs on the last line of the proof; saying that the proof <html:strong>proves</html:strong> the sentence means the same thing.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>
+So the above proof is a proof of the sentence <fr:tex display="inline"><![CDATA[p \rightarrow  q \rightarrow  p]]></fr:tex>.
+It is a different proof from this next example, which is also a proof of that same sentence: 
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>16</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/002F/</fr:uri>
+                    <fr:display-uri>002F</fr:display-uri>
+                    <fr:route>/002F/</fr:route>
+                    <fr:title text="tiny example proof">tiny example proof</fr:title>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table>
+
+<html:tr>
+  <html:td>1</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[p \rightarrow  q \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>K</html:strong></html:td>
+</html:tr>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>Finally, the justifications are what makes these <html:em>proofs</html:em>, rather than just numbered lists of sentences.
+This is the key procedure we follow to construct proofs: every line in a proof has to have a justification, and the justifications restrict what sentences we can prove.
+These justifications come in two kinds: one for axioms and one for rules.
+When the sentence on a line is an axiom, we can give a justification just by saying what kind of axiom it is.
+This is where it is important to remember what proof system we are working in!
+The axioms of a proof system are available for use in this way; no other sentences are.
+So the above example proof is a proof in <html:strong>SKI</html:strong> and <html:strong>SKIP</html:strong>, but it is not a proof in <html:strong>SK</html:strong>, since line 5 is not an axiom of <html:strong>SK</html:strong>.
+</html:p>
+                <html:p>When the sentence on a line is not an axiom, it must be justified by some rule.
+Here we have only one choice, for all three of our systems: the rule <html:strong>MP</html:strong> of modus ponens.
+It's not enough just to list the rule.
+<html:strong>MP</html:strong> lets us conclude new sentences <html:em>from sentences we have already proved</html:em>; we have to indicate, then, which already-proved sentences those are.
+As you can see, in the first example, line 3 comes by <html:strong>MP</html:strong> from lines 1 and 2; line 6 comes by <html:strong>MP</html:strong> from lines 4 and 5; and line 7 comes by <html:strong>MP</html:strong> from lines 3 and 6.</html:p>
+                <html:p>There's an important principle here: any justification in a proof can only refer to lines that occur <html:em>above</html:em> it.
+This is obeyed in the above example.
+This matters because axiomatic proofs are about building up new proofs using the rule(s) from proofs that we <html:em>already</html:em> have.
+</html:p>
+                <html:p>The process of <html:em>finding</html:em> a proof is often messy and full of trial and error.
+But the proof itself doesn't reflect that messiness; it's a cleaned up string of reasoning that can be read from top to bottom.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://www.my-great-forest.net/002B/</fr:uri>
+                <fr:display-uri>002B</fr:display-uri>
+                <fr:route>/002B/</fr:route>
+                <fr:title text="More examples and handy forms">More examples and handy forms</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Let's look at some more example axiomatic proofs in these systems.
+In the course of this, I'll introduce three more forms: <html:strong>B</html:strong>, <html:strong>C</html:strong>, and <html:strong>W</html:strong>.
+We won't use these forms to add any additional axioms, or to develop any new proof systems.
+Rather, we'll use them to think a bit about what we can <html:em>already</html:em> show in the systems we have.
+(Also, remember that you don't need to memorise these forms, or anything else for that matter!
+You can always come back to these lectures whenever you need to.)</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>16</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/002E/</fr:uri>
+                    <fr:display-uri>002E</fr:display-uri>
+                    <fr:route>/002E/</fr:route>
+                    <fr:title text="The form B">The form <html:strong>B</html:strong></fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Have a look at this example proof:</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>2</fr:month>
+                          <fr:day>16</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/002G/</fr:uri>
+                        <fr:display-uri>002G</fr:display-uri>
+                        <fr:route>/002G/</fr:route>
+                        <fr:title text="Proving B">Proving <html:strong>B</html:strong></fr:title>
+                        <fr:taxon>Example</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:table>
+
+<html:tr>
+  <html:td />
+  <html:td><fr:tex display="inline"><![CDATA[(p \rightarrow  q) \rightarrow  (r \rightarrow  p) \rightarrow  r \rightarrow  q]]></fr:tex></html:td>
+  <html:td><html:strong>MP</html:strong>: </html:td>
+</html:tr>
+</html:table>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>This is a proof of the sentence <fr:tex display="inline"><![CDATA[(p \rightarrow  q) \rightarrow  (r \rightarrow  p) \rightarrow  r \rightarrow  q]]></fr:tex>.</html:p>
+                    <html:p>The form we'll call <html:strong>B</html:strong> is <fr:tex display="inline"><![CDATA[(A \rightarrow  B) \rightarrow  (C \rightarrow  A) \rightarrow  C \rightarrow  B]]></fr:tex>; note the relation between this form and the sentence proved above.
+Every instance of <html:strong>B</html:strong> is also a <fr:link href="/001I/" title="Substitution instance" uri="https://www.my-great-forest.net/001I/" display-uri="001I" type="local">substitution instance</fr:link> of <fr:tex display="inline"><![CDATA[(p \rightarrow  q) \rightarrow  (r \rightarrow  p) \rightarrow  r \rightarrow  q]]></fr:tex>. 
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>16</fr:day>
+                    </fr:date>
+                    <fr:uri>https://www.my-great-forest.net/002C/</fr:uri>
+                    <fr:display-uri>002C</fr:display-uri>
+                    <fr:route>/002C/</fr:route>
+                    <fr:title text="The relation between SK and SKI">The relation between <html:strong>SK</html:strong> and <html:strong>SKI</html:strong></fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Have a look at the following example proof:</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>2</fr:month>
+                          <fr:day>16</fr:day>
+                        </fr:date>
+                        <fr:uri>https://www.my-great-forest.net/002D/</fr:uri>
+                        <fr:display-uri>002D</fr:display-uri>
+                        <fr:route>/002D/</fr:route>
+                        <fr:title text="Proving I from S, K">Proving <html:strong>I</html:strong> from <html:strong>S</html:strong>, <html:strong>K</html:strong></fr:title>
+                        <fr:taxon>Example</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:table>
+
+<html:tr>
+  <html:td>1</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[(p \rightarrow  (q \rightarrow  p) \rightarrow  p) \rightarrow  (p \rightarrow  q \rightarrow  p) \rightarrow  p \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>S</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>2</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[p \rightarrow  (q \rightarrow  p) \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>K</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>3</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[(p \rightarrow  q \rightarrow  p) \rightarrow  p \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>MP</html:strong>: 1, 2</html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>4</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[p \rightarrow  q \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>K</html:strong></html:td>
+</html:tr>
+
+<html:tr>
+  <html:td>5</html:td>
+  <html:td><fr:tex display="inline"><![CDATA[p \rightarrow  p]]></fr:tex></html:td>
+  <html:td><html:strong>MP</html:strong>: 3, 4</html:td>
+</html:tr>
+</html:table>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>This is a proof of <fr:tex display="inline"><![CDATA[p \rightarrow  p]]></fr:tex> in <html:strong>SK</html:strong>.
+And since the theorems of <html:strong>SK</html:strong> are closed under substitution, this means that every instance of <html:strong>I</html:strong> has a proof in <html:strong>SK</html:strong>.
+What does this tell us about the relationship between <html:strong>SK</html:strong> and <html:strong>SKI</html:strong>?</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
