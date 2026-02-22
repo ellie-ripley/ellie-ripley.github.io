@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>21</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/003B/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/003B/</fr:uri>
     <fr:display-uri>003B</fr:display-uri>
-    <fr:route>/003B/</fr:route>
+    <fr:route>/lectures/003B/</fr:route>
     <fr:title text="Boolean valuations: implication">Boolean valuations: implication</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -27,7 +27,7 @@
       <fr:frontmatter>
         <fr:authors>
           <fr:author>
-            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
           </fr:author>
         </fr:authors>
         <fr:date>
@@ -35,9 +35,9 @@
           <fr:month>2</fr:month>
           <fr:day>21</fr:day>
         </fr:date>
-        <fr:uri>https://www.my-great-forest.net/003M/</fr:uri>
+        <fr:uri>https://negation.rocks/lectures/003M/</fr:uri>
         <fr:display-uri>003M</fr:display-uri>
-        <fr:route>/003M/</fr:route>
+        <fr:route>/lectures/003M/</fr:route>
       </fr:frontmatter>
       <fr:mainmatter>
         <html:table style="border-collapse: collapse;">
@@ -80,7 +80,7 @@
       <fr:frontmatter>
         <fr:authors>
           <fr:author>
-            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
           </fr:author>
         </fr:authors>
         <fr:date>
@@ -88,9 +88,9 @@
           <fr:month>2</fr:month>
           <fr:day>21</fr:day>
         </fr:date>
-        <fr:uri>https://www.my-great-forest.net/003C/</fr:uri>
+        <fr:uri>https://negation.rocks/lectures/003C/</fr:uri>
         <fr:display-uri>003C</fr:display-uri>
-        <fr:route>/003C/</fr:route>
+        <fr:route>/lectures/003C/</fr:route>
         <fr:taxon>Side note</fr:taxon>
       </fr:frontmatter>
       <fr:mainmatter>
@@ -103,7 +103,7 @@
     But if you happen across certain philosophy from around that time period, you should be aware that many authors did in fact believe this, despite the obvious problems.
 </html:p>
         <html:p>
-If you're interested in learning more about this, I recommend the book <fr:link href="/003D/" title="https://www.my-great-forest.net/003D/" uri="https://www.my-great-forest.net/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
+If you're interested in learning more about this, I recommend the book <fr:link href="/lectures/003D/" title="https://negation.rocks/lectures/003D/" uri="https://negation.rocks/lectures/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
 Note that this was written during the period in question!
 It's good fun, and it gives a particularly vitriolic (and particularly Australian) takedown of what was at the time practically an accepted orthodoxy. 
 </html:p>
@@ -121,7 +121,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -129,9 +129,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
               <fr:month>2</fr:month>
               <fr:day>21</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/003D/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/003D/</fr:uri>
             <fr:display-uri>003D</fr:display-uri>
-            <fr:route>/003D/</fr:route>
+            <fr:route>/lectures/003D/</fr:route>
             <fr:taxon>Reference</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -150,7 +150,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -158,9 +158,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
               <fr:month>2</fr:month>
               <fr:day>20</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/0035/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/0035/</fr:uri>
             <fr:display-uri>0035</fr:display-uri>
-            <fr:route>/0035/</fr:route>
+            <fr:route>/lectures/0035/</fr:route>
             <fr:title text="A first example: two truth values">A first example: two truth values</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -187,7 +187,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
     For this reason, while it's possible to fully specify a few example valuations, as I did two paragraphs ago, there are a lot of valuations out there that can't be fully specified at all, since they don't fit any kind of neat pattern.
 </html:p>
             <html:p>     Second, not only is each valuation infinite, but there are <html:em>infinitely many</html:em> different valuations.
-    We're going to handle both of these sources of infinity in <fr:link href="/000K/" title="Infinity; or, more than about six" uri="https://www.my-great-forest.net/000K/" display-uri="000K" type="local">our usual blase way</fr:link>.
+    We're going to handle both of these sources of infinity in <fr:link href="/lectures/000K/" title="Infinity; or, more than about six" uri="https://negation.rocks/lectures/000K/" display-uri="000K" type="local">our usual blase way</fr:link>.
     The second source we can ignore entirely; it just doesn't really matter for our purposes how many valuations there are.
     The fact that there are so staggeringly many may be interesting, but isn't actually going to affect us at all.
     The first, though, we'll need to make some provision for.
@@ -224,7 +224,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -232,9 +232,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:month>2</fr:month>
                   <fr:day>20</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0036/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0036/</fr:uri>
                 <fr:display-uri>0036</fr:display-uri>
-                <fr:route>/0036/</fr:route>
+                <fr:route>/lectures/0036/</fr:route>
                 <fr:title text="Boolean valuations: negation">Boolean valuations: negation</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -245,7 +245,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -253,9 +253,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:month>2</fr:month>
                       <fr:day>20</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/0037/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/0037/</fr:uri>
                     <fr:display-uri>0037</fr:display-uri>
-                    <fr:route>/0037/</fr:route>
+                    <fr:route>/lectures/0037/</fr:route>
                     <fr:taxon>Side note</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -267,7 +267,7 @@ So I think it's entirely likely that Mary had some influence on George's work, a
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -275,9 +275,9 @@ So I think it's entirely likely that Mary had some influence on George's work, a
                           <fr:month>2</fr:month>
                           <fr:day>3</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/001B/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/001B/</fr:uri>
                         <fr:display-uri>001B</fr:display-uri>
-                        <fr:route>/001B/</fr:route>
+                        <fr:route>/lectures/001B/</fr:route>
                         <fr:taxon>Quotation</fr:taxon>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -293,7 +293,7 @@ So I think it's entirely likely that Mary had some influence on George's work, a
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -301,9 +301,9 @@ So I think it's entirely likely that Mary had some influence on George's work, a
                           <fr:month>2</fr:month>
                           <fr:day>20</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/0038/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/0038/</fr:uri>
                         <fr:display-uri>0038</fr:display-uri>
-                        <fr:route>/0038/</fr:route>
+                        <fr:route>/lectures/0038/</fr:route>
                         <fr:taxon>Quotation</fr:taxon>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -335,7 +335,7 @@ It does not require you to believe or disbelieve <html:em>anything</html:em>.
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -343,9 +343,9 @@ It does not require you to believe or disbelieve <html:em>anything</html:em>.
                       <fr:month>2</fr:month>
                       <fr:day>21</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/003J/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/003J/</fr:uri>
                     <fr:display-uri>003J</fr:display-uri>
-                    <fr:route>/003J/</fr:route>
+                    <fr:route>/lectures/003J/</fr:route>
                   </fr:frontmatter>
                   <fr:mainmatter>
                     <html:table style="border-collapse: collapse;">
@@ -386,7 +386,7 @@ It does not require you to believe or disbelieve <html:em>anything</html:em>.
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -394,9 +394,9 @@ It does not require you to believe or disbelieve <html:em>anything</html:em>.
                   <fr:month>2</fr:month>
                   <fr:day>20</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0039/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0039/</fr:uri>
                 <fr:display-uri>0039</fr:display-uri>
-                <fr:route>/0039/</fr:route>
+                <fr:route>/lectures/0039/</fr:route>
                 <fr:title text="Boolean valuations: conjunction">Boolean valuations: conjunction</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -420,7 +420,7 @@ It does not require you to believe or disbelieve <html:em>anything</html:em>.
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -428,9 +428,9 @@ It does not require you to believe or disbelieve <html:em>anything</html:em>.
                       <fr:month>2</fr:month>
                       <fr:day>21</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/003K/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/003K/</fr:uri>
                     <fr:display-uri>003K</fr:display-uri>
-                    <fr:route>/003K/</fr:route>
+                    <fr:route>/lectures/003K/</fr:route>
                   </fr:frontmatter>
                   <fr:mainmatter>
                     <html:table style="border-collapse: collapse;">
@@ -476,7 +476,7 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -484,9 +484,9 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003A/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003A/</fr:uri>
                 <fr:display-uri>003A</fr:display-uri>
-                <fr:route>/003A/</fr:route>
+                <fr:route>/lectures/003A/</fr:route>
                 <fr:title text="Boolean valuations: disjunction">Boolean valuations: disjunction</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -496,7 +496,7 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
         This seems to be true: the truth of the second part is enough for the whole thing to be true.
         So for disjunction, we want to be sure to pick a table that respects this.
         The only way for a disjunction to be false, on this way of proceeding, is for both of its components to be false; any other combination makes the disjunction true.</html:p>
-                <html:p>Note in particular the connection between <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \lor  \mathsf {\mathbf {T}} = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link>.
+                <html:p>Note in particular the connection between <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \lor  \mathsf {\mathbf {T}} = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:link href="/lectures/000E/" title="Logicians' Weird Habit 1" uri="https://negation.rocks/lectures/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link>.
         Whenever I say "or" in these notes, I mean to include the possibility of both sides of the "or" being true.
         And that's just what <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> does as well, on this scheme.
         This is a case of life imitating art; what's happening here is that uses of the English word "or" among communities of logicians are strongly influenced by experiences with the connective <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>.
@@ -507,7 +507,7 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -515,9 +515,9 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
                       <fr:month>2</fr:month>
                       <fr:day>21</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/003L/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/003L/</fr:uri>
                     <fr:display-uri>003L</fr:display-uri>
-                    <fr:route>/003L/</fr:route>
+                    <fr:route>/lectures/003L/</fr:route>
                   </fr:frontmatter>
                   <fr:mainmatter>
                     <html:table style="border-collapse: collapse;">
@@ -547,7 +547,7 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -555,9 +555,9 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003B/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003B/</fr:uri>
                 <fr:display-uri>003B</fr:display-uri>
-                <fr:route>/003B/</fr:route>
+                <fr:route>/lectures/003B/</fr:route>
                 <fr:title text="Boolean valuations: implication">Boolean valuations: implication</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -570,7 +570,7 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -578,9 +578,9 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
                       <fr:month>2</fr:month>
                       <fr:day>21</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/003M/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/003M/</fr:uri>
                     <fr:display-uri>003M</fr:display-uri>
-                    <fr:route>/003M/</fr:route>
+                    <fr:route>/lectures/003M/</fr:route>
                   </fr:frontmatter>
                   <fr:mainmatter>
                     <html:table style="border-collapse: collapse;">
@@ -623,7 +623,7 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -631,9 +631,9 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
                       <fr:month>2</fr:month>
                       <fr:day>21</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/003C/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/003C/</fr:uri>
                     <fr:display-uri>003C</fr:display-uri>
-                    <fr:route>/003C/</fr:route>
+                    <fr:route>/lectures/003C/</fr:route>
                     <fr:taxon>Side note</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -646,7 +646,7 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
     But if you happen across certain philosophy from around that time period, you should be aware that many authors did in fact believe this, despite the obvious problems.
 </html:p>
                     <html:p>
-If you're interested in learning more about this, I recommend the book <fr:link href="/003D/" title="https://www.my-great-forest.net/003D/" uri="https://www.my-great-forest.net/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
+If you're interested in learning more about this, I recommend the book <fr:link href="/lectures/003D/" title="https://negation.rocks/lectures/003D/" uri="https://negation.rocks/lectures/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
 Note that this was written during the period in question!
 It's good fun, and it gives a particularly vitriolic (and particularly Australian) takedown of what was at the time practically an accepted orthodoxy. 
 </html:p>
@@ -658,7 +658,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -666,9 +666,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003E/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003E/</fr:uri>
                 <fr:display-uri>003E</fr:display-uri>
-                <fr:route>/003E/</fr:route>
+                <fr:route>/lectures/003E/</fr:route>
                 <fr:title text="Boolean valuations: verum and falsum">Boolean valuations: verum and falsum</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -688,7 +688,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -696,9 +696,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:month>2</fr:month>
                       <fr:day>21</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/003I/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/003I/</fr:uri>
                     <fr:display-uri>003I</fr:display-uri>
-                    <fr:route>/003I/</fr:route>
+                    <fr:route>/lectures/003I/</fr:route>
                   </fr:frontmatter>
                   <fr:mainmatter>
                     <html:table style="border-collapse: collapse;">
@@ -729,7 +729,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -737,9 +737,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003F/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003F/</fr:uri>
                 <fr:display-uri>003F</fr:display-uri>
-                <fr:route>/003F/</fr:route>
+                <fr:route>/lectures/003F/</fr:route>
                 <fr:title text="Boolean valuations: putting it all together">Boolean valuations: putting it all together</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -762,7 +762,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -770,9 +770,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003G/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003G/</fr:uri>
                 <fr:display-uri>003G</fr:display-uri>
-                <fr:route>/003G/</fr:route>
+                <fr:route>/lectures/003G/</fr:route>
                 <fr:title text="The Boolean structure">The Boolean structure</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -822,7 +822,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -830,9 +830,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:month>2</fr:month>
                       <fr:day>21</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/003H/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/003H/</fr:uri>
                     <fr:display-uri>003H</fr:display-uri>
-                    <fr:route>/003H/</fr:route>
+                    <fr:route>/lectures/003H/</fr:route>
                     <fr:title text="Structure">Structure</fr:title>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
@@ -846,7 +846,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -854,9 +854,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:month>2</fr:month>
                       <fr:day>21</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/003O/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/003O/</fr:uri>
                     <fr:display-uri>003O</fr:display-uri>
-                    <fr:route>/003O/</fr:route>
+                    <fr:route>/lectures/003O/</fr:route>
                     <fr:title text="Valuation">Valuation</fr:title>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
@@ -871,7 +871,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -879,9 +879,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:month>2</fr:month>
                       <fr:day>21</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/003N/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/003N/</fr:uri>
                     <fr:display-uri>003N</fr:display-uri>
-                    <fr:route>/003N/</fr:route>
+                    <fr:route>/lectures/003N/</fr:route>
                     <fr:title text="The Boolean structure">The Boolean structure</fr:title>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
@@ -890,7 +890,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -898,9 +898,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                           <fr:month>2</fr:month>
                           <fr:day>21</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/003J/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/003J/</fr:uri>
                         <fr:display-uri>003J</fr:display-uri>
-                        <fr:route>/003J/</fr:route>
+                        <fr:route>/lectures/003J/</fr:route>
                       </fr:frontmatter>
                       <fr:mainmatter>
                         <html:table style="border-collapse: collapse;">
@@ -925,7 +925,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -933,9 +933,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                           <fr:month>2</fr:month>
                           <fr:day>21</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/003K/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/003K/</fr:uri>
                         <fr:display-uri>003K</fr:display-uri>
-                        <fr:route>/003K/</fr:route>
+                        <fr:route>/lectures/003K/</fr:route>
                       </fr:frontmatter>
                       <fr:mainmatter>
                         <html:table style="border-collapse: collapse;">
@@ -963,7 +963,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -971,9 +971,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                           <fr:month>2</fr:month>
                           <fr:day>21</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/003L/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/003L/</fr:uri>
                         <fr:display-uri>003L</fr:display-uri>
-                        <fr:route>/003L/</fr:route>
+                        <fr:route>/lectures/003L/</fr:route>
                       </fr:frontmatter>
                       <fr:mainmatter>
                         <html:table style="border-collapse: collapse;">
@@ -1001,7 +1001,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -1009,9 +1009,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                           <fr:month>2</fr:month>
                           <fr:day>21</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/003M/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/003M/</fr:uri>
                         <fr:display-uri>003M</fr:display-uri>
-                        <fr:route>/003M/</fr:route>
+                        <fr:route>/lectures/003M/</fr:route>
                       </fr:frontmatter>
                       <fr:mainmatter>
                         <html:table style="border-collapse: collapse;">
@@ -1039,7 +1039,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -1047,9 +1047,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                           <fr:month>2</fr:month>
                           <fr:day>21</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/003I/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/003I/</fr:uri>
                         <fr:display-uri>003I</fr:display-uri>
-                        <fr:route>/003I/</fr:route>
+                        <fr:route>/lectures/003I/</fr:route>
                       </fr:frontmatter>
                       <fr:mainmatter>
                         <html:table style="border-collapse: collapse;">
@@ -1086,7 +1086,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -1094,9 +1094,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003P/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003P/</fr:uri>
                 <fr:display-uri>003P</fr:display-uri>
-                <fr:route>/003P/</fr:route>
+                <fr:route>/lectures/003P/</fr:route>
                 <fr:title text="Uses of Boolean valuations: possible worlds">Uses of Boolean valuations: possible worlds</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -1127,7 +1127,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -1135,9 +1135,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003Q/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003Q/</fr:uri>
                 <fr:display-uri>003Q</fr:display-uri>
-                <fr:route>/003Q/</fr:route>
+                <fr:route>/lectures/003Q/</fr:route>
                 <fr:title text="Uses of Boolean valuations: circuitry">Uses of Boolean valuations: circuitry</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -1160,7 +1160,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
 </html:p>
                 <fr:resource hash="f876a7b141306f00c5006d4b702eeff5">
                   <fr:resource-content>
-                    <html:img src="/f876a7b141306f00c5006d4b702eeff5.svg" />
+                    <html:img src="/lectures/f876a7b141306f00c5006d4b702eeff5.svg" />
                   </fr:resource-content>
                   <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz}]]></fr:resource-source>
                   <fr:resource-source type="latex" part="body"><![CDATA[ 
@@ -1192,7 +1192,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -1200,9 +1200,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:month>2</fr:month>
                       <fr:day>21</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/003R/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/003R/</fr:uri>
                     <fr:display-uri>003R</fr:display-uri>
-                    <fr:route>/003R/</fr:route>
+                    <fr:route>/lectures/003R/</fr:route>
                     <fr:taxon>Check your understanding</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter><html:p>Can you find such a sentence?</html:p>
@@ -1210,7 +1210,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
 	
 	
 	
-	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>21</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>21</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
 <html:p>         In fact, there are infinitely many sentences that would work here (although there are also infinitely many that don't work!).
         Consider, for example, the sentence <fr:tex display="inline"><![CDATA[(p \lor  q) \land  \neg  (p \land  q)]]></fr:tex>.
         If you do your Boolean calculations out, you will see that this sentence takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on valuations <fr:tex display="inline"><![CDATA[v_{2}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v_{3}]]></fr:tex>, and takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> on valuations <fr:tex display="inline"><![CDATA[v_{1}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v_{4}]]></fr:tex>; that makes it an example of what we're looking for.
@@ -1229,7 +1229,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -1237,9 +1237,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:month>2</fr:month>
                       <fr:day>21</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/003S/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/003S/</fr:uri>
                     <fr:display-uri>003S</fr:display-uri>
-                    <fr:route>/003S/</fr:route>
+                    <fr:route>/lectures/003S/</fr:route>
                     <fr:taxon>Side note</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -1259,7 +1259,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -1267,9 +1267,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                       <fr:month>2</fr:month>
                       <fr:day>21</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/003T/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/003T/</fr:uri>
                     <fr:display-uri>003T</fr:display-uri>
-                    <fr:route>/003T/</fr:route>
+                    <fr:route>/lectures/003T/</fr:route>
                     <fr:title text="Zeroes and ones">Zeroes and ones</fr:title>
                     <fr:taxon>Side note</fr:taxon>
                   </fr:frontmatter>

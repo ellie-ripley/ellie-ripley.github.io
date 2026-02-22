@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>4</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/001K/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/001K/</fr:uri>
     <fr:display-uri>001K</fr:display-uri>
-    <fr:route>/001K/</fr:route>
+    <fr:route>/lectures/001K/</fr:route>
     <fr:title text="What are those capital letters about?">What are those capital letters about?</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -58,7 +58,7 @@ This is an important example: it shows that <fr:tex display="inline"><![CDATA[A]
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -66,9 +66,9 @@ This is an important example: it shows that <fr:tex display="inline"><![CDATA[A]
               <fr:month>2</fr:month>
               <fr:day>3</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/001H/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/001H/</fr:uri>
             <fr:display-uri>001H</fr:display-uri>
-            <fr:route>/001H/</fr:route>
+            <fr:route>/lectures/001H/</fr:route>
             <fr:title text="Substitution instances">Substitution instances</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -78,7 +78,7 @@ The key idea here is the idea of a <html:strong>substitution instance</html:stro
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -86,9 +86,9 @@ The key idea here is the idea of a <html:strong>substitution instance</html:stro
                   <fr:month>2</fr:month>
                   <fr:day>3</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/001I/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/001I/</fr:uri>
                 <fr:display-uri>001I</fr:display-uri>
-                <fr:route>/001I/</fr:route>
+                <fr:route>/lectures/001I/</fr:route>
                 <fr:title text="Substitution instance">Substitution instance</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>
@@ -101,7 +101,7 @@ The key idea here is the idea of a <html:strong>substitution instance</html:stro
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -109,9 +109,9 @@ The key idea here is the idea of a <html:strong>substitution instance</html:stro
                   <fr:month>2</fr:month>
                   <fr:day>3</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/001J/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/001J/</fr:uri>
                 <fr:display-uri>001J</fr:display-uri>
-                <fr:route>/001J/</fr:route>
+                <fr:route>/lectures/001J/</fr:route>
                 <fr:title text="&quot;Iff&quot;">"Iff"</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -135,7 +135,7 @@ But I won't do that, at least not deliberately; I'll say "iff" when I mean it. (
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -143,9 +143,9 @@ But I won't do that, at least not deliberately; I'll say "iff" when I mean it. (
                   <fr:month>2</fr:month>
                   <fr:day>4</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/001K/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/001K/</fr:uri>
                 <fr:display-uri>001K</fr:display-uri>
-                <fr:route>/001K/</fr:route>
+                <fr:route>/lectures/001K/</fr:route>
                 <fr:title text="What are those capital letters about?">What are those capital letters about?</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>

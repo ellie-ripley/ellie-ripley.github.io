@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>1</fr:month>
       <fr:day>29</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/000W/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/000W/</fr:uri>
     <fr:display-uri>000W</fr:display-uri>
-    <fr:route>/000W/</fr:route>
+    <fr:route>/lectures/000W/</fr:route>
     <fr:title text="Main connectives">Main connectives</fr:title>
     <fr:taxon>Definition</fr:taxon>
   </fr:frontmatter>
@@ -44,7 +44,7 @@ So a <html:strong>conjunction</html:strong> is a sentence whose main connective 
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -52,9 +52,9 @@ So a <html:strong>conjunction</html:strong> is a sentence whose main connective 
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/000V/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/000V/</fr:uri>
             <fr:display-uri>000V</fr:display-uri>
-            <fr:route>/000V/</fr:route>
+            <fr:route>/lectures/000V/</fr:route>
             <fr:title text="Main connectives">Main connectives</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -70,7 +70,7 @@ So a <html:strong>conjunction</html:strong> is a sentence whose main connective 
 </html:p>
             <fr:resource hash="e5d213388a36c37e6bb48abdc0e69cf5">
               <fr:resource-content>
-                <html:img src="/e5d213388a36c37e6bb48abdc0e69cf5.svg" />
+                <html:img src="/lectures/e5d213388a36c37e6bb48abdc0e69cf5.svg" />
               </fr:resource-content>
               <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
               <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -93,7 +93,7 @@ So a <html:strong>conjunction</html:strong> is a sentence whose main connective 
 </html:p>
             <fr:resource hash="b148428602240ab64793b14806d6db6d">
               <fr:resource-content>
-                <html:img src="/b148428602240ab64793b14806d6db6d.svg" />
+                <html:img src="/lectures/b148428602240ab64793b14806d6db6d.svg" />
               </fr:resource-content>
               <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
               <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -117,7 +117,7 @@ So a <html:strong>conjunction</html:strong> is a sentence whose main connective 
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -125,9 +125,9 @@ So a <html:strong>conjunction</html:strong> is a sentence whose main connective 
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000W/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000W/</fr:uri>
                 <fr:display-uri>000W</fr:display-uri>
-                <fr:route>/000W/</fr:route>
+                <fr:route>/lectures/000W/</fr:route>
                 <fr:title text="Main connectives">Main connectives</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>

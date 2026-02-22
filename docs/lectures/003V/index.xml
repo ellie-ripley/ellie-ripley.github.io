@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>22</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/003V/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/003V/</fr:uri>
     <fr:display-uri>003V</fr:display-uri>
-    <fr:route>/003V/</fr:route>
+    <fr:route>/lectures/003V/</fr:route>
     <fr:title text="Weekly Moodle quizzes: 30%">Weekly Moodle quizzes: 30%</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -44,7 +44,7 @@ The purpose of these quizzes is twofold:</html:p>
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -52,9 +52,9 @@ The purpose of these quizzes is twofold:</html:p>
               <fr:month>2</fr:month>
               <fr:day>22</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/003U/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/003U/</fr:uri>
             <fr:display-uri>003U</fr:display-uri>
-            <fr:route>/003U/</fr:route>
+            <fr:route>/lectures/003U/</fr:route>
             <fr:title text="Assessment overview">Assessment overview</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -64,7 +64,7 @@ Here, I say a bit about each, in increasing order of difficulty.</html:p>
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -72,9 +72,9 @@ Here, I say a bit about each, in increasing order of difficulty.</html:p>
                   <fr:month>2</fr:month>
                   <fr:day>22</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003V/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003V/</fr:uri>
                 <fr:display-uri>003V</fr:display-uri>
-                <fr:route>/003V/</fr:route>
+                <fr:route>/lectures/003V/</fr:route>
                 <fr:title text="Weekly Moodle quizzes: 30%">Weekly Moodle quizzes: 30%</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -91,7 +91,7 @@ The purpose of these quizzes is twofold:</html:p>
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -99,9 +99,9 @@ The purpose of these quizzes is twofold:</html:p>
                   <fr:month>2</fr:month>
                   <fr:day>22</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003W/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003W/</fr:uri>
                 <fr:display-uri>003W</fr:display-uri>
-                <fr:route>/003W/</fr:route>
+                <fr:route>/lectures/003W/</fr:route>
                 <fr:title text="Binchicken: 35%">Binchicken: 35%</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -131,7 +131,7 @@ I just want to help you get there.</html:p>
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -139,9 +139,9 @@ I just want to help you get there.</html:p>
                   <fr:month>2</fr:month>
                   <fr:day>22</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003X/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003X/</fr:uri>
                 <fr:display-uri>003X</fr:display-uri>
-                <fr:route>/003X/</fr:route>
+                <fr:route>/lectures/003X/</fr:route>
                 <fr:title text="Workshops: 20%">Workshops: 20%</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -159,7 +159,7 @@ If you do need special consideration for one of these workshops, we'll arrange a
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -167,9 +167,9 @@ If you do need special consideration for one of these workshops, we'll arrange a
                   <fr:month>2</fr:month>
                   <fr:day>22</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003Y/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003Y/</fr:uri>
                 <fr:display-uri>003Y</fr:display-uri>
-                <fr:route>/003Y/</fr:route>
+                <fr:route>/lectures/003Y/</fr:route>
                 <fr:title text="Puzzle-solving session: 15%">Puzzle-solving session: 15%</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>

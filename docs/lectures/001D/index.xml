@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>3</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/001D/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/001D/</fr:uri>
     <fr:display-uri>001D</fr:display-uri>
-    <fr:route>/001D/</fr:route>
+    <fr:route>/lectures/001D/</fr:route>
     <fr:title text="Method 1: preserve the main connective, apply to components">Method 1: preserve the main connective, apply to components</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -49,7 +49,7 @@ Remember that <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is compound, n
 That is, we keep the main connective the same and apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to all the components.
 In this case, the main connective of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, and there are no components.
 So <fr:tex display="inline"><![CDATA[h(\bot ) = \bot ]]></fr:tex>.
-(Remember <fr:link href="/000F/" title="Logicians' Weird Habit 2" uri="https://www.my-great-forest.net/000F/" display-uri="000F" type="local">Logicians' Weird Habit 2</fr:link>: we automatically count as succeeding at applying <fr:tex display="inline"><![CDATA[h]]></fr:tex> to <html:em>all</html:em> the components: all zero of them.)
+(Remember <fr:link href="/lectures/000F/" title="Logicians' Weird Habit 2" uri="https://negation.rocks/lectures/000F/" display-uri="000F" type="local">Logicians' Weird Habit 2</fr:link>: we automatically count as succeeding at applying <fr:tex display="inline"><![CDATA[h]]></fr:tex> to <html:em>all</html:em> the components: all zero of them.)
 </html:p>
     <html:p>Putting this all together, we get our result: <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot )) = q \land  ((p \land  q) \lor  \bot )]]></fr:tex>.
 Note that it's not just the main connective of this sentence that stayed put: <html:em>all</html:em> the connectives in the sentence have stayed just as they were.
@@ -75,7 +75,7 @@ That's the key idea of applying a substitution.
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -83,9 +83,9 @@ That's the key idea of applying a substitution.
               <fr:month>2</fr:month>
               <fr:day>3</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/001C/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/001C/</fr:uri>
             <fr:display-uri>001C</fr:display-uri>
-            <fr:route>/001C/</fr:route>
+            <fr:route>/lectures/001C/</fr:route>
             <fr:title text="Applying a substitution">Applying a substitution</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -105,7 +105,7 @@ Once you see the idea, it's not too bad, but it takes a bunch of words to explai
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -113,9 +113,9 @@ Once you see the idea, it's not too bad, but it takes a bunch of words to explai
                   <fr:month>2</fr:month>
                   <fr:day>3</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/001D/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/001D/</fr:uri>
                 <fr:display-uri>001D</fr:display-uri>
-                <fr:route>/001D/</fr:route>
+                <fr:route>/lectures/001D/</fr:route>
                 <fr:title text="Method 1: preserve the main connective, apply to components">Method 1: preserve the main connective, apply to components</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -150,7 +150,7 @@ Remember that <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is compound, n
 That is, we keep the main connective the same and apply <fr:tex display="inline"><![CDATA[h]]></fr:tex> to all the components.
 In this case, the main connective of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, and there are no components.
 So <fr:tex display="inline"><![CDATA[h(\bot ) = \bot ]]></fr:tex>.
-(Remember <fr:link href="/000F/" title="Logicians' Weird Habit 2" uri="https://www.my-great-forest.net/000F/" display-uri="000F" type="local">Logicians' Weird Habit 2</fr:link>: we automatically count as succeeding at applying <fr:tex display="inline"><![CDATA[h]]></fr:tex> to <html:em>all</html:em> the components: all zero of them.)
+(Remember <fr:link href="/lectures/000F/" title="Logicians' Weird Habit 2" uri="https://negation.rocks/lectures/000F/" display-uri="000F" type="local">Logicians' Weird Habit 2</fr:link>: we automatically count as succeeding at applying <fr:tex display="inline"><![CDATA[h]]></fr:tex> to <html:em>all</html:em> the components: all zero of them.)
 </html:p>
                 <html:p>Putting this all together, we get our result: <fr:tex display="inline"><![CDATA[h(p \land  (q \lor  \bot )) = q \land  ((p \land  q) \lor  \bot )]]></fr:tex>.
 Note that it's not just the main connective of this sentence that stayed put: <html:em>all</html:em> the connectives in the sentence have stayed just as they were.
@@ -163,7 +163,7 @@ That's the key idea of applying a substitution.
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -171,13 +171,13 @@ That's the key idea of applying a substitution.
                   <fr:month>2</fr:month>
                   <fr:day>3</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/001E/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/001E/</fr:uri>
                 <fr:display-uri>001E</fr:display-uri>
-                <fr:route>/001E/</fr:route>
+                <fr:route>/lectures/001E/</fr:route>
                 <fr:title text="Method 2: think about trees, replace the atomics directly">Method 2: think about trees, replace the atomics directly</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>Another way to think about it---and this will give the same results, as long as you're doing everything correctly---is to return to visualising formulas as trees, like we did <fr:link href="/000L/" title="Putting more complex sentences together" uri="https://www.my-great-forest.net/000L/" display-uri="000L" type="local">in the previous lecture</fr:link>.</html:p>
+                <html:p>Another way to think about it---and this will give the same results, as long as you're doing everything correctly---is to return to visualising formulas as trees, like we did <fr:link href="/lectures/000L/" title="Putting more complex sentences together" uri="https://negation.rocks/lectures/000L/" display-uri="000L" type="local">in the previous lecture</fr:link>.</html:p>
                 <html:p>
 Remember that the leaves of these trees, the very tips of the branches, are all either atomic sentences or nullary connectives.
 To apply a substitution to a sentence, when you think of the sentence as a tree like this, you leave the whole innards of the tree in place, and you also leave the nullary connectives at the leaves in place.
@@ -190,7 +190,7 @@ The first step is to draw out the tree for <fr:tex display="inline"><![CDATA[p \
 </html:p>
                 <fr:resource hash="e5d213388a36c37e6bb48abdc0e69cf5">
                   <fr:resource-content>
-                    <html:img src="/e5d213388a36c37e6bb48abdc0e69cf5.svg" />
+                    <html:img src="/lectures/e5d213388a36c37e6bb48abdc0e69cf5.svg" />
                   </fr:resource-content>
                   <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                   <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -206,11 +206,11 @@ The first step is to draw out the tree for <fr:tex display="inline"><![CDATA[p \
                 <html:p>Then we look at the atomic leaves of the tree: in this case they are <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
 So we know we need to make trees for <fr:tex display="inline"><![CDATA[h(p)]]></fr:tex> and <fr:tex display="inline"><![CDATA[h(q)]]></fr:tex> as well.
 These are
-<fr:resource hash="9434a9e6fe4f3eeab439035c6bca8cad"><fr:resource-content><html:img src="/9434a9e6fe4f3eeab439035c6bca8cad.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+<fr:resource hash="9434a9e6fe4f3eeab439035c6bca8cad"><fr:resource-content><html:img src="/lectures/9434a9e6fe4f3eeab439035c6bca8cad.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
 [$q$]
  \end {forest}]]></fr:resource-source></fr:resource>
 and
-<fr:resource hash="3c1c96cc4172018089f69750d90cbc2d"><fr:resource-content><html:img src="/3c1c96cc4172018089f69750d90cbc2d.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
+<fr:resource hash="3c1c96cc4172018089f69750d90cbc2d"><fr:resource-content><html:img src="/lectures/3c1c96cc4172018089f69750d90cbc2d.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
 [$\land $
   [$p$]
   [$q$]
@@ -221,7 +221,7 @@ This gives us:
 </html:p>
                 <fr:resource hash="96271b38a32d583182233ed645777c43">
                   <fr:resource-content>
-                    <html:img src="/96271b38a32d583182233ed645777c43.svg" />
+                    <html:img src="/lectures/96271b38a32d583182233ed645777c43.svg" />
                   </fr:resource-content>
                   <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                   <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -252,7 +252,7 @@ You now know what I mean by that!
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -260,9 +260,9 @@ You now know what I mean by that!
                   <fr:month>2</fr:month>
                   <fr:day>3</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/001F/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/001F/</fr:uri>
                 <fr:display-uri>001F</fr:display-uri>
-                <fr:route>/001F/</fr:route>
+                <fr:route>/lectures/001F/</fr:route>
                 <fr:title text="Higher-order functions">Higher-order functions</fr:title>
                 <fr:taxon>Side note</fr:taxon>
               </fr:frontmatter>
@@ -296,7 +296,7 @@ We won't be doing much with higher-order functions this semester, but this also 
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -304,9 +304,9 @@ We won't be doing much with higher-order functions this semester, but this also 
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/000F/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/000F/</fr:uri>
             <fr:display-uri>000F</fr:display-uri>
-            <fr:route>/000F/</fr:route>
+            <fr:route>/lectures/000F/</fr:route>
             <fr:title text="Logicians' Weird Habit 2">Logicians' Weird Habit 2</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>

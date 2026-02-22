@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>17</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/002U/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/002U/</fr:uri>
     <fr:display-uri>002U</fr:display-uri>
-    <fr:route>/002U/</fr:route>
+    <fr:route>/lectures/002U/</fr:route>
     <fr:title text="Logic">Logic</fr:title>
     <fr:taxon>Definition</fr:taxon>
   </fr:frontmatter>
@@ -39,7 +39,7 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -47,9 +47,9 @@
               <fr:month>2</fr:month>
               <fr:day>17</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/002T/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/002T/</fr:uri>
             <fr:display-uri>002T</fr:display-uri>
-            <fr:route>/002T/</fr:route>
+            <fr:route>/lectures/002T/</fr:route>
             <fr:title text="Logics">Logics</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -77,7 +77,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -85,9 +85,9 @@
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002U/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002U/</fr:uri>
                 <fr:display-uri>002U</fr:display-uri>
-                <fr:route>/002U/</fr:route>
+                <fr:route>/lectures/002U/</fr:route>
                 <fr:title text="Logic">Logic</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>
@@ -102,7 +102,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -110,15 +110,15 @@
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002V/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002V/</fr:uri>
                 <fr:display-uri>002V</fr:display-uri>
-                <fr:route>/002V/</fr:route>
+                <fr:route>/lectures/002V/</fr:route>
                 <fr:title text="How many logics are there?">How many logics are there?</fr:title>
                 <fr:taxon>Side note</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:p>How many?
-          This gets further into some differences between different sizes of infinity that we've <fr:link href="/001A/" title="Sizes of infinity" uri="https://www.my-great-forest.net/001A/" display-uri="001A" type="local">brushed up against before</fr:link>.
+          This gets further into some differences between different sizes of infinity that we've <fr:link href="/lectures/001A/" title="Sizes of infinity" uri="https://negation.rocks/lectures/001A/" display-uri="001A" type="local">brushed up against before</fr:link>.
           The smallest infinity has a few names; it's called both <fr:tex display="inline"><![CDATA[\aleph _{0}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\beth _{0}]]></fr:tex>, and it's the size of the natural numbers <fr:tex display="inline"><![CDATA[0, 1, 2, \ldots ]]></fr:tex>.
           (<fr:tex display="inline"><![CDATA[\aleph ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\beth ]]></fr:tex> are the letters aleph and beth, the first two letters of the Hebrew alphabet; the word `alphabet' comes from the names of these two letters.
           I told you logicians like our alphabets!)
@@ -144,7 +144,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -152,9 +152,9 @@
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002W/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002W/</fr:uri>
                 <fr:display-uri>002W</fr:display-uri>
-                <fr:route>/002W/</fr:route>
+                <fr:route>/lectures/002W/</fr:route>
                 <fr:title text="Validity and invalidity">Validity and invalidity</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -163,7 +163,7 @@
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -171,9 +171,9 @@
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002X/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002X/</fr:uri>
                     <fr:display-uri>002X</fr:display-uri>
-                    <fr:route>/002X/</fr:route>
+                    <fr:route>/lectures/002X/</fr:route>
                     <fr:title text="Valid and invalid">Valid and invalid</fr:title>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
@@ -208,7 +208,7 @@ It's only with some particular logic in view that calling an argument valid or i
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -216,9 +216,9 @@ It's only with some particular logic in view that calling an argument valid or i
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002Y/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002Y/</fr:uri>
                 <fr:display-uri>002Y</fr:display-uri>
-                <fr:route>/002Y/</fr:route>
+                <fr:route>/lectures/002Y/</fr:route>
                 <fr:title text="Logics are sets">Logics are sets</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -242,7 +242,7 @@ It's only with some particular logic in view that calling an argument valid or i
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -250,9 +250,9 @@ It's only with some particular logic in view that calling an argument valid or i
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002Z/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002Z/</fr:uri>
                 <fr:display-uri>002Z</fr:display-uri>
-                <fr:route>/002Z/</fr:route>
+                <fr:route>/lectures/002Z/</fr:route>
                 <fr:title text="Some more example logics">Some more example logics</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -273,7 +273,7 @@ It's only with some particular logic in view that calling an argument valid or i
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -281,9 +281,9 @@ It's only with some particular logic in view that calling an argument valid or i
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0030/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0030/</fr:uri>
                 <fr:display-uri>0030</fr:display-uri>
-                <fr:route>/0030/</fr:route>
+                <fr:route>/lectures/0030/</fr:route>
                 <fr:title text="Stronger and weaker">Stronger and weaker</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -292,7 +292,7 @@ It's only with some particular logic in view that calling an argument valid or i
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -300,9 +300,9 @@ It's only with some particular logic in view that calling an argument valid or i
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/0031/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/0031/</fr:uri>
                     <fr:display-uri>0031</fr:display-uri>
-                    <fr:route>/0031/</fr:route>
+                    <fr:route>/lectures/0031/</fr:route>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -324,7 +324,7 @@ It's only with some particular logic in view that calling an argument valid or i
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -332,12 +332,12 @@ It's only with some particular logic in view that calling an argument valid or i
                       <fr:month>2</fr:month>
                       <fr:day>20</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/0033/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/0033/</fr:uri>
                     <fr:display-uri>0033</fr:display-uri>
-                    <fr:route>/0033/</fr:route>
+                    <fr:route>/lectures/0033/</fr:route>
                     <fr:taxon>Check your understanding</fr:taxon>
                   </fr:frontmatter>
-                  <fr:mainmatter><html:p>Now, return to the <fr:link href="/002Z/" title="Some more example logics" uri="https://www.my-great-forest.net/002Z/" display-uri="002Z" type="local">five example logics above</fr:link>.
+                  <fr:mainmatter><html:p>Now, return to the <fr:link href="/lectures/002Z/" title="Some more example logics" uri="https://negation.rocks/lectures/002Z/" display-uri="002Z" type="local">five example logics above</fr:link>.
     Which of these, if any, are stronger or weaker than which of these?
     Take a moment to think this through before you go on.
 </html:p>
@@ -345,7 +345,7 @@ It's only with some particular logic in view that calling an argument valid or i
 	
 	
 	
-	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>20</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>20</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
 <html:ul><html:li>Logic 1 is weaker than logic 2, which is to say that 2 is stronger than 1.</html:li>
 <html:li>Logic 1 is weaker than logic 4, which is to say that 4 is stronger than 1.</html:li>
 <html:li>Each of logics 1--5, like any logic, is both stronger and weaker than itself.</html:li>

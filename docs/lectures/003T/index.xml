@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>21</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/003T/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/003T/</fr:uri>
     <fr:display-uri>003T</fr:display-uri>
-    <fr:route>/003T/</fr:route>
+    <fr:route>/lectures/003T/</fr:route>
     <fr:title text="Zeroes and ones">Zeroes and ones</fr:title>
     <fr:taxon>Side note</fr:taxon>
   </fr:frontmatter>
@@ -57,7 +57,7 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -65,9 +65,9 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
               <fr:month>2</fr:month>
               <fr:day>21</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/003Q/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/003Q/</fr:uri>
             <fr:display-uri>003Q</fr:display-uri>
-            <fr:route>/003Q/</fr:route>
+            <fr:route>/lectures/003Q/</fr:route>
             <fr:title text="Uses of Boolean valuations: circuitry">Uses of Boolean valuations: circuitry</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -90,7 +90,7 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
 </html:p>
             <fr:resource hash="f876a7b141306f00c5006d4b702eeff5">
               <fr:resource-content>
-                <html:img src="/f876a7b141306f00c5006d4b702eeff5.svg" />
+                <html:img src="/lectures/f876a7b141306f00c5006d4b702eeff5.svg" />
               </fr:resource-content>
               <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz}]]></fr:resource-source>
               <fr:resource-source type="latex" part="body"><![CDATA[ 
@@ -122,7 +122,7 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -130,9 +130,9 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003R/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003R/</fr:uri>
                 <fr:display-uri>003R</fr:display-uri>
-                <fr:route>/003R/</fr:route>
+                <fr:route>/lectures/003R/</fr:route>
                 <fr:taxon>Check your understanding</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter><html:p>Can you find such a sentence?</html:p>
@@ -140,7 +140,7 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
 	
 	
 	
-	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>21</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>21</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
 <html:p>         In fact, there are infinitely many sentences that would work here (although there are also infinitely many that don't work!).
         Consider, for example, the sentence <fr:tex display="inline"><![CDATA[(p \lor  q) \land  \neg  (p \land  q)]]></fr:tex>.
         If you do your Boolean calculations out, you will see that this sentence takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on valuations <fr:tex display="inline"><![CDATA[v_{2}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v_{3}]]></fr:tex>, and takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> on valuations <fr:tex display="inline"><![CDATA[v_{1}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v_{4}]]></fr:tex>; that makes it an example of what we're looking for.
@@ -159,7 +159,7 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -167,9 +167,9 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003S/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003S/</fr:uri>
                 <fr:display-uri>003S</fr:display-uri>
-                <fr:route>/003S/</fr:route>
+                <fr:route>/lectures/003S/</fr:route>
                 <fr:taxon>Side note</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -189,7 +189,7 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -197,9 +197,9 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003T/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003T/</fr:uri>
                 <fr:display-uri>003T</fr:display-uri>
-                <fr:route>/003T/</fr:route>
+                <fr:route>/lectures/003T/</fr:route>
                 <fr:title text="Zeroes and ones">Zeroes and ones</fr:title>
                 <fr:taxon>Side note</fr:taxon>
               </fr:frontmatter>

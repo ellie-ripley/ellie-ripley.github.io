@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,16 +12,16 @@
       <fr:month>2</fr:month>
       <fr:day>17</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/002P/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/002P/</fr:uri>
     <fr:display-uri>002P</fr:display-uri>
-    <fr:route>/002P/</fr:route>
+    <fr:route>/lectures/002P/</fr:route>
     <fr:title text="Intersection and union">Intersection and union</fr:title>
     <fr:taxon>Definition</fr:taxon>
   </fr:frontmatter>
   <fr:mainmatter>
     <html:p>Given sets <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, their <html:strong>intersection</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cap  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>both</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
 Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cup  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>either</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> or <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
-(Remember <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
+(Remember <fr:link href="/lectures/000E/" title="Logicians' Weird Habit 1" uri="https://negation.rocks/lectures/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
   </fr:mainmatter>
   <fr:backmatter>
     <fr:tree show-metadata="false" hidden-when-empty="true">
@@ -41,7 +41,7 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -49,9 +49,9 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
               <fr:month>2</fr:month>
               <fr:day>17</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/002O/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/002O/</fr:uri>
             <fr:display-uri>002O</fr:display-uri>
-            <fr:route>/002O/</fr:route>
+            <fr:route>/lectures/002O/</fr:route>
             <fr:title text="Intersections (and unions)">Intersections (and unions)</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -62,7 +62,7 @@ These are not super-central to this unit, but they will come up now and again.
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -70,16 +70,16 @@ These are not super-central to this unit, but they will come up now and again.
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002P/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002P/</fr:uri>
                 <fr:display-uri>002P</fr:display-uri>
-                <fr:route>/002P/</fr:route>
+                <fr:route>/lectures/002P/</fr:route>
                 <fr:title text="Intersection and union">Intersection and union</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:p>Given sets <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, their <html:strong>intersection</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cap  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>both</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
 Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cup  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>either</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> or <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
-(Remember <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
+(Remember <fr:link href="/lectures/000E/" title="Logicians' Weird Habit 1" uri="https://negation.rocks/lectures/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
               </fr:mainmatter>
             </fr:tree>
             <html:p>For example, the intersection of <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\{q, r, s\}]]></fr:tex> is <fr:tex display="inline"><![CDATA[\{q, r\}]]></fr:tex>; and the union of these same two sets is <fr:tex display="inline"><![CDATA[\{p, q, r, s\}]]></fr:tex>.
@@ -106,7 +106,7 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -114,9 +114,9 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/000E/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/000E/</fr:uri>
             <fr:display-uri>000E</fr:display-uri>
-            <fr:route>/000E/</fr:route>
+            <fr:route>/lectures/000E/</fr:route>
             <fr:title text="Logicians' Weird Habit 1">Logicians' Weird Habit 1</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>1</fr:month>
       <fr:day>29</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/000E/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/000E/</fr:uri>
     <fr:display-uri>000E</fr:display-uri>
-    <fr:route>/000E/</fr:route>
+    <fr:route>/lectures/000E/</fr:route>
     <fr:title text="Logicians' Weird Habit 1">Logicians' Weird Habit 1</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -45,7 +45,7 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -53,9 +53,9 @@
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/000C/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/000C/</fr:uri>
             <fr:display-uri>000C</fr:display-uri>
-            <fr:route>/000C/</fr:route>
+            <fr:route>/lectures/000C/</fr:route>
             <fr:title text="Logicians' weird habits">Logicians' weird habits</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -72,9 +72,9 @@
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000D/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000D/</fr:uri>
                 <fr:display-uri>000D</fr:display-uri>
-                <fr:route>/000D/</fr:route>
+                <fr:route>/lectures/000D/</fr:route>
                 <fr:taxon>Side note</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -89,7 +89,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -97,9 +97,9 @@
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000E/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000E/</fr:uri>
                 <fr:display-uri>000E</fr:display-uri>
-                <fr:route>/000E/</fr:route>
+                <fr:route>/lectures/000E/</fr:route>
                 <fr:title text="Logicians' Weird Habit 1">Logicians' Weird Habit 1</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -117,7 +117,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -125,9 +125,9 @@
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000F/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000F/</fr:uri>
                 <fr:display-uri>000F</fr:display-uri>
-                <fr:route>/000F/</fr:route>
+                <fr:route>/lectures/000F/</fr:route>
                 <fr:title text="Logicians' Weird Habit 2">Logicians' Weird Habit 2</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -143,7 +143,7 @@
               </fr:mainmatter>
             </fr:tree>
             <html:p>
-        For both of these, there's a case to be made that what I'm doing is out of step with what "or" or "all" mean in English (Note the use of <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">Habit 1</fr:link> there!), and there's a case to be made that it isn't.
+        For both of these, there's a case to be made that what I'm doing is out of step with what "or" or "all" mean in English (Note the use of <fr:link href="/lectures/000E/" title="Logicians' Weird Habit 1" uri="https://negation.rocks/lectures/000E/" display-uri="000E" type="local">Habit 1</fr:link> there!), and there's a case to be made that it isn't.
         But for our purposes, it's not important to settle that question.
         What <html:em>is</html:em> important is that you see precisely what I mean when I say "or" or "all", and keeping these logicians' habits in mind is key for that.
 </html:p>
@@ -161,7 +161,7 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -169,9 +169,9 @@
               <fr:month>2</fr:month>
               <fr:day>21</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/003A/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/003A/</fr:uri>
             <fr:display-uri>003A</fr:display-uri>
-            <fr:route>/003A/</fr:route>
+            <fr:route>/lectures/003A/</fr:route>
             <fr:title text="Boolean valuations: disjunction">Boolean valuations: disjunction</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -181,7 +181,7 @@
         This seems to be true: the truth of the second part is enough for the whole thing to be true.
         So for disjunction, we want to be sure to pick a table that respects this.
         The only way for a disjunction to be false, on this way of proceeding, is for both of its components to be false; any other combination makes the disjunction true.</html:p>
-            <html:p>Note in particular the connection between <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \lor  \mathsf {\mathbf {T}} = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link>.
+            <html:p>Note in particular the connection between <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \lor  \mathsf {\mathbf {T}} = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:link href="/lectures/000E/" title="Logicians' Weird Habit 1" uri="https://negation.rocks/lectures/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link>.
         Whenever I say "or" in these notes, I mean to include the possibility of both sides of the "or" being true.
         And that's just what <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> does as well, on this scheme.
         This is a case of life imitating art; what's happening here is that uses of the English word "or" among communities of logicians are strongly influenced by experiences with the connective <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>.
@@ -192,7 +192,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -200,9 +200,9 @@
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003L/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003L/</fr:uri>
                 <fr:display-uri>003L</fr:display-uri>
-                <fr:route>/003L/</fr:route>
+                <fr:route>/lectures/003L/</fr:route>
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:table style="border-collapse: collapse;">
@@ -232,7 +232,7 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -240,23 +240,23 @@
               <fr:month>2</fr:month>
               <fr:day>17</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/002P/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/002P/</fr:uri>
             <fr:display-uri>002P</fr:display-uri>
-            <fr:route>/002P/</fr:route>
+            <fr:route>/lectures/002P/</fr:route>
             <fr:title text="Intersection and union">Intersection and union</fr:title>
             <fr:taxon>Definition</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
             <html:p>Given sets <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, their <html:strong>intersection</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cap  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>both</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
 Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cup  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>either</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> or <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
-(Remember <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
+(Remember <fr:link href="/lectures/000E/" title="Logicians' Weird Habit 1" uri="https://negation.rocks/lectures/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
           </fr:mainmatter>
         </fr:tree>
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -264,9 +264,9 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/000C/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/000C/</fr:uri>
             <fr:display-uri>000C</fr:display-uri>
-            <fr:route>/000C/</fr:route>
+            <fr:route>/lectures/000C/</fr:route>
             <fr:title text="Logicians' weird habits">Logicians' weird habits</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -283,9 +283,9 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000D/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000D/</fr:uri>
                 <fr:display-uri>000D</fr:display-uri>
-                <fr:route>/000D/</fr:route>
+                <fr:route>/lectures/000D/</fr:route>
                 <fr:taxon>Side note</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -300,7 +300,7 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -308,9 +308,9 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000E/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000E/</fr:uri>
                 <fr:display-uri>000E</fr:display-uri>
-                <fr:route>/000E/</fr:route>
+                <fr:route>/lectures/000E/</fr:route>
                 <fr:title text="Logicians' Weird Habit 1">Logicians' Weird Habit 1</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -328,7 +328,7 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -336,9 +336,9 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000F/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000F/</fr:uri>
                 <fr:display-uri>000F</fr:display-uri>
-                <fr:route>/000F/</fr:route>
+                <fr:route>/lectures/000F/</fr:route>
                 <fr:title text="Logicians' Weird Habit 2">Logicians' Weird Habit 2</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -354,7 +354,7 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
               </fr:mainmatter>
             </fr:tree>
             <html:p>
-        For both of these, there's a case to be made that what I'm doing is out of step with what "or" or "all" mean in English (Note the use of <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">Habit 1</fr:link> there!), and there's a case to be made that it isn't.
+        For both of these, there's a case to be made that what I'm doing is out of step with what "or" or "all" mean in English (Note the use of <fr:link href="/lectures/000E/" title="Logicians' Weird Habit 1" uri="https://negation.rocks/lectures/000E/" display-uri="000E" type="local">Habit 1</fr:link> there!), and there's a case to be made that it isn't.
         But for our purposes, it's not important to settle that question.
         What <html:em>is</html:em> important is that you see precisely what I mean when I say "or" or "all", and keeping these logicians' habits in mind is key for that.
 </html:p>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>1</fr:month>
       <fr:day>29</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/000Z/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/000Z/</fr:uri>
     <fr:display-uri>000Z</fr:display-uri>
-    <fr:route>/000Z/</fr:route>
+    <fr:route>/lectures/000Z/</fr:route>
     <fr:title text="Special names for components">Special names for components</fr:title>
     <fr:taxon>Definition</fr:taxon>
   </fr:frontmatter>
@@ -46,7 +46,7 @@ Depending on the main connective of a sentence, there are special names sometime
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -54,9 +54,9 @@ Depending on the main connective of a sentence, there are special names sometime
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/000X/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/000X/</fr:uri>
             <fr:display-uri>000X</fr:display-uri>
-            <fr:route>/000X/</fr:route>
+            <fr:route>/lectures/000X/</fr:route>
             <fr:title text="Compounds and components">Compounds and components</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -84,7 +84,7 @@ Depending on the main connective of a sentence, there are special names sometime
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -92,9 +92,9 @@ Depending on the main connective of a sentence, there are special names sometime
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000Y/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000Y/</fr:uri>
                 <fr:display-uri>000Y</fr:display-uri>
-                <fr:route>/000Y/</fr:route>
+                <fr:route>/lectures/000Y/</fr:route>
                 <fr:title text="Components">Components</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>
@@ -112,7 +112,7 @@ When a sentence's main connective is binary, it has two components, which are ca
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -120,9 +120,9 @@ When a sentence's main connective is binary, it has two components, which are ca
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000Z/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000Z/</fr:uri>
                 <fr:display-uri>000Z</fr:display-uri>
-                <fr:route>/000Z/</fr:route>
+                <fr:route>/lectures/000Z/</fr:route>
                 <fr:title text="Special names for components">Special names for components</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>

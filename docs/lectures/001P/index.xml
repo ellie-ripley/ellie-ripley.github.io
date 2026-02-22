@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors />
     <fr:date>
@@ -8,9 +8,9 @@
       <fr:month>2</fr:month>
       <fr:day>5</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/001P/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/001P/</fr:uri>
     <fr:display-uri>001P</fr:display-uri>
-    <fr:route>/001P/</fr:route>
+    <fr:route>/lectures/001P/</fr:route>
   </fr:frontmatter>
   <fr:mainmatter />
   <fr:backmatter>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>17</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/002N/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/002N/</fr:uri>
     <fr:display-uri>002N</fr:display-uri>
-    <fr:route>/002N/</fr:route>
+    <fr:route>/lectures/002N/</fr:route>
     <fr:title text="Subset">Subset</fr:title>
     <fr:taxon>Definition</fr:taxon>
   </fr:frontmatter>
@@ -40,7 +40,7 @@ There's a symbol for this: <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -48,9 +48,9 @@ There's a symbol for this: <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  
               <fr:month>2</fr:month>
               <fr:day>17</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/002M/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/002M/</fr:uri>
             <fr:display-uri>002M</fr:display-uri>
-            <fr:route>/002M/</fr:route>
+            <fr:route>/lectures/002M/</fr:route>
             <fr:title text="Subsets">Subsets</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -59,7 +59,7 @@ There's a symbol for this: <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -67,9 +67,9 @@ There's a symbol for this: <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002N/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002N/</fr:uri>
                 <fr:display-uri>002N</fr:display-uri>
-                <fr:route>/002N/</fr:route>
+                <fr:route>/lectures/002N/</fr:route>
                 <fr:title text="Subset">Subset</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>
@@ -100,7 +100,7 @@ There might be some other things also in <fr:tex display="inline"><![CDATA[\Delt
         This might be a surprise, but remember logicians' weird habit number 2!
         To check whether the empty set is a subset of some set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, we need to check whether all the members of the empty set are also members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
         Since there are no members of the empty set, indeed it <html:em>is</html:em> true that all the members of the empty set are members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>---no matter what <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is.
-        (Using <fr:link href="/000F/" title="Logicians' Weird Habit 2" uri="https://www.my-great-forest.net/000F/" display-uri="000F" type="local">logicians' weird habit number 2</fr:link>, it's even true that all the members of the empty set are square circles, that they're all plants with mammal-like brains, and that they're all behind you right now.)</html:li></html:ul></html:p>
+        (Using <fr:link href="/lectures/000F/" title="Logicians' Weird Habit 2" uri="https://negation.rocks/lectures/000F/" display-uri="000F" type="local">logicians' weird habit number 2</fr:link>, it's even true that all the members of the empty set are square circles, that they're all plants with mammal-like brains, and that they're all behind you right now.)</html:li></html:ul></html:p>
           </fr:mainmatter>
         </fr:tree>
       </fr:mainmatter>

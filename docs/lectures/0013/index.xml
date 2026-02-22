@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>3</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/0013/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/0013/</fr:uri>
     <fr:display-uri>0013</fr:display-uri>
-    <fr:route>/0013/</fr:route>
+    <fr:route>/lectures/0013/</fr:route>
     <fr:taxon>Caution</fr:taxon>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -43,7 +43,7 @@ That means that it can't take <fr:tex display="inline"><![CDATA[r]]></fr:tex> as
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -51,9 +51,9 @@ That means that it can't take <fr:tex display="inline"><![CDATA[r]]></fr:tex> as
               <fr:month>2</fr:month>
               <fr:day>3</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/0012/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/0012/</fr:uri>
             <fr:display-uri>0012</fr:display-uri>
-            <fr:route>/0012/</fr:route>
+            <fr:route>/lectures/0012/</fr:route>
             <fr:title text="Functions">Functions</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -80,7 +80,7 @@ There is a function that takes compound formulas as inputs and gives back their 
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -88,9 +88,9 @@ There is a function that takes compound formulas as inputs and gives back their 
                   <fr:month>2</fr:month>
                   <fr:day>3</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0013/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0013/</fr:uri>
                 <fr:display-uri>0013</fr:display-uri>
-                <fr:route>/0013/</fr:route>
+                <fr:route>/lectures/0013/</fr:route>
                 <fr:taxon>Caution</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -106,7 +106,7 @@ That means that it can't take <fr:tex display="inline"><![CDATA[r]]></fr:tex> as
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -114,9 +114,9 @@ That means that it can't take <fr:tex display="inline"><![CDATA[r]]></fr:tex> as
                   <fr:month>2</fr:month>
                   <fr:day>3</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0014/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0014/</fr:uri>
                 <fr:display-uri>0014</fr:display-uri>
-                <fr:route>/0014/</fr:route>
+                <fr:route>/lectures/0014/</fr:route>
                 <fr:title text="Types of inputs and outputs">Types of inputs and outputs</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -158,7 +158,7 @@ Type theory has deep links with logic, and we'll be learning some logic later in
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -166,9 +166,9 @@ Type theory has deep links with logic, and we'll be learning some logic later in
                       <fr:month>2</fr:month>
                       <fr:day>3</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/0016/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/0016/</fr:uri>
                     <fr:display-uri>0016</fr:display-uri>
-                    <fr:route>/0016/</fr:route>
+                    <fr:route>/lectures/0016/</fr:route>
                     <fr:title text="Functions in mathematics">Functions in mathematics</fr:title>
                     <fr:taxon>Side note</fr:taxon>
                   </fr:frontmatter>
@@ -180,7 +180,7 @@ Like, you might have at some point in your life drawn a graph of a function give
 </html:p>
                     <fr:resource hash="ccf30daf4a231aa04fb7f3db64fb9936">
                       <fr:resource-content>
-                        <html:img src="/ccf30daf4a231aa04fb7f3db64fb9936.svg" />
+                        <html:img src="/lectures/ccf30daf4a231aa04fb7f3db64fb9936.svg" />
                       </fr:resource-content>
                       <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {pgfplots}]]></fr:resource-source>
                       <fr:resource-source type="latex" part="body"><![CDATA[
@@ -208,7 +208,7 @@ Still, the input/output idea is just the same.
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -216,9 +216,9 @@ Still, the input/output idea is just the same.
                   <fr:month>2</fr:month>
                   <fr:day>3</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0015/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0015/</fr:uri>
                 <fr:display-uri>0015</fr:display-uri>
-                <fr:route>/0015/</fr:route>
+                <fr:route>/lectures/0015/</fr:route>
                 <fr:title text="Many functions have the same types">Many functions have the same types</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -241,7 +241,7 @@ So there is more to a function than just its input and output types!
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -249,9 +249,9 @@ So there is more to a function than just its input and output types!
                   <fr:month>2</fr:month>
                   <fr:day>3</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0019/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0019/</fr:uri>
                 <fr:display-uri>0019</fr:display-uri>
-                <fr:route>/0019/</fr:route>
+                <fr:route>/lectures/0019/</fr:route>
                 <fr:title text="Notation and vocabulary: Applying functions">Notation and vocabulary: Applying functions</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>

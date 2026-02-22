@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>1</fr:month>
       <fr:day>29</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/0006/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/0006/</fr:uri>
     <fr:display-uri>0006</fr:display-uri>
-    <fr:route>/0006/</fr:route>
+    <fr:route>/lectures/0006/</fr:route>
     <fr:title text="Introduction">Introduction</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -47,9 +47,9 @@ To start out, you might expect me to tell you what logic is.
           <fr:month>1</fr:month>
           <fr:day>29</fr:day>
         </fr:date>
-        <fr:uri>https://www.my-great-forest.net/000A/</fr:uri>
+        <fr:uri>https://negation.rocks/lectures/000A/</fr:uri>
         <fr:display-uri>000A</fr:display-uri>
-        <fr:route>/000A/</fr:route>
+        <fr:route>/lectures/000A/</fr:route>
         <fr:taxon>Side note</fr:taxon>
       </fr:frontmatter>
       <fr:mainmatter>
@@ -68,9 +68,9 @@ These are not essential to understanding the core of the unit, but they might be
           <fr:month>1</fr:month>
           <fr:day>29</fr:day>
         </fr:date>
-        <fr:uri>https://www.my-great-forest.net/0009/</fr:uri>
+        <fr:uri>https://negation.rocks/lectures/0009/</fr:uri>
         <fr:display-uri>0009</fr:display-uri>
-        <fr:route>/0009/</fr:route>
+        <fr:route>/lectures/0009/</fr:route>
         <fr:taxon>Side note</fr:taxon>
       </fr:frontmatter>
       <fr:mainmatter>
@@ -108,7 +108,7 @@ These are not essential to understanding the core of the unit, but they might be
       <fr:frontmatter>
         <fr:authors>
           <fr:author>
-            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
           </fr:author>
         </fr:authors>
         <fr:date>
@@ -116,9 +116,9 @@ These are not essential to understanding the core of the unit, but they might be
           <fr:month>1</fr:month>
           <fr:day>29</fr:day>
         </fr:date>
-        <fr:uri>https://www.my-great-forest.net/0008/</fr:uri>
+        <fr:uri>https://negation.rocks/lectures/0008/</fr:uri>
         <fr:display-uri>0008</fr:display-uri>
-        <fr:route>/0008/</fr:route>
+        <fr:route>/lectures/0008/</fr:route>
         <fr:taxon>Side note</fr:taxon>
       </fr:frontmatter>
       <fr:mainmatter>
@@ -132,7 +132,7 @@ These are not essential to understanding the core of the unit, but they might be
       <fr:frontmatter>
         <fr:authors>
           <fr:author>
-            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
           </fr:author>
         </fr:authors>
         <fr:date>
@@ -140,9 +140,9 @@ These are not essential to understanding the core of the unit, but they might be
           <fr:month>1</fr:month>
           <fr:day>29</fr:day>
         </fr:date>
-        <fr:uri>https://www.my-great-forest.net/000B/</fr:uri>
+        <fr:uri>https://negation.rocks/lectures/000B/</fr:uri>
         <fr:display-uri>000B</fr:display-uri>
-        <fr:route>/000B/</fr:route>
+        <fr:route>/lectures/000B/</fr:route>
         <fr:title text="Enough sales pitch already; what are we going to do?">Enough sales pitch already; what are we going to <html:em>do</html:em>?</fr:title>
       </fr:frontmatter>
       <fr:mainmatter>
@@ -166,7 +166,7 @@ These are not essential to understanding the core of the unit, but they might be
       <fr:frontmatter>
         <fr:authors>
           <fr:author>
-            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
           </fr:author>
         </fr:authors>
         <fr:date>
@@ -174,9 +174,9 @@ These are not essential to understanding the core of the unit, but they might be
           <fr:month>1</fr:month>
           <fr:day>29</fr:day>
         </fr:date>
-        <fr:uri>https://www.my-great-forest.net/000C/</fr:uri>
+        <fr:uri>https://negation.rocks/lectures/000C/</fr:uri>
         <fr:display-uri>000C</fr:display-uri>
-        <fr:route>/000C/</fr:route>
+        <fr:route>/lectures/000C/</fr:route>
         <fr:title text="Logicians' weird habits">Logicians' weird habits</fr:title>
       </fr:frontmatter>
       <fr:mainmatter>
@@ -193,9 +193,9 @@ These are not essential to understanding the core of the unit, but they might be
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/000D/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/000D/</fr:uri>
             <fr:display-uri>000D</fr:display-uri>
-            <fr:route>/000D/</fr:route>
+            <fr:route>/lectures/000D/</fr:route>
             <fr:taxon>Side note</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -210,7 +210,7 @@ These are not essential to understanding the core of the unit, but they might be
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -218,9 +218,9 @@ These are not essential to understanding the core of the unit, but they might be
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/000E/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/000E/</fr:uri>
             <fr:display-uri>000E</fr:display-uri>
-            <fr:route>/000E/</fr:route>
+            <fr:route>/lectures/000E/</fr:route>
             <fr:title text="Logicians' Weird Habit 1">Logicians' Weird Habit 1</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -238,7 +238,7 @@ These are not essential to understanding the core of the unit, but they might be
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -246,9 +246,9 @@ These are not essential to understanding the core of the unit, but they might be
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/000F/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/000F/</fr:uri>
             <fr:display-uri>000F</fr:display-uri>
-            <fr:route>/000F/</fr:route>
+            <fr:route>/lectures/000F/</fr:route>
             <fr:title text="Logicians' Weird Habit 2">Logicians' Weird Habit 2</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -264,7 +264,7 @@ These are not essential to understanding the core of the unit, but they might be
           </fr:mainmatter>
         </fr:tree>
         <html:p>
-        For both of these, there's a case to be made that what I'm doing is out of step with what "or" or "all" mean in English (Note the use of <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">Habit 1</fr:link> there!), and there's a case to be made that it isn't.
+        For both of these, there's a case to be made that what I'm doing is out of step with what "or" or "all" mean in English (Note the use of <fr:link href="/lectures/000E/" title="Logicians' Weird Habit 1" uri="https://negation.rocks/lectures/000E/" display-uri="000E" type="local">Habit 1</fr:link> there!), and there's a case to be made that it isn't.
         But for our purposes, it's not important to settle that question.
         What <html:em>is</html:em> important is that you see precisely what I mean when I say "or" or "all", and keeping these logicians' habits in mind is key for that.
 </html:p>
@@ -289,7 +289,7 @@ These are not essential to understanding the core of the unit, but they might be
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -297,9 +297,9 @@ These are not essential to understanding the core of the unit, but they might be
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/0005/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/0005/</fr:uri>
             <fr:display-uri>0005</fr:display-uri>
-            <fr:route>/0005/</fr:route>
+            <fr:route>/lectures/0005/</fr:route>
             <fr:title text="Lecture 1: Introduction and languages">Lecture 1: Introduction and languages</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -307,7 +307,7 @@ These are not essential to understanding the core of the unit, but they might be
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -315,9 +315,9 @@ These are not essential to understanding the core of the unit, but they might be
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0006/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0006/</fr:uri>
                 <fr:display-uri>0006</fr:display-uri>
-                <fr:route>/0006/</fr:route>
+                <fr:route>/lectures/0006/</fr:route>
                 <fr:title text="Introduction">Introduction</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -350,9 +350,9 @@ To start out, you might expect me to tell you what logic is.
                       <fr:month>1</fr:month>
                       <fr:day>29</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/000A/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/000A/</fr:uri>
                     <fr:display-uri>000A</fr:display-uri>
-                    <fr:route>/000A/</fr:route>
+                    <fr:route>/lectures/000A/</fr:route>
                     <fr:taxon>Side note</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -371,9 +371,9 @@ These are not essential to understanding the core of the unit, but they might be
                       <fr:month>1</fr:month>
                       <fr:day>29</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/0009/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/0009/</fr:uri>
                     <fr:display-uri>0009</fr:display-uri>
-                    <fr:route>/0009/</fr:route>
+                    <fr:route>/lectures/0009/</fr:route>
                     <fr:taxon>Side note</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -411,7 +411,7 @@ These are not essential to understanding the core of the unit, but they might be
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -419,9 +419,9 @@ These are not essential to understanding the core of the unit, but they might be
                       <fr:month>1</fr:month>
                       <fr:day>29</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/0008/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/0008/</fr:uri>
                     <fr:display-uri>0008</fr:display-uri>
-                    <fr:route>/0008/</fr:route>
+                    <fr:route>/lectures/0008/</fr:route>
                     <fr:taxon>Side note</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -435,7 +435,7 @@ These are not essential to understanding the core of the unit, but they might be
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -443,9 +443,9 @@ These are not essential to understanding the core of the unit, but they might be
                       <fr:month>1</fr:month>
                       <fr:day>29</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/000B/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/000B/</fr:uri>
                     <fr:display-uri>000B</fr:display-uri>
-                    <fr:route>/000B/</fr:route>
+                    <fr:route>/lectures/000B/</fr:route>
                     <fr:title text="Enough sales pitch already; what are we going to do?">Enough sales pitch already; what are we going to <html:em>do</html:em>?</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -469,7 +469,7 @@ These are not essential to understanding the core of the unit, but they might be
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -477,9 +477,9 @@ These are not essential to understanding the core of the unit, but they might be
                       <fr:month>1</fr:month>
                       <fr:day>29</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/000C/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/000C/</fr:uri>
                     <fr:display-uri>000C</fr:display-uri>
-                    <fr:route>/000C/</fr:route>
+                    <fr:route>/lectures/000C/</fr:route>
                     <fr:title text="Logicians' weird habits">Logicians' weird habits</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -496,9 +496,9 @@ These are not essential to understanding the core of the unit, but they might be
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000D/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000D/</fr:uri>
                         <fr:display-uri>000D</fr:display-uri>
-                        <fr:route>/000D/</fr:route>
+                        <fr:route>/lectures/000D/</fr:route>
                         <fr:taxon>Side note</fr:taxon>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -513,7 +513,7 @@ These are not essential to understanding the core of the unit, but they might be
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -521,9 +521,9 @@ These are not essential to understanding the core of the unit, but they might be
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000E/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000E/</fr:uri>
                         <fr:display-uri>000E</fr:display-uri>
-                        <fr:route>/000E/</fr:route>
+                        <fr:route>/lectures/000E/</fr:route>
                         <fr:title text="Logicians' Weird Habit 1">Logicians' Weird Habit 1</fr:title>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -541,7 +541,7 @@ These are not essential to understanding the core of the unit, but they might be
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -549,9 +549,9 @@ These are not essential to understanding the core of the unit, but they might be
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000F/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000F/</fr:uri>
                         <fr:display-uri>000F</fr:display-uri>
-                        <fr:route>/000F/</fr:route>
+                        <fr:route>/lectures/000F/</fr:route>
                         <fr:title text="Logicians' Weird Habit 2">Logicians' Weird Habit 2</fr:title>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -567,7 +567,7 @@ These are not essential to understanding the core of the unit, but they might be
                       </fr:mainmatter>
                     </fr:tree>
                     <html:p>
-        For both of these, there's a case to be made that what I'm doing is out of step with what "or" or "all" mean in English (Note the use of <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">Habit 1</fr:link> there!), and there's a case to be made that it isn't.
+        For both of these, there's a case to be made that what I'm doing is out of step with what "or" or "all" mean in English (Note the use of <fr:link href="/lectures/000E/" title="Logicians' Weird Habit 1" uri="https://negation.rocks/lectures/000E/" display-uri="000E" type="local">Habit 1</fr:link> there!), and there's a case to be made that it isn't.
         But for our purposes, it's not important to settle that question.
         What <html:em>is</html:em> important is that you see precisely what I mean when I say "or" or "all", and keeping these logicians' habits in mind is key for that.
 </html:p>
@@ -579,7 +579,7 @@ These are not essential to understanding the core of the unit, but they might be
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -587,9 +587,9 @@ These are not essential to understanding the core of the unit, but they might be
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000G/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000G/</fr:uri>
                 <fr:display-uri>000G</fr:display-uri>
-                <fr:route>/000G/</fr:route>
+                <fr:route>/lectures/000G/</fr:route>
                 <fr:title text="Languages">Languages</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -602,7 +602,7 @@ These are not essential to understanding the core of the unit, but they might be
     That way, we can practice (and develop) logical techniques and approaches in a simple and controlled setting, without having to worry about the complications of real-world languages.
     (Also, it means that what we do can be applied to things that might not at first seem particuarly languagey.)
 </html:p>
-                <html:p> We will have a <fr:link href="/000H/" title="The standard language" uri="https://www.my-great-forest.net/000H/" display-uri="000H" type="local">standard language</fr:link> that will be our main language for the semester, but we will sometimes think about other languages, too. 
+                <html:p> We will have a <fr:link href="/lectures/000H/" title="The standard language" uri="https://negation.rocks/lectures/000H/" display-uri="000H" type="local">standard language</fr:link> that will be our main language for the semester, but we will sometimes think about other languages, too. 
 Each language we work with will have some set of building blocks to start with, and some methods for composing larger units out of smaller ones.
     The languages will differ from each other in terms of what the building blocks are, and what methods for putting things together they have.
     Whatever we can put together from these ingredients in a given language we'll call the <html:em>sentences</html:em> or <html:em>formulas</html:em> of the language.
@@ -615,9 +615,9 @@ Each language we work with will have some set of building blocks to start with, 
                       <fr:month>1</fr:month>
                       <fr:day>29</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/000I/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/000I/</fr:uri>
                     <fr:display-uri>000I</fr:display-uri>
-                    <fr:route>/000I/</fr:route>
+                    <fr:route>/lectures/000I/</fr:route>
                     <fr:taxon>Side note</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -642,7 +642,7 @@ Each language we work with will have some set of building blocks to start with, 
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -650,9 +650,9 @@ Each language we work with will have some set of building blocks to start with, 
                       <fr:month>1</fr:month>
                       <fr:day>29</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/000J/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/000J/</fr:uri>
                     <fr:display-uri>000J</fr:display-uri>
-                    <fr:route>/000J/</fr:route>
+                    <fr:route>/lectures/000J/</fr:route>
                     <fr:title text="Atomic formulas">Atomic formulas</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -676,7 +676,7 @@ Each language we work with will have some set of building blocks to start with, 
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -684,9 +684,9 @@ Each language we work with will have some set of building blocks to start with, 
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000K/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000K/</fr:uri>
                         <fr:display-uri>000K</fr:display-uri>
-                        <fr:route>/000K/</fr:route>
+                        <fr:route>/lectures/000K/</fr:route>
                         <fr:title text="Infinity; or, more than about six">Infinity; or, more than about six</fr:title>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -738,7 +738,7 @@ Each language we work with will have some set of building blocks to start with, 
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -746,9 +746,9 @@ Each language we work with will have some set of building blocks to start with, 
                       <fr:month>1</fr:month>
                       <fr:day>29</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/000L/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/000L/</fr:uri>
                     <fr:display-uri>000L</fr:display-uri>
-                    <fr:route>/000L/</fr:route>
+                    <fr:route>/lectures/000L/</fr:route>
                     <fr:title text="Putting more complex sentences together">Putting more complex sentences together</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -788,7 +788,7 @@ Each language we work with will have some set of building blocks to start with, 
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -796,9 +796,9 @@ Each language we work with will have some set of building blocks to start with, 
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000M/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000M/</fr:uri>
                         <fr:display-uri>000M</fr:display-uri>
-                        <fr:route>/000M/</fr:route>
+                        <fr:route>/lectures/000M/</fr:route>
                         <fr:title text="Parentheses">Parentheses</fr:title>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -814,7 +814,7 @@ Each language we work with will have some set of building blocks to start with, 
 </html:p>
                         <fr:resource hash="639ea58556e756193721b604f6eb2d00">
                           <fr:resource-content>
-                            <html:img src="/639ea58556e756193721b604f6eb2d00.svg" />
+                            <html:img src="/lectures/639ea58556e756193721b604f6eb2d00.svg" />
                           </fr:resource-content>
                           <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                           <fr:resource-source type="latex" part="body"><![CDATA[
@@ -833,7 +833,7 @@ Each language we work with will have some set of building blocks to start with, 
 </html:p>
                         <fr:resource hash="0bc7ac89c1b7eb41dcdd0ee63d11afd9">
                           <fr:resource-content>
-                            <html:img src="/0bc7ac89c1b7eb41dcdd0ee63d11afd9.svg" />
+                            <html:img src="/lectures/0bc7ac89c1b7eb41dcdd0ee63d11afd9.svg" />
                           </fr:resource-content>
                           <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                           <fr:resource-source type="latex" part="body"><![CDATA[
@@ -861,7 +861,7 @@ Each language we work with will have some set of building blocks to start with, 
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -869,9 +869,9 @@ Each language we work with will have some set of building blocks to start with, 
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000N/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000N/</fr:uri>
                         <fr:display-uri>000N</fr:display-uri>
-                        <fr:route>/000N/</fr:route>
+                        <fr:route>/lectures/000N/</fr:route>
                         <fr:title text="Another binary connective: \lor ">Another binary connective: <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex></fr:title>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -893,7 +893,7 @@ Each language we work with will have some set of building blocks to start with, 
 </html:p>
                         <fr:resource hash="92a71145b1fbdf124b4a2b86b5cc1afe">
                           <fr:resource-content>
-                            <html:img src="/92a71145b1fbdf124b4a2b86b5cc1afe.svg" />
+                            <html:img src="/lectures/92a71145b1fbdf124b4a2b86b5cc1afe.svg" />
                           </fr:resource-content>
                           <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                           <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm}             [$\lor $,for tree={s sep=10mm}
@@ -919,7 +919,7 @@ Each language we work with will have some set of building blocks to start with, 
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -927,9 +927,9 @@ Each language we work with will have some set of building blocks to start with, 
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000O/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000O/</fr:uri>
                         <fr:display-uri>000O</fr:display-uri>
-                        <fr:route>/000O/</fr:route>
+                        <fr:route>/lectures/000O/</fr:route>
                         <fr:title text="A third binary connective: \rightarrow ">A third binary connective: <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex></fr:title>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -939,7 +939,7 @@ Each language we work with will have some set of building blocks to start with, 
             And again, you can think of these as trees if you like, so that last example spells out to:</html:p>
                         <fr:resource hash="eb24852154f5b3eeaf6ad4a70ed634e1">
                           <fr:resource-content>
-                            <html:img src="/eb24852154f5b3eeaf6ad4a70ed634e1.svg" />
+                            <html:img src="/lectures/eb24852154f5b3eeaf6ad4a70ed634e1.svg" />
                           </fr:resource-content>
                           <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                           <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -969,7 +969,7 @@ Each language we work with will have some set of building blocks to start with, 
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -977,9 +977,9 @@ Each language we work with will have some set of building blocks to start with, 
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000P/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000P/</fr:uri>
                         <fr:display-uri>000P</fr:display-uri>
-                        <fr:route>/000P/</fr:route>
+                        <fr:route>/lectures/000P/</fr:route>
                         <fr:title text="Nonbinary connectives">Nonbinary connectives</fr:title>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -1006,7 +1006,7 @@ Each language we work with will have some set of building blocks to start with, 
                           <fr:frontmatter>
                             <fr:authors>
                               <fr:author>
-                                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                               </fr:author>
                             </fr:authors>
                             <fr:date>
@@ -1014,9 +1014,9 @@ Each language we work with will have some set of building blocks to start with, 
                               <fr:month>1</fr:month>
                               <fr:day>29</fr:day>
                             </fr:date>
-                            <fr:uri>https://www.my-great-forest.net/000S/</fr:uri>
+                            <fr:uri>https://negation.rocks/lectures/000S/</fr:uri>
                             <fr:display-uri>000S</fr:display-uri>
-                            <fr:route>/000S/</fr:route>
+                            <fr:route>/lectures/000S/</fr:route>
                             <fr:title text="Arity, binary, unary, nullary">Arity, binary, unary, nullary</fr:title>
                             <fr:taxon>Definition</fr:taxon>
                           </fr:frontmatter>
@@ -1052,7 +1052,7 @@ Each language we work with will have some set of building blocks to start with, 
 </html:p>
                         <fr:resource hash="75baa4ea9a84e46f304522680253acf1">
                           <fr:resource-content>
-                            <html:img src="/75baa4ea9a84e46f304522680253acf1.svg" />
+                            <html:img src="/lectures/75baa4ea9a84e46f304522680253acf1.svg" />
                           </fr:resource-content>
                           <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                           <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -1066,7 +1066,7 @@ Each language we work with will have some set of building blocks to start with, 
                         </fr:resource>
                         <fr:resource hash="bc0491fd72426f3979fdba4c5e91412f">
                           <fr:resource-content>
-                            <html:img src="/bc0491fd72426f3979fdba4c5e91412f.svg" />
+                            <html:img src="/lectures/bc0491fd72426f3979fdba4c5e91412f.svg" />
                           </fr:resource-content>
                           <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                           <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -1100,7 +1100,7 @@ And you'll need to include parentheses when what you mean is <fr:tex display="in
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -1108,9 +1108,9 @@ And you'll need to include parentheses when what you mean is <fr:tex display="in
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000Q/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000Q/</fr:uri>
                         <fr:display-uri>000Q</fr:display-uri>
-                        <fr:route>/000Q/</fr:route>
+                        <fr:route>/lectures/000Q/</fr:route>
                         <fr:title text="Nullary connectives">Nullary connectives</fr:title>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -1137,7 +1137,7 @@ Since it's a nullary connective, it too is already a sentence.
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -1145,9 +1145,9 @@ Since it's a nullary connective, it too is already a sentence.
                       <fr:month>1</fr:month>
                       <fr:day>29</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/000R/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/000R/</fr:uri>
                     <fr:display-uri>000R</fr:display-uri>
-                    <fr:route>/000R/</fr:route>
+                    <fr:route>/lectures/000R/</fr:route>
                     <fr:title text="Talking about sentences">Talking about sentences</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -1166,7 +1166,7 @@ Since it's a nullary connective, it too is already a sentence.
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -1174,9 +1174,9 @@ Since it's a nullary connective, it too is already a sentence.
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000H/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000H/</fr:uri>
                         <fr:display-uri>000H</fr:display-uri>
-                        <fr:route>/000H/</fr:route>
+                        <fr:route>/lectures/000H/</fr:route>
                         <fr:title text="The standard language">The standard language</fr:title>
                         <fr:taxon>Definition</fr:taxon>
                       </fr:frontmatter>
@@ -1195,7 +1195,7 @@ Our <html:strong>standard language</html:strong> for this semester has:
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -1203,15 +1203,15 @@ Our <html:strong>standard language</html:strong> for this semester has:
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000T/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000T/</fr:uri>
                         <fr:display-uri>000T</fr:display-uri>
-                        <fr:route>/000T/</fr:route>
+                        <fr:route>/lectures/000T/</fr:route>
                         <fr:title text="Atomic vs compound sentences">Atomic vs compound sentences</fr:title>
                       </fr:frontmatter>
                       <fr:mainmatter>
                         <html:p>            We already know about atomic sentences.
             A compound sentence is just any sentence that isn't atomic:
-            <fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>1</fr:month><fr:day>29</fr:day></fr:date><fr:uri>https://www.my-great-forest.net/000U/</fr:uri><fr:display-uri>000U</fr:display-uri><fr:route>/000U/</fr:route><fr:title text="Compound sentence">Compound sentence</fr:title><fr:taxon>Definition</fr:taxon></fr:frontmatter><fr:mainmatter><html:p>A <html:strong>compound sentence</html:strong> is any sentence that is not atomic.</html:p></fr:mainmatter></fr:tree>
+            <fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>1</fr:month><fr:day>29</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/000U/</fr:uri><fr:display-uri>000U</fr:display-uri><fr:route>/lectures/000U/</fr:route><fr:title text="Compound sentence">Compound sentence</fr:title><fr:taxon>Definition</fr:taxon></fr:frontmatter><fr:mainmatter><html:p>A <html:strong>compound sentence</html:strong> is any sentence that is not atomic.</html:p></fr:mainmatter></fr:tree>
             So sentences like <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>, or <fr:tex display="inline"><![CDATA[\neg  r]]></fr:tex>, or <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> are all compound sentences.
             Another way to think of it is: a compound sentence is any sentence that contains a connective.
 </html:p>
@@ -1221,7 +1221,7 @@ Our <html:strong>standard language</html:strong> for this semester has:
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -1229,9 +1229,9 @@ Our <html:strong>standard language</html:strong> for this semester has:
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000V/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000V/</fr:uri>
                         <fr:display-uri>000V</fr:display-uri>
-                        <fr:route>/000V/</fr:route>
+                        <fr:route>/lectures/000V/</fr:route>
                         <fr:title text="Main connectives">Main connectives</fr:title>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -1247,7 +1247,7 @@ Our <html:strong>standard language</html:strong> for this semester has:
 </html:p>
                         <fr:resource hash="e5d213388a36c37e6bb48abdc0e69cf5">
                           <fr:resource-content>
-                            <html:img src="/e5d213388a36c37e6bb48abdc0e69cf5.svg" />
+                            <html:img src="/lectures/e5d213388a36c37e6bb48abdc0e69cf5.svg" />
                           </fr:resource-content>
                           <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                           <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -1270,7 +1270,7 @@ Our <html:strong>standard language</html:strong> for this semester has:
 </html:p>
                         <fr:resource hash="b148428602240ab64793b14806d6db6d">
                           <fr:resource-content>
-                            <html:img src="/b148428602240ab64793b14806d6db6d.svg" />
+                            <html:img src="/lectures/b148428602240ab64793b14806d6db6d.svg" />
                           </fr:resource-content>
                           <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                           <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -1294,7 +1294,7 @@ Our <html:strong>standard language</html:strong> for this semester has:
                           <fr:frontmatter>
                             <fr:authors>
                               <fr:author>
-                                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                               </fr:author>
                             </fr:authors>
                             <fr:date>
@@ -1302,9 +1302,9 @@ Our <html:strong>standard language</html:strong> for this semester has:
                               <fr:month>1</fr:month>
                               <fr:day>29</fr:day>
                             </fr:date>
-                            <fr:uri>https://www.my-great-forest.net/000W/</fr:uri>
+                            <fr:uri>https://negation.rocks/lectures/000W/</fr:uri>
                             <fr:display-uri>000W</fr:display-uri>
-                            <fr:route>/000W/</fr:route>
+                            <fr:route>/lectures/000W/</fr:route>
                             <fr:title text="Main connectives">Main connectives</fr:title>
                             <fr:taxon>Definition</fr:taxon>
                           </fr:frontmatter>
@@ -1327,7 +1327,7 @@ So a <html:strong>conjunction</html:strong> is a sentence whose main connective 
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -1335,9 +1335,9 @@ So a <html:strong>conjunction</html:strong> is a sentence whose main connective 
                           <fr:month>1</fr:month>
                           <fr:day>29</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/000X/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/000X/</fr:uri>
                         <fr:display-uri>000X</fr:display-uri>
-                        <fr:route>/000X/</fr:route>
+                        <fr:route>/lectures/000X/</fr:route>
                         <fr:title text="Compounds and components">Compounds and components</fr:title>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -1365,7 +1365,7 @@ So a <html:strong>conjunction</html:strong> is a sentence whose main connective 
                           <fr:frontmatter>
                             <fr:authors>
                               <fr:author>
-                                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                               </fr:author>
                             </fr:authors>
                             <fr:date>
@@ -1373,9 +1373,9 @@ So a <html:strong>conjunction</html:strong> is a sentence whose main connective 
                               <fr:month>1</fr:month>
                               <fr:day>29</fr:day>
                             </fr:date>
-                            <fr:uri>https://www.my-great-forest.net/000Y/</fr:uri>
+                            <fr:uri>https://negation.rocks/lectures/000Y/</fr:uri>
                             <fr:display-uri>000Y</fr:display-uri>
-                            <fr:route>/000Y/</fr:route>
+                            <fr:route>/lectures/000Y/</fr:route>
                             <fr:title text="Components">Components</fr:title>
                             <fr:taxon>Definition</fr:taxon>
                           </fr:frontmatter>
@@ -1393,7 +1393,7 @@ When a sentence's main connective is binary, it has two components, which are ca
                           <fr:frontmatter>
                             <fr:authors>
                               <fr:author>
-                                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                               </fr:author>
                             </fr:authors>
                             <fr:date>
@@ -1401,9 +1401,9 @@ When a sentence's main connective is binary, it has two components, which are ca
                               <fr:month>1</fr:month>
                               <fr:day>29</fr:day>
                             </fr:date>
-                            <fr:uri>https://www.my-great-forest.net/000Z/</fr:uri>
+                            <fr:uri>https://negation.rocks/lectures/000Z/</fr:uri>
                             <fr:display-uri>000Z</fr:display-uri>
-                            <fr:route>/000Z/</fr:route>
+                            <fr:route>/lectures/000Z/</fr:route>
                             <fr:title text="Special names for components">Special names for components</fr:title>
                             <fr:taxon>Definition</fr:taxon>
                           </fr:frontmatter>
@@ -1428,7 +1428,7 @@ Depending on the main connective of a sentence, there are special names sometime
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -1436,9 +1436,9 @@ Depending on the main connective of a sentence, there are special names sometime
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0010/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0010/</fr:uri>
                 <fr:display-uri>0010</fr:display-uri>
-                <fr:route>/0010/</fr:route>
+                <fr:route>/lectures/0010/</fr:route>
                 <fr:title text="Summing up">Summing up</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>

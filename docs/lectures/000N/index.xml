@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>1</fr:month>
       <fr:day>29</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/000N/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/000N/</fr:uri>
     <fr:display-uri>000N</fr:display-uri>
-    <fr:route>/000N/</fr:route>
+    <fr:route>/lectures/000N/</fr:route>
     <fr:title text="Another binary connective: \lor ">Another binary connective: <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex></fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -36,7 +36,7 @@
 </html:p>
     <fr:resource hash="92a71145b1fbdf124b4a2b86b5cc1afe">
       <fr:resource-content>
-        <html:img src="/92a71145b1fbdf124b4a2b86b5cc1afe.svg" />
+        <html:img src="/lectures/92a71145b1fbdf124b4a2b86b5cc1afe.svg" />
       </fr:resource-content>
       <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
       <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm}             [$\lor $,for tree={s sep=10mm}
@@ -75,7 +75,7 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -83,9 +83,9 @@
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/000L/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/000L/</fr:uri>
             <fr:display-uri>000L</fr:display-uri>
-            <fr:route>/000L/</fr:route>
+            <fr:route>/lectures/000L/</fr:route>
             <fr:title text="Putting more complex sentences together">Putting more complex sentences together</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -125,7 +125,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -133,9 +133,9 @@
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000M/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000M/</fr:uri>
                 <fr:display-uri>000M</fr:display-uri>
-                <fr:route>/000M/</fr:route>
+                <fr:route>/lectures/000M/</fr:route>
                 <fr:title text="Parentheses">Parentheses</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -151,7 +151,7 @@
 </html:p>
                 <fr:resource hash="639ea58556e756193721b604f6eb2d00">
                   <fr:resource-content>
-                    <html:img src="/639ea58556e756193721b604f6eb2d00.svg" />
+                    <html:img src="/lectures/639ea58556e756193721b604f6eb2d00.svg" />
                   </fr:resource-content>
                   <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                   <fr:resource-source type="latex" part="body"><![CDATA[
@@ -170,7 +170,7 @@
 </html:p>
                 <fr:resource hash="0bc7ac89c1b7eb41dcdd0ee63d11afd9">
                   <fr:resource-content>
-                    <html:img src="/0bc7ac89c1b7eb41dcdd0ee63d11afd9.svg" />
+                    <html:img src="/lectures/0bc7ac89c1b7eb41dcdd0ee63d11afd9.svg" />
                   </fr:resource-content>
                   <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                   <fr:resource-source type="latex" part="body"><![CDATA[
@@ -198,7 +198,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -206,9 +206,9 @@
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000N/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000N/</fr:uri>
                 <fr:display-uri>000N</fr:display-uri>
-                <fr:route>/000N/</fr:route>
+                <fr:route>/lectures/000N/</fr:route>
                 <fr:title text="Another binary connective: \lor ">Another binary connective: <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex></fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -230,7 +230,7 @@
 </html:p>
                 <fr:resource hash="92a71145b1fbdf124b4a2b86b5cc1afe">
                   <fr:resource-content>
-                    <html:img src="/92a71145b1fbdf124b4a2b86b5cc1afe.svg" />
+                    <html:img src="/lectures/92a71145b1fbdf124b4a2b86b5cc1afe.svg" />
                   </fr:resource-content>
                   <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                   <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm}             [$\lor $,for tree={s sep=10mm}
@@ -256,7 +256,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -264,9 +264,9 @@
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000O/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000O/</fr:uri>
                 <fr:display-uri>000O</fr:display-uri>
-                <fr:route>/000O/</fr:route>
+                <fr:route>/lectures/000O/</fr:route>
                 <fr:title text="A third binary connective: \rightarrow ">A third binary connective: <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex></fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -276,7 +276,7 @@
             And again, you can think of these as trees if you like, so that last example spells out to:</html:p>
                 <fr:resource hash="eb24852154f5b3eeaf6ad4a70ed634e1">
                   <fr:resource-content>
-                    <html:img src="/eb24852154f5b3eeaf6ad4a70ed634e1.svg" />
+                    <html:img src="/lectures/eb24852154f5b3eeaf6ad4a70ed634e1.svg" />
                   </fr:resource-content>
                   <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                   <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -306,7 +306,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -314,9 +314,9 @@
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000P/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000P/</fr:uri>
                 <fr:display-uri>000P</fr:display-uri>
-                <fr:route>/000P/</fr:route>
+                <fr:route>/lectures/000P/</fr:route>
                 <fr:title text="Nonbinary connectives">Nonbinary connectives</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -343,7 +343,7 @@
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -351,9 +351,9 @@
                       <fr:month>1</fr:month>
                       <fr:day>29</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/000S/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/000S/</fr:uri>
                     <fr:display-uri>000S</fr:display-uri>
-                    <fr:route>/000S/</fr:route>
+                    <fr:route>/lectures/000S/</fr:route>
                     <fr:title text="Arity, binary, unary, nullary">Arity, binary, unary, nullary</fr:title>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
@@ -389,7 +389,7 @@
 </html:p>
                 <fr:resource hash="75baa4ea9a84e46f304522680253acf1">
                   <fr:resource-content>
-                    <html:img src="/75baa4ea9a84e46f304522680253acf1.svg" />
+                    <html:img src="/lectures/75baa4ea9a84e46f304522680253acf1.svg" />
                   </fr:resource-content>
                   <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                   <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -403,7 +403,7 @@
                 </fr:resource>
                 <fr:resource hash="bc0491fd72426f3979fdba4c5e91412f">
                   <fr:resource-content>
-                    <html:img src="/bc0491fd72426f3979fdba4c5e91412f.svg" />
+                    <html:img src="/lectures/bc0491fd72426f3979fdba4c5e91412f.svg" />
                   </fr:resource-content>
                   <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
                   <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -437,7 +437,7 @@ And you'll need to include parentheses when what you mean is <fr:tex display="in
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -445,9 +445,9 @@ And you'll need to include parentheses when what you mean is <fr:tex display="in
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000Q/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000Q/</fr:uri>
                 <fr:display-uri>000Q</fr:display-uri>
-                <fr:route>/000Q/</fr:route>
+                <fr:route>/lectures/000Q/</fr:route>
                 <fr:title text="Nullary connectives">Nullary connectives</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>

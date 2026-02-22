@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>17</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/002X/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/002X/</fr:uri>
     <fr:display-uri>002X</fr:display-uri>
-    <fr:route>/002X/</fr:route>
+    <fr:route>/lectures/002X/</fr:route>
     <fr:title text="Valid and invalid">Valid and invalid</fr:title>
     <fr:taxon>Definition</fr:taxon>
   </fr:frontmatter>
@@ -39,7 +39,7 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -47,9 +47,9 @@
               <fr:month>2</fr:month>
               <fr:day>17</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/002W/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/002W/</fr:uri>
             <fr:display-uri>002W</fr:display-uri>
-            <fr:route>/002W/</fr:route>
+            <fr:route>/lectures/002W/</fr:route>
             <fr:title text="Validity and invalidity">Validity and invalidity</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -58,7 +58,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -66,9 +66,9 @@
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002X/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002X/</fr:uri>
                 <fr:display-uri>002X</fr:display-uri>
-                <fr:route>/002X/</fr:route>
+                <fr:route>/lectures/002X/</fr:route>
                 <fr:title text="Valid and invalid">Valid and invalid</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="true" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="true" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:contributor>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:contributor>
     </fr:authors>
-    <fr:uri>https://www.my-great-forest.net/index/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/index/</fr:uri>
     <fr:display-uri>index</fr:display-uri>
-    <fr:route>/index/</fr:route>
+    <fr:route>/lectures/index/</fr:route>
     <fr:title text="The Binchicken Lectures">The Binchicken Lectures</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -18,7 +18,7 @@
       <fr:frontmatter>
         <fr:authors>
           <fr:author>
-            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
           </fr:author>
         </fr:authors>
         <fr:date>
@@ -26,19 +26,19 @@
           <fr:month>11</fr:month>
           <fr:day>29</fr:day>
         </fr:date>
-        <fr:uri>https://www.my-great-forest.net/0004/</fr:uri>
+        <fr:uri>https://negation.rocks/lectures/0004/</fr:uri>
         <fr:display-uri>0004</fr:display-uri>
-        <fr:route>/0004/</fr:route>
+        <fr:route>/lectures/0004/</fr:route>
         <fr:title text="Table of Contents">Table of Contents</fr:title>
       </fr:frontmatter>
       <fr:mainmatter>
-        <html:ul><html:li><fr:link href="/0002/" title="About this unit" uri="https://www.my-great-forest.net/0002/" display-uri="0002" type="local">About this unit</fr:link></html:li>
+        <html:ul><html:li><fr:link href="/lectures/0002/" title="About this unit" uri="https://negation.rocks/lectures/0002/" display-uri="0002" type="local">About this unit</fr:link></html:li>
   <html:li>Section A: Preliminaries
-  <html:ul><html:li><fr:link href="/0005/" title="Lecture 1: Introduction and languages" uri="https://www.my-great-forest.net/0005/" display-uri="0005" type="local">Lecture 1: Introduction and languages</fr:link></html:li>
-    <html:li><fr:link href="/0011/" title="Lecture 2: Functions and substitutions" uri="https://www.my-great-forest.net/0011/" display-uri="0011" type="local">Lecture 2: Functions and substitutions</fr:link></html:li>
-    <html:li><fr:link href="/002H/" title="Lecture 3: Sets, arguments, and logics" uri="https://www.my-great-forest.net/002H/" display-uri="002H" type="local">Lecture 3: Sets, arguments, and logics</fr:link></html:li></html:ul></html:li>
+  <html:ul><html:li><fr:link href="/lectures/0005/" title="Lecture 1: Introduction and languages" uri="https://negation.rocks/lectures/0005/" display-uri="0005" type="local">Lecture 1: Introduction and languages</fr:link></html:li>
+    <html:li><fr:link href="/lectures/0011/" title="Lecture 2: Functions and substitutions" uri="https://negation.rocks/lectures/0011/" display-uri="0011" type="local">Lecture 2: Functions and substitutions</fr:link></html:li>
+    <html:li><fr:link href="/lectures/002H/" title="Lecture 3: Sets, arguments, and logics" uri="https://negation.rocks/lectures/002H/" display-uri="002H" type="local">Lecture 3: Sets, arguments, and logics</fr:link></html:li></html:ul></html:li>
   <html:li>Section B: Structures and matrices
-  <html:ul><html:li><fr:link href="/0034/" title="Lecture 4: Structures" uri="https://www.my-great-forest.net/0034/" display-uri="0034" type="local">Lecture 4: Structures</fr:link></html:li>
+  <html:ul><html:li><fr:link href="/lectures/0034/" title="Lecture 4: Structures" uri="https://negation.rocks/lectures/0034/" display-uri="0034" type="local">Lecture 4: Structures</fr:link></html:li>
     <html:li>[Lecture 5: Matrices and counterexamples]</html:li>
     <html:li>[Lecture 6: Using matrices to compare logics]</html:li>
     <html:li>[Lecture 7: The limits of matrices]</html:li></html:ul></html:li>

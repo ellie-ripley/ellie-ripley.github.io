@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>10</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/0023/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/0023/</fr:uri>
     <fr:display-uri>0023</fr:display-uri>
-    <fr:route>/0023/</fr:route>
+    <fr:route>/lectures/0023/</fr:route>
     <fr:title text="I axioms"><html:strong>I</html:strong> axioms</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -63,7 +63,7 @@ And so on.</html:p>
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -71,9 +71,9 @@ And so on.</html:p>
               <fr:month>2</fr:month>
               <fr:day>5</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/001Y/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/001Y/</fr:uri>
             <fr:display-uri>001Y</fr:display-uri>
-            <fr:route>/001Y/</fr:route>
+            <fr:route>/lectures/001Y/</fr:route>
             <fr:title text="Axioms">Axioms</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -92,7 +92,7 @@ And so on.
 So we don't usually want to have <fr:tex display="inline"><![CDATA[p]]></fr:tex> as a theorem: not just any claim can be proved! 
 </html:p>
             <html:p>All the axiomatic systems we'll look at today have <html:em>infinitely many</html:em> axioms.
-That's <fr:link href="/000K/" title="Infinity; or, more than about six" uri="https://www.my-great-forest.net/000K/" display-uri="000K" type="local">more than six</fr:link>, so I won't try to list all the axioms individually!
+That's <fr:link href="/lectures/000K/" title="Infinity; or, more than about six" uri="https://negation.rocks/lectures/000K/" display-uri="000K" type="local">more than six</fr:link>, so I won't try to list all the axioms individually!
 Instead, I'll look in turn at each of four <html:em>forms</html:em> of sentence, which I'll call <html:strong>I</html:strong>, <html:strong>K</html:strong>, <html:strong>S</html:strong>, and <html:strong>P</html:strong>.
 I'll then use these forms to talk about three different proof systems: <html:strong>SK</html:strong>, <html:strong>SKI</html:strong>, and <html:strong>SKIP</html:strong>.</html:p>
             <html:p>As we look at these forms, I'll try to give some idea of <html:em>why</html:em> someone might be willing to take sentences of each form as given.
@@ -111,7 +111,7 @@ In general, whenever parentheses would pile up <html:em>to the right</html:em>, 
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -119,9 +119,9 @@ In general, whenever parentheses would pile up <html:em>to the right</html:em>, 
                   <fr:month>2</fr:month>
                   <fr:day>10</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0023/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0023/</fr:uri>
                 <fr:display-uri>0023</fr:display-uri>
-                <fr:route>/0023/</fr:route>
+                <fr:route>/lectures/0023/</fr:route>
                 <fr:title text="I axioms"><html:strong>I</html:strong> axioms</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -157,7 +157,7 @@ And so on.</html:p>
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -165,9 +165,9 @@ And so on.</html:p>
                   <fr:month>2</fr:month>
                   <fr:day>6</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0020/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0020/</fr:uri>
                 <fr:display-uri>0020</fr:display-uri>
-                <fr:route>/0020/</fr:route>
+                <fr:route>/lectures/0020/</fr:route>
                 <fr:title text="K axioms">K axioms</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -208,7 +208,7 @@ Again, this can seem reasonable, at least if when we are given some claim we tre
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -216,9 +216,9 @@ Again, this can seem reasonable, at least if when we are given some claim we tre
                   <fr:month>2</fr:month>
                   <fr:day>10</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0024/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0024/</fr:uri>
                 <fr:display-uri>0024</fr:display-uri>
-                <fr:route>/0024/</fr:route>
+                <fr:route>/lectures/0024/</fr:route>
                 <fr:title text="S axioms"><html:strong>S</html:strong> axioms</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -236,7 +236,7 @@ That pondering might look like this:
 </html:p>
                 <html:p>
 "If I take <fr:tex display="inline"><![CDATA[B \rightarrow  C]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> together, I should be able to conclude <fr:tex display="inline"><![CDATA[C]]></fr:tex>.
-[<fr:link href="/001Z/" title="A rule" uri="https://www.my-great-forest.net/001Z/" display-uri="001Z" type="local">We'll come back to that principle in a moment!</fr:link>]
+[<fr:link href="/lectures/001Z/" title="A rule" uri="https://negation.rocks/lectures/001Z/" display-uri="001Z" type="local">We'll come back to that principle in a moment!</fr:link>]
 So if <fr:tex display="inline"><![CDATA[A]]></fr:tex> suffices for <fr:tex display="inline"><![CDATA[B \rightarrow  C]]></fr:tex>, then if <fr:tex display="inline"><![CDATA[A]]></fr:tex> also suffices for <fr:tex display="inline"><![CDATA[B]]></fr:tex>, then <fr:tex display="inline"><![CDATA[A]]></fr:tex> suffices for <fr:tex display="inline"><![CDATA[C]]></fr:tex> as well.
 That is, if <fr:tex display="inline"><![CDATA[A \rightarrow  B \rightarrow  C]]></fr:tex>, then if <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex>, then <fr:tex display="inline"><![CDATA[A \rightarrow  C]]></fr:tex>.
 That is, <fr:tex display="inline"><![CDATA[(A \rightarrow  B \rightarrow  C) \rightarrow  (A \rightarrow  B) \rightarrow  A \rightarrow  C]]></fr:tex>.
@@ -249,7 +249,7 @@ That is, <fr:tex display="inline"><![CDATA[(A \rightarrow  B \rightarrow  C) \ri
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -257,9 +257,9 @@ That is, <fr:tex display="inline"><![CDATA[(A \rightarrow  B \rightarrow  C) \ri
                   <fr:month>2</fr:month>
                   <fr:day>16</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0027/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0027/</fr:uri>
                 <fr:display-uri>0027</fr:display-uri>
-                <fr:route>/0027/</fr:route>
+                <fr:route>/lectures/0027/</fr:route>
                 <fr:title text="P axioms"><html:strong>P</html:strong> axioms</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -289,7 +289,7 @@ For now, just here it is.</html:p>
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -297,9 +297,9 @@ For now, just here it is.</html:p>
                   <fr:month>2</fr:month>
                   <fr:day>13</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0026/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0026/</fr:uri>
                 <fr:display-uri>0026</fr:display-uri>
-                <fr:route>/0026/</fr:route>
+                <fr:route>/lectures/0026/</fr:route>
                 <fr:title text="Why &quot;I&quot;, &quot;K&quot;, &quot;S&quot;, &quot;P&quot;?">Why "<html:strong>I</html:strong>", "<html:strong>K</html:strong>", "<html:strong>S</html:strong>", "<html:strong>P</html:strong>"?</fr:title>
                 <fr:taxon>Side note</fr:taxon>
               </fr:frontmatter>

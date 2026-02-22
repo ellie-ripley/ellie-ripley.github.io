@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>5</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/001T/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/001T/</fr:uri>
     <fr:display-uri>001T</fr:display-uri>
-    <fr:route>/001T/</fr:route>
+    <fr:route>/lectures/001T/</fr:route>
     <fr:title text="Euclid">Euclid</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -49,7 +49,7 @@ He's thus a very different sort of case from Erasistratus.</html:p>
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -57,9 +57,9 @@ He's thus a very different sort of case from Erasistratus.</html:p>
               <fr:month>2</fr:month>
               <fr:day>5</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/001R/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/001R/</fr:uri>
             <fr:display-uri>001R</fr:display-uri>
-            <fr:route>/001R/</fr:route>
+            <fr:route>/lectures/001R/</fr:route>
             <fr:title text="Ancient proofs">Ancient proofs</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -102,7 +102,7 @@ Both lived in Alexandria around 300 BCE, and both became known for their scholar
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -110,9 +110,9 @@ Both lived in Alexandria around 300 BCE, and both became known for their scholar
                   <fr:month>2</fr:month>
                   <fr:day>5</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/001S/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/001S/</fr:uri>
                 <fr:display-uri>001S</fr:display-uri>
-                <fr:route>/001S/</fr:route>
+                <fr:route>/lectures/001S/</fr:route>
                 <fr:title text="Erasistratus">Erasistratus</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -139,7 +139,7 @@ But all this evidence still misled him, even on the very topics of his central c
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -147,9 +147,9 @@ But all this evidence still misled him, even on the very topics of his central c
                   <fr:month>2</fr:month>
                   <fr:day>5</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/001T/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/001T/</fr:uri>
                 <fr:display-uri>001T</fr:display-uri>
-                <fr:route>/001T/</fr:route>
+                <fr:route>/lectures/001T/</fr:route>
                 <fr:title text="Euclid">Euclid</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -171,7 +171,7 @@ He's thus a very different sort of case from Erasistratus.</html:p>
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -179,9 +179,9 @@ He's thus a very different sort of case from Erasistratus.</html:p>
                   <fr:month>2</fr:month>
                   <fr:day>5</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/001U/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/001U/</fr:uri>
                 <fr:display-uri>001U</fr:display-uri>
-                <fr:route>/001U/</fr:route>
+                <fr:route>/lectures/001U/</fr:route>
                 <fr:title text="What's all this about?">What's all this about?</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -219,7 +219,7 @@ As far as I know, there is not a single other area of human inquiry this is true
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -227,9 +227,9 @@ As far as I know, there is not a single other area of human inquiry this is true
                   <fr:month>2</fr:month>
                   <fr:day>5</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/001V/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/001V/</fr:uri>
                 <fr:display-uri>001V</fr:display-uri>
-                <fr:route>/001V/</fr:route>
+                <fr:route>/lectures/001V/</fr:route>
                 <fr:title text="It's not omniscience, and it's not infallibility">It's not omniscience, and it's not infallibility</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -266,7 +266,7 @@ How can this be---and why is it just maths?</html:p>
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -274,9 +274,9 @@ How can this be---and why is it just maths?</html:p>
                   <fr:month>2</fr:month>
                   <fr:day>5</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/001W/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/001W/</fr:uri>
                 <fr:display-uri>001W</fr:display-uri>
-                <fr:route>/001W/</fr:route>
+                <fr:route>/lectures/001W/</fr:route>
                 <fr:title text="It's proof!">It's proof!</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>

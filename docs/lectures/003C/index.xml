@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>21</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/003C/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/003C/</fr:uri>
     <fr:display-uri>003C</fr:display-uri>
-    <fr:route>/003C/</fr:route>
+    <fr:route>/lectures/003C/</fr:route>
     <fr:taxon>Side note</fr:taxon>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -27,7 +27,7 @@
     But if you happen across certain philosophy from around that time period, you should be aware that many authors did in fact believe this, despite the obvious problems.
 </html:p>
     <html:p>
-If you're interested in learning more about this, I recommend the book <fr:link href="/003D/" title="https://www.my-great-forest.net/003D/" uri="https://www.my-great-forest.net/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
+If you're interested in learning more about this, I recommend the book <fr:link href="/lectures/003D/" title="https://negation.rocks/lectures/003D/" uri="https://negation.rocks/lectures/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
 Note that this was written during the period in question!
 It's good fun, and it gives a particularly vitriolic (and particularly Australian) takedown of what was at the time practically an accepted orthodoxy. 
 </html:p>
@@ -43,7 +43,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -51,9 +51,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
               <fr:month>2</fr:month>
               <fr:day>21</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/003D/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/003D/</fr:uri>
             <fr:display-uri>003D</fr:display-uri>
-            <fr:route>/003D/</fr:route>
+            <fr:route>/lectures/003D/</fr:route>
             <fr:taxon>Reference</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -72,7 +72,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -80,9 +80,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
               <fr:month>2</fr:month>
               <fr:day>21</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/003B/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/003B/</fr:uri>
             <fr:display-uri>003B</fr:display-uri>
-            <fr:route>/003B/</fr:route>
+            <fr:route>/lectures/003B/</fr:route>
             <fr:title text="Boolean valuations: implication">Boolean valuations: implication</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -95,7 +95,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -103,9 +103,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003M/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003M/</fr:uri>
                 <fr:display-uri>003M</fr:display-uri>
-                <fr:route>/003M/</fr:route>
+                <fr:route>/lectures/003M/</fr:route>
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:table style="border-collapse: collapse;">
@@ -148,7 +148,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -156,9 +156,9 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003C/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003C/</fr:uri>
                 <fr:display-uri>003C</fr:display-uri>
-                <fr:route>/003C/</fr:route>
+                <fr:route>/lectures/003C/</fr:route>
                 <fr:taxon>Side note</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -171,7 +171,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
     But if you happen across certain philosophy from around that time period, you should be aware that many authors did in fact believe this, despite the obvious problems.
 </html:p>
                 <html:p>
-If you're interested in learning more about this, I recommend the book <fr:link href="/003D/" title="https://www.my-great-forest.net/003D/" uri="https://www.my-great-forest.net/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
+If you're interested in learning more about this, I recommend the book <fr:link href="/lectures/003D/" title="https://negation.rocks/lectures/003D/" uri="https://negation.rocks/lectures/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
 Note that this was written during the period in question!
 It's good fun, and it gives a particularly vitriolic (and particularly Australian) takedown of what was at the time practically an accepted orthodoxy. 
 </html:p>

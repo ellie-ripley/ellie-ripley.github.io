@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>17</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/002S/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/002S/</fr:uri>
     <fr:display-uri>002S</fr:display-uri>
-    <fr:route>/002S/</fr:route>
+    <fr:route>/lectures/002S/</fr:route>
     <fr:title text="Do we have to use sets for premises?">Do we have to use sets for premises?</fr:title>
     <fr:taxon>Side note</fr:taxon>
   </fr:frontmatter>
@@ -41,7 +41,7 @@ But sets give us plenty to work with already for this semester, so we'll stick w
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -49,9 +49,9 @@ But sets give us plenty to work with already for this semester, so we'll stick w
               <fr:month>2</fr:month>
               <fr:day>17</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/002Q/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/002Q/</fr:uri>
             <fr:display-uri>002Q</fr:display-uri>
-            <fr:route>/002Q/</fr:route>
+            <fr:route>/lectures/002Q/</fr:route>
             <fr:title text="Arguments">Arguments</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -68,7 +68,7 @@ Just like our logical "languages" have something in common with real languages, 
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -76,9 +76,9 @@ Just like our logical "languages" have something in common with real languages, 
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002R/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002R/</fr:uri>
                 <fr:display-uri>002R</fr:display-uri>
-                <fr:route>/002R/</fr:route>
+                <fr:route>/lectures/002R/</fr:route>
                 <fr:title text="Argument">Argument</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>
@@ -97,7 +97,7 @@ So the argument <fr:tex display="inline"><![CDATA[p \land  q, \neg  r \;/\; \neg
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -105,9 +105,9 @@ So the argument <fr:tex display="inline"><![CDATA[p \land  q, \neg  r \;/\; \neg
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002S/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002S/</fr:uri>
                 <fr:display-uri>002S</fr:display-uri>
-                <fr:route>/002S/</fr:route>
+                <fr:route>/lectures/002S/</fr:route>
                 <fr:title text="Do we have to use sets for premises?">Do we have to use sets for premises?</fr:title>
                 <fr:taxon>Side note</fr:taxon>
               </fr:frontmatter>
@@ -129,7 +129,7 @@ But sets give us plenty to work with already for this semester, so we'll stick w
             <html:p>         You might worry about how we're going to handle arguments with infinitely many premises.
         After all, I certainly can't list out infinitely many premises, so I won't be able to write out any such argument in full.
         But again, this isn't really a problem with infinity: just a big finite argument would already be too much to write out in full.
-        We'll deal with this in <fr:link href="/000K/" title="Infinity; or, more than about six" uri="https://www.my-great-forest.net/000K/" display-uri="000K" type="local">the same old way we've dealt with other infinities</fr:link>: by not worrying about it.
+        We'll deal with this in <fr:link href="/lectures/000K/" title="Infinity; or, more than about six" uri="https://negation.rocks/lectures/000K/" display-uri="000K" type="local">the same old way we've dealt with other infinities</fr:link>: by not worrying about it.
         There are arguments with infinitely many premises; they're out there, they're harmless, and they mostly won't occupy us.
 </html:p>
           </fr:mainmatter>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>16</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/0029/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/0029/</fr:uri>
     <fr:display-uri>0029</fr:display-uri>
-    <fr:route>/0029/</fr:route>
+    <fr:route>/lectures/0029/</fr:route>
     <fr:title text="proof of, proves">proof of, proves</fr:title>
     <fr:taxon>Definition</fr:taxon>
   </fr:frontmatter>
@@ -39,7 +39,7 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -47,9 +47,9 @@
               <fr:month>2</fr:month>
               <fr:day>16</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/002A/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/002A/</fr:uri>
             <fr:display-uri>002A</fr:display-uri>
-            <fr:route>/002A/</fr:route>
+            <fr:route>/lectures/002A/</fr:route>
             <fr:title text="Writing axiomatic proofs">Writing axiomatic proofs</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -61,7 +61,7 @@ Let me give you an example proof in here, and then we'll discuss how it works:
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -69,9 +69,9 @@ Let me give you an example proof in here, and then we'll discuss how it works:
                   <fr:month>2</fr:month>
                   <fr:day>16</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0028/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0028/</fr:uri>
                 <fr:display-uri>0028</fr:display-uri>
-                <fr:route>/0028/</fr:route>
+                <fr:route>/lectures/0028/</fr:route>
                 <fr:title text="first example proof">first example proof</fr:title>
                 <fr:taxon>Example</fr:taxon>
               </fr:frontmatter>
@@ -130,7 +130,7 @@ They count upwards; there's nothing special going on there.</html:p>
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -138,9 +138,9 @@ They count upwards; there's nothing special going on there.</html:p>
                   <fr:month>2</fr:month>
                   <fr:day>16</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0029/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0029/</fr:uri>
                 <fr:display-uri>0029</fr:display-uri>
-                <fr:route>/0029/</fr:route>
+                <fr:route>/lectures/0029/</fr:route>
                 <fr:title text="proof of, proves">proof of, proves</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>
@@ -156,7 +156,7 @@ It is a different proof from this next example, which is also a proof of that sa
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -164,9 +164,9 @@ It is a different proof from this next example, which is also a proof of that sa
                   <fr:month>2</fr:month>
                   <fr:day>16</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002F/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002F/</fr:uri>
                 <fr:display-uri>002F</fr:display-uri>
-                <fr:route>/002F/</fr:route>
+                <fr:route>/lectures/002F/</fr:route>
                 <fr:title text="tiny example proof">tiny example proof</fr:title>
                 <fr:taxon>Example</fr:taxon>
               </fr:frontmatter>

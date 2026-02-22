@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>3</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/001B/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/001B/</fr:uri>
     <fr:display-uri>001B</fr:display-uri>
-    <fr:route>/001B/</fr:route>
+    <fr:route>/lectures/001B/</fr:route>
     <fr:taxon>Quotation</fr:taxon>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -42,7 +42,7 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -50,9 +50,9 @@
               <fr:month>2</fr:month>
               <fr:day>20</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/0037/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/0037/</fr:uri>
             <fr:display-uri>0037</fr:display-uri>
-            <fr:route>/0037/</fr:route>
+            <fr:route>/lectures/0037/</fr:route>
             <fr:taxon>Side note</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -64,7 +64,7 @@ So I think it's entirely likely that Mary had some influence on George's work, a
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -72,9 +72,9 @@ So I think it's entirely likely that Mary had some influence on George's work, a
                   <fr:month>2</fr:month>
                   <fr:day>3</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/001B/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/001B/</fr:uri>
                 <fr:display-uri>001B</fr:display-uri>
-                <fr:route>/001B/</fr:route>
+                <fr:route>/lectures/001B/</fr:route>
                 <fr:taxon>Quotation</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -90,7 +90,7 @@ So I think it's entirely likely that Mary had some influence on George's work, a
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -98,9 +98,9 @@ So I think it's entirely likely that Mary had some influence on George's work, a
                   <fr:month>2</fr:month>
                   <fr:day>20</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0038/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0038/</fr:uri>
                 <fr:display-uri>0038</fr:display-uri>
-                <fr:route>/0038/</fr:route>
+                <fr:route>/lectures/0038/</fr:route>
                 <fr:taxon>Quotation</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>

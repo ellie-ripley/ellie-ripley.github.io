@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>17</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/002Q/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/002Q/</fr:uri>
     <fr:display-uri>002Q</fr:display-uri>
-    <fr:route>/002Q/</fr:route>
+    <fr:route>/lectures/002Q/</fr:route>
     <fr:title text="Arguments">Arguments</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -31,7 +31,7 @@ Just like our logical "languages" have something in common with real languages, 
       <fr:frontmatter>
         <fr:authors>
           <fr:author>
-            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
           </fr:author>
         </fr:authors>
         <fr:date>
@@ -39,9 +39,9 @@ Just like our logical "languages" have something in common with real languages, 
           <fr:month>2</fr:month>
           <fr:day>17</fr:day>
         </fr:date>
-        <fr:uri>https://www.my-great-forest.net/002R/</fr:uri>
+        <fr:uri>https://negation.rocks/lectures/002R/</fr:uri>
         <fr:display-uri>002R</fr:display-uri>
-        <fr:route>/002R/</fr:route>
+        <fr:route>/lectures/002R/</fr:route>
         <fr:title text="Argument">Argument</fr:title>
         <fr:taxon>Definition</fr:taxon>
       </fr:frontmatter>
@@ -60,7 +60,7 @@ So the argument <fr:tex display="inline"><![CDATA[p \land  q, \neg  r \;/\; \neg
       <fr:frontmatter>
         <fr:authors>
           <fr:author>
-            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
           </fr:author>
         </fr:authors>
         <fr:date>
@@ -68,9 +68,9 @@ So the argument <fr:tex display="inline"><![CDATA[p \land  q, \neg  r \;/\; \neg
           <fr:month>2</fr:month>
           <fr:day>17</fr:day>
         </fr:date>
-        <fr:uri>https://www.my-great-forest.net/002S/</fr:uri>
+        <fr:uri>https://negation.rocks/lectures/002S/</fr:uri>
         <fr:display-uri>002S</fr:display-uri>
-        <fr:route>/002S/</fr:route>
+        <fr:route>/lectures/002S/</fr:route>
         <fr:title text="Do we have to use sets for premises?">Do we have to use sets for premises?</fr:title>
         <fr:taxon>Side note</fr:taxon>
       </fr:frontmatter>
@@ -92,7 +92,7 @@ But sets give us plenty to work with already for this semester, so we'll stick w
     <html:p>         You might worry about how we're going to handle arguments with infinitely many premises.
         After all, I certainly can't list out infinitely many premises, so I won't be able to write out any such argument in full.
         But again, this isn't really a problem with infinity: just a big finite argument would already be too much to write out in full.
-        We'll deal with this in <fr:link href="/000K/" title="Infinity; or, more than about six" uri="https://www.my-great-forest.net/000K/" display-uri="000K" type="local">the same old way we've dealt with other infinities</fr:link>: by not worrying about it.
+        We'll deal with this in <fr:link href="/lectures/000K/" title="Infinity; or, more than about six" uri="https://negation.rocks/lectures/000K/" display-uri="000K" type="local">the same old way we've dealt with other infinities</fr:link>: by not worrying about it.
         There are arguments with infinitely many premises; they're out there, they're harmless, and they mostly won't occupy us.
 </html:p>
   </fr:mainmatter>
@@ -114,7 +114,7 @@ But sets give us plenty to work with already for this semester, so we'll stick w
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -122,9 +122,9 @@ But sets give us plenty to work with already for this semester, so we'll stick w
               <fr:month>2</fr:month>
               <fr:day>16</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/002H/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/002H/</fr:uri>
             <fr:display-uri>002H</fr:display-uri>
-            <fr:route>/002H/</fr:route>
+            <fr:route>/lectures/002H/</fr:route>
             <fr:title text="Lecture 3: Sets, arguments, and logics">Lecture 3: Sets, arguments, and logics</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -142,7 +142,7 @@ The second goal is to look at some different questions we can ask about logics: 
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -150,9 +150,9 @@ The second goal is to look at some different questions we can ask about logics: 
                   <fr:month>2</fr:month>
                   <fr:day>16</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002I/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002I/</fr:uri>
                 <fr:display-uri>002I</fr:display-uri>
-                <fr:route>/002I/</fr:route>
+                <fr:route>/lectures/002I/</fr:route>
                 <fr:title text="Sets">Sets</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -171,7 +171,7 @@ But let's not turn that corner; let's just see how we work with sets.</html:p>
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -179,9 +179,9 @@ But let's not turn that corner; let's just see how we work with sets.</html:p>
                       <fr:month>2</fr:month>
                       <fr:day>16</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002J/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002J/</fr:uri>
                     <fr:display-uri>002J</fr:display-uri>
-                    <fr:route>/002J/</fr:route>
+                    <fr:route>/lectures/002J/</fr:route>
                     <fr:title text="Writing about sets">Writing about sets</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -206,7 +206,7 @@ This set contains the same eight cities as the set listed above.
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -214,9 +214,9 @@ This set contains the same eight cities as the set listed above.
                       <fr:month>2</fr:month>
                       <fr:day>16</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002K/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002K/</fr:uri>
                     <fr:display-uri>002K</fr:display-uri>
-                    <fr:route>/002K/</fr:route>
+                    <fr:route>/lectures/002K/</fr:route>
                     <fr:title text="Extensionality">Extensionality</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -253,7 +253,7 @@ It's rather that the description "the set of students enrolled in ATS2866" would
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -261,9 +261,9 @@ It's rather that the description "the set of students enrolled in ATS2866" would
                       <fr:month>2</fr:month>
                       <fr:day>16</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002L/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002L/</fr:uri>
                     <fr:display-uri>002L</fr:display-uri>
-                    <fr:route>/002L/</fr:route>
+                    <fr:route>/lectures/002L/</fr:route>
                     <fr:title text="The empty set">The empty set</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -277,7 +277,7 @@ Note that, by extensionality, there can only be <html:em>one</html:em> empty set
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -285,9 +285,9 @@ Note that, by extensionality, there can only be <html:em>one</html:em> empty set
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002M/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002M/</fr:uri>
                     <fr:display-uri>002M</fr:display-uri>
-                    <fr:route>/002M/</fr:route>
+                    <fr:route>/lectures/002M/</fr:route>
                     <fr:title text="Subsets">Subsets</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -296,7 +296,7 @@ Note that, by extensionality, there can only be <html:em>one</html:em> empty set
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -304,9 +304,9 @@ Note that, by extensionality, there can only be <html:em>one</html:em> empty set
                           <fr:month>2</fr:month>
                           <fr:day>17</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/002N/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/002N/</fr:uri>
                         <fr:display-uri>002N</fr:display-uri>
-                        <fr:route>/002N/</fr:route>
+                        <fr:route>/lectures/002N/</fr:route>
                         <fr:title text="Subset">Subset</fr:title>
                         <fr:taxon>Definition</fr:taxon>
                       </fr:frontmatter>
@@ -337,14 +337,14 @@ There might be some other things also in <fr:tex display="inline"><![CDATA[\Delt
         This might be a surprise, but remember logicians' weird habit number 2!
         To check whether the empty set is a subset of some set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, we need to check whether all the members of the empty set are also members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
         Since there are no members of the empty set, indeed it <html:em>is</html:em> true that all the members of the empty set are members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>---no matter what <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is.
-        (Using <fr:link href="/000F/" title="Logicians' Weird Habit 2" uri="https://www.my-great-forest.net/000F/" display-uri="000F" type="local">logicians' weird habit number 2</fr:link>, it's even true that all the members of the empty set are square circles, that they're all plants with mammal-like brains, and that they're all behind you right now.)</html:li></html:ul></html:p>
+        (Using <fr:link href="/lectures/000F/" title="Logicians' Weird Habit 2" uri="https://negation.rocks/lectures/000F/" display-uri="000F" type="local">logicians' weird habit number 2</fr:link>, it's even true that all the members of the empty set are square circles, that they're all plants with mammal-like brains, and that they're all behind you right now.)</html:li></html:ul></html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -352,9 +352,9 @@ There might be some other things also in <fr:tex display="inline"><![CDATA[\Delt
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002O/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002O/</fr:uri>
                     <fr:display-uri>002O</fr:display-uri>
-                    <fr:route>/002O/</fr:route>
+                    <fr:route>/lectures/002O/</fr:route>
                     <fr:title text="Intersections (and unions)">Intersections (and unions)</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -365,7 +365,7 @@ These are not super-central to this unit, but they will come up now and again.
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -373,16 +373,16 @@ These are not super-central to this unit, but they will come up now and again.
                           <fr:month>2</fr:month>
                           <fr:day>17</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/002P/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/002P/</fr:uri>
                         <fr:display-uri>002P</fr:display-uri>
-                        <fr:route>/002P/</fr:route>
+                        <fr:route>/lectures/002P/</fr:route>
                         <fr:title text="Intersection and union">Intersection and union</fr:title>
                         <fr:taxon>Definition</fr:taxon>
                       </fr:frontmatter>
                       <fr:mainmatter>
                         <html:p>Given sets <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, their <html:strong>intersection</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cap  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>both</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
 Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cup  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>either</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> or <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
-(Remember <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
+(Remember <fr:link href="/lectures/000E/" title="Logicians' Weird Habit 1" uri="https://negation.rocks/lectures/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
                       </fr:mainmatter>
                     </fr:tree>
                     <html:p>For example, the intersection of <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\{q, r, s\}]]></fr:tex> is <fr:tex display="inline"><![CDATA[\{q, r\}]]></fr:tex>; and the union of these same two sets is <fr:tex display="inline"><![CDATA[\{p, q, r, s\}]]></fr:tex>.
@@ -396,7 +396,7 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -404,9 +404,9 @@ Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma 
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002Q/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002Q/</fr:uri>
                 <fr:display-uri>002Q</fr:display-uri>
-                <fr:route>/002Q/</fr:route>
+                <fr:route>/lectures/002Q/</fr:route>
                 <fr:title text="Arguments">Arguments</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -423,7 +423,7 @@ Just like our logical "languages" have something in common with real languages, 
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -431,9 +431,9 @@ Just like our logical "languages" have something in common with real languages, 
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002R/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002R/</fr:uri>
                     <fr:display-uri>002R</fr:display-uri>
-                    <fr:route>/002R/</fr:route>
+                    <fr:route>/lectures/002R/</fr:route>
                     <fr:title text="Argument">Argument</fr:title>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
@@ -452,7 +452,7 @@ So the argument <fr:tex display="inline"><![CDATA[p \land  q, \neg  r \;/\; \neg
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -460,9 +460,9 @@ So the argument <fr:tex display="inline"><![CDATA[p \land  q, \neg  r \;/\; \neg
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002S/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002S/</fr:uri>
                     <fr:display-uri>002S</fr:display-uri>
-                    <fr:route>/002S/</fr:route>
+                    <fr:route>/lectures/002S/</fr:route>
                     <fr:title text="Do we have to use sets for premises?">Do we have to use sets for premises?</fr:title>
                     <fr:taxon>Side note</fr:taxon>
                   </fr:frontmatter>
@@ -484,7 +484,7 @@ But sets give us plenty to work with already for this semester, so we'll stick w
                 <html:p>         You might worry about how we're going to handle arguments with infinitely many premises.
         After all, I certainly can't list out infinitely many premises, so I won't be able to write out any such argument in full.
         But again, this isn't really a problem with infinity: just a big finite argument would already be too much to write out in full.
-        We'll deal with this in <fr:link href="/000K/" title="Infinity; or, more than about six" uri="https://www.my-great-forest.net/000K/" display-uri="000K" type="local">the same old way we've dealt with other infinities</fr:link>: by not worrying about it.
+        We'll deal with this in <fr:link href="/lectures/000K/" title="Infinity; or, more than about six" uri="https://negation.rocks/lectures/000K/" display-uri="000K" type="local">the same old way we've dealt with other infinities</fr:link>: by not worrying about it.
         There are arguments with infinitely many premises; they're out there, they're harmless, and they mostly won't occupy us.
 </html:p>
               </fr:mainmatter>
@@ -493,7 +493,7 @@ But sets give us plenty to work with already for this semester, so we'll stick w
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -501,9 +501,9 @@ But sets give us plenty to work with already for this semester, so we'll stick w
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002T/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002T/</fr:uri>
                 <fr:display-uri>002T</fr:display-uri>
-                <fr:route>/002T/</fr:route>
+                <fr:route>/lectures/002T/</fr:route>
                 <fr:title text="Logics">Logics</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -531,7 +531,7 @@ But sets give us plenty to work with already for this semester, so we'll stick w
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -539,9 +539,9 @@ But sets give us plenty to work with already for this semester, so we'll stick w
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002U/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002U/</fr:uri>
                     <fr:display-uri>002U</fr:display-uri>
-                    <fr:route>/002U/</fr:route>
+                    <fr:route>/lectures/002U/</fr:route>
                     <fr:title text="Logic">Logic</fr:title>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
@@ -556,7 +556,7 @@ But sets give us plenty to work with already for this semester, so we'll stick w
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -564,15 +564,15 @@ But sets give us plenty to work with already for this semester, so we'll stick w
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002V/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002V/</fr:uri>
                     <fr:display-uri>002V</fr:display-uri>
-                    <fr:route>/002V/</fr:route>
+                    <fr:route>/lectures/002V/</fr:route>
                     <fr:title text="How many logics are there?">How many logics are there?</fr:title>
                     <fr:taxon>Side note</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
                     <html:p>How many?
-          This gets further into some differences between different sizes of infinity that we've <fr:link href="/001A/" title="Sizes of infinity" uri="https://www.my-great-forest.net/001A/" display-uri="001A" type="local">brushed up against before</fr:link>.
+          This gets further into some differences between different sizes of infinity that we've <fr:link href="/lectures/001A/" title="Sizes of infinity" uri="https://negation.rocks/lectures/001A/" display-uri="001A" type="local">brushed up against before</fr:link>.
           The smallest infinity has a few names; it's called both <fr:tex display="inline"><![CDATA[\aleph _{0}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\beth _{0}]]></fr:tex>, and it's the size of the natural numbers <fr:tex display="inline"><![CDATA[0, 1, 2, \ldots ]]></fr:tex>.
           (<fr:tex display="inline"><![CDATA[\aleph ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\beth ]]></fr:tex> are the letters aleph and beth, the first two letters of the Hebrew alphabet; the word `alphabet' comes from the names of these two letters.
           I told you logicians like our alphabets!)
@@ -598,7 +598,7 @@ But sets give us plenty to work with already for this semester, so we'll stick w
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -606,9 +606,9 @@ But sets give us plenty to work with already for this semester, so we'll stick w
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002W/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002W/</fr:uri>
                     <fr:display-uri>002W</fr:display-uri>
-                    <fr:route>/002W/</fr:route>
+                    <fr:route>/lectures/002W/</fr:route>
                     <fr:title text="Validity and invalidity">Validity and invalidity</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -617,7 +617,7 @@ But sets give us plenty to work with already for this semester, so we'll stick w
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -625,9 +625,9 @@ But sets give us plenty to work with already for this semester, so we'll stick w
                           <fr:month>2</fr:month>
                           <fr:day>17</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/002X/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/002X/</fr:uri>
                         <fr:display-uri>002X</fr:display-uri>
-                        <fr:route>/002X/</fr:route>
+                        <fr:route>/lectures/002X/</fr:route>
                         <fr:title text="Valid and invalid">Valid and invalid</fr:title>
                         <fr:taxon>Definition</fr:taxon>
                       </fr:frontmatter>
@@ -662,7 +662,7 @@ It's only with some particular logic in view that calling an argument valid or i
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -670,9 +670,9 @@ It's only with some particular logic in view that calling an argument valid or i
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002Y/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002Y/</fr:uri>
                     <fr:display-uri>002Y</fr:display-uri>
-                    <fr:route>/002Y/</fr:route>
+                    <fr:route>/lectures/002Y/</fr:route>
                     <fr:title text="Logics are sets">Logics are sets</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -696,7 +696,7 @@ It's only with some particular logic in view that calling an argument valid or i
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -704,9 +704,9 @@ It's only with some particular logic in view that calling an argument valid or i
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002Z/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002Z/</fr:uri>
                     <fr:display-uri>002Z</fr:display-uri>
-                    <fr:route>/002Z/</fr:route>
+                    <fr:route>/lectures/002Z/</fr:route>
                     <fr:title text="Some more example logics">Some more example logics</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -727,7 +727,7 @@ It's only with some particular logic in view that calling an argument valid or i
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -735,9 +735,9 @@ It's only with some particular logic in view that calling an argument valid or i
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/0030/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/0030/</fr:uri>
                     <fr:display-uri>0030</fr:display-uri>
-                    <fr:route>/0030/</fr:route>
+                    <fr:route>/lectures/0030/</fr:route>
                     <fr:title text="Stronger and weaker">Stronger and weaker</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -746,7 +746,7 @@ It's only with some particular logic in view that calling an argument valid or i
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -754,9 +754,9 @@ It's only with some particular logic in view that calling an argument valid or i
                           <fr:month>2</fr:month>
                           <fr:day>17</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/0031/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/0031/</fr:uri>
                         <fr:display-uri>0031</fr:display-uri>
-                        <fr:route>/0031/</fr:route>
+                        <fr:route>/lectures/0031/</fr:route>
                         <fr:taxon>Definition</fr:taxon>
                       </fr:frontmatter>
                       <fr:mainmatter>
@@ -778,7 +778,7 @@ It's only with some particular logic in view that calling an argument valid or i
                       <fr:frontmatter>
                         <fr:authors>
                           <fr:author>
-                            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                           </fr:author>
                         </fr:authors>
                         <fr:date>
@@ -786,12 +786,12 @@ It's only with some particular logic in view that calling an argument valid or i
                           <fr:month>2</fr:month>
                           <fr:day>20</fr:day>
                         </fr:date>
-                        <fr:uri>https://www.my-great-forest.net/0033/</fr:uri>
+                        <fr:uri>https://negation.rocks/lectures/0033/</fr:uri>
                         <fr:display-uri>0033</fr:display-uri>
-                        <fr:route>/0033/</fr:route>
+                        <fr:route>/lectures/0033/</fr:route>
                         <fr:taxon>Check your understanding</fr:taxon>
                       </fr:frontmatter>
-                      <fr:mainmatter><html:p>Now, return to the <fr:link href="/002Z/" title="Some more example logics" uri="https://www.my-great-forest.net/002Z/" display-uri="002Z" type="local">five example logics above</fr:link>.
+                      <fr:mainmatter><html:p>Now, return to the <fr:link href="/lectures/002Z/" title="Some more example logics" uri="https://negation.rocks/lectures/002Z/" display-uri="002Z" type="local">five example logics above</fr:link>.
     Which of these, if any, are stronger or weaker than which of these?
     Take a moment to think this through before you go on.
 </html:p>
@@ -799,7 +799,7 @@ It's only with some particular logic in view that calling an argument valid or i
 	
 	
 	
-	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>20</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>20</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
 <html:ul><html:li>Logic 1 is weaker than logic 2, which is to say that 2 is stronger than 1.</html:li>
 <html:li>Logic 1 is weaker than logic 4, which is to say that 4 is stronger than 1.</html:li>
 <html:li>Each of logics 1--5, like any logic, is both stronger and weaker than itself.</html:li>
@@ -814,7 +814,7 @@ It's only with some particular logic in view that calling an argument valid or i
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -822,9 +822,9 @@ It's only with some particular logic in view that calling an argument valid or i
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0032/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0032/</fr:uri>
                 <fr:display-uri>0032</fr:display-uri>
-                <fr:route>/0032/</fr:route>
+                <fr:route>/lectures/0032/</fr:route>
                 <fr:title text="Summing up">Summing up</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -859,7 +859,7 @@ Finally, you should know what it means for logics to be <html:em>stronger</html:
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -867,9 +867,9 @@ Finally, you should know what it means for logics to be <html:em>stronger</html:
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/000K/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/000K/</fr:uri>
             <fr:display-uri>000K</fr:display-uri>
-            <fr:route>/000K/</fr:route>
+            <fr:route>/lectures/000K/</fr:route>
             <fr:title text="Infinity; or, more than about six">Infinity; or, more than about six</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>

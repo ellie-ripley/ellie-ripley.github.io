@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>16</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/002J/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/002J/</fr:uri>
     <fr:display-uri>002J</fr:display-uri>
-    <fr:route>/002J/</fr:route>
+    <fr:route>/lectures/002J/</fr:route>
     <fr:title text="Writing about sets">Writing about sets</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -52,7 +52,7 @@ This set contains the same eight cities as the set listed above.
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -60,9 +60,9 @@ This set contains the same eight cities as the set listed above.
               <fr:month>2</fr:month>
               <fr:day>16</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/002I/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/002I/</fr:uri>
             <fr:display-uri>002I</fr:display-uri>
-            <fr:route>/002I/</fr:route>
+            <fr:route>/lectures/002I/</fr:route>
             <fr:title text="Sets">Sets</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -81,7 +81,7 @@ But let's not turn that corner; let's just see how we work with sets.</html:p>
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -89,9 +89,9 @@ But let's not turn that corner; let's just see how we work with sets.</html:p>
                   <fr:month>2</fr:month>
                   <fr:day>16</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002J/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002J/</fr:uri>
                 <fr:display-uri>002J</fr:display-uri>
-                <fr:route>/002J/</fr:route>
+                <fr:route>/lectures/002J/</fr:route>
                 <fr:title text="Writing about sets">Writing about sets</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -116,7 +116,7 @@ This set contains the same eight cities as the set listed above.
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -124,9 +124,9 @@ This set contains the same eight cities as the set listed above.
                   <fr:month>2</fr:month>
                   <fr:day>16</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002K/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002K/</fr:uri>
                 <fr:display-uri>002K</fr:display-uri>
-                <fr:route>/002K/</fr:route>
+                <fr:route>/lectures/002K/</fr:route>
                 <fr:title text="Extensionality">Extensionality</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -163,7 +163,7 @@ It's rather that the description "the set of students enrolled in ATS2866" would
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -171,9 +171,9 @@ It's rather that the description "the set of students enrolled in ATS2866" would
                   <fr:month>2</fr:month>
                   <fr:day>16</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002L/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002L/</fr:uri>
                 <fr:display-uri>002L</fr:display-uri>
-                <fr:route>/002L/</fr:route>
+                <fr:route>/lectures/002L/</fr:route>
                 <fr:title text="The empty set">The empty set</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -187,7 +187,7 @@ Note that, by extensionality, there can only be <html:em>one</html:em> empty set
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -195,9 +195,9 @@ Note that, by extensionality, there can only be <html:em>one</html:em> empty set
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002M/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002M/</fr:uri>
                 <fr:display-uri>002M</fr:display-uri>
-                <fr:route>/002M/</fr:route>
+                <fr:route>/lectures/002M/</fr:route>
                 <fr:title text="Subsets">Subsets</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -206,7 +206,7 @@ Note that, by extensionality, there can only be <html:em>one</html:em> empty set
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -214,9 +214,9 @@ Note that, by extensionality, there can only be <html:em>one</html:em> empty set
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002N/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002N/</fr:uri>
                     <fr:display-uri>002N</fr:display-uri>
-                    <fr:route>/002N/</fr:route>
+                    <fr:route>/lectures/002N/</fr:route>
                     <fr:title text="Subset">Subset</fr:title>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
@@ -247,14 +247,14 @@ There might be some other things also in <fr:tex display="inline"><![CDATA[\Delt
         This might be a surprise, but remember logicians' weird habit number 2!
         To check whether the empty set is a subset of some set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, we need to check whether all the members of the empty set are also members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
         Since there are no members of the empty set, indeed it <html:em>is</html:em> true that all the members of the empty set are members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>---no matter what <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is.
-        (Using <fr:link href="/000F/" title="Logicians' Weird Habit 2" uri="https://www.my-great-forest.net/000F/" display-uri="000F" type="local">logicians' weird habit number 2</fr:link>, it's even true that all the members of the empty set are square circles, that they're all plants with mammal-like brains, and that they're all behind you right now.)</html:li></html:ul></html:p>
+        (Using <fr:link href="/lectures/000F/" title="Logicians' Weird Habit 2" uri="https://negation.rocks/lectures/000F/" display-uri="000F" type="local">logicians' weird habit number 2</fr:link>, it's even true that all the members of the empty set are square circles, that they're all plants with mammal-like brains, and that they're all behind you right now.)</html:li></html:ul></html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -262,9 +262,9 @@ There might be some other things also in <fr:tex display="inline"><![CDATA[\Delt
                   <fr:month>2</fr:month>
                   <fr:day>17</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/002O/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/002O/</fr:uri>
                 <fr:display-uri>002O</fr:display-uri>
-                <fr:route>/002O/</fr:route>
+                <fr:route>/lectures/002O/</fr:route>
                 <fr:title text="Intersections (and unions)">Intersections (and unions)</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -275,7 +275,7 @@ These are not super-central to this unit, but they will come up now and again.
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -283,16 +283,16 @@ These are not super-central to this unit, but they will come up now and again.
                       <fr:month>2</fr:month>
                       <fr:day>17</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/002P/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/002P/</fr:uri>
                     <fr:display-uri>002P</fr:display-uri>
-                    <fr:route>/002P/</fr:route>
+                    <fr:route>/lectures/002P/</fr:route>
                     <fr:title text="Intersection and union">Intersection and union</fr:title>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
                     <html:p>Given sets <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, their <html:strong>intersection</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cap  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>both</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
 Their <html:strong>union</html:strong> <fr:tex display="inline"><![CDATA[\Gamma  \cup  \Delta ]]></fr:tex> is the set whose members are exactly the things that are members of <html:em>either</html:em> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> or <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
-(Remember <fr:link href="/000E/" title="Logicians' Weird Habit 1" uri="https://www.my-great-forest.net/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
+(Remember <fr:link href="/lectures/000E/" title="Logicians' Weird Habit 1" uri="https://negation.rocks/lectures/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link> here!)</html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <html:p>For example, the intersection of <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\{q, r, s\}]]></fr:tex> is <fr:tex display="inline"><![CDATA[\{q, r\}]]></fr:tex>; and the union of these same two sets is <fr:tex display="inline"><![CDATA[\{p, q, r, s\}]]></fr:tex>.

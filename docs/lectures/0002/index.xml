@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>10</fr:month>
       <fr:day>26</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/0002/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/0002/</fr:uri>
     <fr:display-uri>0002</fr:display-uri>
-    <fr:route>/0002/</fr:route>
+    <fr:route>/lectures/0002/</fr:route>
     <fr:title text="About this unit">About this unit</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -26,7 +26,7 @@ This note is about the structure of the unit, its assessment, etc.</html:p>
       <fr:frontmatter>
         <fr:authors>
           <fr:author>
-            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
           </fr:author>
         </fr:authors>
         <fr:date>
@@ -34,15 +34,15 @@ This note is about the structure of the unit, its assessment, etc.</html:p>
           <fr:month>2</fr:month>
           <fr:day>22</fr:day>
         </fr:date>
-        <fr:uri>https://www.my-great-forest.net/003Z/</fr:uri>
+        <fr:uri>https://negation.rocks/lectures/003Z/</fr:uri>
         <fr:display-uri>003Z</fr:display-uri>
-        <fr:route>/003Z/</fr:route>
+        <fr:route>/lectures/003Z/</fr:route>
         <fr:title text="Unit structure">Unit structure</fr:title>
       </fr:frontmatter>
       <fr:mainmatter>
         <html:p>In addition to the assessment tasks (discussed below), the unit consists of lectures and tutorials.</html:p>
         <html:p>You're in the lectures right now; they are written in form, and interlinked.
-The <fr:link href="/0004/" title="Table of Contents" uri="https://www.my-great-forest.net/0004/" display-uri="0004" type="local">Table of Contents</fr:link> is a great place to get an overview of the semester.
+The <fr:link href="/lectures/0004/" title="Table of Contents" uri="https://negation.rocks/lectures/0004/" display-uri="0004" type="local">Table of Contents</fr:link> is a great place to get an overview of the semester.
 There are 12 numbered lectures and 12 teaching weeks of the semester: a lucky coincidence!
 Each week, you should make sure you read that week's lecture and understand it as well as you can before you come to tutorial.
 (That said, if you haven't read the lecture on a given week, you are still very much welcome to come to tutorial!)</html:p>
@@ -56,7 +56,7 @@ Going through the work of digging the answer up when you need it will help you l
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -64,9 +64,9 @@ Going through the work of digging the answer up when you need it will help you l
               <fr:month>2</fr:month>
               <fr:day>22</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/0040/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/0040/</fr:uri>
             <fr:display-uri>0040</fr:display-uri>
-            <fr:route>/0040/</fr:route>
+            <fr:route>/lectures/0040/</fr:route>
             <fr:taxon>Side note</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -87,7 +87,7 @@ Each week, your tutor will give you a range of exercises (more straightforward) 
       <fr:frontmatter>
         <fr:authors>
           <fr:author>
-            <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
           </fr:author>
         </fr:authors>
         <fr:date>
@@ -95,9 +95,9 @@ Each week, your tutor will give you a range of exercises (more straightforward) 
           <fr:month>2</fr:month>
           <fr:day>22</fr:day>
         </fr:date>
-        <fr:uri>https://www.my-great-forest.net/003U/</fr:uri>
+        <fr:uri>https://negation.rocks/lectures/003U/</fr:uri>
         <fr:display-uri>003U</fr:display-uri>
-        <fr:route>/003U/</fr:route>
+        <fr:route>/lectures/003U/</fr:route>
         <fr:title text="Assessment overview">Assessment overview</fr:title>
       </fr:frontmatter>
       <fr:mainmatter>
@@ -107,7 +107,7 @@ Here, I say a bit about each, in increasing order of difficulty.</html:p>
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -115,9 +115,9 @@ Here, I say a bit about each, in increasing order of difficulty.</html:p>
               <fr:month>2</fr:month>
               <fr:day>22</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/003V/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/003V/</fr:uri>
             <fr:display-uri>003V</fr:display-uri>
-            <fr:route>/003V/</fr:route>
+            <fr:route>/lectures/003V/</fr:route>
             <fr:title text="Weekly Moodle quizzes: 30%">Weekly Moodle quizzes: 30%</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -134,7 +134,7 @@ The purpose of these quizzes is twofold:</html:p>
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -142,9 +142,9 @@ The purpose of these quizzes is twofold:</html:p>
               <fr:month>2</fr:month>
               <fr:day>22</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/003W/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/003W/</fr:uri>
             <fr:display-uri>003W</fr:display-uri>
-            <fr:route>/003W/</fr:route>
+            <fr:route>/lectures/003W/</fr:route>
             <fr:title text="Binchicken: 35%">Binchicken: 35%</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -174,7 +174,7 @@ I just want to help you get there.</html:p>
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -182,9 +182,9 @@ I just want to help you get there.</html:p>
               <fr:month>2</fr:month>
               <fr:day>22</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/003X/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/003X/</fr:uri>
             <fr:display-uri>003X</fr:display-uri>
-            <fr:route>/003X/</fr:route>
+            <fr:route>/lectures/003X/</fr:route>
             <fr:title text="Workshops: 20%">Workshops: 20%</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -202,7 +202,7 @@ If you do need special consideration for one of these workshops, we'll arrange a
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -210,9 +210,9 @@ If you do need special consideration for one of these workshops, we'll arrange a
               <fr:month>2</fr:month>
               <fr:day>22</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/003Y/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/003Y/</fr:uri>
             <fr:display-uri>003Y</fr:display-uri>
-            <fr:route>/003Y/</fr:route>
+            <fr:route>/lectures/003Y/</fr:route>
             <fr:title text="Puzzle-solving session: 15%">Puzzle-solving session: 15%</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -251,7 +251,7 @@ Like the workshops, it doesn't really make sense to have extensions for these; a
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -259,19 +259,19 @@ Like the workshops, it doesn't really make sense to have extensions for these; a
               <fr:month>11</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/0004/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/0004/</fr:uri>
             <fr:display-uri>0004</fr:display-uri>
-            <fr:route>/0004/</fr:route>
+            <fr:route>/lectures/0004/</fr:route>
             <fr:title text="Table of Contents">Table of Contents</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:ul><html:li><fr:link href="/0002/" title="About this unit" uri="https://www.my-great-forest.net/0002/" display-uri="0002" type="local">About this unit</fr:link></html:li>
+            <html:ul><html:li><fr:link href="/lectures/0002/" title="About this unit" uri="https://negation.rocks/lectures/0002/" display-uri="0002" type="local">About this unit</fr:link></html:li>
   <html:li>Section A: Preliminaries
-  <html:ul><html:li><fr:link href="/0005/" title="Lecture 1: Introduction and languages" uri="https://www.my-great-forest.net/0005/" display-uri="0005" type="local">Lecture 1: Introduction and languages</fr:link></html:li>
-    <html:li><fr:link href="/0011/" title="Lecture 2: Functions and substitutions" uri="https://www.my-great-forest.net/0011/" display-uri="0011" type="local">Lecture 2: Functions and substitutions</fr:link></html:li>
-    <html:li><fr:link href="/002H/" title="Lecture 3: Sets, arguments, and logics" uri="https://www.my-great-forest.net/002H/" display-uri="002H" type="local">Lecture 3: Sets, arguments, and logics</fr:link></html:li></html:ul></html:li>
+  <html:ul><html:li><fr:link href="/lectures/0005/" title="Lecture 1: Introduction and languages" uri="https://negation.rocks/lectures/0005/" display-uri="0005" type="local">Lecture 1: Introduction and languages</fr:link></html:li>
+    <html:li><fr:link href="/lectures/0011/" title="Lecture 2: Functions and substitutions" uri="https://negation.rocks/lectures/0011/" display-uri="0011" type="local">Lecture 2: Functions and substitutions</fr:link></html:li>
+    <html:li><fr:link href="/lectures/002H/" title="Lecture 3: Sets, arguments, and logics" uri="https://negation.rocks/lectures/002H/" display-uri="002H" type="local">Lecture 3: Sets, arguments, and logics</fr:link></html:li></html:ul></html:li>
   <html:li>Section B: Structures and matrices
-  <html:ul><html:li><fr:link href="/0034/" title="Lecture 4: Structures" uri="https://www.my-great-forest.net/0034/" display-uri="0034" type="local">Lecture 4: Structures</fr:link></html:li>
+  <html:ul><html:li><fr:link href="/lectures/0034/" title="Lecture 4: Structures" uri="https://negation.rocks/lectures/0034/" display-uri="0034" type="local">Lecture 4: Structures</fr:link></html:li>
     <html:li>[Lecture 5: Matrices and counterexamples]</html:li>
     <html:li>[Lecture 6: Using matrices to compare logics]</html:li>
     <html:li>[Lecture 7: The limits of matrices]</html:li></html:ul></html:li>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>2</fr:month>
       <fr:day>21</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/003J/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/003J/</fr:uri>
     <fr:display-uri>003J</fr:display-uri>
-    <fr:route>/003J/</fr:route>
+    <fr:route>/lectures/003J/</fr:route>
   </fr:frontmatter>
   <fr:mainmatter>
     <html:table style="border-collapse: collapse;">
@@ -52,7 +52,7 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -60,9 +60,9 @@
               <fr:month>2</fr:month>
               <fr:day>21</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/003N/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/003N/</fr:uri>
             <fr:display-uri>003N</fr:display-uri>
-            <fr:route>/003N/</fr:route>
+            <fr:route>/lectures/003N/</fr:route>
             <fr:title text="The Boolean structure">The Boolean structure</fr:title>
             <fr:taxon>Definition</fr:taxon>
           </fr:frontmatter>
@@ -71,7 +71,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -79,9 +79,9 @@
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003J/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003J/</fr:uri>
                 <fr:display-uri>003J</fr:display-uri>
-                <fr:route>/003J/</fr:route>
+                <fr:route>/lectures/003J/</fr:route>
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:table style="border-collapse: collapse;">
@@ -106,7 +106,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -114,9 +114,9 @@
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003K/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003K/</fr:uri>
                 <fr:display-uri>003K</fr:display-uri>
-                <fr:route>/003K/</fr:route>
+                <fr:route>/lectures/003K/</fr:route>
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:table style="border-collapse: collapse;">
@@ -144,7 +144,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -152,9 +152,9 @@
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003L/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003L/</fr:uri>
                 <fr:display-uri>003L</fr:display-uri>
-                <fr:route>/003L/</fr:route>
+                <fr:route>/lectures/003L/</fr:route>
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:table style="border-collapse: collapse;">
@@ -182,7 +182,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -190,9 +190,9 @@
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003M/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003M/</fr:uri>
                 <fr:display-uri>003M</fr:display-uri>
-                <fr:route>/003M/</fr:route>
+                <fr:route>/lectures/003M/</fr:route>
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:table style="border-collapse: collapse;">
@@ -220,7 +220,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -228,9 +228,9 @@
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003I/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003I/</fr:uri>
                 <fr:display-uri>003I</fr:display-uri>
-                <fr:route>/003I/</fr:route>
+                <fr:route>/lectures/003I/</fr:route>
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:table style="border-collapse: collapse;">
@@ -261,7 +261,7 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -269,9 +269,9 @@
               <fr:month>2</fr:month>
               <fr:day>20</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/0036/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/0036/</fr:uri>
             <fr:display-uri>0036</fr:display-uri>
-            <fr:route>/0036/</fr:route>
+            <fr:route>/lectures/0036/</fr:route>
             <fr:title text="Boolean valuations: negation">Boolean valuations: negation</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -282,7 +282,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -290,9 +290,9 @@
                   <fr:month>2</fr:month>
                   <fr:day>20</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/0037/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/0037/</fr:uri>
                 <fr:display-uri>0037</fr:display-uri>
-                <fr:route>/0037/</fr:route>
+                <fr:route>/lectures/0037/</fr:route>
                 <fr:taxon>Side note</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
@@ -304,7 +304,7 @@ So I think it's entirely likely that Mary had some influence on George's work, a
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -312,9 +312,9 @@ So I think it's entirely likely that Mary had some influence on George's work, a
                       <fr:month>2</fr:month>
                       <fr:day>3</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/001B/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/001B/</fr:uri>
                     <fr:display-uri>001B</fr:display-uri>
-                    <fr:route>/001B/</fr:route>
+                    <fr:route>/lectures/001B/</fr:route>
                     <fr:taxon>Quotation</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -330,7 +330,7 @@ So I think it's entirely likely that Mary had some influence on George's work, a
                   <fr:frontmatter>
                     <fr:authors>
                       <fr:author>
-                        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                       </fr:author>
                     </fr:authors>
                     <fr:date>
@@ -338,9 +338,9 @@ So I think it's entirely likely that Mary had some influence on George's work, a
                       <fr:month>2</fr:month>
                       <fr:day>20</fr:day>
                     </fr:date>
-                    <fr:uri>https://www.my-great-forest.net/0038/</fr:uri>
+                    <fr:uri>https://negation.rocks/lectures/0038/</fr:uri>
                     <fr:display-uri>0038</fr:display-uri>
-                    <fr:route>/0038/</fr:route>
+                    <fr:route>/lectures/0038/</fr:route>
                     <fr:taxon>Quotation</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
@@ -372,7 +372,7 @@ It does not require you to believe or disbelieve <html:em>anything</html:em>.
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -380,9 +380,9 @@ It does not require you to believe or disbelieve <html:em>anything</html:em>.
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/003J/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/003J/</fr:uri>
                 <fr:display-uri>003J</fr:display-uri>
-                <fr:route>/003J/</fr:route>
+                <fr:route>/lectures/003J/</fr:route>
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:table style="border-collapse: collapse;">

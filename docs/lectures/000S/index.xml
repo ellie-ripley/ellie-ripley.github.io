@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,9 +12,9 @@
       <fr:month>1</fr:month>
       <fr:day>29</fr:day>
     </fr:date>
-    <fr:uri>https://www.my-great-forest.net/000S/</fr:uri>
+    <fr:uri>https://negation.rocks/lectures/000S/</fr:uri>
     <fr:display-uri>000S</fr:display-uri>
-    <fr:route>/000S/</fr:route>
+    <fr:route>/lectures/000S/</fr:route>
     <fr:title text="Arity, binary, unary, nullary">Arity, binary, unary, nullary</fr:title>
     <fr:taxon>Definition</fr:taxon>
   </fr:frontmatter>
@@ -44,7 +44,7 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -52,9 +52,9 @@
               <fr:month>1</fr:month>
               <fr:day>29</fr:day>
             </fr:date>
-            <fr:uri>https://www.my-great-forest.net/000P/</fr:uri>
+            <fr:uri>https://negation.rocks/lectures/000P/</fr:uri>
             <fr:display-uri>000P</fr:display-uri>
-            <fr:route>/000P/</fr:route>
+            <fr:route>/lectures/000P/</fr:route>
             <fr:title text="Nonbinary connectives">Nonbinary connectives</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -81,7 +81,7 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/ellieripley/" title="Ellie Ripley" uri="https://www.my-great-forest.net/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
                   </fr:author>
                 </fr:authors>
                 <fr:date>
@@ -89,9 +89,9 @@
                   <fr:month>1</fr:month>
                   <fr:day>29</fr:day>
                 </fr:date>
-                <fr:uri>https://www.my-great-forest.net/000S/</fr:uri>
+                <fr:uri>https://negation.rocks/lectures/000S/</fr:uri>
                 <fr:display-uri>000S</fr:display-uri>
-                <fr:route>/000S/</fr:route>
+                <fr:route>/lectures/000S/</fr:route>
                 <fr:title text="Arity, binary, unary, nullary">Arity, binary, unary, nullary</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>
@@ -127,7 +127,7 @@
 </html:p>
             <fr:resource hash="75baa4ea9a84e46f304522680253acf1">
               <fr:resource-content>
-                <html:img src="/75baa4ea9a84e46f304522680253acf1.svg" />
+                <html:img src="/lectures/75baa4ea9a84e46f304522680253acf1.svg" />
               </fr:resource-content>
               <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
               <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
@@ -141,7 +141,7 @@
             </fr:resource>
             <fr:resource hash="bc0491fd72426f3979fdba4c5e91412f">
               <fr:resource-content>
-                <html:img src="/bc0491fd72426f3979fdba4c5e91412f.svg" />
+                <html:img src="/lectures/bc0491fd72426f3979fdba4c5e91412f.svg" />
               </fr:resource-content>
               <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {forest}]]></fr:resource-source>
               <fr:resource-source type="latex" part="body"><![CDATA[\begin {forest}for tree={s sep=10mm} 
