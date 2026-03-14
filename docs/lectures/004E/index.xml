@@ -9,70 +9,20 @@
     </fr:authors>
     <fr:date>
       <fr:year>2026</fr:year>
-      <fr:month>2</fr:month>
-      <fr:day>20</fr:day>
+      <fr:month>3</fr:month>
+      <fr:day>14</fr:day>
     </fr:date>
-    <fr:uri>https://negation.rocks/lectures/0035/</fr:uri>
-    <fr:display-uri>0035</fr:display-uri>
-    <fr:route>/lectures/0035/</fr:route>
-    <fr:title text="A first example: two truth values">A first example: two truth values</fr:title>
+    <fr:uri>https://negation.rocks/lectures/004E/</fr:uri>
+    <fr:display-uri>004E</fr:display-uri>
+    <fr:route>/lectures/004E/</fr:route>
+    <fr:title text="The strong Kleene structure">The strong Kleene structure</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
-    <html:p>    Let's start out by sup posing that there are only two possibilities for a sentence: either it's true or else it's false.
-    Furthermore, let's suppose that no sentence can ever be both true and false.
-    (In a moment, we'll look at relaxing these assumptions, but it simplifies things to start out with them in place.)
-    This gives us two truth values.
-    I'll call them <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, but it doesn't really matter what we call them; we just need some names or other, and I'll use these.
+    <html:p>    As you might have noticed, in presenting Dunn-Belnap valuations, I started from the Dunn-Belnap structure.
+    That's how I'll continue to present different kinds of structures and valuations: by presenting the structure first.
+    That determines what the valuations are: the different ways of assigning the values in the structure to the atomic sentences, extended to all sentences by following what the structure says about the connectives.
 </html:p>
-    <html:p>     We will connect our language to these truth values in two stages.
-    The first stage involves just the atomic sentences of our language, and is characterised by <html:em>total freedom</html:em>.
-    For each atomic sentence, we choose one of the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> for it to have.
-    Any way of making such a choice for every atomic sentence is called a <html:em>valuation</html:em>.
-    So, for example, there is a valuation that assigns the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to every atomic sentence; and there is another valuation that assigns <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> to every atomic sentence.
-    There is a valuation that assigns <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> just to <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[r]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> to all the other atomic sentences.
-    And there are very many other valuations besides.
-</html:p>
-    <html:p>     Some notation: if we have a valuation named <fr:tex display="inline"><![CDATA[v]]></fr:tex>, then we can talk about the value it assigns to an atomic sentence <fr:tex display="inline"><![CDATA[p]]></fr:tex> by writing <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex>.
-    So if <fr:tex display="inline"><![CDATA[v]]></fr:tex> assigns the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>, then we can record this more efficiently by saying that <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {F}}]]></fr:tex>.
-    And if a different valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> assigns the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>, then we can record this by saying that <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {T}}]]></fr:tex>.
-</html:p>
-    <html:p>     When we work with these valuations, we're again bumping into infinity here, in two ways.
-    First, since we have infinitely many atomic sentences, each individual valuation is itself infinite; it must assign one or the other of <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> to <html:em>every one</html:em> of the infinitely many atomic sentences.
-    For this reason, while it's possible to fully specify a few example valuations, as I did two paragraphs ago, there are a lot of valuations out there that can't be fully specified at all, since they don't fit any kind of neat pattern.
-</html:p>
-    <html:p>     Second, not only is each valuation infinite, but there are <html:em>infinitely many</html:em> different valuations.
-    We're going to handle both of these sources of infinity in <fr:link href="/lectures/000K/" title="Infinity; or, more than about six" uri="https://negation.rocks/lectures/000K/" display-uri="000K" type="local">our usual blase way</fr:link>.
-    The second source we can ignore entirely; it just doesn't really matter for our purposes how many valuations there are.
-    The fact that there are so staggeringly many may be interesting, but isn't actually going to affect us at all.
-    The first, though, we'll need to make some provision for.
-    For the most part, this will be pretty subtle, and you won't need to lose any sleep over it, but I'll point it out here.
-</html:p>
-    <html:p>     In the course of an example, I might say something like "Take a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>".
-    What I want to note here is that this does not fully specify a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>.
-    A valuation must assign some value to <html:em>every</html:em> atomic sentence, and we're supposing a language with infinitely many.
-    Lots of different valuations will meet the above condition on <fr:tex display="inline"><![CDATA[v]]></fr:tex>.
-    What I'm saying when I put something forward like this is just to take <html:em>any</html:em> valuation that meets the specification.
-    The fact that lots of different valuations meet the specification is fine.
-</html:p>
-    <html:p>     So that's our first stage of connecting our language to the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>: we use valuations, which are ways of assigning these values to the atomic sentences of the language.
-    Absolutely any such way of assigning counts as a valuation, so there are lots of different valuations.
-    In our second stage, we move on to compound sentences, letting each valuation assign values to these as well.
-    Here, though, in contrast with the atomic sentences, there is <html:em>zero</html:em> freedom.
-    A valuation can assign any values at all to the atomic sentences, but once that assignment is made, that fully determines what value the valuation will assign to every compound sentence.
-</html:p>
-    <html:p>     This difference between atomic and compound sentences---total freedom for atomics, and total constraint for compounds---is the key to how we're going to put these valuations to use.
-    We need total freedom for the atomic sentences because, well, there's not much to them.
-    There's nothing about <fr:tex display="inline"><![CDATA[p]]></fr:tex> that means it should get the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
-    It's just a structureless atom.
-    Like, we might in one application let <fr:tex display="inline"><![CDATA[p]]></fr:tex> represent the claim "Carl is a good dog"; in that case it's very definitely true.
-    But we might in another application let <fr:tex display="inline"><![CDATA[p]]></fr:tex> represent the claim "Hexing the moon is a good idea"; in that case it's probably false.
-    Or we might deal with applications that let <fr:tex display="inline"><![CDATA[p]]></fr:tex> represent a particular electronic component that can be on or off, with the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> standing for these two states.
-    So rather than prejudging anything, we consider every possible way of assigning values to the atomics.
-</html:p>
-    <html:p>     Compounds, on the other hand, give us something to work with: their main connective.
-    By choosing a scheme for determining the values of compounds based on the values of their components, we endow our connectives with a certain kind of meaning.
-    In other words, we're using valuations to give our <html:em>connectives</html:em> meanings, while leaving our atomic sentences fully unspecified.
-    Let's see how it works.
+    <html:p>    Let's look now at the following structure, known as the <html:strong>strong Kleene</html:strong> structure, named after the logician Stephen Kleene:
 </html:p>
     <fr:tree show-metadata="false">
       <fr:frontmatter>
@@ -83,126 +33,17 @@
         </fr:authors>
         <fr:date>
           <fr:year>2026</fr:year>
-          <fr:month>2</fr:month>
-          <fr:day>20</fr:day>
+          <fr:month>3</fr:month>
+          <fr:day>14</fr:day>
         </fr:date>
-        <fr:uri>https://negation.rocks/lectures/0036/</fr:uri>
-        <fr:display-uri>0036</fr:display-uri>
-        <fr:route>/lectures/0036/</fr:route>
-        <fr:title text="Boolean valuations: negation">Boolean valuations: negation</fr:title>
+        <fr:uri>https://negation.rocks/lectures/004G/</fr:uri>
+        <fr:display-uri>004G</fr:display-uri>
+        <fr:route>/lectures/004G/</fr:route>
+        <fr:title text="The strong Kleene structure">The strong Kleene structure</fr:title>
+        <fr:taxon>Definition</fr:taxon>
       </fr:frontmatter>
       <fr:mainmatter>
-        <html:p>         The scheme we'll start with is a very standard one.
-        These valuations are often called `Boolean valuations', after the logicians George and Mary Everest Boole, although there are some small differences from the logical approach they developed.
-</html:p>
-        <fr:tree show-metadata="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>20</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/0037/</fr:uri>
-            <fr:display-uri>0037</fr:display-uri>
-            <fr:route>/lectures/0037/</fr:route>
-            <fr:taxon>Side note</fr:taxon>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <html:p>George and Mary Everest Boole lived and wrote in England and Ireland in the 19th century, and Mary into the 20th as well.
-George is typically credited alone for the logical work he published, but I think it's worth noting that Mary was an author in her own right, their relationship was clearly an intellectual one, and George's most influential book, <html:em>The Laws of Thought</html:em>, was written during the time their relationship was beginning.
-So I think it's entirely likely that Mary had some influence on George's work, although how much and of what kind is something I could only speculate on.</html:p>
-            <html:p>         Incidentally, here's Mary Everest Boole's advice for students encountering infinity:</html:p>
-            <fr:tree show-metadata="false">
-              <fr:frontmatter>
-                <fr:authors>
-                  <fr:author>
-                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-                  </fr:author>
-                </fr:authors>
-                <fr:date>
-                  <fr:year>2026</fr:year>
-                  <fr:month>2</fr:month>
-                  <fr:day>3</fr:day>
-                </fr:date>
-                <fr:uri>https://negation.rocks/lectures/001B/</fr:uri>
-                <fr:display-uri>001B</fr:display-uri>
-                <fr:route>/lectures/001B/</fr:route>
-                <fr:taxon>Quotation</fr:taxon>
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <html:p>"Angels, and square roots of negative quantities, and the other things that have no existence in three dimensions [she later explicitly includes infinity as an angel], do not come to us to gossip about themselves; or the place they came from; or where they are going to; or where we are going to in the far future. They are messengers from the As-Yet-Unknown; and come to tell us where we are to go next; and the shortest road to get there; and where we ought not to go just at present. 
-        When square root of minus one comes to you, behave reasonably about him. 
-        Treat him logically, exactly as if he were six or nine; only always remember to keep well in front of you <html:em>the fact of your own ignorance</html:em>. 
-        You may never find out any more about him than you know now; but if you treat him sensibly he will tell you plenty of truths about your <fr:tex display="inline"><![CDATA[x]]></fr:tex>s and <fr:tex display="inline"><![CDATA[y]]></fr:tex>s, and other unknown things".</html:p>
-                <html:p>From Mary Everest Boole, <html:em>Philosophy and Fun of Algebra</html:em>, 1909.</html:p>
-              </fr:mainmatter>
-            </fr:tree>
-            <html:p>         And here's her advice for me (and maybe also for you):</html:p>
-            <fr:tree show-metadata="false">
-              <fr:frontmatter>
-                <fr:authors>
-                  <fr:author>
-                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-                  </fr:author>
-                </fr:authors>
-                <fr:date>
-                  <fr:year>2026</fr:year>
-                  <fr:month>2</fr:month>
-                  <fr:day>20</fr:day>
-                </fr:date>
-                <fr:uri>https://negation.rocks/lectures/0038/</fr:uri>
-                <fr:display-uri>0038</fr:display-uri>
-                <fr:route>/lectures/0038/</fr:route>
-                <fr:taxon>Quotation</fr:taxon>
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <html:p>"You may some day become a teacher. 
-        If ever you are teaching a class how to set down a sum or an equation, say 'This is my way', or 'This is the way which I think you will find most convenient', or 'This is the way in which the Government Inspector requires you to do the sums at present, and therefore you must learn it'. 
-        But do not take in vain the names of great unseen powers to back up either your own limitations, or your own authority, or the Inspector's authority. 
-        Never say, or imply, 'Arithmetic requires you to do this; your sum will come wrong if you do it differently'. 
-        Remember that arithmetic requires nothing from you except absolute honesty and patient work. You get no blessing from the Unseen Powers of Number by slipshod statements used to make your own path easy."
-</html:p>
-                <html:p>From Mary Everest Boole, <html:em>Philosophy and Fun of Algebra</html:em>, 1909.</html:p>
-              </fr:mainmatter>
-            </fr:tree>
-            <html:p>This last one, I think, is of some importance when it comes to logic.
-Unfortunately, the world has no shortage of people who are tempted to say "<html:em>Logic</html:em> tells us..." and then they fill in something they're trying to convince you of.
-<html:strong>Don't fall for it.</html:strong>
-Logic is about carefulness, orientation to detail, and discerning what you do and don't have support for.
-It does not require you to believe or disbelieve <html:em>anything</html:em>.
-(Rant over.)
-</html:p>
-          </fr:mainmatter>
-        </fr:tree>
-        <html:p>         To calculate the value that a compound sentence takes on a given valuation, we need to know two things: the main connective of the sentence, and the values that its components take on the valuation.
-        For Boolean valuations, here's how the dependence goes.
-        If we have a negation---that is, a sentence whose main connective is <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>---then that sentence takes the opposite value from its component.
-        So if we have a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> such that <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(\neg  p) = \mathsf {\mathbf {F}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[v(\neg \neg  p) = \mathsf {\mathbf {T}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[v(\neg \neg \neg  p) = \mathsf {\mathbf {F}}]]></fr:tex>, and so on.
-        I'll use a table like the following to record this:
-</html:p>
-        <fr:tree show-metadata="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003J/</fr:uri>
-            <fr:display-uri>003J</fr:display-uri>
-            <fr:route>/lectures/003J/</fr:route>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <html:table style="border-collapse: collapse;">
+        <html:table style="border-collapse: collapse;">
     <html:thead><html:tr>
         <html:td class="topedge"><fr:tex display="inline"><![CDATA[A]]></fr:tex></html:td>
         <html:td class="topedge"><fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex></html:td>
@@ -213,171 +54,48 @@ It does not require you to believe or disbelieve <html:em>anything</html:em>.
             <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
         </html:tr>
         <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
             <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
             <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
         </html:tr>
     </html:tbody>
 </html:table>
-          </fr:mainmatter>
-        </fr:tree>
-        <html:p> This table tells you, for any value that a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> might have on a Boolean valuation, what value the sentence <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> must then have on that Boolean valuation.
-    To use the table, if you know the value that a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> has on a Boolean valuation, find the row in the table that displays that value in the "<fr:tex display="inline"><![CDATA[A]]></fr:tex>" column.
-    Then you can read the value that that same row has in the "<fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex>" column to see what value <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> must have.
-        Boolean negation is simple enough that you probably won't need this table for very long, or maybe not at all; but we'll look at other options in a moment, so it's good to be able to read a table like this.
-</html:p>
-        <html:p>         Why this table, rather than some other?
-        That is, why have we chosen to set things up so that negations always take the opposite value from their components, rather than, say, always the same value, or always <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>, or always <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>?
-        (Note that those are the only four options, given our setup.)
-        Those other options are all perfectly good options for a unary connective.
-        The reason we've gone with the one we have is that we want <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> to have something to do with <html:em>negation</html:em>, with the idea of something <html:em>not</html:em> being the case.
-        The truth-value-reversal idea we've gone with is one way to try to get at that.
-        In English, if I say that the moon is made of green cheese, then what I've said is false; and so if I say it's <html:em>not</html:em> made of green cheese, then what I've said is true.
-        The idea is to try to endow <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> with a meaning at least something like the meaning of "not"; and this particular table is one attempt to do that, probably the best choice we can make given our current limitations.
-</html:p>
-      </fr:mainmatter>
-    </fr:tree>
-    <fr:tree show-metadata="false">
-      <fr:frontmatter>
-        <fr:authors>
-          <fr:author>
-            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-          </fr:author>
-        </fr:authors>
-        <fr:date>
-          <fr:year>2026</fr:year>
-          <fr:month>2</fr:month>
-          <fr:day>20</fr:day>
-        </fr:date>
-        <fr:uri>https://negation.rocks/lectures/0039/</fr:uri>
-        <fr:display-uri>0039</fr:display-uri>
-        <fr:route>/lectures/0039/</fr:route>
-        <fr:title text="Boolean valuations: conjunction">Boolean valuations: conjunction</fr:title>
-      </fr:frontmatter>
-      <fr:mainmatter>
-        <html:p>         The same idea comes to the fore when we look at the remaining connectives in this language.
-        In each case, we'll choose how to deal with them based on their intended interpretation: <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> as something like "and"; <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> as something like "or"; <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex> as something like "implies" or "if...then"; and <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> as, well, we'll get to them in a minute.
-        We're working with a very simple and coarse-grained setup here, so the match might not be perfect.
-        But thinking about how "and" and "or" and "if...then" work can get us some way along the path to seeing what we're doing with these connectives, just like thinking about "not" can help with understanding <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>.
-        Here's how Boolean valuations deal with conjunctions: a conjunction <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on a given valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> exactly when <html:em>both</html:em> of its components <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> get value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on the valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>.
-        Otherwise, the conjunction <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
-</html:p>
-        <html:p>         Why deal with conjunction this way?
-        Think, for example, about the claim "The moon is made of green cheese, and Carl is a good dog".
-        Is this claim true or false?
-        Well, "the moon is made of green cheese" is false, and "Carl is a good dog" is true.
-        So if someone said to us "the moon is made of green cheese and Carl is a good dog", then what they've said is false: the falsity of the first part undermines the whole claim.
-        They in effect said that both of these were true, and that's not so; so what they've said is false.
-        This is why, for <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>, we go with a setup that requires both components to be true on a valuation for the conjunction itself to be true on that valuation.
-        Just as with negation, we can record this information in a table:            
-</html:p>
-        <fr:tree show-metadata="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003K/</fr:uri>
-            <fr:display-uri>003K</fr:display-uri>
-            <fr:route>/lectures/003K/</fr:route>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <html:table style="border-collapse: collapse;">
+        <html:table style="border-collapse: collapse;">
   <html:thead><html:tr>
     <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\land ]]></fr:tex></html:td>
     <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
     <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
   </html:tr></html:thead>
   <html:tbody>
     <html:tr>
       <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
       <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
       <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
     </html:tr>
     <html:tr>
       <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
       <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
       <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
     </html:tr>
   </html:tbody>
 </html:table>
-          </fr:mainmatter>
-        </fr:tree>
-        <html:p>Since this table is for a binary connective rather than a unary one, we read it slightly differently from the table for negation.
-Let's say you want to use this table to calculate <fr:tex display="inline"><![CDATA[w(p \land  q)]]></fr:tex> on some valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> where you know that <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {F}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {T}}]]></fr:tex>.
-        Use the left component of the conjunction to choose a row of the table, by finding the appropriate value along the left edge.
-        In this case, the left component is <fr:tex display="inline"><![CDATA[p]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {F}}]]></fr:tex>, so you choose the bottom row of the table.
-        Then, use the right component of the conjunction to choose a column of the table, by finding the appropriate value along the top edge.
-        In this case, the right component is <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {T}}]]></fr:tex>, so you choose the column headed by <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>.
-        By finding the entry where this row and column meet, you find the value your conjunction must take; in this case, this tells us that <fr:tex display="inline"><![CDATA[w(p \land  q) = \mathsf {\mathbf {F}}]]></fr:tex>.
-        As with negation, you might find that you don't need the table for long, that it's enough to remember that both components must be true for the conjunction to be true.
-        But as with negation, we're going to see more complex alternatives in a moment, so it's good to be able to read these tables.
-</html:p>
-        <html:p>         The value of a negation or a conjunction, in a Boolean valuation, depends only on the values of its component(s).
-        This is so even when the components are themselves compound sentences.
-        So, for example, consider a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = v(q) = \mathsf {\mathbf {T}}]]></fr:tex>; you now know enough to calculate <fr:tex display="inline"><![CDATA[v(\neg (p \land  \neg  q))]]></fr:tex>.
-        Do it step by step: first <fr:tex display="inline"><![CDATA[v(\neg  q) = \mathsf {\mathbf {F}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(p \land  \neg  q) = \mathsf {\mathbf {F}}]]></fr:tex>, and finally <fr:tex display="inline"><![CDATA[v(\neg (p \land  \neg  q)) = \mathsf {\mathbf {T}}]]></fr:tex>.
-        So once you know the Boolean tables for each connective, you will be able to calculate the value of any formula on any Boolean valuation, no matter how complex the formula is, so long as you know the values of the atomic formulas it contains.
-</html:p>
-      </fr:mainmatter>
-    </fr:tree>
-    <fr:tree show-metadata="false">
-      <fr:frontmatter>
-        <fr:authors>
-          <fr:author>
-            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-          </fr:author>
-        </fr:authors>
-        <fr:date>
-          <fr:year>2026</fr:year>
-          <fr:month>2</fr:month>
-          <fr:day>21</fr:day>
-        </fr:date>
-        <fr:uri>https://negation.rocks/lectures/003A/</fr:uri>
-        <fr:display-uri>003A</fr:display-uri>
-        <fr:route>/lectures/003A/</fr:route>
-        <fr:title text="Boolean valuations: disjunction">Boolean valuations: disjunction</fr:title>
-      </fr:frontmatter>
-      <fr:mainmatter>
-        <html:p>         For disjunction, Boolean valuations work the following way: they make a disjunction <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex> true exactly when they make <html:em>at least one</html:em> of the components <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> true.
-        To see why, think about "the moon is made of green cheese or Carl is a good dog".
-        Is this true or false?
-        This seems to be true: the truth of the second part is enough for the whole thing to be true.
-        So for disjunction, we want to be sure to pick a table that respects this.
-        The only way for a disjunction to be false, on this way of proceeding, is for both of its components to be false; any other combination makes the disjunction true.</html:p>
-        <html:p>Note in particular the connection between <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \lor  \mathsf {\mathbf {T}} = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:link href="/lectures/000E/" title="Logicians' Weird Habit 1" uri="https://negation.rocks/lectures/000E/" display-uri="000E" type="local">logicians' weird habit 1</fr:link>.
-        Whenever I say "or" in these notes, I mean to include the possibility of both sides of the "or" being true.
-        And that's just what <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> does as well, on this scheme.
-        This is a case of life imitating art; what's happening here is that uses of the English word "or" among communities of logicians are strongly influenced by experiences with the connective <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>.
-</html:p>
-        <html:p>         Just as with conjunction, we can record this policy in a table:
-</html:p>
-        <fr:tree show-metadata="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003L/</fr:uri>
-            <fr:display-uri>003L</fr:display-uri>
-            <fr:route>/lectures/003L/</fr:route>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <html:table style="border-collapse: collapse;">
+        <html:table style="border-collapse: collapse;">
   <html:thead><html:tr>
     <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\lor ]]></fr:tex></html:td>
     <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
     <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
   </html:tr></html:thead>
   <html:tbody>
@@ -385,177 +103,51 @@ Let's say you want to use this table to calculate <fr:tex display="inline"><![CD
       <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
       <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
       <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
     </html:tr>
     <html:tr>
       <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
       <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
       <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
     </html:tr>
   </html:tbody>
 </html:table>
-          </fr:mainmatter>
-        </fr:tree>
-      </fr:mainmatter>
-    </fr:tree>
-    <fr:tree show-metadata="false">
-      <fr:frontmatter>
-        <fr:authors>
-          <fr:author>
-            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-          </fr:author>
-        </fr:authors>
-        <fr:date>
-          <fr:year>2026</fr:year>
-          <fr:month>2</fr:month>
-          <fr:day>21</fr:day>
-        </fr:date>
-        <fr:uri>https://negation.rocks/lectures/003B/</fr:uri>
-        <fr:display-uri>003B</fr:display-uri>
-        <fr:route>/lectures/003B/</fr:route>
-        <fr:title text="Boolean valuations: implication">Boolean valuations: implication</fr:title>
-      </fr:frontmatter>
-      <fr:mainmatter>
-        <html:p>     This is the weird one.
-    I won't make excuses; Boolean implication is not a very good approximation of "if...then".
-    Don't lean too hard, then, on the understanding you already have of "if...then"; just roll with it.
-    Here's the table:
-</html:p>
-        <fr:tree show-metadata="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003M/</fr:uri>
-            <fr:display-uri>003M</fr:display-uri>
-            <fr:route>/lectures/003M/</fr:route>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <html:table style="border-collapse: collapse;">
+        <html:table style="border-collapse: collapse;">
   <html:thead><html:tr>
     <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex></html:td>
     <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
     <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
   </html:tr></html:thead>
   <html:tbody>
     <html:tr>
       <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
       <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
       <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
     </html:tr>
     <html:tr>
       <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
       <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
       <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
     </html:tr>
   </html:tbody>
 </html:table>
-          </fr:mainmatter>
-        </fr:tree>
-        <html:p>    That is, <fr:tex display="inline"><![CDATA[v(p \rightarrow  q)]]></fr:tex> comes out to <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> in all cases except the one case where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>.
-    It's relatively uncontroversial that <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> should be false when <fr:tex display="inline"><![CDATA[p]]></fr:tex> is true and <fr:tex display="inline"><![CDATA[q]]></fr:tex> is false; if <fr:tex display="inline"><![CDATA[p]]></fr:tex> really did imply <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and <fr:tex display="inline"><![CDATA[p]]></fr:tex> is true, then <fr:tex display="inline"><![CDATA[q]]></fr:tex> should be true as well, or at least so goes a pretty plausible line of reasoning.
-    So the upper-right corner of the table is pretty strongly supported.
-    But all of the other three entries can be (and have been) contested.
-</html:p>
-        <html:p>     Note that, given the above table, we have <fr:tex display="inline"><![CDATA[v(p \rightarrow  q) = v(\neg  p \lor  q)]]></fr:tex> for every Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>, no matter what <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex> are.
-    (Later this week, we'll pick up a word for that: <html:em>equivalence</html:em>.)
-    This might be the best way to see what's behind the table above: if <fr:tex display="inline"><![CDATA[p]]></fr:tex> implies <fr:tex display="inline"><![CDATA[q]]></fr:tex>, then we might think that either <fr:tex display="inline"><![CDATA[p]]></fr:tex> isn't the case or else it is, and if it is, then since it implies <fr:tex display="inline"><![CDATA[q]]></fr:tex> we can conclude that <fr:tex display="inline"><![CDATA[q]]></fr:tex> would be as well.
-    So if <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> is true, this might lead us to think that <fr:tex display="inline"><![CDATA[\neg  p \lor  q]]></fr:tex> should also be true.
-    Conversely, suppose that <fr:tex display="inline"><![CDATA[\neg  p \lor  q]]></fr:tex> is true.
-    Then what could we conclude if <fr:tex display="inline"><![CDATA[p]]></fr:tex> were to be true?
-    Well, since <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> can't both be true, it would imply that <fr:tex display="inline"><![CDATA[q]]></fr:tex> must be the true component of <fr:tex display="inline"><![CDATA[\neg  p \lor  q]]></fr:tex>.
-    That is, <fr:tex display="inline"><![CDATA[p]]></fr:tex> would imply <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
-    There's a lot you could quarrel with in these lines of reasoning, but I think something like them is probably the best motivation for this table for implication.
-    Regardless, this is how Boolean implication works, and we'll work with it in this form.</html:p>
-        <fr:tree show-metadata="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003C/</fr:uri>
-            <fr:display-uri>003C</fr:display-uri>
-            <fr:route>/lectures/003C/</fr:route>
-            <fr:taxon>Side note</fr:taxon>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <html:p>There was, alas, an embarrassing moment, mainly from the 1950s to the 1990s or so, where a decent number of philosophers genuinely defended the idea that the Boolean implication is not just an approximation, but actually fully gives the truth conditions for English "if...then" statements.
-    To see that this doesn't work, here's an old facetious proof of the existence of God:</html:p>
-            <html:p>It's false to say that if there's a God, then the prayers of the wicked will be answered.
-    So, by the Boolean truth table, the antecedent of that "if...then" must be true; so there is a God.</html:p>
-            <html:p>Even theists should (and do) reject this line of reasoning; it's pretty obviously bad reasoning.
-    Embarrassments like this for the idea that English conditionals are Boolean implications can be multiplied more or less endlessly; the view is as refuted as anything ever gets.
-    But if you happen across certain philosophy from around that time period, you should be aware that many authors did in fact believe this, despite the obvious problems.
-</html:p>
-            <html:p>
-If you're interested in learning more about this, I recommend the book <fr:link href="/lectures/003D/" title="https://negation.rocks/lectures/003D/" uri="https://negation.rocks/lectures/003D/" display-uri="003D" type="local">Relevant Logics and their Rivals, vol. 1</fr:link>.
-Note that this was written during the period in question!
-It's good fun, and it gives a particularly vitriolic (and particularly Australian) takedown of what was at the time practically an accepted orthodoxy. 
-</html:p>
-          </fr:mainmatter>
-        </fr:tree>
-      </fr:mainmatter>
-    </fr:tree>
-    <fr:tree show-metadata="false">
-      <fr:frontmatter>
-        <fr:authors>
-          <fr:author>
-            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-          </fr:author>
-        </fr:authors>
-        <fr:date>
-          <fr:year>2026</fr:year>
-          <fr:month>2</fr:month>
-          <fr:day>21</fr:day>
-        </fr:date>
-        <fr:uri>https://negation.rocks/lectures/003E/</fr:uri>
-        <fr:display-uri>003E</fr:display-uri>
-        <fr:route>/lectures/003E/</fr:route>
-        <fr:title text="Boolean valuations: verum and falsum">Boolean valuations: verum and falsum</fr:title>
-      </fr:frontmatter>
-      <fr:mainmatter>
-        <html:p>     Finally, verum and falsum.
-    These don't really have great natural-language equivalents.
-    But the idea is pretty simple: <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> is meant to be like the truest possible thing, MAXIMUM TRUE; and <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is meant to be like the falsest possible thing, MAXIMUM FALSE.</html:p>
-        <html:p>What do we need to specify about these?
-    Well, like with any connective, we need to say how to determine a value for any sentence with <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> or <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> as its main connective, given values for all its components.
-    And: sentences with nullary connectives as their main connectives have <html:em>no</html:em> components; these sentences are just the connectives themselves.
-    </html:p>
-        <html:p>
-    So we need to give values for <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> and for <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> to take on every Boolean valuation.
-    Given their intended interpretations, the choice is clear.
-    For any Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> at all, we have <fr:tex display="inline"><![CDATA[v(\top ) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(\bot ) = \mathsf {\mathbf {F}}]]></fr:tex>.</html:p>
-        <html:p>For uniformity, we can put these in "tables":</html:p>
-        <fr:tree show-metadata="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003I/</fr:uri>
-            <fr:display-uri>003I</fr:display-uri>
-            <fr:route>/lectures/003I/</fr:route>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <html:table style="border-collapse: collapse;">
+        <html:table style="border-collapse: collapse;">
     <html:thead><html:tr>
         <html:td class="topedge"><fr:tex display="inline"><![CDATA[\top ]]></fr:tex></html:td>
     </html:tr></html:thead>
@@ -565,7 +157,7 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
         </html:tr>
     </html:tbody>
 </html:table>
-            <html:table style="border-collapse: collapse;">
+        <html:table style="border-collapse: collapse;">
     <html:thead><html:tr>
         <html:td class="topedge"><fr:tex display="inline"><![CDATA[\bot ]]></fr:tex></html:td>
     </html:tr></html:thead>
@@ -575,8 +167,6 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
         </html:tr>
     </html:tbody>
 </html:table>
-          </fr:mainmatter>
-        </fr:tree>
       </fr:mainmatter>
     </fr:tree>
     <fr:tree show-metadata="false">
@@ -588,28 +178,70 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
         </fr:authors>
         <fr:date>
           <fr:year>2026</fr:year>
-          <fr:month>2</fr:month>
-          <fr:day>21</fr:day>
+          <fr:month>3</fr:month>
+          <fr:day>14</fr:day>
         </fr:date>
-        <fr:uri>https://negation.rocks/lectures/003F/</fr:uri>
-        <fr:display-uri>003F</fr:display-uri>
-        <fr:route>/lectures/003F/</fr:route>
-        <fr:title text="Boolean valuations: putting it all together">Boolean valuations: putting it all together</fr:title>
+        <fr:uri>https://negation.rocks/lectures/004F/</fr:uri>
+        <fr:display-uri>004F</fr:display-uri>
+        <fr:route>/lectures/004F/</fr:route>
+        <fr:taxon>Side note</fr:taxon>
       </fr:frontmatter>
       <fr:mainmatter>
-        <html:p>         For the language we're currently focused on, that's the whole story about Boolean valuations.
-        With the above tables, if you know what values a valuation gives to all the atomic sentences, you can calculate what values that valuation gives to every sentence in our language.
-        Of course, you usually <html:em>won't</html:em> know, of any particular valuation, what values it gives to all the atomic sentences, since that's infinite! 
-        But to calculate what a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> says about any particular sentence, it's enough to know what <fr:tex display="inline"><![CDATA[v]]></fr:tex> says about just the atomic sentences that actually occur in that sentence; and this is always finite.
+        <html:p>Kleene (pronounced "CLAY-nee") was a 20th-century US logician.
+    His son would later say, of the pronunciation CLAY-nee, "As far as I am aware this pronunciation is incorrect in all known languages. I believe that this novel pronunciation was invented by my father".
+    (See <fr:link href="https://foldoc.org/Stephen+Kleene" type="external">https://foldoc.org/Stephen+Kleene</fr:link>.)</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <html:p>    This is a very widely used and studied structure, and it's one we'll use a lot this semester.
 </html:p>
-        <html:p>         For example, consider any valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> such that <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {T}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {F}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(r) = \mathsf {\mathbf {T}}]]></fr:tex>, and suppose you want to know what <fr:tex display="inline"><![CDATA[w(p \land  \neg  (q \lor  r))]]></fr:tex> is.
-        By looking at the table for disjunction, you can see that <fr:tex display="inline"><![CDATA[w(q \lor  r)]]></fr:tex> must be <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>; then by looking at the table for negation, you can see that <fr:tex display="inline"><![CDATA[w(\neg  (q \lor  r))]]></fr:tex> must be <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>; and finally by looking at the table for conjunction you can conclude that <fr:tex display="inline"><![CDATA[w(p \land  \neg  (q \lor  r))]]></fr:tex> is <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
-        By contrast, if we were thinking about a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(r) = \mathsf {\mathbf {F}}]]></fr:tex>, then we would find that <fr:tex display="inline"><![CDATA[v(p \land  \neg  (q \lor  r)) = \mathsf {\mathbf {T}}]]></fr:tex>.
-        (Make sure you think that one through, to see how I got the answer!)
+    <html:p>    Indeed, this structure is so widely used and studied that there's not really any single fixed interpretation we can give to the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>.
+    Sometimes people think of it as "neither true nor false", sometimes as "both true and false", sometimes as "half true", sometimes as "an unknown truth value", and sometimes in other ways.
+    But however it is interpreted, the structure is the same.
+    For now, pay attention just to the structure itself.
 </html:p>
-        <html:p>         You now know enough to be able to do this for any sentence in our language.
-        It's a good idea to get some practice in; this is the topic of an exercise type on <fr:link href="https://binchicken.one/" type="external">https://binchicken.one</fr:link>.
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>3</fr:month>
+          <fr:day>14</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/004H/</fr:uri>
+        <fr:display-uri>004H</fr:display-uri>
+        <fr:route>/lectures/004H/</fr:route>
+        <fr:title text="Looking at a structure without interpreting it">Looking at a structure without interpreting it</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>        Even without any interpretation at all for the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>, we can still see how the strong Kleene structure works, and we can build up strong Kleene valuations using this structure in just the way you would expect.
+        (Again, you have exercises on this at <fr:link href="https://binchicken.one/" type="external">https://binchicken.one</fr:link>.)
+        The same is true of the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}, \mathsf {\mathbf {F}}]]></fr:tex>; you don't need to think of <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> as connecting to truth, or of <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> as connecting to falsity, to be able to see how the strong Kleene structure works in full.
 </html:p>
+        <html:p>        Indeed, you don't need to think of <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}, \mathsf {\mathbf {*}}, \mathsf {\mathbf {F}}]]></fr:tex> as <html:em>truth</html:em> values at all; let's just call them "values".
+        All you need, in order to be able to use the structure, is to know how connectives act on these values.
+        That information is contained entirely in the above tables.
+        So you don't need to interpret this structure at all to be able to use it.
+</html:p>
+        <html:p>        The same is true of all our structures.
+        Although I've tried to help you get the feel for the Boolean structure and the Dunn-Belnap structure by having you think about truth and falsity, the structures themselves don't depend on this way of interpreting them.
+        All the structures really are is some collection of values and a way to calculate on them using the connectives.
+</html:p>
+        <html:p>        This is why we're able to use these structures for purposes other than thinking about truth.
+        Recall our electrical interpretation of the Boolean structure.
+        A switch that's on isn't <html:em>true</html:em>, and a switch that's off isn't <html:em>false</html:em>; they're just on or off.
+        But we used the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to represent being on and the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> to represent being off.
+        This required divorcing <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> from their initial interpretation as truth values.
+</html:p>
+        <html:p>        Similarly when we think about the epistemic interpretation of the Dunn-Belnap structure.
+        You might have been told both that Carl is a good dog and that Carl's not a good dog, and we can use the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex> to keep track of that.
+        But that doesn't mean that "Carl is a good dog" <html:em>really is</html:em> both true and false.
+        (In fact, it's not false at all!)
+        So in this interpretation, we're using the values as records of reports, again not as truth values.
+        It's possible to interpret these structures in many different ways because the structures themselves don't depend on any particular interpretation; they're fully abstract.</html:p>
       </fr:mainmatter>
     </fr:tree>
     <fr:tree show-metadata="false">
@@ -621,57 +253,33 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
         </fr:authors>
         <fr:date>
           <fr:year>2026</fr:year>
-          <fr:month>2</fr:month>
-          <fr:day>21</fr:day>
+          <fr:month>3</fr:month>
+          <fr:day>14</fr:day>
         </fr:date>
-        <fr:uri>https://negation.rocks/lectures/003G/</fr:uri>
-        <fr:display-uri>003G</fr:display-uri>
-        <fr:route>/lectures/003G/</fr:route>
-        <fr:title text="The Boolean structure">The Boolean structure</fr:title>
+        <fr:uri>https://negation.rocks/lectures/004I/</fr:uri>
+        <fr:display-uri>004I</fr:display-uri>
+        <fr:route>/lectures/004I/</fr:route>
+        <fr:title text="Relabeling structures">Relabeling structures</fr:title>
       </fr:frontmatter>
       <fr:mainmatter>
-        <html:p>         Now I'm going to give you a slightly different way to think about what we've just gone over.
-        This way is conceptually a bit more out there, but I think it makes it easier to do the calculations, and eventually even makes it easier to consider other possibilities.
-        Don't worry too much if this section seems a bit much at first; but if it does, make sure you return here after you've had some more practice!
-        What's here will in fact make things easier, once you grok it.
+        <html:p>        So if <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> don't have to have anything to do with truth and falsity, why are they called "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>" and "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>"?
+        Here's the real answer: well, we had to call them <html:em>something</html:em>, and the suggestion of truth and falsity carried by the names "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>" and "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>" can be useful for building your intuition, as long as you don't get stuck on the idea.
+        The same goes for the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex>, and the names "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex>" and "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex>" we're using for them.
+        Once you're familiar with these structures, the names for the values don't matter at all.
+        We could easily use different names.
 </html:p>
-        <html:p>         The conceptual move is this: we don't have to think about connectives as only acting within the language, forming compound sentences from their components.
-        It can help to think of connectives as living a double life, acting on truth values directly.
-        Rather than saying something like "for any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> and any valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>, if <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {T}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(\neg A) = \mathsf {\mathbf {F}}]]></fr:tex>", we can say the same thing much more simply by just reporting that <fr:tex display="inline"><![CDATA[\neg \mathsf {\mathbf {T}} = \mathsf {\mathbf {F}}]]></fr:tex>.
-        By saying this, we're <html:em>not</html:em> saying that <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> are sentences.
-        They're not.
-        They're still truth values, which are something else.
-        What we're doing is extending our connectives so that they have the ability to act on truth values too.
-        You can read all our earlier connective tables in this way.
-        So, for example, you can consult the disjunction table to see that <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \lor  \mathsf {\mathbf {F}} = \mathsf {\mathbf {T}}]]></fr:tex>, or that <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}} \lor  \mathsf {\mathbf {F}} = \mathsf {\mathbf {F}}]]></fr:tex>.
+        <html:p>        For example, <fr:link href="/lectures/003T/" title="Zeroes and ones" uri="https://negation.rocks/lectures/003T/" display-uri="003T" type="local">sometimes people will present the Boolean structure using the names "1" and "0"</fr:link> for its values, rather than "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>" and "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>", as I've done here.
+        But it's still the same structure, so long as all the connectives behave the same way.
+        For example, <fr:tex display="inline"><![CDATA[\neg  1 = 0]]></fr:tex>, and <fr:tex display="inline"><![CDATA[1 \lor  0 = 1]]></fr:tex>, and so on.
+        We're just calling the values something different; as long as they act the same the difference doesn't matter.
 </html:p>
-        <html:p>         Thinking this way brings at least two benefits: one practical and one conceptual.
-        Practically, I find it makes it easier to calculate the value a compound sentence should take on a valuation.
-        Think again about a valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> such that <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {T}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {F}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[w(r) = \mathsf {\mathbf {T}}]]></fr:tex>, and suppose you want to know what <fr:tex display="inline"><![CDATA[w(p \land  \neg  (q \lor  r))]]></fr:tex> is.
-        (This is one of the examples we just looked at.)
-        Now we can proceed as follows: since we know <fr:tex display="inline"><![CDATA[w(p), w(q),]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(r)]]></fr:tex>, we can dig into our compound sentence and <html:em>replace</html:em> those atomic sentences by the truth values they take on the valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex>.
-        This gives us <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \land  \neg  (\mathsf {\mathbf {F}} \lor  \mathsf {\mathbf {T}})]]></fr:tex>.
-        And now we can proceed step-by-step just as before:
-        <html:ul><html:li><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \land  \neg  (\mathsf {\mathbf {F}} \lor  \mathsf {\mathbf {T}})]]></fr:tex></html:li>
-            <html:li><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \land  \neg  \mathsf {\mathbf {T}}]]></fr:tex></html:li>
-            <html:li><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}} \land  \mathsf {\mathbf {F}}]]></fr:tex></html:li>
-            <html:li><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:li></html:ul>
-        This is just another way to arrive at the same answer, and we're doing the same things along the way.
-        The difference is that going this way gives you a useful notation for writing down <html:em>intermediate</html:em> results.
-        That can get really important; the more you try to hold in your head at once, the more likely you are to make a slip-up.
-        By having a simple notation for intermediate results, you can make it much easier to make it through an entire calculation correctly.
+        <html:p>        In thinking about all of our structures, then, it can be helpful to open up a part of your mind that lets you think about them without any particular interpretation in view, and even without any particular names for the values in view, since these names are often linked to particular interpretations.
+        As much as you can, try to just think about the values themselves and how the connectives operate on them, separate from any ideas about truth, or electricity, or possible worlds.
 </html:p>
-        <html:p>         If you want to see this in action, you can check out <fr:link href="https://negation.rocks/emu.html" type="external">https://negation.rocks/emu.html</fr:link>, which is another site I've made for logic practice.
-        (You don't log in to this one, so it's not any part of your assessment; it can be a handy source of practice nonetheless, though.)
-        If you head over there, you'll see that this is also the method I've used there to explain the correct answers for some exercises.
-        Just as having a good notation for intermediate results can be useful in arriving at the right answer, it's also useful for explaining how the correct answer was arrived at, and hopefully it will be useful for you to be able to zero in on the missteps you make as you practice.
-        (And of course you will make missteps!
-        That's how learning works.)
+        <html:p>        It's by proceeding in such an abstract way, separate from all applications, that we can get away with doing the work just once.
+        It can then be applied over and over, wherever we want it.
+        The logician Rósza Péter put the point this way (emphasis added): 
 </html:p>
-        <html:p>         So that's the practical benefit.
-        The conceptual benefit is this: it lets us package up everything we know about Boolean valuations into something called a <html:strong>structure</html:strong>.
-        A structure is a set of values, in this case <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, together with an account of how our connectives act on these values.
-    </html:p>
         <fr:tree show-metadata="false">
           <fr:frontmatter>
             <fr:authors>
@@ -681,21 +289,23 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
             </fr:authors>
             <fr:date>
               <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
+              <fr:month>3</fr:month>
+              <fr:day>14</fr:day>
             </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003H/</fr:uri>
-            <fr:display-uri>003H</fr:display-uri>
-            <fr:route>/lectures/003H/</fr:route>
-            <fr:title text="Structure">Structure</fr:title>
-            <fr:taxon>Definition</fr:taxon>
+            <fr:uri>https://negation.rocks/lectures/004J/</fr:uri>
+            <fr:display-uri>004J</fr:display-uri>
+            <fr:route>/lectures/004J/</fr:route>
+            <fr:taxon>Quotation</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>A <html:strong>structure</html:strong> for a language is a set of values, together with an account of how every connective in the language acts on those values.
+            <html:p>        "Mathematics is really a language, a queer language which speaks entirely in symbols. 
+            The above formula is only a symbol, and means nothing by itself; everybody can substitute into it [their] own experiences. 
+            For one it might mean the counting of the diagonals of a polygon, for another the counting of the number of possibilities for choosing the leading pair among [their] pupils. 
+            <html:em>The writing down of a formula is an expression of our joy</html:em> that we can answer all these questions by means of one argument."
 </html:p>
+            <html:p>From Rósza Péter, <html:em>Playing With Infinity</html:em>, 1955</html:p>
           </fr:mainmatter>
         </fr:tree>
-        <html:p>And given a structure, we can say what it takes to be a <html:strong>valuation</html:strong> in that structure:</html:p>
         <fr:tree show-metadata="false">
           <fr:frontmatter>
             <fr:authors>
@@ -705,450 +315,22 @@ It's good fun, and it gives a particularly vitriolic (and particularly Australia
             </fr:authors>
             <fr:date>
               <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
+              <fr:month>3</fr:month>
+              <fr:day>14</fr:day>
             </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003O/</fr:uri>
-            <fr:display-uri>003O</fr:display-uri>
-            <fr:route>/lectures/003O/</fr:route>
-            <fr:title text="Valuation">Valuation</fr:title>
-            <fr:taxon>Definition</fr:taxon>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <html:p>A <html:strong>valuation</html:strong> in a structure for a language is a function from sentences of the language to values in the structure, where the value of every compound sentence in the language is related to the values of its components in the way the structure indicates.</html:p>
-          </fr:mainmatter>
-        </fr:tree>
-        <html:p>(Note that since <html:em>any</html:em> such function is a valuation, that means that valuations are not restricted at all when it comes to the values they assign to atomic sentences.)</html:p>
-        <html:p>    This means that you can specify everything about how our Boolean valuations work just by putting down the tables we've already seen:
-</html:p>
-        <fr:tree show-metadata="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003N/</fr:uri>
-            <fr:display-uri>003N</fr:display-uri>
-            <fr:route>/lectures/003N/</fr:route>
-            <fr:title text="The Boolean structure">The Boolean structure</fr:title>
-            <fr:taxon>Definition</fr:taxon>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:tree show-metadata="false">
-              <fr:frontmatter>
-                <fr:authors>
-                  <fr:author>
-                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-                  </fr:author>
-                </fr:authors>
-                <fr:date>
-                  <fr:year>2026</fr:year>
-                  <fr:month>2</fr:month>
-                  <fr:day>21</fr:day>
-                </fr:date>
-                <fr:uri>https://negation.rocks/lectures/003J/</fr:uri>
-                <fr:display-uri>003J</fr:display-uri>
-                <fr:route>/lectures/003J/</fr:route>
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <html:table style="border-collapse: collapse;">
-    <html:thead><html:tr>
-        <html:td class="topedge"><fr:tex display="inline"><![CDATA[A]]></fr:tex></html:td>
-        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex></html:td>
-    </html:tr></html:thead>
-    <html:tbody>
-        <html:tr>
-            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-        </html:tr>
-        <html:tr>
-            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-        </html:tr>
-    </html:tbody>
-</html:table>
-              </fr:mainmatter>
-            </fr:tree>
-            <fr:tree show-metadata="false">
-              <fr:frontmatter>
-                <fr:authors>
-                  <fr:author>
-                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-                  </fr:author>
-                </fr:authors>
-                <fr:date>
-                  <fr:year>2026</fr:year>
-                  <fr:month>2</fr:month>
-                  <fr:day>21</fr:day>
-                </fr:date>
-                <fr:uri>https://negation.rocks/lectures/003K/</fr:uri>
-                <fr:display-uri>003K</fr:display-uri>
-                <fr:route>/lectures/003K/</fr:route>
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <html:table style="border-collapse: collapse;">
-  <html:thead><html:tr>
-    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\land ]]></fr:tex></html:td>
-    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-  </html:tr></html:thead>
-  <html:tbody>
-    <html:tr>
-      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-    </html:tr>
-    <html:tr>
-      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-    </html:tr>
-  </html:tbody>
-</html:table>
-              </fr:mainmatter>
-            </fr:tree>
-            <fr:tree show-metadata="false">
-              <fr:frontmatter>
-                <fr:authors>
-                  <fr:author>
-                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-                  </fr:author>
-                </fr:authors>
-                <fr:date>
-                  <fr:year>2026</fr:year>
-                  <fr:month>2</fr:month>
-                  <fr:day>21</fr:day>
-                </fr:date>
-                <fr:uri>https://negation.rocks/lectures/003L/</fr:uri>
-                <fr:display-uri>003L</fr:display-uri>
-                <fr:route>/lectures/003L/</fr:route>
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <html:table style="border-collapse: collapse;">
-  <html:thead><html:tr>
-    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\lor ]]></fr:tex></html:td>
-    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-  </html:tr></html:thead>
-  <html:tbody>
-    <html:tr>
-      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-    </html:tr>
-    <html:tr>
-      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-    </html:tr>
-  </html:tbody>
-</html:table>
-              </fr:mainmatter>
-            </fr:tree>
-            <fr:tree show-metadata="false">
-              <fr:frontmatter>
-                <fr:authors>
-                  <fr:author>
-                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-                  </fr:author>
-                </fr:authors>
-                <fr:date>
-                  <fr:year>2026</fr:year>
-                  <fr:month>2</fr:month>
-                  <fr:day>21</fr:day>
-                </fr:date>
-                <fr:uri>https://negation.rocks/lectures/003M/</fr:uri>
-                <fr:display-uri>003M</fr:display-uri>
-                <fr:route>/lectures/003M/</fr:route>
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <html:table style="border-collapse: collapse;">
-  <html:thead><html:tr>
-    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex></html:td>
-    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-  </html:tr></html:thead>
-  <html:tbody>
-    <html:tr>
-      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-    </html:tr>
-    <html:tr>
-      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-    </html:tr>
-  </html:tbody>
-</html:table>
-              </fr:mainmatter>
-            </fr:tree>
-            <fr:tree show-metadata="false">
-              <fr:frontmatter>
-                <fr:authors>
-                  <fr:author>
-                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-                  </fr:author>
-                </fr:authors>
-                <fr:date>
-                  <fr:year>2026</fr:year>
-                  <fr:month>2</fr:month>
-                  <fr:day>21</fr:day>
-                </fr:date>
-                <fr:uri>https://negation.rocks/lectures/003I/</fr:uri>
-                <fr:display-uri>003I</fr:display-uri>
-                <fr:route>/lectures/003I/</fr:route>
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <html:table style="border-collapse: collapse;">
-    <html:thead><html:tr>
-        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\top ]]></fr:tex></html:td>
-    </html:tr></html:thead>
-    <html:tbody>
-        <html:tr>
-            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
-        </html:tr>
-    </html:tbody>
-</html:table>
-                <html:table style="border-collapse: collapse;">
-    <html:thead><html:tr>
-        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\bot ]]></fr:tex></html:td>
-    </html:tr></html:thead>
-    <html:tbody>
-        <html:tr>
-            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
-        </html:tr>
-    </html:tbody>
-</html:table>
-              </fr:mainmatter>
-            </fr:tree>
-          </fr:mainmatter>
-        </fr:tree>
-        <html:p>         In giving a structure via tables like this, there's no need to separately specify the set of values, since you can read those off the edges of the tables.
-        By packaging everything up into a structure in this way, we make it easy to change from one structure to another, to think about different kinds of valuations we might want to draw on, beyond just Boolean ones.
-        In a moment, we'll look at a few other example structures, besides this Boolean one.
-        But first, I want to look a bit at some uses of Boolean valuations.</html:p>
-      </fr:mainmatter>
-    </fr:tree>
-    <fr:tree show-metadata="false">
-      <fr:frontmatter>
-        <fr:authors>
-          <fr:author>
-            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-          </fr:author>
-        </fr:authors>
-        <fr:date>
-          <fr:year>2026</fr:year>
-          <fr:month>2</fr:month>
-          <fr:day>21</fr:day>
-        </fr:date>
-        <fr:uri>https://negation.rocks/lectures/003P/</fr:uri>
-        <fr:display-uri>003P</fr:display-uri>
-        <fr:route>/lectures/003P/</fr:route>
-        <fr:title text="Uses of Boolean valuations: possible worlds">Uses of Boolean valuations: possible worlds</fr:title>
-      </fr:frontmatter>
-      <fr:mainmatter>
-        <html:p>         One way Boolean valuations get put to use is as surrogates for <html:em>possible worlds</html:em>.
-        In certain areas of philosophy, talk of possible worlds is very common.
-        This began, as far as I know, as an attempt to explain what we mean by saying that some eventuality is possible.
-        To understand what we mean when we say that something is <html:em>possible</html:em>, some philosophers have proposed that this is the same as to say that it's <html:em>true somewhere</html:em>---just maybe somewhere else, at some <html:em>possible</html:em> world.
-        And to understand what we mean when we say that something is <html:em>necessary</html:em>, some philosophers have proposed that this is the same as to say that it's <html:em>true everywhere</html:em>---that is, at every possible world.
-        But even philosophers who don't accept this view as an analysis of possibility and necessity sometimes find it convenient to frame their views as involving possible worlds.
-</html:p>
-        <html:p>         Exactly what these possible worlds <html:em>are</html:em> is a topic that much exercises metaphysicians, and for our purposes is best left to one side.
-        Whatever possible worlds <html:em>are</html:em>, one thing they are often understood to <html:em>do</html:em> is to determine a truth value for every proposition, every claim about how things are.
-        Moreover, there are meant to be many different possible worlds, determining these truth values in many different ways.
-        These two features make them a lot like our valuations: every valuation fixes a truth value for every sentence in our language, and there are lots of different valuations, fixing these truth values in different ways.
-</html:p>
-        <html:p>         For this reason, these Boolean valuations are often brought in for study as surrogates for possible worlds.
-        This is particularly common among thinkers who actually believe, what we have only supposed, that every sentence really is either true or false, and no sentence is both---and moreover, who believe that this not only happens to be the case, but is necessary.
-        That view fits well with the two-valued setting Boolean valuations provide.</html:p>
-        <html:p>        These valuations are only surrogates, though and not the worlds themselves.
- This is because possible worlds are meant to settle actual claims.
-        For example, <html:em>Ellie likes to dance</html:em> is true in the actual world, but not in some other possible worlds; but nothing in our toy logical language has to represent <html:em>Ellie likes to dance</html:em>.
-        We just have <fr:tex display="inline"><![CDATA[p]]></fr:tex>s and <fr:tex display="inline"><![CDATA[q]]></fr:tex>s and such, and their compounds, not any real claims.
-        Still, the analogy is close enough that it has sustained a lot of philosophical work on possible worlds.
-</html:p>
-      </fr:mainmatter>
-    </fr:tree>
-    <fr:tree show-metadata="false">
-      <fr:frontmatter>
-        <fr:authors>
-          <fr:author>
-            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-          </fr:author>
-        </fr:authors>
-        <fr:date>
-          <fr:year>2026</fr:year>
-          <fr:month>2</fr:month>
-          <fr:day>21</fr:day>
-        </fr:date>
-        <fr:uri>https://negation.rocks/lectures/003Q/</fr:uri>
-        <fr:display-uri>003Q</fr:display-uri>
-        <fr:route>/lectures/003Q/</fr:route>
-        <fr:title text="Uses of Boolean valuations: circuitry">Uses of Boolean valuations: circuitry</fr:title>
-      </fr:frontmatter>
-      <fr:mainmatter>
-        <html:p>         Another way Boolean valuations get used is in understanding certain kinds of <html:em>electrical circuits</html:em>.
-        In particular, Boolean valuations are of most use for considering circuits where every component has only one of two states: on or off.
-        Consider, for example, a light installed in the ceiling that can be controlled from either of two switches.
-        Each switch has two possible states: on or off.
-        And the light has two possible states: on or off.
-        These states are related to each other in a somewhat complex way, and we can use our language, and Boolean valuations, to understand it.
-</html:p>
-        <html:p>         Let's understand the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> now, not as truth values at all, but instead as the states <html:em>on</html:em> and <html:em>off</html:em>, respectively; and let's understand our components---the two switches and the light---as sentences in our language.
-        Call one switch <fr:tex display="inline"><![CDATA[p]]></fr:tex> and the other switch <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
-        Just as we have valuations that give us every possible combination of values for <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>, so too we can run around the room and set up every possible combination of states of the two switches.
-</html:p>
-        <html:p>         What sentence should we associate with the light? 
-        Well, how should the light respond to the switches?
-        We want to set things up so that, no matter what state things are currently in, and no matter which switch we're nearest to, we can always change the state of the light by changing the nearest switch.
-        A diagram might help here.
-        We have four possible states of the switches, which I'll call <fr:tex display="inline"><![CDATA[v_{1}]]></fr:tex>--<fr:tex display="inline"><![CDATA[v_{4}]]></fr:tex>, and we can move between these states as shown here:
-</html:p>
-        <fr:resource hash="f876a7b141306f00c5006d4b702eeff5">
-          <fr:resource-content>
-            <html:img src="/lectures/f876a7b141306f00c5006d4b702eeff5.svg" />
-          </fr:resource-content>
-          <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz}]]></fr:resource-source>
-          <fr:resource-source type="latex" part="body"><![CDATA[ 
-        \begin {tikzpicture}[auto]
-          \node  (v1) at (0,3) {$v_{1}$: $p$ off, $q$ off};
-          \node  (v2) at (5,3) {$v_{2}$: $p$ on, $q$ off};
-          \node  (v3) at (0,0) {$v_{3}$: $p$ off, $q$ on};
-          \node  (v4) at (5,0) {$v_{4}$: $p$ on, $q$ on};
-          \draw  (v1) to node {switch $p$} (v2);
-          \draw  (v2) to node {switch $q$} (v4);
-          \draw  (v1) to node {switch $q$} (v3);
-          \draw  (v3) to node {switch $p$} (v4);
-
-
-        \end {tikzpicture}
-        ]]></fr:resource-source>
-        </fr:resource>
-        <html:p>         We can think of these states as Boolean valuations on a language with the two atomic sentences <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
-        For example, we'd have <fr:tex display="inline"><![CDATA[v_{2}(p) = \mathsf {\mathbf {T}}]]></fr:tex>, since switch <fr:tex display="inline"><![CDATA[p]]></fr:tex> is on in state <fr:tex display="inline"><![CDATA[v_{2}]]></fr:tex>; and <fr:tex display="inline"><![CDATA[v_{2}(q) = \mathsf {\mathbf {F}}]]></fr:tex>, since switch <fr:tex display="inline"><![CDATA[q]]></fr:tex> is off there.
-</html:p>
-        <html:p>         We want to wire up a light now so that, whichever one of these states we happen to be in, flipping <fr:tex display="inline"><![CDATA[p]]></fr:tex> will change whether the light is on or off, <html:em>and</html:em> so that, whichever one of these states we happen to be in, flipping <fr:tex display="inline"><![CDATA[q]]></fr:tex> will also change whether the light is on or off.
-        That is, we want the light either to be on in states <fr:tex display="inline"><![CDATA[v_{1}, v_{4}]]></fr:tex> and off in states <fr:tex display="inline"><![CDATA[v_{2}, v_{3}]]></fr:tex>, or vice versa.
-        Can we build a sentence, then, using the atomic sentences <fr:tex display="inline"><![CDATA[p, q]]></fr:tex> and our connectives <fr:tex display="inline"><![CDATA[\land , \lor , \neg ]]></fr:tex>, that works like this?
-        If we can, the structure of such a sentence will tell us how to wire up the light.
-        (That is, it will tell us how to wire up the light if we have electrical components that correspond to the connectives <fr:tex display="inline"><![CDATA[\land , \lor ]]></fr:tex>, and <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>!
-        Such components are standardly called AND, OR, and NOT gates, respectively.)
-</html:p>
-        <fr:tree show-metadata="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003R/</fr:uri>
-            <fr:display-uri>003R</fr:display-uri>
-            <fr:route>/lectures/003R/</fr:route>
-            <fr:taxon>Check your understanding</fr:taxon>
-          </fr:frontmatter>
-          <fr:mainmatter><html:p>Can you find such a sentence?</html:p>
-
-	
-	
-	
-	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>2</fr:month><fr:day>21</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
-<html:p>         In fact, there are infinitely many sentences that would work here (although there are also infinitely many that don't work!).
-        Consider, for example, the sentence <fr:tex display="inline"><![CDATA[(p \lor  q) \land  \neg  (p \land  q)]]></fr:tex>.
-        If you do your Boolean calculations out, you will see that this sentence takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on valuations <fr:tex display="inline"><![CDATA[v_{2}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v_{3}]]></fr:tex>, and takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> on valuations <fr:tex display="inline"><![CDATA[v_{1}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v_{4}]]></fr:tex>; that makes it an example of what we're looking for.
-        But there are infinitely many other sentences that work equally well here; it's great if you came up with a different one!
-</html:p>
-
-</fr:mainmatter></fr:tree></fr:mainmatter>
-        </fr:tree>
-        <html:p>         If you've ever made even a small redstone device in Minecraft, you've almost certainly made use of Boolean valuations in this way; redstone torches are the component corresponding to <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>, and just running two lines of redstone together corresponds to <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>.</html:p>
-        <html:p>There is no simple block in Minecraft that calculates <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>; instead, there are various ways to combine <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> that produce the same results.
-        For example, consider the two sentences <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg (\neg  p \lor  \neg  q)]]></fr:tex>.
-        By checking all the possible values <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> can take, you can see that these two compound sentences have the same value as each other in every valuation.
-        So even if you don't have a component that calculates <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> directly, so long as you have components for <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>, you can get the job done.
-</html:p>
-        <fr:tree show-metadata="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003S/</fr:uri>
-            <fr:display-uri>003S</fr:display-uri>
-            <fr:route>/lectures/003S/</fr:route>
+            <fr:uri>https://negation.rocks/lectures/004K/</fr:uri>
+            <fr:display-uri>004K</fr:display-uri>
+            <fr:route>/lectures/004K/</fr:route>
             <fr:taxon>Side note</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>However, Minecraft redstone, like real wiring, is way more complex than this!
-        Only some Minecraft devices are on/off the way Boolean valuations are.
-        Basically anything involving a comparator, you'd want to be thinking in terms of a sixteen-valued logic, not a two-valued logic.
-        (For an introduction to this sixteen-valued logic, you can see <fr:link href="https://www.youtube.com/watch?v=2PspFj8sS8I" type="external">this talk by the logician Roy Cook</fr:link>.)
-        Concerns about timing and spatial arrangement, which are central to redstone (and real!) wiring, are also not captured by Boolean valuations.</html:p>
+            <html:p>Rósza Péter was a Hungarian logician in the mid-20th century.
+Her work was particularly important in the development of an area of logic known as "recursion theory".
+(See <fr:link href="https://plato.stanford.edu/entries/recursive-functions/" type="external">the Stanford Encyclopedia of Philosophy article here</fr:link> for an introduction.)</html:p>
           </fr:mainmatter>
         </fr:tree>
-        <html:p>         And the flash memory in your phone is almost certainly what's known as NAND flash memory, because it's based on a circuit that calculates something known as NAND.
-        NAND is another binary connective, one we won't be taking much of a look at this semester.
-        But it too can be built from what we do have: <fr:tex display="inline"><![CDATA[p]]></fr:tex> NAND <fr:tex display="inline"><![CDATA[q]]></fr:tex> always has the same value as <fr:tex display="inline"><![CDATA[\neg  (p \land  q)]]></fr:tex>.
-        Indeed, this is why it's called "NAND"; the name comes from "not-and".
-</html:p>
-        <fr:tree show-metadata="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003T/</fr:uri>
-            <fr:display-uri>003T</fr:display-uri>
-            <fr:route>/lectures/003T/</fr:route>
-            <fr:title text="Zeroes and ones">Zeroes and ones</fr:title>
-            <fr:taxon>Side note</fr:taxon>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <html:p>You might have heard that computers, at their most basic level, deal only with zeroes and ones.
-Taken literally, this is just plain not true.
-But you're now in a position to understand the thing that <html:em>is</html:em> true that explains why people say this.</html:p>
-            <html:p>An electrical conductor can carry varying amounts of <html:em>electric potential</html:em> (this is the thing that's measured in volts).
-In most computers, however, the conductors that carry and hold information are not treated in a way that varies smoothly; they are kept either at a high voltage or at a low voltage.
-<html:em>That's</html:em> what computers deal with at a basic level: high voltage and low voltage.</html:p>
-            <html:p>It's conventional to represent that high voltage with the number 1 and the low voltage with the number 0 for <html:em>human readability</html:em>.
-So it's not that computers use lots of zeroes and ones; it's that <html:em>we</html:em> use lots of zeroes and ones to represent differing voltage levels.
-Computers use these differing voltage levels.</html:p>
-            <html:p>But why zero and one? Why not the actual voltage measurements, or the symbols <fr:tex display="inline"><![CDATA[L]]></fr:tex> and <fr:tex display="inline"><![CDATA[H]]></fr:tex>, or anything else?
-The answer goes back (again) to the Booles.</html:p>
-            <html:p>In <html:em>The Laws of Thought</html:em>, George Boole draws a connection between conjunction between properties and <html:em>multiplication</html:em> on numbers.
-But he notices a disanalogy: for most numbers <fr:tex display="inline"><![CDATA[n]]></fr:tex>, we do not have <fr:tex display="inline"><![CDATA[n \times  n = n]]></fr:tex>.
-However, for any property <fr:tex display="inline"><![CDATA[P]]></fr:tex>, being <fr:tex display="inline"><![CDATA[P]]></fr:tex> <html:em>and</html:em> <fr:tex display="inline"><![CDATA[P]]></fr:tex> is the same (so Boole says) as being <fr:tex display="inline"><![CDATA[P]]></fr:tex>.
-This might seem to threaten the analogy between conjunction and multiplication---but Boole pulls a tricky turn.
-</html:p>
-            <html:p>Note that we <fr:tex display="inline"><![CDATA[do]]></fr:tex> have <fr:tex display="inline"><![CDATA[n \times  n = n]]></fr:tex> in the special cases where <fr:tex display="inline"><![CDATA[n]]></fr:tex> is either zero or one.
-So Boole says that properties behave not like just any numbers, but like the numbers zero and one in particular, because these are the numbers that are their own squares.
-As far as I can tell, this is the origin of the zero/one notation that we still see today.</html:p>
-          </fr:mainmatter>
-        </fr:tree>
+        <html:p>"The writing down of a formula is an expression of our joy".
+I think Péter has hit the nail on the head.</html:p>
       </fr:mainmatter>
     </fr:tree>
   </fr:mainmatter>
@@ -1158,29 +340,7 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
         <fr:authors />
         <fr:title text="References">References</fr:title>
       </fr:frontmatter>
-      <fr:mainmatter>
-        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>2</fr:month>
-              <fr:day>21</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/003D/</fr:uri>
-            <fr:display-uri>003D</fr:display-uri>
-            <fr:route>/lectures/003D/</fr:route>
-            <fr:taxon>Reference</fr:taxon>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <html:p><html:em>Relevant Logics and their Rivals, vol. 1</html:em> (1982). Richard Routley, Val Plumwood, Robert K. Meyer, Ross T. Brady. Ridgeview Publishing.</html:p>
-          </fr:mainmatter>
-        </fr:tree>
-      </fr:mainmatter>
+      <fr:mainmatter />
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">
       <fr:frontmatter>
@@ -3554,68 +2714,7 @@ I think Péter has hit the nail on the head.</html:p>
         <fr:authors />
         <fr:title text="Related">Related</fr:title>
       </fr:frontmatter>
-      <fr:mainmatter>
-        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>1</fr:month>
-              <fr:day>29</fr:day>
-            </fr:date>
-            <fr:uri>https://negation.rocks/lectures/000K/</fr:uri>
-            <fr:display-uri>000K</fr:display-uri>
-            <fr:route>/lectures/000K/</fr:route>
-            <fr:title text="Infinity; or, more than about six">Infinity; or, more than about six</fr:title>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <html:p>            The last paragraph gave us our first brush with infinity.
-            I allowed there that some languages might start from <html:em>infinitely many</html:em> atomic sentences.
-            In fact, almost all of the logical languages that people actually use, and most of the ones we'll use this semester, do start from infintely many atomic sentences.
-</html:p>
-            <html:p>
-            Infinite collections will accompany us throughout the semester, so it's good to get used to them.
-            The idea of infinity can seem a bit weird at first, but that's mostly just because it's unfamiliar.
-            We won't need to do anything fancy with infinity; we just need to be aware that it's there.
-</html:p>
-            <html:p>            Most of the techniques we use to deal with infinite collections are the very same techniques we'd use to deal with finite collections that are very big.
-            For example, if we think about a language with infinitely many atomic sentences, there might seem to be an immediate problem: we can't list them all!
-            But that's not really an issue of infinity.
-            After all, if we just had a language with, say, <fr:tex display="inline"><![CDATA[10^{100}]]></fr:tex> atomic sentences, that would be a finite collection, but we still couldn't list them all.
-            That's more atomic sentences than there are particles in the observable universe, more atomic sentences than seconds since the Big Bang, etc.
-            It's a <html:em>really</html:em> big number!
-</html:p>
-            <html:p>
-            And since we're using lowercase letters for our atomic sentences, we start to run into trouble much lower indeed: what if we have just 27 atomic sentences?
-            Even if we wrap around the alphabet from <fr:tex display="inline"><![CDATA[z]]></fr:tex> to <fr:tex display="inline"><![CDATA[a]]></fr:tex>, we run out after 26.
-            Worst of all, I'm lazy and easily distracted, so I wouldn't ever want to have to list more than like seven or eight things at most.
-</html:p>
-            <html:p>            There are lots of different methods we can use to handle infinities, but we're going to use the best and most standard method: <html:em>not worrying about it</html:em>.
-            As it happens, when we're doing exercises or looking at examples, we'll never need to actually make use of more than five or six atomic sentences at once, and rarely even that many.
-            More than that and it mainly just gets too unmanageable.
-            So in these notes, I'll just always work with at most <fr:tex display="inline"><![CDATA[p, q, r, s, t, u]]></fr:tex>, and that will be enough, for all the examples and exercises we need.
-            Really just <fr:tex display="inline"><![CDATA[p, q, r]]></fr:tex> are usually plenty.
-            When a language has more atomic sentences than this, it's enough for us to just <html:em>know that they're there</html:em>; we don't actually need to have a separate symbol for each individual one.
-</html:p>
-            <html:p>            So once we're working in a language with more than six or so atomic sentences, we won't ever bother listing them all.
-            And that means that having infinitely many atomic sentences doesn't cause any special problems.
-            We can't list them all, but we're never going to try, so no problem.
-            It's enough to know that they're there.
-            This method---the method of not worrying about it---will be the key method we use for handling infinite collections throughout the semester.
-            This is probably the same method you've used to understand the infinity of counting numbers for most of your life.
-            The kinds of infinity we'll deal with in here are pretty manageable like this.
-</html:p>
-            <html:p>            You might wonder why we use infinite collections at all, if we're not going to think very hard about the fact that they're infinite.
-            For our atomic sentences, there's no real reason; we could get by just fine for most of our purposes with finitely many.
-            But in other contexts, infinity will just naturally arise on its own, so we need to be prepared.
-</html:p>
-          </fr:mainmatter>
-        </fr:tree>
-      </fr:mainmatter>
+      <fr:mainmatter />
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">
       <fr:frontmatter>

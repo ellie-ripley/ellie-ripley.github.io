@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>14</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/004D/</fr:uri>
+    <fr:display-uri>004D</fr:display-uri>
+    <fr:route>/lectures/004D/</fr:route>
+    <fr:title text="Equivalence">Equivalence</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are <html:strong>equivalent</html:strong> in a structure iff, for every valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> in that structure, <fr:tex display="inline"><![CDATA[v(A) = v(B)]]></fr:tex>.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>14</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/004C/</fr:uri>
+            <fr:display-uri>004C</fr:display-uri>
+            <fr:route>/lectures/004C/</fr:route>
+            <fr:title text="Equivalence">Equivalence</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>    I'll pause here to introduce a useful idea: the idea of sentences being <html:em>equivalent</html:em> to each other in a structure.
+(Think "equi-valent" like "equal-valued".)</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>14</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004D/</fr:uri>
+                <fr:display-uri>004D</fr:display-uri>
+                <fr:route>/lectures/004D/</fr:route>
+                <fr:title text="Equivalence">Equivalence</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are <html:strong>equivalent</html:strong> in a structure iff, for every valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> in that structure, <fr:tex display="inline"><![CDATA[v(A) = v(B)]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p> Note two things: first, we need to have a structure in mind to say when two sentences are equivalent, and we might get different results by looking at different structures.
+    Second, once we have a structure in mind, equivalence looks at <html:em>every</html:em> valuation for that structure, at every possible way of assigning values to atomic formulas.
+</html:p>
+            <html:p>    For example, <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg \neg  p]]></fr:tex> are equivalent in the Boolean structure: no matter what Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> we look at, <fr:tex display="inline"><![CDATA[v(p) = v(\neg \neg  p)]]></fr:tex>.
+    But <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> are <html:em>not</html:em> equivalent in the Boolean structure.
+    Yes, there are some Boolean valuations that give the same value to <fr:tex display="inline"><![CDATA[p]]></fr:tex> as to <fr:tex display="inline"><![CDATA[q]]></fr:tex>, but that doesn't matter.
+    Since there is at least one Boolean valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> with <fr:tex display="inline"><![CDATA[w(p) \neq  w(q)]]></fr:tex>, that means that <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> are <html:em>not</html:em> equivalent in the Boolean structure.
+</html:p>
+            <html:p>    We've set up our implication in the Dunn-Belnap structure so that <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> comes out equivalent in this structure to <fr:tex display="inline"><![CDATA[\neg  p \vee  q]]></fr:tex>.
+    That was inspired by the Boolean structure, where these same two sentences are also equivalent.
+    And it will continue into our next structure as well.
+    However, this is not required; structures can set up their connectives any which way.
+    If you want to play with some structures where <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p \vee  q]]></fr:tex> are <html:em>not</html:em> equivalent, you can check out some of the structures at <fr:link href="https://negation.rocks/emu.html" type="external">https://negation.rocks/emu.html</fr:link>.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

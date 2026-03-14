@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>14</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/004K/</fr:uri>
+    <fr:display-uri>004K</fr:display-uri>
+    <fr:route>/lectures/004K/</fr:route>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Rósza Péter was a Hungarian logician in the mid-20th century.
+Her work was particularly important in the development of an area of logic known as "recursion theory".
+(See <fr:link href="https://plato.stanford.edu/entries/recursive-functions/" type="external">the Stanford Encyclopedia of Philosophy article here</fr:link> for an introduction.)</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>14</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/004I/</fr:uri>
+            <fr:display-uri>004I</fr:display-uri>
+            <fr:route>/lectures/004I/</fr:route>
+            <fr:title text="Relabeling structures">Relabeling structures</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        So if <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> don't have to have anything to do with truth and falsity, why are they called "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>" and "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>"?
+        Here's the real answer: well, we had to call them <html:em>something</html:em>, and the suggestion of truth and falsity carried by the names "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>" and "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>" can be useful for building your intuition, as long as you don't get stuck on the idea.
+        The same goes for the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex>, and the names "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex>" and "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex>" we're using for them.
+        Once you're familiar with these structures, the names for the values don't matter at all.
+        We could easily use different names.
+</html:p>
+            <html:p>        For example, <fr:link href="/lectures/003T/" title="Zeroes and ones" uri="https://negation.rocks/lectures/003T/" display-uri="003T" type="local">sometimes people will present the Boolean structure using the names "1" and "0"</fr:link> for its values, rather than "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>" and "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>", as I've done here.
+        But it's still the same structure, so long as all the connectives behave the same way.
+        For example, <fr:tex display="inline"><![CDATA[\neg  1 = 0]]></fr:tex>, and <fr:tex display="inline"><![CDATA[1 \lor  0 = 1]]></fr:tex>, and so on.
+        We're just calling the values something different; as long as they act the same the difference doesn't matter.
+</html:p>
+            <html:p>        In thinking about all of our structures, then, it can be helpful to open up a part of your mind that lets you think about them without any particular interpretation in view, and even without any particular names for the values in view, since these names are often linked to particular interpretations.
+        As much as you can, try to just think about the values themselves and how the connectives operate on them, separate from any ideas about truth, or electricity, or possible worlds.
+</html:p>
+            <html:p>        It's by proceeding in such an abstract way, separate from all applications, that we can get away with doing the work just once.
+        It can then be applied over and over, wherever we want it.
+        The logician Rósza Péter put the point this way (emphasis added): 
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>14</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004J/</fr:uri>
+                <fr:display-uri>004J</fr:display-uri>
+                <fr:route>/lectures/004J/</fr:route>
+                <fr:taxon>Quotation</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        "Mathematics is really a language, a queer language which speaks entirely in symbols. 
+            The above formula is only a symbol, and means nothing by itself; everybody can substitute into it [their] own experiences. 
+            For one it might mean the counting of the diagonals of a polygon, for another the counting of the number of possibilities for choosing the leading pair among [their] pupils. 
+            <html:em>The writing down of a formula is an expression of our joy</html:em> that we can answer all these questions by means of one argument."
+</html:p>
+                <html:p>From Rósza Péter, <html:em>Playing With Infinity</html:em>, 1955</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>14</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004K/</fr:uri>
+                <fr:display-uri>004K</fr:display-uri>
+                <fr:route>/lectures/004K/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Rósza Péter was a Hungarian logician in the mid-20th century.
+Her work was particularly important in the development of an area of logic known as "recursion theory".
+(See <fr:link href="https://plato.stanford.edu/entries/recursive-functions/" type="external">the Stanford Encyclopedia of Philosophy article here</fr:link> for an introduction.)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>"The writing down of a formula is an expression of our joy".
+I think Péter has hit the nail on the head.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -20,9 +20,55 @@
   <fr:mainmatter>
     <html:p>The most challenging (and correspondingly most interesting) part of your assessment will be a puzzle-solving session, where you and another student will work together on solving a logical puzzle.</html:p>
     <html:p>This is a brand-new form of assessment this semester, so you are the guinea pigs for it.
-I'll include example puzzles of the kind that will feature in this session in the lectures, and give you ideas of approaches that you can use to work on them.</html:p>
-    <html:p>A rubric for this session, and the procedure we'll use to schedule them, will be made available in the first few weeks of class.
-Like the workshops, it doesn't really make sense to have extensions for these; any approved special consideration will have to take the form of an alternate assessment, again an oral exam.</html:p>
+I'll include example puzzles of the kind that will feature in this session in the lectures and tutorials, and give you ideas of approaches that you can use to work on them.</html:p>
+    <html:p>Like the workshops, it doesn't really make sense to have extensions for these; any approved special consideration will have to take the form of an alternate assessment, again an oral exam.</html:p>
+    <html:p>Sessions will last 20 minutes.
+In the first 15 minutes, you and your partner will get a puzzle, and work together to solve it, or to get as far as you can; your examiner (who will be your tutor in most cases) will observe but not participate.
+In the last 5 minutes, your examiner will ask you questions to explore where you've made it to.</html:p>
+    <html:p>The marking for these sessions is individual; you and your partner will receive independent scores.
+Marks are based on three aspects of your session.
+From most important to least important, these are: working together, working productively, and being right. 
+Here is a sample of the kinds of things we'll be looking for in each of these aspects, and a rough indication of the marks associated with various levels of success:</html:p>
+    <html:ul><html:li><html:strong>Working together</html:strong>
+    <html:ul><html:li><html:strong>HD:</html:strong> I step up to contribute where I can, and I make room for my partner to do the same.
+        I correct mistakes where I see them, with kindness.
+        I take corrections of my own mistakes gracefully.
+        I understand that my partner and I know different things, and the unit's material is likely our main overlap.
+        </html:li>
+      <html:li><html:strong>D or C:</html:strong> I see my partner's mistakes, but I don't say anything about them.
+        I get a bit flustered when my own mistakes are pointed out, or when my partner makes a mistake.
+        I miss some of the suggestions my partner is trying to make.
+        </html:li>
+      <html:li><html:strong>P or N</html:strong>: I try to do everything myself.
+        I wait for my partner to do everything themselves.
+        I assume that my partner knows everything I know, even when it's not from this unit.
+        I get upset when I make a mistake, or when my partner makes a mistake.</html:li></html:ul></html:li>
+    <html:li><html:strong>Working productively</html:strong>
+      <html:ul><html:li><html:strong>HD:</html:strong> I make suggestions that are concrete, clear, and simple.
+              I work to evaluate a suggestion before moving on to the next one.
+              I check the lectures to help me recall things, or for suggestions.
+              When something seems promising, I pursue it, and when it does not seem promising, I set it aside.
+              I try a range of simple examples to test out ideas and build understanding, but I correctly understand that examples are very rarely enough on their own.</html:li>
+        <html:li><html:strong>D or C:</html:strong> I am disorganised, pursuing too many ideas at once instead of taking them one by one, methodically.
+              The ideas I suggest are on a good track, but are too foggy or complex for us to be able to fully evaluate them.
+              I try out a good range of examples, but I stop there.
+              I glance at the lectures for reference, but I look in the wrong place, or I don't take full account of what's there.</html:li>
+        <html:li><html:strong>P or N:</html:strong> I don't make attempts at approaches that might work.
+            I shut down my partner's attempts without having alternate suggestions of my own.
+            I don't consult the lectures for guidance or try any simple examples.
+            I make suggestions that are not related to the puzzle.</html:li></html:ul></html:li>
+    <html:li><html:strong>Being right</html:strong>
+      <html:ul><html:li><html:strong>HD:</html:strong> We use the unit's jargon correctly, as defined in the lectures.
+               We get a correct solution to the problem, and we can explain why it must be correct.
+               Even the little details are taken into account.
+               We know exactly what we have demonstrated, and what we don't yet know.</html:li>
+        <html:li><html:strong>D or C:</html:strong> We get a correct solution to the problem, but we can't explain why it is correct.
+               We get an incorrect solution to the problem, but it's mostly right, and we can explain why.
+               We don't manage to solve the problem, but we can explain just what trouble we ran into, and how we might proceed if we had more time.
+               We are a bit overconfident or underconfident.
+               We use the unit's jargon sometimes correctly, and sometimes incorrectly.</html:li>
+        <html:li><html:strong>P or N:</html:strong> We claim to have solved the problem, but our solution is incorrect and we can't explain how we got to it.
+        We use the unit's jargon incorrectly, or we avoid using it even when it would help.</html:li></html:ul></html:li></html:ul>
   </fr:mainmatter>
   <fr:backmatter>
     <fr:tree show-metadata="false" hidden-when-empty="true">
@@ -173,9 +219,55 @@ If you do need special consideration for one of these workshops, we'll arrange a
               <fr:mainmatter>
                 <html:p>The most challenging (and correspondingly most interesting) part of your assessment will be a puzzle-solving session, where you and another student will work together on solving a logical puzzle.</html:p>
                 <html:p>This is a brand-new form of assessment this semester, so you are the guinea pigs for it.
-I'll include example puzzles of the kind that will feature in this session in the lectures, and give you ideas of approaches that you can use to work on them.</html:p>
-                <html:p>A rubric for this session, and the procedure we'll use to schedule them, will be made available in the first few weeks of class.
-Like the workshops, it doesn't really make sense to have extensions for these; any approved special consideration will have to take the form of an alternate assessment, again an oral exam.</html:p>
+I'll include example puzzles of the kind that will feature in this session in the lectures and tutorials, and give you ideas of approaches that you can use to work on them.</html:p>
+                <html:p>Like the workshops, it doesn't really make sense to have extensions for these; any approved special consideration will have to take the form of an alternate assessment, again an oral exam.</html:p>
+                <html:p>Sessions will last 20 minutes.
+In the first 15 minutes, you and your partner will get a puzzle, and work together to solve it, or to get as far as you can; your examiner (who will be your tutor in most cases) will observe but not participate.
+In the last 5 minutes, your examiner will ask you questions to explore where you've made it to.</html:p>
+                <html:p>The marking for these sessions is individual; you and your partner will receive independent scores.
+Marks are based on three aspects of your session.
+From most important to least important, these are: working together, working productively, and being right. 
+Here is a sample of the kinds of things we'll be looking for in each of these aspects, and a rough indication of the marks associated with various levels of success:</html:p>
+                <html:ul><html:li><html:strong>Working together</html:strong>
+    <html:ul><html:li><html:strong>HD:</html:strong> I step up to contribute where I can, and I make room for my partner to do the same.
+        I correct mistakes where I see them, with kindness.
+        I take corrections of my own mistakes gracefully.
+        I understand that my partner and I know different things, and the unit's material is likely our main overlap.
+        </html:li>
+      <html:li><html:strong>D or C:</html:strong> I see my partner's mistakes, but I don't say anything about them.
+        I get a bit flustered when my own mistakes are pointed out, or when my partner makes a mistake.
+        I miss some of the suggestions my partner is trying to make.
+        </html:li>
+      <html:li><html:strong>P or N</html:strong>: I try to do everything myself.
+        I wait for my partner to do everything themselves.
+        I assume that my partner knows everything I know, even when it's not from this unit.
+        I get upset when I make a mistake, or when my partner makes a mistake.</html:li></html:ul></html:li>
+    <html:li><html:strong>Working productively</html:strong>
+      <html:ul><html:li><html:strong>HD:</html:strong> I make suggestions that are concrete, clear, and simple.
+              I work to evaluate a suggestion before moving on to the next one.
+              I check the lectures to help me recall things, or for suggestions.
+              When something seems promising, I pursue it, and when it does not seem promising, I set it aside.
+              I try a range of simple examples to test out ideas and build understanding, but I correctly understand that examples are very rarely enough on their own.</html:li>
+        <html:li><html:strong>D or C:</html:strong> I am disorganised, pursuing too many ideas at once instead of taking them one by one, methodically.
+              The ideas I suggest are on a good track, but are too foggy or complex for us to be able to fully evaluate them.
+              I try out a good range of examples, but I stop there.
+              I glance at the lectures for reference, but I look in the wrong place, or I don't take full account of what's there.</html:li>
+        <html:li><html:strong>P or N:</html:strong> I don't make attempts at approaches that might work.
+            I shut down my partner's attempts without having alternate suggestions of my own.
+            I don't consult the lectures for guidance or try any simple examples.
+            I make suggestions that are not related to the puzzle.</html:li></html:ul></html:li>
+    <html:li><html:strong>Being right</html:strong>
+      <html:ul><html:li><html:strong>HD:</html:strong> We use the unit's jargon correctly, as defined in the lectures.
+               We get a correct solution to the problem, and we can explain why it must be correct.
+               Even the little details are taken into account.
+               We know exactly what we have demonstrated, and what we don't yet know.</html:li>
+        <html:li><html:strong>D or C:</html:strong> We get a correct solution to the problem, but we can't explain why it is correct.
+               We get an incorrect solution to the problem, but it's mostly right, and we can explain why.
+               We don't manage to solve the problem, but we can explain just what trouble we ran into, and how we might proceed if we had more time.
+               We are a bit overconfident or underconfident.
+               We use the unit's jargon sometimes correctly, and sometimes incorrectly.</html:li>
+        <html:li><html:strong>P or N:</html:strong> We claim to have solved the problem, but our solution is incorrect and we can't explain how we got to it.
+        We use the unit's jargon incorrectly, or we avoid using it even when it would help.</html:li></html:ul></html:li></html:ul>
               </fr:mainmatter>
             </fr:tree>
           </fr:mainmatter>
