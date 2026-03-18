@@ -2858,7 +2858,7 @@ Just like our logical "languages" have something in common with real languages, 
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>An <html:strong>argument</html:strong> is a set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> of sentences, called the <html:strong>premises</html:strong> of the argument, together with a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, called the <html:strong>conclusion</html:strong> of the argument.
+                    <html:p>An <html:strong>argument</html:strong> has two parts: first, a set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> of sentences, called the <html:strong>premises</html:strong> of the argument; and second, a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, called the <html:strong>conclusion</html:strong> of the argument.
 It is written <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.</html:p>
                   </fr:mainmatter>
                 </fr:tree>
