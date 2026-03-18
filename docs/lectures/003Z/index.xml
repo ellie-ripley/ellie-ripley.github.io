@@ -222,9 +222,6 @@ The purpose of these quizzes is twofold:</html:p>
                     <fr:title text="Binchicken: 35%">Binchicken: 35%</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>NOTE: Binchicken is currently down for between-semester maintenance.
-It will be up in the first few weeks of semester, and you will receive an announcement.
-Please do not email me about this.</html:p>
                     <html:p>You will do a number of your logic exercises at the website <fr:link href="https://binchicken.one/" type="external">https://binchicken.one</fr:link>.
 This is a site that I've made to automatically generate and mark a range of different types of logic exercises.
 This semester, there will be ten different exercise types in total.

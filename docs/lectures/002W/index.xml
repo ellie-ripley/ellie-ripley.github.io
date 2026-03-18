@@ -162,7 +162,7 @@ It's only with some particular logic in view that calling an argument valid or i
                 <html:p>How many?
           This gets further into some differences between different sizes of infinity that we've <fr:link href="/lectures/001A/" title="Sizes of infinity" uri="https://negation.rocks/lectures/001A/" display-uri="001A" type="local">brushed up against before</fr:link>.
           The smallest infinity has a few names; it's called both <fr:tex display="inline"><![CDATA[\aleph _{0}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\beth _{0}]]></fr:tex>, and it's the size of the natural numbers <fr:tex display="inline"><![CDATA[0, 1, 2, \ldots ]]></fr:tex>.
-          (<fr:tex display="inline"><![CDATA[\aleph ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\beth ]]></fr:tex> are the letters aleph and beth, the first two letters of the Hebrew alphabet; the word `alphabet' comes from the names of these two letters.
+          (<fr:tex display="inline"><![CDATA[\aleph ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\beth ]]></fr:tex> are the letters aleph and beth, the first two letters of the Hebrew alphabet; the word "alphabet" comes from the names of these two letters.
           I told you logicians like our alphabets!)
 </html:p>
                 <html:p>           Since we're using a language with infinitely many atomic formulas, if we're going to be precise we need to choose <html:em>how many</html:em> that is; let's say we use <fr:tex display="inline"><![CDATA[\beth _{0}]]></fr:tex>, the smallest infinity, as the number of atomic formulas we start from.
