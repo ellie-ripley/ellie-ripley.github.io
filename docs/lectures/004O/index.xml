@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>18</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/004O/</fr:uri>
+    <fr:display-uri>004O</fr:display-uri>
+    <fr:route>/lectures/004O/</fr:route>
+    <fr:title text="A first example">A first example</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>            As a warmup, say that a Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a <html:strong>counterexample</html:strong> to an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> when every premise in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> and the conclusion <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> on <fr:tex display="inline"><![CDATA[v]]></fr:tex>.
+            If an argument has any counterexamples, then we can see that the truth of its premises does <html:em>not</html:em> guarantee the truth of its conclusion---the counterexample shows a way to distribute truth values among the atomic formulas that makes the premises all true without making the conclusion true.
+</html:p>
+    <html:p>            So we can get a logic from our Boolean valuations like this: if any Boolean valuation is a counterexample to an argument, this logic counts the argument as invalid.
+            On the other hand, if no Boolean valuation is a counterexample to the argument, then this logic counts the argument as valid.
+            This is a very widely used logic, called <html:strong>classical logic</html:strong>.</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>3</fr:month>
+          <fr:day>18</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/004P/</fr:uri>
+        <fr:display-uri>004P</fr:display-uri>
+        <fr:route>/lectures/004P/</fr:route>
+        <fr:taxon>Side note</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>Recall the history here, though: this only goes back to the 19th century.
+            So the "classical" here is more like the "classical" in "classical music" than it is like the "classical" in "classical architecture".</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <html:p>            Let's return to some earlier example arguments, to see how they fare in classical logic.
+            First, think about <fr:tex display="inline"><![CDATA[p \land  q \;/\; p]]></fr:tex>.
+            To see whether this argument is classically valid or not, we should ask: is any Boolean valuation a counterexample to this argument?
+            Remember, a counterexample to this argument is a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p \land  q) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            By looking at <fr:link href="/lectures/003N/" title="The Boolean structure" uri="https://negation.rocks/lectures/003N/" display-uri="003N" type="local">the Boolean structure</fr:link>, though, you can see that this is impossible: if <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {F}}]]></fr:tex>, then no matter what <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex> is we also have <fr:tex display="inline"><![CDATA[v(p \land  q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            So no Boolean valuation is a counterexample to <fr:tex display="inline"><![CDATA[p \land  q \;/\; p]]></fr:tex>.
+            As a result, this argument is classically valid.
+</html:p>
+    <html:p>            For a contrasting example, think about <fr:tex display="inline"><![CDATA[p \lor  q \;/\; p]]></fr:tex>.
+            Is any Boolean valuation a counterexample to this argument?
+            A counterexample to this argument would be a valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> where <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            Is there any such <fr:tex display="inline"><![CDATA[w]]></fr:tex>?
+            Yes, there is.
+            Since there is always a valuation for any combination of values for our atomic sentences, consider any valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> where <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {F}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {T}}]]></fr:tex>.
+            In any such valuation, we have <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex>, so any such valuation is a counterexample to this argument.
+            As a result, this argument is not classically valid.
+</html:p>
+    <html:p>            Just like the Boolean structure, classical logic doesn't have to be interpreted as about truth.
+            Recall that if we're thinking about electrical circuits, each sentence represents a component of the circuit that can be on or off.
+            In this case, when an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> is classically valid, it means that whenever all the components represented by sentences in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are on, then the component represented by <fr:tex display="inline"><![CDATA[A]]></fr:tex> must also be on.
+            A counterexample to the argument would be some way of setting things up so that all the premise components are on and the conclusion component is off.
+</html:p>
+    <html:p>            What about arguments <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> where <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is the <html:em>empty</html:em> set of premises?
+            Remember, we can have arguments with no premises.
+            What does it take for a valuation to be a counterexample to one of these?
+            The same thing it takes to be a counterexample to any argument: it has to make all the premises take the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and the conclusion take value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+            To interpret this, we need to remember <fr:link href="/lectures/000F/" title="Logicians' Weird Habit 2" uri="https://negation.rocks/lectures/000F/" display-uri="000F" type="local">logicians' weird habit 2</fr:link>: if there are no Xs, then "all Xs are Ys" automatically counts as true.
+            So when there are no premises, "all the premises take value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on this valuation" is always true, no matter what valuation we're looking at.
+            That means that, for a valuation to be a counterexample to an argument <fr:tex display="inline"><![CDATA[\;/\; A]]></fr:tex> with no premises, all it needs to do is take the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> to the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+            The none premises are automatic.
+</html:p>
+    <html:p>            That means that an argument <fr:tex display="inline"><![CDATA[\;/\; A]]></fr:tex> is classically valid whenever the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on <html:em>every</html:em> Boolean valuation.
+            Such sentences are called <html:em>theorems</html:em>.
+            Just like "valid" or "invalid", "theorem" is always relative to a logic.
+            A sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> might be a theorem in one logic but not another, because the argument <fr:tex display="inline"><![CDATA[\;/\; A]]></fr:tex> is valid in the first logic but not the other.
+            Indeed, we'll see examples like that soon.
+</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>3</fr:month>
+          <fr:day>18</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/004Q/</fr:uri>
+        <fr:display-uri>004Q</fr:display-uri>
+        <fr:route>/lectures/004Q/</fr:route>
+        <fr:title text="Theorem">Theorem</fr:title>
+        <fr:taxon>Definition</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>A <html:strong>theorem</html:strong> of a logic is a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> such that the argument <fr:tex display="inline"><![CDATA[\;/\; A]]></fr:tex> is valid in the logic.</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <html:p>            One notable theorem of classical logic is <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex>.
+            In setting up our Boolean valuations, we forced every sentence to be true or false on each valuation.
+            Since negation takes falsity to truth, on every valuation one or the other of <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> is true.
+            And a disjunction is true when at least one of the disjuncts is true.
+            So <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex> comes out true no matter what value <fr:tex display="inline"><![CDATA[p]]></fr:tex> has.
+            This appears in the resulting logic: <fr:tex display="inline"><![CDATA[\;/\; p \lor  \neg  p]]></fr:tex> is a valid argument.
+</html:p>
+    <html:p>            In fact, we can go farther.
+            For <html:em>any sentence</html:em> <fr:tex display="inline"><![CDATA[A]]></fr:tex>, the sentence <fr:tex display="inline"><![CDATA[A \lor  \neg  A]]></fr:tex> is a classical theorem.
+            Make sure you see how to interpret this.
+            There's no particular sentence "<fr:tex display="inline"><![CDATA[A \lor  \neg  A]]></fr:tex>" in our language; <fr:tex display="inline"><![CDATA[A]]></fr:tex> isn't part of the language at all.
+            Rather, what I'm saying is that <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex> is a classical theorem, and <fr:tex display="inline"><![CDATA[q \lor  \neg  q]]></fr:tex> is a classical theorem, and <fr:tex display="inline"><![CDATA[(p \land  q) \lor  \neg  (p \land  q)]]></fr:tex> is a classical theorem, and <fr:tex display="inline"><![CDATA[\neg \neg (p \lor  \neg  r) \lor  \neg \neg \neg  (p \lor  \neg  r)]]></fr:tex> is a classical theorem, and so on.
+            I'm using <fr:tex display="inline"><![CDATA[A]]></fr:tex> as a variable, to make a claim about lots of different sentences all at once.
+</html:p>
+    <html:p>            Before we move on, let's look at one more example.
+            Think about the argument <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex>.
+            Is this classically valid?
+            To find out, we need to think whether it has any classical counterexamples.
+            A classical counterexample would be a Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = v(\neg  p) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>, since it would need to make both premises true and the conclusion not true.
+            But this can't happen; if <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(\neg  p)]]></fr:tex> can't also be <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>, because of how negation is handled in Boolean valuations.
+            So there are no classical counterexamples to <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex>.
+            This argument is classically valid.
+</html:p>
+    <html:p>            That sometimes can throw people for a loop; it seems like <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> have nothing to do with <fr:tex display="inline"><![CDATA[q]]></fr:tex>!
+            So how can the argument be valid?
+            This is where it's important to remember how logic works: we lay out precise and clear definitions, and we see where they follow.
+            The way we've set up classical logic, it just falls out that <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is valid.
+            If it seems to you like arguments like this shouldn't be valid, that might give you a reason to explore logics other than classical logic.
+            This is one of the ways different logics will differ from each other.
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>18</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/004N/</fr:uri>
+            <fr:display-uri>004N</fr:display-uri>
+            <fr:route>/lectures/004N/</fr:route>
+            <fr:title text="Preserving truth">Preserving truth</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        One way into the idea starts from thinking of our valuations again as possible worlds.
+        For simplicitly, let's start here with Boolean valuations.
+        Let's say we want to count an argument as valid when, no matter what, the truth of its premises guarantees the truth of its conclusion.
+        We can use our valuations, standing in for possible worlds, to understand the "no matter what" part here.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004O/</fr:uri>
+                <fr:display-uri>004O</fr:display-uri>
+                <fr:route>/lectures/004O/</fr:route>
+                <fr:title text="A first example">A first example</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>            As a warmup, say that a Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a <html:strong>counterexample</html:strong> to an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> when every premise in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> and the conclusion <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> on <fr:tex display="inline"><![CDATA[v]]></fr:tex>.
+            If an argument has any counterexamples, then we can see that the truth of its premises does <html:em>not</html:em> guarantee the truth of its conclusion---the counterexample shows a way to distribute truth values among the atomic formulas that makes the premises all true without making the conclusion true.
+</html:p>
+                <html:p>            So we can get a logic from our Boolean valuations like this: if any Boolean valuation is a counterexample to an argument, this logic counts the argument as invalid.
+            On the other hand, if no Boolean valuation is a counterexample to the argument, then this logic counts the argument as valid.
+            This is a very widely used logic, called <html:strong>classical logic</html:strong>.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>18</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/004P/</fr:uri>
+                    <fr:display-uri>004P</fr:display-uri>
+                    <fr:route>/lectures/004P/</fr:route>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Recall the history here, though: this only goes back to the 19th century.
+            So the "classical" here is more like the "classical" in "classical music" than it is like the "classical" in "classical architecture".</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>            Let's return to some earlier example arguments, to see how they fare in classical logic.
+            First, think about <fr:tex display="inline"><![CDATA[p \land  q \;/\; p]]></fr:tex>.
+            To see whether this argument is classically valid or not, we should ask: is any Boolean valuation a counterexample to this argument?
+            Remember, a counterexample to this argument is a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p \land  q) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            By looking at <fr:link href="/lectures/003N/" title="The Boolean structure" uri="https://negation.rocks/lectures/003N/" display-uri="003N" type="local">the Boolean structure</fr:link>, though, you can see that this is impossible: if <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {F}}]]></fr:tex>, then no matter what <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex> is we also have <fr:tex display="inline"><![CDATA[v(p \land  q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            So no Boolean valuation is a counterexample to <fr:tex display="inline"><![CDATA[p \land  q \;/\; p]]></fr:tex>.
+            As a result, this argument is classically valid.
+</html:p>
+                <html:p>            For a contrasting example, think about <fr:tex display="inline"><![CDATA[p \lor  q \;/\; p]]></fr:tex>.
+            Is any Boolean valuation a counterexample to this argument?
+            A counterexample to this argument would be a valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> where <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            Is there any such <fr:tex display="inline"><![CDATA[w]]></fr:tex>?
+            Yes, there is.
+            Since there is always a valuation for any combination of values for our atomic sentences, consider any valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> where <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {F}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {T}}]]></fr:tex>.
+            In any such valuation, we have <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex>, so any such valuation is a counterexample to this argument.
+            As a result, this argument is not classically valid.
+</html:p>
+                <html:p>            Just like the Boolean structure, classical logic doesn't have to be interpreted as about truth.
+            Recall that if we're thinking about electrical circuits, each sentence represents a component of the circuit that can be on or off.
+            In this case, when an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> is classically valid, it means that whenever all the components represented by sentences in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are on, then the component represented by <fr:tex display="inline"><![CDATA[A]]></fr:tex> must also be on.
+            A counterexample to the argument would be some way of setting things up so that all the premise components are on and the conclusion component is off.
+</html:p>
+                <html:p>            What about arguments <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> where <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is the <html:em>empty</html:em> set of premises?
+            Remember, we can have arguments with no premises.
+            What does it take for a valuation to be a counterexample to one of these?
+            The same thing it takes to be a counterexample to any argument: it has to make all the premises take the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and the conclusion take value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+            To interpret this, we need to remember <fr:link href="/lectures/000F/" title="Logicians' Weird Habit 2" uri="https://negation.rocks/lectures/000F/" display-uri="000F" type="local">logicians' weird habit 2</fr:link>: if there are no Xs, then "all Xs are Ys" automatically counts as true.
+            So when there are no premises, "all the premises take value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on this valuation" is always true, no matter what valuation we're looking at.
+            That means that, for a valuation to be a counterexample to an argument <fr:tex display="inline"><![CDATA[\;/\; A]]></fr:tex> with no premises, all it needs to do is take the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> to the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+            The none premises are automatic.
+</html:p>
+                <html:p>            That means that an argument <fr:tex display="inline"><![CDATA[\;/\; A]]></fr:tex> is classically valid whenever the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on <html:em>every</html:em> Boolean valuation.
+            Such sentences are called <html:em>theorems</html:em>.
+            Just like "valid" or "invalid", "theorem" is always relative to a logic.
+            A sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> might be a theorem in one logic but not another, because the argument <fr:tex display="inline"><![CDATA[\;/\; A]]></fr:tex> is valid in the first logic but not the other.
+            Indeed, we'll see examples like that soon.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>18</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/004Q/</fr:uri>
+                    <fr:display-uri>004Q</fr:display-uri>
+                    <fr:route>/lectures/004Q/</fr:route>
+                    <fr:title text="Theorem">Theorem</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>A <html:strong>theorem</html:strong> of a logic is a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> such that the argument <fr:tex display="inline"><![CDATA[\;/\; A]]></fr:tex> is valid in the logic.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>            One notable theorem of classical logic is <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex>.
+            In setting up our Boolean valuations, we forced every sentence to be true or false on each valuation.
+            Since negation takes falsity to truth, on every valuation one or the other of <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> is true.
+            And a disjunction is true when at least one of the disjuncts is true.
+            So <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex> comes out true no matter what value <fr:tex display="inline"><![CDATA[p]]></fr:tex> has.
+            This appears in the resulting logic: <fr:tex display="inline"><![CDATA[\;/\; p \lor  \neg  p]]></fr:tex> is a valid argument.
+</html:p>
+                <html:p>            In fact, we can go farther.
+            For <html:em>any sentence</html:em> <fr:tex display="inline"><![CDATA[A]]></fr:tex>, the sentence <fr:tex display="inline"><![CDATA[A \lor  \neg  A]]></fr:tex> is a classical theorem.
+            Make sure you see how to interpret this.
+            There's no particular sentence "<fr:tex display="inline"><![CDATA[A \lor  \neg  A]]></fr:tex>" in our language; <fr:tex display="inline"><![CDATA[A]]></fr:tex> isn't part of the language at all.
+            Rather, what I'm saying is that <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex> is a classical theorem, and <fr:tex display="inline"><![CDATA[q \lor  \neg  q]]></fr:tex> is a classical theorem, and <fr:tex display="inline"><![CDATA[(p \land  q) \lor  \neg  (p \land  q)]]></fr:tex> is a classical theorem, and <fr:tex display="inline"><![CDATA[\neg \neg (p \lor  \neg  r) \lor  \neg \neg \neg  (p \lor  \neg  r)]]></fr:tex> is a classical theorem, and so on.
+            I'm using <fr:tex display="inline"><![CDATA[A]]></fr:tex> as a variable, to make a claim about lots of different sentences all at once.
+</html:p>
+                <html:p>            Before we move on, let's look at one more example.
+            Think about the argument <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex>.
+            Is this classically valid?
+            To find out, we need to think whether it has any classical counterexamples.
+            A classical counterexample would be a Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = v(\neg  p) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>, since it would need to make both premises true and the conclusion not true.
+            But this can't happen; if <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(\neg  p)]]></fr:tex> can't also be <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>, because of how negation is handled in Boolean valuations.
+            So there are no classical counterexamples to <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex>.
+            This argument is classically valid.
+</html:p>
+                <html:p>            That sometimes can throw people for a loop; it seems like <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> have nothing to do with <fr:tex display="inline"><![CDATA[q]]></fr:tex>!
+            So how can the argument be valid?
+            This is where it's important to remember how logic works: we lay out precise and clear definitions, and we see where they follow.
+            The way we've set up classical logic, it just falls out that <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is valid.
+            If it seems to you like arguments like this shouldn't be valid, that might give you a reason to explore logics other than classical logic.
+            This is one of the ways different logics will differ from each other.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004R/</fr:uri>
+                <fr:display-uri>004R</fr:display-uri>
+                <fr:route>/lectures/004R/</fr:route>
+                <fr:title text="A second example">A second example</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>            Now, let's look at our second example logic.
+            This will work with a similar idea: we're going to think of valuations as something like possible worlds, and we're going to think of an argument as trying to guarantee the truth of its conclusion given the truth of all its premises.
+            But we're now going to use strong Kleene valuations instead of Boolean valuations. 
+            Recall that the strong Kleene structure has three values: <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}, \mathsf {\mathbf {*}}, \mathsf {\mathbf {F}}]]></fr:tex>.
+            We can assume that <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> still represents truth, and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> still falsity.
+            But what about <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>?
+            As I presented the strong Kleene structure last time, I mentioned that this value can be interpreted in different ways.
+            For now, let's assume we're interpreting it as something that isn't true: perhaps as neither true nor false, say.
+            So we're supposing that <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> is the only true value in this structure.
+            Then in our new logic, a counterexample to <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> is a strong Kleene valuation that takes every premise in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> to the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>, and takes <fr:tex display="inline"><![CDATA[A]]></fr:tex> to either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+            This logic is called <html:strong>K3</html:strong>.
+            (The "K" here is for "Kleene", and the "3" is for the number of values in the strong Kleene structure.)
+</html:p>
+                <html:p>            As in classical logic, <fr:tex display="inline"><![CDATA[p \land  q \;/\; p]]></fr:tex> is valid in K3.
+            By revisiting (or recalling) the strong Kleene table for <fr:tex display="inline"><![CDATA[\land ]]></fr:tex>, you can see that for any valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>, if <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> is either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(p \land  q)]]></fr:tex> must also be either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>.
+            So there is no valuation that is a counterexample to this argument.
+            Also as in classical logic, <fr:tex display="inline"><![CDATA[p \lor  q \;/\; p]]></fr:tex> is invalid in K3.
+            For example, take a valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> with <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {*}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {T}}]]></fr:tex>.
+            Then we have <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex>; so this is a counterexample to the argument.\footnote{There is another value <fr:tex display="inline"><![CDATA[p]]></fr:tex> could have in counterexamples to this argument as well; do you see it?}
+</html:p>
+                <html:p>            Again as in classical logic, <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is valid in K3.
+            To have a K3 counterexample to this argument, we would need a strong Kleene valuation that assigned <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to both <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> (as well as assigning some other value to <fr:tex display="inline"><![CDATA[q]]></fr:tex>).
+            But no strong Kleene valuation can assign <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to both <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>.
+            So there is no K3 counterexample to this argument.
+</html:p>
+                <html:p>            Despite these similarities, however, classical logic and K3 are not the same.
+            For example, we've seen that <fr:tex display="inline"><![CDATA[\;/\; p \lor  \neg  p]]></fr:tex> is classically valid.
+            But it is not K3 valid.
+            That is to say, <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex> is not a theorem of K3.
+            Take any strong Kleene valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {*}}]]></fr:tex>.
+            Then since <fr:tex display="inline"><![CDATA[\neg  \mathsf {\mathbf {*}} = \mathsf {\mathbf {*}}]]></fr:tex>, we also have <fr:tex display="inline"><![CDATA[v(\neg  p) = \mathsf {\mathbf {*}}]]></fr:tex>.
+            And since <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}} \lor  \mathsf {\mathbf {*}} = \mathsf {\mathbf {*}}]]></fr:tex>, this gives <fr:tex display="inline"><![CDATA[v(p \lor  \neg  p) = \mathsf {\mathbf {*}}]]></fr:tex>.
+            That is, assuming our interpretation of <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex> as neither true nor false, on any valuation where <fr:tex display="inline"><![CDATA[p]]></fr:tex> itself is neither true nor false, <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex> is also neither true nor false.
+            And if it's neither true nor false, then in particular it ain't true.
+            So we have a K3 counterexample to <fr:tex display="inline"><![CDATA[\;/\; p \lor  \neg  p]]></fr:tex>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004S/</fr:uri>
+                <fr:display-uri>004S</fr:display-uri>
+                <fr:route>/lectures/004S/</fr:route>
+                <fr:title text="A third example">A third example</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>            Let's now look at a third example logic, different from both classical logic and K3.
+            Like K3, this third logic makes use of strong Kleene valuations, but it involves treating the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex> differently.
+            Suppose that, instead of treating <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex> as a value for things that are neither true nor false, we instead treat it as a value for things that are both true and false.
+            Then, if we want our valid arguments to preserve truth, we would say that a counterexample to an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> is a strong Kleene valuation that takes every premise in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> to one of the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}, \mathsf {\mathbf {*}}]]></fr:tex>, and the conclusion <fr:tex display="inline"><![CDATA[A]]></fr:tex> to <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+            The logic that results from this is known as LP.
+            (This stands for the "Logic of Paradox"; it was given this name in the late 1970s by the English/Australian logician Graham Priest.
+            The logic itself seems to have been first studied by the Argentinian/USian logician Florencio Asenjo in the early 1950s.)
+</html:p>
+                <html:p><html:strong>Important:</html:strong> Even though K3 and LP use the very same valuations, built on the very same structure---the strong Kleene structure---they are different logics.
+            This is because of the different ways counterexamples are determined.
+</html:p>
+                <html:p>            For example, LP is like classical logic, and unlike K3, in counting <fr:tex display="inline"><![CDATA[\;/\; p \lor  \neg  p]]></fr:tex> as valid.
+            This is because, in a strong Kleene valuation, the sentence <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex> always takes either the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>.
+            Either way, the valuation is not an LP counterexample to this argument.
+            As we've seen, though, if it takes value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex> on a valuation, then that valuation is a K3 counterexample to the argument.
+</html:p>
+                <html:p>            On the other hand, LP differs from both classical logic and K3 in holding the argument <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> to be invalid.
+            Take a strong Kleene valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {*}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>; such a valuation is an LP counterexample to this argument.
+</html:p>
+                <html:p>            The argument <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is sometimes known as <html:em>explosion</html:em>.
+            It gets such a dramatic name because it seems to suggest that any old contradiction, like having <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> together, should entail absolutely anything else.
+            And indeed, in classical logic and K3 this is the case: for any sentences <fr:tex display="inline"><![CDATA[A, B]]></fr:tex> at all, <fr:tex display="inline"><![CDATA[A, \neg  A \;/\; B]]></fr:tex> is valid in both classical logic and K3.
+            From a contradiction, anything follows.
+            This is not so in LP, as we've seen.
+            As explosion seems like a very odd kind of argument to many people, this is often held up as a way in which LP more closely matches some of our intuitions about good and bad arguments than some other logics.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004T/</fr:uri>
+                <fr:display-uri>004T</fr:display-uri>
+                <fr:route>/lectures/004T/</fr:route>
+                <fr:title text="Chrysippus's dog">Chrysippus's dog</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>            This nice feature, though, comes with a bit of a dark side.
+            Think about the following line of reasoning: "The rabbit either went left or it went right. 
+            It didn't go left.
+            Therefore, it went right".
+            This line of reasoning strikes many people as if it should be valid: the truth of its premises, it seems, suffices for the truth of its conclusion.
+            And since the argument just turns on "or" and "not", it seems that we can represent it at least decently well in our language, as something like <fr:tex display="inline"><![CDATA[p \lor  q, \neg  p \;/\; q]]></fr:tex>.
+</html:p>
+                <html:p>            This kind of argument has been studied for thousands of years; it's much much older than the kind of logic we're doing.
+            It's often called "disjunctive syllogism" nowadays; the ancient Stoics knew it as the "fifth indemonstrable".
+            Sextus Empiricus (in the secondish century CE, in his <html:em>Outlines of Pyrrhonism</html:em> I.69) had this to say, talking about the earlier Stoic Chrysippus (in the secondish century BCE):
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>18</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/004U/</fr:uri>
+                    <fr:display-uri>004U</fr:display-uri>
+                    <fr:route>/lectures/004U/</fr:route>
+                    <fr:taxon>Quote</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>                "[Chrysippus] declares that the dog makes use of the fifth complex indemonstrable syllogism when, on arriving at a spot where three ways meet\ldots , after smelling at the two roads by which the quarry did not pass, he rushes off at once by the third without stopping to smell. 
+                For, says the old writer, the dog implicitly reasons thus: 'The animal went either by this road, or by that, or by the other: but it did not go by this or that, therefore he went the other way'".</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>            This argument is classically valid, and valid in K3, but not valid in LP.
+            Let's see why.
+            To have a classical counterexample to the argument, we would need a Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p \lor  q) = v(\neg  p) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            Let's think about what such a valuation would have to be like.
+            We know <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            What about <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex>?
+            Well, since <fr:tex display="inline"><![CDATA[v(\neg  p) = \mathsf {\mathbf {T}}]]></fr:tex>, we must have <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            But then both <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> take the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, and this means that <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> must take the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> as well.
+            That is, no Boolean valuation can meet the criteria we need for it to be a counterexample to this argument.
+            As a result, the argument is classically valid.
+</html:p>
+                <html:p>            What about a strong Kleene valuation?
+            Well, we have a strong Kleene valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> where <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {*}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            This gives us <fr:tex display="inline"><![CDATA[w(\neg  p) = \mathsf {\mathbf {*}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {*}}]]></fr:tex>.
+            So this valuation is an LP counterexample to the argument, and the argument is LP invalid.
+            But it is not a K3 counterexample, since it does not make the premises of the argument take the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>.
+            Indeed, there is no K3 counterexample to this argument.
+</html:p>
+                <html:p>            The reason <fr:tex display="inline"><![CDATA[p \lor  q, \neg  p \;/\; q]]></fr:tex> is invalid in LP is the same reason that <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is invalid: because LP allows for <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> to be true at the same time.
+            This lenience towards contradictions is something we looked at a bit when we introduced Dunn-Belnap valuations, and if we use strong Kleene valuations in the way suggested by LP, we can see it here as well.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/003N/</fr:uri>
+            <fr:display-uri>003N</fr:display-uri>
+            <fr:route>/lectures/003N/</fr:route>
+            <fr:title text="The Boolean structure">The Boolean structure</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/003J/</fr:uri>
+                <fr:display-uri>003J</fr:display-uri>
+                <fr:route>/lectures/003J/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[A]]></fr:tex></html:td>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/003K/</fr:uri>
+                <fr:display-uri>003K</fr:display-uri>
+                <fr:route>/lectures/003K/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\land ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/003L/</fr:uri>
+                <fr:display-uri>003L</fr:display-uri>
+                <fr:route>/lectures/003L/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\lor ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/003M/</fr:uri>
+                <fr:display-uri>003M</fr:display-uri>
+                <fr:route>/lectures/003M/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/003I/</fr:uri>
+                <fr:display-uri>003I</fr:display-uri>
+                <fr:route>/lectures/003I/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\top ]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+                <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\bot ]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>1</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/000F/</fr:uri>
+            <fr:display-uri>000F</fr:display-uri>
+            <fr:route>/lectures/000F/</fr:route>
+            <fr:title text="Logicians' Weird Habit 2">Logicians' Weird Habit 2</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+
+            This is the weirder one.
+            Whenever I say something like "Every BLAH is a SUCH-AND-SUCH", I always mean to <html:em>include</html:em> the case where there are no BLAHs at all.
+            Again, I won"t bother with any special qualifications; you can always take this for granted.
+            So, for example, I"m perfectly happy to say: "All unicorns breathe fire".
+            Since there are no unicorns, my "all" claim is all good.
+
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

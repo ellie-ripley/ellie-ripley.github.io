@@ -553,7 +553,145 @@
         <fr:authors />
         <fr:title text="Backlinks">Backlinks</fr:title>
       </fr:frontmatter>
-      <fr:mainmatter />
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>18</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/004O/</fr:uri>
+            <fr:display-uri>004O</fr:display-uri>
+            <fr:route>/lectures/004O/</fr:route>
+            <fr:title text="A first example">A first example</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>            As a warmup, say that a Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a <html:strong>counterexample</html:strong> to an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> when every premise in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> and the conclusion <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> on <fr:tex display="inline"><![CDATA[v]]></fr:tex>.
+            If an argument has any counterexamples, then we can see that the truth of its premises does <html:em>not</html:em> guarantee the truth of its conclusion---the counterexample shows a way to distribute truth values among the atomic formulas that makes the premises all true without making the conclusion true.
+</html:p>
+            <html:p>            So we can get a logic from our Boolean valuations like this: if any Boolean valuation is a counterexample to an argument, this logic counts the argument as invalid.
+            On the other hand, if no Boolean valuation is a counterexample to the argument, then this logic counts the argument as valid.
+            This is a very widely used logic, called <html:strong>classical logic</html:strong>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004P/</fr:uri>
+                <fr:display-uri>004P</fr:display-uri>
+                <fr:route>/lectures/004P/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Recall the history here, though: this only goes back to the 19th century.
+            So the "classical" here is more like the "classical" in "classical music" than it is like the "classical" in "classical architecture".</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>            Let's return to some earlier example arguments, to see how they fare in classical logic.
+            First, think about <fr:tex display="inline"><![CDATA[p \land  q \;/\; p]]></fr:tex>.
+            To see whether this argument is classically valid or not, we should ask: is any Boolean valuation a counterexample to this argument?
+            Remember, a counterexample to this argument is a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p \land  q) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            By looking at <fr:link href="/lectures/003N/" title="The Boolean structure" uri="https://negation.rocks/lectures/003N/" display-uri="003N" type="local">the Boolean structure</fr:link>, though, you can see that this is impossible: if <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {F}}]]></fr:tex>, then no matter what <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex> is we also have <fr:tex display="inline"><![CDATA[v(p \land  q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            So no Boolean valuation is a counterexample to <fr:tex display="inline"><![CDATA[p \land  q \;/\; p]]></fr:tex>.
+            As a result, this argument is classically valid.
+</html:p>
+            <html:p>            For a contrasting example, think about <fr:tex display="inline"><![CDATA[p \lor  q \;/\; p]]></fr:tex>.
+            Is any Boolean valuation a counterexample to this argument?
+            A counterexample to this argument would be a valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> where <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            Is there any such <fr:tex display="inline"><![CDATA[w]]></fr:tex>?
+            Yes, there is.
+            Since there is always a valuation for any combination of values for our atomic sentences, consider any valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> where <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {F}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {T}}]]></fr:tex>.
+            In any such valuation, we have <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex>, so any such valuation is a counterexample to this argument.
+            As a result, this argument is not classically valid.
+</html:p>
+            <html:p>            Just like the Boolean structure, classical logic doesn't have to be interpreted as about truth.
+            Recall that if we're thinking about electrical circuits, each sentence represents a component of the circuit that can be on or off.
+            In this case, when an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> is classically valid, it means that whenever all the components represented by sentences in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are on, then the component represented by <fr:tex display="inline"><![CDATA[A]]></fr:tex> must also be on.
+            A counterexample to the argument would be some way of setting things up so that all the premise components are on and the conclusion component is off.
+</html:p>
+            <html:p>            What about arguments <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> where <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is the <html:em>empty</html:em> set of premises?
+            Remember, we can have arguments with no premises.
+            What does it take for a valuation to be a counterexample to one of these?
+            The same thing it takes to be a counterexample to any argument: it has to make all the premises take the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and the conclusion take value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+            To interpret this, we need to remember <fr:link href="/lectures/000F/" title="Logicians' Weird Habit 2" uri="https://negation.rocks/lectures/000F/" display-uri="000F" type="local">logicians' weird habit 2</fr:link>: if there are no Xs, then "all Xs are Ys" automatically counts as true.
+            So when there are no premises, "all the premises take value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on this valuation" is always true, no matter what valuation we're looking at.
+            That means that, for a valuation to be a counterexample to an argument <fr:tex display="inline"><![CDATA[\;/\; A]]></fr:tex> with no premises, all it needs to do is take the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> to the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+            The none premises are automatic.
+</html:p>
+            <html:p>            That means that an argument <fr:tex display="inline"><![CDATA[\;/\; A]]></fr:tex> is classically valid whenever the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> takes the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> on <html:em>every</html:em> Boolean valuation.
+            Such sentences are called <html:em>theorems</html:em>.
+            Just like "valid" or "invalid", "theorem" is always relative to a logic.
+            A sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> might be a theorem in one logic but not another, because the argument <fr:tex display="inline"><![CDATA[\;/\; A]]></fr:tex> is valid in the first logic but not the other.
+            Indeed, we'll see examples like that soon.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004Q/</fr:uri>
+                <fr:display-uri>004Q</fr:display-uri>
+                <fr:route>/lectures/004Q/</fr:route>
+                <fr:title text="Theorem">Theorem</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>theorem</html:strong> of a logic is a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> such that the argument <fr:tex display="inline"><![CDATA[\;/\; A]]></fr:tex> is valid in the logic.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>            One notable theorem of classical logic is <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex>.
+            In setting up our Boolean valuations, we forced every sentence to be true or false on each valuation.
+            Since negation takes falsity to truth, on every valuation one or the other of <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> is true.
+            And a disjunction is true when at least one of the disjuncts is true.
+            So <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex> comes out true no matter what value <fr:tex display="inline"><![CDATA[p]]></fr:tex> has.
+            This appears in the resulting logic: <fr:tex display="inline"><![CDATA[\;/\; p \lor  \neg  p]]></fr:tex> is a valid argument.
+</html:p>
+            <html:p>            In fact, we can go farther.
+            For <html:em>any sentence</html:em> <fr:tex display="inline"><![CDATA[A]]></fr:tex>, the sentence <fr:tex display="inline"><![CDATA[A \lor  \neg  A]]></fr:tex> is a classical theorem.
+            Make sure you see how to interpret this.
+            There's no particular sentence "<fr:tex display="inline"><![CDATA[A \lor  \neg  A]]></fr:tex>" in our language; <fr:tex display="inline"><![CDATA[A]]></fr:tex> isn't part of the language at all.
+            Rather, what I'm saying is that <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex> is a classical theorem, and <fr:tex display="inline"><![CDATA[q \lor  \neg  q]]></fr:tex> is a classical theorem, and <fr:tex display="inline"><![CDATA[(p \land  q) \lor  \neg  (p \land  q)]]></fr:tex> is a classical theorem, and <fr:tex display="inline"><![CDATA[\neg \neg (p \lor  \neg  r) \lor  \neg \neg \neg  (p \lor  \neg  r)]]></fr:tex> is a classical theorem, and so on.
+            I'm using <fr:tex display="inline"><![CDATA[A]]></fr:tex> as a variable, to make a claim about lots of different sentences all at once.
+</html:p>
+            <html:p>            Before we move on, let's look at one more example.
+            Think about the argument <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex>.
+            Is this classically valid?
+            To find out, we need to think whether it has any classical counterexamples.
+            A classical counterexample would be a Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = v(\neg  p) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>, since it would need to make both premises true and the conclusion not true.
+            But this can't happen; if <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(\neg  p)]]></fr:tex> can't also be <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>, because of how negation is handled in Boolean valuations.
+            So there are no classical counterexamples to <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex>.
+            This argument is classically valid.
+</html:p>
+            <html:p>            That sometimes can throw people for a loop; it seems like <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> have nothing to do with <fr:tex display="inline"><![CDATA[q]]></fr:tex>!
+            So how can the argument be valid?
+            This is where it's important to remember how logic works: we lay out precise and clear definitions, and we see where they follow.
+            The way we've set up classical logic, it just falls out that <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is valid.
+            If it seems to you like arguments like this shouldn't be valid, that might give you a reason to explore logics other than classical logic.
+            This is one of the ways different logics will differ from each other.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">
       <fr:frontmatter>

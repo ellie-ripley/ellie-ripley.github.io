@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>18</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/004X/</fr:uri>
+    <fr:display-uri>004X</fr:display-uri>
+    <fr:route>/lectures/004X/</fr:route>
+    <fr:title text="Matrix, designated value">Matrix, designated value</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>A <html:strong>matrix</html:strong> has two parts: first, a structure; and second, a subset of the structure's set of values.
+The values in this subset are called the <html:strong>designated</html:strong> values of the matrix.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>18</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/004V/</fr:uri>
+            <fr:display-uri>004V</fr:display-uri>
+            <fr:route>/lectures/004V/</fr:route>
+            <fr:title text="Matrices">Matrices</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        Classical logic, K3, and LP are three relatively well-known and widely-studied logics, and each of them forms a good potential topic for some puzzles.
+        (They also give us some of the exercises at <fr:link href="https://binchicken.one/" type="external">https://binchicken.one</fr:link>.)
+        It's also nice, in addition to looking at specific example logics like this, to have some more systematic tools for exploring logics.
+        In this bit, I'll talk about one standard way to do this; the example logics we've seen so far all fit this mould.
+</html:p>
+            <html:p>        The idea is this: take a structure, any structure at all, and then indicate some set of the structure's values.
+        For example, we might pick the Boolean structure and indicate the set <fr:tex display="inline"><![CDATA[\{\mathsf {\mathbf {T}}\}]]></fr:tex>.
+        Or we might pick the strong Kleene structure, and indicate the set <fr:tex display="inline"><![CDATA[\{\mathsf {\mathbf {T}}\}]]></fr:tex>.
+        Or we might pick the strong Kleene structure, and indicate the set <fr:tex display="inline"><![CDATA[\{\mathsf {\mathbf {T}}, \mathsf {\mathbf {*}}\}]]></fr:tex>.
+        Any such assembly---a structure, together with some distinguished set of values from the structure---is called a <html:strong>matrix</html:strong>.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004X/</fr:uri>
+                <fr:display-uri>004X</fr:display-uri>
+                <fr:route>/lectures/004X/</fr:route>
+                <fr:title text="Matrix, designated value">Matrix, designated value</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>matrix</html:strong> has two parts: first, a structure; and second, a subset of the structure's set of values.
+The values in this subset are called the <html:strong>designated</html:strong> values of the matrix.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004W/</fr:uri>
+                <fr:display-uri>004W</fr:display-uri>
+                <fr:route>/lectures/004W/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>You might be aware that there are mathematical structures called "matrices" as well, studied in linear algebra and the like. 
+        It's just a coincidence that the two ideas use the same word; logical matrices don't have anything to do with those matrices, as far as I know.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>        The three example matrices a couple of paragraphs back weren't chosen at random: respectively, they determine classical logic, K3, and LP, once you know how to look at them.
+        Here's the idea: one way to present a logic, the way we've been looking at, is to specify some kind of valuation, and then say what it takes for a particular valuation to be a counterexample to an argument.
+        The logic presented in this way counts an argument as being invalid if any valuation is a counterexample to it, and valid if no valuation is a counterexample.
+</html:p>
+            <html:p>        Now, suppose you have a matrix, which is to say you have a structure together with some set <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> of the structure's values.
+        (That's the Greek letter Delta.
+        Remember, I'm using Greek letters for sets; I've chosen <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> because "designated" starts with "d".)
+        The valuations you get from this matrix are just whatever valuations you'd get from the structure.
+        The set <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> isn't involved at all in determining these valuations.
+        The set <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> is instead involved in saying when one of these valuations is a counterexample to an argument.
+        A valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a counterexample to an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> exactly when <fr:tex display="inline"><![CDATA[v]]></fr:tex> takes every premise in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> to some value in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, but takes <fr:tex display="inline"><![CDATA[A]]></fr:tex> to a value outside of <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>.
+        We use this to get, for every matrix, a particular logic that the matrix determines.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004Y/</fr:uri>
+                <fr:display-uri>004Y</fr:display-uri>
+                <fr:route>/lectures/004Y/</fr:route>
+                <fr:title text="Counterexample in a matrix, logic determined by a matrix">Counterexample in a matrix, logic determined by a matrix</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Given a matrix with structure <fr:tex display="inline"><![CDATA[S]]></fr:tex> and set <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> of designated values, a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> in the structure <fr:tex display="inline"><![CDATA[S]]></fr:tex> is a <html:strong>counterexample</html:strong> to an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> in that matrix iff both:
+         <html:ul><html:li>for every <fr:tex display="inline"><![CDATA[B]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, <fr:tex display="inline"><![CDATA[v(B)]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, and</html:li>
+            <html:li><fr:tex display="inline"><![CDATA[v(A)]]></fr:tex> is not in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex></html:li></html:ul>
+
+The <html:strong>logic determined by a matrix</html:strong> is the logic that contains an argument iff that argument has <html:em>no</html:em> counterexamples in the matrix.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>All our earlier examples fit this pattern; this is the key idea for this week.</html:p>
+            <html:p>        The set <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> of designated values here is playing the role of the values we're counting as "true".
+        So in K3, where we don't usually think of <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex> as being true, we don't have <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex> as a designated value.
+        But in LP, where we do usually think of <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex> as being true, there we do have <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex> as a designated value.
+        This gives us an example where we can have two different logics, coming from two different matrices, built on the same structure.
+        The only difference is in the set of designated values.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004Z/</fr:uri>
+                <fr:display-uri>004Z</fr:display-uri>
+                <fr:route>/lectures/004Z/</fr:route>
+                <fr:title text="Another example logic, presented with a matrix">Another example logic, presented with a matrix</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>            To give you some practice with this idea, here's another example logic.
+            This one I'll present directly via a matrix.
+            The structure we'll use for this one is the Dunn-Belnap structure, and the designated values are <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}, \mathsf {\mathbf {B}}]]></fr:tex>.
+            There; that's enough to fully specify a logic.
+            This one is one we'll call FDE.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>18</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0050/</fr:uri>
+                    <fr:display-uri>0050</fr:display-uri>
+                    <fr:route>/lectures/0050/</fr:route>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>"FDE" stands for "first-degree E".
+            E is a logic like FDE, but E uses a very different implication connective.
+            The logic E was first developed to use this implication connective to give some understanding of entailment; that's why it's called E.</html:p>
+                    <html:p>            E is a member of a family of logics known as relevant logics (in Australia) or relevance logics (in the US).
+            Relevant logics form a very important aspect of Australian research in logic---indeed, they're the reason that I first came to Australia.
+            They're a bit too complex for these notes to spend much time on them, but if you want to look into them, you'll find a fascinating literature.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>            Like all the logics we've seen so far, FDE holds the argument <fr:tex display="inline"><![CDATA[p \land  q \;/\; p]]></fr:tex> to be valid, and <fr:tex display="inline"><![CDATA[p \lor  q \;/\; p]]></fr:tex> to be invalid.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>18</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0051/</fr:uri>
+                    <fr:display-uri>0051</fr:display-uri>
+                    <fr:route>/lectures/0051/</fr:route>
+                    <fr:taxon>Exercise</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter><html:p>Take a moment and see if you can find an FDE counterexample to this second argument.
+</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>3</fr:month><fr:day>18</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>            <html:p>There are a number of different ways to reach an FDE counterexample to the second argument.
+            If you have a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> is either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex> and where <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex> is either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex>, then you have a counterexample to this argument; if your valuation isn't like this, then you don't have one.</html:p>
+            
+            <html:p>Let's think it through: to be a counterexample to <fr:tex display="inline"><![CDATA[p \lor  q \;/\; p]]></fr:tex>, a valuation would need to take <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> to one of our designated values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}, \mathsf {\mathbf {B}}]]></fr:tex>, and take <fr:tex display="inline"><![CDATA[p]]></fr:tex> to some undesignated value.
+            Since the undesignated values in this matrix are <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}, \mathsf {\mathbf {N}}]]></fr:tex>, we know that for <fr:tex display="inline"><![CDATA[v]]></fr:tex> to be a counterexample we need <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> to be either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex>.
+            What, then, about <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex>?
+            Well, we also need <fr:tex display="inline"><![CDATA[v(p \lor  q)]]></fr:tex> to be either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex>.
+            By checking how the Dunn-Belnap structure treats disjunction, you can see that, with <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> being either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex>, setting <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex> to either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex> will work, and nothing else will.</html:p>
+</fr:mainmatter></fr:tree></fr:mainmatter>
+                </fr:tree>
+                <html:p>            What about the arguments that distinguished K3 and LP from classical logic?
+            Here, too, FDE is different from everything we've seen so far.
+            Like K3, and unlike classical logic or LP, FDE holds <fr:tex display="inline"><![CDATA[\;/\; p \lor  \neg  p]]></fr:tex> to be invalid; any valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {N}}]]></fr:tex> provides a counterexample.
+            And like LP, but unlike classical logic or K3, FDE holds <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> to be invalid; any valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {B}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex> provides a counterexample.
+            For the same reason, FDE agrees with LP in holding disjunctive syllogism to be invalid, unlike classical logic or K3.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>18</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/004U/</fr:uri>
+    <fr:display-uri>004U</fr:display-uri>
+    <fr:route>/lectures/004U/</fr:route>
+    <fr:taxon>Quote</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>                "[Chrysippus] declares that the dog makes use of the fifth complex indemonstrable syllogism when, on arriving at a spot where three ways meet\ldots , after smelling at the two roads by which the quarry did not pass, he rushes off at once by the third without stopping to smell. 
+                For, says the old writer, the dog implicitly reasons thus: 'The animal went either by this road, or by that, or by the other: but it did not go by this or that, therefore he went the other way'".</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>18</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/004T/</fr:uri>
+            <fr:display-uri>004T</fr:display-uri>
+            <fr:route>/lectures/004T/</fr:route>
+            <fr:title text="Chrysippus's dog">Chrysippus's dog</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>            This nice feature, though, comes with a bit of a dark side.
+            Think about the following line of reasoning: "The rabbit either went left or it went right. 
+            It didn't go left.
+            Therefore, it went right".
+            This line of reasoning strikes many people as if it should be valid: the truth of its premises, it seems, suffices for the truth of its conclusion.
+            And since the argument just turns on "or" and "not", it seems that we can represent it at least decently well in our language, as something like <fr:tex display="inline"><![CDATA[p \lor  q, \neg  p \;/\; q]]></fr:tex>.
+</html:p>
+            <html:p>            This kind of argument has been studied for thousands of years; it's much much older than the kind of logic we're doing.
+            It's often called "disjunctive syllogism" nowadays; the ancient Stoics knew it as the "fifth indemonstrable".
+            Sextus Empiricus (in the secondish century CE, in his <html:em>Outlines of Pyrrhonism</html:em> I.69) had this to say, talking about the earlier Stoic Chrysippus (in the secondish century BCE):
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/004U/</fr:uri>
+                <fr:display-uri>004U</fr:display-uri>
+                <fr:route>/lectures/004U/</fr:route>
+                <fr:taxon>Quote</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>                "[Chrysippus] declares that the dog makes use of the fifth complex indemonstrable syllogism when, on arriving at a spot where three ways meet\ldots , after smelling at the two roads by which the quarry did not pass, he rushes off at once by the third without stopping to smell. 
+                For, says the old writer, the dog implicitly reasons thus: 'The animal went either by this road, or by that, or by the other: but it did not go by this or that, therefore he went the other way'".</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>            This argument is classically valid, and valid in K3, but not valid in LP.
+            Let's see why.
+            To have a classical counterexample to the argument, we would need a Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p \lor  q) = v(\neg  p) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            Let's think about what such a valuation would have to be like.
+            We know <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            What about <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex>?
+            Well, since <fr:tex display="inline"><![CDATA[v(\neg  p) = \mathsf {\mathbf {T}}]]></fr:tex>, we must have <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            But then both <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> take the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, and this means that <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> must take the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> as well.
+            That is, no Boolean valuation can meet the criteria we need for it to be a counterexample to this argument.
+            As a result, the argument is classically valid.
+</html:p>
+            <html:p>            What about a strong Kleene valuation?
+            Well, we have a strong Kleene valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> where <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {*}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+            This gives us <fr:tex display="inline"><![CDATA[w(\neg  p) = \mathsf {\mathbf {*}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {*}}]]></fr:tex>.
+            So this valuation is an LP counterexample to the argument, and the argument is LP invalid.
+            But it is not a K3 counterexample, since it does not make the premises of the argument take the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>.
+            Indeed, there is no K3 counterexample to this argument.
+</html:p>
+            <html:p>            The reason <fr:tex display="inline"><![CDATA[p \lor  q, \neg  p \;/\; q]]></fr:tex> is invalid in LP is the same reason that <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is invalid: because LP allows for <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> to be true at the same time.
+            This lenience towards contradictions is something we looked at a bit when we introduced Dunn-Belnap valuations, and if we use strong Kleene valuations in the way suggested by LP, we can see it here as well.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

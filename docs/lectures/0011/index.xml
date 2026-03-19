@@ -813,7 +813,7 @@ But they're a bit special: we also treat a substitution as a function from <html
     <html:li><fr:link href="/lectures/002H/" title="Lecture 3: Sets, arguments, and logics" uri="https://negation.rocks/lectures/002H/" display-uri="002H" type="local">Lecture 3: Sets, arguments, and logics</fr:link></html:li></html:ul></html:li>
   <html:li>Section B: Structures and matrices
   <html:ul><html:li><fr:link href="/lectures/0034/" title="Lecture 4: Structures" uri="https://negation.rocks/lectures/0034/" display-uri="0034" type="local">Lecture 4: Structures</fr:link></html:li>
-    <html:li>[Lecture 5: Matrices and counterexamples]</html:li>
+    <html:li><fr:link href="/lectures/004L/" title="Matrices and counterexamples" uri="https://negation.rocks/lectures/004L/" display-uri="004L" type="local">Lecture 5: Matrices and counterexamples</fr:link></html:li>
     <html:li>[Lecture 6: Using matrices to compare logics]</html:li>
     <html:li>[Lecture 7: The limits of matrices]</html:li></html:ul></html:li>
   <html:li>Section C: Exploring intuitionistic logic

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>18</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/0050/</fr:uri>
+    <fr:display-uri>0050</fr:display-uri>
+    <fr:route>/lectures/0050/</fr:route>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>"FDE" stands for "first-degree E".
+            E is a logic like FDE, but E uses a very different implication connective.
+            The logic E was first developed to use this implication connective to give some understanding of entailment; that's why it's called E.</html:p>
+    <html:p>            E is a member of a family of logics known as relevant logics (in Australia) or relevance logics (in the US).
+            Relevant logics form a very important aspect of Australian research in logic---indeed, they're the reason that I first came to Australia.
+            They're a bit too complex for these notes to spend much time on them, but if you want to look into them, you'll find a fascinating literature.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>18</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/004Z/</fr:uri>
+            <fr:display-uri>004Z</fr:display-uri>
+            <fr:route>/lectures/004Z/</fr:route>
+            <fr:title text="Another example logic, presented with a matrix">Another example logic, presented with a matrix</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>            To give you some practice with this idea, here's another example logic.
+            This one I'll present directly via a matrix.
+            The structure we'll use for this one is the Dunn-Belnap structure, and the designated values are <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}, \mathsf {\mathbf {B}}]]></fr:tex>.
+            There; that's enough to fully specify a logic.
+            This one is one we'll call FDE.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0050/</fr:uri>
+                <fr:display-uri>0050</fr:display-uri>
+                <fr:route>/lectures/0050/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>"FDE" stands for "first-degree E".
+            E is a logic like FDE, but E uses a very different implication connective.
+            The logic E was first developed to use this implication connective to give some understanding of entailment; that's why it's called E.</html:p>
+                <html:p>            E is a member of a family of logics known as relevant logics (in Australia) or relevance logics (in the US).
+            Relevant logics form a very important aspect of Australian research in logic---indeed, they're the reason that I first came to Australia.
+            They're a bit too complex for these notes to spend much time on them, but if you want to look into them, you'll find a fascinating literature.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>            Like all the logics we've seen so far, FDE holds the argument <fr:tex display="inline"><![CDATA[p \land  q \;/\; p]]></fr:tex> to be valid, and <fr:tex display="inline"><![CDATA[p \lor  q \;/\; p]]></fr:tex> to be invalid.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>18</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0051/</fr:uri>
+                <fr:display-uri>0051</fr:display-uri>
+                <fr:route>/lectures/0051/</fr:route>
+                <fr:taxon>Exercise</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter><html:p>Take a moment and see if you can find an FDE counterexample to this second argument.
+</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>3</fr:month><fr:day>18</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>            <html:p>There are a number of different ways to reach an FDE counterexample to the second argument.
+            If you have a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> is either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex> and where <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex> is either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex>, then you have a counterexample to this argument; if your valuation isn't like this, then you don't have one.</html:p>
+            
+            <html:p>Let's think it through: to be a counterexample to <fr:tex display="inline"><![CDATA[p \lor  q \;/\; p]]></fr:tex>, a valuation would need to take <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> to one of our designated values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}, \mathsf {\mathbf {B}}]]></fr:tex>, and take <fr:tex display="inline"><![CDATA[p]]></fr:tex> to some undesignated value.
+            Since the undesignated values in this matrix are <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}, \mathsf {\mathbf {N}}]]></fr:tex>, we know that for <fr:tex display="inline"><![CDATA[v]]></fr:tex> to be a counterexample we need <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> to be either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex>.
+            What, then, about <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex>?
+            Well, we also need <fr:tex display="inline"><![CDATA[v(p \lor  q)]]></fr:tex> to be either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex>.
+            By checking how the Dunn-Belnap structure treats disjunction, you can see that, with <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> being either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex>, setting <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex> to either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex> will work, and nothing else will.</html:p>
+</fr:mainmatter></fr:tree></fr:mainmatter>
+            </fr:tree>
+            <html:p>            What about the arguments that distinguished K3 and LP from classical logic?
+            Here, too, FDE is different from everything we've seen so far.
+            Like K3, and unlike classical logic or LP, FDE holds <fr:tex display="inline"><![CDATA[\;/\; p \lor  \neg  p]]></fr:tex> to be invalid; any valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {N}}]]></fr:tex> provides a counterexample.
+            And like LP, but unlike classical logic or K3, FDE holds <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> to be invalid; any valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {B}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex> provides a counterexample.
+            For the same reason, FDE agrees with LP in holding disjunctive syllogism to be invalid, unlike classical logic or K3.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
