@@ -914,6 +914,7 @@ It's only with some particular logic in view that calling an argument valid or i
                         <fr:uri>https://negation.rocks/lectures/0031/</fr:uri>
                         <fr:display-uri>0031</fr:display-uri>
                         <fr:route>/lectures/0031/</fr:route>
+                        <fr:title text="Stronger and weaker">Stronger and weaker</fr:title>
                         <fr:taxon>Definition</fr:taxon>
                       </fr:frontmatter>
                       <fr:mainmatter>

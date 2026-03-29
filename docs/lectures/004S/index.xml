@@ -253,7 +253,8 @@
             So there is no valuation that is a counterexample to this argument.
             Also as in classical logic, <fr:tex display="inline"><![CDATA[p \lor  q \;/\; p]]></fr:tex> is invalid in K3.
             For example, take a valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> with <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {*}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {T}}]]></fr:tex>.
-            Then we have <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex>; so this is a counterexample to the argument.\footnote{There is another value <fr:tex display="inline"><![CDATA[p]]></fr:tex> could have in counterexamples to this argument as well; do you see it?}
+            Then we have <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex>; so this is a counterexample to the argument.
+            (There is another value <fr:tex display="inline"><![CDATA[p]]></fr:tex> could have in counterexamples to this argument as well; do you see it?)
 </html:p>
                 <html:p>            Again as in classical logic, <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is valid in K3.
             To have a K3 counterexample to this argument, we would need a strong Kleene valuation that assigned <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to both <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> (as well as assigning some other value to <fr:tex display="inline"><![CDATA[q]]></fr:tex>).

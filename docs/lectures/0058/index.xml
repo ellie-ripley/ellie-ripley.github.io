@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>22</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/0058/</fr:uri>
+    <fr:display-uri>0058</fr:display-uri>
+    <fr:route>/lectures/0058/</fr:route>
+    <fr:title text="Back to counterexamples">Back to counterexamples</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>With that link in hand, we're ready to return to counterexamples, to see if we can find a connection between classical counterexamples and K3 counterexamples.</html:p>
+    <html:p>Start by thinking: what is a <fr:link href="/lectures/004Y/" title="Counterexample in a matrix, logic determined by a matrix" uri="https://negation.rocks/lectures/004Y/" display-uri="004Y" type="local">classical counterexample to an argument</fr:link> <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>?
+It's a Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where:
+<html:ul><html:li>for every <fr:tex display="inline"><![CDATA[B]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[v(B) = \mathsf {\mathbf {T}}]]></fr:tex>, and</html:li>
+<html:li>we also have <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {F}}]]></fr:tex>.</html:li></html:ul></html:p>
+    <html:p>Now, we've just seen that every Boolean valuation is also a strong Kleene valuation.
+So imagine that we have some classical counterexample to some argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+Is it a K3 counterexample to <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> as well?
+Since it's a classical counterexample, it's a Boolean valuation, so it's also a strong Kleene valuation, which is a start.
+What does a strong Kleene valuation need to be like to be a K3 counterexample to this argument?
+It needs to give:
+<html:ul><html:li>for every <fr:tex display="inline"><![CDATA[B]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, we have either <fr:tex display="inline"><![CDATA[v(B) = \mathsf {\mathbf {T}}]]></fr:tex>, and</html:li>
+<html:li>we also have either <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {*}}]]></fr:tex>.</html:li></html:ul></html:p>
+    <html:p>If <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a classical counterexample to <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>, then, it is <html:em>also</html:em> a K3 counterexample to that same argument: it brings all the premises to the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>, which is designated in both matrices, and it brings the conclusion to the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, which is undesignated in both matrices.
+So <html:em>every classical counterexample to an argument is at the same time a K3 counterexample to that argument as well.</html:em></html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>22</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0055/</fr:uri>
+            <fr:display-uri>0055</fr:display-uri>
+            <fr:route>/lectures/0055/</fr:route>
+            <fr:title text="Classical counterexamples and K3 counterexamples">Classical counterexamples and K3 counterexamples</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>When we're asking about strength and weakness, we're asking about <html:em>which arguments</html:em> are in these logics.
+And there's a sense in which we already know exactly which arguments are in these logics: an argument is in classical logic iff it has no counterexamples in the classical matrix; and an argument is in K3 iff it has no counterexamples in the K3 matrix.</html:p>
+            <html:p>Our job here, then, is to draw these two ideas together, to make them comparable.
+What relationships can we find between classical counterexamples and K3 counterexamples?
+Here it can help to drill down to a more basic level: classical counterexamples are a certain kind of Boolean valuation, and K3 counterexamples are a certain kind of strong Kleene valuation.
+So what relationships can we find between Boolean valuations and strong Kleene valuations?</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>22</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0057/</fr:uri>
+                <fr:display-uri>0057</fr:display-uri>
+                <fr:route>/lectures/0057/</fr:route>
+                <fr:title text="Boolean valuations and strong Kleene valuations">Boolean valuations and strong Kleene valuations</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Well, imagine we have some Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>.
+This must assign either the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> to every atomic sentence in the language, and then it must accord with the <fr:link href="/lectures/003N/" title="The Boolean structure" uri="https://negation.rocks/lectures/003N/" display-uri="003N" type="local">Boolean tables</fr:link> for every connective.</html:p>
+                <html:p>What I want to point out now, though, is that this is actually enough for <fr:tex display="inline"><![CDATA[v]]></fr:tex> to <html:em>also</html:em> be a strong Kleene valuation.
+To see this, start with atomic sentences.
+The strong Kleene structure has the three values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>, <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>, and any way of assigning these values to the atomic sentences results in a strong Kleene valuation.
+But if we take our Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>, we can see that it does exactly this!
+It just does it in a way that doesn't use the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex> for any atomic sentence.
+</html:p>
+                <html:p>Assigning legit values to the atomic sentences, of course, is not enough for <fr:tex display="inline"><![CDATA[v]]></fr:tex> to be a strong Kleene valuation.
+It also has to assign values to compound sentences in a way that accords with the <fr:link href="/lectures/004G/" title="The strong Kleene structure" uri="https://negation.rocks/lectures/004G/" display-uri="004G" type="local">strong Kleene tables</fr:link>.
+But have a look at the Boolean tables compared to the strong Kleene tables, connective by connective.</html:p>
+                <html:p>For example, let's look at the tables for conjunction:</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>21</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/003K/</fr:uri>
+                    <fr:display-uri>003K</fr:display-uri>
+                    <fr:route>/lectures/003K/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\land ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>22</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0056/</fr:uri>
+                    <fr:display-uri>0056</fr:display-uri>
+                    <fr:route>/lectures/0056/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\land ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>Note that the Boolean table here lives inside the strong Kleene one.
+That is, if we're calculating the value of a conjunction in accordance with the strong Kleene table, if both components take values from <fr:tex display="inline"><![CDATA[\{\mathsf {\mathbf {T}}, \mathsf {\mathbf {F}}\}]]></fr:tex>, then the result will be exactly the same as if we were calculating the value in accordance with the Boolean table instead.</html:p>
+                <html:p>And it's not just conjunction: this same relationship holds for all our other connectives.
+As long as we start from just <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, we always get the same results in the strong Kleene structure that we get in the Boolean structure.
+The difference between the structures only comes up when some sentence gets the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>: this can't happen in the Boolean structure.
+But as long as all the atomic sentences get values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, then there can't be any divergence.</html:p>
+                <html:p>This means that <html:em>every Boolean valuation is at the same time a strong Kleene valuation</html:em>.
+That's an important link between the two structures.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>22</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0058/</fr:uri>
+                <fr:display-uri>0058</fr:display-uri>
+                <fr:route>/lectures/0058/</fr:route>
+                <fr:title text="Back to counterexamples">Back to counterexamples</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>With that link in hand, we're ready to return to counterexamples, to see if we can find a connection between classical counterexamples and K3 counterexamples.</html:p>
+                <html:p>Start by thinking: what is a <fr:link href="/lectures/004Y/" title="Counterexample in a matrix, logic determined by a matrix" uri="https://negation.rocks/lectures/004Y/" display-uri="004Y" type="local">classical counterexample to an argument</fr:link> <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>?
+It's a Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where:
+<html:ul><html:li>for every <fr:tex display="inline"><![CDATA[B]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[v(B) = \mathsf {\mathbf {T}}]]></fr:tex>, and</html:li>
+<html:li>we also have <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {F}}]]></fr:tex>.</html:li></html:ul></html:p>
+                <html:p>Now, we've just seen that every Boolean valuation is also a strong Kleene valuation.
+So imagine that we have some classical counterexample to some argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+Is it a K3 counterexample to <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> as well?
+Since it's a classical counterexample, it's a Boolean valuation, so it's also a strong Kleene valuation, which is a start.
+What does a strong Kleene valuation need to be like to be a K3 counterexample to this argument?
+It needs to give:
+<html:ul><html:li>for every <fr:tex display="inline"><![CDATA[B]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, we have either <fr:tex display="inline"><![CDATA[v(B) = \mathsf {\mathbf {T}}]]></fr:tex>, and</html:li>
+<html:li>we also have either <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {*}}]]></fr:tex>.</html:li></html:ul></html:p>
+                <html:p>If <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a classical counterexample to <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>, then, it is <html:em>also</html:em> a K3 counterexample to that same argument: it brings all the premises to the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>, which is designated in both matrices, and it brings the conclusion to the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, which is undesignated in both matrices.
+So <html:em>every classical counterexample to an argument is at the same time a K3 counterexample to that argument as well.</html:em></html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>18</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/004Y/</fr:uri>
+            <fr:display-uri>004Y</fr:display-uri>
+            <fr:route>/lectures/004Y/</fr:route>
+            <fr:title text="Counterexample in a matrix, logic determined by a matrix">Counterexample in a matrix, logic determined by a matrix</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Given a matrix with structure <fr:tex display="inline"><![CDATA[S]]></fr:tex> and set <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex> of designated values, a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> in the structure <fr:tex display="inline"><![CDATA[S]]></fr:tex> is a <html:strong>counterexample</html:strong> to an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> in that matrix iff both:
+         <html:ul><html:li>for every <fr:tex display="inline"><![CDATA[B]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, <fr:tex display="inline"><![CDATA[v(B)]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex>, and</html:li>
+            <html:li><fr:tex display="inline"><![CDATA[v(A)]]></fr:tex> is not in <fr:tex display="inline"><![CDATA[\Delta ]]></fr:tex></html:li></html:ul>
+
+The <html:strong>logic determined by a matrix</html:strong> is the logic that contains an argument iff that argument has <html:em>no</html:em> counterexamples in the matrix.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

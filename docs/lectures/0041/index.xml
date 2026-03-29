@@ -2841,7 +2841,24 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:table style="border-collapse: collapse;">
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>3</fr:month>
+                          <fr:day>22</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/005G/</fr:uri>
+                        <fr:display-uri>005G</fr:display-uri>
+                        <fr:route>/lectures/005G/</fr:route>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:table style="border-collapse: collapse;">
     <html:thead><html:tr>
         <html:td class="topedge"><fr:tex display="inline"><![CDATA[A]]></fr:tex></html:td>
         <html:td class="topedge"><fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex></html:td>
@@ -2861,7 +2878,26 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
         </html:tr>
     </html:tbody>
 </html:table>
-                    <html:table style="border-collapse: collapse;">
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>3</fr:month>
+                          <fr:day>22</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/0056/</fr:uri>
+                        <fr:display-uri>0056</fr:display-uri>
+                        <fr:route>/lectures/0056/</fr:route>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:table style="border-collapse: collapse;">
   <html:thead><html:tr>
     <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\land ]]></fr:tex></html:td>
     <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
@@ -2889,7 +2925,26 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
     </html:tr>
   </html:tbody>
 </html:table>
-                    <html:table style="border-collapse: collapse;">
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>3</fr:month>
+                          <fr:day>23</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/005L/</fr:uri>
+                        <fr:display-uri>005L</fr:display-uri>
+                        <fr:route>/lectures/005L/</fr:route>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:table style="border-collapse: collapse;">
   <html:thead><html:tr>
     <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\lor ]]></fr:tex></html:td>
     <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
@@ -2917,7 +2972,26 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
     </html:tr>
   </html:tbody>
 </html:table>
-                    <html:table style="border-collapse: collapse;">
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>3</fr:month>
+                          <fr:day>28</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/005Q/</fr:uri>
+                        <fr:display-uri>005Q</fr:display-uri>
+                        <fr:route>/lectures/005Q/</fr:route>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:table style="border-collapse: collapse;">
   <html:thead><html:tr>
     <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex></html:td>
     <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
@@ -2945,6 +3019,8 @@ As far as I can tell, this is the origin of the zero/one notation that we still 
     </html:tr>
   </html:tbody>
 </html:table>
+                      </fr:mainmatter>
+                    </fr:tree>
                     <html:table style="border-collapse: collapse;">
     <html:thead><html:tr>
         <html:td class="topedge"><fr:tex display="inline"><![CDATA[\top ]]></fr:tex></html:td>

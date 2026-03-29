@@ -2063,7 +2063,100 @@ Depending on the main connective of a sentence, there are special names sometime
         <fr:authors />
         <fr:title text="Backlinks">Backlinks</fr:title>
       </fr:frontmatter>
-      <fr:mainmatter />
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>22</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/005A/</fr:uri>
+            <fr:display-uri>005A</fr:display-uri>
+            <fr:route>/lectures/005A/</fr:route>
+            <fr:title text="Reasoning by induction">Reasoning by induction</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Here it helps to be a bit more precise in a certain kind of ritualised way.
+(With all our symbols flying around, this is probably the class where you're most likely to accidentally summon a demon anyhow; let's lean into it!)
+The ritualised reasoning I want to introduce here is called reasoning <html:em>by induction</html:em>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>22</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/005B/</fr:uri>
+                <fr:display-uri>005B</fr:display-uri>
+                <fr:route>/lectures/005B/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Actually, there are at least two different kinds of reasoning that get called <html:em>reasoning by induction</html:em>, and they are very much not the same!
+One is the kind that plays a role in the so-called <fr:link href="https://plato.stanford.edu/entries/induction-problem/" type="external">"problem of induction"</fr:link>; that's <html:em>not</html:em> what I'm talking about here.
+The other is one that's sometimes called "mathematical induction" or "structural induction", and that's what we are doing.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>The core of the idea is this: suppose we want to securely demonstrate that <html:em>all formulas</html:em> are such-and-such a way.
+The idea of induction doesn't depend on <html:em>what</html:em> we're trying to show about all formulas, so for now let's just say we want to show that all formulas are happy.</html:p>
+            <html:p>We can use what we know about <fr:link href="/lectures/000G/" title="Languages" uri="https://negation.rocks/lectures/000G/" display-uri="000G" type="local">how formulas are built up</fr:link> to systematically think about all formulas, and make sure we haven't left any of them out.
+Since there are <fr:link href="/lectures/000K/" title="Infinity; or, more than about six" uri="https://negation.rocks/lectures/000K/" display-uri="000K" type="local">more than six or seven</fr:link> formulas, we need some kind of system!
+The structure of formulas themselves is a very useful system much of the time, and it's what I'll use here.</html:p>
+            <html:p>We want to start, then, with the atomic sentences, showing that they are all happy.
+In practice, how we do this will depend on what it is we're really showing about all sentences; induction provides us no help here.
+But suppose we can do it: we've shown that all atomic sentences are happy.
+</html:p>
+            <html:p>What remains is all the compound sentences, and this is where induction really gives us its power.
+All we need to do here is to show that <html:em>if</html:em> all the components of a compound sentence are happy, <html:em>then</html:em> the compound sentence itself is also happy.
+That is, in showing that the compound sentence is happy, we can <html:em>help ourselves</html:em> to the assumption that all its components are happy.
+</html:p>
+            <html:p>This is important enough that it's handy to have a word for it:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>23</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/005J/</fr:uri>
+                <fr:display-uri>005J</fr:display-uri>
+                <fr:route>/lectures/005J/</fr:route>
+                <fr:title text="Preservation">Preservation</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A connective in a language <html:strong>preserves</html:strong> a property of sentences iff: whenever that connective is the main connective of a sentence, if all the components of that sentence have the property, then so does the sentence itself.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>So what we're aiming to do is to show that all the connectives <html:em>preserve</html:em> the property of happiness.</html:p>
+            <html:p>Think about why this works: suppose it's true that all atomic sentences are happy, and that all the connectives preserve happiness.
+How, then, could there ever be a sentence that wasn't happy?
+How could it be built?
+We have to start from atomic sentences that are happy, and build up using connectives that can't ever bring us from happy sentences to not-happy ones.
+So any sentence we can manage to build in this way must be happy---but that's all the sentences!</html:p>
+            <html:p>If we can show the two parts of what we need, then:
+<html:ul><html:li>that all atomic sentences are happy, and</html:li>
+<html:li>that all connectives preserve happiness,</html:li></html:ul>
+then we've shown "by induction" that all sentences are happy.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">
       <fr:frontmatter>

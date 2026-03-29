@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>28</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/005S/</fr:uri>
+    <fr:display-uri>005S</fr:display-uri>
+    <fr:route>/lectures/005S/</fr:route>
+    <fr:title text="Does \neg  preserve the property?">Does <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> preserve the property?</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Let's start with our tables for negation:</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>3</fr:month>
+          <fr:day>14</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/0047/</fr:uri>
+        <fr:display-uri>0047</fr:display-uri>
+        <fr:route>/lectures/0047/</fr:route>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[A]]></fr:tex></html:td>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>3</fr:month>
+          <fr:day>22</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/005G/</fr:uri>
+        <fr:display-uri>005G</fr:display-uri>
+        <fr:route>/lectures/005G/</fr:route>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[A]]></fr:tex></html:td>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+      </fr:mainmatter>
+    </fr:tree>
+    <html:p>Now, supposing that <fr:tex display="inline"><![CDATA[A]]></fr:tex> has the <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}} / \mathsf {\mathbf {N}} / \mathsf {\mathbf {*}}]]></fr:tex> property, can we show that <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> does as well?</html:p>
+    <html:p>Here there are four possibilities to consider:
+<html:ol><html:li><fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {T}}]]></fr:tex>, or</html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {B}}]]></fr:tex>, or</html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {N}}]]></fr:tex>, or</html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {F}}]]></fr:tex>.</html:li></html:ol></html:p>
+    <html:p>Let's look at each in turn:
+<html:ol><html:li>if <fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {T}}]]></fr:tex>, then since <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a Dunn-Belnap valuation we know <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {F}}]]></fr:tex>. Since <fr:tex display="inline"><![CDATA[A]]></fr:tex> has the property, this means <fr:tex display="inline"><![CDATA[s(A) = \mathsf {\mathbf {F}}]]></fr:tex> too; and then since <fr:tex display="inline"><![CDATA[s]]></fr:tex> is a strong Kleene valuation, we get <fr:tex display="inline"><![CDATA[s(\neg  A) = \mathsf {\mathbf {T}}]]></fr:tex>;</html:li>
+<html:li>by similar reasoning, if <fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {B}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {B}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(A) = \mathsf {\mathbf {*}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(\neg  A) = \mathsf {\mathbf {*}}]]></fr:tex>;</html:li>
+<html:li>by similar reasoning, if <fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {N}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {N}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(A) = \mathsf {\mathbf {*}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(\neg  A) = \mathsf {\mathbf {*}}]]></fr:tex>; and</html:li>
+<html:li>by similar reasoning, if <fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {F}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {T}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(A) = \mathsf {\mathbf {T}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(\neg  A) = \mathsf {\mathbf {F}}]]></fr:tex>.</html:li></html:ol></html:p>
+    <html:p>This checks out!
+So indeed, if <fr:tex display="inline"><![CDATA[A]]></fr:tex> has the <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}} / \mathsf {\mathbf {N}} / \mathsf {\mathbf {*}}]]></fr:tex> property, then <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> does as well; this means that <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> preserves this property.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>23</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/005I/</fr:uri>
+            <fr:display-uri>005I</fr:display-uri>
+            <fr:route>/lectures/005I/</fr:route>
+            <fr:title text="Can we treat both \mathsf {\mathbf {B}} and \mathsf {\mathbf {N}} as \mathsf {\mathbf {*}}?">Can we treat both <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex> as <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>?</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>A third thing that we might think about is coming back the other way.
+We've seen two different ways to get Dunn-Belnap valuations from a strong Kleene valuation.
+But suppose we have a Dunn-Belnap valuation instead; can we use that to reach a strong Kleene valuation in a useful way?</html:p>
+            <html:p>Spoiler: this is the idea I want to explore that <html:em>won't</html:em> work out, so that you can see up close what it looks like when this doesn't go smoothly.
+This is important: when you're doing reasoning like this to explore a question, you can't know in advance how things will go.
+That's why you're doing the reasoning: to find out!
+We've seen two cases where it does work, but those are very special.
+More usual would be a case like this, where it doesn't work.
+Let's dive in!</html:p>
+            <html:p>Suppose we begin from some Dunn-Belnap valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>, and we want to generate a strong Kleene valuation <fr:tex display="inline"><![CDATA[s]]></fr:tex>.
+One natural thought, based roughly on what we've just looked at, might be to leave <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> as they are, and to treat both <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex> as <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>.
+That is, let's think about the strong Kleene valuation <fr:tex display="inline"><![CDATA[s]]></fr:tex> such that for all atomic sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex>, we have:
+<html:ul><html:li>if <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {T}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[s(A) = v(A)]]></fr:tex>, and</html:li>
+<html:li>if <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {B}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[s(A) = \mathsf {\mathbf {*}}]]></fr:tex>.</html:li></html:ul></html:p>
+            <html:p>Since valuations can do whatever they like with atomic sentences, there surely is such a strong Kleene valuation <fr:tex display="inline"><![CDATA[s]]></fr:tex>.
+Again, it's handy to have a name for the property we're looking at, the one we set up for all atomic sentences, so that we can explore whether it applies to all sentences.
+Let's call it the "<fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}} / \mathsf {\mathbf {N}} / \mathsf {\mathbf {*}}]]></fr:tex> property".</html:p>
+            <html:p>So now we want to see whether all connectives preserve the <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}} / \mathsf {\mathbf {N}} / \mathsf {\mathbf {*}}]]></fr:tex> property.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>28</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/005S/</fr:uri>
+                <fr:display-uri>005S</fr:display-uri>
+                <fr:route>/lectures/005S/</fr:route>
+                <fr:title text="Does \neg  preserve the property?">Does <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> preserve the property?</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Let's start with our tables for negation:</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>14</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0047/</fr:uri>
+                    <fr:display-uri>0047</fr:display-uri>
+                    <fr:route>/lectures/0047/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[A]]></fr:tex></html:td>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>22</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/005G/</fr:uri>
+                    <fr:display-uri>005G</fr:display-uri>
+                    <fr:route>/lectures/005G/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+    <html:thead><html:tr>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[A]]></fr:tex></html:td>
+        <html:td class="topedge"><fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex></html:td>
+    </html:tr></html:thead>
+    <html:tbody>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+        </html:tr>
+        <html:tr>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+            <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+        </html:tr>
+    </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>Now, supposing that <fr:tex display="inline"><![CDATA[A]]></fr:tex> has the <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}} / \mathsf {\mathbf {N}} / \mathsf {\mathbf {*}}]]></fr:tex> property, can we show that <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> does as well?</html:p>
+                <html:p>Here there are four possibilities to consider:
+<html:ol><html:li><fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {T}}]]></fr:tex>, or</html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {B}}]]></fr:tex>, or</html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {N}}]]></fr:tex>, or</html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {F}}]]></fr:tex>.</html:li></html:ol></html:p>
+                <html:p>Let's look at each in turn:
+<html:ol><html:li>if <fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {T}}]]></fr:tex>, then since <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a Dunn-Belnap valuation we know <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {F}}]]></fr:tex>. Since <fr:tex display="inline"><![CDATA[A]]></fr:tex> has the property, this means <fr:tex display="inline"><![CDATA[s(A) = \mathsf {\mathbf {F}}]]></fr:tex> too; and then since <fr:tex display="inline"><![CDATA[s]]></fr:tex> is a strong Kleene valuation, we get <fr:tex display="inline"><![CDATA[s(\neg  A) = \mathsf {\mathbf {T}}]]></fr:tex>;</html:li>
+<html:li>by similar reasoning, if <fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {B}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {B}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(A) = \mathsf {\mathbf {*}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(\neg  A) = \mathsf {\mathbf {*}}]]></fr:tex>;</html:li>
+<html:li>by similar reasoning, if <fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {N}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {N}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(A) = \mathsf {\mathbf {*}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(\neg  A) = \mathsf {\mathbf {*}}]]></fr:tex>; and</html:li>
+<html:li>by similar reasoning, if <fr:tex display="inline"><![CDATA[v(\neg  A) = \mathsf {\mathbf {F}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {T}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(A) = \mathsf {\mathbf {T}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(\neg  A) = \mathsf {\mathbf {F}}]]></fr:tex>.</html:li></html:ol></html:p>
+                <html:p>This checks out!
+So indeed, if <fr:tex display="inline"><![CDATA[A]]></fr:tex> has the <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}} / \mathsf {\mathbf {N}} / \mathsf {\mathbf {*}}]]></fr:tex> property, then <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> does as well; this means that <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> preserves this property.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>28</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/005T/</fr:uri>
+                <fr:display-uri>005T</fr:display-uri>
+                <fr:route>/lectures/005T/</fr:route>
+                <fr:title text="Does \land  preserve the property?">Does <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> preserve the property?</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Let's move on to a binary connective.
+Here are the tables for <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> in the two structures we're thinking about:</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>14</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0044/</fr:uri>
+                    <fr:display-uri>0044</fr:display-uri>
+                    <fr:route>/lectures/0044/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\land ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>22</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0056/</fr:uri>
+                    <fr:display-uri>0056</fr:display-uri>
+                    <fr:route>/lectures/0056/</fr:route>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\land ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>Again, we want to show that whenever sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> have the property, then <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> does as well.</html:p>
+                <html:p>This time, assuming that <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> have the property doesn't let us ignore any parts of these tables, though; we've got to consider all possibilities, since we're starting from any Dunn-Belnap valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>.
+Instead, we want to think of what we're trying as like "smooshing" the two values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex> down into the one value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>, while leaving <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> alone.
+So you might even look at the Dunn-Belnap table here like this:</html:p>
+                <html:table style="border-collapse: collapse;">
+  <html:thead><html:tr>
+    <html:td class="topedge leftedge"><fr:tex display="inline"><![CDATA[\land ]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+    <html:td class="topedge leftbord distinguish"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+    <html:td class="topedge rightbord distinguish"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+    <html:td class="topedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+  </html:tr></html:thead>
+  <html:tbody>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex></html:td>
+      <html:td class="leftbord distinguish"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+      <html:td class="rightbord distinguish"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge topbord distinguish"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+      <html:td class="topbord distinguish"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+      <html:td class="distinguish"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex></html:td>
+      <html:td class="rightbord distinguish"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge botbord distinguish"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+      <html:td class="botbord distinguish"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+      <html:td class="botbord distinguish"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td class="botbord rightbord distinguish"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+    <html:tr>
+      <html:td class="leftedge"><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+      <html:td><fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex></html:td>
+    </html:tr>
+  </html:tbody>
+</html:table>
+                <html:p>But now we can see a problem.
+Looking to the strong Kleene table, we can see three internal cells with the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>.
+These are the values <fr:tex display="inline"><![CDATA[s]]></fr:tex> gives to <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> when either <fr:tex display="inline"><![CDATA[A]]></fr:tex> or <fr:tex display="inline"><![CDATA[B]]></fr:tex> has the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>, and neither of them has the value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>
+That is, when either <fr:tex display="inline"><![CDATA[s(A) = \mathsf {\mathbf {*}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[s(B) = \mathsf {\mathbf {*}}]]></fr:tex> and both <fr:tex display="inline"><![CDATA[s(A)]]></fr:tex> and <fr:tex display="inline"><![CDATA[s(B)]]></fr:tex> are not <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[s(A \land  B) = \mathsf {\mathbf {*}}]]></fr:tex>.</html:p>
+                <html:p>Now look to the Dunn-Belnap table.
+When <fr:tex display="inline"><![CDATA[s(A) = \mathsf {\mathbf {*}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(A)]]></fr:tex> must be either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex>.
+And similarly, when <fr:tex display="inline"><![CDATA[s(B) = \mathsf {\mathbf {*}}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v(B)]]></fr:tex> must be either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex>.
+(Remember, we're supposing that <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> have the <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}} / \mathsf {\mathbf {N}} / \mathsf {\mathbf {*}}]]></fr:tex> property.)
+Similarly, if both <fr:tex display="inline"><![CDATA[s(A)]]></fr:tex> and <fr:tex display="inline"><![CDATA[s(B)]]></fr:tex> are not <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, then both <fr:tex display="inline"><![CDATA[v(A)]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(B)]]></fr:tex> must not be <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> either.
+So we have eight possibilities to consider; these are the distinguished cells in the table.
+</html:p>
+                <html:p>For <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> to have the property, we would need to see only <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex> in those distinguished cells.
+But there are two <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>s in there!
+This gives us the clue we need to show that <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> does <html:em>not</html:em> preserve the <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}} / \mathsf {\mathbf {N}} / \mathsf {\mathbf {*}}]]></fr:tex> property.</html:p>
+                <html:p>It's time to fill in a concrete case.
+Suppose our initial Dunn-Belnap valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> is such that <fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {B}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {N}}]]></fr:tex>.
+Then <fr:tex display="inline"><![CDATA[v(p \land  q) = \mathsf {\mathbf {F}}]]></fr:tex>.
+But the strong Kleene valuation <fr:tex display="inline"><![CDATA[s]]></fr:tex> we've determined from <fr:tex display="inline"><![CDATA[v]]></fr:tex> has <fr:tex display="inline"><![CDATA[s(p) = \mathsf {\mathbf {*}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[s(q) = \mathsf {\mathbf {*}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[s(p \land  q) = \mathsf {\mathbf {*}}]]></fr:tex>.
+The <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}} / \mathsf {\mathbf {N}} / \mathsf {\mathbf {*}}]]></fr:tex> property fails for <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>.
+But we set up <fr:tex display="inline"><![CDATA[s]]></fr:tex> so that the property would hold for <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>; so we can see that <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> does not preserve the property.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>28</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/005U/</fr:uri>
+                <fr:display-uri>005U</fr:display-uri>
+                <fr:route>/lectures/005U/</fr:route>
+                <fr:title text="What does this show?">What does this show?</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>So, given a Dunn-Belnap valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>, we can indeed reach a strong Kleene valuation <fr:tex display="inline"><![CDATA[s]]></fr:tex> as specified.
+But this strong Kleene valuation is not related to <fr:tex display="inline"><![CDATA[v]]></fr:tex> in any particularly convenient way, at least as far as we've seen.
+The attempt to extend the <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}} / \mathsf {\mathbf {N}} / \mathsf {\mathbf {*}}]]></fr:tex> property from atomic sentences to all sentences has failed.</html:p>
+                <html:p>Moreover, it's not just like we tried to show this and came up empty: we even found a particular Dunn-Belnap valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where the <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}} / \mathsf {\mathbf {N}} / \mathsf {\mathbf {*}}]]></fr:tex> property does not hold of <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>.
+So there's no point in continuing to try to show that this property holds of all sentences; we know it doesn't.</html:p>
+                <html:p>Here's another way to look at what we've shown: given a Dunn-Belnap valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex>, we might set up a function <fr:tex display="inline"><![CDATA[r]]></fr:tex> from sentences to strong Kleene values that matches <fr:tex display="inline"><![CDATA[v]]></fr:tex> on <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, and collapses both of the values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {B}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex> to the single value <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>.
+What we've just shown, though, is that this function <fr:tex display="inline"><![CDATA[r]]></fr:tex> won't generally be a strong Kleene valuation!
+It will match our strong Kleene valuation <fr:tex display="inline"><![CDATA[s]]></fr:tex> on atomic sentences, but not on all sentences.
+So there isn't much we could do with <fr:tex display="inline"><![CDATA[r]]></fr:tex> to connect Dunn-Belnap valuations to the strong Kleene structure.</html:p>
+                <html:p>Unfortunately, that doesn't really tell us much else.
+Is our strong Kleene valuation <fr:tex display="inline"><![CDATA[s]]></fr:tex> related to <fr:tex display="inline"><![CDATA[v]]></fr:tex> in some other way worth exploring?
+For all I've said here, maybe it is and maybe it isn't.
+Or is there some <html:em>other</html:em> way to take a Dunn-Belnap valuation and generate a strong Kleene valuation that's usefully related to it?
+For all I've said here, maybe there is and maybe there isn't.</html:p>
+                <html:p>That's just life, I'm afraid: it's nice when things work out, but it's not always so!</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

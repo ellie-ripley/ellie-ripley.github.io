@@ -36,7 +36,8 @@
             So there is no valuation that is a counterexample to this argument.
             Also as in classical logic, <fr:tex display="inline"><![CDATA[p \lor  q \;/\; p]]></fr:tex> is invalid in K3.
             For example, take a valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> with <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {*}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {T}}]]></fr:tex>.
-            Then we have <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex>; so this is a counterexample to the argument.\footnote{There is another value <fr:tex display="inline"><![CDATA[p]]></fr:tex> could have in counterexamples to this argument as well; do you see it?}
+            Then we have <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex>; so this is a counterexample to the argument.
+            (There is another value <fr:tex display="inline"><![CDATA[p]]></fr:tex> could have in counterexamples to this argument as well; do you see it?)
 </html:p>
     <html:p>            Again as in classical logic, <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is valid in K3.
             To have a K3 counterexample to this argument, we would need a strong Kleene valuation that assigned <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to both <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> (as well as assigning some other value to <fr:tex display="inline"><![CDATA[q]]></fr:tex>).
@@ -264,7 +265,8 @@
             So there is no valuation that is a counterexample to this argument.
             Also as in classical logic, <fr:tex display="inline"><![CDATA[p \lor  q \;/\; p]]></fr:tex> is invalid in K3.
             For example, take a valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> with <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {*}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[w(q) = \mathsf {\mathbf {T}}]]></fr:tex>.
-            Then we have <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex>; so this is a counterexample to the argument.\footnote{There is another value <fr:tex display="inline"><![CDATA[p]]></fr:tex> could have in counterexamples to this argument as well; do you see it?}
+            Then we have <fr:tex display="inline"><![CDATA[w(p \lor  q) = \mathsf {\mathbf {T}}]]></fr:tex>; so this is a counterexample to the argument.
+            (There is another value <fr:tex display="inline"><![CDATA[p]]></fr:tex> could have in counterexamples to this argument as well; do you see it?)
 </html:p>
                 <html:p>            Again as in classical logic, <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is valid in K3.
             To have a K3 counterexample to this argument, we would need a strong Kleene valuation that assigned <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to both <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex> (as well as assigning some other value to <fr:tex display="inline"><![CDATA[q]]></fr:tex>).
@@ -411,7 +413,43 @@
         <fr:authors />
         <fr:title text="Backlinks">Backlinks</fr:title>
       </fr:frontmatter>
-      <fr:mainmatter />
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>22</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0059/</fr:uri>
+            <fr:display-uri>0059</fr:display-uri>
+            <fr:route>/lectures/0059/</fr:route>
+            <fr:title text="What does this tell us about strength?">What does this tell us about strength?</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>That's the key fact that we need.
+Getting there depended on a few things: we had to think in detail about all the tables for all the connectives in both structures, as well as about which values count as designated in both matrices.
+But as a result of looking through that detail, we've now got something we can use.</html:p>
+            <html:p>Take any argument that is <html:em>invalid</html:em> in classical logic.
+Since it is invalid in classical logic, it must have a classical counterexample.
+But we have just seen that that means that it <html:em>also</html:em> has a K3 counterexample: the very same valuation that is its classical counterexample.
+So that means that it must also be invalid in K3.</html:p>
+            <html:p>So <html:em>any argument invalid in classical logic is also invalid in K3</html:em>.
+That means that any argument <html:em>valid</html:em> in K3 must also be valid in classical logic: if it wasn't valid in classical logic, we've seen that it would have to also be invalid in K3.
+That is, K3 is a subset of classical logic: K3 is <html:em>weaker</html:em> than classical logic.</html:p>
+            <html:p>There's no magic tricks here!
+This is just a matter of moving slowly and methodically through the ideas we have so far, and seeing how they fit together.
+But the result gives us a discovery: we now know that K3 is weaker than classical logic.</html:p>
+            <html:p>Moreover, you already know <fr:link href="/lectures/004R/" title="A second example" uri="https://negation.rocks/lectures/004R/" display-uri="004R" type="local">from last time</fr:link> that K3 is not stronger than classical logic, since the argument <fr:tex display="inline"><![CDATA[\;/\; p \lor  \neg  p]]></fr:tex> is valid in classical logic but not in K3.
+So we've now got the full story about the relationship between these two logics in terms of strength: K3 is weaker than classical logic, but not vice versa.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">
       <fr:frontmatter>

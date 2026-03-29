@@ -322,7 +322,45 @@ The <html:strong>logic determined by a matrix</html:strong> is the logic that co
         <fr:authors />
         <fr:title text="Backlinks">Backlinks</fr:title>
       </fr:frontmatter>
-      <fr:mainmatter />
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/005W/</fr:uri>
+            <fr:display-uri>005W</fr:display-uri>
+            <fr:route>/lectures/005W/</fr:route>
+            <fr:title text="A third example for free: K3 and FDE">A third example for free: K3 and FDE</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Given the above, though, we also get some useful information about K3 and FDE.
+Here, we've already done almost all the work; we just need to put together the pieces in the right way.</html:p>
+            <html:p>Suppose we have some strong Kleene valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> that is a K3 counterexample to an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+That is:
+<html:ul><html:li>for every sentence <fr:tex display="inline"><![CDATA[B]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, <fr:tex display="inline"><![CDATA[v(B) = \mathsf {\mathbf {T}}]]></fr:tex>, and</html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(A)]]></fr:tex> is either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>.</html:li></html:ul></html:p>
+            <html:p>As we've seen, we can use <fr:tex display="inline"><![CDATA[v]]></fr:tex> to reach a Dunn-Belnap valuation <fr:tex display="inline"><![CDATA[u]]></fr:tex> that matches <fr:tex display="inline"><![CDATA[v]]></fr:tex> on values <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>, and that uses <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex> wherever <fr:tex display="inline"><![CDATA[v]]></fr:tex> uses <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {*}}]]></fr:tex>.
+So:
+<html:ul><html:li>for every sentence <fr:tex display="inline"><![CDATA[B]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, <fr:tex display="inline"><![CDATA[u(B) = \mathsf {\mathbf {T}}]]></fr:tex>, and</html:li>
+<html:li><fr:tex display="inline"><![CDATA[u(A)]]></fr:tex> is either <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> or <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {N}}]]></fr:tex>.</html:li></html:ul></html:p>
+            <html:p>And that's enough for <fr:tex display="inline"><![CDATA[u]]></fr:tex> to be an FDE counterexample to <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+So FDE is also weaker than K3.</html:p>
+            <html:p>Besides giving us another example of the key reasoning pattern for this lecture, this also gives another lesson: when we work out the solution to a puzzle systematically, by trying different approaches and keeping track of which ones work, we often end up solving more than just the original puzzle.
+Here we set out to inquire about LP and FDE; we tried two different ways of transforming strong Kleene valuations into Dunn-Belnap valuations, and they both worked.
+One of those ways turned out to be the key to answering the original question about LP and FDE, but the other way wasn't useless at all: it is the key to answering this different question about K3 and FDE.</html:p>
+            <html:p>Moreover, we already saw that <fr:link href="/lectures/004Z/" title="Another example logic, presented with a matrix" uri="https://negation.rocks/lectures/004Z/" display-uri="004Z" type="local">FDE is distinct from both LP and K3</fr:link>.
+So now we know just how these logics relate in terms of strength: FDE is weaker than both LP and K3, and not vice versa.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">
       <fr:frontmatter>

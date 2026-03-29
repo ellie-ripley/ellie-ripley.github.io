@@ -642,3 +642,28 @@ td.topedge {
  td.leftedge {
      border-right: 1px solid black;
  }
+
+ td.fade {
+     color: rgba(180, 180, 180, 1);
+ }
+
+ td.topbord {
+     border-top: 1px solid black;
+ }
+
+ td.botbord {
+     border-bottom: 1px solid black;
+ }
+
+ td.leftbord {
+     border-left: 1px solid black;
+ }
+
+ td.rightbord {
+     border-right: 1px solid black;
+ }
+
+ td.distinguish {
+     background-color: rgba(230, 230, 230, 1);
+ }
+ 
