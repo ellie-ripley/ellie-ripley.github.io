@@ -174,14 +174,14 @@ toWritingPieceRaw t
 
 --Accessors:
 
-yrSpEp :: WritingPieceRaw -> Maybe (Int, Int, Int)
-yrSpEp (Paper{..}) = case (catMaybes [year, startPage, endPage]) of
-  [yr, sp, ep] -> Just (yr, sp, ep)
+pageRange :: WritingPieceRaw -> Maybe (Int, Int)
+pageRange (Paper{..}) = case (catMaybes [startPage, endPage]) of
+  [sp, ep] -> Just (sp, ep)
   _            -> Nothing
-yrSpEp (Chapter{..}) = case (catMaybes [year, startPage, endPage]) of
-  [yr, sp, ep] -> Just (yr, sp, ep)
+pageRange (Chapter{..}) = case (catMaybes [startPage, endPage]) of
+  [sp, ep] -> Just (sp, ep)
   _            -> Nothing
-yrSpEp (Book{}) = Nothing
+pageRange (Book{}) = Nothing
 
 wpAuthorTags :: WritingPieceRaw -> [Text]
 wpAuthorTags p = case internalAuthors p of
@@ -194,27 +194,28 @@ wpAuthorTags p = case internalAuthors p of
                       Other as -> as
 
 wpVenue :: WritingPieceRaw -> Html ()
-wpVenue p@(Paper{..}) = (i_ $ toHtml journal) <> ", " <> t
-  where t = case (yrSpEp p) of
-              Just (yr, sp, ep) -> vol <> num <> ":"
-                                <> (sHtml sp) <> "-"
-                                <> (sHtml ep) <> ", "
-                                <> (sHtml yr) <> "."
-                                where
-                                  vol = maybe mempty sHtml volume
-                                  num = maybe mempty (\n -> "(" <> sHtml n <> ")") number
-              Nothing -> "forthcoming."
+wpVenue p@(Paper{..}) = (i_ $ toHtml journal) <> ", " <> issue <> pages <> yr <> "."
+  where issue = (maybe mempty sHtml volume)
+                <> (maybe mempty (\n -> "(" <> sHtml n <> ")") number)
+        pages = case (pageRange p) of
+                  Just (sp, ep) -> ":" <> (sHtml sp) <> "-" <> (sHtml ep) <> ", "
+                  Nothing -> ", "
+        yr = case year of
+               Just y -> sHtml y
+               Nothing -> "forthcoming"
 wpVenue c@(Chapter{..}) = "In " <> (i_ $ toHtml booktitle)
                                 <> ", ed "
                                 <> (toHtml $ mconcat (intersperse ", " $ editor))
-                                <> ". " <> t
-  where t = case (yrSpEp c) of
-              Just (yr, sp, ep) -> "Pages "
+                                <> ". " <> pages <> pub <> yr <> "."
+  where pages = case (pageRange c) of
+                  Just (sp, ep) -> "Pages "
                                 <> (sHtml sp) <> "-"
                                 <> (sHtml ep) <> ", "
-                                <> (toHtml publisher) <> " "
-                                <> (sHtml yr) <> "."
-              Nothing -> (toHtml publisher) <> " forthcoming."
+                  Nothing -> mempty
+        pub = (toHtml publisher) <> ", "
+        yr = case year of
+               Just y -> sHtml y
+               Nothing -> "forthcoming"
 wpVenue Book{..} = (toHtml publisher) <> " "
                                       <> (maybe "forthcoming." (\y -> (sHtml y) <> ".") year)
 
@@ -237,6 +238,29 @@ btChars = T.concatMap cleanup
 write :: Show a => a -> Text
 write = T.pack . show
 
+maybeBibField
+  :: Show a
+  => Maybe a -- ^ the info that's maybe there
+  -> Text    -- ^ the label of the BibTeX field to be produced if so
+  -> Text
+maybeBibField ma lab =
+  case ma of
+    Just i -> T.concat [ lab
+                       , " = {"
+                       , write i
+                       , "}\n   "
+                       ]
+    Nothing -> mempty
+
+bibPages :: WritingPieceRaw -> Text
+bibPages wpr =
+  case pageRange wpr of
+    Just (sp, ep) -> T.concat [ "pages = {"
+                              , (write sp) <> "--" <> (write ep)
+                              , "},\n   "
+                              ]
+    Nothing -> mempty
+  
 wpBibtex :: WritingPiece -> Text
 wpBibtex (WritingPiece (wpr, as)) =
   case wpr of
@@ -246,26 +270,19 @@ wpBibtex (WritingPiece (wpr, as)) =
         , "},\n   title = {", title
         , "},\n   journal = {", journal
         , "},\n   writingUrl = {", writingUrl
-        , "},\n   abstract = {", abst
         , "},\n   "
-        ] ++ rest ++ di ++
+        ] ++ vnad ++ pgs ++ date ++
         [ "}\n" ]
         where
-          rest = case (yrSpEp p) of
-                  Just (yr, sp, ep) -> [ "year = {" , write yr
-                                        , "},\n   volume = {", vol
-                                        , "},\n   number = {", nmb
-                                        , "},\n   pages = {"
-                                        , (write sp) <> "--" <> (write ep)
-                                        , "},\n   "
-                                        ]
-                  Nothing -> [ "note = {Forthcoming},\n   " ]
-          di = case doi of
-                Nothing -> []
-                Just d -> ["doi = {", d, "},\n"]
-          vol = maybe mempty write volume
-          nmb = maybe mempty write number
-          abst = maybe mempty id abstract
+          vnad = [ maybeBibField volume "volume"
+                 , maybeBibField number "number"
+                 , maybeBibField abstract "abstract"
+                 , maybeBibField doi "doi"
+                  ]
+          pgs = [ bibPages p ] 
+          date = case year of
+                    Just _ -> [ maybeBibField year "year" ]
+                    Nothing -> [ "note = {Forthcoming},\n   " ]
     c@(Chapter{..}) -> T.concat $
         [ "@incollection{", bibtag
         , ",\n   author = {", bibTeXauths as
@@ -274,23 +291,18 @@ wpBibtex (WritingPiece (wpr, as)) =
         , "},\n   editor = {"
         , btChars . T.intercalate " and " $ editor
         , "},\n   publisher = {", publisher
-        , "},\n   abstract = {", abst
         , "},\n   writingUrl = {", writingUrl
         , "},\n   "
-        ] ++ rest ++ di ++
+        ] ++ ad ++ pgs ++ date ++
         [ "}\n" ]
         where
-          rest = case (yrSpEp c) of
-                  Just (yr, sp, ep) -> [ "year = {", write yr
-                                        , "},\n   pages = {"
-                                        , (write sp) <> "--" <> (write ep)
-                                        , "},\n   "
-                                        ]
-                  Nothing -> [ "note = {Forthcoming}\n" ]
-          abst = maybe mempty id abstract
-          di = case doi of
-                 Nothing -> []
-                 Just d -> ["doi = {", d, "},\n"]
+          ad = [ maybeBibField abstract "abstract"
+               , maybeBibField doi "doi"
+               ]
+          pgs = [ bibPages c ]
+          date = case year of
+                   Just _ -> [ maybeBibField year "year" ]
+                   Nothing -> [ "note = {Forthcoming},\n   " ]
     (Book{..}) -> T.concat $
         [ "@book{", bibtag
         , ",\n   author = {", bibTeXauths as
