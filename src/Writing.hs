@@ -248,7 +248,7 @@ maybeBibField ma lab =
     Just i -> T.concat [ lab
                        , " = {"
                        , write i
-                       , "}\n   "
+                       , "},\n   "
                        ]
     Nothing -> mempty
 
