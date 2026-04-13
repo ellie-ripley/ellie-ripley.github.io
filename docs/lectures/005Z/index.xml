@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>7</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/005Z/</fr:uri>
+    <fr:display-uri>005Z</fr:display-uri>
+    <fr:route>/lectures/005Z/</fr:route>
+    <fr:title text="Matrix logic">Matrix logic</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>A <html:strong>matrix logic</html:strong> is a logic that is determined by some matrix.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0060/</fr:uri>
+            <fr:display-uri>0060</fr:display-uri>
+            <fr:route>/lectures/0060/</fr:route>
+            <fr:title text="Matrix logics">Matrix logics</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Key to this lecture is the idea of a <html:strong>matrix logic</html:strong>:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/005Z/</fr:uri>
+                <fr:display-uri>005Z</fr:display-uri>
+                <fr:route>/lectures/005Z/</fr:route>
+                <fr:title text="Matrix logic">Matrix logic</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>matrix logic</html:strong> is a logic that is determined by some matrix.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>For example, classical logic, K3, LP, and FDE are all examples of matrix logics.
+For each of these, we've seen a matrix that determines the logic.</html:p>
+            <html:p>Remember, though, that a matrix logic is a <html:em>kind of logic</html:em>, and a logic is just a set of arguments.
+So even when we know about a logic through some mechanism other than a matrix, it still might be a matrix logic.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0061/</fr:uri>
+                <fr:display-uri>0061</fr:display-uri>
+                <fr:route>/lectures/0061/</fr:route>
+                <fr:title text="An example: the universal logic">An example: the universal logic</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>For example, recall the universal logic, the logic that contains every argument.
+When you first met this logic, we hadn't thought about matrices at all yet, or even structures or valuations!
+I introduced you to this logic directly, without any detour through matrices, because it's an easy example of a set of arguments.</html:p>
+                <html:p>But despite this, the universal logic <html:em>is</html:em> a matrix logic.
+To see this, consider a one-valued structure.
+(There are no choices here; there is only one one-valued structure, where every connective just gives the same value back.)
+And consider the matrix built on this structure where the one value is designated.
+The logic determined by this matrix is the universal logic.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0062/</fr:uri>
+                    <fr:display-uri>0062</fr:display-uri>
+                    <fr:route>/lectures/0062/</fr:route>
+                    <fr:taxon>Exercise</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter><html:p>How could you know that the logic determined by this matrix is the universal logic?</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>7</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:p>Take any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+A counterexample to this argument in the matrix in question would have to be a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> in the one-valued structure where:
+<html:ul><html:li>for every<fr:tex display="inline"><![CDATA[A]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, the value <fr:tex display="inline"><![CDATA[v(B)]]></fr:tex> is designated, and</html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(A)]]></fr:tex> is not designated.</html:li></html:ul>
+But this is impossible: there is only one value, so <fr:tex display="inline"><![CDATA[v(A)]]></fr:tex> must be that value, which is designated in this matrix.
+So there are no counterexamples to any argument, and so the logic determined by this matrix is the universal logic.
+</html:p></fr:mainmatter></fr:tree></fr:mainmatter>
+                </fr:tree>
+                <html:p>So the universal logic is a matrix logic, since it is determined by some matrix.</html:p>
+                <html:p>That example helps me make another important point: although every matrix determines one particular logic, we can't in general go the other way.
+When a logic is a matrix logic, there is not just one matrix that determines it; a logic can be determined by many different matrices.
+(I won't go through the reasoning here, but in fact <html:em>every</html:em> matrix logic is determined by infinitely many different matrices.)</html:p>
+                <html:p>For example, consider a very different matrix: this time, take the <fr:link href="/lectures/004G/" title="The strong Kleene structure" uri="https://negation.rocks/lectures/004G/" display-uri="004G" type="local">strong Kleene structure</fr:link>, and consider the matrix on that structure that uses <fr:tex display="inline"><![CDATA[\{\mathsf {\mathbf {T}}, \mathsf {\mathbf {*}}, \mathsf {\mathbf {F}}\}]]></fr:tex> as its set of designated values.
+This matrix also determines the universal logic, by essentially the same reasoning as before; but it is a very different matrix, built on a completely different structure.</html:p>
+                <html:p>So when we say that a logic is a matrix logic, this <html:em>doesn't</html:em> mean that there is any particular matrix pinned down by the logic.
+It just means that there is <html:em>at least one</html:em> matrix, somewhere out there, that determines the logic.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0063/</fr:uri>
+                <fr:display-uri>0063</fr:display-uri>
+                <fr:route>/lectures/0063/</fr:route>
+                <fr:title text="A non-example: the empty logic">A non-example: the empty logic</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>To set the stage for the rest of this lecture, let's also look at the empty logic, the logic that contains no arguments.
+This too was one of the first logics you met in these lectures.
+But unlike the universal logic, the empty logic is not a matrix logic.
+That is, there is absolutely no matrix that determines the empty logic.</html:p>
+                <html:p>At first, it might seem hard to see how we could know that.
+Structures themselves come in a bewildering variety, and then almost every structure underlies many different matrices.
+So how could we know that <html:em>none</html:em> of these options ever determines the empty logic?</html:p>
+                <html:p>Here's one way.
+Think about the argument <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex>.
+Like all arguments, this argument is invalid in the empty logic.
+So if the empty logic <html:em>were</html:em> a matrix logic, there would be some matrix in which this argument has a counterexample.</html:p>
+                <html:p>Now I'll show, however, that that can't be the case.
+Imagine we have some matrix, and some valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> on the matrix's structure, so that <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a counterexample to <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex> in the matrix.
+What would we know about <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex>?</html:p>
+                <html:p>Well, since we're imagining that <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a counterexample to <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex>, we would know that <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex>, whatever it is, would have to be designated in the matrix, since <fr:tex display="inline"><![CDATA[p]]></fr:tex> is a premise of the argument <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex>.
+And we would also know that <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex>, whatever it is, would have to be undesignated in the matrix, since <fr:tex display="inline"><![CDATA[p]]></fr:tex> is the conclusion of the argument <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex>.
+But no value in any matrix could ever be both designated and undesignated, so this just isn't possible.
+That is, there is no counterexample to <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex> <html:em>in any matrix</html:em>.</html:p>
+                <html:p>That means, though, that the argument <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex> must be valid in <html:em>every</html:em> matrix logic.
+And since this argument is invalid in the empty logic, it follows that the empty logic is not a matrix logic.
+This means that the techniques we learned in the last lecture that let us use matrices to explore the logics determined by those matrices, those techniques won't work to help us learn about the empty logic, since there is no matrix that determines it.</html:p>
+                <html:p>Now, the empty logic is very simple, so this isn't a big problem; we can probably answer any questions we have about the empty logic in some other way.
+But it reveals a bigger issue: matrices are just not flexible enough to handle all logics; only certain logics are matrix logics.
+This bigger issue forms the basis of the rest of this lecture, which approaches the question: exactly <html:em>which</html:em> logics are, and which are not, matrix logics?
+(We won't fully answer the question in this lecture, but we'll get close.)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

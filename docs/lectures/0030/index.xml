@@ -428,7 +428,134 @@ It's only with some particular logic in view that calling an argument valid or i
         <fr:authors />
         <fr:title text="Backlinks">Backlinks</fr:title>
       </fr:frontmatter>
-      <fr:mainmatter />
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>13</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/006J/</fr:uri>
+            <fr:display-uri>006J</fr:display-uri>
+            <fr:route>/lectures/006J/</fr:route>
+            <fr:title text="Substitution invariance">Substitution invariance</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Finally, let's return to the idea of a <fr:link href="/lectures/0017/" title="Substitutions" uri="https://negation.rocks/lectures/0017/" display-uri="0017" type="local">substitution</fr:link>.
+Here's a rule, called <html:strong>substitution invariance</html:strong>:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>13</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/006K/</fr:uri>
+                <fr:display-uri>006K</fr:display-uri>
+                <fr:route>/lectures/006K/</fr:route>
+                <fr:title text="Substitution invariance">Substitution invariance</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p><html:strong>Substitution invariance</html:strong> is the rule whose instances are those that fit the form:</html:p>
+                <html:p>
+                  <fr:resource hash="aedb2b3466d601ebd0c9055b1c69033d">
+                    <fr:resource-content>
+                      <html:img src="/lectures/aedb2b3466d601ebd0c9055b1c69033d.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {\Gamma  \;/\; A}
+\infer 1[]{\Sigma  \;/\; B}
+\end {prooftree}
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>where there is some substitution <fr:tex display="inline"><![CDATA[s]]></fr:tex> so that:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> is the set of results you get by applying <fr:tex display="inline"><![CDATA[s]]></fr:tex> to each sentence in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, and</html:li>
+<html:li><fr:tex display="inline"><![CDATA[s(A) = B]]></fr:tex>.</html:li></html:ul></html:p>
+                <html:p>A logic is <html:strong>substitution invariant</html:strong> iff it obeys substitution invariance.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>So when a logic is substitution invariant, if we have an argument valid in the logic, we can take any substitution we like, apply it to that argument, and get a (potentially) new argument that is also valid in the logic.</html:p>
+            <html:p>For example, the universal and empty logics are both substitution invariant, since neither of them has any cases where a substitution could take us from a valid argument to an invalid one.</html:p>
+            <html:p>More interestingly, though, every matrix logic is substitution invariant.
+Let's see why.
+We'll start by thinking about classical logic, but the strategy we'll use is general.</html:p>
+            <html:p>First, think about the argument <fr:tex display="inline"><![CDATA[p \land  q, r \lor  s \;/\; p \land  s]]></fr:tex>, and a substitution <fr:tex display="inline"><![CDATA[f]]></fr:tex> where:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[f(p) = \top ]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[f(q) = p \land  q]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[f(r) = t \rightarrow  s]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[f(s) = s]]></fr:tex></html:li></html:ul>
+Then the substitution instance of the argument we need to think about is <fr:tex display="inline"><![CDATA[\top  \land  (p \land  q), (t \rightarrow  s) \lor  s \;/\; \top  \land  s]]></fr:tex>.
+That is, because of the substitution <fr:tex display="inline"><![CDATA[f]]></fr:tex>, the following is an instance of substitution invariance:</html:p>
+            <html:p>
+              <fr:resource hash="dc247596501f0480445c05a7c9e644be">
+                <fr:resource-content>
+                  <html:img src="/lectures/dc247596501f0480445c05a7c9e644be.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {p \land  q, r \lor  s \;/\; p \land  s}
+\infer 1[]{\top  \land  (p \land  q), (t \rightarrow  s) \lor  s \;/\; \top  \land  s}
+\end {prooftree}
+]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>Now, let's think about whether classical logic obeys this instance.
+But let's do it in a certain way that will reveal an idea: let's start by looking at the conclusion-argument.
+Is this argument classically valid?</html:p>
+            <html:p>It is not.
+Here's a counterexample: a Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[v(p) = \mathsf {\mathbf {T}}]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(q) = \mathsf {\mathbf {T}}]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(s) = \mathsf {\mathbf {F}}]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(t) = \mathsf {\mathbf {F}}]]></fr:tex></html:li></html:ul></html:p>
+            <html:p>Now, we can use this valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> and the substitution <fr:tex display="inline"><![CDATA[f]]></fr:tex> to reach a valuation <fr:tex display="inline"><![CDATA[u]]></fr:tex> that is a counterexample to the premise-argument, as follows.
+For any atomic sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, we let <fr:tex display="inline"><![CDATA[u(A) = v(f(A))]]></fr:tex>.
+Here's how this works:
+<html:ul><html:li>since <fr:tex display="inline"><![CDATA[f(p) = \top ]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(\top ) = \mathsf {\mathbf {T}}]]></fr:tex>, we let <fr:tex display="inline"><![CDATA[u(p) = \mathsf {\mathbf {T}}]]></fr:tex>,</html:li>
+<html:li>since <fr:tex display="inline"><![CDATA[f(q) = p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(p \land  q) = \mathsf {\mathbf {T}}]]></fr:tex>, we let <fr:tex display="inline"><![CDATA[u(q) = \mathsf {\mathbf {T}}]]></fr:tex>,</html:li>
+<html:li>since <fr:tex display="inline"><![CDATA[f(r) = t \rightarrow  s]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(t \rightarrow  s) = \mathsf {\mathbf {T}}]]></fr:tex>, we let <fr:tex display="inline"><![CDATA[u(r) = \mathsf {\mathbf {T}}]]></fr:tex>, and</html:li>
+<html:li>since <fr:tex display="inline"><![CDATA[f(s) = s]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(s) = \mathsf {\mathbf {F}}]]></fr:tex>, we let <fr:tex display="inline"><![CDATA[u(s) = \mathsf {\mathbf {F}}]]></fr:tex>.</html:li></html:ul></html:p>
+            <html:p>Now, note that <fr:tex display="inline"><![CDATA[u]]></fr:tex> must be a counterexample to the premise-argument.
+The reason is that, for every atomic sentence in this premise-argument, <fr:tex display="inline"><![CDATA[u]]></fr:tex> gives it a particular value: the value that its <fr:tex display="inline"><![CDATA[f]]></fr:tex>-substitution instance receives in the conclusion-argument.
+Whatever those values are, we already know that they come together in the form given to produce a counterexample to that conclusion-argument.
+So that must happen in the premise-argument as well.</html:p>
+            <html:p>Although this is just one example, it illustrates a general phenomenon.
+The key features of matrices that make this work are:
+<html:ul><html:li>For any way of assigning any values to any atomic sentences, there is always a valuation that does that.
+This is what we need to be sure that there is always some valuation like <fr:tex display="inline"><![CDATA[u]]></fr:tex>, no matter which valuation like <fr:tex display="inline"><![CDATA[v]]></fr:tex> we start with.
+If, for example, there were some values that atomic sentences could not take, but that compound sentences could take, this reasoning would no longer work.
+But we know, from <fr:link href="/lectures/0030/" title="Stronger and weaker" uri="https://negation.rocks/lectures/0030/" display-uri="0030" type="local">what valuations are</fr:link>, that this isn't so.</html:li>
+<html:li>The value assigned by a valuation to a compound sentence depends only on its main connective and the values assigned to its components.
+This is what we need to be sure that all the sentences in the premise-argument take the same value on <fr:tex display="inline"><![CDATA[u]]></fr:tex> that their substitution instances in the conclusion-argument take on <fr:tex display="inline"><![CDATA[v]]></fr:tex>.
+We are making sure that the values of all the atomic sentences in the premise-argument do this, but we need to be sure that that stays true for all the sentences that serve as premises or conclusions.
+So we need to know that the value of a compound sentence can't depend on anything else.
+But that also comes from <fr:link href="/lectures/0030/" title="Stronger and weaker" uri="https://negation.rocks/lectures/0030/" display-uri="0030" type="local">what valuations are</fr:link>.</html:li>
+<html:li>Finally, we need to know that whether a valuation is a counterexample to an argument in a matrix depends only on the values that that valuation assigns to sentences in the argument.
+That way, after we've made sure that <fr:tex display="inline"><![CDATA[u]]></fr:tex> assigns all the same values to the premise-argument's sentences that <fr:tex display="inline"><![CDATA[v]]></fr:tex> assigned to the conclusion-argument's sentences, we can know that, since <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a counterexample to the conclusion-argument, <fr:tex display="inline"><![CDATA[u]]></fr:tex> must be a counterexample to the premise-argument.
+And this is something else we do know, now from <fr:link href="/lectures/004Y/" title="Counterexample in a matrix, logic determined by a matrix" uri="https://negation.rocks/lectures/004Y/" display-uri="004Y" type="local">what a counterexample in a matrix is</fr:link>.</html:li></html:ul></html:p>
+            <html:p>With those three ingredients in place, everything else works out.
+Nothing in particular mattered in the above reasoning about how many values we have in our structure, or which of those values are designated in our matrix, or what the connectives do to the values in the structure.
+So whenever we have a matrix logic and an instance of substitution invariance, the same reasoning will work to show that the logic obeys the instance.
+Thus, all matrix logics are substitution invariant.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">
       <fr:frontmatter>

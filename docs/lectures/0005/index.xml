@@ -3669,7 +3669,7 @@ I think Péter has hit the nail on the head.</html:p>
   <html:ul><html:li><fr:link href="/lectures/0034/" title="Lecture 4: Structures" uri="https://negation.rocks/lectures/0034/" display-uri="0034" type="local">Lecture 4: Structures</fr:link></html:li>
     <html:li><fr:link href="/lectures/004L/" title="Matrices and counterexamples" uri="https://negation.rocks/lectures/004L/" display-uri="004L" type="local">Lecture 5: Matrices and counterexamples</fr:link></html:li>
     <html:li><fr:link href="/lectures/0053/" title="Lecture 6: Using matrices to compare logics" uri="https://negation.rocks/lectures/0053/" display-uri="0053" type="local">Lecture 6: Using matrices to compare logics</fr:link></html:li>
-    <html:li>[Lecture 7: The limits of matrices]</html:li></html:ul></html:li>
+    <html:li><fr:link href="/lectures/005Y/" title="Lecture 7: The limits of matrices" uri="https://negation.rocks/lectures/005Y/" display-uri="005Y" type="local">Lecture 7: The limits of matrices</fr:link></html:li></html:ul></html:li>
   <html:li>Section C: Exploring intuitionistic logic
   <html:ul><html:li>Lecture 8: Natural deduction</html:li>
     <html:li>Lecture 9: Intuitionistic logic</html:li>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>7</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/0062/</fr:uri>
+    <fr:display-uri>0062</fr:display-uri>
+    <fr:route>/lectures/0062/</fr:route>
+    <fr:taxon>Exercise</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter><html:p>How could you know that the logic determined by this matrix is the universal logic?</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>7</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:p>Take any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+A counterexample to this argument in the matrix in question would have to be a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> in the one-valued structure where:
+<html:ul><html:li>for every<fr:tex display="inline"><![CDATA[A]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, the value <fr:tex display="inline"><![CDATA[v(B)]]></fr:tex> is designated, and</html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(A)]]></fr:tex> is not designated.</html:li></html:ul>
+But this is impossible: there is only one value, so <fr:tex display="inline"><![CDATA[v(A)]]></fr:tex> must be that value, which is designated in this matrix.
+So there are no counterexamples to any argument, and so the logic determined by this matrix is the universal logic.
+</html:p></fr:mainmatter></fr:tree></fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0061/</fr:uri>
+            <fr:display-uri>0061</fr:display-uri>
+            <fr:route>/lectures/0061/</fr:route>
+            <fr:title text="An example: the universal logic">An example: the universal logic</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>For example, recall the universal logic, the logic that contains every argument.
+When you first met this logic, we hadn't thought about matrices at all yet, or even structures or valuations!
+I introduced you to this logic directly, without any detour through matrices, because it's an easy example of a set of arguments.</html:p>
+            <html:p>But despite this, the universal logic <html:em>is</html:em> a matrix logic.
+To see this, consider a one-valued structure.
+(There are no choices here; there is only one one-valued structure, where every connective just gives the same value back.)
+And consider the matrix built on this structure where the one value is designated.
+The logic determined by this matrix is the universal logic.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0062/</fr:uri>
+                <fr:display-uri>0062</fr:display-uri>
+                <fr:route>/lectures/0062/</fr:route>
+                <fr:taxon>Exercise</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter><html:p>How could you know that the logic determined by this matrix is the universal logic?</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>7</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:p>Take any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+A counterexample to this argument in the matrix in question would have to be a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> in the one-valued structure where:
+<html:ul><html:li>for every<fr:tex display="inline"><![CDATA[A]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, the value <fr:tex display="inline"><![CDATA[v(B)]]></fr:tex> is designated, and</html:li>
+<html:li><fr:tex display="inline"><![CDATA[v(A)]]></fr:tex> is not designated.</html:li></html:ul>
+But this is impossible: there is only one value, so <fr:tex display="inline"><![CDATA[v(A)]]></fr:tex> must be that value, which is designated in this matrix.
+So there are no counterexamples to any argument, and so the logic determined by this matrix is the universal logic.
+</html:p></fr:mainmatter></fr:tree></fr:mainmatter>
+            </fr:tree>
+            <html:p>So the universal logic is a matrix logic, since it is determined by some matrix.</html:p>
+            <html:p>That example helps me make another important point: although every matrix determines one particular logic, we can't in general go the other way.
+When a logic is a matrix logic, there is not just one matrix that determines it; a logic can be determined by many different matrices.
+(I won't go through the reasoning here, but in fact <html:em>every</html:em> matrix logic is determined by infinitely many different matrices.)</html:p>
+            <html:p>For example, consider a very different matrix: this time, take the <fr:link href="/lectures/004G/" title="The strong Kleene structure" uri="https://negation.rocks/lectures/004G/" display-uri="004G" type="local">strong Kleene structure</fr:link>, and consider the matrix on that structure that uses <fr:tex display="inline"><![CDATA[\{\mathsf {\mathbf {T}}, \mathsf {\mathbf {*}}, \mathsf {\mathbf {F}}\}]]></fr:tex> as its set of designated values.
+This matrix also determines the universal logic, by essentially the same reasoning as before; but it is a very different matrix, built on a completely different structure.</html:p>
+            <html:p>So when we say that a logic is a matrix logic, this <html:em>doesn't</html:em> mean that there is any particular matrix pinned down by the logic.
+It just means that there is <html:em>at least one</html:em> matrix, somewhere out there, that determines the logic.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -329,7 +329,53 @@ Still, there are very strong relationships between combinatory logic and axiomat
         <fr:authors />
         <fr:title text="Backlinks">Backlinks</fr:title>
       </fr:frontmatter>
-      <fr:mainmatter />
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>8</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/006H/</fr:uri>
+            <fr:display-uri>006H</fr:display-uri>
+            <fr:route>/lectures/006H/</fr:route>
+            <fr:title text="Transitivity">Transitivity</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p><html:strong>Transitivity</html:strong> is the rule whose instances are those that fit the form:</html:p>
+            <html:p>
+              <fr:resource hash="14b698bfe17d6ec8d3c0f4f8aebaa3c9">
+                <fr:resource-content>
+                  <html:img src="/lectures/14b698bfe17d6ec8d3c0f4f8aebaa3c9.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {\Gamma  \;/\; A}
+\hypo {\Gamma , A \;/\; B}
+\infer 2[]{\Gamma  \;/\; B}
+\end {prooftree}
+]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>A logic is <html:strong>transitive</html:strong> iff it obeys transitivity.</html:p>
+            <html:p>(To make something explicit: the given general form of transitivity has <fr:tex display="inline"><![CDATA[\Gamma , A \;/\; B]]></fr:tex> as the form of its second premise-argument.
+But every argument, <fr:link href="/lectures/002R/" title="Argument" uri="https://negation.rocks/lectures/002R/" display-uri="002R" type="local">as you know</fr:link>, has a single set of premises.
+So what is "<fr:tex display="inline"><![CDATA[\Gamma , A]]></fr:tex>" here?
+You should read it as <fr:link href="/lectures/0020/" title="K axioms" uri="https://negation.rocks/lectures/0020/" display-uri="0020" type="local">the union of</fr:link> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> with <fr:tex display="inline"><![CDATA[\{A\}]]></fr:tex>.
+That is, if <fr:tex display="inline"><![CDATA[A]]></fr:tex> is already a member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, then "<fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, <fr:tex display="inline"><![CDATA[A]]></fr:tex>" just refers to <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+And if <fr:tex display="inline"><![CDATA[A]]></fr:tex> is not a member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, then "<fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, <fr:tex display="inline"><![CDATA[A]]></fr:tex>" refers to the set that contains everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, and also contains <fr:tex display="inline"><![CDATA[A]]></fr:tex> (and contains nothing else).
+)</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">
       <fr:frontmatter>

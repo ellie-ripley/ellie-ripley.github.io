@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>8</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/006I/</fr:uri>
+    <fr:display-uri>006I</fr:display-uri>
+    <fr:route>/lectures/006I/</fr:route>
+    <fr:title text="Other forms of transitivity">Other forms of transitivity</fr:title>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>I mentioned above that transitivity comes in many forms, some simpler and some more complex.
+The one I look at in the main thread of the lecture is a particularly simple one; I've chosen it for being easier to understand than some others.
+(That doesn't mean it's easy!)
+But in fact there are some other forms of transitivity that are more closely connected to what's really happening with matrices.
+In this side note, I'll look at one of the most important.
+This is totally skippable, though; it's just for if you find yourself interested!</html:p>
+    <html:p>The key is to note that the same reasoning about transitivity given above can apply to <html:em>lots</html:em> of sentences at the same time, not just a single sentence <html:em>A</html:em>.
+So suppose you have some matrix counterexample to some argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+Then consider any <html:em>set</html:em> <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> of sentences.
+Either the counterexample you have assigns a designated value to <html:em>every</html:em> sentence in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, or it assigns an undesignated value to at least one member of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>.</html:p>
+    <html:p>If it assigns a designated value to every sentence in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, then it is also a counterexample to <fr:tex display="inline"><![CDATA[\Gamma , \Sigma  \;/\; A]]></fr:tex>.
+And if it assigns an undesignated value to some member <fr:tex display="inline"><![CDATA[B]]></fr:tex> of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, then it is a counterexample to <fr:tex display="inline"><![CDATA[\Gamma  \;/\; B]]></fr:tex>.</html:p>
+    <html:p>This means that, for any matrix logic, any sets <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, and any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, if <fr:tex display="inline"><![CDATA[\Gamma  \;/\; B]]></fr:tex> is valid for all <fr:tex display="inline"><![CDATA[B]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, and if <fr:tex display="inline"><![CDATA[\Gamma , \Sigma  \;/\; A]]></fr:tex> is also valid, then <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> must be valid as well.
+This gives us a different rule than the one I've called 'transitivity' above.
+How many premise-arguments an instance of this rule has depends on how many members <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> has for that instance.
+In particular, there are instances of this rule with <html:em>infinitely</html:em> many premise-arguments.</html:p>
+    <html:p>That's important; there are logics that are transitive (in this lecture's sense of 'transitive') but that do not obey this rule, because of these infinite instances.
+Basically, transitivity just requires that we can do this when <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> has one member.
+And by repeating the reasoning, that turns out to be enough to show that we can do it wheneven <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> has finitely many members.
+But to make the leap to the infinite instances really is something more, something that does not follow from transitivity.</html:p>
+    <html:p>For consideration of a wider range of different transitivity properties, you can also see my paper <fr:link href="https://negation.rocks/papers/otocr.pdf" type="external">"On the 'transitivity' of consequence relations"</fr:link>; like almost all my papers, this is on my website at <fr:link href="https://negation.rocks/writing.html" type="external">https://negation.rocks/writing.html</fr:link>.
+That paper talks about the rule I'm calling 'transitivity' here under the name <fr:tex display="inline"><![CDATA[\text {F}_{\text {SF}}]]></fr:tex>, and the stronger rule I'm discussing in this side note under the name <fr:tex display="inline"><![CDATA[\text {C}_{\text {SF}}]]></fr:tex>.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>8</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/006E/</fr:uri>
+            <fr:display-uri>006E</fr:display-uri>
+            <fr:route>/lectures/006E/</fr:route>
+            <fr:title text="Transitivity">Transitivity</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>But there's more; matrix logics are in fact even more restricted than this.
+Think about the following example logic, which I'll call L1 (we won't use it for more than a few paragraphs, so it doesn't need a snazzy name).
+L1 contains an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff either:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[A]]></fr:tex> is a member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, or</html:li>
+<html:li><fr:tex display="inline"><![CDATA[A]]></fr:tex> is <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and <fr:tex display="inline"><![CDATA[p]]></fr:tex> is a member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, or</html:li>
+<html:li><fr:tex display="inline"><![CDATA[A]]></fr:tex> is <fr:tex display="inline"><![CDATA[r]]></fr:tex>, and <fr:tex display="inline"><![CDATA[q]]></fr:tex> is a member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</html:li></html:ul></html:p>
+            <html:p>Let me try to convince you first that L1 is reflexive and monotonic.
+For any argument of the form <fr:tex display="inline"><![CDATA[A \;/\; A]]></fr:tex>, we indeed have that its conclusion is among its premises, so all these arguments are valid in L1 by the first dot point.
+So L1 is reflexive.</html:p>
+            <html:p>To see that L1 is monotonic, suppose we have any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> that is valid in L1, and any set <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Sigma ]]></fr:tex>.
+Then <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> must fit one of the three conditions for L1, since that's the only way it could be valid in L1.
+But you can check each of these conditions, to see that if <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> fits the condition, then <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex> must fit that same condition, so <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex> must be valid in L1 as well.
+That shows that L1 is monotonic.</html:p>
+            <html:p>Despite its being reflexive and monotonic, however, L1 is <html:em>not</html:em> a matrix logic.
+Again, let's think about what a matrix that determines L1 would have to be like, to see that it's not possible.
+This time, the key facts we need are that <fr:tex display="inline"><![CDATA[p \;/\; q]]></fr:tex> and <fr:tex display="inline"><![CDATA[p, q \;/\; r]]></fr:tex> are both valid in L1, but <fr:tex display="inline"><![CDATA[p \;/\; r]]></fr:tex> is not valid in L1.
+(Make sure you see that this is so.)</html:p>
+            <html:p>Since <fr:tex display="inline"><![CDATA[p \;/\; r]]></fr:tex> is invalid in L1, if L1 is indeed determined by some matrix, then there would have to be some valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> so that <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> is designated in the matrix but <fr:tex display="inline"><![CDATA[v(r)]]></fr:tex> is undesignated.
+But then what about <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex>?
+There are two possibilities: either <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex> is designated in the matrix or it is undesignated.
+But if it is designated, then <fr:tex display="inline"><![CDATA[v]]></fr:tex> is also a counterexample to <fr:tex display="inline"><![CDATA[p, q \;/\; r]]></fr:tex>, and so it does not determine L1.
+And if it is undesignated, then <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a counterexample to <fr:tex display="inline"><![CDATA[p \;/\; q]]></fr:tex>, and so again it doesn't determine L1.</html:p>
+            <html:p>So we have found another constraint that matrix logics impose, besides reflexivity and monotonicity.
+There are simpler and more complex versions of this constraint; here we'll work with a simple one:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>8</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/006H/</fr:uri>
+                <fr:display-uri>006H</fr:display-uri>
+                <fr:route>/lectures/006H/</fr:route>
+                <fr:title text="Transitivity">Transitivity</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p><html:strong>Transitivity</html:strong> is the rule whose instances are those that fit the form:</html:p>
+                <html:p>
+                  <fr:resource hash="14b698bfe17d6ec8d3c0f4f8aebaa3c9">
+                    <fr:resource-content>
+                      <html:img src="/lectures/14b698bfe17d6ec8d3c0f4f8aebaa3c9.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {\Gamma  \;/\; A}
+\hypo {\Gamma , A \;/\; B}
+\infer 2[]{\Gamma  \;/\; B}
+\end {prooftree}
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>A logic is <html:strong>transitive</html:strong> iff it obeys transitivity.</html:p>
+                <html:p>(To make something explicit: the given general form of transitivity has <fr:tex display="inline"><![CDATA[\Gamma , A \;/\; B]]></fr:tex> as the form of its second premise-argument.
+But every argument, <fr:link href="/lectures/002R/" title="Argument" uri="https://negation.rocks/lectures/002R/" display-uri="002R" type="local">as you know</fr:link>, has a single set of premises.
+So what is "<fr:tex display="inline"><![CDATA[\Gamma , A]]></fr:tex>" here?
+You should read it as <fr:link href="/lectures/0020/" title="K axioms" uri="https://negation.rocks/lectures/0020/" display-uri="0020" type="local">the union of</fr:link> <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> with <fr:tex display="inline"><![CDATA[\{A\}]]></fr:tex>.
+That is, if <fr:tex display="inline"><![CDATA[A]]></fr:tex> is already a member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, then "<fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, <fr:tex display="inline"><![CDATA[A]]></fr:tex>" just refers to <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+And if <fr:tex display="inline"><![CDATA[A]]></fr:tex> is not a member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, then "<fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, <fr:tex display="inline"><![CDATA[A]]></fr:tex>" refers to the set that contains everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, and also contains <fr:tex display="inline"><![CDATA[A]]></fr:tex> (and contains nothing else).
+)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>This is a more complex rule than monotonicity, since its instances have two premise-arguments each.
+So let's pause and think through some examples.</html:p>
+            <html:p>First, a simple one, revisiting L1.
+Consider the following rule instance:</html:p>
+            <html:p>
+              <fr:resource hash="bf612f391d31285d58106941130df892">
+                <fr:resource-content>
+                  <html:img src="/lectures/bf612f391d31285d58106941130df892.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {p \;/\; q}
+\hypo {p, q \;/\; r}
+\infer 2[]{p \;/\; r}
+\end {prooftree}
+]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>This rule instance is an instance of transitivity.
+To see this, return to the general form of transitivity; you can see this instance as fitting into it with:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> as <fr:tex display="inline"><![CDATA[\{p\}]]></fr:tex>,</html:li>
+<html:li><fr:tex display="inline"><![CDATA[A]]></fr:tex> as <fr:tex display="inline"><![CDATA[q]]></fr:tex>,</html:li>
+<html:li><fr:tex display="inline"><![CDATA[B]]></fr:tex> as <fr:tex display="inline"><![CDATA[r]]></fr:tex>.</html:li></html:ul></html:p>
+            <html:p>Thinking about this particular instance of transitivity, note that L1 does not obey it, since both premise-arguments of the instance are valid in L1 but the conclusion-argument is not.
+So L1 is not transitive, since there it at least one instance of transivity that it does not obey.</html:p>
+            <html:p>For another example instance of transitivity, consider this rule instance:</html:p>
+            <html:p>
+              <fr:resource hash="0df3a588468e6dea0a1cf6fa662b67e8">
+                <fr:resource-content>
+                  <html:img src="/lectures/0df3a588468e6dea0a1cf6fa662b67e8.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {p, q \;/\; r}
+\hypo {p, q, r \;/\; s}
+\infer 2[]{p, q \;/\; s}
+\end {prooftree}
+]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>This also fits the general form of transivity, with:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> as <fr:tex display="inline"><![CDATA[\{p, q\}]]></fr:tex>,</html:li>
+<html:li><fr:tex display="inline"><![CDATA[A]]></fr:tex> as <fr:tex display="inline"><![CDATA[r]]></fr:tex>,</html:li>
+<html:li><fr:tex display="inline"><![CDATA[B]]></fr:tex> as <fr:tex display="inline"><![CDATA[s]]></fr:tex>.</html:li></html:ul></html:p>
+            <html:p>Unlike our previous example, L1 does obey this instance, since <fr:tex display="inline"><![CDATA[p, q, r \;/\; s]]></fr:tex> is invalid in L1.
+But L1 still is not transitive, since being transitive requires obeying <html:em>every</html:em> instance of transitivity, and we have already seen that there is an instance L1 does not obey.</html:p>
+            <html:p>As you might have guessed, I'm about to argue that every matrix logic is transitive.
+To see this, consider any instance of transitivity:</html:p>
+            <html:p>
+              <fr:resource hash="14b698bfe17d6ec8d3c0f4f8aebaa3c9">
+                <fr:resource-content>
+                  <html:img src="/lectures/14b698bfe17d6ec8d3c0f4f8aebaa3c9.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {\Gamma  \;/\; A}
+\hypo {\Gamma , A \;/\; B}
+\infer 2[]{\Gamma  \;/\; B}
+\end {prooftree}
+]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>To show that every matrix logic must obey this instance, it is enough to show that if the conclusion-argument is invalid in a matrix logic, then one or the other premise-arguments must aslo be invalid in that matrix logic.</html:p>
+            <html:p>So take any matrix logic where <fr:tex display="inline"><![CDATA[\Gamma  \;/\; B]]></fr:tex> is invalid.
+This logic must be determined by some matrix where we have a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> that is a counterexample to this argument.
+That means that <fr:tex display="inline"><![CDATA[v(C)]]></fr:tex> must be designated in the matrix for each <fr:tex display="inline"><![CDATA[C]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, and that <fr:tex display="inline"><![CDATA[v(B)]]></fr:tex> must be undesignated.</html:p>
+            <html:p>But now think about <fr:tex display="inline"><![CDATA[v(A)]]></fr:tex>.
+Either this is designated in the matrix in question, or it is undesignated.
+If it is designated, then <fr:tex display="inline"><![CDATA[v]]></fr:tex> is also a counterexample to <fr:tex display="inline"><![CDATA[\Gamma , A \;/\; B]]></fr:tex>; and if it is undesignated, then <fr:tex display="inline"><![CDATA[v]]></fr:tex> is also a counterexample to <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+So either way, it can't be that both <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Gamma , A \;/\; B]]></fr:tex> are valid in the logic determined by the matrix.
+Thus, the logic determined by the matrix does obey this rule instance.</html:p>
+            <html:p>And since any instance of transitivity fits this form, that means that every matrix logic must obey all such instances.
+That is, all matrix logics are transitive.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>8</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/006I/</fr:uri>
+                <fr:display-uri>006I</fr:display-uri>
+                <fr:route>/lectures/006I/</fr:route>
+                <fr:title text="Other forms of transitivity">Other forms of transitivity</fr:title>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>I mentioned above that transitivity comes in many forms, some simpler and some more complex.
+The one I look at in the main thread of the lecture is a particularly simple one; I've chosen it for being easier to understand than some others.
+(That doesn't mean it's easy!)
+But in fact there are some other forms of transitivity that are more closely connected to what's really happening with matrices.
+In this side note, I'll look at one of the most important.
+This is totally skippable, though; it's just for if you find yourself interested!</html:p>
+                <html:p>The key is to note that the same reasoning about transitivity given above can apply to <html:em>lots</html:em> of sentences at the same time, not just a single sentence <html:em>A</html:em>.
+So suppose you have some matrix counterexample to some argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+Then consider any <html:em>set</html:em> <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> of sentences.
+Either the counterexample you have assigns a designated value to <html:em>every</html:em> sentence in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, or it assigns an undesignated value to at least one member of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>.</html:p>
+                <html:p>If it assigns a designated value to every sentence in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, then it is also a counterexample to <fr:tex display="inline"><![CDATA[\Gamma , \Sigma  \;/\; A]]></fr:tex>.
+And if it assigns an undesignated value to some member <fr:tex display="inline"><![CDATA[B]]></fr:tex> of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, then it is a counterexample to <fr:tex display="inline"><![CDATA[\Gamma  \;/\; B]]></fr:tex>.</html:p>
+                <html:p>This means that, for any matrix logic, any sets <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, and any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, if <fr:tex display="inline"><![CDATA[\Gamma  \;/\; B]]></fr:tex> is valid for all <fr:tex display="inline"><![CDATA[B]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, and if <fr:tex display="inline"><![CDATA[\Gamma , \Sigma  \;/\; A]]></fr:tex> is also valid, then <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> must be valid as well.
+This gives us a different rule than the one I've called 'transitivity' above.
+How many premise-arguments an instance of this rule has depends on how many members <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> has for that instance.
+In particular, there are instances of this rule with <html:em>infinitely</html:em> many premise-arguments.</html:p>
+                <html:p>That's important; there are logics that are transitive (in this lecture's sense of 'transitive') but that do not obey this rule, because of these infinite instances.
+Basically, transitivity just requires that we can do this when <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> has one member.
+And by repeating the reasoning, that turns out to be enough to show that we can do it wheneven <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> has finitely many members.
+But to make the leap to the infinite instances really is something more, something that does not follow from transitivity.</html:p>
+                <html:p>For consideration of a wider range of different transitivity properties, you can also see my paper <fr:link href="https://negation.rocks/papers/otocr.pdf" type="external">"On the 'transitivity' of consequence relations"</fr:link>; like almost all my papers, this is on my website at <fr:link href="https://negation.rocks/writing.html" type="external">https://negation.rocks/writing.html</fr:link>.
+That paper talks about the rule I'm calling 'transitivity' here under the name <fr:tex display="inline"><![CDATA[\text {F}_{\text {SF}}]]></fr:tex>, and the stronger rule I'm discussing in this side note under the name <fr:tex display="inline"><![CDATA[\text {C}_{\text {SF}}]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

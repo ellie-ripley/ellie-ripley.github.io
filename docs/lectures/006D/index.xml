@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>7</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/006D/</fr:uri>
+    <fr:display-uri>006D</fr:display-uri>
+    <fr:route>/lectures/006D/</fr:route>
+    <fr:taxon>Example</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter><html:p>To get some practice with monotonicity, think about these logics.
+Which of them are monotonic?
+<html:ol><html:li>the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[A]]></fr:tex> is <fr:tex display="inline"><![CDATA[p]]></fr:tex>,</html:li>
+<html:li>the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[A]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>,</html:li>
+<html:li>the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> has five or fewer members,</html:li></html:ol></html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>7</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:ol><html:li>This logic is monotonic.
+Whenever we have an instance of monotonicity, the conclusions of the premise-argument and the conclusion-argument must match.
+If they are both <fr:tex display="inline"><![CDATA[p]]></fr:tex>, then the conclusion-argument is valid in the logic, so the logic obeys the instance.
+And if neither of them is <fr:tex display="inline"><![CDATA[p]]></fr:tex>, then the premise-argument is not valid in the logic, so the logic obeys the instance.
+So the logic obeys all instances of monotonicity.</html:li>
+<html:li>This logic is monotonic, because whenever <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Sigma ]]></fr:tex>, then if <fr:tex display="inline"><![CDATA[A]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, it must also be in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>.
+</html:li>
+<html:li><html:p>This logic is not monotonic; here is an instance of monotonicity that it does not obey:</html:p>
+<html:p><fr:resource hash="9962db810bc459ca05187e322ac6f04b"><fr:resource-content><html:img src="/lectures/9962db810bc459ca05187e322ac6f04b.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {p \;/\; q}
+\infer 1[]{p, q, r, s, p \land  q, \neg  r \;/\; q}
+\end {prooftree}
+]]></fr:resource-source></fr:resource></html:p></html:li></html:ol></fr:mainmatter></fr:tree></fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0067/</fr:uri>
+            <fr:display-uri>0067</fr:display-uri>
+            <fr:route>/lectures/0067/</fr:route>
+            <fr:title text="Monotonicity">Monotonicity</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>    But we can go further, now asking: well, is every <html:em>reflexive</html:em> logic a matrix logic?
+    This is an example of how logicians learn things: once we manage to answer one question, that answer often suggests an additional, more specific, question.
+    Over decades (but not yet quite centuries!) of work, the global community of logicians has managed to learn a <html:em>ton</html:em>---but there's always more.
+    That's why puzzles are so central to what we do; it's to give you a sense of the kind of questioning and answering that is core to the actual practice of logic.
+</html:p>
+            <html:p>In fact, <html:em>not</html:em> every reflexive logic is a matrix logic; there are other things that all matrix logics have in common, things not guaranteed by reflexivity.
+To see this, think about <fr:link href="/lectures/006G/" title="The weakest reflexive logic" uri="https://negation.rocks/lectures/006G/" display-uri="006G" type="local">WRL</fr:link>.
+WRL is reflexive, as we've seen.
+But is it a matrix logic?</html:p>
+            <html:p>In fact, it isn't.
+Take, for example, the argument <fr:tex display="inline"><![CDATA[p, q \;/\; p]]></fr:tex>.
+This is invalid in WRL, since it doesn't have the form <fr:tex display="inline"><![CDATA[A \;/\; A]]></fr:tex>.
+But think about what a counterexample to <fr:tex display="inline"><![CDATA[p, q \;/\; p]]></fr:tex> in a matrix would have to do.
+It would have to be some valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> where <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(q)]]></fr:tex> are both designated but <fr:tex display="inline"><![CDATA[v(p)]]></fr:tex> is undesignated.
+And <html:em>that</html:em> means that it would have to already be a counterexample to <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex>, which we've seen is impossible.
+So WRL isn't a matrix logic, even though it is reflexive.</html:p>
+            <html:p>The reasoning there can be generalised: if a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> is a counterexample to any argument <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex>, and <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Sigma ]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v]]></fr:tex> must also be a counterexample to <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+This is because if <fr:tex display="inline"><![CDATA[v]]></fr:tex> takes every member of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> to a designated value, and every member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a member of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, then <fr:tex display="inline"><![CDATA[v]]></fr:tex> takes every member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> to a designated value as well.</html:p>
+            <html:p>Unlike in the case of reflexivity, then, we haven't just discovered here certain <html:em>arguments</html:em> that must be valid in all matrix logics.
+We've discovered something more nuanced: a certain <html:em>connection among arguments</html:em> that all matrix logics must respect in a certain way.
+To explore this more systematically, let me pause to introduce an idea that will come in handy both here and going forward: the idea of a <html:em>rule</html:em>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0068/</fr:uri>
+                <fr:display-uri>0068</fr:display-uri>
+                <fr:route>/lectures/0068/</fr:route>
+                <fr:title text="Rules">Rules</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>To get to rules, let's start with the idea of a <html:em>rule instance</html:em>:</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0069/</fr:uri>
+                    <fr:display-uri>0069</fr:display-uri>
+                    <fr:route>/lectures/0069/</fr:route>
+                    <fr:title text="Rule instance, obeying a rule instance">Rule instance, obeying a rule instance</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>A <html:strong>rule instance</html:strong> has two parts: first, a set of arguments (called the <html:strong>premise-arguments</html:strong>), and second, a particular argument (called the <html:strong>conclusion-argument</html:strong>).
+A rule instance is written with a horizontal line, with the premise-arguments occurring above the line and the  conclusion-argument below it.</html:p>
+                    <html:p>For examples:
+<html:ul><html:li><html:p>The rule instance with the single premise-argument <fr:tex display="inline"><![CDATA[p \;/\; q]]></fr:tex> and the conclusion-argument <fr:tex display="inline"><![CDATA[p \land  q \;/\; r]]></fr:tex> is written as:</html:p>
+
+<html:p><fr:resource hash="859f4110b517626de6dba626bb89e1d1"><fr:resource-content><html:img src="/lectures/859f4110b517626de6dba626bb89e1d1.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {p \;/\; q}
+\infer 1[]{p \land  q \;/\; r}
+\end {prooftree}
+]]></fr:resource-source></fr:resource></html:p></html:li>
+<html:li><html:p>The rule instance with the two premise-arguments <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex> and <fr:tex display="inline"><![CDATA[p \;/\; q]]></fr:tex> and the conclusion-argument <fr:tex display="inline"><![CDATA[p, q \;/\; p]]></fr:tex> is written as:</html:p>
+
+<html:p><fr:resource hash="728c401a911eea5180a9db4bfcf667c9"><fr:resource-content><html:img src="/lectures/728c401a911eea5180a9db4bfcf667c9.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {p \;/\; p}
+\hypo {p \;/\; q}
+\infer 2[]{p, q \;/\; p}
+\end {prooftree}
+]]></fr:resource-source></fr:resource></html:p></html:li>
+<html:li><html:p>The rule instance with the empty set of premise-arguments and the conclusion-argument <fr:tex display="inline"><![CDATA[q \rightarrow  r \;/\; s]]></fr:tex> is written as:</html:p>
+
+<html:p><fr:resource hash="9cc04d41382335d4ed011af34964378b"><fr:resource-content><html:img src="/lectures/9cc04d41382335d4ed011af34964378b.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {}
+\infer 1[]{q \rightarrow  r \;/\; s}
+\end {prooftree}
+]]></fr:resource-source></fr:resource></html:p></html:li></html:ul></html:p>
+                    <html:p>A logic <html:strong>obeys</html:strong> a rule instance if either:
+<html:ul><html:li>the rule instance has some premise-argument that is invalid in the logic, or</html:li>
+<html:li>the rule instance's conclusion-argument is valid in the logic.</html:li></html:ul></html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>A rule instance is kind of like an argument, except that where arguments use <html:em>sentences</html:em>, rule instances use <html:em>arguments</html:em>.
+So we're up a level now.</html:p>
+                <html:p>Also, although officially rule instances can have any number of premise-arguments, for this lecture we will only need to think about rule instances with one or two premise-arguments.
+So don't worry too much about going wild here.</html:p>
+                <html:p>You can think of a rule instance as setting a kind of condition on logics; that's what the idea of obeying a rule instance is about.
+I like to think about it like this: a rule instance makes a demand on every logic that contains all the rule instance's premise-arguments.
+In particular, it demands that all those logics must contain the conclusion-argument.
+A logic <html:em>obeys</html:em> the rule instance when either the rule instance makes no demand on the logic (since some premise-argument is invalid in the logic) or else the logic meets the demand.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/006C/</fr:uri>
+                    <fr:display-uri>006C</fr:display-uri>
+                    <fr:route>/lectures/006C/</fr:route>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter><html:p>For example, think about the rule instance</html:p><html:p><fr:resource hash="859f4110b517626de6dba626bb89e1d1"><fr:resource-content><html:img src="/lectures/859f4110b517626de6dba626bb89e1d1.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {p \;/\; q}
+\infer 1[]{p \land  q \;/\; r}
+\end {prooftree}
+]]></fr:resource-source></fr:resource></html:p><html:p>Which of the following logics obeys this rule instance?
+<html:ol><html:li>the logic that contains <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> has exactly one member</html:li>
+<html:li>the logic that contains <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff all members of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are atomic</html:li>
+<html:li>the logic that contains <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> has three or more members</html:li></html:ol></html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>7</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:ol><html:li>This logic does obey the rule instance, since the conclusion-argument is valid in the logic.</html:li>
+<html:li>This logic does not obey the rule instance, since the premise-argument is valid in the logic but the conclusion-argument is not.</html:li>
+<html:li>This logic does obey the rule instance, since there is a premise-argument that is not valid in the logic.</html:li></html:ol>
+</fr:mainmatter></fr:tree></fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/006A/</fr:uri>
+                    <fr:display-uri>006A</fr:display-uri>
+                    <fr:route>/lectures/006A/</fr:route>
+                    <fr:title text="Rule, obeying a rule">Rule, obeying a rule</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>A <html:strong>rule</html:strong> is a set of rule instances.
+A logic <html:strong>obeys</html:strong> a rule iff it obeys every member of the rule.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>A rule collects up a bunch of rule instances into a single package.
+You can think of a rule as placing a whole lot of conditions on a logic at once: one for each rule instance in it.
+To obey a rule, a logic has to obey all its instances.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>Now that we've got the idea of a rule, let's look at our first example rule: a rule called <html:em>monotonicity</html:em>:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/006B/</fr:uri>
+                <fr:display-uri>006B</fr:display-uri>
+                <fr:route>/lectures/006B/</fr:route>
+                <fr:title text="Monotonicity">Monotonicity</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p><html:strong>Monotonicity</html:strong> is the rule whose instances are those that fit the form:</html:p>
+                <html:p>
+                  <fr:resource hash="59f9932e567c25b7525c2979c8558ce1">
+                    <fr:resource-content>
+                      <html:img src="/lectures/59f9932e567c25b7525c2979c8558ce1.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {\Gamma  \;/\; A}
+\infer 1[]{\Sigma  \;/\; A}
+\end {prooftree}
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>where <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Sigma ]]></fr:tex>.</html:p>
+                <html:p>Another way to say the same thing: a rule instance is a member of monotonicity iff:
+<html:ul><html:li>it has one premise-argument,</html:li>
+<html:li>the conclusion of its premise-argument matches the conclusion of its conclusion-argument, and</html:li>
+<html:li>the set of premises of its premise-argument is a subset of the set of premises of its conclusion-argument.</html:li></html:ul></html:p>
+                <html:p>A logic is <html:strong>monotonic</html:strong> iff it obeys monotonicity.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/006D/</fr:uri>
+                <fr:display-uri>006D</fr:display-uri>
+                <fr:route>/lectures/006D/</fr:route>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter><html:p>To get some practice with monotonicity, think about these logics.
+Which of them are monotonic?
+<html:ol><html:li>the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[A]]></fr:tex> is <fr:tex display="inline"><![CDATA[p]]></fr:tex>,</html:li>
+<html:li>the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[A]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>,</html:li>
+<html:li>the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> has five or fewer members,</html:li></html:ol></html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>7</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:ol><html:li>This logic is monotonic.
+Whenever we have an instance of monotonicity, the conclusions of the premise-argument and the conclusion-argument must match.
+If they are both <fr:tex display="inline"><![CDATA[p]]></fr:tex>, then the conclusion-argument is valid in the logic, so the logic obeys the instance.
+And if neither of them is <fr:tex display="inline"><![CDATA[p]]></fr:tex>, then the premise-argument is not valid in the logic, so the logic obeys the instance.
+So the logic obeys all instances of monotonicity.</html:li>
+<html:li>This logic is monotonic, because whenever <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Sigma ]]></fr:tex>, then if <fr:tex display="inline"><![CDATA[A]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, it must also be in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>.
+</html:li>
+<html:li><html:p>This logic is not monotonic; here is an instance of monotonicity that it does not obey:</html:p>
+<html:p><fr:resource hash="9962db810bc459ca05187e322ac6f04b"><fr:resource-content><html:img src="/lectures/9962db810bc459ca05187e322ac6f04b.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {p \;/\; q}
+\infer 1[]{p, q, r, s, p \land  q, \neg  r \;/\; q}
+\end {prooftree}
+]]></fr:resource-source></fr:resource></html:p></html:li></html:ol></fr:mainmatter></fr:tree></fr:mainmatter>
+            </fr:tree>
+            <html:p> So a logic is monotonic iff, whenever it contains an argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> and <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, then the logic contains <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex> as well.
+And in fact, every matrix logic is monotonic.
+    To show this, I'll proceed by a method called <html:em>showing the contrapositive</html:em>.
+</html:p>
+            <html:p>    What I'll show directly is that, when <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, then if a matrix logic <html:em>in</html:em>validates <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex> it must also <html:em>in</html:em>validate <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+    What I <html:em>want</html:em> to show is that if <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> is valid then <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex> must be valid too; what I <html:em>do</html:em> show both switches the order of these and changes from validity to invalidity.
+    If this seems like a weird thing to do, just come along for the ride for now; hopefully it will make more sense in a paragraph or two.
+</html:p>
+            <html:p>    Suppose, then, that we have a matrix logic where <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex> is invalid.
+    Since the logic is specified by a matrix, that must mean that there is some counterexample in the matrix to the argument <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex>.
+    And <html:em>that</html:em>, in turn, must mean that there is a valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> that assigns a designated value to everything in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> and also assigns an undesignated value to <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+    Now, supposing that <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, this means that <fr:tex display="inline"><![CDATA[v]]></fr:tex> must assign a designated value to everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> as well, since everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> and everything in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> gets a designated value.
+    So <fr:tex display="inline"><![CDATA[v]]></fr:tex> is also a counterexample to <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>, since it does what a counterexample must do: it assigns a designated value to every premise and an undesignated value to the conclusion.
+</html:p>
+            <html:p>    I've now shown that if <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex> is invalid then <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> is invalid (in any matrix logic, when <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>).
+    What I want, remember, is to show that if <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> is valid then so is <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex>.
+    But that follows: if <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> is valid, then it can't be that <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex> is invalid---we just saw that when <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex> is invalid then so is <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+    So when <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> is valid, that must mean that <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex> is valid too.
+    That's monotonicity.
+</html:p>
+            <html:p>        Again, this doesn't depend on any details of the matrix: it doesn't depend on which structure is involved, or on which values are designated, or even on what language we're using.
+        The key step in the reasoning is this: if a valuation takes every sentence in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> to a designated value, and <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, then the valuation takes every sentence in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> to a designated value.
+</html:p>
+            <html:p>    We've shown, then, that every matrix logic is both reflexive and monotonic.
+    That means that <html:em>lots</html:em> of logics are not matrix logics!
+    That is, for lots of logics there is <html:em>no way</html:em> of giving a matrix that determines them.
+    Working with matrices is a powerful tool, but it only works for certain special logics.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

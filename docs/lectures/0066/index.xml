@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>7</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/0066/</fr:uri>
+    <fr:display-uri>0066</fr:display-uri>
+    <fr:route>/lectures/0066/</fr:route>
+    <fr:taxon>Example</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter><html:p>Consider these three logics.
+Which of them is reflexive?
+<html:ol><html:li>the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[A]]></fr:tex> is <fr:tex display="inline"><![CDATA[p]]></fr:tex>,</html:li>
+<html:li>the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[A]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>,</html:li>
+<html:li>the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> has five or fewer members,</html:li></html:ol></html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>7</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:ol><html:li>This logic is not reflexive; although it does contain <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex>, it does not contain (for example) <fr:tex display="inline"><![CDATA[q \;/\; q]]></fr:tex> or <fr:tex display="inline"><![CDATA[p \land  q \;/\; p \land  q]]></fr:tex>.</html:li>
+<html:li>This logic is reflexive; in every argument of the form <fr:tex display="inline"><![CDATA[A \;/\; A]]></fr:tex>, the conclusion is one of the premises (indeed the only premise), so all such arguments are valid in this logic.</html:li>
+<html:li>This logic is reflexive; every argument of the form <fr:tex display="inline"><![CDATA[A \;/\; A]]></fr:tex> has exactly one premise, so it indeed has five or fewer; so all such arguments are valid in this logic.</html:li></html:ol>
+</fr:mainmatter></fr:tree></fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0064/</fr:uri>
+            <fr:display-uri>0064</fr:display-uri>
+            <fr:route>/lectures/0064/</fr:route>
+            <fr:title text="Reflexivity">Reflexivity</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>To start exploring this issue, we can generalise the example from above.
+There was nothing special about the choice of the sentence <fr:tex display="inline"><![CDATA[p]]></fr:tex> in the argument <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex>.
+Take any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> at all, and consider the argument <fr:tex display="inline"><![CDATA[A \;/\; A]]></fr:tex>.
+By the same reasoning as before, there can't be any counterexample to this argument in any matrix.
+(Imagine there was such a counterexample <fr:tex display="inline"><![CDATA[v]]></fr:tex>. Then <fr:tex display="inline"><![CDATA[v(A)]]></fr:tex> would have to be both designated and undesignated, which is impossible.)</html:p>
+            <html:p>So this means that every matrix logic has to include, not only the argument <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex>, but <html:em>every</html:em> argument with the form <fr:tex display="inline"><![CDATA[A \;/\; A]]></fr:tex>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0065/</fr:uri>
+                <fr:display-uri>0065</fr:display-uri>
+                <fr:route>/lectures/0065/</fr:route>
+                <fr:title text="Reflexivity">Reflexivity</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A logic is <html:strong>reflexive</html:strong> iff it validates all arguments with the form <fr:tex display="inline"><![CDATA[A \;/\; A]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>What we have seen, then, is that every matrix logic is reflexive.
+That already narrows down what we can use matrices for.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0066/</fr:uri>
+                <fr:display-uri>0066</fr:display-uri>
+                <fr:route>/lectures/0066/</fr:route>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter><html:p>Consider these three logics.
+Which of them is reflexive?
+<html:ol><html:li>the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[A]]></fr:tex> is <fr:tex display="inline"><![CDATA[p]]></fr:tex>,</html:li>
+<html:li>the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[A]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>,</html:li>
+<html:li>the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> has five or fewer members,</html:li></html:ol></html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>7</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter>
+<html:ol><html:li>This logic is not reflexive; although it does contain <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex>, it does not contain (for example) <fr:tex display="inline"><![CDATA[q \;/\; q]]></fr:tex> or <fr:tex display="inline"><![CDATA[p \land  q \;/\; p \land  q]]></fr:tex>.</html:li>
+<html:li>This logic is reflexive; in every argument of the form <fr:tex display="inline"><![CDATA[A \;/\; A]]></fr:tex>, the conclusion is one of the premises (indeed the only premise), so all such arguments are valid in this logic.</html:li>
+<html:li>This logic is reflexive; every argument of the form <fr:tex display="inline"><![CDATA[A \;/\; A]]></fr:tex> has exactly one premise, so it indeed has five or fewer; so all such arguments are valid in this logic.</html:li></html:ol>
+</fr:mainmatter></fr:tree></fr:mainmatter>
+            </fr:tree>
+            <html:p>Some logics, then, are reflexive and others are not.
+But as we've seen, all matrix logics must be reflexive.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>8</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/006G/</fr:uri>
+                <fr:display-uri>006G</fr:display-uri>
+                <fr:route>/lectures/006G/</fr:route>
+                <fr:title text="The weakest reflexive logic">The weakest reflexive logic</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>As an example that we'll make some use of in a moment, note that there is a reflexive logic that's weaker than every reflexive logic; let's call this one the <html:strong>weakest reflexive logic</html:strong>, or WRL:</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>8</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/006F/</fr:uri>
+                    <fr:display-uri>006F</fr:display-uri>
+                    <fr:route>/lectures/006F/</fr:route>
+                    <fr:title text="Weakest reflexive logic, WRL">Weakest reflexive logic, WRL</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>The <html:strong>weakest reflexive logic</html:strong>, also called <html:strong>WRL</html:strong>, is the logic that contains any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> iff <fr:tex display="inline"><![CDATA[\Gamma  = \{A\}]]></fr:tex>.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>The definition just tells you what WRL is; it doesn't actually show that WRL really is weaker than every reflexive logic.
+But you now know enough to see that it is.
+For a logic to be reflexive means that it contains every argument of the form <fr:tex display="inline"><![CDATA[A \;/\; A]]></fr:tex>---but these arguments are exactly the ones valid in WRL.
+So every argument valid in WRL is valid in any reflexive logic; that shows that WRL is weaker than every reflexive logic.</html:p>
+                <html:p>Note also that WRL is itself reflexive: it itself contains every argument of the form <fr:tex display="inline"><![CDATA[A \;/\; A]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
