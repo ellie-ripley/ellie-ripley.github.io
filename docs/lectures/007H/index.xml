@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>15</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/007H/</fr:uri>
+    <fr:display-uri>007H</fr:display-uri>
+    <fr:route>/lectures/007H/</fr:route>
+    <fr:title text="LEM:">LEM:</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+      <fr:resource hash="e8866093b9a6a2000f895a55566dbd0a">
+        <fr:resource-content>
+          <html:img src="/lectures/e8866093b9a6a2000f895a55566dbd0a.svg" />
+        </fr:resource-content>
+        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+        <fr:resource-source type="latex" part="body"><![CDATA[
+        \AxiomC{\ensuremath{\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  LEM:\quad }}
+        \UnaryInfC{\ensuremath{A \lor  \neg  A\vphantom{|}}}
+        \DP
+        ]]></fr:resource-source>
+      </fr:resource>
+    </html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0077/</fr:uri>
+            <fr:display-uri>0077</fr:display-uri>
+            <fr:route>/lectures/0077/</fr:route>
+            <fr:title text="Rules for NK">Rules for NK</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>NK has all the <fr:link href="/lectures/0078/" title="Rules in NJ" uri="https://negation.rocks/lectures/0078/" display-uri="0078" type="local">rules in NJ</fr:link>, plus:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007H/</fr:uri>
+                <fr:display-uri>007H</fr:display-uri>
+                <fr:route>/lectures/007H/</fr:route>
+                <fr:title text="LEM:">LEM:</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <fr:resource hash="e8866093b9a6a2000f895a55566dbd0a">
+                    <fr:resource-content>
+                      <html:img src="/lectures/e8866093b9a6a2000f895a55566dbd0a.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+        \AxiomC{\ensuremath{\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  LEM:\quad }}
+        \UnaryInfC{\ensuremath{A \lor  \neg  A\vphantom{|}}}
+        \DP
+        ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0075/</fr:uri>
+            <fr:display-uri>0075</fr:display-uri>
+            <fr:route>/lectures/0075/</fr:route>
+            <fr:title text="Two variations">Two variations</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>    Finally, I'll close by telling you about two simple variations on this proof system.
+    NJ itself will form the main proof system we look at, but it'll be handy to know about these two variations as well.
+</html:p>
+            <html:p>    The first variation is called NM.
+    It's very simple: it's exactly the same as NJ, except that it doesn't include the rule <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>.
+    The connective <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is still present in the language.
+    In NM, this connective has no rules of any sort associated with it.
+    Everything else is just the same as in NJ.
+    So any proof you make in NJ, if it happens not to use the rule <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>, is also a proof in NM.
+    And every proof in NM is itself a proof in NJ directly.
+</html:p>
+            <html:p>    The second variation is called NK.
+    Instead of taking away from NJ, as NM does, the system NK adds to it.
+    In particular, NK includes every rule of NJ, plus also the following rule:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007H/</fr:uri>
+                <fr:display-uri>007H</fr:display-uri>
+                <fr:route>/lectures/007H/</fr:route>
+                <fr:title text="LEM:">LEM:</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <fr:resource hash="e8866093b9a6a2000f895a55566dbd0a">
+                    <fr:resource-content>
+                      <html:img src="/lectures/e8866093b9a6a2000f895a55566dbd0a.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+        \AxiomC{\ensuremath{\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  LEM:\quad }}
+        \UnaryInfC{\ensuremath{A \lor  \neg  A\vphantom{|}}}
+        \DP
+        ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>
+    This rule is called "LEM" for the Law of Excluded Middle.
+    It allows us to prove any sentence of the form <fr:tex display="inline"><![CDATA[A \lor  \neg  A]]></fr:tex>, out of nowhere, anywhere we like in a proof.
+    It's kind of like a specialized rule of assumption, except that it does not involve any open assumptions.
+    It counts as an outright proof of such sentences; like <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>, it creates a new proof from nothing.
+</html:p>
+            <html:p>    For example, here is a proof in NK that is not also a proof in NJ:
+</html:p>
+            <html:p>
+              <fr:resource hash="a0459f0025727fd766f6f7e28b37288e">
+                <fr:resource-content>
+                  <html:img src="/lectures/a0459f0025727fd766f6f7e28b37288e.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  LEM:\quad }}
+        \UnaryInfC{\ensuremath{q \lor  \neg  q\vphantom{|}}}
+                \AxiomC{\ensuremath{\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  LEM:\quad }}
+            \UnaryInfC{\ensuremath{p \lor  \neg  p\vphantom{|}}}
+                    \AxiomC{\ensuremath{(p \land  q) \rightarrow  r\vphantom{|}}}
+                        \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                        \AxiomC{\ensuremath{[q]^5\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                    \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                \BinaryInfC{\ensuremath{r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^3:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  r\vphantom{|}}}
+                \AxiomC{\ensuremath{[\neg  p]^2\vphantom{|}}}
+                \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+            \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^2:\quad }}
+            \TrinaryInfC{\ensuremath{p \rightarrow  r\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+        \UnaryInfC{\ensuremath{(p \rightarrow  r) \lor  (q \rightarrow  r)\vphantom{|}}}
+            \AxiomC{\ensuremath{[\neg  q]^5\vphantom{|}}}
+            \AxiomC{\ensuremath{[q]^4\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+            \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^4:\quad }}
+            \UnaryInfC{\ensuremath{q \rightarrow  r\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+        \UnaryInfC{\ensuremath{(p \rightarrow  r) \lor  (q \rightarrow  r)\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  E^5:\quad }}
+        \TrinaryInfC{\ensuremath{(p \rightarrow  r) \lor  (q \rightarrow  r)\vphantom{|}}}
+        \DP]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>        This is a proof of <fr:tex display="inline"><![CDATA[(p \rightarrow  r) \lor  (q \rightarrow  r)]]></fr:tex>, with the sole open assumption <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  r]]></fr:tex>.
+    We'll think next time about the relation between proof systems and logics.
+    It will emerge there that NJ, NM, and NK all determine different logics from each other.
+    Two of these logics are new to us: NJ determines a logic called "intuitionistic logic", and NM one called "minimal logic".
+    But NK determines a logic we've already met in our earlier lectures.
+    More on this next time!</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

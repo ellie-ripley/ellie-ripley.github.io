@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>15</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/007E/</fr:uri>
+    <fr:display-uri>007E</fr:display-uri>
+    <fr:route>/lectures/007E/</fr:route>
+    <fr:title text="Falsum elimination:">Falsum elimination:</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+      <fr:resource hash="369844411cd6dff7937135c78d77588c">
+        <fr:resource-content>
+          <html:img src="/lectures/369844411cd6dff7937135c78d77588c.svg" />
+        </fr:resource-content>
+        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{A\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+      </fr:resource>
+    </html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0078/</fr:uri>
+            <fr:display-uri>0078</fr:display-uri>
+            <fr:route>/lectures/0078/</fr:route>
+            <fr:title text="Rules in NJ">Rules in NJ</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>NJ has all the <fr:link href="/lectures/0079/" title="Rules in NM:" uri="https://negation.rocks/lectures/0079/" display-uri="0079" type="local">rules in NM</fr:link>, plus:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007E/</fr:uri>
+                <fr:display-uri>007E</fr:display-uri>
+                <fr:route>/lectures/007E/</fr:route>
+                <fr:title text="Falsum elimination:">Falsum elimination:</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <fr:resource hash="369844411cd6dff7937135c78d77588c">
+                    <fr:resource-content>
+                      <html:img src="/lectures/369844411cd6dff7937135c78d77588c.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{A\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/006U/</fr:uri>
+            <fr:display-uri>006U</fr:display-uri>
+            <fr:route>/lectures/006U/</fr:route>
+            <fr:title text="Falsum rule">Falsum rule</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>      Let's turn now to <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+        Recall that this is meant to mean like THE FALSEST THING POSSIBLE: MAXIMUM FALSE.
+</html:p>
+            <html:p>        Although we didn't spend much time focussed on it while we were working with structures and valuations, it's pretty simple to handle in that kind of setting: since <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is a nullary connective, each structure must assign a value to <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, and then <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> takes that value in every valuation on that structure.
+        To give <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> its intended meaning within a structure, we just need to choose some falsey value within that structure.
+</html:p>
+            <html:p>        When it comes to proofs, though, things are a bit more delicate.
+        The reason is that proofs, at least as we're dealing with them here, aren't really about ruling anything <html:em>out</html:em>.
+        They're instead focused on demonstrating that something <html:em>does</html:em> hold, or assuming it.
+        There's not a lot negative about our proofs: they're pretty relentlessly positive.
+        So how, in this kind of setting, can we give rules to make <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> into MAXIMUM FALSE?
+</html:p>
+            <html:p>        The method NJ uses is twofold, involving (as usual) introduction and elimination rules.
+        It's particularly simple on the introduction side: <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> simply has no introduction rules at all.
+        What would it take to prove <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>?
+        It's so false that it can't be done.
+</html:p>
+            <html:p>        The flip side of this is the elimination rule:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007E/</fr:uri>
+                <fr:display-uri>007E</fr:display-uri>
+                <fr:route>/lectures/007E/</fr:route>
+                <fr:title text="Falsum elimination:">Falsum elimination:</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <fr:resource hash="369844411cd6dff7937135c78d77588c">
+                    <fr:resource-content>
+                      <html:img src="/lectures/369844411cd6dff7937135c78d77588c.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{A\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>
+        Remember, <fr:tex display="inline"><![CDATA[A]]></fr:tex> can be any sentence at all.
+        So this elimination rule says that <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is so false that if we ever did have a proof of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, fuck it, we might as well have a proof of anything at all.
+        And indeed we can extend any proof of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> to a proof of anything at all via this rule.
+</html:p>
+            <html:p>        Now, you might wonder, if <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> has no introduction rule at all, can we ever be in a position to apply its elimination rule?
+        And the answer, maybe surprisingly, is yes!
+        The reason is that we can assume any sentence we like.
+        Since <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is a sentence, we can assume it.
+        It also occurs in more complex sentences, and we can assume those as well, or even prove some of them.
+        So here is a proof using <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>:</html:p>
+            <html:p>
+              <fr:resource hash="b77f744c6cec1fae7be12c0b418ca6df">
+                <fr:resource-content>
+                  <html:img src="/lectures/b77f744c6cec1fae7be12c0b418ca6df.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[\bot ]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{p \land  (q \lor  r)\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \UnaryInfC{\ensuremath{q \lor  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{\bot  \rightarrow  (q \lor  r)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>
+        Overall, this proof has no open assumptions; the assumption of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is discharged at the last step.
+        But it still uses the rule <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>; the <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> came into the proof via assumption.
+</html:p>
+            <html:p>        Here's another example proof using <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>:</html:p>
+            <html:p>
+              <fr:resource hash="6798267d318ed84060c0cef961c747b5">
+                <fr:resource-content>
+                  <html:img src="/lectures/6798267d318ed84060c0cef961c747b5.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{(q \land  r) \rightarrow  \bot \vphantom{|}}}
+            \AxiomC{\ensuremath{q\vphantom{|}}}
+            \AxiomC{\ensuremath{r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{q \land  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{(s \rightarrow  t) \land  ((p \lor  \neg  q) \land  \neg  (r \rightarrow  s))\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>
+        Here, there is no assumption of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> directly anywhere in the proof, not even a discharged one.
+        Instead, there is an (open) assumption of <fr:tex display="inline"><![CDATA[(q \land  r) \rightarrow  \bot ]]></fr:tex>; that's how <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> got in to this proof.
+        Note as well that <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex> allows us to conclude any sentence at all; since <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is a sentence, that includes <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> itself, as this proof shows!
+</html:p>
+            <html:p>        And for one more example, here is a third example proof using <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>:</html:p>
+            <html:p>
+              <fr:resource hash="8c1c5b14750a19eb7724ea1a36853354">
+                <fr:resource-content>
+                  <html:img src="/lectures/8c1c5b14750a19eb7724ea1a36853354.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+          \AxiomC{\ensuremath{p\vphantom{|}}}
+          \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+          \UnaryInfC{\ensuremath{p \lor  \bot \vphantom{|}}}
+          \AxiomC{\ensuremath{[p]^{1}\vphantom{|}}}
+          \AxiomC{\ensuremath{[\bot ]^{1}\vphantom{|}}}
+          \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+          \UnaryInfC{\ensuremath{p\vphantom{|}}}
+          \LeftLabel{\ensuremath{\scriptsize  \lor  E^{1}:\quad }}
+          \TrinaryInfC{\ensuremath{p\vphantom{|}}}
+          \DP
+          ]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>
+        Here <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> doesn't occur in any open assumption at all; it's rather part of the internal workings of the proof.
+</html:p>
+            <html:p>        So even though there's no introduction rule for <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, it can still end up in our proofs, because of how assumptions work.
+        Since assumptions are totally unconstrained, they can bring <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> in, either directly, or as part of a more complex assumption; and there are times when <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> can come into a proof without figuring in any assumption.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

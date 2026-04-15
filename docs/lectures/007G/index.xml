@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>15</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/007G/</fr:uri>
+    <fr:display-uri>007G</fr:display-uri>
+    <fr:route>/lectures/007G/</fr:route>
+    <fr:title text="Negation introduction and elimination:">Negation introduction and elimination:</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+      <fr:resource hash="63cfb5fb77f4dec01b2a973fa1cbc2e4">
+        <fr:resource-content>
+          <html:img src="/lectures/63cfb5fb77f4dec01b2a973fa1cbc2e4.svg" />
+        </fr:resource-content>
+        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+            \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+            \noLine
+            \UnaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  I^n:\quad }}
+            \UnaryInfC{\ensuremath{\neg  A\vphantom{|}}}
+            \DP
+            \hskip 2cm
+            \AxiomC{\ensuremath{\neg  A\vphantom{|}}}
+            \AxiomC{\ensuremath{A\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+            \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+      </fr:resource>
+    </html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0079/</fr:uri>
+            <fr:display-uri>0079</fr:display-uri>
+            <fr:route>/lectures/0079/</fr:route>
+            <fr:title text="Rules in NM:">Rules in NM:</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:ul><html:li>The rule of assumption: just write down a sentence to assume it, giving a proof of that sentence from itself.</html:li>
+<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007A/</fr:uri><fr:display-uri>007A</fr:display-uri><fr:route>/lectures/007A/</fr:route><fr:title text="Conjunction introduction and elimination:">Conjunction introduction and elimination:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="bf25bab590601242e79d3a30a6c5318d"><fr:resource-content><html:img src="/lectures/bf25bab590601242e79d3a30a6c5318d.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{A\vphantom{|}}}
+            \AxiomC{\ensuremath{B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
+            \DP
+            \hskip 1cm
+            \AxiomC{\ensuremath{A \land  B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{A\vphantom{|}}}
+            \DP
+            \hskip 1cm
+            \AxiomC{\ensuremath{A \land  B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \UnaryInfC{\ensuremath{B\vphantom{|}}}
+            \DP
+        ]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li>
+<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007B/</fr:uri><fr:display-uri>007B</fr:display-uri><fr:route>/lectures/007B/</fr:route><fr:title text="Disjunction introduction:">Disjunction introduction:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="5552c53085ec061bc147e7dc7ab96ba5"><fr:resource-content><html:img src="/lectures/5552c53085ec061bc147e7dc7ab96ba5.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{A\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+            \UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
+            \DP
+            \hskip 1cm
+            \AxiomC{\ensuremath{B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}    
+            \UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
+            \DP    
+            ]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li>
+<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007C/</fr:uri><fr:display-uri>007C</fr:display-uri><fr:route>/lectures/007C/</fr:route><fr:title text="Disjunction elimination:">Disjunction elimination:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="f935792074fefd9ce79689e5aa449a75"><fr:resource-content><html:img src="/lectures/f935792074fefd9ce79689e5aa449a75.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{A \lor  B\vphantom{|}}}
+                \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+                \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+                \noLine
+            \UnaryInfC{\ensuremath{C\vphantom{|}}}
+                \AxiomC{\ensuremath{[B]^n\vphantom{|}}}
+                \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+                \noLine
+            \UnaryInfC{\ensuremath{C\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^n:\quad }}
+            \TrinaryInfC{\ensuremath{C\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li>
+<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007D/</fr:uri><fr:display-uri>007D</fr:display-uri><fr:route>/lectures/007D/</fr:route><fr:title text="Implication introduction and elimination:">Implication introduction and elimination:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="9b9a5c601f91d5b1d20396d149653da3"><fr:resource-content><html:img src="/lectures/9b9a5c601f91d5b1d20396d149653da3.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+            \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+            \noLine
+            \UnaryInfC{\ensuremath{B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+            \DP
+            \hskip 1cm
+            \AxiomC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+            \AxiomC{\ensuremath{A\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{B\vphantom{|}}}
+            \DP    
+            ]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li>
+<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007F/</fr:uri><fr:display-uri>007F</fr:display-uri><fr:route>/lectures/007F/</fr:route><fr:title text="Verum introduction:">Verum introduction:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="cdb6057c70d96542095ce27641d7c422"><fr:resource-content><html:img src="/lectures/cdb6057c70d96542095ce27641d7c422.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\vphantom{\top }\vphantom{|}}}\LeftLabel{\ensuremath{\scriptsize  \top  I:\quad }}\UnaryInfC{\ensuremath{\top \vphantom{|}}}\DP]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li>
+<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007G/</fr:uri><fr:display-uri>007G</fr:display-uri><fr:route>/lectures/007G/</fr:route><fr:title text="Negation introduction and elimination:">Negation introduction and elimination:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="63cfb5fb77f4dec01b2a973fa1cbc2e4"><fr:resource-content><html:img src="/lectures/63cfb5fb77f4dec01b2a973fa1cbc2e4.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+            \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+            \noLine
+            \UnaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  I^n:\quad }}
+            \UnaryInfC{\ensuremath{\neg  A\vphantom{|}}}
+            \DP
+            \hskip 2cm
+            \AxiomC{\ensuremath{\neg  A\vphantom{|}}}
+            \AxiomC{\ensuremath{A\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+            \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \DP
+            ]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li></html:ul>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/006W/</fr:uri>
+            <fr:display-uri>006W</fr:display-uri>
+            <fr:route>/lectures/006W/</fr:route>
+            <fr:title text="Negation rules">Negation rules</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        The last connective to look at is negation.
+        Negation is the reason that <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is so important in NJ.
+        Negation, after all, presents the same kind of problem as <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> did: how can we say that something is <html:em>not</html:em> the case, when our proofs are all about assuming or demonstrating what <html:em>is</html:em> the case?
+        We saw above how NJ handles that issue in the case of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+        In the case of <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>, NJ simply reuses that same solution, deferring everything back to <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> itself.
+</html:p>
+            <html:p>        Here, then, are the rules for negation:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007G/</fr:uri>
+                <fr:display-uri>007G</fr:display-uri>
+                <fr:route>/lectures/007G/</fr:route>
+                <fr:title text="Negation introduction and elimination:">Negation introduction and elimination:</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <fr:resource hash="63cfb5fb77f4dec01b2a973fa1cbc2e4">
+                    <fr:resource-content>
+                      <html:img src="/lectures/63cfb5fb77f4dec01b2a973fa1cbc2e4.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+            \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+            \noLine
+            \UnaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  I^n:\quad }}
+            \UnaryInfC{\ensuremath{\neg  A\vphantom{|}}}
+            \DP
+            \hskip 2cm
+            \AxiomC{\ensuremath{\neg  A\vphantom{|}}}
+            \AxiomC{\ensuremath{A\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+            \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>
+        Both of these rules involve <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+        You can see <fr:tex display="inline"><![CDATA[\neg  I]]></fr:tex> as saying that, if from the assumption of <fr:tex display="inline"><![CDATA[A]]></fr:tex> we can prove our way to <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, then <fr:tex display="inline"><![CDATA[A]]></fr:tex> itself must be false, so we can discharge the assumption and conclude <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex>.
+        And you can see <fr:tex display="inline"><![CDATA[\neg  E]]></fr:tex> as saying that any contradiction suffices for MAXIMUM FALSE: if we have proofs of both <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> and <fr:tex display="inline"><![CDATA[A]]></fr:tex>, then we can put them together via <fr:tex display="inline"><![CDATA[\neg  E]]></fr:tex> to get a proof of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+        (So this gives us yet another way <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> can get into proofs.)</html:p>
+            <html:p>        Consider, for example, the following line of reasoning, inspired by Zeno of Elea, as an argument against the possibility of motion.
+Nowadays this is sometimes called one of Zeno's "paradoxes", but it appears that in its original use it was not meant to be a paradox, but simply a straightforward argument for the conclusion that nothing moves.
+        Zeno was a follower of Parmenides, and like Parmenides held that everything is one, and does not change.
+        Since motion is a kind of change, this includes denying the existence of motion.</html:p>
+            <html:p>        
+            Suppose someone, call them Mo, has moved some distance <fr:tex display="inline"><![CDATA[D]]></fr:tex>.
+            Before Mo could move the full distance <fr:tex display="inline"><![CDATA[D]]></fr:tex>, they must first have moved a distance of <fr:tex display="inline"><![CDATA[D/2]]></fr:tex>.
+            And before they could have done that, they must first have moved a distance of <fr:tex display="inline"><![CDATA[D/4]]></fr:tex>.
+            Before they could have done that, however, they must first have moved a distance of <fr:tex display="inline"><![CDATA[D/8]]></fr:tex>.
+            And so on, all the way to infinity.
+            So Mo must have moved an infinite number of distances.
+            But this is impossible: nobody could move an infinite number of distances.
+            So the supposition must have been wrong: Mo didn't really move any distance <fr:tex display="inline"><![CDATA[D]]></fr:tex> at all.
+</html:p>
+            <html:p>        Some of this reasoning we don't have the power to capture in NJ.
+        In particular, the reasoning that turns on "And so on, all the way to infinity" doesn't seem to nicely fit into the resources we have available.
+        But we can still fit the overall shape of this reasoning, in its broad outlines, into NJ.
+        Consider, for example, the following proof:</html:p>
+            <html:p>
+              <fr:resource hash="d787ecf67ed2575c7338c55a8aa6b1b2">
+                <fr:resource-content>
+                  <html:img src="/lectures/d787ecf67ed2575c7338c55a8aa6b1b2.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{\neg  i\vphantom{|}}}
+            \AxiomC{\ensuremath{m \rightarrow  i\vphantom{|}}}
+            \AxiomC{\ensuremath{[m]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{i\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+            \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  I^1:\quad }}
+            \UnaryInfC{\ensuremath{\neg  m\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>        To see the structure of the Zenoish argument reflected in this proof, think of <fr:tex display="inline"><![CDATA[m]]></fr:tex> as the claim that Mo moved distance <fr:tex display="inline"><![CDATA[D]]></fr:tex>, and <fr:tex display="inline"><![CDATA[i]]></fr:tex> as the claim that Mo moved an infinite number of distances.
+        Then the proof takes two things for granted: that Mo's having moved distance <fr:tex display="inline"><![CDATA[D]]></fr:tex> implies Mo having moved an infinite number of distances, and that Mo didn't move an infinite number of distances.
+        From these assumptions, the proof concludes that Mo didn't move distance <fr:tex display="inline"><![CDATA[D]]></fr:tex>.
+        The shape of the proof roughly aligns with the reasoning in the passage: the main difference is that the prose passage gives us some reason to believe <fr:tex display="inline"><![CDATA[m \rightarrow  i]]></fr:tex>, where the proof just takes it for granted.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
