@@ -29,7 +29,7 @@
     <html:li><fr:link href="/lectures/0053/" title="Lecture 6: Using matrices to compare logics" uri="https://negation.rocks/lectures/0053/" display-uri="0053" type="local">Lecture 6: Using matrices to compare logics</fr:link></html:li>
     <html:li><fr:link href="/lectures/005Y/" title="Lecture 7: The limits of matrices" uri="https://negation.rocks/lectures/005Y/" display-uri="005Y" type="local">Lecture 7: The limits of matrices</fr:link></html:li></html:ul></html:li>
   <html:li>Section C: Exploring intuitionistic logic
-  <html:ul><html:li>Lecture 8: Natural deduction</html:li>
+  <html:ul><html:li><fr:link href="/lectures/006M/" title="Lecture 8: Natural deduction" uri="https://negation.rocks/lectures/006M/" display-uri="006M" type="local">Lecture 8: Natural deduction</fr:link></html:li>
     <html:li>Lecture 9: Intuitionistic logic</html:li>
     <html:li>Lecture 10: Intuitionistic models</html:li>
     <html:li>Lecture 11: Harmony</html:li></html:ul></html:li>
@@ -93,7 +93,7 @@
     <html:li><fr:link href="/lectures/0053/" title="Lecture 6: Using matrices to compare logics" uri="https://negation.rocks/lectures/0053/" display-uri="0053" type="local">Lecture 6: Using matrices to compare logics</fr:link></html:li>
     <html:li><fr:link href="/lectures/005Y/" title="Lecture 7: The limits of matrices" uri="https://negation.rocks/lectures/005Y/" display-uri="005Y" type="local">Lecture 7: The limits of matrices</fr:link></html:li></html:ul></html:li>
   <html:li>Section C: Exploring intuitionistic logic
-  <html:ul><html:li>Lecture 8: Natural deduction</html:li>
+  <html:ul><html:li><fr:link href="/lectures/006M/" title="Lecture 8: Natural deduction" uri="https://negation.rocks/lectures/006M/" display-uri="006M" type="local">Lecture 8: Natural deduction</fr:link></html:li>
     <html:li>Lecture 9: Intuitionistic logic</html:li>
     <html:li>Lecture 10: Intuitionistic models</html:li>
     <html:li>Lecture 11: Harmony</html:li></html:ul></html:li>
@@ -179,6 +179,1780 @@ Each week, your tutor will give you a range of exercises (more straightforward) 
         <fr:title text="Related">Related</fr:title>
       </fr:frontmatter>
       <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/006M/</fr:uri>
+            <fr:display-uri>006M</fr:display-uri>
+            <fr:route>/lectures/006M/</fr:route>
+            <fr:title text="Lecture 8: Natural deduction">Lecture 8: Natural deduction</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/006N/</fr:uri>
+                <fr:display-uri>006N</fr:display-uri>
+                <fr:route>/lectures/006N/</fr:route>
+                <fr:title text="Models and proofs">Models and proofs</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>So far, we've approached logics on their own, just as sets of arguments, and also through the lens of structures, valuations, matrices, and counterexamples.
+We're now going to shift gears again, and look at logics from a different angle.
+</html:p>
+                <html:p>Some of these ways are what's known as <html:strong>model-theoretic</html:strong>: they focus on relationships between the language itself and things outside the language.
+Our matrix methods give an example of model-theoretic methods: the structures and matrices we've used are outside the language, and the valuations we've used establish the needed relationships.
+Model-theoretic methods are usually linked to logics through the notion of <html:em>counterexample</html:em>, just as we've done.
+To specify a logic model-theoretically, we set up some things (in our case, valuations) and say what it is for one of those things to be a counterexample to an argument; then we count an argument as valid when none of the things is a counterexample to it.
+Valuations of the sort we've used are very simple models, and model-theoretic methods get much more complex.
+(Later in the unit, we'll see a different kind of model.)
+But the basic shape of these methods is just like what we've done so far.
+</html:p>
+                <html:p>A different kind of way to approach logics is what's known as <html:strong>proof-theoretic</html:strong>, and that's what we'll start to look at here.
+Proof-theoretic methods focus on working with the language itself (maybe with a few auxiliary kinds of critter), rather than on relationships to things outside the language.
+Proof-theoretic methods are not focussed on the notion of counterexample.
+To specify a logic proof-theoretically, what we do is this: we set up some things we'll call <html:strong>proofs</html:strong>, and we say what it is for one of these to be a proof of an argument.
+Then we count an argument as valid when <html:em>at least one</html:em> of these things is a proof of it.
+</html:p>
+                <html:p>Conceptually, then, proof-theoretic methods for finding valid arguments are a bit simpler than model-theoretic methods.
+To show that an argument is valid model-theoretically, we need to show that <html:em>there is no model</html:em> that's a counterexample to it; that requires considering <html:em>all</html:em> the models of a particular model system.
+But to show that an argument is valid proof-theoretically, all we need to do is come up with a single proof of it.
+There's no need to consider every possible proof.
+</html:p>
+                <html:p>The reverse is true, though, when we think about invalidity.
+To show that an argument is invalid model-theoretically, all we need to do is come up with a single counterexample to it.
+But to show that an argument is invalid proof-theoretically, we need to show that <html:em>there is no proof</html:em> in our proof system that is a proof of it.
+</html:p>
+                <html:p>One of the best ways to explore logics, then, is with models in one hand and proofs in the other.
+This allows you to shift back and forth between these tools, using whatever's the most convenient at a particular time.
+When you want to show that something is valid, you can use proofs.
+When you want to show that something is invalid, you can use models.
+</html:p>
+                <html:p>This time, we'll start in on the kind of proof system we'll be looking at for most of the rest of the semester, known as <html:em>natural deduction</html:em> systems.
+In this reading I'll focus on one natural deduction system.
+This system will give us a logic known as <html:em>intuitionistic logic</html:em>, and we'll spend the next weeks doing a deep dive into this proof system in particular and intuitionistic logic in general.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/006O/</fr:uri>
+                <fr:display-uri>006O</fr:display-uri>
+                <fr:route>/lectures/006O/</fr:route>
+                <fr:title text="A natural deduction system">A natural deduction system</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>    Natural deduction systems are called that because they give a more or less reasonable logical approximation to the kinds of deductive reasoning people sometimes actually do.
+    In particular, when people are reasoning through something, it's common to say something like "Well, suppose BLAH. Then SUCH AND SUCH, and so THIS OTHER THING would happen too".
+    Focus in here on the "suppose".
+    Here, we can just take any old sentence, and try it out and see what follows from it.
+    For example, consider the following line of reasoning:
+</html:p>
+                <html:p>
+      Suppose the moon were made of green cheese.
+      Then it would be a dairy product.
+</html:p>
+                <html:p>    Here, the reasoner is asking you to consider the moon's being made of green cheese, and claiming that its being a dairy product would follow.
+    They're not actually <html:em>claiming</html:em> that the moon is made of green cheese, just supposing it.
+    Even though this is a ridiculous supposition, there's nothing out of order in supposing it to see what would follow.
+    Similarly, they're not actually claiming that the moon is a dairy product, only that if we suppose the moon to be made of green cheese, then its being a dairy product would follow from that supposition.
+</html:p>
+                <html:p>    Natural deduction systems imitate this process; supposing things is a key part of how they work, and we can suppose absolutely anything.
+    The main proof system we'll work with is called NJ, although we'll also consider a few variants of it.
+    In NJ, you can include <html:em>any</html:em> sentence in a proof, without incurring commitment to that sentence.
+    You can just try it out and see what follows from it.
+</html:p>
+                <html:p>
+(NJ was invented by Gerhard Gentzen, who was instrumental in the development of proof theoretic methods in logic.
+Gentzen was not only a Nazi but even a member of the Sturmabteilung (aka the Brownshirts, the predecessor to the SS) and later the NSDDB (the Nazi party organization aimed at controlling universities).
+    So truly a despicable person.)
+</html:p>
+                <html:p>    In fact, the most basic building block for proofs in NJ is just that: taking a sentence and <html:em>supposing</html:em> it.
+    You do that just by writing the sentence down.
+    Imagine I wanted to suppose, say, <fr:tex display="inline"><![CDATA[p \land  (q \rightarrow  r)]]></fr:tex>.
+    I would do that like so:
+</html:p>
+                <html:p>
+                  <fr:tex display="inline"><![CDATA[p \land  (q \rightarrow  r)]]></fr:tex>
+                </html:p>
+                <html:p>
+    What appears above---just the sentence <fr:tex display="inline"><![CDATA[p \land  (q \rightarrow  r)]]></fr:tex> by itself---is our first natural deduction proof.
+</html:p>
+                <html:p>    Every natural deduction proof has a top and a bottom.
+    The top tells us what we're supposing, and the bottom is the conclusion.
+    For such a small proof as this one, the top and the bottom are the very same sentence.
+    So you should read this proof as supposing <fr:tex display="inline"><![CDATA[p \land  (q \rightarrow  r)]]></fr:tex>, taking it for granted for the purposes of exploration, and noting that, if we make such a supposition, we can conclude <fr:tex display="inline"><![CDATA[p \land  (q \rightarrow  r)]]></fr:tex>.
+    That is, if we're willing to take a sentence for granted, we can conclude it.
+</html:p>
+                <html:p>    Most proofs, unsurprisingly, are more complex than this.
+    But this is the key starting point for our proofs: almost all proofs begin by simply taking some sentence for granted in this way.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/006P/</fr:uri>
+                    <fr:display-uri>006P</fr:display-uri>
+                    <fr:route>/lectures/006P/</fr:route>
+                    <fr:title text="Building up more complex proofs">Building up more complex proofs</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        Natural deduction systems allow you to build up more complex proofs from less complex ones by using rules.
+        Rules in natural deduction systems add on to the bottom of existing proofs, yielding new conclusions.
+        (Sometimes, they also fiddle with the top of existing proofs; more on that in a moment.)
+        Although they're called "rules", they really function more like <html:em>building blocks</html:em>.
+        Proofs are built up out of rules.
+</html:p>
+                    <html:p>        For each of our connectives, NJ includes two kinds of rules: <html:em>introduction rules</html:em> and <html:em>elimination rules</html:em>.
+        Introduction rules for a connective let us draw a conclusion with that connective as its main connective.
+        Elimination rules for a connective let us take an existing proof whose conclusion has that connective as its main connective, and build further from it.
+</html:p>
+                    <html:p>        For example, <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> has one introduction rule and two elimination rules.
+        Here they are:
+</html:p>
+                    <html:p>
+                      <fr:resource hash="bf25bab590601242e79d3a30a6c5318d">
+                        <fr:resource-content>
+                          <html:img src="/lectures/bf25bab590601242e79d3a30a6c5318d.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{A\vphantom{|}}}
+            \AxiomC{\ensuremath{B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
+            \DP
+            \hskip 1cm
+            \AxiomC{\ensuremath{A \land  B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{A\vphantom{|}}}
+            \DP
+            \hskip 1cm
+            \AxiomC{\ensuremath{A \land  B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \UnaryInfC{\ensuremath{B\vphantom{|}}}
+            \DP
+        ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>You should read these rules as follows.
+        First, take <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>.
+        This says that if you already have a proof with a conclusion of the form <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>---that is, a conclusion that is a conjunction---then you can extend that proof at the bottom with a step of <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>, giving you a proof of <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+        (As always, remember that <fr:tex display="inline"><![CDATA[A]]></fr:tex>, <fr:tex display="inline"><![CDATA[B]]></fr:tex>, and such are not sentences!
+        They are used here in presenting the rule to let you know that you can do this <html:em>whatever</html:em> conjunction you have.)
+</html:p>
+                    <html:p>        So, for example, take our earlier proof: just the plain assumption of <fr:tex display="inline"><![CDATA[p \land  (q \rightarrow  r)]]></fr:tex>.
+        Since this is a proof whose conclusion is a conjunction, we can extend it via <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>.
+        That would give us the following proof:</html:p>
+                    <html:p>
+                      <fr:resource hash="55af88a92d7313b2398a3587a7134f5a">
+                        <fr:resource-content>
+                          <html:img src="/lectures/55af88a92d7313b2398a3587a7134f5a.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[   \AxiomC{\ensuremath{p \land  (q \rightarrow  r)\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{p\vphantom{|}}}
+            \DP
+        ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>This is a proof with <fr:tex display="inline"><![CDATA[p \land  (q \rightarrow  r)]]></fr:tex> at the top and <fr:tex display="inline"><![CDATA[p]]></fr:tex> at the bottom.
+        You should read it as saying that if we take <fr:tex display="inline"><![CDATA[p \land  (q \rightarrow  r)]]></fr:tex> for granted, to explore what follows from it, then we can find that <fr:tex display="inline"><![CDATA[p]]></fr:tex> follows from it.
+</html:p>
+                    <html:p>        The rule <fr:tex display="inline"><![CDATA[\land  E_r]]></fr:tex>  is very similar, but it allows us to conclude the right component of the conjunction rather than the left.
+        So a new example proof using <fr:tex display="inline"><![CDATA[\land  E_r]]></fr:tex> might look like this:</html:p>
+                    <html:p>
+                      <fr:resource hash="87c5dc45962cd695bf8dc8820bf407a5">
+                        <fr:resource-content>
+                          <html:img src="/lectures/87c5dc45962cd695bf8dc8820bf407a5.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+
+            \AxiomC{\ensuremath{(p \lor  q) \land  (r \rightarrow  \neg  r)\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \UnaryInfC{\ensuremath{r \rightarrow  \neg  r\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>This proof begins by assuming <fr:tex display="inline"><![CDATA[(p \lor  q) \land  (r \rightarrow  \neg  r)]]></fr:tex>, and then extends this assumption with a step of <fr:tex display="inline"><![CDATA[\land  E_r]]></fr:tex>, concluding its right component <fr:tex display="inline"><![CDATA[r \rightarrow  \neg  r]]></fr:tex>.
+</html:p>
+                    <html:p>        The rule <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> is only a bit more complex.
+        Since it has two sentences above the line, this rule combines <html:em>two</html:em> preexisting proofs into a new one.
+        It can be used to combine any two proofs: if the conclusion of the left proof is <fr:tex display="inline"><![CDATA[A]]></fr:tex> and the conclusion of the right proof is <fr:tex display="inline"><![CDATA[B]]></fr:tex>, then the conclusion of the resulting proof will be <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>.
+        For example, we can use this rule to combine the two most recent example proofs into a larger proof, giving us this:</html:p>
+                    <html:p>
+                      <fr:resource hash="466604efa52a1cd7262d1d8898e8fcfd">
+                        <fr:resource-content>
+                          <html:img src="/lectures/466604efa52a1cd7262d1d8898e8fcfd.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+        
+            \AxiomC{\ensuremath{p \land  (q \rightarrow  r)\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{p\vphantom{|}}}
+            \AxiomC{\ensuremath{(p \lor  q) \land  (r \rightarrow  \neg  r)\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \UnaryInfC{\ensuremath{r \rightarrow  \neg  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{p \land  (r \rightarrow  \neg  r)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>        This proof takes two things for granted: <fr:tex display="inline"><![CDATA[p \land  (q \rightarrow  r)]]></fr:tex> and <fr:tex display="inline"><![CDATA[(p \lor  q) \land  (r \rightarrow  \neg  r)]]></fr:tex>.
+        Supposing these things, it shows that <fr:tex display="inline"><![CDATA[p \land  (r \rightarrow  \neg  r)]]></fr:tex> follows.
+</html:p>
+                    <html:p>        I'll call <fr:tex display="inline"><![CDATA[p \land  (q \rightarrow  r)]]></fr:tex> and <fr:tex display="inline"><![CDATA[(p \lor  q) \land  (r \rightarrow  \neg  r)]]></fr:tex> the <html:strong>open assumptions</html:strong> of this proof, and <fr:tex display="inline"><![CDATA[p \land  (r \rightarrow  \neg  r)]]></fr:tex> its <html:strong>conclusion</html:strong>. 
+        (We'll see what's "open" about open assumptions in just a moment.)
+        Try not to get too confused by the word "conclusion": we're now using this word in two ways.
+        In one use, which you've had for a few weeks now, it picks out a particular place in an <html:em>argument</html:em>.
+        In this new use I'm telling you about now, it picks out a particular place in a <html:em>proof</html:em>.
+        Since arguments and proofs are different kinds of things, these are two different uses. 
+        The uses are very similar, though, and as we'll see next time they're also closely related.
+        So I think it's not too awful to use the same word for both.
+        (Do note, though, that I'm definitely <html:em>not</html:em> using the same word for the open assumptions of a proof and the premises of an argument.
+        More on that, too, next time.)
+        </html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/006Q/</fr:uri>
+                    <fr:display-uri>006Q</fr:display-uri>
+                    <fr:route>/lectures/006Q/</fr:route>
+                    <fr:title text="Meaning in proof theory">Meaning in proof theory</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        In a moment, I'll introduce introduction and elimination rules for our other standard connectives.
+        Before we go on to that, though, it's worth pausing to think about where rules like the conjunction rules above might come from.
+</html:p>
+                    <html:p>        These rules give us a different kind of way than we've yet seen to assign a meaning to conjunction.
+        Remember, in our language <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> is just a binary connective, just the same kind of thing as <fr:tex display="inline"><![CDATA[\lor ]]></fr:tex> or <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex>.
+        There's nothing specially "conjunctiony" about it until we give it some meaning somehow.
+        In the first half of the semester, we looked at some ways to assign meaning to connectives via structures.
+        By choosing one table rather than another for conjunction, we were giving a picture of how its meaning operates.
+</html:p>
+                    <html:p>        Now, though, there are no structures or valuations in view.
+        Within natural deduction systems, we build proofs out of sentences themselves, not out of other things like values or whatever.
+        It's the rules we assign to each connective that give us a picture of its meaning.
+</html:p>
+                    <html:p>        Indeed, there is a standard kind of picture some logicians bring to natural deduction, according to which it is the <html:em>introduction</html:em> rules that really give meanings to our sentences, with the elimination rules following along as a kind of afterthought.
+        A slogan here is "[t]he meaning of each [connective] is to be given by specifying, for any sentence in which that [connective] is the main [connective], what is to count as a proof of that sentence".</html:p>
+                    <html:p>I admit this is maybe not a very catchy slogan.
+        The quote is from a book called <html:em>Elements of Intuitionism</html:em> by Michael Dummett (p. 8).
+        Dummett was an English philosopher in the late 20th and early 21st centuries.
+        He was, to say the least, an interesting cat.
+
+Among his works you can find some of the very deepest reflections on logic, work on voting systems, dedication to antiracist activism, an attempt to reunite the Catholic and Eastern Orthodox Churches, and several books on the history of playing cards in general and tarot cards in particular.</html:p>
+                    <html:p>
+        On this way of thinking, then, it is <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> that gives meaning to conjunctions, by telling us that to prove a conjunction, we provide a proof of its left component and a proof of its right component, and combine these proofs via <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> itself.
+</html:p>
+                    <html:p>        What about <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex> and <fr:tex display="inline"><![CDATA[\land  E_r]]></fr:tex>, then?
+        For now, I'll just try to give the general impression; we'll return to this idea, though, before too long.
+        If the idea is that <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> tells us what it takes to have a proof of a conjunction, then when we <html:em>do</html:em> have a proof of a conjunction, it must at least implicitly contain a proof of each component.
+        The rules <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex> and <fr:tex display="inline"><![CDATA[\land  E_r]]></fr:tex>, then, simply allow us to extract these proofs of components from a proof of a conjunction.</html:p>
+                    <html:p>
+        The general idea here is explained by Sara Negri as follows: "Whatever follows from the sufficient grounds for deriving a formula must follow from that formula".
+        Sara Negri is an Italian logician who has been central to 21st-century developments in proof theory.
+        Her work has significantly extended the range of logics that can be covered by well-behaved proof systems.
+        This quotation is from her paper "A normalizing system of natural deduction for intuitionistic linear logic".</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/006R/</fr:uri>
+                    <fr:display-uri>006R</fr:display-uri>
+                    <fr:route>/lectures/006R/</fr:route>
+                    <fr:title text="Disjunction rules">Disjunction rules</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        Just like conjunction, our other connectives receive introduction and elimination rules in NJ.
+        The introduction rules for disjunction allow us to prove a disjunction when we have a proof of one component or of the other:</html:p>
+                    <html:p>
+                      <fr:resource hash="5552c53085ec061bc147e7dc7ab96ba5">
+                        <fr:resource-content>
+                          <html:img src="/lectures/5552c53085ec061bc147e7dc7ab96ba5.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{A\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+            \UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
+            \DP
+            \hskip 1cm
+            \AxiomC{\ensuremath{B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}    
+            \UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
+            \DP    
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>
+        You should read these rules just like the conjunction rules.
+        For example, <fr:tex display="inline"><![CDATA[\lor  I_l]]></fr:tex> says that if you have a proof of any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, you can extend that proof with a step of <fr:tex display="inline"><![CDATA[\lor  I_l]]></fr:tex> to become a proof of <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex>.
+        Here, <fr:tex display="inline"><![CDATA[B]]></fr:tex> can be any sentence at all.
+</html:p>
+                    <html:p>        So, for example, the following is a proof that uses every rule we have so far:</html:p>
+                    <html:p>
+                      <fr:resource hash="d9fce144ad75158fcaff0646b72a0fd1">
+                        <fr:resource-content>
+                          <html:img src="/lectures/d9fce144ad75158fcaff0646b72a0fd1.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+                \AxiomC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+                        \AxiomC{\ensuremath{s \land  (r \rightarrow  q)\vphantom{|}}}
+                        \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+                    \UnaryInfC{\ensuremath{r \rightarrow  q\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+                \UnaryInfC{\ensuremath{(r \rightarrow  q) \lor  t\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{(p \rightarrow  q) \land  ((r \rightarrow  q) \lor  t)\vphantom{|}}}    
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+            \UnaryInfC{\ensuremath{(s \land  t) \lor  (p \rightarrow  q)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>
+        This proof has two open assumptions: <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[s \land  (r \rightarrow  q)]]></fr:tex>. 
+        Taking these two sentences for granted, the proof works its way through to the conclusion <fr:tex display="inline"><![CDATA[(s \land  t) \lor  (p \rightarrow  q)]]></fr:tex>.
+</html:p>
+                    <html:p>        You might notice that there is a quicker way to reach this conclusion, if you're willing to take these things for granted.
+        In fact, you don't even need to take <fr:tex display="inline"><![CDATA[s \land  (r \rightarrow  q)]]></fr:tex> for granted at all!
+        You could instead reason as follows:</html:p>
+                    <html:p>
+                      <fr:resource hash="b16cab7fa43479763f62adc688239371">
+                        <fr:resource-content>
+                          <html:img src="/lectures/b16cab7fa43479763f62adc688239371.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+            \UnaryInfC{\ensuremath{(s \land  t) \lor  (p \rightarrow  q)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>            
+        This reaches the same conclusion as the longer example, and takes nothing for granted beyond what the longer example did.
+        Indeed, it even takes less for granted.
+        So in some sense it might seem more efficient: taking less for granted, and using fewer steps of proof.
+        There is indeed an important relationship between these two examples, and it's something we'll be studying a bit later.
+        For now, though, only one aspect of this is important for you to keep track of: both of these are perfectly good proofs.
+        There is nothing "wrong" with the first one, just because the second is shorter and has fewer assumptions.
+        You can think of the rules that compose our proofs as building blocks; your role in composing a proof is to make sure you fit these blocks together as the rules allow.
+        Whether you build a large building or a small one is up to you!
+</html:p>
+                    <html:p>        Now let's turn to disjunction's elimination rule.
+        This introduces the final new idea we need this week: the idea of <html:em>discharging</html:em> an assumption.
+        When we discharge an assumption, that means that we stop assuming it, stop taking it for granted.
+        Without the ability to discharge an assumption, we could only ever take more things for granted as we go.
+        In fact, though, in a natural deduction proof it is typical to have different assumptions in play in different parts of the proof, and to be able to remove open assumptions as we go.
+</html:p>
+                    <html:p>        The idea behind disjunction elimination is pretty intuitive.
+        Take an example like this: imagine you want to know whether or not a local friend is currently at home.
+        Imagine as well that you do know the following: either they're out visiting their parent, or they're overseas on holiday.
+        Then it's pretty straightforward: wherever they are, they're not at home!
+</html:p>
+                    <html:p>        Let's look at this reasoning a bit more deeply.
+        First, suppose they're out visiting their parent.
+        It would follow from this that they're not at home.
+        Or, alternatively, suppose they're overseas.
+        Again, it would follow from this that they're not at home.
+        Now, you may not know which of those two suppositions obtains.
+        But since you know that at least one of them does (since you know that either they're visiting or they're overseas), you know enough to conclude that they're not at home.
+        What's more, you can conclude this outright: you're not still assuming that they're out visiting their parent, for example.
+        That was just a supposition along the way.
+        By the time you conclude that they're not at home, you're done taking this for granted.
+        Similarly for the assumption that they're overseas.
+        You took it for granted as a step along the way, but you're not still taking it for granted when you're done.
+        You've concluded that they're not at home, but you're not making any assumptions going forward about where in particular they are.
+</html:p>
+                    <html:p>        That's an example of disjunction elimination.
+        To draw a conclusion <fr:tex display="inline"><![CDATA[C]]></fr:tex> from a disjunction <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex>, we can do the following: first, suppose <fr:tex display="inline"><![CDATA[A]]></fr:tex> and show that <fr:tex display="inline"><![CDATA[C]]></fr:tex> would follow; second, suppose <fr:tex display="inline"><![CDATA[B]]></fr:tex> instead, and show that <fr:tex display="inline"><![CDATA[C]]></fr:tex> would again follow.
+        Having completed these two steps, we conclude that <fr:tex display="inline"><![CDATA[C]]></fr:tex> follows from <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex>.
+        In this reasoning, we suppose <fr:tex display="inline"><![CDATA[A]]></fr:tex> just for the first step; and we suppose <fr:tex display="inline"><![CDATA[B]]></fr:tex> just for the second step.
+        Once we conclude that <fr:tex display="inline"><![CDATA[C]]></fr:tex> follows from <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex>, we're no longer supposing either of these.
+</html:p>
+                    <html:p>        We put this in schematic form as follows:</html:p>
+                    <html:p>
+                      <fr:resource hash="f935792074fefd9ce79689e5aa449a75">
+                        <fr:resource-content>
+                          <html:img src="/lectures/f935792074fefd9ce79689e5aa449a75.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{A \lor  B\vphantom{|}}}
+                \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+                \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+                \noLine
+            \UnaryInfC{\ensuremath{C\vphantom{|}}}
+                \AxiomC{\ensuremath{[B]^n\vphantom{|}}}
+                \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+                \noLine
+            \UnaryInfC{\ensuremath{C\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^n:\quad }}
+            \TrinaryInfC{\ensuremath{C\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>This schematic form introduces some new notation, but it's just a way to express the ideas explained in the last few paragraphs.
+        There are three pieces of notation here that are new: the <fr:tex display="inline"><![CDATA[\vdots ]]></fr:tex>, the [square brackets], and the superscript <fr:tex display="inline"><![CDATA[^n]]></fr:tex>.
+        I'll explain each of these in turn.
+        In order to do this, it's handy to look at a concrete example proof that uses the rule <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex>:
+</html:p>
+                    <html:p>
+                      <fr:resource hash="d764d57a18d694bef5c13af7c3f664ef">
+                        <fr:resource-content>
+                          <html:img src="/lectures/d764d57a18d694bef5c13af7c3f664ef.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+                \AxiomC{\ensuremath{q \land  (p \lor  (r \land  t))\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \UnaryInfC{\ensuremath{p \lor  (r \land  t)\vphantom{|}}}
+                \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+            \UnaryInfC{\ensuremath{r \lor  p\vphantom{|}}}
+                \AxiomC{\ensuremath{[r \land  t]^1\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+                \UnaryInfC{\ensuremath{r\vphantom {r \land  s}\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+            \UnaryInfC{\ensuremath{r \lor  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{r \lor  p\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>        If you compare this example proof to the schematic presentation of the <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> rule, you'll see that here I've used the sentence <fr:tex display="inline"><![CDATA[p]]></fr:tex> for <fr:tex display="inline"><![CDATA[A]]></fr:tex>, the sentence <fr:tex display="inline"><![CDATA[r \land  t]]></fr:tex> for <fr:tex display="inline"><![CDATA[B]]></fr:tex>, and the sentence <fr:tex display="inline"><![CDATA[r \lor  p]]></fr:tex> for <fr:tex display="inline"><![CDATA[C]]></fr:tex>.
+        The <fr:tex display="inline"><![CDATA[\vdots ]]></fr:tex> in the schematic presentation have here been replaced with actual bits of proof.
+        That's all the <fr:tex display="inline"><![CDATA[\vdots ]]></fr:tex> means: just "any bit of proof goes here".
+        The dots <fr:tex display="inline"><![CDATA[\vdots ]]></fr:tex> should never occur in any actual proof.
+</html:p>
+                    <html:p>        Square brackets around an assumption tell us that the assumption has been discharged.
+        When an assumption has been discharged, it no longer counts as an open assumption; we're no longer taking it for granted.
+        So the above example proof has only one open assumption: <fr:tex display="inline"><![CDATA[q \land  (p \lor  (r \land  t))]]></fr:tex>.
+</html:p>
+                    <html:p>        The assumptions <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[r \land  t]]></fr:tex> had been open during the creation of this proof, but they are closed by the time we get to the end.
+        That is, you can think of the rule <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> as combining three proofs into one.
+        In this case, two of these proofs being combined are:</html:p>
+                    <html:p>
+                      <fr:resource hash="fd6c466a96ab17f8c31ef96fcfc9da37">
+                        <fr:resource-content>
+                          <html:img src="/lectures/fd6c466a96ab17f8c31ef96fcfc9da37.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+            \UnaryInfC{\ensuremath{r \lor  p\vphantom{|}}}
+            \DP
+            \hskip 2cm
+            \AxiomC{\ensuremath{r \land  t\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+            \UnaryInfC{\ensuremath{r \lor  p\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>
+        The left proof here has <fr:tex display="inline"><![CDATA[p]]></fr:tex> as an open assumption, and the right proof has <fr:tex display="inline"><![CDATA[r \land  t]]></fr:tex> as an open assumption.
+        It is only when these proofs are brought in to the larger proof via <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> that these assumptions are discharged, and no longer count as open.
+        That's what's marked by the square brackets.
+</html:p>
+                    <html:p>        Finally, the superscript <fr:tex display="inline"><![CDATA[^n]]></fr:tex> from the schematic presentation is instantiated as a superscript <fr:tex display="inline"><![CDATA[^1]]></fr:tex> in the above example proof.
+        This is what tells us, if we just have access to the final proof, exactly when the assumption was still active, and when it was discharged.
+        Note that the <fr:tex display="inline"><![CDATA[^1]]></fr:tex> on each discharged assumption matches the <fr:tex display="inline"><![CDATA[^1]]></fr:tex> on the rule <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex>, in the example proof.
+        That match tells us that these discharges were performed by this rule.
+        Since we can have proofs with many different occurrences of rules that can discharge sentences, this is necessary to be able to tell exactly what steps went in to constructing the proof.
+</html:p>
+                    <html:p>        Every occurrence of a rule that can discharge assumptions must always have a number as a superscript; and if a proof has more than one occurrence of such a rule, each occurrence must use a different number.</html:p>
+                    <html:p>(If we were very concerned with being maximally permissive, there would be ways to slightly liberalize this, to allow reuse of numbers in certain tricky-to-specify circumstances where they wouldn't interfere with each other.
+        But it's not like we're going to run out of numbers, and it's simpler just to make this requirement.)</html:p>
+                    <html:p>
+        It's not important, though, what numbers we use; their arithmetical properties don't come into this at all.
+        We're just using numbers because they're a convenient stock of symbols that we're not otherwise using.
+        So you could just as well give the example proof with <fr:tex display="inline"><![CDATA[^{23}]]></fr:tex> everywhere instead of <fr:tex display="inline"><![CDATA[^1]]></fr:tex>; it would amount to the same.
+        What's important is only which superscripts match which other superscripts.
+        In practice I'll tend to use smallish numbers, but nothing at all hangs on this.
+</html:p>
+                    <html:p>        The only way a sentence can ever be discharged in a proof is by a rule that has the ability to discharge built in, like <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex>.
+        So every time a discharged assumption appears in a proof, it must always have a superscript number that matches the number of some occurrence in the proof of a discharging rule.
+        That's how we know that the discharge was done by that rule.
+</html:p>
+                    <html:p>        It will take some practice for you to get the hang of discharging; this is really where the challenge of natural deduction is.
+It's like anything else; keep trying, improving from your mistakes as you go!</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/006S/</fr:uri>
+                    <fr:display-uri>006S</fr:display-uri>
+                    <fr:route>/lectures/006S/</fr:route>
+                    <fr:title text="Implication rules">Implication rules</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        For now, though, let's move on to our remaining connectives.
+        Implication has one introduction rule and one elimination rule:</html:p>
+                    <html:p>
+                      <fr:resource hash="9b9a5c601f91d5b1d20396d149653da3">
+                        <fr:resource-content>
+                          <html:img src="/lectures/9b9a5c601f91d5b1d20396d149653da3.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+            \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+            \noLine
+            \UnaryInfC{\ensuremath{B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+            \DP
+            \hskip 1cm
+            \AxiomC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+            \AxiomC{\ensuremath{A\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{B\vphantom{|}}}
+            \DP    
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>As you can see, the rule <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> involves discharge, and the rule <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex> does not.
+</html:p>
+                    <html:p>        Let's start with the simpler <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>, then.
+        This rule says that whenever you have a proof of an implication, and you also have a proof of its antecedent, then you can put those proofs together with a step of <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>, giving you a proof of the consequent.
+        For example, here is a proof that uses <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>:</html:p>
+                    <html:p>
+                      <fr:resource hash="bc8ecbb959a2c8dfde252ef9efe411ec">
+                        <fr:resource-content>
+                          <html:img src="/lectures/bc8ecbb959a2c8dfde252ef9efe411ec.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{(p \rightarrow  (q \land  t)) \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (q \land  t)\vphantom{|}}}    
+            \AxiomC{\ensuremath{(p \rightarrow  (q \land  t)) \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \UnaryInfC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q \land  t\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \UnaryInfC{\ensuremath{t\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>This proof has the open assumption <fr:tex display="inline"><![CDATA[(p \rightarrow  (q \land  t)) \land  p]]></fr:tex>, and from that draws the conclusion <fr:tex display="inline"><![CDATA[t]]></fr:tex>.
+        Note that, although the proof includes two occurrences of the open assumption <fr:tex display="inline"><![CDATA[(p \rightarrow  (q \land  t)) \land  p]]></fr:tex>, when I'm listing out the open assumptions of the proof I don't bother to list it twice.
+        For our purposes, something is either assumed in a proof or it's not; we're not keeping track of number of occurrences.</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>4</fr:month>
+                          <fr:day>15</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/006T/</fr:uri>
+                        <fr:display-uri>006T</fr:display-uri>
+                        <fr:route>/lectures/006T/</fr:route>
+                        <fr:title text="Substructural logics">Substructural logics</fr:title>
+                        <fr:taxon>Side note</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>
+However, some of the coolest work going in proof theory at the moment works differently here; it is sensitive to the number of occurrences of an open assumption.
+        We won't go into it in these notes, but I can't come this close to the idea without mentioning it; there's too much good stuff over here!
+        If you're interested in learning more, you might start by searching "substructural logic" or "linear logic", or checking out the <fr:link href="https://plato.stanford.edu/entries/logic-substructural/" type="external">Stanford Encyclopedia entry on substructural logic</fr:link>.
+        (This article is by Greg Restall, a well-known Australian logician.
+        Greg was one of the people I was coming to study with when I first came to Australia.
+        Alas, he now lives in Scotland.)
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>        Unlike <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>, <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> is a discharging rule.
+        To see why, it helps to think about implication in a new kind of way.
+        You might recall from earlier that it's difficult to give what seems like a good truth table for implication.
+        But now that we're working with proofs, we don't actually need to say anything about truth values at all in order to give meaning to our connectives.
+        This gives us a different kind of way to explore the meaning of a connective like implication.
+</html:p>
+                    <html:p>        An influential theory of implication holds that an implication like <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> has the same kind of meaning as a <html:em>proof</html:em> of <fr:tex display="inline"><![CDATA[q]]></fr:tex> that assumes <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        On this kind of theory, to believe <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> is to believe in some path of reasoning that can take you from <fr:tex display="inline"><![CDATA[p]]></fr:tex> to <fr:tex display="inline"><![CDATA[q]]></fr:tex>.</html:p>
+                    <html:p>This kind of theory of "if...then" sentences has been around for a while, but nowadays is gaining new life by connecting up to cognitive science pretty directly.
+        Interesting work in this direction is being done by a number of researchers.
+        One particularly excellent researcher in this area is Karolina Krzyżanowska; if you're interested I'd encourage you to check out some of the papers on her website: <fr:link href="http://karolinakrzyzanowska.com/" type="external">http://karolinakrzyzanowska.com</fr:link>.</html:p>
+                    <html:p>        It's this kind of theory of implication that's encoded in our rules.
+        For the rule <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>, look at it this way: if we have a proof of <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex>, then that licenses us to reason from <fr:tex display="inline"><![CDATA[p]]></fr:tex> to <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+        So if we also have a proof of <fr:tex display="inline"><![CDATA[p]]></fr:tex>, then we can combine the proofs we have to get a proof of <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+        For the rule <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, look at it this way: what it should take to prove <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> is to produce a proof of <fr:tex display="inline"><![CDATA[q]]></fr:tex> from the assumption <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        In this process, you take <fr:tex display="inline"><![CDATA[p]]></fr:tex> for granted in the course of the proof of <fr:tex display="inline"><![CDATA[q]]></fr:tex>; but once you produce that proof, your final conclusion is not <fr:tex display="inline"><![CDATA[q]]></fr:tex> itself, but just that <fr:tex display="inline"><![CDATA[p]]></fr:tex> implies <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+        As you don't any longer assume <fr:tex display="inline"><![CDATA[p]]></fr:tex> when you draw this final conclusion, you can discharge the assumption.
+        There are other ways we might encode a theory like this into proof rules; but this is at least one standard way to do so.
+</html:p>
+                    <html:p>        That, anyway, is the kind of view of implication that lies behind these rules: thinking of implication as recording in a single sentence the same kind of connection between distinct sentences that we build up in the course of a proof.
+        So, for example, we can have a proof that uses <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> like so:</html:p>
+                    <html:p>
+                      <fr:resource hash="46f661ac8c0554a3484b9a328fbb026a">
+                        <fr:resource-content>
+                          <html:img src="/lectures/46f661ac8c0554a3484b9a328fbb026a.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[p \land  q]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{(p \land  q) \rightarrow  p\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>
+        This proof is the first example we've seen of a proof with <html:em>no</html:em> open assumptions.
+        The total proof takes nothing at all for granted, and still produces a proof of <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  p]]></fr:tex>.</html:p>
+                    <html:p>Of course, when I say it takes nothing for granted, I'm not taking account of the rules themselves!
+        These might seem to come from nowhere, and there's definitely an important sense in which we've been taking them for granted as well.
+        Changing the rules gives us different proof systems.
+        So when I say we're taking nothing for granted in this proof, I mean <html:em>within the current proof system</html:em>.
+        Like any other aspect of logic, though, we're always free to choose or build a different system!</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/006U/</fr:uri>
+                    <fr:display-uri>006U</fr:display-uri>
+                    <fr:route>/lectures/006U/</fr:route>
+                    <fr:title text="Falsum rule">Falsum rule</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>      Let's turn now to <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+        Recall that this is meant to mean like THE FALSEST THING POSSIBLE: MAXIMUM FALSE.
+</html:p>
+                    <html:p>        Although we didn't spend much time focussed on it while we were working with structures and valuations, it's pretty simple to handle in that kind of setting: since <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is a nullary connective, each structure must assign a value to <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, and then <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> takes that value in every valuation on that structure.
+        To give <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> its intended meaning within a structure, we just need to choose some falsey value within that structure.
+</html:p>
+                    <html:p>        When it comes to proofs, though, things are a bit more delicate.
+        The reason is that proofs, at least as we're dealing with them here, aren't really about ruling anything <html:em>out</html:em>.
+        They're instead focused on demonstrating that something <html:em>does</html:em> hold, or assuming it.
+        There's not a lot negative about our proofs: they're pretty relentlessly positive.
+        So how, in this kind of setting, can we give rules to make <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> into MAXIMUM FALSE?
+</html:p>
+                    <html:p>        The method NJ uses is twofold, involving (as usual) introduction and elimination rules.
+        It's particularly simple on the introduction side: <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> simply has no introduction rules at all.
+        What would it take to prove <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>?
+        It's so false that it can't be done.
+</html:p>
+                    <html:p>        The flip side of this is the elimination rule:</html:p>
+                    <html:p>
+                      <fr:resource hash="369844411cd6dff7937135c78d77588c">
+                        <fr:resource-content>
+                          <html:img src="/lectures/369844411cd6dff7937135c78d77588c.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{A\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>
+        Remember, <fr:tex display="inline"><![CDATA[A]]></fr:tex> can be any sentence at all.
+        So this elimination rule says that <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is so false that if we ever did have a proof of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, fuck it, we might as well have a proof of anything at all.
+        And indeed we can extend any proof of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> to a proof of anything at all via this rule.
+</html:p>
+                    <html:p>        Now, you might wonder, if <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> has no introduction rule at all, can we ever be in a position to apply its elimination rule?
+        And the answer, maybe surprisingly, is yes!
+        The reason is that we can assume any sentence we like.
+        Since <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is a sentence, we can assume it.
+        It also occurs in more complex sentences, and we can assume those as well, or even prove some of them.
+        So here is a proof using <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>:</html:p>
+                    <html:p>
+                      <fr:resource hash="b77f744c6cec1fae7be12c0b418ca6df">
+                        <fr:resource-content>
+                          <html:img src="/lectures/b77f744c6cec1fae7be12c0b418ca6df.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[\bot ]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{p \land  (q \lor  r)\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \UnaryInfC{\ensuremath{q \lor  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{\bot  \rightarrow  (q \lor  r)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>
+        Overall, this proof has no open assumptions; the assumption of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is discharged at the last step.
+        But it still uses the rule <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>; the <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> came into the proof via assumption.
+</html:p>
+                    <html:p>        Here's another example proof using <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>:</html:p>
+                    <html:p>
+                      <fr:resource hash="6798267d318ed84060c0cef961c747b5">
+                        <fr:resource-content>
+                          <html:img src="/lectures/6798267d318ed84060c0cef961c747b5.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{(q \land  r) \rightarrow  \bot \vphantom{|}}}
+            \AxiomC{\ensuremath{q\vphantom{|}}}
+            \AxiomC{\ensuremath{r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{q \land  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{(s \rightarrow  t) \land  ((p \lor  \neg  q) \land  \neg  (r \rightarrow  s))\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>
+        Here, there is no assumption of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> directly anywhere in the proof, not even a discharged one.
+        Instead, there is an (open) assumption of <fr:tex display="inline"><![CDATA[(q \land  r) \rightarrow  \bot ]]></fr:tex>; that's how <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> got in to this proof.
+        Note as well that <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex> allows us to conclude any sentence at all; since <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is a sentence, that includes <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> itself, as this proof shows!
+</html:p>
+                    <html:p>        And for one more example, here is a third example proof using <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>:</html:p>
+                    <html:p>
+                      <fr:resource hash="8c1c5b14750a19eb7724ea1a36853354">
+                        <fr:resource-content>
+                          <html:img src="/lectures/8c1c5b14750a19eb7724ea1a36853354.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+          \AxiomC{\ensuremath{p\vphantom{|}}}
+          \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+          \UnaryInfC{\ensuremath{p \lor  \bot \vphantom{|}}}
+          \AxiomC{\ensuremath{[p]^{1}\vphantom{|}}}
+          \AxiomC{\ensuremath{[\bot ]^{1}\vphantom{|}}}
+          \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+          \UnaryInfC{\ensuremath{p\vphantom{|}}}
+          \LeftLabel{\ensuremath{\scriptsize  \lor  E^{1}:\quad }}
+          \TrinaryInfC{\ensuremath{p\vphantom{|}}}
+          \DP
+          ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>
+        Here <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> doesn't occur in any open assumption at all; it's rather part of the internal workings of the proof.
+</html:p>
+                    <html:p>        So even though there's no introduction rule for <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, it can still end up in our proofs, because of how assumptions work.
+        Since assumptions are totally unconstrained, they can bring <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> in, either directly, or as part of a more complex assumption; and there are times when <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> can come into a proof without figuring in any assumption.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/006V/</fr:uri>
+                    <fr:display-uri>006V</fr:display-uri>
+                    <fr:route>/lectures/006V/</fr:route>
+                    <fr:title text="Verum rule">Verum rule</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>When it comes to verum, things are simpler.
+Remember that <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> is meant to mean MAXIMUM TRUE: THE TRUEST THING.
+So it should be very <html:em>easy</html:em> to prove.
+And indeed it is, via its introduction rule:</html:p>
+                    <html:p>
+                      <fr:resource hash="cdb6057c70d96542095ce27641d7c422">
+                        <fr:resource-content>
+                          <html:img src="/lectures/cdb6057c70d96542095ce27641d7c422.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\vphantom{\top }\vphantom{|}}}\LeftLabel{\ensuremath{\scriptsize  \top  I:\quad }}\UnaryInfC{\ensuremath{\top \vphantom{|}}}\DP]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>Note that there is <html:em>nothing</html:em> above the line here; an application of <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex> counts as a proof of <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> from <html:em>no</html:em> assumptions at all.
+It's just directly a proof in its own right.
+So this rule gives us another way to start a proof, besides assuming a sentence.
+(So far, though, those are the only two ways we can begin; all our other rules only build up bigger proofs from already-existing ones.)</html:p>
+                    <html:p>And just like <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> has no introduction rule, <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> has no elimination rule.
+The idea is something like this: <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> is just so stinking true that <html:em>knowing</html:em> that it's true gives you no information at all.
+Thus, it doesn't allow you to go on to conclude anything in particular.</html:p>
+                    <html:p>You can still continue a proof past a use of <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>; you just have to do it with some other rule.
+For example, here is a proof:</html:p>
+                    <html:p>
+                      <fr:resource hash="6813bfff492861b280d03a4d5bbe3faf">
+                        <fr:resource-content>
+                          <html:img src="/lectures/6813bfff492861b280d03a4d5bbe3faf.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{\top  \rightarrow  q\vphantom{|}}}
+\AxiomC{\ensuremath{\vphantom{\top }\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \top  I:\quad }}
+\UnaryInfC{\ensuremath{\top \vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\BinaryInfC{\ensuremath{q\vphantom{q \lor  r}\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+\UnaryInfC{\ensuremath{\bot  \lor  q\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/006W/</fr:uri>
+                    <fr:display-uri>006W</fr:display-uri>
+                    <fr:route>/lectures/006W/</fr:route>
+                    <fr:title text="Negation rules">Negation rules</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        The last connective to look at is negation.
+        Negation is the reason that <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is so important in NJ.
+        Negation, after all, presents the same kind of problem as <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> did: how can we say that something is <html:em>not</html:em> the case, when our proofs are all about assuming or demonstrating what <html:em>is</html:em> the case?
+        We saw above how NJ handles that issue in the case of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+        In the case of <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>, NJ simply reuses that same solution, deferring everything back to <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> itself.
+</html:p>
+                    <html:p>        Here, then, are the rules for negation:</html:p>
+                    <html:p>
+                      <fr:resource hash="63cfb5fb77f4dec01b2a973fa1cbc2e4">
+                        <fr:resource-content>
+                          <html:img src="/lectures/63cfb5fb77f4dec01b2a973fa1cbc2e4.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+            \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+            \noLine
+            \UnaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  I^n:\quad }}
+            \UnaryInfC{\ensuremath{\neg  A\vphantom{|}}}
+            \DP
+            \hskip 2cm
+            \AxiomC{\ensuremath{\neg  A\vphantom{|}}}
+            \AxiomC{\ensuremath{A\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+            \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>
+        Both of these rules involve <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+        You can see <fr:tex display="inline"><![CDATA[\neg  I]]></fr:tex> as saying that, if from the assumption of <fr:tex display="inline"><![CDATA[A]]></fr:tex> we can prove our way to <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>, then <fr:tex display="inline"><![CDATA[A]]></fr:tex> itself must be false, so we can discharge the assumption and conclude <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex>.
+        And you can see <fr:tex display="inline"><![CDATA[\neg  E]]></fr:tex> as saying that any contradiction suffices for MAXIMUM FALSE: if we have proofs of both <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> and <fr:tex display="inline"><![CDATA[A]]></fr:tex>, then we can put them together via <fr:tex display="inline"><![CDATA[\neg  E]]></fr:tex> to get a proof of <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+        (So this gives us yet another way <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> can get into proofs.)</html:p>
+                    <html:p>        Consider, for example, the following line of reasoning, inspired by Zeno of Elea, as an argument against the possibility of motion.
+Nowadays this is sometimes called one of Zeno's "paradoxes", but it appears that in its original use it was not meant to be a paradox, but simply a straightforward argument for the conclusion that nothing moves.
+        Zeno was a follower of Parmenides, and like Parmenides held that everything is one, and does not change.
+        Since motion is a kind of change, this includes denying the existence of motion.</html:p>
+                    <html:p>        
+            Suppose someone, call them Mo, has moved some distance <fr:tex display="inline"><![CDATA[D]]></fr:tex>.
+            Before Mo could move the full distance <fr:tex display="inline"><![CDATA[D]]></fr:tex>, they must first have moved a distance of <fr:tex display="inline"><![CDATA[D/2]]></fr:tex>.
+            And before they could have done that, they must first have moved a distance of <fr:tex display="inline"><![CDATA[D/4]]></fr:tex>.
+            Before they could have done that, however, they must first have moved a distance of <fr:tex display="inline"><![CDATA[D/8]]></fr:tex>.
+            And so on, all the way to infinity.
+            So Mo must have moved an infinite number of distances.
+            But this is impossible: nobody could move an infinite number of distances.
+            So the supposition must have been wrong: Mo didn't really move any distance <fr:tex display="inline"><![CDATA[D]]></fr:tex> at all.
+</html:p>
+                    <html:p>        Some of this reasoning we don't have the power to capture in NJ.
+        In particular, the reasoning that turns on "And so on, all the way to infinity" doesn't seem to nicely fit into the resources we have available.
+        But we can still fit the overall shape of this reasoning, in its broad outlines, into NJ.
+        Consider, for example, the following proof:</html:p>
+                    <html:p>
+                      <fr:resource hash="d787ecf67ed2575c7338c55a8aa6b1b2">
+                        <fr:resource-content>
+                          <html:img src="/lectures/d787ecf67ed2575c7338c55a8aa6b1b2.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{\neg  i\vphantom{|}}}
+            \AxiomC{\ensuremath{m \rightarrow  i\vphantom{|}}}
+            \AxiomC{\ensuremath{[m]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{i\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+            \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  I^1:\quad }}
+            \UnaryInfC{\ensuremath{\neg  m\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>        To see the structure of the Zenoish argument reflected in this proof, think of <fr:tex display="inline"><![CDATA[m]]></fr:tex> as the claim that Mo moved distance <fr:tex display="inline"><![CDATA[D]]></fr:tex>, and <fr:tex display="inline"><![CDATA[i]]></fr:tex> as the claim that Mo moved an infinite number of distances.
+        Then the proof takes two things for granted: that Mo's having moved distance <fr:tex display="inline"><![CDATA[D]]></fr:tex> implies Mo having moved an infinite number of distances, and that Mo didn't move an infinite number of distances.
+        From these assumptions, the proof concludes that Mo didn't move distance <fr:tex display="inline"><![CDATA[D]]></fr:tex>.
+        The shape of the proof roughly aligns with the reasoning in the passage: the main difference is that the prose passage gives us some reason to believe <fr:tex display="inline"><![CDATA[m \rightarrow  i]]></fr:tex>, where the proof just takes it for granted.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/006X/</fr:uri>
+                <fr:display-uri>006X</fr:display-uri>
+                <fr:route>/lectures/006X/</fr:route>
+                <fr:title text="Managing discharges">Managing discharges</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>    That, then, is our full proof system NJ.   
+    Getting comfortable with when and where you can discharge assumptions is probably the trickiest part about natural deduction, but it's also what gives natural deduction its power.
+    The best way for you to get the hang of it is simple, if not necessarily easy: practice making proofs!
+    You have a number of exercises at <fr:link href="https://binchicken.one/" type="external">https://binchicken.one</fr:link> that involve you in constructing proofs, so you will get plenty of practice.</html:p>
+                <html:p>Another website to check out: <fr:link href="https://incredible.pm/" type="external">https://incredible.pm</fr:link> is a website with a very nice interface for building up natural deduction proofs.
+    The proofs there don't look like our proofs here; they're scattered and involve connecting up wires.
+    But deep down they really are just the same, and practice there will give you important perspective on how to think about proofs in general and discharging assumptions in particular.</html:p>
+                <html:p>    In this section, I'm going to include a number of examples of correct proofs and incorrect proofs involving discharges, to help give you a clearer idea about how they work.
+    When you find yourself with a question about what you can or can't do with discharges in a proof, come back to these examples and have a look; it may be that there's an example here that answers your question!
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/006Y/</fr:uri>
+                    <fr:display-uri>006Y</fr:display-uri>
+                    <fr:route>/lectures/006Y/</fr:route>
+                    <fr:title text="Correct proof: extra assumptions, multiple discharge">Correct proof: extra assumptions, multiple discharge</fr:title>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+                      <fr:resource hash="8f738b694af34985853fa0fc106c522a">
+                        <fr:resource-content>
+                          <html:img src="/lectures/8f738b694af34985853fa0fc106c522a.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+                    \AxiomC{\ensuremath{[p \rightarrow  ((p \land  r) \rightarrow  q)]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}    
+                \BinaryInfC{\ensuremath{(p \land  r) \rightarrow  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \AxiomC{\ensuremath{r\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{(p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>        This proof demonstrates a few things about discharge.
+        First, note the presence of the open assumption <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        This doesn't interfere with the discharge steps at all; indeed, it doesn't interact in any way with them.
+        Discharging <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[p \rightarrow  ((p \land  r) \rightarrow  q)]]></fr:tex> both go ahead just fine, even though there is another open assumption hanging around.
+        Discharges work like this in general: whether you're allowed to discharge a sentence never depends on what other sentences you have as open assumptions.
+</html:p>
+                    <html:p>        Second, note that at the step marked <fr:tex display="inline"><![CDATA[^2]]></fr:tex> this proof discharges <html:em>two</html:em> instances of the assumption <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        That's fine: when you're allowed to discharge a sentence, you're allowed to discharge any number of copies of that sentence.
+        (This is another case where doing things differently would lead us into the fascinating world of <fr:link href="/lectures/006T/" title="Substructural logics" uri="https://negation.rocks/lectures/006T/" display-uri="006T" type="local">substructural logics</fr:link>.)   </html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/006Z/</fr:uri>
+                    <fr:display-uri>006Z</fr:display-uri>
+                    <fr:route>/lectures/006Z/</fr:route>
+                    <fr:title text="Correct proof: vacuous discharge">Correct proof: vacuous discharge</fr:title>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+                      <fr:resource hash="f6b61dc28cd50c5f9f99d1fa067002ae">
+                        <fr:resource-content>
+                          <html:img src="/lectures/f6b61dc28cd50c5f9f99d1fa067002ae.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (q \rightarrow  p)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>        This proof includes two occurrences of the discharge rule <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>.
+        These are labeled appropriately with numbers, as all occurrences of discharge rules must be.
+        Note, however, that they don't actually discharge anything!
+</html:p>
+                    <html:p>        Recall that logicians tend to be a cheeky bunch, and revisit this phrase from the last example: "when you're allowed to discharge a sentence, you're allowed to discharge any number of copies of that sentence".
+        Well, "any number" here includes zero!
+</html:p>
+                    <html:p>        In the above proof, the step labeled <fr:tex display="inline"><![CDATA[^1]]></fr:tex> discharges zero occurrences of the assumption <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and the step labeled <fr:tex display="inline"><![CDATA[^2]]></fr:tex> discharges zero occurrences of the assumption <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        (You can tell that it's <fr:tex display="inline"><![CDATA[q]]></fr:tex> and <fr:tex display="inline"><![CDATA[p]]></fr:tex>, respectively, because of the antecedents of the introduced implications.)
+        Note too that <fr:tex display="inline"><![CDATA[^2]]></fr:tex> has discharged zero occurrences of <fr:tex display="inline"><![CDATA[p]]></fr:tex> even though the proof actually has an occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> available to discharge.
+        That's fine; nothing says that you must discharge everything you can.
+        So the above example proof still has <fr:tex display="inline"><![CDATA[p]]></fr:tex> as an open assumption.
+</html:p>
+                    <html:p>        For contrast, consider the following proof:</html:p>
+                    <html:p>
+                      <fr:resource hash="6b0dbf0750ec59076b5cefe784be000a">
+                        <fr:resource-content>
+                          <html:img src="/lectures/6b0dbf0750ec59076b5cefe784be000a.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (q \rightarrow  p)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>
+        This second proof does discharge the assumption <fr:tex display="inline"><![CDATA[p]]></fr:tex> at the step marked <fr:tex display="inline"><![CDATA[^2]]></fr:tex>, and so has no open assumptions.
+        Again, it discharges zero occurrences of <fr:tex display="inline"><![CDATA[q]]></fr:tex> at the step marked <fr:tex display="inline"><![CDATA[^1]]></fr:tex>.
+        Both of these are fine proofs.
+        They are, however, two different proofs, and the difference between them is important.
+</html:p>
+                    <html:p>        Note that, in both of these, I've given a numeric discharge label to every step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, even when these steps don't discharge anything.
+        Every discharge rule must always have a label: one way we see that these rules aren't discharging anything is by seeing that there are no discharged assumptions with matching labels.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0070/</fr:uri>
+                    <fr:display-uri>0070</fr:display-uri>
+                    <fr:route>/lectures/0070/</fr:route>
+                    <fr:title text="Correct proof: interweaving discharges, choosing occurrences to discharge">Correct proof: interweaving discharges, choosing occurrences to discharge</fr:title>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+                      <fr:resource hash="efc2e3b2b0dcdd2bd41497e605319e9e">
+                        <fr:resource-content>
+                          <html:img src="/lectures/efc2e3b2b0dcdd2bd41497e605319e9e.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+                \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                    \AxiomC{\ensuremath{p\vphantom{|}}}
+                    \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+                    \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
+            \DP
+  ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>
+        Each of the discharge rules in this proof discharges only some of what it could.
+        
+        Consider the state of the proof when it reaches the step <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex><fr:tex display="inline"><![CDATA[^1]]></fr:tex>.
+        Before we decide exactly how to discharge <fr:tex display="inline"><![CDATA[p]]></fr:tex> with this rule, we're looking at something like this:</html:p>
+                    <html:p>
+                      <fr:resource hash="611d83ec591eb5892b15d332e4eae841">
+                        <fr:resource-content>
+                          <html:img src="/lectures/611d83ec591eb5892b15d332e4eae841.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{p^\star \vphantom{|}}}
+                    \AxiomC{\ensuremath{p^\dagger \vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                    \AxiomC{\ensuremath{p^\ddagger \vphantom{|}}}
+                    \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+                    \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>        Here, I've marked the three open assumptions of <fr:tex display="inline"><![CDATA[p]]></fr:tex> with the symbols <fr:tex display="inline"><![CDATA[\star , \dagger , \ddagger ]]></fr:tex> for reference.
+        Since we can choose whether or not to discharge anything available for discharge, we have some options: we can choose to discharge both <fr:tex display="inline"><![CDATA[\star ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\dagger ]]></fr:tex>, one of those but not the other, or neither.
+</html:p>
+                    <html:p>        We don't have total freedom here, though.
+        Even if we wanted to, we could not discharge <fr:tex display="inline"><![CDATA[\ddagger ]]></fr:tex>.
+        The reason is that the rule of <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> is specific about where we can discharge: when we're eliminating a disjunction, we can discharge its left component in the left subproof and its right component in the right subproof.
+        So we cannot choose to discharge the <fr:tex display="inline"><![CDATA[\ddagger ]]></fr:tex> occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> at this step.
+        The others, though, are fair game.
+        (I've assumed we're going to discharge the <fr:tex display="inline"><![CDATA[q]]></fr:tex> at this stage, although that too is optional.)
+</html:p>
+                    <html:p>        In the example proof, I chose to discharge just the <fr:tex display="inline"><![CDATA[\star ]]></fr:tex> occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> at this step, leaving the <fr:tex display="inline"><![CDATA[\dagger ]]></fr:tex> occurrence open.
+        Later in the proof, we reach the step labeled <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex><fr:tex display="inline"><![CDATA[^2]]></fr:tex>, and again face a choice about what to discharge.
+        Here, both the open assumptions <fr:tex display="inline"><![CDATA[\dagger ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\ddagger ]]></fr:tex> are fair game; I chose to discharge the <fr:tex display="inline"><![CDATA[\dagger ]]></fr:tex> one only.
+</html:p>
+                    <html:p>        So you can pick and choose which occurrences of an assumption to discharge, and even if you choose to leave an assumption open at one stage in building a proof, you can discharge that assumption later on.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0071/</fr:uri>
+                    <fr:display-uri>0071</fr:display-uri>
+                    <fr:route>/lectures/0071/</fr:route>
+                    <fr:title text="Incorrect proof: clashing and missing discharge labels">Incorrect proof: clashing and missing discharge labels</fr:title>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        Since that last example proof was a bit complex, I'm going to make most of the examples of incorrect proof by varying it as little as possible, to give more of a sense of what's vital about it.
+</html:p>
+                    <html:p>
+                      <html:p>
+                        <html:strong>THIS IS NOT A PROOF:</html:strong>
+                      </html:p>
+                      <html:p>
+                        <fr:resource hash="29d50ca7732690a374db597ebca0e36b">
+                          <fr:resource-content>
+                            <html:img src="/lectures/29d50ca7732690a374db597ebca0e36b.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[
+                \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                    \AxiomC{\ensuremath{p\vphantom{|}}}
+                    \AxiomC{\ensuremath{[q \rightarrow  p]\vphantom{|}}}
+                    \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I:\quad }}
+            \UnaryInfC{\ensuremath{(q \rightarrow  p) \rightarrow  (p \rightarrow  (p \land  p))\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                        </fr:resource>
+                      </html:p>
+                    </html:p>
+                    <html:p>
+        One thing that's gone wrong here: both the step of <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> and one step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> have the same label <fr:tex display="inline"><![CDATA[^1]]></fr:tex>.
+        That means that we can't tell, when a discharged assumption is labeled <fr:tex display="inline"><![CDATA[1]]></fr:tex>, where it was meant to be discharged.
+        In this case, either one could be fine---but that's not enough.
+        There must be, for every discharged assumption, a unique place it was discharged.
+        So every discharge rule needs its own label; labels can't be reused in this way.
+</html:p>
+                    <html:p>        Another thing that's gone wrong here: both the final <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> and one of the discharged assumptions lack numeric labels altogether.
+        Every discharge rule must have a label, however, and every discharged assumption must have one as well.
+        So this is no good.
+        In this case, just providing matching labels to these would be enough; the rule is almost applied correctly.
+        It just needs to be labeled correctly as well.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0072/</fr:uri>
+                    <fr:display-uri>0072</fr:display-uri>
+                    <fr:route>/lectures/0072/</fr:route>
+                    <fr:title text="Incorrect proof: discharging a non-assumption">Incorrect proof: discharging a non-assumption</fr:title>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+                      <html:p>
+                        <html:strong>THIS IS NOT A PROOF:</html:strong>
+                      </html:p>
+                      <html:p>
+                        <fr:resource hash="c85ecab3a3741dc1f0f3e8ff4b599108">
+                          <fr:resource-content>
+                            <html:img src="/lectures/c85ecab3a3741dc1f0f3e8ff4b599108.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                \AxiomC{\ensuremath{q \land  p\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+                \UnaryInfC{\ensuremath{[p]^1\vphantom{|}}}
+                \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                \AxiomC{\ensuremath{p\vphantom{|}}}
+                \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+                \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+        \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+        \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
+        \DP
+        ]]></fr:resource-source>
+                        </fr:resource>
+                      </html:p>
+                    </html:p>
+                    <html:p>        This non-proof attempts to discharge an occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> that isn't an open assumption, because it's not an assumption at all!
+        That's no good; the only things we can discharge are assumptions.
+</html:p>
+                    <html:p>        Once you know what you're looking for, this is an easy kind of mistake to spot.
+        No correct proof will ever have square brackets in the middle like this.
+        All discharged assumptions must be assumptions, and so there won't be any proof work above them.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0073/</fr:uri>
+                    <fr:display-uri>0073</fr:display-uri>
+                    <fr:route>/lectures/0073/</fr:route>
+                    <fr:title text="Incorrect proof: discharging from the wrong place">Incorrect proof: discharging from the wrong place</fr:title>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+                      <html:p>
+                        <html:strong>THIS IS NOT A PROOF:</html:strong>
+                      </html:p>
+                      <html:p>
+                        <fr:resource hash="141b08ecf47cb876f7b4887f19b57787">
+                          <fr:resource-content>
+                            <html:img src="/lectures/141b08ecf47cb876f7b4887f19b57787.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+                \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+        \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+        \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
+        \DP
+        ]]></fr:resource-source>
+                        </fr:resource>
+                      </html:p>
+                    </html:p>
+                    <html:p>        This is not a proof because it hasn't correctly handled the <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> discharge.
+        The rule <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> allows for discharges in two of its subproofs, but not willy-nilly: the left component of the disjunction being eliminated can only be discharged in the left subproof, and the right component only in the right subproof.
+        In this case, we have an occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> being discharged in the right subproof; since <fr:tex display="inline"><![CDATA[p]]></fr:tex> isn't the right component of the eliminated disjunction, that's not allowed.
+</html:p>
+                    <html:p>        Here's a simpler example of the same kind of problem:
+</html:p>
+                    <html:p>
+                      <html:strong>THIS IS NOT A PROOF:</html:strong>
+                    </html:p>
+                    <html:p>
+                      <fr:resource hash="c6325a0ee5a595941b3a3b2f16c26bc6">
+                        <fr:resource-content>
+                          <html:img src="/lectures/c6325a0ee5a595941b3a3b2f16c26bc6.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>        Here, the step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> tries to discharge an occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> that isn't allowed.
+        The reason is that <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, like every other rule, can only act on what happens <html:em>above</html:em> it in the proof.
+        Here, it can only act on the assumption of <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+        The assumption of <fr:tex display="inline"><![CDATA[p]]></fr:tex> isn't in view.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0074/</fr:uri>
+                    <fr:display-uri>0074</fr:display-uri>
+                    <fr:route>/lectures/0074/</fr:route>
+                    <fr:title text="Incorrect proof: discharging the wrong sentence">Incorrect proof: discharging the wrong sentence</fr:title>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        Finally, here's a quick variation on that last one.
+</html:p>
+                    <html:p>
+                      <html:p>
+                        <html:strong>THIS IS NOT A PROOF:</html:strong>
+                      </html:p>
+                      <html:p>
+                        <fr:resource hash="29c8e9d6a98f8b80034f3fae86dbce16">
+                          <fr:resource-content>
+                            <html:img src="/lectures/29c8e9d6a98f8b80034f3fae86dbce16.svg" />
+                          </fr:resource-content>
+                          <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                          <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \AxiomC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                        </fr:resource>
+                      </html:p>
+                    </html:p>
+                    <html:p>        Here, the discharged <fr:tex display="inline"><![CDATA[q]]></fr:tex> is in a fine location to be discharged by the <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>; that's not the problem.
+        The problem is that <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> has to follow a strict pattern: the consequent of the introduced implication must be the sentence immediately above the <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, and only the antecedent of the introduced implication can be discharged.
+        This case meets the first restriction, since <fr:tex display="inline"><![CDATA[q]]></fr:tex> is the sentence immediately before the <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, and <fr:tex display="inline"><![CDATA[q]]></fr:tex> is the consequent of the introduced implication.
+        But this case does not meet the second restriction: since <fr:tex display="inline"><![CDATA[p]]></fr:tex> is the antecedent of the introduced implication, only <fr:tex display="inline"><![CDATA[p]]></fr:tex> can be discharged by this step.
+        Discharging <fr:tex display="inline"><![CDATA[q]]></fr:tex> instead doesn't work.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>        I hope these examples help give you some idea about how discharge works in NJ.
+Practice is the best way forwards from here!
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0075/</fr:uri>
+                <fr:display-uri>0075</fr:display-uri>
+                <fr:route>/lectures/0075/</fr:route>
+                <fr:title text="Two variations">Two variations</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>    Finally, I'll close by telling you about two simple variations on this proof system.
+    NJ itself will form the main proof system we look at, but it'll be handy to know about these two variations as well.
+</html:p>
+                <html:p>    The first variation is called NM.
+    It's very simple: it's exactly the same as NJ, except that it doesn't include the rule <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>.
+    The connective <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is still present in the language.
+    In NM, this connective has no rules of any sort associated with it.
+    Everything else is just the same as in NJ.
+    So any proof you make in NJ, if it happens not to use the rule <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>, is also a proof in NM.
+    And every proof in NM is itself a proof in NJ directly.
+</html:p>
+                <html:p>    The second variation is called NK.
+    Instead of taking away from NJ, as NM does, the system NK adds to it.
+    In particular, NK includes every rule of NJ, plus also the following rule:</html:p>
+                <html:p>
+                  <fr:resource hash="e8866093b9a6a2000f895a55566dbd0a">
+                    <fr:resource-content>
+                      <html:img src="/lectures/e8866093b9a6a2000f895a55566dbd0a.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+        \AxiomC{\ensuremath{\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  LEM:\quad }}
+        \UnaryInfC{\ensuremath{A \lor  \neg  A\vphantom{|}}}
+        \DP
+        ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>
+    This rule is called "LEM" for the Law of Excluded Middle.
+    It allows us to prove any sentence of the form <fr:tex display="inline"><![CDATA[A \lor  \neg  A]]></fr:tex>, out of nowhere, anywhere we like in a proof.
+    It's kind of like a specialized rule of assumption, except that it does not involve any open assumptions.
+    It counts as an outright proof of such sentences; like <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>, it creates a new proof from nothing.
+</html:p>
+                <html:p>    For example, here is a proof in NK that is not also a proof in NJ:
+</html:p>
+                <html:p>
+                  <fr:resource hash="a0459f0025727fd766f6f7e28b37288e">
+                    <fr:resource-content>
+                      <html:img src="/lectures/a0459f0025727fd766f6f7e28b37288e.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  LEM:\quad }}
+        \UnaryInfC{\ensuremath{q \lor  \neg  q\vphantom{|}}}
+                \AxiomC{\ensuremath{\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  LEM:\quad }}
+            \UnaryInfC{\ensuremath{p \lor  \neg  p\vphantom{|}}}
+                    \AxiomC{\ensuremath{(p \land  q) \rightarrow  r\vphantom{|}}}
+                        \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                        \AxiomC{\ensuremath{[q]^5\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                    \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                \BinaryInfC{\ensuremath{r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^3:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  r\vphantom{|}}}
+                \AxiomC{\ensuremath{[\neg  p]^2\vphantom{|}}}
+                \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+            \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^2:\quad }}
+            \TrinaryInfC{\ensuremath{p \rightarrow  r\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+        \UnaryInfC{\ensuremath{(p \rightarrow  r) \lor  (q \rightarrow  r)\vphantom{|}}}
+            \AxiomC{\ensuremath{[\neg  q]^5\vphantom{|}}}
+            \AxiomC{\ensuremath{[q]^4\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+            \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+            \UnaryInfC{\ensuremath{r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^4:\quad }}
+            \UnaryInfC{\ensuremath{q \rightarrow  r\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+        \UnaryInfC{\ensuremath{(p \rightarrow  r) \lor  (q \rightarrow  r)\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  E^5:\quad }}
+        \TrinaryInfC{\ensuremath{(p \rightarrow  r) \lor  (q \rightarrow  r)\vphantom{|}}}
+        \DP]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>        This is a proof of <fr:tex display="inline"><![CDATA[(p \rightarrow  r) \lor  (q \rightarrow  r)]]></fr:tex>, with the sole open assumption <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  r]]></fr:tex>.
+    We'll think next time about the relation between proof systems and logics.
+    It will emerge there that NJ, NM, and NK all determine different logics from each other.
+    Two of these logics are new to us: NJ determines a logic called "intuitionistic logic", and NM one called "minimal logic".
+    But NK determines a logic we've already met in our earlier lectures.
+    More on this next time!</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0076/</fr:uri>
+                <fr:display-uri>0076</fr:display-uri>
+                <fr:route>/lectures/0076/</fr:route>
+                <fr:title text="Summing up">Summing up</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>This time, we learned about proofs in the natural deduction system NJ, as well as two close relative systems NM and NK.</html:p>
+                <html:p>Proofs are made up of rules, and you can use whatever rules you like to build a proof, so long as the rules are used correctly.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors>

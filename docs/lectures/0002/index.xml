@@ -319,7 +319,7 @@ Here is a sample of the kinds of things we'll be looking for in each of these as
     <html:li><fr:link href="/lectures/0053/" title="Lecture 6: Using matrices to compare logics" uri="https://negation.rocks/lectures/0053/" display-uri="0053" type="local">Lecture 6: Using matrices to compare logics</fr:link></html:li>
     <html:li><fr:link href="/lectures/005Y/" title="Lecture 7: The limits of matrices" uri="https://negation.rocks/lectures/005Y/" display-uri="005Y" type="local">Lecture 7: The limits of matrices</fr:link></html:li></html:ul></html:li>
   <html:li>Section C: Exploring intuitionistic logic
-  <html:ul><html:li>Lecture 8: Natural deduction</html:li>
+  <html:ul><html:li><fr:link href="/lectures/006M/" title="Lecture 8: Natural deduction" uri="https://negation.rocks/lectures/006M/" display-uri="006M" type="local">Lecture 8: Natural deduction</fr:link></html:li>
     <html:li>Lecture 9: Intuitionistic logic</html:li>
     <html:li>Lecture 10: Intuitionistic models</html:li>
     <html:li>Lecture 11: Harmony</html:li></html:ul></html:li>

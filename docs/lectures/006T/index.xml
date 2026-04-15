@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>15</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/006T/</fr:uri>
+    <fr:display-uri>006T</fr:display-uri>
+    <fr:route>/lectures/006T/</fr:route>
+    <fr:title text="Substructural logics">Substructural logics</fr:title>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+However, some of the coolest work going in proof theory at the moment works differently here; it is sensitive to the number of occurrences of an open assumption.
+        We won't go into it in these notes, but I can't come this close to the idea without mentioning it; there's too much good stuff over here!
+        If you're interested in learning more, you might start by searching "substructural logic" or "linear logic", or checking out the <fr:link href="https://plato.stanford.edu/entries/logic-substructural/" type="external">Stanford Encyclopedia entry on substructural logic</fr:link>.
+        (This article is by Greg Restall, a well-known Australian logician.
+        Greg was one of the people I was coming to study with when I first came to Australia.
+        Alas, he now lives in Scotland.)
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/006S/</fr:uri>
+            <fr:display-uri>006S</fr:display-uri>
+            <fr:route>/lectures/006S/</fr:route>
+            <fr:title text="Implication rules">Implication rules</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        For now, though, let's move on to our remaining connectives.
+        Implication has one introduction rule and one elimination rule:</html:p>
+            <html:p>
+              <fr:resource hash="9b9a5c601f91d5b1d20396d149653da3">
+                <fr:resource-content>
+                  <html:img src="/lectures/9b9a5c601f91d5b1d20396d149653da3.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+            \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+            \noLine
+            \UnaryInfC{\ensuremath{B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+            \DP
+            \hskip 1cm
+            \AxiomC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+            \AxiomC{\ensuremath{A\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{B\vphantom{|}}}
+            \DP    
+            ]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>As you can see, the rule <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> involves discharge, and the rule <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex> does not.
+</html:p>
+            <html:p>        Let's start with the simpler <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>, then.
+        This rule says that whenever you have a proof of an implication, and you also have a proof of its antecedent, then you can put those proofs together with a step of <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>, giving you a proof of the consequent.
+        For example, here is a proof that uses <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>:</html:p>
+            <html:p>
+              <fr:resource hash="bc8ecbb959a2c8dfde252ef9efe411ec">
+                <fr:resource-content>
+                  <html:img src="/lectures/bc8ecbb959a2c8dfde252ef9efe411ec.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{(p \rightarrow  (q \land  t)) \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (q \land  t)\vphantom{|}}}    
+            \AxiomC{\ensuremath{(p \rightarrow  (q \land  t)) \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \UnaryInfC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q \land  t\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \UnaryInfC{\ensuremath{t\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>This proof has the open assumption <fr:tex display="inline"><![CDATA[(p \rightarrow  (q \land  t)) \land  p]]></fr:tex>, and from that draws the conclusion <fr:tex display="inline"><![CDATA[t]]></fr:tex>.
+        Note that, although the proof includes two occurrences of the open assumption <fr:tex display="inline"><![CDATA[(p \rightarrow  (q \land  t)) \land  p]]></fr:tex>, when I'm listing out the open assumptions of the proof I don't bother to list it twice.
+        For our purposes, something is either assumed in a proof or it's not; we're not keeping track of number of occurrences.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/006T/</fr:uri>
+                <fr:display-uri>006T</fr:display-uri>
+                <fr:route>/lectures/006T/</fr:route>
+                <fr:title text="Substructural logics">Substructural logics</fr:title>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+However, some of the coolest work going in proof theory at the moment works differently here; it is sensitive to the number of occurrences of an open assumption.
+        We won't go into it in these notes, but I can't come this close to the idea without mentioning it; there's too much good stuff over here!
+        If you're interested in learning more, you might start by searching "substructural logic" or "linear logic", or checking out the <fr:link href="https://plato.stanford.edu/entries/logic-substructural/" type="external">Stanford Encyclopedia entry on substructural logic</fr:link>.
+        (This article is by Greg Restall, a well-known Australian logician.
+        Greg was one of the people I was coming to study with when I first came to Australia.
+        Alas, he now lives in Scotland.)
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>        Unlike <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>, <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> is a discharging rule.
+        To see why, it helps to think about implication in a new kind of way.
+        You might recall from earlier that it's difficult to give what seems like a good truth table for implication.
+        But now that we're working with proofs, we don't actually need to say anything about truth values at all in order to give meaning to our connectives.
+        This gives us a different kind of way to explore the meaning of a connective like implication.
+</html:p>
+            <html:p>        An influential theory of implication holds that an implication like <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> has the same kind of meaning as a <html:em>proof</html:em> of <fr:tex display="inline"><![CDATA[q]]></fr:tex> that assumes <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        On this kind of theory, to believe <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> is to believe in some path of reasoning that can take you from <fr:tex display="inline"><![CDATA[p]]></fr:tex> to <fr:tex display="inline"><![CDATA[q]]></fr:tex>.</html:p>
+            <html:p>This kind of theory of "if...then" sentences has been around for a while, but nowadays is gaining new life by connecting up to cognitive science pretty directly.
+        Interesting work in this direction is being done by a number of researchers.
+        One particularly excellent researcher in this area is Karolina Krzyżanowska; if you're interested I'd encourage you to check out some of the papers on her website: <fr:link href="http://karolinakrzyzanowska.com/" type="external">http://karolinakrzyzanowska.com</fr:link>.</html:p>
+            <html:p>        It's this kind of theory of implication that's encoded in our rules.
+        For the rule <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>, look at it this way: if we have a proof of <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex>, then that licenses us to reason from <fr:tex display="inline"><![CDATA[p]]></fr:tex> to <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+        So if we also have a proof of <fr:tex display="inline"><![CDATA[p]]></fr:tex>, then we can combine the proofs we have to get a proof of <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+        For the rule <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, look at it this way: what it should take to prove <fr:tex display="inline"><![CDATA[p \rightarrow  q]]></fr:tex> is to produce a proof of <fr:tex display="inline"><![CDATA[q]]></fr:tex> from the assumption <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        In this process, you take <fr:tex display="inline"><![CDATA[p]]></fr:tex> for granted in the course of the proof of <fr:tex display="inline"><![CDATA[q]]></fr:tex>; but once you produce that proof, your final conclusion is not <fr:tex display="inline"><![CDATA[q]]></fr:tex> itself, but just that <fr:tex display="inline"><![CDATA[p]]></fr:tex> implies <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+        As you don't any longer assume <fr:tex display="inline"><![CDATA[p]]></fr:tex> when you draw this final conclusion, you can discharge the assumption.
+        There are other ways we might encode a theory like this into proof rules; but this is at least one standard way to do so.
+</html:p>
+            <html:p>        That, anyway, is the kind of view of implication that lies behind these rules: thinking of implication as recording in a single sentence the same kind of connection between distinct sentences that we build up in the course of a proof.
+        So, for example, we can have a proof that uses <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> like so:</html:p>
+            <html:p>
+              <fr:resource hash="46f661ac8c0554a3484b9a328fbb026a">
+                <fr:resource-content>
+                  <html:img src="/lectures/46f661ac8c0554a3484b9a328fbb026a.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[p \land  q]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{(p \land  q) \rightarrow  p\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>
+        This proof is the first example we've seen of a proof with <html:em>no</html:em> open assumptions.
+        The total proof takes nothing at all for granted, and still produces a proof of <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  p]]></fr:tex>.</html:p>
+            <html:p>Of course, when I say it takes nothing for granted, I'm not taking account of the rules themselves!
+        These might seem to come from nowhere, and there's definitely an important sense in which we've been taking them for granted as well.
+        Changing the rules gives us different proof systems.
+        So when I say we're taking nothing for granted in this proof, I mean <html:em>within the current proof system</html:em>.
+        Like any other aspect of logic, though, we're always free to choose or build a different system!</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/006Y/</fr:uri>
+            <fr:display-uri>006Y</fr:display-uri>
+            <fr:route>/lectures/006Y/</fr:route>
+            <fr:title text="Correct proof: extra assumptions, multiple discharge">Correct proof: extra assumptions, multiple discharge</fr:title>
+            <fr:taxon>Example</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+              <fr:resource hash="8f738b694af34985853fa0fc106c522a">
+                <fr:resource-content>
+                  <html:img src="/lectures/8f738b694af34985853fa0fc106c522a.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+                    \AxiomC{\ensuremath{[p \rightarrow  ((p \land  r) \rightarrow  q)]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}    
+                \BinaryInfC{\ensuremath{(p \land  r) \rightarrow  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \AxiomC{\ensuremath{r\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{(p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>        This proof demonstrates a few things about discharge.
+        First, note the presence of the open assumption <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        This doesn't interfere with the discharge steps at all; indeed, it doesn't interact in any way with them.
+        Discharging <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[p \rightarrow  ((p \land  r) \rightarrow  q)]]></fr:tex> both go ahead just fine, even though there is another open assumption hanging around.
+        Discharges work like this in general: whether you're allowed to discharge a sentence never depends on what other sentences you have as open assumptions.
+</html:p>
+            <html:p>        Second, note that at the step marked <fr:tex display="inline"><![CDATA[^2]]></fr:tex> this proof discharges <html:em>two</html:em> instances of the assumption <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        That's fine: when you're allowed to discharge a sentence, you're allowed to discharge any number of copies of that sentence.
+        (This is another case where doing things differently would lead us into the fascinating world of <fr:link href="/lectures/006T/" title="Substructural logics" uri="https://negation.rocks/lectures/006T/" display-uri="006T" type="local">substructural logics</fr:link>.)   </html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

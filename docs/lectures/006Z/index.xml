@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>15</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/006Z/</fr:uri>
+    <fr:display-uri>006Z</fr:display-uri>
+    <fr:route>/lectures/006Z/</fr:route>
+    <fr:title text="Correct proof: vacuous discharge">Correct proof: vacuous discharge</fr:title>
+    <fr:taxon>Example</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+      <fr:resource hash="f6b61dc28cd50c5f9f99d1fa067002ae">
+        <fr:resource-content>
+          <html:img src="/lectures/f6b61dc28cd50c5f9f99d1fa067002ae.svg" />
+        </fr:resource-content>
+        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (q \rightarrow  p)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+      </fr:resource>
+    </html:p>
+    <html:p>        This proof includes two occurrences of the discharge rule <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>.
+        These are labeled appropriately with numbers, as all occurrences of discharge rules must be.
+        Note, however, that they don't actually discharge anything!
+</html:p>
+    <html:p>        Recall that logicians tend to be a cheeky bunch, and revisit this phrase from the last example: "when you're allowed to discharge a sentence, you're allowed to discharge any number of copies of that sentence".
+        Well, "any number" here includes zero!
+</html:p>
+    <html:p>        In the above proof, the step labeled <fr:tex display="inline"><![CDATA[^1]]></fr:tex> discharges zero occurrences of the assumption <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and the step labeled <fr:tex display="inline"><![CDATA[^2]]></fr:tex> discharges zero occurrences of the assumption <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        (You can tell that it's <fr:tex display="inline"><![CDATA[q]]></fr:tex> and <fr:tex display="inline"><![CDATA[p]]></fr:tex>, respectively, because of the antecedents of the introduced implications.)
+        Note too that <fr:tex display="inline"><![CDATA[^2]]></fr:tex> has discharged zero occurrences of <fr:tex display="inline"><![CDATA[p]]></fr:tex> even though the proof actually has an occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> available to discharge.
+        That's fine; nothing says that you must discharge everything you can.
+        So the above example proof still has <fr:tex display="inline"><![CDATA[p]]></fr:tex> as an open assumption.
+</html:p>
+    <html:p>        For contrast, consider the following proof:</html:p>
+    <html:p>
+      <fr:resource hash="6b0dbf0750ec59076b5cefe784be000a">
+        <fr:resource-content>
+          <html:img src="/lectures/6b0dbf0750ec59076b5cefe784be000a.svg" />
+        </fr:resource-content>
+        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (q \rightarrow  p)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+      </fr:resource>
+    </html:p>
+    <html:p>
+        This second proof does discharge the assumption <fr:tex display="inline"><![CDATA[p]]></fr:tex> at the step marked <fr:tex display="inline"><![CDATA[^2]]></fr:tex>, and so has no open assumptions.
+        Again, it discharges zero occurrences of <fr:tex display="inline"><![CDATA[q]]></fr:tex> at the step marked <fr:tex display="inline"><![CDATA[^1]]></fr:tex>.
+        Both of these are fine proofs.
+        They are, however, two different proofs, and the difference between them is important.
+</html:p>
+    <html:p>        Note that, in both of these, I've given a numeric discharge label to every step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, even when these steps don't discharge anything.
+        Every discharge rule must always have a label: one way we see that these rules aren't discharging anything is by seeing that there are no discharged assumptions with matching labels.
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/006X/</fr:uri>
+            <fr:display-uri>006X</fr:display-uri>
+            <fr:route>/lectures/006X/</fr:route>
+            <fr:title text="Managing discharges">Managing discharges</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>    That, then, is our full proof system NJ.   
+    Getting comfortable with when and where you can discharge assumptions is probably the trickiest part about natural deduction, but it's also what gives natural deduction its power.
+    The best way for you to get the hang of it is simple, if not necessarily easy: practice making proofs!
+    You have a number of exercises at <fr:link href="https://binchicken.one/" type="external">https://binchicken.one</fr:link> that involve you in constructing proofs, so you will get plenty of practice.</html:p>
+            <html:p>Another website to check out: <fr:link href="https://incredible.pm/" type="external">https://incredible.pm</fr:link> is a website with a very nice interface for building up natural deduction proofs.
+    The proofs there don't look like our proofs here; they're scattered and involve connecting up wires.
+    But deep down they really are just the same, and practice there will give you important perspective on how to think about proofs in general and discharging assumptions in particular.</html:p>
+            <html:p>    In this section, I'm going to include a number of examples of correct proofs and incorrect proofs involving discharges, to help give you a clearer idea about how they work.
+    When you find yourself with a question about what you can or can't do with discharges in a proof, come back to these examples and have a look; it may be that there's an example here that answers your question!
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/006Y/</fr:uri>
+                <fr:display-uri>006Y</fr:display-uri>
+                <fr:route>/lectures/006Y/</fr:route>
+                <fr:title text="Correct proof: extra assumptions, multiple discharge">Correct proof: extra assumptions, multiple discharge</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <fr:resource hash="8f738b694af34985853fa0fc106c522a">
+                    <fr:resource-content>
+                      <html:img src="/lectures/8f738b694af34985853fa0fc106c522a.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+                    \AxiomC{\ensuremath{[p \rightarrow  ((p \land  r) \rightarrow  q)]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}    
+                \BinaryInfC{\ensuremath{(p \land  r) \rightarrow  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \AxiomC{\ensuremath{r\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{(p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>        This proof demonstrates a few things about discharge.
+        First, note the presence of the open assumption <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        This doesn't interfere with the discharge steps at all; indeed, it doesn't interact in any way with them.
+        Discharging <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[p \rightarrow  ((p \land  r) \rightarrow  q)]]></fr:tex> both go ahead just fine, even though there is another open assumption hanging around.
+        Discharges work like this in general: whether you're allowed to discharge a sentence never depends on what other sentences you have as open assumptions.
+</html:p>
+                <html:p>        Second, note that at the step marked <fr:tex display="inline"><![CDATA[^2]]></fr:tex> this proof discharges <html:em>two</html:em> instances of the assumption <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        That's fine: when you're allowed to discharge a sentence, you're allowed to discharge any number of copies of that sentence.
+        (This is another case where doing things differently would lead us into the fascinating world of <fr:link href="/lectures/006T/" title="Substructural logics" uri="https://negation.rocks/lectures/006T/" display-uri="006T" type="local">substructural logics</fr:link>.)   </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/006Z/</fr:uri>
+                <fr:display-uri>006Z</fr:display-uri>
+                <fr:route>/lectures/006Z/</fr:route>
+                <fr:title text="Correct proof: vacuous discharge">Correct proof: vacuous discharge</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <fr:resource hash="f6b61dc28cd50c5f9f99d1fa067002ae">
+                    <fr:resource-content>
+                      <html:img src="/lectures/f6b61dc28cd50c5f9f99d1fa067002ae.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (q \rightarrow  p)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>        This proof includes two occurrences of the discharge rule <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>.
+        These are labeled appropriately with numbers, as all occurrences of discharge rules must be.
+        Note, however, that they don't actually discharge anything!
+</html:p>
+                <html:p>        Recall that logicians tend to be a cheeky bunch, and revisit this phrase from the last example: "when you're allowed to discharge a sentence, you're allowed to discharge any number of copies of that sentence".
+        Well, "any number" here includes zero!
+</html:p>
+                <html:p>        In the above proof, the step labeled <fr:tex display="inline"><![CDATA[^1]]></fr:tex> discharges zero occurrences of the assumption <fr:tex display="inline"><![CDATA[q]]></fr:tex>, and the step labeled <fr:tex display="inline"><![CDATA[^2]]></fr:tex> discharges zero occurrences of the assumption <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        (You can tell that it's <fr:tex display="inline"><![CDATA[q]]></fr:tex> and <fr:tex display="inline"><![CDATA[p]]></fr:tex>, respectively, because of the antecedents of the introduced implications.)
+        Note too that <fr:tex display="inline"><![CDATA[^2]]></fr:tex> has discharged zero occurrences of <fr:tex display="inline"><![CDATA[p]]></fr:tex> even though the proof actually has an occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> available to discharge.
+        That's fine; nothing says that you must discharge everything you can.
+        So the above example proof still has <fr:tex display="inline"><![CDATA[p]]></fr:tex> as an open assumption.
+</html:p>
+                <html:p>        For contrast, consider the following proof:</html:p>
+                <html:p>
+                  <fr:resource hash="6b0dbf0750ec59076b5cefe784be000a">
+                    <fr:resource-content>
+                      <html:img src="/lectures/6b0dbf0750ec59076b5cefe784be000a.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (q \rightarrow  p)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>
+        This second proof does discharge the assumption <fr:tex display="inline"><![CDATA[p]]></fr:tex> at the step marked <fr:tex display="inline"><![CDATA[^2]]></fr:tex>, and so has no open assumptions.
+        Again, it discharges zero occurrences of <fr:tex display="inline"><![CDATA[q]]></fr:tex> at the step marked <fr:tex display="inline"><![CDATA[^1]]></fr:tex>.
+        Both of these are fine proofs.
+        They are, however, two different proofs, and the difference between them is important.
+</html:p>
+                <html:p>        Note that, in both of these, I've given a numeric discharge label to every step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, even when these steps don't discharge anything.
+        Every discharge rule must always have a label: one way we see that these rules aren't discharging anything is by seeing that there are no discharged assumptions with matching labels.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0070/</fr:uri>
+                <fr:display-uri>0070</fr:display-uri>
+                <fr:route>/lectures/0070/</fr:route>
+                <fr:title text="Correct proof: interweaving discharges, choosing occurrences to discharge">Correct proof: interweaving discharges, choosing occurrences to discharge</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <fr:resource hash="efc2e3b2b0dcdd2bd41497e605319e9e">
+                    <fr:resource-content>
+                      <html:img src="/lectures/efc2e3b2b0dcdd2bd41497e605319e9e.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+                \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                    \AxiomC{\ensuremath{p\vphantom{|}}}
+                    \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+                    \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
+            \DP
+  ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>
+        Each of the discharge rules in this proof discharges only some of what it could.
+        
+        Consider the state of the proof when it reaches the step <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex><fr:tex display="inline"><![CDATA[^1]]></fr:tex>.
+        Before we decide exactly how to discharge <fr:tex display="inline"><![CDATA[p]]></fr:tex> with this rule, we're looking at something like this:</html:p>
+                <html:p>
+                  <fr:resource hash="611d83ec591eb5892b15d332e4eae841">
+                    <fr:resource-content>
+                      <html:img src="/lectures/611d83ec591eb5892b15d332e4eae841.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{p^\star \vphantom{|}}}
+                    \AxiomC{\ensuremath{p^\dagger \vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                    \AxiomC{\ensuremath{p^\ddagger \vphantom{|}}}
+                    \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+                    \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>        Here, I've marked the three open assumptions of <fr:tex display="inline"><![CDATA[p]]></fr:tex> with the symbols <fr:tex display="inline"><![CDATA[\star , \dagger , \ddagger ]]></fr:tex> for reference.
+        Since we can choose whether or not to discharge anything available for discharge, we have some options: we can choose to discharge both <fr:tex display="inline"><![CDATA[\star ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\dagger ]]></fr:tex>, one of those but not the other, or neither.
+</html:p>
+                <html:p>        We don't have total freedom here, though.
+        Even if we wanted to, we could not discharge <fr:tex display="inline"><![CDATA[\ddagger ]]></fr:tex>.
+        The reason is that the rule of <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> is specific about where we can discharge: when we're eliminating a disjunction, we can discharge its left component in the left subproof and its right component in the right subproof.
+        So we cannot choose to discharge the <fr:tex display="inline"><![CDATA[\ddagger ]]></fr:tex> occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> at this step.
+        The others, though, are fair game.
+        (I've assumed we're going to discharge the <fr:tex display="inline"><![CDATA[q]]></fr:tex> at this stage, although that too is optional.)
+</html:p>
+                <html:p>        In the example proof, I chose to discharge just the <fr:tex display="inline"><![CDATA[\star ]]></fr:tex> occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> at this step, leaving the <fr:tex display="inline"><![CDATA[\dagger ]]></fr:tex> occurrence open.
+        Later in the proof, we reach the step labeled <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex><fr:tex display="inline"><![CDATA[^2]]></fr:tex>, and again face a choice about what to discharge.
+        Here, both the open assumptions <fr:tex display="inline"><![CDATA[\dagger ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\ddagger ]]></fr:tex> are fair game; I chose to discharge the <fr:tex display="inline"><![CDATA[\dagger ]]></fr:tex> one only.
+</html:p>
+                <html:p>        So you can pick and choose which occurrences of an assumption to discharge, and even if you choose to leave an assumption open at one stage in building a proof, you can discharge that assumption later on.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0071/</fr:uri>
+                <fr:display-uri>0071</fr:display-uri>
+                <fr:route>/lectures/0071/</fr:route>
+                <fr:title text="Incorrect proof: clashing and missing discharge labels">Incorrect proof: clashing and missing discharge labels</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        Since that last example proof was a bit complex, I'm going to make most of the examples of incorrect proof by varying it as little as possible, to give more of a sense of what's vital about it.
+</html:p>
+                <html:p>
+                  <html:p>
+                    <html:strong>THIS IS NOT A PROOF:</html:strong>
+                  </html:p>
+                  <html:p>
+                    <fr:resource hash="29d50ca7732690a374db597ebca0e36b">
+                      <fr:resource-content>
+                        <html:img src="/lectures/29d50ca7732690a374db597ebca0e36b.svg" />
+                      </fr:resource-content>
+                      <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                      <fr:resource-source type="latex" part="body"><![CDATA[
+                \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                    \AxiomC{\ensuremath{p\vphantom{|}}}
+                    \AxiomC{\ensuremath{[q \rightarrow  p]\vphantom{|}}}
+                    \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I:\quad }}
+            \UnaryInfC{\ensuremath{(q \rightarrow  p) \rightarrow  (p \rightarrow  (p \land  p))\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                    </fr:resource>
+                  </html:p>
+                </html:p>
+                <html:p>
+        One thing that's gone wrong here: both the step of <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> and one step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> have the same label <fr:tex display="inline"><![CDATA[^1]]></fr:tex>.
+        That means that we can't tell, when a discharged assumption is labeled <fr:tex display="inline"><![CDATA[1]]></fr:tex>, where it was meant to be discharged.
+        In this case, either one could be fine---but that's not enough.
+        There must be, for every discharged assumption, a unique place it was discharged.
+        So every discharge rule needs its own label; labels can't be reused in this way.
+</html:p>
+                <html:p>        Another thing that's gone wrong here: both the final <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> and one of the discharged assumptions lack numeric labels altogether.
+        Every discharge rule must have a label, however, and every discharged assumption must have one as well.
+        So this is no good.
+        In this case, just providing matching labels to these would be enough; the rule is almost applied correctly.
+        It just needs to be labeled correctly as well.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0072/</fr:uri>
+                <fr:display-uri>0072</fr:display-uri>
+                <fr:route>/lectures/0072/</fr:route>
+                <fr:title text="Incorrect proof: discharging a non-assumption">Incorrect proof: discharging a non-assumption</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <html:p>
+                    <html:strong>THIS IS NOT A PROOF:</html:strong>
+                  </html:p>
+                  <html:p>
+                    <fr:resource hash="c85ecab3a3741dc1f0f3e8ff4b599108">
+                      <fr:resource-content>
+                        <html:img src="/lectures/c85ecab3a3741dc1f0f3e8ff4b599108.svg" />
+                      </fr:resource-content>
+                      <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                      <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                \AxiomC{\ensuremath{q \land  p\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+                \UnaryInfC{\ensuremath{[p]^1\vphantom{|}}}
+                \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                \AxiomC{\ensuremath{p\vphantom{|}}}
+                \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+                \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+        \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+        \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
+        \DP
+        ]]></fr:resource-source>
+                    </fr:resource>
+                  </html:p>
+                </html:p>
+                <html:p>        This non-proof attempts to discharge an occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> that isn't an open assumption, because it's not an assumption at all!
+        That's no good; the only things we can discharge are assumptions.
+</html:p>
+                <html:p>        Once you know what you're looking for, this is an easy kind of mistake to spot.
+        No correct proof will ever have square brackets in the middle like this.
+        All discharged assumptions must be assumptions, and so there won't be any proof work above them.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0073/</fr:uri>
+                <fr:display-uri>0073</fr:display-uri>
+                <fr:route>/lectures/0073/</fr:route>
+                <fr:title text="Incorrect proof: discharging from the wrong place">Incorrect proof: discharging from the wrong place</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <html:p>
+                    <html:strong>THIS IS NOT A PROOF:</html:strong>
+                  </html:p>
+                  <html:p>
+                    <fr:resource hash="141b08ecf47cb876f7b4887f19b57787">
+                      <fr:resource-content>
+                        <html:img src="/lectures/141b08ecf47cb876f7b4887f19b57787.svg" />
+                      </fr:resource-content>
+                      <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                      <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+                \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+        \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+        \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+        \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
+        \DP
+        ]]></fr:resource-source>
+                    </fr:resource>
+                  </html:p>
+                </html:p>
+                <html:p>        This is not a proof because it hasn't correctly handled the <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> discharge.
+        The rule <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> allows for discharges in two of its subproofs, but not willy-nilly: the left component of the disjunction being eliminated can only be discharged in the left subproof, and the right component only in the right subproof.
+        In this case, we have an occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> being discharged in the right subproof; since <fr:tex display="inline"><![CDATA[p]]></fr:tex> isn't the right component of the eliminated disjunction, that's not allowed.
+</html:p>
+                <html:p>        Here's a simpler example of the same kind of problem:
+</html:p>
+                <html:p>
+                  <html:strong>THIS IS NOT A PROOF:</html:strong>
+                </html:p>
+                <html:p>
+                  <fr:resource hash="c6325a0ee5a595941b3a3b2f16c26bc6">
+                    <fr:resource-content>
+                      <html:img src="/lectures/c6325a0ee5a595941b3a3b2f16c26bc6.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>        Here, the step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> tries to discharge an occurrence of <fr:tex display="inline"><![CDATA[p]]></fr:tex> that isn't allowed.
+        The reason is that <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, like every other rule, can only act on what happens <html:em>above</html:em> it in the proof.
+        Here, it can only act on the assumption of <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+        The assumption of <fr:tex display="inline"><![CDATA[p]]></fr:tex> isn't in view.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0074/</fr:uri>
+                <fr:display-uri>0074</fr:display-uri>
+                <fr:route>/lectures/0074/</fr:route>
+                <fr:title text="Incorrect proof: discharging the wrong sentence">Incorrect proof: discharging the wrong sentence</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        Finally, here's a quick variation on that last one.
+</html:p>
+                <html:p>
+                  <html:p>
+                    <html:strong>THIS IS NOT A PROOF:</html:strong>
+                  </html:p>
+                  <html:p>
+                    <fr:resource hash="29c8e9d6a98f8b80034f3fae86dbce16">
+                      <fr:resource-content>
+                        <html:img src="/lectures/29c8e9d6a98f8b80034f3fae86dbce16.svg" />
+                      </fr:resource-content>
+                      <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                      <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \AxiomC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                    </fr:resource>
+                  </html:p>
+                </html:p>
+                <html:p>        Here, the discharged <fr:tex display="inline"><![CDATA[q]]></fr:tex> is in a fine location to be discharged by the <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>; that's not the problem.
+        The problem is that <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> has to follow a strict pattern: the consequent of the introduced implication must be the sentence immediately above the <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, and only the antecedent of the introduced implication can be discharged.
+        This case meets the first restriction, since <fr:tex display="inline"><![CDATA[q]]></fr:tex> is the sentence immediately before the <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, and <fr:tex display="inline"><![CDATA[q]]></fr:tex> is the consequent of the introduced implication.
+        But this case does not meet the second restriction: since <fr:tex display="inline"><![CDATA[p]]></fr:tex> is the antecedent of the introduced implication, only <fr:tex display="inline"><![CDATA[p]]></fr:tex> can be discharged by this step.
+        Discharging <fr:tex display="inline"><![CDATA[q]]></fr:tex> instead doesn't work.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>        I hope these examples help give you some idea about how discharge works in NJ.
+Practice is the best way forwards from here!
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
