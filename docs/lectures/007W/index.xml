@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>26</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/007W/</fr:uri>
+    <fr:display-uri>007W</fr:display-uri>
+    <fr:route>/lectures/007W/</fr:route>
+    <fr:title text="Relative strength">Relative strength</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>        The first thing to notice is that we have a simple order of strength among these three.
+        Every NM proof is an NJ proof, and every NJ proof is an NK proof.
+        So if an argument is valid in minimal logic, it has an NM proof, which means it has an NJ proof, and so is valid in intuitionistic logic too; that is to say, minimal logic is weaker than intuitionistic logic.
+        For the same kind of reason, intuitionistic logic is weaker than classical logic.
+</html:p>
+    <html:p>        In fact, they are properly weaker, in both cases.
+        For example, <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is valid in intuitionistic but not minimal logic, and <fr:tex display="inline"><![CDATA[\neg \neg  p \;/\; p]]></fr:tex> is valid in classical but not intuitionistic logic.
+</html:p>
+    <html:p>        How do minimal and intuitionistic logics compare to our other logics?
+        Here's the situation:
+        </html:p>
+    <fr:resource hash="f69bc8a1aa6544c977aec147adeb96c9">
+      <fr:resource-content>
+        <html:img src="/lectures/f69bc8a1aa6544c977aec147adeb96c9.svg" />
+      </fr:resource-content>
+      <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+      <fr:resource-source type="latex" part="body"><![CDATA[
+            \begin {tikzcd}[column sep=small]
+                  &CL \arrow [dl,dash]\arrow [d,dash]\arrow [dr,dash] \\
+                K3&LP&Int\arrow [d,dash] \\
+                &FDRM \arrow [ul,dash] \arrow [u,dash]&Min\\
+                &FDE \arrow [u,dash]
+            \end {tikzcd}
+        ]]></fr:resource-source>
+    </fr:resource>
+    <html:p>You might note that classical logic seems to play a special role here: every logic that we've explored is weaker than it!
+        That's not entirely a coincidence.
+        Classical logic has a property called <html:em>Post completeness</html:em>: this means that the only logic that is reflexive, monotonic, transitive, substitution invariant, and properly stronger than classical logic is the logic that includes every argument.
+        As many widely-studied logics are indeed reflexive, monotonic, transitive, and substitution invariant, this means that they won't be properly stronger than classical logic.
+        This doesn't mean, though, that they'll be weaker!
+        But we won't look this semester at any example logics that are not weaker than classical logic.</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>4</fr:month>
+          <fr:day>26</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/007X/</fr:uri>
+        <fr:display-uri>007X</fr:display-uri>
+        <fr:route>/lectures/007X/</fr:route>
+        <fr:taxon>Side note</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>Outside this side note, that is.
+        One of the coolest logics out there that's not weaker than classical logic is called <html:em>Abelian logic</html:em>.
+        This is a logic that's been studied a fair bit at Monash in particular; see for example <fr:link href="https://philpapers.org/rec/BUTOTA" type="external">this paper</fr:link>, written by two (at the time) Monash-associated logicians.
+        The characteristic way Abelian logic ends up not weaker than classical logic: it has <fr:tex display="inline"><![CDATA[((p \rightarrow  q) \rightarrow  q) \rightarrow  p]]></fr:tex> as a theorem.
+        This is not a theorem of classical logic (although <fr:tex display="inline"><![CDATA[((p \rightarrow  \bot ) \rightarrow  \bot ) \rightarrow  p]]></fr:tex> is).</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>26</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/007V/</fr:uri>
+            <fr:display-uri>007V</fr:display-uri>
+            <fr:route>/lectures/007V/</fr:route>
+            <fr:title text="Minimal, intuitionistic, and classical logics">Minimal, intuitionistic, and classical logics</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>    Let's take a look at some of the similarities and differences between these logics, and see how they fit together.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>26</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007W/</fr:uri>
+                <fr:display-uri>007W</fr:display-uri>
+                <fr:route>/lectures/007W/</fr:route>
+                <fr:title text="Relative strength">Relative strength</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        The first thing to notice is that we have a simple order of strength among these three.
+        Every NM proof is an NJ proof, and every NJ proof is an NK proof.
+        So if an argument is valid in minimal logic, it has an NM proof, which means it has an NJ proof, and so is valid in intuitionistic logic too; that is to say, minimal logic is weaker than intuitionistic logic.
+        For the same kind of reason, intuitionistic logic is weaker than classical logic.
+</html:p>
+                <html:p>        In fact, they are properly weaker, in both cases.
+        For example, <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is valid in intuitionistic but not minimal logic, and <fr:tex display="inline"><![CDATA[\neg \neg  p \;/\; p]]></fr:tex> is valid in classical but not intuitionistic logic.
+</html:p>
+                <html:p>        How do minimal and intuitionistic logics compare to our other logics?
+        Here's the situation:
+        </html:p>
+                <fr:resource hash="f69bc8a1aa6544c977aec147adeb96c9">
+                  <fr:resource-content>
+                    <html:img src="/lectures/f69bc8a1aa6544c977aec147adeb96c9.svg" />
+                  </fr:resource-content>
+                  <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                  <fr:resource-source type="latex" part="body"><![CDATA[
+            \begin {tikzcd}[column sep=small]
+                  &CL \arrow [dl,dash]\arrow [d,dash]\arrow [dr,dash] \\
+                K3&LP&Int\arrow [d,dash] \\
+                &FDRM \arrow [ul,dash] \arrow [u,dash]&Min\\
+                &FDE \arrow [u,dash]
+            \end {tikzcd}
+        ]]></fr:resource-source>
+                </fr:resource>
+                <html:p>You might note that classical logic seems to play a special role here: every logic that we've explored is weaker than it!
+        That's not entirely a coincidence.
+        Classical logic has a property called <html:em>Post completeness</html:em>: this means that the only logic that is reflexive, monotonic, transitive, substitution invariant, and properly stronger than classical logic is the logic that includes every argument.
+        As many widely-studied logics are indeed reflexive, monotonic, transitive, and substitution invariant, this means that they won't be properly stronger than classical logic.
+        This doesn't mean, though, that they'll be weaker!
+        But we won't look this semester at any example logics that are not weaker than classical logic.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>26</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/007X/</fr:uri>
+                    <fr:display-uri>007X</fr:display-uri>
+                    <fr:route>/lectures/007X/</fr:route>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Outside this side note, that is.
+        One of the coolest logics out there that's not weaker than classical logic is called <html:em>Abelian logic</html:em>.
+        This is a logic that's been studied a fair bit at Monash in particular; see for example <fr:link href="https://philpapers.org/rec/BUTOTA" type="external">this paper</fr:link>, written by two (at the time) Monash-associated logicians.
+        The characteristic way Abelian logic ends up not weaker than classical logic: it has <fr:tex display="inline"><![CDATA[((p \rightarrow  q) \rightarrow  q) \rightarrow  p]]></fr:tex> as a theorem.
+        This is not a theorem of classical logic (although <fr:tex display="inline"><![CDATA[((p \rightarrow  \bot ) \rightarrow  \bot ) \rightarrow  p]]></fr:tex> is).</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>26</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007Y/</fr:uri>
+                <fr:display-uri>007Y</fr:display-uri>
+                <fr:route>/lectures/007Y/</fr:route>
+                <fr:title text="Four properties">Four properties</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        Recall <fr:link href="/lectures/005Y/" title="Lecture 7: The limits of matrices" uri="https://negation.rocks/lectures/005Y/" display-uri="005Y" type="local">four properties that a logic might or might not have: reflexivity, monotonicity, transitivity, and substitution invariance</fr:link>.
+        We've seen that every logic given by a matrix has all four of these properties.
+        What about logics given by natural deduction systems?
+</html:p>
+                <html:p>        First, think about reflexivity.
+        As long as we allow ourselves to assume any sentence at all, then we will always have a proof of <fr:tex display="inline"><![CDATA[A \;/\; A]]></fr:tex>, no matter what sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> is: just the assumption of <fr:tex display="inline"><![CDATA[A]]></fr:tex> constitutes such a proof.
+        So reflexivity is assured.
+        If we were to work with a system with restrictions on what could be assumed, then there would be a question about reflexivity.
+        But we haven't looked at any such systems.
+</html:p>
+                <html:p>        Second, think about monotonicity.
+        Suppose we have a proof of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+        Then that proof itself is also a proof of <fr:tex display="inline"><![CDATA[\Sigma  \;/\; A]]></fr:tex> for any <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> where <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a subset of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>.
+        This is because of <fr:link href="/lectures/007L/" title="Proof of an argument" uri="https://negation.rocks/lectures/007L/" display-uri="007L" type="local">how we've defined what it is to be a proof of an argument</fr:link>.
+        So any logic determined by a proof system in the way we're doing it here will be monotonic.
+</html:p>
+                <html:p>        Third, think about transitivity.
+        Suppose we have a proof of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> and a proof of <fr:tex display="inline"><![CDATA[\Gamma , A \;/\; B]]></fr:tex>.
+        The question is: given that much, must we always have a proof of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; B]]></fr:tex>?
+        Yes, we must; here's why.
+        Consider the proof of <fr:tex display="inline"><![CDATA[\Gamma , A \;/\; B]]></fr:tex>---call this proof <fr:tex display="inline"><![CDATA[P]]></fr:tex>---and think about its open assumptions.
+        We don't know what these are, but we do know that each of them must either be in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> or be <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+        If they're all in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, we're all set: the proof <fr:tex display="inline"><![CDATA[P]]></fr:tex> is <html:em>already</html:em> also a proof of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>, which is what we're after.
+</html:p>
+                <html:p> But they might not all be in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+In particular, there can also be open assumptions of <fr:tex display="inline"><![CDATA[A]]></fr:tex> in the proof <fr:tex display="inline"><![CDATA[P]]></fr:tex>, and <fr:tex display="inline"><![CDATA[A]]></fr:tex> might not be in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+If this is the case, then <fr:tex display="inline"><![CDATA[P]]></fr:tex> is not yet a proof of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.
+But we can make use of the other proof we've assumed we have: the one of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>.</html:p>
+                <html:p>Imagine plugging a copy of this other proof of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> in at the top of <fr:tex display="inline"><![CDATA[P]]></fr:tex>, wherever there is an open assumption of <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+        So instead of assuming <fr:tex display="inline"><![CDATA[A]]></fr:tex> in <fr:tex display="inline"><![CDATA[P]]></fr:tex>, we'll instead prove it via the proof of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> we have.
+        If we do this for every open assumption of <fr:tex display="inline"><![CDATA[A]]></fr:tex> in <fr:tex display="inline"><![CDATA[P]]></fr:tex>, we'll end up with a new larger proof of <fr:tex display="inline"><![CDATA[B]]></fr:tex>, and now one where all its open assumptions are in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+        That is, we'll have a proof of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; B]]></fr:tex>.
+        So the logics determined by our natural deduction proof systems are transitive.
+</html:p>
+                <html:p>        That was notably more complex than reflexivity or monotonicity, so let's look at an example to see how it works.
+        It's important to recall, though, that just one example isn't enough to show that transitivity holds. 
+        This needs to work for <html:em>every possible</html:em> example.
+        That's why the schematic and general reasoning above was important.
+        This one example is just to give the flavour; but you should look over it while keeping an eye on the general reasoning, to convince yourself this kind of thing is indeed always possible.
+</html:p>
+                <html:p>        This example uses only rules from NM, so it works in any of our three systems.
+        Here are two simple proofs in NM:</html:p>
+                <html:p>
+                  <fr:resource hash="5d3b72cfa90aa250822f09313c329df0">
+                    <fr:resource-content>
+                      <html:img src="/lectures/5d3b72cfa90aa250822f09313c329df0.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \AxiomC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q\vphantom{|}}}
+            \DP]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>
+                  <fr:resource hash="93e058b223e4424705afcc5fe814299a">
+                    <fr:resource-content>
+                      <html:img src="/lectures/93e058b223e4424705afcc5fe814299a.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{r\vphantom{|}}}
+            \AxiomC{\ensuremath{q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{r \land  q\vphantom{|}}}
+            \DP]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>The first of these is a proof of <fr:tex display="inline"><![CDATA[p \rightarrow  q, p, r \;/\; q]]></fr:tex>, and the second of <fr:tex display="inline"><![CDATA[p \rightarrow  q, p, r, q \;/\; r \land  q]]></fr:tex>.
+        So if the logic this system determines is transitive, there had better be a proof somewhere in the system of <fr:tex display="inline"><![CDATA[p \rightarrow  q, p, r \;/\; r \land  q]]></fr:tex>.
+        And indeed there is: we take the first example proof here, and plug it into the top of the second, replacing each open assumption of <fr:tex display="inline"><![CDATA[q]]></fr:tex> in the second proof with a copy of the first proof.
+        The result looks like this:</html:p>
+                <html:p>
+                  <fr:resource hash="e48d900759509ce58fc9dcdcb4cffde4">
+                    <fr:resource-content>
+                      <html:img src="/lectures/e48d900759509ce58fc9dcdcb4cffde4.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{r\vphantom{|}}}
+            \AxiomC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \AxiomC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{r \land  q\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>See how, in this result, the bottom is made up of the second example proof above, while the top bits are filled in with the first proof.
+        This result is a proof of <fr:tex display="inline"><![CDATA[p \rightarrow  q, p, r \;/\; r \land  q]]></fr:tex>; just what we needed.
+</html:p>
+                <html:p>        The key to making sure this is possible is this: all of our rules for building larger proofs out of smaller proofs (which is to say, all of our rules other than assumption, <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>, and LEM) are always applicable based only on the <html:em>conclusions</html:em> of the smaller proofs they build on.
+        In the above example, the rule <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> doesn't care whether its inputs are assumptions, as they are in the original example, or proofs that do actual work, as they are in the finished product.
+        The rule <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> acts on them just the same either way.
+        So when we plug in full proofs for open assumptions, we can leave everything else alone and be confident that it will all work out: the result will still be a proof.</html:p>
+                <html:p>It's worth pausing here to think through how this would look with rules that do some discharging hanging around in the proofs.
+        I promise it will work!
+        But it is worth thinking through an example or two.</html:p>
+                <html:p>        Finally, substitution invariance.
+        This one is more straightforward: applying a substitution to an entire proof always results in another proof. 
+        So whenever we have a proof of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>, if we want a proof of some substitution instance of that argument, we can just apply the appropriate substitution to the proof itself, and we're all set.
+        To be sure this works, you need to check that it works for every rule.
+        After all, imagine we had a rule like this:
+</html:p>
+                <html:p>
+                  <fr:resource hash="17b84f00f06ad9cd39683a54aca51d66">
+                    <fr:resource-content>
+                      <html:img src="/lectures/17b84f00f06ad9cd39683a54aca51d66.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  {FAKE\ RULE}:\quad }}
+            \UnaryInfC{\ensuremath{p\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Think about adding this rule to NJ.
+        Then we reach a proof system that does include a proof of <fr:tex display="inline"><![CDATA[p \lor  q \;/\; p]]></fr:tex>.
+        But this proof system still does not include any proof of <fr:tex display="inline"><![CDATA[r \lor  s \;/\; r]]></fr:tex>.
+        The reason is that the rule FAKE RULE is not itself substitution invariant: it applies only to the particular sentences that occur in it.
+        The actual rules of NM, NJ, and NK, though, are not like that.
+        Every actual rule in these systems applies to every substitution instance of anything it applies to.
+        So the logics these systems determine are indeed substitution invariant.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

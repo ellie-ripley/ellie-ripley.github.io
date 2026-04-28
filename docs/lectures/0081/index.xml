@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>26</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/0081/</fr:uri>
+    <fr:display-uri>0081</fr:display-uri>
+    <fr:route>/lectures/0081/</fr:route>
+    <fr:title text="Proof and meaning, truth value and meaning">Proof and meaning, truth value and meaning</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>        I've described both valuations and proofs as ways of giving meaning to our languages.
+        But what does <html:em>that</html:em> mean?
+        There's a ton of philosophical work about this, and I won't be able to do more here than scratch the surface; but I'll try to give a broad-brush overview.
+</html:p>
+    <html:p>        On one way of thinking about meaning, the meaning of a piece of language is mainly a matter of what part or parts of the world that language picks out.
+        You can think of this way of handling meaning as a kind of generalization from cases like proper names.
+        "Carl" is the name of my (most excellent) dog, and it might seem like that kind of thing is all there is to the meaning of the name "Carl": if you know who it picks out, you know all there is to know about the meaning of the name.
+</html:p>
+    <html:p>        Where this kind of theory of meaning tends to get a bit stickier is with words like "very", or "because", or "and"; what things in the world do these words pick out?
+        That's not a rhetorical question: in fact, linguists, together with philosophers and logicians, have developed sophisticated and interesting answers to this question.
+        Many of those answers go beyond what we can see this semester, although the semester will leave you well-prepared to pursue such answers in the future, if you want.</html:p>
+    <html:p>
+        But we can see, at least for a word like "and", something of what an answer might be like by thinking about our structures from earlier in the semester.
+        Perhaps a truth table, like the ones we've seen for <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> in our various structures, can be the right kind of thing for a word like "and" to pick out.
+        Pursuing this line of thought leads to the development of what's often called "truth-conditional semantics", and this is currently the mainstream method for giving theories of meaning in linguistics and philosophy.
+</html:p>
+    <html:p>        Truth-conditional semantics, though, is not the only option for thinking about linguistic meaning.
+        On another way of thinking, the meaning of a piece of language is mainly a matter of how that language is <html:em>used</html:em>.
+        You can think of this way of handling meaning as a kind of generalization from cases like "hello".
+        You surely know the meaning of "hello".
+        If you take a minute to try to explain what that meaning is, you'll probably find yourself describing how the word is <html:em>used</html:em>: it's something you say to greet someone.
+        It can seem that, if you know exactly how "hello" is used, you know exactly what it means.
+</html:p>
+    <html:p>        This kind of theory works well, too, for words like "and", but now it tends to invoke something like our introduction and elimination rules, rather than structures.
+        When can you assert "A <html:em>and</html:em> B"?
+        Whenever you can assert both A and B.
+        That idea can be seen in our NJ rules for conjunction.
+        Again, there is difficulty with words like "very" and "because"; but again, there are approaches that people take.
+        This way of proceeding leads to an approach known as "proof-theoretic semantics".
+</html:p>
+    <html:p>        Sticking points for proof-theoretic semantics include words like proper names.
+        Again, think about the name "Carl" for my dog.
+        When do we use that name?
+        It's not a matter of proximity to Carl.
+        For example, I'm in the office as I'm writing this, and Carl is not with me at the moment, but here I am, using the name Carl perfectly sensibly; and you understand me, even though Carl is probably not with you at the moment either.
+        (If he is, give him some peanut butter! He loves it.)
+        The easiest way to describe the use of "Carl" is to say that it's a name we use to <html:em>refer</html:em> to Carl; that is, to give the same answer that the truth-theoretic semanticist gives.
+</html:p>
+    <html:p>        As I've indicated here, truth-conditional theories of meaning tend to sit well with model-theoretic approaches to language; and proof-conditional theories of meaning tend to sit well with proof-theoretic approaches to language.
+        This is one reason it can be useful to see both kinds of approach to logic, as we're doing in this subject.
+        Each of these ways of thinking about meaning has places where it works more smoothly and places where it works less smoothly.
+        It's not completely obvious how to combine the two---and they are not the only options anyhow---but perhaps combining them is a useful way forward.
+        For now, though, I'll leave it there.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>26</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0080/</fr:uri>
+            <fr:display-uri>0080</fr:display-uri>
+            <fr:route>/lectures/0080/</fr:route>
+            <fr:title text="Philosophical issues">Philosophical issues</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>26</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007Z/</fr:uri>
+                <fr:display-uri>007Z</fr:display-uri>
+                <fr:route>/lectures/007Z/</fr:route>
+                <fr:title text="Realism and antirealism">Realism and antirealism</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        In philosophy, the words "realism" and "antirealism" get used for <html:em>lots</html:em> of different distinctions.
+        But one pretty well-established use is connected to the difference between classical and intuitionistic logic, and it's that use I want to tell you a little about here.
+</html:p>
+                <html:p>        One way to get into the idea is to think about the following question: how many seconds old was Socrates when he drank the hemlock?</html:p>
+                <html:p>Context: Socrates was an ancient Athenian philosopher who was sentenced to death by drinking hemlock in 399 BCE.
+        He is mainly remembered through the writings of his student Plato.
+        Socrates didn't write anything himself, and indeed is portrayed in Plato's dialogue <html:em>Phaedrus</html:em> as not being super-friendly to writing, saying (tr. Robin Waterfield):
+        
+          <html:p>"[T]here’s something odd about writing, Phaedrus, which makes it exactly like painting.
+          The offspring of painting stand there as if alive, but if you ask them a question they maintain an aloof silence.
+          It’s the same with written words: you might think they were speaking as if they had some intelligence, but if you want an explanation of any of the things they’re saying and you ask them about it, they just go on and on for ever giving the same single piece of information.
+          Once any account has been written down, you find it all over the place, hobnobbing with completely inappropriate people no less than with those who understand it, and completely failing to know who it should and shouldn’t talk to."</html:p></html:p>
+                <html:p>      It seems like a pretty safe bet that nobody will ever know the answer to the question of how many seconds old Socrates was when he drank the hemlock.
+        Even so, some people think the question still has a true answer.
+        The fact that nobody will ever know the answer is beside the point; there is still some number that is the true answer.
+        This is one thing some people mean by "realism": the belief that there are unknowable truths.
+        On the other hand, others think that there can't really be any truth of the matter here, without some method of discovering it.
+        Maybe we could know that Socrates was more than a billion seconds (about 32 years) old, and less than three billion seconds old, so those things can be true.
+        But if the exact number of seconds is really unknowable, then people in this second camp would maintain that there is no truth of the matter at all.
+        This second view is sometimes called "antirealism".
+</html:p>
+                <html:p>        One aspect of the debate between realists and antirealists focuses on the so-called law of excluded middle, or LEM.
+        LEM is the schema <fr:tex display="inline"><![CDATA[A \lor  \neg  A]]></fr:tex>.
+        As we saw last time, the difference between NJ and NK is precisely that NK contains a rule allowing us to prove any instance of LEM from nothing at all.
+        That shows us that, in classical logic, any argument <fr:tex display="inline"><![CDATA[\;/\; A \lor  \neg  A]]></fr:tex> is valid, since every such argument has a proof.
+        (You could also recall our presentation of classical logic via Boolean valuations, and check that whatever sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> is, in every Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> we have <fr:tex display="inline"><![CDATA[v(A \lor  \neg  A) = \mathsf {\mathbf {T}}]]></fr:tex>.)
+        That is to say, every instance of LEM is a classical theorem.
+</html:p>
+                <html:p>        In intuitionistic logic, by contrast, not every instance of LEM is a theorem.
+        For example, the argument <fr:tex display="inline"><![CDATA[\;/\; p \lor  \neg  p]]></fr:tex> is not valid in intuitionistic logic.
+        Try all you like, you will never find a proof in NJ of <fr:tex display="inline"><![CDATA[p \lor  \neg  p]]></fr:tex> without some open assumptions.
+        It would be wrong to conclude from this that <html:em>no</html:em> instance of LEM is an intuitionistic theorem, however; some are.
+        For example, <fr:tex display="inline"><![CDATA[\;/\; (p \rightarrow  p) \lor  \neg  (p \rightarrow  p)]]></fr:tex> is intuitionistically valid.
+        So it's not that intuitionistic logic disagrees with classical logic about every instance of LEM.
+        It's rather just that classical logic takes all such instances to be theorems, and intuitionistic logic takes only some to be.
+</html:p>
+                <html:p>        This is one reason that the difference between these logics gets connected to the difference between realism and antirealism.
+        According to realism, either Socrates was exactly 2.25 billion seconds old when he drank the hemlock, or he wasn't exactly 2.25 billion seconds old when he drank the hemlock.
+        That we can't establish which is true doesn't matter; still it's either yes or no.
+        On the other hand, antirealists want to resist this claim.
+        They wouldn't want to say that either he was exactly 2.25 billion seconds old or he wasn't.
+        Since we don't have any way to tell, many antirealists would not want to go along with the disjunction.
+        As one antirealist puts the point: "Intuitionistic logic is most celebrated for rejecting the law of excluded middle...It does so on the ground that we may not be in a position to judge correct either an assertion or a denial of <fr:tex display="inline"><![CDATA[A]]></fr:tex>". (Dummett, "'Yes', 'no', and 'can't say'")
+        Note that by "rejecting the law of excluded middle", Dummett must mean rejecting <html:em>some</html:em> instances of excluded middle, not rejecting <html:em>all</html:em> instances of it.
+        As we've seen, some instances of it are intuitionistic theorems.</html:p>
+                <html:p>        The proofs of NJ are used by antirealists in this mould as a formal surrogate for the kinds of deductive reasoning people actually do to try to gain knowledge.
+        On this approach, then, the fact that there is no proof in NJ of the argument <fr:tex display="inline"><![CDATA[\;/\; p \lor  \neg  p]]></fr:tex> fits well with the antirealist refusal to accept claims like "Either Socrates was exactly 2.25 billion seconds old when he drank the hemlock or he wasn't".
+        We have no way to demonstrate this disjunction, antirealists would maintain, and so no right to assert it.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>26</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0081/</fr:uri>
+                <fr:display-uri>0081</fr:display-uri>
+                <fr:route>/lectures/0081/</fr:route>
+                <fr:title text="Proof and meaning, truth value and meaning">Proof and meaning, truth value and meaning</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        I've described both valuations and proofs as ways of giving meaning to our languages.
+        But what does <html:em>that</html:em> mean?
+        There's a ton of philosophical work about this, and I won't be able to do more here than scratch the surface; but I'll try to give a broad-brush overview.
+</html:p>
+                <html:p>        On one way of thinking about meaning, the meaning of a piece of language is mainly a matter of what part or parts of the world that language picks out.
+        You can think of this way of handling meaning as a kind of generalization from cases like proper names.
+        "Carl" is the name of my (most excellent) dog, and it might seem like that kind of thing is all there is to the meaning of the name "Carl": if you know who it picks out, you know all there is to know about the meaning of the name.
+</html:p>
+                <html:p>        Where this kind of theory of meaning tends to get a bit stickier is with words like "very", or "because", or "and"; what things in the world do these words pick out?
+        That's not a rhetorical question: in fact, linguists, together with philosophers and logicians, have developed sophisticated and interesting answers to this question.
+        Many of those answers go beyond what we can see this semester, although the semester will leave you well-prepared to pursue such answers in the future, if you want.</html:p>
+                <html:p>
+        But we can see, at least for a word like "and", something of what an answer might be like by thinking about our structures from earlier in the semester.
+        Perhaps a truth table, like the ones we've seen for <fr:tex display="inline"><![CDATA[\land ]]></fr:tex> in our various structures, can be the right kind of thing for a word like "and" to pick out.
+        Pursuing this line of thought leads to the development of what's often called "truth-conditional semantics", and this is currently the mainstream method for giving theories of meaning in linguistics and philosophy.
+</html:p>
+                <html:p>        Truth-conditional semantics, though, is not the only option for thinking about linguistic meaning.
+        On another way of thinking, the meaning of a piece of language is mainly a matter of how that language is <html:em>used</html:em>.
+        You can think of this way of handling meaning as a kind of generalization from cases like "hello".
+        You surely know the meaning of "hello".
+        If you take a minute to try to explain what that meaning is, you'll probably find yourself describing how the word is <html:em>used</html:em>: it's something you say to greet someone.
+        It can seem that, if you know exactly how "hello" is used, you know exactly what it means.
+</html:p>
+                <html:p>        This kind of theory works well, too, for words like "and", but now it tends to invoke something like our introduction and elimination rules, rather than structures.
+        When can you assert "A <html:em>and</html:em> B"?
+        Whenever you can assert both A and B.
+        That idea can be seen in our NJ rules for conjunction.
+        Again, there is difficulty with words like "very" and "because"; but again, there are approaches that people take.
+        This way of proceeding leads to an approach known as "proof-theoretic semantics".
+</html:p>
+                <html:p>        Sticking points for proof-theoretic semantics include words like proper names.
+        Again, think about the name "Carl" for my dog.
+        When do we use that name?
+        It's not a matter of proximity to Carl.
+        For example, I'm in the office as I'm writing this, and Carl is not with me at the moment, but here I am, using the name Carl perfectly sensibly; and you understand me, even though Carl is probably not with you at the moment either.
+        (If he is, give him some peanut butter! He loves it.)
+        The easiest way to describe the use of "Carl" is to say that it's a name we use to <html:em>refer</html:em> to Carl; that is, to give the same answer that the truth-theoretic semanticist gives.
+</html:p>
+                <html:p>        As I've indicated here, truth-conditional theories of meaning tend to sit well with model-theoretic approaches to language; and proof-conditional theories of meaning tend to sit well with proof-theoretic approaches to language.
+        This is one reason it can be useful to see both kinds of approach to logic, as we're doing in this subject.
+        Each of these ways of thinking about meaning has places where it works more smoothly and places where it works less smoothly.
+        It's not completely obvious how to combine the two---and they are not the only options anyhow---but perhaps combining them is a useful way forward.
+        For now, though, I'll leave it there.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

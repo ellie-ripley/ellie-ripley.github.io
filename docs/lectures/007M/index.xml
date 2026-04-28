@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>24</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/007M/</fr:uri>
+    <fr:display-uri>007M</fr:display-uri>
+    <fr:route>/lectures/007M/</fr:route>
+    <fr:title text="Some examples">Some examples</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>4</fr:month>
+          <fr:day>24</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/007N/</fr:uri>
+        <fr:display-uri>007N</fr:display-uri>
+        <fr:route>/lectures/007N/</fr:route>
+        <fr:taxon>Example</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>        Here's an example proof from last time:
+</html:p>
+        <html:p>
+          <fr:resource hash="e06737f6e7bf641c758868e2c3c39da3">
+            <fr:resource-content>
+              <html:img src="/lectures/e06737f6e7bf641c758868e2c3c39da3.svg" />
+            </fr:resource-content>
+            <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+            <fr:resource-source type="latex" part="body"><![CDATA[
+                \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                    \AxiomC{\ensuremath{p\vphantom{|}}}
+                    \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+                    \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+          </fr:resource>
+        </html:p>
+        <html:p>        What arguments is this a proof of?
+</html:p>
+        <html:p>        Well, the conclusion of this proof is <fr:tex display="inline"><![CDATA[p \rightarrow  (p \land  p)]]></fr:tex>, so every argument that it's a proof of has that conclusion as well.
+        And the open assumptions of this proof are <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, <fr:tex display="inline"><![CDATA[p]]></fr:tex>, and <fr:tex display="inline"><![CDATA[q \rightarrow  p]]></fr:tex>, so every argument that it's a proof of has these among its premises.
+        And that's all we need.
+        So this is a proof of very many (in fact, infinitely many) different arguments.
+        For example, it is a proof of <fr:tex display="inline"><![CDATA[p \lor  q, p, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>; and it is also a proof of <fr:tex display="inline"><![CDATA[r, t \rightarrow  s, \neg  p, p \lor  q, p, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>.
+        Indeed, for any set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> of sentences, this is a proof of <fr:tex display="inline"><![CDATA[\Gamma , p \lor  q, p, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>.
+</html:p>
+        <html:p>        It is not, however, a proof of <fr:tex display="inline"><![CDATA[p \lor  q, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>.
+        The reason is that the proof has an open assumption, <fr:tex display="inline"><![CDATA[p]]></fr:tex>, that is not among the premises of this argument.
+        Similarly, this is not a proof of <fr:tex display="inline"><![CDATA[r, p \lor  q \;/\; p \rightarrow  (p \land  p)]]></fr:tex>, for basically the same reason.
+</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>4</fr:month>
+          <fr:day>24</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/007O/</fr:uri>
+        <fr:display-uri>007O</fr:display-uri>
+        <fr:route>/lectures/007O/</fr:route>
+        <fr:taxon>Example</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>        Here's another example proof from last time:
+</html:p>
+        <html:p>
+          <fr:resource hash="1270aa16d6465f23f6b6279f815fad94">
+            <fr:resource-content>
+              <html:img src="/lectures/1270aa16d6465f23f6b6279f815fad94.svg" />
+            </fr:resource-content>
+            <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+            <fr:resource-source type="latex" part="body"><![CDATA[
+                    \AxiomC{\ensuremath{[p \rightarrow  ((p \land  r) \rightarrow  q)]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}    
+                \BinaryInfC{\ensuremath{(p \land  r) \rightarrow  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \AxiomC{\ensuremath{r\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{(p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))\vphantom{|}}}
+            \DP]]></fr:resource-source>
+          </fr:resource>
+        </html:p>
+        <html:p>        This has the conclusion <fr:tex display="inline"><![CDATA[(p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>, and the sole open assumption <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        So it is a proof of any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>, as long as <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> includes <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        For example, it is a proof of <fr:tex display="inline"><![CDATA[r \;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>, and it is a proof of <fr:tex display="inline"><![CDATA[p \rightarrow  p, r \;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>.
+</html:p>
+        <html:p>        However, it is not a proof of <fr:tex display="inline"><![CDATA[q \;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex> or of <fr:tex display="inline"><![CDATA[\;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>, since the open assumption <fr:tex display="inline"><![CDATA[r]]></fr:tex> doesn't occur among the premises in either of these arguments.</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>4</fr:month>
+          <fr:day>24</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/007P/</fr:uri>
+        <fr:display-uri>007P</fr:display-uri>
+        <fr:route>/lectures/007P/</fr:route>
+        <fr:taxon>Example</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>        One final example proof from last week:</html:p>
+        <html:p>
+          <fr:resource hash="b6267b2fa0d4eaa453edaedd2467f0bd">
+            <fr:resource-content>
+              <html:img src="/lectures/b6267b2fa0d4eaa453edaedd2467f0bd.svg" />
+            </fr:resource-content>
+            <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+            <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[p \land  q]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{(p \land  q) \rightarrow  p\vphantom{|}}}
+            \DP]]></fr:resource-source>
+          </fr:resource>
+        </html:p>
+        <html:p>
+        This has the conclusion <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  p]]></fr:tex>, and it has no open assumptions.
+        So it is a proof of absolutely any argument of the form <fr:tex display="inline"><![CDATA[\Gamma  \;/\; (p \land  q) \rightarrow  p]]></fr:tex>; since there are no assumptions at all, we say they're all among <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> no matter what <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is.
+        In particular, this holds even if <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is empty; so this proof is a proof of <fr:tex display="inline"><![CDATA[\;/\; (p \land  q) \rightarrow  p]]></fr:tex>.
+        It's also a proof of, for example, <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  p \;/\; (p \land  q) \rightarrow  p]]></fr:tex>, and of every other argument with the same conclusion.
+</html:p>
+        <html:p>        This last example reveals something: if you want to have a proof of an argument with no premises, you need to have a proof with no open assumptions.</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>24</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/007Q/</fr:uri>
+            <fr:display-uri>007Q</fr:display-uri>
+            <fr:route>/lectures/007Q/</fr:route>
+            <fr:title text="How to get a logic from a natural deduction system">How to get a logic from a natural deduction system</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>    Last time, we met three natural deduction systems: NJ, NM, and NK.
+    We spent the most time on NJ, and that will continue to be the case.
+    We'll think of NM and NK basically as variations on NJ.
+    Just remember that they differ from NJ in two different ways: NM by <html:em>lacking</html:em> the rule of <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex>, and NK by <html:em>having in addition</html:em> the rule of LEM.
+</html:p>
+            <html:p>    This week, we're going to start thinking about the logics determined by these proof systems.
+    Remember, a logic is a set of arguments.
+    So we need a way, given a proof system, to determine a particular set of arguments.
+    Here as everywhere in logic, there are options; but we're going to use a standard way to get the job done.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>24</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007J/</fr:uri>
+                <fr:display-uri>007J</fr:display-uri>
+                <fr:route>/lectures/007J/</fr:route>
+                <fr:title text="The big idea">The big idea</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        Recall that the idea behind proof systems like natural deduction is this: we say what it takes for a proof to be a proof of a particular argument, and then we count an argument as valid as long as there is at least one proof that is a proof of it.
+        It's the reverse of what we did with valuations, where we said what it takes for a valuation to be a counterexample to an argument, and then count an argument as <html:em>in</html:em>valid when there is at least one valuation that is a counterexample to it.
+</html:p>
+                <html:p>        So what we need is just a story about what it takes for a natural deduction proof to be a proof of an argument.
+        That's where this lecture starts.
+</html:p>
+                <html:p>        From any natural deduction proof, we can determine a single argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> as follows: let <fr:tex display="inline"><![CDATA[A]]></fr:tex> be the conclusion of the proof, and let <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> be the set of formulas that occur in the proof as open assumptions.
+Remember: sets don't care about multiplicity!
+        So it doesn't matter if something occurs as an open assumption once or twenty times; the only thing that matters is whether it occurs at least once, or not at all.
+        Any proof at all determines an argument in this way; we'll call it the <html:strong>smallest argument</html:strong> of the proof.
+        That is:
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>24</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/007K/</fr:uri>
+                    <fr:display-uri>007K</fr:display-uri>
+                    <fr:route>/lectures/007K/</fr:route>
+                    <fr:title text="Smallest argument of a proof">Smallest argument of a proof</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Given a proof in a natural deduction system, the <html:strong>smallest argument</html:strong> of that proof is the argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> determined as follows:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is the set of sentences that are open assumptions in the proof, and</html:li>
+<html:li><fr:tex display="inline"><![CDATA[A]]></fr:tex> is the proof's conclusion.</html:li></html:ul></html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>        Using that, we can say what it takes for a proof to be a proof of an argument:</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>24</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/007L/</fr:uri>
+                    <fr:display-uri>007L</fr:display-uri>
+                    <fr:route>/lectures/007L/</fr:route>
+                    <fr:title text="Proof of an argument">Proof of an argument</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>A proof is a <html:strong>proof of an argument</html:strong> <fr:tex display="inline"><![CDATA[\Sigma  \;/\; B]]></fr:tex> iff, where the proof's <fr:link href="/lectures/007K/" title="Smallest argument of a proof" uri="https://negation.rocks/lectures/007K/" display-uri="007K" type="local">smallest argument</fr:link> is <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex>:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Sigma ]]></fr:tex>, and</html:li>
+<html:li><fr:tex display="inline"><![CDATA[B]]></fr:tex> is <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</html:li></html:ul></html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>        To put that same idea in different words: a proof counts as a proof of <fr:tex display="inline"><![CDATA[\Sigma  \;/\; B]]></fr:tex> when the proof's conclusion is <fr:tex display="inline"><![CDATA[B]]></fr:tex> and the proof's open assumptions are all <html:em>among</html:em> the members of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>.
+        It's totally fine if <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> has other members as well, but it has to contain all the proof's open assumptions.,
+</html:p>
+                <html:p>        Because of this, every proof is a proof of very many different arguments.
+        Again, this is just like our counterexamples were: a single valuation can be a counterexample to many different arguments at once, and now a single proof can be a proof of many different arguments at once.
+</html:p>
+                <html:p>        The idea behind this way of thinking is this.
+        Think of an argument <fr:tex display="inline"><![CDATA[\Sigma  / B]]></fr:tex> as saying that, if we established everything in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, that would be enough to work with to allow us to establish <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+        Now, if we have a proof of <fr:tex display="inline"><![CDATA[B]]></fr:tex> whose open assumptions are all in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, then that shows us a way to do this.
+        If we established everything in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, then we'd have established all the open assumptions of the proof, since all those assumptions are in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>.
+        And the proof shows us how, if we took those assumptions for granted, we could reason to the conclusion <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+        So if we've actually established those assumptions, rather than just taking them for granted, the proof would finish the job for us, showing us how to establish <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+        From this perspective, it's totally fine if there are extra things in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> that aren't open assumptions in the proof; that doesn't get in the way at all.
+</html:p>
+                <html:p>        You can see the smallest argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> of a proof as being the common core of all the arguments that the proof is a proof of: every argument that the proof is a proof of has a set of premises that includes everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, and has the conclusion <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+It's absolutely crucial to remember, though, that any proof is a proof of <html:em>many</html:em> arguments, not just its smallest argument.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>24</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007M/</fr:uri>
+                <fr:display-uri>007M</fr:display-uri>
+                <fr:route>/lectures/007M/</fr:route>
+                <fr:title text="Some examples">Some examples</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>24</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/007N/</fr:uri>
+                    <fr:display-uri>007N</fr:display-uri>
+                    <fr:route>/lectures/007N/</fr:route>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        Here's an example proof from last time:
+</html:p>
+                    <html:p>
+                      <fr:resource hash="e06737f6e7bf641c758868e2c3c39da3">
+                        <fr:resource-content>
+                          <html:img src="/lectures/e06737f6e7bf641c758868e2c3c39da3.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+                \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                    \AxiomC{\ensuremath{p\vphantom{|}}}
+                    \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+                    \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>        What arguments is this a proof of?
+</html:p>
+                    <html:p>        Well, the conclusion of this proof is <fr:tex display="inline"><![CDATA[p \rightarrow  (p \land  p)]]></fr:tex>, so every argument that it's a proof of has that conclusion as well.
+        And the open assumptions of this proof are <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, <fr:tex display="inline"><![CDATA[p]]></fr:tex>, and <fr:tex display="inline"><![CDATA[q \rightarrow  p]]></fr:tex>, so every argument that it's a proof of has these among its premises.
+        And that's all we need.
+        So this is a proof of very many (in fact, infinitely many) different arguments.
+        For example, it is a proof of <fr:tex display="inline"><![CDATA[p \lor  q, p, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>; and it is also a proof of <fr:tex display="inline"><![CDATA[r, t \rightarrow  s, \neg  p, p \lor  q, p, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>.
+        Indeed, for any set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> of sentences, this is a proof of <fr:tex display="inline"><![CDATA[\Gamma , p \lor  q, p, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>.
+</html:p>
+                    <html:p>        It is not, however, a proof of <fr:tex display="inline"><![CDATA[p \lor  q, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>.
+        The reason is that the proof has an open assumption, <fr:tex display="inline"><![CDATA[p]]></fr:tex>, that is not among the premises of this argument.
+        Similarly, this is not a proof of <fr:tex display="inline"><![CDATA[r, p \lor  q \;/\; p \rightarrow  (p \land  p)]]></fr:tex>, for basically the same reason.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>24</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/007O/</fr:uri>
+                    <fr:display-uri>007O</fr:display-uri>
+                    <fr:route>/lectures/007O/</fr:route>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        Here's another example proof from last time:
+</html:p>
+                    <html:p>
+                      <fr:resource hash="1270aa16d6465f23f6b6279f815fad94">
+                        <fr:resource-content>
+                          <html:img src="/lectures/1270aa16d6465f23f6b6279f815fad94.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+                    \AxiomC{\ensuremath{[p \rightarrow  ((p \land  r) \rightarrow  q)]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}    
+                \BinaryInfC{\ensuremath{(p \land  r) \rightarrow  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \AxiomC{\ensuremath{r\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{(p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))\vphantom{|}}}
+            \DP]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>        This has the conclusion <fr:tex display="inline"><![CDATA[(p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>, and the sole open assumption <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        So it is a proof of any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>, as long as <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> includes <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        For example, it is a proof of <fr:tex display="inline"><![CDATA[r \;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>, and it is a proof of <fr:tex display="inline"><![CDATA[p \rightarrow  p, r \;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>.
+</html:p>
+                    <html:p>        However, it is not a proof of <fr:tex display="inline"><![CDATA[q \;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex> or of <fr:tex display="inline"><![CDATA[\;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>, since the open assumption <fr:tex display="inline"><![CDATA[r]]></fr:tex> doesn't occur among the premises in either of these arguments.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>24</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/007P/</fr:uri>
+                    <fr:display-uri>007P</fr:display-uri>
+                    <fr:route>/lectures/007P/</fr:route>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        One final example proof from last week:</html:p>
+                    <html:p>
+                      <fr:resource hash="b6267b2fa0d4eaa453edaedd2467f0bd">
+                        <fr:resource-content>
+                          <html:img src="/lectures/b6267b2fa0d4eaa453edaedd2467f0bd.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[p \land  q]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{(p \land  q) \rightarrow  p\vphantom{|}}}
+            \DP]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>
+        This has the conclusion <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  p]]></fr:tex>, and it has no open assumptions.
+        So it is a proof of absolutely any argument of the form <fr:tex display="inline"><![CDATA[\Gamma  \;/\; (p \land  q) \rightarrow  p]]></fr:tex>; since there are no assumptions at all, we say they're all among <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> no matter what <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is.
+        In particular, this holds even if <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is empty; so this proof is a proof of <fr:tex display="inline"><![CDATA[\;/\; (p \land  q) \rightarrow  p]]></fr:tex>.
+        It's also a proof of, for example, <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  p \;/\; (p \land  q) \rightarrow  p]]></fr:tex>, and of every other argument with the same conclusion.
+</html:p>
+                    <html:p>        This last example reveals something: if you want to have a proof of an argument with no premises, you need to have a proof with no open assumptions.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>24</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007R/</fr:uri>
+                <fr:display-uri>007R</fr:display-uri>
+                <fr:route>/lectures/007R/</fr:route>
+                <fr:title text="The logics that result">The logics that result</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        Now we have three natural deduction proof systems, and we know how to tell when a proof is a proof of an argument.
+        This gives us three logics (yes, they're all different), via the following definition:</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>24</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/007U/</fr:uri>
+                    <fr:display-uri>007U</fr:display-uri>
+                    <fr:route>/lectures/007U/</fr:route>
+                    <fr:title text="Logic determined by a proof system">Logic determined by a proof system</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>The logic <html:strong>determined by</html:strong> a particular proof system is the logic that contains an argument iff that argument has a proof in the system.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>Note that there's no guarantee in general that two different proof systems must always result in two different logics.
+        For example, imagine we added this rule to NK:</html:p>
+                <html:p>
+                  <fr:resource hash="380f639c4a9fe8e4ee2803ab0f516a8b">
+                    <fr:resource-content>
+                      <html:img src="/lectures/380f639c4a9fe8e4ee2803ab0f516a8b.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\neg \neg A\vphantom{|}}}\UnaryInfC{\ensuremath{A\vphantom{|}}}\DP]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>        The resulting proof system would be different from NK, since there is no rule like this in NK; we would get a bunch of new proofs using this rule that aren't proofs in NK.
+        However, it turns out that the resulting proof system still determines classical logic; this particular addition to the proof system hasn't changed the resulting logic.
+        That is, every argument that has a proof in this larger system also has a proof in NK.
+        There are <html:em>more</html:em> proofs in the larger system, but not proofs <html:em>of</html:em> anything new.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>24</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/007S/</fr:uri>
+                    <fr:display-uri>007S</fr:display-uri>
+                    <fr:route>/lectures/007S/</fr:route>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        A bit of jargon we won't use this semester, but can lead you down a rabbit hole if you want: when a rule and a proof system are like this---adding the rule to the proof system doesn't change the resulting logic---the rule is called <html:strong>admissible</html:strong> in the proof system.
+        To say that the logics determined by NM, NJ, and NK are all different, then, is to say that <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex> is not admissible in NM, and LEM is not admissible in NJ.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>        The logic determined by NJ in this way is called <html:strong>intuitionistic logic</html:strong>.
+        The logic determined by NM in this way is called <html:strong>minimal logic</html:strong>.
+        And the logic determined by NK in this way is good old classical logic.</html:p>
+                <html:p> That claim about classical logic is a substantial one: I really am saying that the logic determined by the proof system NK is exactly the same one we defined via matrices weeks ago!
+You should not think that that's obvious; it very much is not.</html:p>
+                <html:p>The other two, though, we'll treat as definitional, as saying which logics we mean by the names.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>24</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/007T/</fr:uri>
+                    <fr:display-uri>007T</fr:display-uri>
+                    <fr:route>/lectures/007T/</fr:route>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p><html:strong>Intuitionistic logic</html:strong> is the logic determined by the proof system NJ. <html:strong>Minimal logic</html:strong> is the logic determined by the proof system NM.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

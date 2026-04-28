@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>24</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/007S/</fr:uri>
+    <fr:display-uri>007S</fr:display-uri>
+    <fr:route>/lectures/007S/</fr:route>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>        A bit of jargon we won't use this semester, but can lead you down a rabbit hole if you want: when a rule and a proof system are like this---adding the rule to the proof system doesn't change the resulting logic---the rule is called <html:strong>admissible</html:strong> in the proof system.
+        To say that the logics determined by NM, NJ, and NK are all different, then, is to say that <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex> is not admissible in NM, and LEM is not admissible in NJ.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>24</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/007R/</fr:uri>
+            <fr:display-uri>007R</fr:display-uri>
+            <fr:route>/lectures/007R/</fr:route>
+            <fr:title text="The logics that result">The logics that result</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        Now we have three natural deduction proof systems, and we know how to tell when a proof is a proof of an argument.
+        This gives us three logics (yes, they're all different), via the following definition:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>24</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007U/</fr:uri>
+                <fr:display-uri>007U</fr:display-uri>
+                <fr:route>/lectures/007U/</fr:route>
+                <fr:title text="Logic determined by a proof system">Logic determined by a proof system</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>The logic <html:strong>determined by</html:strong> a particular proof system is the logic that contains an argument iff that argument has a proof in the system.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>Note that there's no guarantee in general that two different proof systems must always result in two different logics.
+        For example, imagine we added this rule to NK:</html:p>
+            <html:p>
+              <fr:resource hash="380f639c4a9fe8e4ee2803ab0f516a8b">
+                <fr:resource-content>
+                  <html:img src="/lectures/380f639c4a9fe8e4ee2803ab0f516a8b.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\neg \neg A\vphantom{|}}}\UnaryInfC{\ensuremath{A\vphantom{|}}}\DP]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>        The resulting proof system would be different from NK, since there is no rule like this in NK; we would get a bunch of new proofs using this rule that aren't proofs in NK.
+        However, it turns out that the resulting proof system still determines classical logic; this particular addition to the proof system hasn't changed the resulting logic.
+        That is, every argument that has a proof in this larger system also has a proof in NK.
+        There are <html:em>more</html:em> proofs in the larger system, but not proofs <html:em>of</html:em> anything new.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>24</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007S/</fr:uri>
+                <fr:display-uri>007S</fr:display-uri>
+                <fr:route>/lectures/007S/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        A bit of jargon we won't use this semester, but can lead you down a rabbit hole if you want: when a rule and a proof system are like this---adding the rule to the proof system doesn't change the resulting logic---the rule is called <html:strong>admissible</html:strong> in the proof system.
+        To say that the logics determined by NM, NJ, and NK are all different, then, is to say that <fr:tex display="inline"><![CDATA[\bot  E]]></fr:tex> is not admissible in NM, and LEM is not admissible in NJ.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>        The logic determined by NJ in this way is called <html:strong>intuitionistic logic</html:strong>.
+        The logic determined by NM in this way is called <html:strong>minimal logic</html:strong>.
+        And the logic determined by NK in this way is good old classical logic.</html:p>
+            <html:p> That claim about classical logic is a substantial one: I really am saying that the logic determined by the proof system NK is exactly the same one we defined via matrices weeks ago!
+You should not think that that's obvious; it very much is not.</html:p>
+            <html:p>The other two, though, we'll treat as definitional, as saying which logics we mean by the names.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>24</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007T/</fr:uri>
+                <fr:display-uri>007T</fr:display-uri>
+                <fr:route>/lectures/007T/</fr:route>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p><html:strong>Intuitionistic logic</html:strong> is the logic determined by the proof system NJ. <html:strong>Minimal logic</html:strong> is the logic determined by the proof system NM.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

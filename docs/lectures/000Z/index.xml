@@ -146,7 +146,164 @@ Depending on the main connective of a sentence, there are special names sometime
         <fr:authors />
         <fr:title text="Backlinks">Backlinks</fr:title>
       </fr:frontmatter>
-      <fr:mainmatter />
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>26</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0084/</fr:uri>
+            <fr:display-uri>0084</fr:display-uri>
+            <fr:route>/lectures/0084/</fr:route>
+            <fr:title text="Conditional proof">Conditional proof</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        Conditional proof is not an argument like modus ponens; it is a <fr:link href="/lectures/006A/" title="Rule, obeying a rule" uri="https://negation.rocks/lectures/006A/" display-uri="006A" type="local">rule</fr:link>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>26</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0086/</fr:uri>
+                <fr:display-uri>0086</fr:display-uri>
+                <fr:route>/lectures/0086/</fr:route>
+                <fr:title text="Conditional proof">Conditional proof</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A rule instance is an instance of <html:strong>conditional proof</html:strong> when it fits the following form:</html:p>
+                <html:p>
+                  <fr:resource hash="b8073fe0bb88378a0c36d1f652b4e4e0">
+                    <fr:resource-content>
+                      <html:img src="/lectures/b8073fe0bb88378a0c36d1f652b4e4e0.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {\Gamma , A \;/\; B}
+\infer 1[]{\Gamma  \;/\; A \rightarrow  B}
+\end {prooftree}
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>        That is, when a logic obeys conditional proof, whenever we have a valid argument in the logic with at least one premise, we can reach a new valid argument in the logic by removing one of its premises, and replacing the conclusion with a particular implication: the one that has the removed premise as antecedent and the original conclusion as consequent.
+(Recall that <fr:link href="/lectures/000Z/" title="Special names for components" uri="https://negation.rocks/lectures/000Z/" display-uri="000Z" type="local">"antecedent" and "consequent" are special names for the left and right components of an implication, respectively</fr:link>.)
+        Just as with modus ponens, some logics do obey conditional proof and others do not.
+</html:p>
+            <html:p>        For example, classical logic does obey conditional proof.
+        Imagine that we have a classical counterexample to <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A \rightarrow  B]]></fr:tex>.
+        This must be a Boolean valuation <fr:tex display="inline"><![CDATA[v]]></fr:tex> that takes every sentence in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> to <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex>, and takes <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> to <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+        The only way, though, that <fr:tex display="inline"><![CDATA[v(A \rightarrow  B) = \mathsf {\mathbf {F}}]]></fr:tex> is if <fr:tex display="inline"><![CDATA[v(A) = \mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[v(B) = \mathsf {\mathbf {F}}]]></fr:tex>.
+        So <fr:tex display="inline"><![CDATA[v]]></fr:tex> is also a classical counterexample to <fr:tex display="inline"><![CDATA[\Gamma , A \;/\; B]]></fr:tex>.
+        That shows that whenever an argument of the form <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A \rightarrow  B]]></fr:tex> is invalid in classical logic, the corresponding argument <fr:tex display="inline"><![CDATA[\Gamma , A \;/\; B]]></fr:tex> is also invalid in classical logic, which shows that classical logic obeys the rule.
+        By identical reasoning, LP also obeys conditional proof.
+</html:p>
+            <html:p>        K3 and FDE, on the other hand, do not.
+        Each of these logics is reflexive, and so in particular they all validate <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex>.
+        Any logic that validates <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex> and obeys conditional proof must also validate <fr:tex display="inline"><![CDATA[\;/\; p \rightarrow  p]]></fr:tex>, since the following is an instance of conditional proof:</html:p>
+            <html:p>
+              <fr:resource hash="468aa5dea8e52c5a28506d3c0c7396c6">
+                <fr:resource-content>
+                  <html:img src="/lectures/468aa5dea8e52c5a28506d3c0c7396c6.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {prooftree}
+\hypo {p \;/\; p}
+\infer 1[]{\;/\; p \rightarrow  p}
+\end {prooftree}
+]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>        But take a strong Kleene valuation <fr:tex display="inline"><![CDATA[w]]></fr:tex> where <fr:tex display="inline"><![CDATA[w(p) = \mathsf {\mathbf {*}}]]></fr:tex>.
+        This gives us <fr:tex display="inline"><![CDATA[w(p \rightarrow  p) = \mathsf {\mathbf {*}}]]></fr:tex>, so <fr:tex display="inline"><![CDATA[w]]></fr:tex> is a K3 counterexample (but note well, not an LP counterexample!) to the argument <fr:tex display="inline"><![CDATA[\;/\; p \rightarrow  p]]></fr:tex>.
+        Thus, that argument is not valid in K3, and since FDE is weaker than K3, it is not valid in those either.
+        Since all these logics do validate <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex>, though, this means that they don't obey conditional proof.</html:p>
+            <html:p>Notice too that the empty logic, while it <html:em>is</html:em> weaker than K3, <html:em>does</html:em> obey conditional proof.
+        (Remember logicians' weird habit number 2!)
+        Because the empty logic does not validate <fr:tex display="inline"><![CDATA[p \;/\; p]]></fr:tex>, the fact that it also does not validate <fr:tex display="inline"><![CDATA[\;/\; p \rightarrow  p]]></fr:tex> is no obstacle to its obeying conditional proof.</html:p>
+            <html:p>        How does conditional proof go in our new logics?
+        Suppose that we have some proof of an argument <fr:tex display="inline"><![CDATA[\Gamma , A \;/\; B]]></fr:tex>.
+        That is, we have some proof with the conclusion <fr:tex display="inline"><![CDATA[B]]></fr:tex>, all of whose open assumptions are contained in <fr:tex display="inline"><![CDATA[\Gamma , A]]></fr:tex>.
+        Then we can extend this proof with a single step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, discharging any open assumptions of <fr:tex display="inline"><![CDATA[A]]></fr:tex> there happened to be, reaching the conclusion <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex>.
+        Since we've discharged any open assumptions of <fr:tex display="inline"><![CDATA[A]]></fr:tex>, the resulting proof will have all its open assumptions contained in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>; thus, it is a proof of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A \rightarrow  B]]></fr:tex>.
+        For example, consider the following proof of <fr:tex display="inline"><![CDATA[p, q \lor  r \;/\; (p \land  q) \lor  r]]></fr:tex>:</html:p>
+            <html:p>
+              <fr:resource hash="f3c568508e8c4127a388954a2f5c8f54">
+                <fr:resource-content>
+                  <html:img src="/lectures/f3c568508e8c4127a388954a2f5c8f54.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[        
+        
+            \AxiomC{\ensuremath{q \lor  r\vphantom{|}}}
+            \AxiomC{\ensuremath{p\vphantom{|}}}
+            \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+            \UnaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
+            \AxiomC{\ensuremath{[r]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+            \UnaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
+            \DP]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>        We can extend this proof with one step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>\ to reach the following proof of <fr:tex display="inline"><![CDATA[p \;/\; (q \lor  r) \rightarrow  ((p \land  q) \lor  r)]]></fr:tex>:
+</html:p>
+            <html:p>
+              <fr:resource hash="edde8b357901982f9c761842c4ade1c4">
+                <fr:resource-content>
+                  <html:img src="/lectures/edde8b357901982f9c761842c4ade1c4.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[            \AxiomC{\ensuremath{[q \lor  r]^2\vphantom{|}}}
+            \AxiomC{\ensuremath{p\vphantom{|}}}
+            \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+            \UnaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
+            \AxiomC{\ensuremath{[r]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+            \UnaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{(q \lor  r) \rightarrow  ((p \land  q) \lor  r)\vphantom{|}}}
+            \DP]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>And the same kind of thing will work no matter what sentences or proofs we're dealing with.
+        So minimal logic, intuitionistic logic, and classical logic all obey conditional proof as well.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">
       <fr:frontmatter>

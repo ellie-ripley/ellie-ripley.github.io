@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>24</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/007N/</fr:uri>
+    <fr:display-uri>007N</fr:display-uri>
+    <fr:route>/lectures/007N/</fr:route>
+    <fr:taxon>Example</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>        Here's an example proof from last time:
+</html:p>
+    <html:p>
+      <fr:resource hash="e06737f6e7bf641c758868e2c3c39da3">
+        <fr:resource-content>
+          <html:img src="/lectures/e06737f6e7bf641c758868e2c3c39da3.svg" />
+        </fr:resource-content>
+        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+        <fr:resource-source type="latex" part="body"><![CDATA[
+                \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                    \AxiomC{\ensuremath{p\vphantom{|}}}
+                    \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+                    \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+      </fr:resource>
+    </html:p>
+    <html:p>        What arguments is this a proof of?
+</html:p>
+    <html:p>        Well, the conclusion of this proof is <fr:tex display="inline"><![CDATA[p \rightarrow  (p \land  p)]]></fr:tex>, so every argument that it's a proof of has that conclusion as well.
+        And the open assumptions of this proof are <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, <fr:tex display="inline"><![CDATA[p]]></fr:tex>, and <fr:tex display="inline"><![CDATA[q \rightarrow  p]]></fr:tex>, so every argument that it's a proof of has these among its premises.
+        And that's all we need.
+        So this is a proof of very many (in fact, infinitely many) different arguments.
+        For example, it is a proof of <fr:tex display="inline"><![CDATA[p \lor  q, p, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>; and it is also a proof of <fr:tex display="inline"><![CDATA[r, t \rightarrow  s, \neg  p, p \lor  q, p, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>.
+        Indeed, for any set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> of sentences, this is a proof of <fr:tex display="inline"><![CDATA[\Gamma , p \lor  q, p, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>.
+</html:p>
+    <html:p>        It is not, however, a proof of <fr:tex display="inline"><![CDATA[p \lor  q, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>.
+        The reason is that the proof has an open assumption, <fr:tex display="inline"><![CDATA[p]]></fr:tex>, that is not among the premises of this argument.
+        Similarly, this is not a proof of <fr:tex display="inline"><![CDATA[r, p \lor  q \;/\; p \rightarrow  (p \land  p)]]></fr:tex>, for basically the same reason.
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>24</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/007M/</fr:uri>
+            <fr:display-uri>007M</fr:display-uri>
+            <fr:route>/lectures/007M/</fr:route>
+            <fr:title text="Some examples">Some examples</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>24</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007N/</fr:uri>
+                <fr:display-uri>007N</fr:display-uri>
+                <fr:route>/lectures/007N/</fr:route>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        Here's an example proof from last time:
+</html:p>
+                <html:p>
+                  <fr:resource hash="e06737f6e7bf641c758868e2c3c39da3">
+                    <fr:resource-content>
+                      <html:img src="/lectures/e06737f6e7bf641c758868e2c3c39da3.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+                \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
+                    \AxiomC{\ensuremath{p\vphantom{|}}}
+                    \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
+                    \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \BinaryInfC{\ensuremath{p\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>        What arguments is this a proof of?
+</html:p>
+                <html:p>        Well, the conclusion of this proof is <fr:tex display="inline"><![CDATA[p \rightarrow  (p \land  p)]]></fr:tex>, so every argument that it's a proof of has that conclusion as well.
+        And the open assumptions of this proof are <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, <fr:tex display="inline"><![CDATA[p]]></fr:tex>, and <fr:tex display="inline"><![CDATA[q \rightarrow  p]]></fr:tex>, so every argument that it's a proof of has these among its premises.
+        And that's all we need.
+        So this is a proof of very many (in fact, infinitely many) different arguments.
+        For example, it is a proof of <fr:tex display="inline"><![CDATA[p \lor  q, p, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>; and it is also a proof of <fr:tex display="inline"><![CDATA[r, t \rightarrow  s, \neg  p, p \lor  q, p, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>.
+        Indeed, for any set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> of sentences, this is a proof of <fr:tex display="inline"><![CDATA[\Gamma , p \lor  q, p, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>.
+</html:p>
+                <html:p>        It is not, however, a proof of <fr:tex display="inline"><![CDATA[p \lor  q, q \rightarrow  p \;/\; p \rightarrow  (p \land  p)]]></fr:tex>.
+        The reason is that the proof has an open assumption, <fr:tex display="inline"><![CDATA[p]]></fr:tex>, that is not among the premises of this argument.
+        Similarly, this is not a proof of <fr:tex display="inline"><![CDATA[r, p \lor  q \;/\; p \rightarrow  (p \land  p)]]></fr:tex>, for basically the same reason.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>24</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007O/</fr:uri>
+                <fr:display-uri>007O</fr:display-uri>
+                <fr:route>/lectures/007O/</fr:route>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        Here's another example proof from last time:
+</html:p>
+                <html:p>
+                  <fr:resource hash="1270aa16d6465f23f6b6279f815fad94">
+                    <fr:resource-content>
+                      <html:img src="/lectures/1270aa16d6465f23f6b6279f815fad94.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+                    \AxiomC{\ensuremath{[p \rightarrow  ((p \land  r) \rightarrow  q)]^1\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}    
+                \BinaryInfC{\ensuremath{(p \land  r) \rightarrow  q\vphantom{|}}}
+                    \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
+                    \AxiomC{\ensuremath{r\vphantom{|}}}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{(p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))\vphantom{|}}}
+            \DP]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>        This has the conclusion <fr:tex display="inline"><![CDATA[(p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>, and the sole open assumption <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        So it is a proof of any argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>, as long as <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> includes <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        For example, it is a proof of <fr:tex display="inline"><![CDATA[r \;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>, and it is a proof of <fr:tex display="inline"><![CDATA[p \rightarrow  p, r \;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>.
+</html:p>
+                <html:p>        However, it is not a proof of <fr:tex display="inline"><![CDATA[q \;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex> or of <fr:tex display="inline"><![CDATA[\;/\; (p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))]]></fr:tex>, since the open assumption <fr:tex display="inline"><![CDATA[r]]></fr:tex> doesn't occur among the premises in either of these arguments.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>24</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007P/</fr:uri>
+                <fr:display-uri>007P</fr:display-uri>
+                <fr:route>/lectures/007P/</fr:route>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        One final example proof from last week:</html:p>
+                <html:p>
+                  <fr:resource hash="b6267b2fa0d4eaa453edaedd2467f0bd">
+                    <fr:resource-content>
+                      <html:img src="/lectures/b6267b2fa0d4eaa453edaedd2467f0bd.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[p \land  q]^1\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \UnaryInfC{\ensuremath{p\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \UnaryInfC{\ensuremath{(p \land  q) \rightarrow  p\vphantom{|}}}
+            \DP]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>
+        This has the conclusion <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  p]]></fr:tex>, and it has no open assumptions.
+        So it is a proof of absolutely any argument of the form <fr:tex display="inline"><![CDATA[\Gamma  \;/\; (p \land  q) \rightarrow  p]]></fr:tex>; since there are no assumptions at all, we say they're all among <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> no matter what <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is.
+        In particular, this holds even if <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is empty; so this proof is a proof of <fr:tex display="inline"><![CDATA[\;/\; (p \land  q) \rightarrow  p]]></fr:tex>.
+        It's also a proof of, for example, <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  p \;/\; (p \land  q) \rightarrow  p]]></fr:tex>, and of every other argument with the same conclusion.
+</html:p>
+                <html:p>        This last example reveals something: if you want to have a proof of an argument with no premises, you need to have a proof with no open assumptions.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

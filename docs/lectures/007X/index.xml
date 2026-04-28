@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>26</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/007X/</fr:uri>
+    <fr:display-uri>007X</fr:display-uri>
+    <fr:route>/lectures/007X/</fr:route>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Outside this side note, that is.
+        One of the coolest logics out there that's not weaker than classical logic is called <html:em>Abelian logic</html:em>.
+        This is a logic that's been studied a fair bit at Monash in particular; see for example <fr:link href="https://philpapers.org/rec/BUTOTA" type="external">this paper</fr:link>, written by two (at the time) Monash-associated logicians.
+        The characteristic way Abelian logic ends up not weaker than classical logic: it has <fr:tex display="inline"><![CDATA[((p \rightarrow  q) \rightarrow  q) \rightarrow  p]]></fr:tex> as a theorem.
+        This is not a theorem of classical logic (although <fr:tex display="inline"><![CDATA[((p \rightarrow  \bot ) \rightarrow  \bot ) \rightarrow  p]]></fr:tex> is).</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>26</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/007W/</fr:uri>
+            <fr:display-uri>007W</fr:display-uri>
+            <fr:route>/lectures/007W/</fr:route>
+            <fr:title text="Relative strength">Relative strength</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        The first thing to notice is that we have a simple order of strength among these three.
+        Every NM proof is an NJ proof, and every NJ proof is an NK proof.
+        So if an argument is valid in minimal logic, it has an NM proof, which means it has an NJ proof, and so is valid in intuitionistic logic too; that is to say, minimal logic is weaker than intuitionistic logic.
+        For the same kind of reason, intuitionistic logic is weaker than classical logic.
+</html:p>
+            <html:p>        In fact, they are properly weaker, in both cases.
+        For example, <fr:tex display="inline"><![CDATA[p, \neg  p \;/\; q]]></fr:tex> is valid in intuitionistic but not minimal logic, and <fr:tex display="inline"><![CDATA[\neg \neg  p \;/\; p]]></fr:tex> is valid in classical but not intuitionistic logic.
+</html:p>
+            <html:p>        How do minimal and intuitionistic logics compare to our other logics?
+        Here's the situation:
+        </html:p>
+            <fr:resource hash="f69bc8a1aa6544c977aec147adeb96c9">
+              <fr:resource-content>
+                <html:img src="/lectures/f69bc8a1aa6544c977aec147adeb96c9.svg" />
+              </fr:resource-content>
+              <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+              <fr:resource-source type="latex" part="body"><![CDATA[
+            \begin {tikzcd}[column sep=small]
+                  &CL \arrow [dl,dash]\arrow [d,dash]\arrow [dr,dash] \\
+                K3&LP&Int\arrow [d,dash] \\
+                &FDRM \arrow [ul,dash] \arrow [u,dash]&Min\\
+                &FDE \arrow [u,dash]
+            \end {tikzcd}
+        ]]></fr:resource-source>
+            </fr:resource>
+            <html:p>You might note that classical logic seems to play a special role here: every logic that we've explored is weaker than it!
+        That's not entirely a coincidence.
+        Classical logic has a property called <html:em>Post completeness</html:em>: this means that the only logic that is reflexive, monotonic, transitive, substitution invariant, and properly stronger than classical logic is the logic that includes every argument.
+        As many widely-studied logics are indeed reflexive, monotonic, transitive, and substitution invariant, this means that they won't be properly stronger than classical logic.
+        This doesn't mean, though, that they'll be weaker!
+        But we won't look this semester at any example logics that are not weaker than classical logic.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>26</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007X/</fr:uri>
+                <fr:display-uri>007X</fr:display-uri>
+                <fr:route>/lectures/007X/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Outside this side note, that is.
+        One of the coolest logics out there that's not weaker than classical logic is called <html:em>Abelian logic</html:em>.
+        This is a logic that's been studied a fair bit at Monash in particular; see for example <fr:link href="https://philpapers.org/rec/BUTOTA" type="external">this paper</fr:link>, written by two (at the time) Monash-associated logicians.
+        The characteristic way Abelian logic ends up not weaker than classical logic: it has <fr:tex display="inline"><![CDATA[((p \rightarrow  q) \rightarrow  q) \rightarrow  p]]></fr:tex> as a theorem.
+        This is not a theorem of classical logic (although <fr:tex display="inline"><![CDATA[((p \rightarrow  \bot ) \rightarrow  \bot ) \rightarrow  p]]></fr:tex> is).</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
