@@ -590,7 +590,97 @@ We've got other possibilities to consider first!</html:p>
         <fr:authors />
         <fr:title text="Backlinks">Backlinks</fr:title>
       </fr:frontmatter>
-      <fr:mainmatter />
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/008M/</fr:uri>
+            <fr:display-uri>008M</fr:display-uri>
+            <fr:route>/lectures/008M/</fr:route>
+            <fr:title text="Persistence">Persistence</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>            We can also do some more general reasoning about possible values at points.
+            The most important thing to notice here is called <html:em>persistence</html:em>: in any model <fr:tex display="inline"><![CDATA[N]]></fr:tex>, at any points <fr:tex display="inline"><![CDATA[x]]></fr:tex> and <fr:tex display="inline"><![CDATA[y]]></fr:tex>, if <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> and <fr:tex display="inline"><![CDATA[N(A, x) = Y]]></fr:tex>, then <fr:tex display="inline"><![CDATA[N(A, y) = Y]]></fr:tex> as well.
+            That is, as our knowledge of atomic sentences grows, moving along the paths in our frame, the same thing happens with compound sentences as well.
+            We never lose knowledge of any sentence, atomic or compound, as long as we move only to reachable points.
+            For atomic formulas, we have forced this directly, with our restrictions on valuations.
+            But for compound sentences, this is a more complex point; it's true because of the interactions between the various connectives.
+</html:p>
+            <html:p>            To see that persistence is true, we can bring back our old friend <fr:link href="/lectures/005A/" title="Reasoning by induction" uri="https://negation.rocks/lectures/005A/" display-uri="005A" type="local"><html:em>induction</html:em></fr:link>.
+            We want to show that persistence holds for absolutely every sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+            Recall that induction has two main parts: first, we show that persistence holds for atomic sentences.
+            Then, we go connective by connective, showing that for any compound sentence, as long as persistence holds of its components, then it holds of the compound sentence itself.
+            That's enough to show that persistence holds for every sentence. We'd have no way to build a sentence where it failed, since we'd have to build the sentence ultimately from atomics using connectives.
+</html:p>
+            <html:p>            So first, let's look at persistence for atomics.
+            This says that in any model <fr:tex display="inline"><![CDATA[N]]></fr:tex>, for any points <fr:tex display="inline"><![CDATA[x]]></fr:tex> and <fr:tex display="inline"><![CDATA[y]]></fr:tex> and any atomic sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, if <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> and <fr:tex display="inline"><![CDATA[N(A, x) = Y]]></fr:tex>, then <fr:tex display="inline"><![CDATA[N(A, y) = Y]]></fr:tex> as well.
+            Here, though, this is required as we specify a valuation; any way to make this fail doesn't count as a valuation at all.
+            That is, persistence does indeed hold for atomics.
+            That's the first part done!
+</html:p>
+            <html:p>            On to the connectives.
+</html:p>
+            <html:p>
+              <html:ul><html:li> For a conjunction <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>: we need to show that <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> is persistent, as long as <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are.
+                So we assume that <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are persistent, since if they're not we don't need to worry about <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>.
+                Suppose, then, that <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[N]]></fr:tex>, and that <fr:tex display="inline"><![CDATA[N(A \land  B, x) = Y]]></fr:tex>.
+                By the way values are assigned to conjunctions, this means that both <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> also get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex>.
+                And since both <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are persistent, they both must get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex> as well.
+                But then <fr:tex display="inline"><![CDATA[N(A \land  B, y) = Y]]></fr:tex>, and this is all we need.</html:li>
+                <html:li> For a disjunction <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex>, the reasoning is very similar to conjunction.
+                Again, we assume that <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are persistent, since if they're not we don't need to worry about <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex>.
+                Suppose, then, that <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[N]]></fr:tex>, and that <fr:tex display="inline"><![CDATA[N(A \lor  B, x) = Y]]></fr:tex>.
+                By the way values are assigned to disjunctions, this means at least one of <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> also gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex>.
+                And since both <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are persistent, at least one of them must get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex> as well.
+                But then <fr:tex display="inline"><![CDATA[N(A \lor  B, y) = Y]]></fr:tex>, and this is all we need.</html:li>
+                <html:li> Showing that <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is persistent is quick: it never takes the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> anywhere, so we're all set!</html:li>
+                <html:li>Similarly for <fr:tex display="inline"><![CDATA[\top ]]></fr:tex>; since it takes the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> everywhere, we're good!</html:li>
+                <html:li> For a negation <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex>: we need to show that <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> is persistent as long as <fr:tex display="inline"><![CDATA[A]]></fr:tex> is.
+                So suppose <fr:tex display="inline"><![CDATA[A]]></fr:tex> is persistent, and that <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[N]]></fr:tex> with <fr:tex display="inline"><![CDATA[N(\neg  A, x) = Y]]></fr:tex>.
+                That means that in every point reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex>, the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex>.
+                Now, since <fr:tex display="inline"><![CDATA[y]]></fr:tex> is itself reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex>, every place reachable from <fr:tex display="inline"><![CDATA[y]]></fr:tex> is also reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex>---go from <fr:tex display="inline"><![CDATA[x]]></fr:tex> to <fr:tex display="inline"><![CDATA[y]]></fr:tex> first, and then on to wherever.
+                So in all these points reachable from <fr:tex display="inline"><![CDATA[y]]></fr:tex>, the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex>.
+                And that's enough for it to be the case that <fr:tex display="inline"><![CDATA[N(\neg  A, y) = Y]]></fr:tex>.</html:li>
+                <html:li> Finally, implication: we need to show that <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> is persistent as long as <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are.
+                So suppose <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are persistent, and that <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[N]]></fr:tex> with <fr:tex display="inline"><![CDATA[N(A \rightarrow  B, x) = Y]]></fr:tex>.
+                Then in every point reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex>, if the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> in that superset, then so does <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+                Now, since <fr:tex display="inline"><![CDATA[y]]></fr:tex> is itself reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex>, every point reachable from <fr:tex display="inline"><![CDATA[y]]></fr:tex> is also reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex>.
+                So in all these points reachable from <fr:tex display="inline"><![CDATA[y]]></fr:tex>, if the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> in that superset, then so does <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+                And that's enough for it to be the case that <fr:tex display="inline"><![CDATA[N(A \rightarrow  B, y) = Y]]></fr:tex>.</html:li></html:ul>
+            </html:p>
+            <html:p>            That's enough to show that persistence really does hold in these models, no matter what sentence we're looking at.
+</html:p>
+            <html:p>            You can use persistence when you're reasoning about what's possible in these models.
+            For example, let's suppose we have some model <fr:tex display="inline"><![CDATA[N]]></fr:tex> and a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex> where <fr:tex display="inline"><![CDATA[N(A, x) = Y]]></fr:tex>.
+            Now that we know persistence holds, this is enough to see that <fr:tex display="inline"><![CDATA[N(\neg \neg  A, x) = Y]]></fr:tex> as well.
+            Here's how the reasoning might go:
+            
+            <html:p>
+                To show that <fr:tex display="inline"><![CDATA[N(\neg \neg  A, x) = Y]]></fr:tex>, we need to know that for every point <fr:tex display="inline"><![CDATA[y]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the model <fr:tex display="inline"><![CDATA[N]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[N(\neg A, y) = ?]]></fr:tex>.
+                That in turn means that we need to know that there is some <fr:tex display="inline"><![CDATA[z]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex> with <fr:tex display="inline"><![CDATA[N(A, z) = Y]]></fr:tex>.
+                So what we need to show is this: every point reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex> <html:em>itself</html:em> has some point reachable from <html:em>it</html:em> in <fr:tex display="inline"><![CDATA[N]]></fr:tex> where <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex>.
+</html:p>
+
+<html:p>                But now take any <fr:tex display="inline"><![CDATA[y]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex>.
+                <html:em>Since <fr:tex display="inline"><![CDATA[A]]></fr:tex> is persistent</html:em>, we know that <fr:tex display="inline"><![CDATA[N(A, y) = Y]]></fr:tex>.
+                Also, <fr:tex display="inline"><![CDATA[y]]></fr:tex> is reachable from itself.
+                So we've shown what was needed.
+            </html:p></html:p>
+            <html:p>Note that this reasoning needed to appeal to persistence to get where it needed to go.
+            This is usual; in reasoning about these models, you will often need to pay attention to persistence.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">
       <fr:frontmatter>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/008T/</fr:uri>
+    <fr:display-uri>008T</fr:display-uri>
+    <fr:route>/lectures/008T/</fr:route>
+    <fr:title text="Total models">Total models</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>        All the talk of "stages of development of knowledge" in these models suggests that we might be able to see reachability as a kind of temporal flow within a model, with earlier points being able to reach later points.
+        And you might think that time is totally ordered: that for any distinct times <fr:tex display="inline"><![CDATA[x]]></fr:tex> and <fr:tex display="inline"><![CDATA[y]]></fr:tex>, either <fr:tex display="inline"><![CDATA[x]]></fr:tex> is before <fr:tex display="inline"><![CDATA[y]]></fr:tex> or <fr:tex display="inline"><![CDATA[y]]></fr:tex> is before <fr:tex display="inline"><![CDATA[x]]></fr:tex>.
+</html:p>
+    <html:p>        Our models, though, don't have to reflect this.
+        For example, think of <fr:link href="/lectures/008U/" title="https://negation.rocks/lectures/008U/" uri="https://negation.rocks/lectures/008U/" display-uri="008U" type="local">this earlier example model</fr:link>.
+        Points 2 and 3 can each reach the other one, and point 4 can't reach or be reached by anything but itself.
+        There's no great way to understand reachability in this frame as a total temporal order.
+</html:p>
+    <html:p>        We can restrict attention, though, to a special kind of model called <html:strong>total</html:strong> models, where this is required.
+        For a model to be total means that, whenever there are two distinct points <fr:tex display="inline"><![CDATA[x]]></fr:tex> and <fr:tex display="inline"><![CDATA[y]]></fr:tex> in it, then either <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> or <fr:tex display="inline"><![CDATA[y R x]]></fr:tex>.
+        For example, <fr:link href="/lectures/008Q/" title="https://negation.rocks/lectures/008Q/" uri="https://negation.rocks/lectures/008Q/" display-uri="008Q" type="local">the counterexample I gave above to the argument <fr:tex display="inline"><![CDATA[\neg  \neg  p / p]]></fr:tex></fr:link> is a total model.
+</html:p>
+    <html:p>        Suppose we restrict our attention, then, to total models.
+        What logic results?
+        That is, what if we only take a counterexample into account when it is a total model?
+        We won't <html:em>lose</html:em> any valid arguments from intuitionistic logic: if an argument has no counterexamples at all, then it certainly has no total counterexamples.
+        That's how we can be sure the resulting logic is stronger than intuitionistic logic.
+        But will we <html:em>gain</html:em> any valid arguments?
+        Another way to ask this: are there arguments that do have counterexamples, but that have no total counterexamples?
+</html:p>
+    <html:p>        As it happens, there are.
+        Consider the argument <fr:tex display="inline"><![CDATA[\;/\; (q \rightarrow  r) \lor  (r \rightarrow  q)]]></fr:tex>.
+        Here is a counterexample to the argument:
+</html:p>
+    <html:p>
+      <fr:resource hash="681d459bbdb85f596e16b94ee9f87346">
+        <fr:resource-content>
+          <html:img src="/lectures/681d459bbdb85f596e16b94ee9f87346.svg" />
+        </fr:resource-content>
+        <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+        <fr:resource-source type="latex" part="body"><![CDATA[        \begin {tikzcd}
+         2 : \{q\} && 3: \{r\}\\
+         & 1 : \{\} \arrow [ul] \arrow [ur] &\\
+        \end {tikzcd}]]></fr:resource-source>
+      </fr:resource>
+    </html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>4</fr:month>
+          <fr:day>29</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/008V/</fr:uri>
+        <fr:display-uri>008V</fr:display-uri>
+        <fr:route>/lectures/008V/</fr:route>
+        <fr:taxon>Exercise</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter><html:p>        Double-check that this model really is a counterexample.
+        Which point in the model provides the counterexample?
+</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>29</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter><html:p>It's 1.
+The sentence <fr:tex display="inline"><![CDATA[q \rightarrow  r]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at 3, so <fr:tex display="inline"><![CDATA[(q \rightarrow  r) \lor  (r \rightarrow  q)]]></fr:tex> also gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> there.
+And <fr:tex display="inline"><![CDATA[r \rightarrow  q]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at 2.
+But at 1, both <fr:tex display="inline"><![CDATA[q \rightarrow  r]]></fr:tex> and <fr:tex display="inline"><![CDATA[r \rightarrow  q]]></fr:tex> get the value <fr:tex display="inline"><![CDATA[?]]></fr:tex>; the first because 2 is reachable from 1, and the second because 3 is reachable from 1.
+So <fr:tex display="inline"><![CDATA[(q \rightarrow  r) \lor  (r \rightarrow  q)]]></fr:tex> also gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex> at 1.</html:p></fr:mainmatter></fr:tree></fr:mainmatter>
+    </fr:tree>
+    <html:p>        But although this argument has a counterexample, it does not have a counterexample that is <html:em>total</html:em>.
+        To see this, think what a counterexample to this argument must be like.
+        It must be a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> containing a point <fr:tex display="inline"><![CDATA[1]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(q \rightarrow  r, 1) = ?]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(r \rightarrow  q, 1) = ?]]></fr:tex>.
+        Since <fr:tex display="inline"><![CDATA[M(q \rightarrow  r, 1) = ?]]></fr:tex>, there must be some <fr:tex display="inline"><![CDATA[2]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[1]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(q, 2) = Y]]></fr:tex> but <fr:tex display="inline"><![CDATA[M(r, 2) = ?]]></fr:tex>.
+        And since <fr:tex display="inline"><![CDATA[M(r \rightarrow  q, 1) = ?]]></fr:tex>, there must be some <fr:tex display="inline"><![CDATA[3]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[1]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(r, 3) = Y]]></fr:tex> but <fr:tex display="inline"><![CDATA[M(q, 3) = ?]]></fr:tex>.
+        Think, though, about <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[3]]></fr:tex>.
+        Neither of these can be reachable from the other.
+        (Make sure you see why!)
+        So <fr:tex display="inline"><![CDATA[M]]></fr:tex> cannot be total.
+        As such, there are no total counterexamples to this argument.
+</html:p>
+    <html:p>        The logic of total models, then, is properly stronger than intuitionistic logic.
+        It's a logic typically known either as LC or as Gödel-Dummett logic.</html:p>
+    <html:p>We met Dummett in an earlier reading on natural deduction.
+        Kurt Gödel was a 20th century Austrian logician.
+        He is responsible for two of the most important results in 20th century logic: the completeness theorem and the incompleteness theorem.
+        At the outset of WW2 he fled to the US, where he became close friends with Albert Einstein.
+        He later developed a fear of being poisoned, so significant that he eventually refused to eat and starved himself to death.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/008S/</fr:uri>
+            <fr:display-uri>008S</fr:display-uri>
+            <fr:route>/lectures/008S/</fr:route>
+            <fr:title text="Special kinds of models">Special kinds of models</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>    I'll close these notes by looking at two special kinds of models, models that obey certain extra restrictions.
+    Since models are potential counterexamples, every extra restriction we impose on models removes some potential counterexamples.
+    That means that we'll end up with <html:em>stronger</html:em> logics.
+    </html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008T/</fr:uri>
+                <fr:display-uri>008T</fr:display-uri>
+                <fr:route>/lectures/008T/</fr:route>
+                <fr:title text="Total models">Total models</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        All the talk of "stages of development of knowledge" in these models suggests that we might be able to see reachability as a kind of temporal flow within a model, with earlier points being able to reach later points.
+        And you might think that time is totally ordered: that for any distinct times <fr:tex display="inline"><![CDATA[x]]></fr:tex> and <fr:tex display="inline"><![CDATA[y]]></fr:tex>, either <fr:tex display="inline"><![CDATA[x]]></fr:tex> is before <fr:tex display="inline"><![CDATA[y]]></fr:tex> or <fr:tex display="inline"><![CDATA[y]]></fr:tex> is before <fr:tex display="inline"><![CDATA[x]]></fr:tex>.
+</html:p>
+                <html:p>        Our models, though, don't have to reflect this.
+        For example, think of <fr:link href="/lectures/008U/" title="https://negation.rocks/lectures/008U/" uri="https://negation.rocks/lectures/008U/" display-uri="008U" type="local">this earlier example model</fr:link>.
+        Points 2 and 3 can each reach the other one, and point 4 can't reach or be reached by anything but itself.
+        There's no great way to understand reachability in this frame as a total temporal order.
+</html:p>
+                <html:p>        We can restrict attention, though, to a special kind of model called <html:strong>total</html:strong> models, where this is required.
+        For a model to be total means that, whenever there are two distinct points <fr:tex display="inline"><![CDATA[x]]></fr:tex> and <fr:tex display="inline"><![CDATA[y]]></fr:tex> in it, then either <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> or <fr:tex display="inline"><![CDATA[y R x]]></fr:tex>.
+        For example, <fr:link href="/lectures/008Q/" title="https://negation.rocks/lectures/008Q/" uri="https://negation.rocks/lectures/008Q/" display-uri="008Q" type="local">the counterexample I gave above to the argument <fr:tex display="inline"><![CDATA[\neg  \neg  p / p]]></fr:tex></fr:link> is a total model.
+</html:p>
+                <html:p>        Suppose we restrict our attention, then, to total models.
+        What logic results?
+        That is, what if we only take a counterexample into account when it is a total model?
+        We won't <html:em>lose</html:em> any valid arguments from intuitionistic logic: if an argument has no counterexamples at all, then it certainly has no total counterexamples.
+        That's how we can be sure the resulting logic is stronger than intuitionistic logic.
+        But will we <html:em>gain</html:em> any valid arguments?
+        Another way to ask this: are there arguments that do have counterexamples, but that have no total counterexamples?
+</html:p>
+                <html:p>        As it happens, there are.
+        Consider the argument <fr:tex display="inline"><![CDATA[\;/\; (q \rightarrow  r) \lor  (r \rightarrow  q)]]></fr:tex>.
+        Here is a counterexample to the argument:
+</html:p>
+                <html:p>
+                  <fr:resource hash="681d459bbdb85f596e16b94ee9f87346">
+                    <fr:resource-content>
+                      <html:img src="/lectures/681d459bbdb85f596e16b94ee9f87346.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[        \begin {tikzcd}
+         2 : \{q\} && 3: \{r\}\\
+         & 1 : \{\} \arrow [ul] \arrow [ur] &\\
+        \end {tikzcd}]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/008V/</fr:uri>
+                    <fr:display-uri>008V</fr:display-uri>
+                    <fr:route>/lectures/008V/</fr:route>
+                    <fr:taxon>Exercise</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter><html:p>        Double-check that this model really is a counterexample.
+        Which point in the model provides the counterexample?
+</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>29</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter><html:p>It's 1.
+The sentence <fr:tex display="inline"><![CDATA[q \rightarrow  r]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at 3, so <fr:tex display="inline"><![CDATA[(q \rightarrow  r) \lor  (r \rightarrow  q)]]></fr:tex> also gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> there.
+And <fr:tex display="inline"><![CDATA[r \rightarrow  q]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at 2.
+But at 1, both <fr:tex display="inline"><![CDATA[q \rightarrow  r]]></fr:tex> and <fr:tex display="inline"><![CDATA[r \rightarrow  q]]></fr:tex> get the value <fr:tex display="inline"><![CDATA[?]]></fr:tex>; the first because 2 is reachable from 1, and the second because 3 is reachable from 1.
+So <fr:tex display="inline"><![CDATA[(q \rightarrow  r) \lor  (r \rightarrow  q)]]></fr:tex> also gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex> at 1.</html:p></fr:mainmatter></fr:tree></fr:mainmatter>
+                </fr:tree>
+                <html:p>        But although this argument has a counterexample, it does not have a counterexample that is <html:em>total</html:em>.
+        To see this, think what a counterexample to this argument must be like.
+        It must be a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> containing a point <fr:tex display="inline"><![CDATA[1]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(q \rightarrow  r, 1) = ?]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(r \rightarrow  q, 1) = ?]]></fr:tex>.
+        Since <fr:tex display="inline"><![CDATA[M(q \rightarrow  r, 1) = ?]]></fr:tex>, there must be some <fr:tex display="inline"><![CDATA[2]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[1]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(q, 2) = Y]]></fr:tex> but <fr:tex display="inline"><![CDATA[M(r, 2) = ?]]></fr:tex>.
+        And since <fr:tex display="inline"><![CDATA[M(r \rightarrow  q, 1) = ?]]></fr:tex>, there must be some <fr:tex display="inline"><![CDATA[3]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[1]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(r, 3) = Y]]></fr:tex> but <fr:tex display="inline"><![CDATA[M(q, 3) = ?]]></fr:tex>.
+        Think, though, about <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[3]]></fr:tex>.
+        Neither of these can be reachable from the other.
+        (Make sure you see why!)
+        So <fr:tex display="inline"><![CDATA[M]]></fr:tex> cannot be total.
+        As such, there are no total counterexamples to this argument.
+</html:p>
+                <html:p>        The logic of total models, then, is properly stronger than intuitionistic logic.
+        It's a logic typically known either as LC or as Gödel-Dummett logic.</html:p>
+                <html:p>We met Dummett in an earlier reading on natural deduction.
+        Kurt Gödel was a 20th century Austrian logician.
+        He is responsible for two of the most important results in 20th century logic: the completeness theorem and the incompleteness theorem.
+        At the outset of WW2 he fled to the US, where he became close friends with Albert Einstein.
+        He later developed a fear of being poisoned, so significant that he eventually refused to eat and starved himself to death.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008W/</fr:uri>
+                <fr:display-uri>008W</fr:display-uri>
+                <fr:route>/lectures/008W/</fr:route>
+                <fr:title text="One-point models">One-point models</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>        We can go even farther, though.
+        Suppose we restrict our models yet again, down to models that contain just a single point.
+        In such models, the only point reachable from the point is just that point itself.
+</html:p>
+                <html:p>        All these models are total, so this is really an additional restriction.
+        Again, then, we must end up at a stronger logic, but the question arises: is it properly stronger?
+</html:p>
+                <html:p>        As you can check, the point in a one-point model is basically exactly  a Boolean valuation, even for implication and negation.
+        After all, a Boolean valuation assigns <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> unless it assigns <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> to <fr:tex display="inline"><![CDATA[B]]></fr:tex>, while our lone point in a model assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> unless there's somewhere reachable from it that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[?]]></fr:tex> to <fr:tex display="inline"><![CDATA[B]]></fr:tex>; if the valuation is itself the only thing around to be reached, these amount to the same thing.
+        The same thing happens with negation.
+        And for conjunction, disjunction, verum, and falsum, they already matched.
+</html:p>
+                <html:p>        This means you can see Boolean valuations as just a special kind of intuitionistic model. 
+        Our intuitionistic models are more flexible, since they can contain multiple points, but they do not need to do this, and so Boolean valuations remain available even in this more general setting.
+</html:p>
+                <html:p>        This means that if we restrict our attention to one-point models, we end up with a different logic than intuitionistic logic: we arrive at classical logic.
+        What about LC; is there a difference between classical logic and LC?
+        Indeed there is.
+</html:p>
+                <html:p>        We've already seen a counterexample to <fr:tex display="inline"><![CDATA[\neg \neg  p \;/\; p]]></fr:tex>: the model</html:p>
+                <html:p>
+                  <fr:resource hash="abfc6646de74d90259a69ce3178f899c">
+                    <fr:resource-content>
+                      <html:img src="/lectures/abfc6646de74d90259a69ce3178f899c.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+        \begin {tikzcd}
+         1 : \{\} \arrow [r] & 2: \{p\}
+        \end {tikzcd}]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>        As you can see, the model is total.
+        So this argument is invalid in LC, just like it's invalid in intuitionistic logic.
+        But it is valid in classical logic.
+        So classical logic is not just stronger than LC; they are distinct logics.
+</html:p>
+                <html:p>        There is a whole field of logic devoted to studying logics in between intuitionistic logic and classical logic in strength.
+        When such logics are reflexive, monotonic, transitive, and substitution invariant, they are known as <html:em>intermediate logics</html:em>.
+        The study of intermediate logics, like the study of many other kinds of logics, proceeds by using both proof systems and model systems.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/008U/</fr:uri>
+            <fr:display-uri>008U</fr:display-uri>
+            <fr:route>/lectures/008U/</fr:route>
+            <fr:taxon>Example</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+              <fr:resource hash="6f241065d2cc0b77b1a6db1e1c168ec2">
+                <fr:resource-content>
+                  <html:img src="/lectures/6f241065d2cc0b77b1a6db1e1c168ec2.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+      \begin {tikzcd}
+        1 \arrow [r] & 2 \arrow [d, bend left]& 4\\
+        & 3\arrow [u, bend left]\\
+      \end {tikzcd}]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/008Q/</fr:uri>
+            <fr:display-uri>008Q</fr:display-uri>
+            <fr:route>/lectures/008Q/</fr:route>
+            <fr:taxon>Example</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        You might recall that in intuitionistic logic, the argument <fr:tex display="inline"><![CDATA[\neg  \neg  p \;/\; p]]></fr:tex> is not valid.
+        So it must have a counterexample.
+        Here is one:</html:p>
+            <html:p>
+              <fr:resource hash="f1a7d0a3f6c04d5be23e616b23fbb414">
+                <fr:resource-content>
+                  <html:img src="/lectures/f1a7d0a3f6c04d5be23e616b23fbb414.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[\begin {tikzcd}
+         1: \{\} \arrow [r] & 2: \{p\}
+        \end {tikzcd}]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>In this model, both points assign <fr:tex display="inline"><![CDATA[?]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>; this is because each of them can reach some point that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        (For both points, this reachable place is 2.)
+</html:p>
+            <html:p>        Because of this, in turn, both points assign <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  \neg  p]]></fr:tex>; neither of them can reach anywhere in the model that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>.
+        So 1 assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  \neg  p]]></fr:tex> and <fr:tex display="inline"><![CDATA[?]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>; it is our counterexample, as it occurs in this model.
+</html:p>
+            <html:p>        Here's how you might interpret this: in intuitionistic logic, we might see <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> as saying something like "I know something that rules out my ever coming to know <fr:tex display="inline"><![CDATA[A]]></fr:tex>".
+        And we might know something that rules out our ever coming to know something that rules out our ever coming to know <fr:tex display="inline"><![CDATA[A]]></fr:tex>, without yet actually knowing <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+</html:p>
+            <html:p>        Looking at this model, we've got a situation at the point 1 where we don't yet know <fr:tex display="inline"><![CDATA[p]]></fr:tex>, but there's no way in the model to ever come to know <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>.
+        So we <html:em>do</html:em> know <fr:tex display="inline"><![CDATA[\neg \neg  p]]></fr:tex>.
+        That means that the argument <fr:tex display="inline"><![CDATA[\neg \neg  p \;/\; p]]></fr:tex> can have a known premise and an unknown conclusion, so intuitionistic logic judges it invalid.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

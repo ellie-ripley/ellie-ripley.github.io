@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/008D/</fr:uri>
+    <fr:display-uri>008D</fr:display-uri>
+    <fr:route>/lectures/008D/</fr:route>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>If you're interested in the details: what matters about reachability here is just that it's a <html:em>preorder</html:em>.
+    I won't define "preorder" here, since it's not a concept we'll need.
+    But if you already know what a preorder is, or <fr:link href="https://en.wikipedia.org/wiki/Preorder" type="external">if you feel like looking it up</fr:link>, that's exactly what we're using here.
+    Using points and arrows, and then thinking about reachability via those arrows, is just a hopefully-at-least-somewhat-intuitive way of getting at preorders.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/008B/</fr:uri>
+            <fr:display-uri>008B</fr:display-uri>
+            <fr:route>/lectures/008B/</fr:route>
+            <fr:title text="Frames">Frames</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>    First, though, frames.
+    The easiest way to think of frames, I think, is as a bunch of points with some collection of arrows between them.
+    For example, this is a frame:
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008U/</fr:uri>
+                <fr:display-uri>008U</fr:display-uri>
+                <fr:route>/lectures/008U/</fr:route>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <fr:resource hash="6f241065d2cc0b77b1a6db1e1c168ec2">
+                    <fr:resource-content>
+                      <html:img src="/lectures/6f241065d2cc0b77b1a6db1e1c168ec2.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+      \begin {tikzcd}
+        1 \arrow [r] & 2 \arrow [d, bend left]& 4\\
+        & 3\arrow [u, bend left]\\
+      \end {tikzcd}]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>    For later reference, let's name this frame "`Example frame 1"'.
+    In Example frame 1, I've named the points 1, 2, 3, 4; in general I will use numbers for points.
+    As so often when we use numbers, though, their numeric properties don't matter; it never matters which number we use for what, and we'll never add them or anything.
+    I'm just using numbers as a convenient stock of tags.
+</html:p>
+            <html:p>    In a frame, you can connect points with arrows any way you like.
+    This could include no connections at all, or every point connected to every other point, or some selection in between, as we see above.
+</html:p>
+            <html:p>    There are only two things we need to keep track of about a frame: what its points are, and which points are <html:em>reachable</html:em> from which points.
+    To think about reaching a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> from a point <fr:tex display="inline"><![CDATA[y]]></fr:tex>, imagine that you are standing at <fr:tex display="inline"><![CDATA[y]]></fr:tex> and trying to get to <fr:tex display="inline"><![CDATA[x]]></fr:tex>, and that you can only travel along arrows, and only in the direction that the arrows indicate.
+    If it is possible to get from <fr:tex display="inline"><![CDATA[y]]></fr:tex> to <fr:tex display="inline"><![CDATA[x]]></fr:tex> in this way, then <fr:tex display="inline"><![CDATA[y]]></fr:tex> can reach <fr:tex display="inline"><![CDATA[x]]></fr:tex>, and we write <fr:tex display="inline"><![CDATA[y R x]]></fr:tex> to have a quick way to say this.
+    We can also say that <fr:tex display="inline"><![CDATA[x]]></fr:tex> is reachable from <fr:tex display="inline"><![CDATA[y]]></fr:tex> to mean the same thing.
+    You don't have to move at all if you don't need to, so every point is automatically reachable from itself.
+</html:p>
+            <html:p>    For example, in Example frame 1, all of the following reachability claims are true, and no others:
+  <html:ul><html:li><fr:tex display="inline"><![CDATA[1 R 1]]></fr:tex>, and <fr:tex display="inline"><![CDATA[2 R 2]]></fr:tex>, and <fr:tex display="inline"><![CDATA[3 R 3]]></fr:tex>, and <fr:tex display="inline"><![CDATA[4 R 4]]></fr:tex></html:li>
+      <html:li><fr:tex display="inline"><![CDATA[1 R 2]]></fr:tex></html:li>
+      <html:li><fr:tex display="inline"><![CDATA[1 R 3]]></fr:tex></html:li>
+      <html:li><fr:tex display="inline"><![CDATA[2 R 3]]></fr:tex></html:li>
+      <html:li><fr:tex display="inline"><![CDATA[3 R 2]]></fr:tex></html:li></html:ul></html:p>
+            <html:p>    And that's all we need to know about Example frame 1.
+    Note that we have <fr:tex display="inline"><![CDATA[1 R 3]]></fr:tex> here, even though there is no arrow in the diagram directly from 1 to 3.
+    We can still reach 3 from 1 along the arrows, by first stepping to 2 and then to 3.
+    (Or by doing that and then stepping around the loop connecting 2 and 3 any number of times.)</html:p>
+            <html:p>
+    In fact, since every point is reachable from itself, we don't even <html:em>really</html:em> need to keep track of the points in a frame separately; if we know what's reachable from what, we will automatically have a list of all the points.</html:p>
+            <html:p>    Any way of setting up points and arrows determines some story about reachability among those points, so any way of setting up points and arrows gives us a frame.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008C/</fr:uri>
+                <fr:display-uri>008C</fr:display-uri>
+                <fr:route>/lectures/008C/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>You might note that, if we added to the diagram of Example frame 1 a new arrow directly from 1 to 3, that wouldn't have any effect on what's reachable from what, since we already have <fr:tex display="inline"><![CDATA[1 R 3]]></fr:tex> in this frame.
+    Since reachability is all that matters to a frame, if we're being picky we'd say that the points-and-arrows depiction I've given you isn't Example frame 1 itself, but rather a <html:em>presentation</html:em> of Example frame 1; and adding an arrow from 1 to 3 would give us a different presentation of the very same frame.
+    For our purposes, though, we don't need to be this picky; points-and-arrows gives a nice way to think about frames, as long as you remember that all that really matters is <html:em>reachability</html:em>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008F/</fr:uri>
+                <fr:display-uri>008F</fr:display-uri>
+                <fr:route>/lectures/008F/</fr:route>
+                <fr:title text="Frame, point, reachable">Frame, point, reachable</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>frame</html:strong> is some set of things, called <html:strong>points</html:strong>, with some arrows between them, in any configuration.
+(We usually use numbers for points, but that's not very important; it's just convenient.)
+
+All that matters about a frame is which points are <html:em>reachable</html:em> from which points.
+Every point can reach itself, plus points can reach along any arrows in the frame, and they can follow chains of arrows: anywhere that a particular point can reach in this way is <html:strong>reachable</html:strong> from that starting point.
+(Any reaching along an arrow or along a chain of arrows must follow the direction of all the arrows in question.)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>    Example frame 1 is finite, and of course any frame that I can depict like this will be finite.
+    But there is no restriction in general to finite frames; a frame can certainly contain infinitely many points if you like.
+    As long as it's clearly specified what's reachable from what, there's no problem with this.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008D/</fr:uri>
+                <fr:display-uri>008D</fr:display-uri>
+                <fr:route>/lectures/008D/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>If you're interested in the details: what matters about reachability here is just that it's a <html:em>preorder</html:em>.
+    I won't define "preorder" here, since it's not a concept we'll need.
+    But if you already know what a preorder is, or <fr:link href="https://en.wikipedia.org/wiki/Preorder" type="external">if you feel like looking it up</fr:link>, that's exactly what we're using here.
+    Using points and arrows, and then thinking about reachability via those arrows, is just a hopefully-at-least-somewhat-intuitive way of getting at preorders.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>        That's all pretty abstract so far, and it's at that abstract level that logic really lives and breathes.
+        It can sometimes help to have a more concrete way of thinking about things, though.
+</html:p>
+            <html:p>        One way these models are sometimes thought of is as representing a kind of temporal growth of knowledge.
+        In this way of thinking, each point in a model represents a particular stage of knowledge, and as we move around a frame, along the given paths, we get to points that have more and more knowledge.
+        On this way of thinking about models, when <fr:tex display="inline"><![CDATA[x]]></fr:tex> and <fr:tex display="inline"><![CDATA[y]]></fr:tex> are points in a model, and <fr:tex display="inline"><![CDATA[x R y]]></fr:tex>, that means something like: if we're at stage <fr:tex display="inline"><![CDATA[x]]></fr:tex> of knowledge, there is something we could learn, without forgetting anything, that would move us to stage <fr:tex display="inline"><![CDATA[y]]></fr:tex>.
+</html:p>
+            <html:p>        On the other hand, when it's not the case that <fr:tex display="inline"><![CDATA[x R y]]></fr:tex>, that means something like: if we're at stage <fr:tex display="inline"><![CDATA[x]]></fr:tex> of knowledge, there's no way we could learn any more than we already know and end up at <fr:tex display="inline"><![CDATA[y]]></fr:tex>.
+        Since <fr:tex display="inline"><![CDATA[y]]></fr:tex> doesn't preserve everything we already have at <fr:tex display="inline"><![CDATA[x]]></fr:tex>, we would have to forget something to get from <fr:tex display="inline"><![CDATA[x]]></fr:tex> to <fr:tex display="inline"><![CDATA[y]]></fr:tex>.
+</html:p>
+            <html:p>        On this interpretation, we're thinking about knowledge as something that can never be lost.
+        (Or at least we're not thinking about what losing it would be like.)
+        We're only concerned with which sets are subsets of which others: which can be extended <html:em>without losing anything</html:em> to reach which others.
+        That's probably not a great theory of how knowledge actually works!
+        (For example, I know where my keys are right now; but maybe tomorrow I won't.)
+        So don't get too distracted by this kind of interpretation; it's just here to give the flavour.
+        If you can imagine a kind of cumulative development of knowledge, that never loses anything as it goes, that's the kind of picture.
+        Other interpretations of frames are of course possible, but hopefully this helps sink in an image.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

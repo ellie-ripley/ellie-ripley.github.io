@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/008P/</fr:uri>
+    <fr:display-uri>008P</fr:display-uri>
+    <fr:route>/lectures/008P/</fr:route>
+    <fr:title text="Examples of intuitionistic counterexamples">Examples of intuitionistic counterexamples</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>4</fr:month>
+          <fr:day>29</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/008Q/</fr:uri>
+        <fr:display-uri>008Q</fr:display-uri>
+        <fr:route>/lectures/008Q/</fr:route>
+        <fr:taxon>Example</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>        You might recall that in intuitionistic logic, the argument <fr:tex display="inline"><![CDATA[\neg  \neg  p \;/\; p]]></fr:tex> is not valid.
+        So it must have a counterexample.
+        Here is one:</html:p>
+        <html:p>
+          <fr:resource hash="f1a7d0a3f6c04d5be23e616b23fbb414">
+            <fr:resource-content>
+              <html:img src="/lectures/f1a7d0a3f6c04d5be23e616b23fbb414.svg" />
+            </fr:resource-content>
+            <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+            <fr:resource-source type="latex" part="body"><![CDATA[\begin {tikzcd}
+         1: \{\} \arrow [r] & 2: \{p\}
+        \end {tikzcd}]]></fr:resource-source>
+          </fr:resource>
+        </html:p>
+        <html:p>In this model, both points assign <fr:tex display="inline"><![CDATA[?]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>; this is because each of them can reach some point that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        (For both points, this reachable place is 2.)
+</html:p>
+        <html:p>        Because of this, in turn, both points assign <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  \neg  p]]></fr:tex>; neither of them can reach anywhere in the model that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>.
+        So 1 assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  \neg  p]]></fr:tex> and <fr:tex display="inline"><![CDATA[?]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>; it is our counterexample, as it occurs in this model.
+</html:p>
+        <html:p>        Here's how you might interpret this: in intuitionistic logic, we might see <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> as saying something like "I know something that rules out my ever coming to know <fr:tex display="inline"><![CDATA[A]]></fr:tex>".
+        And we might know something that rules out our ever coming to know something that rules out our ever coming to know <fr:tex display="inline"><![CDATA[A]]></fr:tex>, without yet actually knowing <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+</html:p>
+        <html:p>        Looking at this model, we've got a situation at the point 1 where we don't yet know <fr:tex display="inline"><![CDATA[p]]></fr:tex>, but there's no way in the model to ever come to know <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>.
+        So we <html:em>do</html:em> know <fr:tex display="inline"><![CDATA[\neg \neg  p]]></fr:tex>.
+        That means that the argument <fr:tex display="inline"><![CDATA[\neg \neg  p \;/\; p]]></fr:tex> can have a known premise and an unknown conclusion, so intuitionistic logic judges it invalid.
+</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>4</fr:month>
+          <fr:day>29</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/008R/</fr:uri>
+        <fr:display-uri>008R</fr:display-uri>
+        <fr:route>/lectures/008R/</fr:route>
+        <fr:taxon>Example</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>        Here's another example: in intuitionistic logic, the argument from <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  r]]></fr:tex> to <fr:tex display="inline"><![CDATA[(p \rightarrow  r) \lor  (q \rightarrow  r)]]></fr:tex> fails.
+        So it must have a counterexample.
+        Here is one: let the model <fr:tex display="inline"><![CDATA[M]]></fr:tex> be:
+</html:p>
+        <html:p>
+          <fr:resource hash="ffd46402b0f460c1308e31e9fd96ff36">
+            <fr:resource-content>
+              <html:img src="/lectures/ffd46402b0f460c1308e31e9fd96ff36.svg" />
+            </fr:resource-content>
+            <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+            <fr:resource-source type="latex" part="body"><![CDATA[        \begin {tikzcd}
+         & 4 : \{p, q, r\}\\
+        2: \{p\} \arrow [ur] & & 3: \{q\} \arrow [ul]\\
+        & 1: \{\} \arrow [ur] \arrow [ul] &\\
+        \end {tikzcd}]]></fr:resource-source>
+          </fr:resource>
+        </html:p>
+        <html:p>        Now, think about the values of the sentences in the argument at the point 1 in this model.
+        We have <fr:tex display="inline"><![CDATA[M((p \land  q) \rightarrow  r, 1) = Y]]></fr:tex>, since the only point reachable from 1 that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> in this model is 4, and 4 also assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        But both <fr:tex display="inline"><![CDATA[p \rightarrow  r]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \rightarrow  r]]></fr:tex> get value <fr:tex display="inline"><![CDATA[?]]></fr:tex> at 1, for <fr:tex display="inline"><![CDATA[p \rightarrow  r]]></fr:tex> because of the presence of <fr:tex display="inline"><![CDATA[2]]></fr:tex> in the model and for <fr:tex display="inline"><![CDATA[q \rightarrow  r]]></fr:tex> because of the presence of <fr:tex display="inline"><![CDATA[3]]></fr:tex> in the model.
+        So their disjunction also gets a <fr:tex display="inline"><![CDATA[?]]></fr:tex> at <fr:tex display="inline"><![CDATA[1]]></fr:tex>.
+        This gives the premise of this argument getting a <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[1]]></fr:tex> in this model, and the conclusion getting a <fr:tex display="inline"><![CDATA[?]]></fr:tex> there.
+        So we have our counterexample.
+</html:p>
+        <html:p>        This model pictures a certain kind of dependency: if we have both <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>, then we must have <fr:tex display="inline"><![CDATA[r]]></fr:tex> as well, but neither <fr:tex display="inline"><![CDATA[p]]></fr:tex> nor <fr:tex display="inline"><![CDATA[q]]></fr:tex> on its own is enough for <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        This is a common kind of dependency: everything from light switches to the law includes situations where two things need to come together to suffice for something else, where neither one would suffice on its own.
+        Our intuitionistic models can picture this very straightforwardly, as this example shows.
+</html:p>
+        <html:p>        However, <html:em>all</html:em> of the logics K3, LP, FDE, and classical logic validate this argument.
+        So this seems to be one way in which intuitionistic implication is more flexible than the implications of all those logics.
+</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/008N/</fr:uri>
+            <fr:display-uri>008N</fr:display-uri>
+            <fr:route>/lectures/008N/</fr:route>
+            <fr:title text="Counterexamples">Counterexamples</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>    Okay; those are our models.
+    To get a logic from these, we need to do the usual model-theoretic thing.
+    That is, we need to say which models are counterexamples to which arguments.
+    As you might expect, this will make use of the values assigned by the models at various points.
+</html:p>
+            <html:p>    In fact, it's easiest to say what it takes for a <html:em>point</html:em> in a model to be a counterexample to an argument.
+    A model then gets to be a counterexample to an argument by containing a point that's a counterexample to that argument.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008O/</fr:uri>
+                <fr:display-uri>008O</fr:display-uri>
+                <fr:route>/lectures/008O/</fr:route>
+                <fr:title text="Intuitionistic counterexample">Intuitionistic counterexample</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>    A point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> is a <html:strong>counterexample</html:strong> to the argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> when it meets two conditions:
+<html:ul><html:li>for every sentence <fr:tex display="inline"><![CDATA[B]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> we have <fr:tex display="inline"><![CDATA[M(B, x) = Y]]></fr:tex>; and</html:li>
+<html:li><fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>.</html:li></html:ul></html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>
+    This is basically just a designated-value approach again, with <fr:tex display="inline"><![CDATA[Y]]></fr:tex> designated and <fr:tex display="inline"><![CDATA[?]]></fr:tex> undesignated, except that we need to remember that sentences need both a model and a point in that model to get any value at all.
+</html:p>
+            <html:p>    Before we see some examples, let me remind you: the logic this determines is exactly intuitionistic logic, the same logic determined by the proof system NJ.
+    That is, if an argument has a proof in NJ, then no model provides a counterexample to it; and if an argument has no proof in NJ, then there is a model that provides a counterexample to it.
+    So all the examples of counterexamples will be to arguments that have no proof in NJ, since those are the only arguments that have any counterexamples at all.</html:p>
+            <html:p>Do note that, at least for now, you have to trust me on this: that these models determine the same logic as the proof system NJ.
+That's certainly not obvious!
+And we haven't looked at all at why it might be so.
+But it is indeed so.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008P/</fr:uri>
+                <fr:display-uri>008P</fr:display-uri>
+                <fr:route>/lectures/008P/</fr:route>
+                <fr:title text="Examples of intuitionistic counterexamples">Examples of intuitionistic counterexamples</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/008Q/</fr:uri>
+                    <fr:display-uri>008Q</fr:display-uri>
+                    <fr:route>/lectures/008Q/</fr:route>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        You might recall that in intuitionistic logic, the argument <fr:tex display="inline"><![CDATA[\neg  \neg  p \;/\; p]]></fr:tex> is not valid.
+        So it must have a counterexample.
+        Here is one:</html:p>
+                    <html:p>
+                      <fr:resource hash="f1a7d0a3f6c04d5be23e616b23fbb414">
+                        <fr:resource-content>
+                          <html:img src="/lectures/f1a7d0a3f6c04d5be23e616b23fbb414.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[\begin {tikzcd}
+         1: \{\} \arrow [r] & 2: \{p\}
+        \end {tikzcd}]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>In this model, both points assign <fr:tex display="inline"><![CDATA[?]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>; this is because each of them can reach some point that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        (For both points, this reachable place is 2.)
+</html:p>
+                    <html:p>        Because of this, in turn, both points assign <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  \neg  p]]></fr:tex>; neither of them can reach anywhere in the model that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>.
+        So 1 assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  \neg  p]]></fr:tex> and <fr:tex display="inline"><![CDATA[?]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>; it is our counterexample, as it occurs in this model.
+</html:p>
+                    <html:p>        Here's how you might interpret this: in intuitionistic logic, we might see <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> as saying something like "I know something that rules out my ever coming to know <fr:tex display="inline"><![CDATA[A]]></fr:tex>".
+        And we might know something that rules out our ever coming to know something that rules out our ever coming to know <fr:tex display="inline"><![CDATA[A]]></fr:tex>, without yet actually knowing <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+</html:p>
+                    <html:p>        Looking at this model, we've got a situation at the point 1 where we don't yet know <fr:tex display="inline"><![CDATA[p]]></fr:tex>, but there's no way in the model to ever come to know <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>.
+        So we <html:em>do</html:em> know <fr:tex display="inline"><![CDATA[\neg \neg  p]]></fr:tex>.
+        That means that the argument <fr:tex display="inline"><![CDATA[\neg \neg  p \;/\; p]]></fr:tex> can have a known premise and an unknown conclusion, so intuitionistic logic judges it invalid.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/008R/</fr:uri>
+                    <fr:display-uri>008R</fr:display-uri>
+                    <fr:route>/lectures/008R/</fr:route>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        Here's another example: in intuitionistic logic, the argument from <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  r]]></fr:tex> to <fr:tex display="inline"><![CDATA[(p \rightarrow  r) \lor  (q \rightarrow  r)]]></fr:tex> fails.
+        So it must have a counterexample.
+        Here is one: let the model <fr:tex display="inline"><![CDATA[M]]></fr:tex> be:
+</html:p>
+                    <html:p>
+                      <fr:resource hash="ffd46402b0f460c1308e31e9fd96ff36">
+                        <fr:resource-content>
+                          <html:img src="/lectures/ffd46402b0f460c1308e31e9fd96ff36.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[        \begin {tikzcd}
+         & 4 : \{p, q, r\}\\
+        2: \{p\} \arrow [ur] & & 3: \{q\} \arrow [ul]\\
+        & 1: \{\} \arrow [ur] \arrow [ul] &\\
+        \end {tikzcd}]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>        Now, think about the values of the sentences in the argument at the point 1 in this model.
+        We have <fr:tex display="inline"><![CDATA[M((p \land  q) \rightarrow  r, 1) = Y]]></fr:tex>, since the only point reachable from 1 that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> in this model is 4, and 4 also assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        But both <fr:tex display="inline"><![CDATA[p \rightarrow  r]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \rightarrow  r]]></fr:tex> get value <fr:tex display="inline"><![CDATA[?]]></fr:tex> at 1, for <fr:tex display="inline"><![CDATA[p \rightarrow  r]]></fr:tex> because of the presence of <fr:tex display="inline"><![CDATA[2]]></fr:tex> in the model and for <fr:tex display="inline"><![CDATA[q \rightarrow  r]]></fr:tex> because of the presence of <fr:tex display="inline"><![CDATA[3]]></fr:tex> in the model.
+        So their disjunction also gets a <fr:tex display="inline"><![CDATA[?]]></fr:tex> at <fr:tex display="inline"><![CDATA[1]]></fr:tex>.
+        This gives the premise of this argument getting a <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[1]]></fr:tex> in this model, and the conclusion getting a <fr:tex display="inline"><![CDATA[?]]></fr:tex> there.
+        So we have our counterexample.
+</html:p>
+                    <html:p>        This model pictures a certain kind of dependency: if we have both <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>, then we must have <fr:tex display="inline"><![CDATA[r]]></fr:tex> as well, but neither <fr:tex display="inline"><![CDATA[p]]></fr:tex> nor <fr:tex display="inline"><![CDATA[q]]></fr:tex> on its own is enough for <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        This is a common kind of dependency: everything from light switches to the law includes situations where two things need to come together to suffice for something else, where neither one would suffice on its own.
+        Our intuitionistic models can picture this very straightforwardly, as this example shows.
+</html:p>
+                    <html:p>        However, <html:em>all</html:em> of the logics K3, LP, FDE, and classical logic validate this argument.
+        So this seems to be one way in which intuitionistic implication is more flexible than the implications of all those logics.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

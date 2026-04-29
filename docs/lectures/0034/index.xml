@@ -3134,7 +3134,7 @@ We've seen four examples of this idea, and used them to name four particular log
   <html:li>Section C: Exploring intuitionistic logic
   <html:ul><html:li><fr:link href="/lectures/006M/" title="Lecture 8: Natural deduction" uri="https://negation.rocks/lectures/006M/" display-uri="006M" type="local">Lecture 8: Natural deduction</fr:link></html:li>
     <html:li><fr:link href="/lectures/007I/" title="Lecture 9: Intuitionistic logic" uri="https://negation.rocks/lectures/007I/" display-uri="007I" type="local">Lecture 9: Intuitionistic logic</fr:link></html:li>
-    <html:li>Lecture 10: Intuitionistic models</html:li>
+    <html:li><fr:link href="/lectures/0089/" title="Lecture 10: Intuitionistic models" uri="https://negation.rocks/lectures/0089/" display-uri="0089" type="local">Lecture 10: Intuitionistic models</fr:link></html:li>
     <html:li>Lecture 11: Harmony</html:li></html:ul></html:li>
   <html:li>[Lecture 12: further directions]</html:li></html:ul>
           </fr:mainmatter>

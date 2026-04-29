@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/008L/</fr:uri>
+    <fr:display-uri>008L</fr:display-uri>
+    <fr:route>/lectures/008L/</fr:route>
+    <fr:title text="Evaluating sentences in intuitionistic models">Evaluating sentences in intuitionistic models</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Given an <fr:link href="/lectures/008J/" title="Intuitionistic model" uri="https://negation.rocks/lectures/008J/" display-uri="008J" type="local">intuitionistic model</fr:link> <fr:tex display="inline"><![CDATA[M]]></fr:tex> and a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in it, we assign values to every sentence at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the model as follows:
+<html:ul><html:li>atomic: for any atomic sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A, x) = Y]]></fr:tex> iff <fr:tex display="inline"><![CDATA[A]]></fr:tex> is in the set of atomic sentences assigned to <fr:tex display="inline"><![CDATA[x]]></fr:tex> by the model, and otherwise <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>.</html:li>
+<html:li>conjunction: for any sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A \land  B, x) = Y]]></fr:tex> iff <fr:tex display="inline"><![CDATA[M(A, x) = M(B, x) = Y]]></fr:tex>, and otherwise <fr:tex display="inline"><![CDATA[M(A \land  B, x) = ?]]></fr:tex>.</html:li>
+<html:li>disjunction: for any sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A \lor  B, x) = ?]]></fr:tex> iff <fr:tex display="inline"><![CDATA[M(A, x) = M(B, x) = ?]]></fr:tex>, and otherwise <fr:tex display="inline"><![CDATA[M(A \lor  B, x) = Y]]></fr:tex>.</html:li>
+<html:li>verum and falsum: always, <fr:tex display="inline"><![CDATA[M(\top , x) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(\bot , x) = vQ]]></fr:tex>.</html:li>
+<html:li>negation: for any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(\neg  A, x) = Y]]></fr:tex> iff every point <fr:tex display="inline"><![CDATA[y]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> is such that <fr:tex display="inline"><![CDATA[M(A, y) = vQ]]></fr:tex>; otherwise, <fr:tex display="inline"><![CDATA[M(\neg  A, x) = vQ]]></fr:tex>.</html:li>
+<html:li>implication: for any sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, x) = vQ]]></fr:tex> iff there is some point <fr:tex display="inline"><![CDATA[y]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> with <fr:tex display="inline"><![CDATA[M(A, y) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(B, y) = ?]]></fr:tex>; otherwise <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, x)]]></fr:tex> = <fr:tex display="inline"><![CDATA[Y]]></fr:tex>.</html:li></html:ul></html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/008I/</fr:uri>
+            <fr:display-uri>008I</fr:display-uri>
+            <fr:route>/lectures/008I/</fr:route>
+            <fr:title text="Compound sentences">Compound sentences</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>        That's what an intuitionistic model is: a frame, plus a set of atomics chosen for each point in the frame, such that whenever <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in the frame, the set assigned to <fr:tex display="inline"><![CDATA[x]]></fr:tex> is a subset of the set assigned to <fr:tex display="inline"><![CDATA[y]]></fr:tex>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008J/</fr:uri>
+                <fr:display-uri>008J</fr:display-uri>
+                <fr:route>/lectures/008J/</fr:route>
+                <fr:title text="Intuitionistic model">Intuitionistic model</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>An <html:strong>intuitionistic model</html:strong> is a <fr:link href="/lectures/008F/" title="Frame, point, reachable" uri="https://negation.rocks/lectures/008F/" display-uri="008F" type="local">frame</fr:link>, plus a <fr:link href="/lectures/008H/" title="Valuation on a frame" uri="https://negation.rocks/lectures/008H/" display-uri="008H" type="local">valuation on that frame</fr:link>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>On this basis, we can calculate values for every formula of our language at every point in the model.
+        Here's how.
+</html:p>
+            <html:p>        As before, for any <html:em>atomic</html:em> sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, we will have <fr:tex display="inline"><![CDATA[M(A, x) = Y]]></fr:tex> if <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a member of the set assigned to the point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the model <fr:tex display="inline"><![CDATA[M]]></fr:tex>.
+        For compound sentences, we proceed by way of the main connective of the sentence.
+        I'll discuss <fr:tex display="inline"><![CDATA[\land , \lor , \top , \bot ]]></fr:tex> first, since those are simpler; I'll put off <fr:tex display="inline"><![CDATA[\neg , \rightarrow ]]></fr:tex> for now.</html:p>
+            <html:p>            No matter what model <fr:tex display="inline"><![CDATA[M]]></fr:tex> we're in, and no matter what point <fr:tex display="inline"><![CDATA[x]]></fr:tex> we're at inside the model <fr:tex display="inline"><![CDATA[M]]></fr:tex>:
+            <html:ul><html:li><fr:tex display="inline"><![CDATA[M(A \land  B, x) = Y]]></fr:tex> if both <fr:tex display="inline"><![CDATA[M(A, x) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(B, x) = Y]]></fr:tex>, and otherwise <fr:tex display="inline"><![CDATA[M(A \land  B, x) = ?]]></fr:tex>;</html:li>
+            <html:li><fr:tex display="inline"><![CDATA[M(A \lor  B, x) = ?]]></fr:tex> if both <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(B, x) = ?]]></fr:tex>, and otherwise <fr:tex display="inline"><![CDATA[M(A \lor  B, x) = Y]]></fr:tex>;</html:li>
+            <html:li><fr:tex display="inline"><![CDATA[M(\top , x) = Y]]></fr:tex>; and</html:li>
+            <html:li><fr:tex display="inline"><![CDATA[M(\bot , x) = ?]]></fr:tex>.</html:li></html:ul></html:p>
+            <html:p>            As you can see, this is just like the Boolean structure, but with <fr:tex display="inline"><![CDATA[Y]]></fr:tex> playing the role of <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[?]]></fr:tex> the role of <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+            The difference of the names of the values isn't really important; it's just there to be reminiscent of a difference in how these values are often interpreted.
+            For example, where our clause for conjunction in the classical case is often taken to indicate that a conjunction is <html:em>true</html:em> iff both conjuncts are true, here the corresponding clause is meant to indicate that a conjunction is <html:em>known</html:em> iff both conjuncts are known.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008K/</fr:uri>
+                <fr:display-uri>008K</fr:display-uri>
+                <fr:route>/lectures/008K/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>This should lead you to wonder about disjunction: surely it's possible to know a disjunction without knowing either disjunct, but the clause we have here seems to rule this out.
+            In fact, there is another way to proceed that would be more careful about disjunction, for just this reason; we're working this way because it's simpler, even though it strains the knowledge interpretation.
+            Our method is based on what are sometimes called "Kripke models"; the more involved method would work with what are called "Beth models".
+            Both kinds of model determine intuitionistic logic.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>            If that were all there was to it, though, then there would be no point in bundling up multiple points into a frame.
+            Where that stuff comes into play is with the remaining connectives: <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex>.
+            To give a value to <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> at a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in a model, we don't just look at <fr:tex display="inline"><![CDATA[x]]></fr:tex> itself.
+            Instead, we look at every point that's <html:em>reachable</html:em> from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the model.
+            Remember, every point is reachable from itself; so this includes looking at <fr:tex display="inline"><![CDATA[x]]></fr:tex>.
+            But it often includes more.
+</html:p>
+            <html:p>            For <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> to get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at a point <fr:tex display="inline"><![CDATA[x]]></fr:tex>, what's required is that at <html:em>every</html:em> point reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the model, <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex>.
+            The idea is that it's not enough in general for us to know <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> just that we don't yet know <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+            Something more is needed.
+            What's needed is that there is <html:em>no way</html:em> to extend our knowledge where we could come to know <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+            Or at least, that's the idea that these models go with.
+</html:p>
+            <html:p>            The idea for implication is similar.
+            Again, to give a value to <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> at a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in a model <fr:tex display="inline"><![CDATA[M]]></fr:tex>, we look at every point reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>.
+            For <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> to get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex>, what's required is this: that there's no way to extend our knowledge to know <fr:tex display="inline"><![CDATA[A]]></fr:tex> without also knowing <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+            That is, we require that every point <fr:tex display="inline"><![CDATA[y]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(A, y)= Y]]></fr:tex> also gives us <fr:tex display="inline"><![CDATA[M(B, y) = Y]]></fr:tex>.
+</html:p>
+            <html:p>            Let's look at some examples, using a new example model, which I'l call <fr:tex display="inline"><![CDATA[M]]></fr:tex>:
+</html:p>
+            <html:p>
+              <fr:resource hash="9df6136b00cbf1cc12f4ea692bb0bf55">
+                <fr:resource-content>
+                  <html:img src="/lectures/9df6136b00cbf1cc12f4ea692bb0bf55.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+            \begin {tikzcd}
+                &1: \{p, q, r, s, t\}\\
+                &2: \{p, q, r, s\} \arrow [u]\\
+                3: \{p, q\}\arrow [ur]&&4: \{p, r\}\arrow [ul]\\
+                &5: \{p\}\arrow [ul]\arrow [ur]\\
+            \end {tikzcd}]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>
+            Here, I've indicated the valuation along with the frame, by putting at each point the set of atomic sentences assigned to that point.
+            Here are some example calculations of values of various compound sentences at points in <fr:tex display="inline"><![CDATA[M]]></fr:tex>:
+            <html:ul><html:li><fr:tex display="inline"><![CDATA[M(\neg  q, 5) = ?]]></fr:tex>.
+                Even though we have <fr:tex display="inline"><![CDATA[M(q, 5) = ?]]></fr:tex>, the fact that <fr:tex display="inline"><![CDATA[M(q, 3) = Y]]></fr:tex>, together with the fact that <fr:tex display="inline"><![CDATA[5 R 3]]></fr:tex>, forces this result.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M(\neg  u, 2) = Y]]></fr:tex>.
+                Here, we have two points we need to check: <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[1]]></fr:tex>.
+                Since both of these points assign the value <fr:tex display="inline"><![CDATA[?]]></fr:tex> to the atomic sentence <fr:tex display="inline"><![CDATA[u]]></fr:tex>, we have this result.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M(q \rightarrow  r, 5) = ?]]></fr:tex>.
+                Since we have <fr:tex display="inline"><![CDATA[M(q, 3) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(r, 3) = ?]]></fr:tex>, this result follows.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M(r \rightarrow  q, 5) = ?]]></fr:tex>.
+                Since we have <fr:tex display="inline"><![CDATA[M(r, 4) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(q, 4) = ?]]></fr:tex>, this result follows.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M((q \rightarrow  r) \lor  (r \rightarrow  q), 5) = ?]]></fr:tex>.
+                We've seen that both of the components of this disjunction take value <fr:tex display="inline"><![CDATA[?]]></fr:tex> at <fr:tex display="inline"><![CDATA[5]]></fr:tex>, so the disjunction does as well.
+
+
+<html:p>                Note what's happened here: we've got a reflection at <fr:tex display="inline"><![CDATA[5]]></fr:tex> of what's going on at both <fr:tex display="inline"><![CDATA[3]]></fr:tex> and <fr:tex display="inline"><![CDATA[4]]></fr:tex>: in particular, <fr:tex display="inline"><![CDATA[3]]></fr:tex> gives us <fr:tex display="inline"><![CDATA[q]]></fr:tex> without <fr:tex display="inline"><![CDATA[r]]></fr:tex> and <fr:tex display="inline"><![CDATA[4]]></fr:tex> gives us <fr:tex display="inline"><![CDATA[r]]></fr:tex> without <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+                Our connectives are giving us a way to "look around" inside the model, in a limited way.
+</html:p></html:li>
+
+<html:li><fr:tex display="inline"><![CDATA[M((q \land  r) \rightarrow  s, 5) = Y]]></fr:tex>.
+                Here, we need to check every point, since every point is reachable from <fr:tex display="inline"><![CDATA[5]]></fr:tex>.
+                What we see is that there are only two points that give the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex>\ to <fr:tex display="inline"><![CDATA[q \land  r]]></fr:tex>; these are <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[1]]></fr:tex>.
+                And both of these points also give the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[s]]></fr:tex>.
+                So we have the result.</html:li>
+                
+                <html:li><fr:tex display="inline"><![CDATA[M((q \land  r) \rightarrow  t, 5) = ?]]></fr:tex>.
+                Again, we check every point, and see that just <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[1]]></fr:tex> give the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex>\ to <fr:tex display="inline"><![CDATA[q \land  r]]></fr:tex>.
+                This time, though, one of them (viz <fr:tex display="inline"><![CDATA[2]]></fr:tex>) gives <fr:tex display="inline"><![CDATA[?]]></fr:tex> to the consequent <fr:tex display="inline"><![CDATA[t]]></fr:tex>.
+                So we get this result instead.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M((q \land  r) \rightarrow  t, 2) = ?]]></fr:tex>.
+                This time we only need to look at <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[1]]></fr:tex>, but since <fr:tex display="inline"><![CDATA[2]]></fr:tex> still gives <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to the antecedent and <fr:tex display="inline"><![CDATA[?]]></fr:tex> to the consequent, it's the same result.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M((q \land  r) \rightarrow  t, 1) = Y]]></fr:tex>.
+                Here, we only need to look at <fr:tex display="inline"><![CDATA[1]]></fr:tex> itself, since <fr:tex display="inline"><![CDATA[1]]></fr:tex> is the only point reachable from <fr:tex display="inline"><![CDATA[1]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>.
+                And here, we have the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> for both <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex>.
+                So we get this result.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M(\neg  ((q \land  r) \rightarrow  t), 2) = ?]]></fr:tex>.
+                Here, we look at <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[1]]></fr:tex>, since these are the points reachable from <fr:tex display="inline"><![CDATA[2]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>.
+                At each of these, we ask: what is the value of <fr:tex display="inline"><![CDATA[(q \land  r) \rightarrow  t]]></fr:tex> here?
+                As we've seen, it's <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[1]]></fr:tex> and <fr:tex display="inline"><![CDATA[?]]></fr:tex> at <fr:tex display="inline"><![CDATA[2]]></fr:tex>.
+                So we have this result.</html:li></html:ul></html:p>
+            <html:p>Let's wrap all this up in a definition for later reference:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008L/</fr:uri>
+                <fr:display-uri>008L</fr:display-uri>
+                <fr:route>/lectures/008L/</fr:route>
+                <fr:title text="Evaluating sentences in intuitionistic models">Evaluating sentences in intuitionistic models</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Given an <fr:link href="/lectures/008J/" title="Intuitionistic model" uri="https://negation.rocks/lectures/008J/" display-uri="008J" type="local">intuitionistic model</fr:link> <fr:tex display="inline"><![CDATA[M]]></fr:tex> and a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in it, we assign values to every sentence at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the model as follows:
+<html:ul><html:li>atomic: for any atomic sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A, x) = Y]]></fr:tex> iff <fr:tex display="inline"><![CDATA[A]]></fr:tex> is in the set of atomic sentences assigned to <fr:tex display="inline"><![CDATA[x]]></fr:tex> by the model, and otherwise <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>.</html:li>
+<html:li>conjunction: for any sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A \land  B, x) = Y]]></fr:tex> iff <fr:tex display="inline"><![CDATA[M(A, x) = M(B, x) = Y]]></fr:tex>, and otherwise <fr:tex display="inline"><![CDATA[M(A \land  B, x) = ?]]></fr:tex>.</html:li>
+<html:li>disjunction: for any sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A \lor  B, x) = ?]]></fr:tex> iff <fr:tex display="inline"><![CDATA[M(A, x) = M(B, x) = ?]]></fr:tex>, and otherwise <fr:tex display="inline"><![CDATA[M(A \lor  B, x) = Y]]></fr:tex>.</html:li>
+<html:li>verum and falsum: always, <fr:tex display="inline"><![CDATA[M(\top , x) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(\bot , x) = vQ]]></fr:tex>.</html:li>
+<html:li>negation: for any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(\neg  A, x) = Y]]></fr:tex> iff every point <fr:tex display="inline"><![CDATA[y]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> is such that <fr:tex display="inline"><![CDATA[M(A, y) = vQ]]></fr:tex>; otherwise, <fr:tex display="inline"><![CDATA[M(\neg  A, x) = vQ]]></fr:tex>.</html:li>
+<html:li>implication: for any sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, x) = vQ]]></fr:tex> iff there is some point <fr:tex display="inline"><![CDATA[y]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> with <fr:tex display="inline"><![CDATA[M(A, y) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(B, y) = ?]]></fr:tex>; otherwise <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, x)]]></fr:tex> = <fr:tex display="inline"><![CDATA[Y]]></fr:tex>.</html:li></html:ul></html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/008J/</fr:uri>
+            <fr:display-uri>008J</fr:display-uri>
+            <fr:route>/lectures/008J/</fr:route>
+            <fr:title text="Intuitionistic model">Intuitionistic model</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>An <html:strong>intuitionistic model</html:strong> is a <fr:link href="/lectures/008F/" title="Frame, point, reachable" uri="https://negation.rocks/lectures/008F/" display-uri="008F" type="local">frame</fr:link>, plus a <fr:link href="/lectures/008H/" title="Valuation on a frame" uri="https://negation.rocks/lectures/008H/" display-uri="008H" type="local">valuation on that frame</fr:link>.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

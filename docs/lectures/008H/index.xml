@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>29</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/008H/</fr:uri>
+    <fr:display-uri>008H</fr:display-uri>
+    <fr:route>/lectures/008H/</fr:route>
+    <fr:title text="Valuation on a frame">Valuation on a frame</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>A <html:strong>valuation on a frame</html:strong> is a choice of a set of atomic sentences for each point in the frame, subject to the condition that for all points <fr:tex display="inline"><![CDATA[x, y]]></fr:tex> in the frame, if <fr:tex display="inline"><![CDATA[x R y]]></fr:tex>, then the set assigned to <fr:tex display="inline"><![CDATA[x]]></fr:tex> must be a subset of the set assigned to <fr:tex display="inline"><![CDATA[y]]></fr:tex>.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/008G/</fr:uri>
+            <fr:display-uri>008G</fr:display-uri>
+            <fr:route>/lectures/008G/</fr:route>
+            <fr:title text="Atomic sentences">Atomic sentences</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>    These valuations on a frame start from assigning values to atomic formulas, and then on this basis we can calculate the values assigned to compound formulas.
+    We do this by assigning to each point in the frame some <html:em>set</html:em> of atomic formulas, to be understood as the set of atomic formulas that get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at that point.
+</html:p>
+            <html:p>    But unlike when we're dealing with valuations on structures, here the assignment of values to atomic formulas is not completely unconstrained.
+    Recall the knowledge interpretation: when <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in a frame, we want that to mean that we can move from <fr:tex display="inline"><![CDATA[x]]></fr:tex> to <fr:tex display="inline"><![CDATA[y]]></fr:tex> without losing any knowledge that's present at <fr:tex display="inline"><![CDATA[x]]></fr:tex>.
+    So our valuations are constrained in this way: if <fr:tex display="inline"><![CDATA[M(p, x) = Y]]></fr:tex>, and <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>, then we must have <fr:tex display="inline"><![CDATA[M(p, y) = Y]]></fr:tex> as well.
+    That goes for any atomic sentence, not just <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+    In other words, when <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in a frame, then the set of atomic formulas a valuation assigns to <fr:tex display="inline"><![CDATA[x]]></fr:tex> must be a <html:em>subset</html:em> of the set it assigns to <fr:tex display="inline"><![CDATA[y]]></fr:tex>.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008H/</fr:uri>
+                <fr:display-uri>008H</fr:display-uri>
+                <fr:route>/lectures/008H/</fr:route>
+                <fr:title text="Valuation on a frame">Valuation on a frame</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>valuation on a frame</html:strong> is a choice of a set of atomic sentences for each point in the frame, subject to the condition that for all points <fr:tex display="inline"><![CDATA[x, y]]></fr:tex> in the frame, if <fr:tex display="inline"><![CDATA[x R y]]></fr:tex>, then the set assigned to <fr:tex display="inline"><![CDATA[x]]></fr:tex> must be a subset of the set assigned to <fr:tex display="inline"><![CDATA[y]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>    For an example, return to Example frame 1.
+    Let's assign sets of atomics to points as follows: 1 gets <fr:tex display="inline"><![CDATA[\{p, q\}]]></fr:tex>; 2 gets <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex>; 3 gets <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex>; and 4 gets <fr:tex display="inline"><![CDATA[\{q, s\}]]></fr:tex>.
+    This meets our requirement: whenever one point is reachable from another in this frame, the point we're reaching from gets a subset of the set assigned to the point we're reaching to.
+    Note as well that when we have a loop of reachability, like between 2 and 3 in this frame, then that means that every point in the loop must be assigned the very same set of atomics.
+</html:p>
+            <html:p>    In this model, I've assigned only a finite set of atomics to each point.
+    But this is not required at all; any choice of sets of atomics is a valuation, so long as it connects to reachability in the required way.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/008J/</fr:uri>
+            <fr:display-uri>008J</fr:display-uri>
+            <fr:route>/lectures/008J/</fr:route>
+            <fr:title text="Intuitionistic model">Intuitionistic model</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>An <html:strong>intuitionistic model</html:strong> is a <fr:link href="/lectures/008F/" title="Frame, point, reachable" uri="https://negation.rocks/lectures/008F/" display-uri="008F" type="local">frame</fr:link>, plus a <fr:link href="/lectures/008H/" title="Valuation on a frame" uri="https://negation.rocks/lectures/008H/" display-uri="008H" type="local">valuation on that frame</fr:link>.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
