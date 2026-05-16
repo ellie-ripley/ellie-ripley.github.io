@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>5</fr:month>
+      <fr:day>16</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/009E/</fr:uri>
+    <fr:display-uri>009E</fr:display-uri>
+    <fr:route>/lectures/009E/</fr:route>
+    <fr:title text="Expansion for conjunction">Expansion for conjunction</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Here is expansion for conjunction:</html:p>
+    <html:p>
+      <fr:resource hash="16eb34cdf7b37770ca8dfe1ac996ccf6">
+        <fr:resource-content>
+          <html:img src="/lectures/16eb34cdf7b37770ca8dfe1ac996ccf6.svg" />
+        </fr:resource-content>
+        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{A \land  B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{A\vphantom{|}}}
+\AxiomC{\ensuremath{A \land  B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+      </fr:resource>
+    </html:p>
+    <html:p>By assuming <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> and applying both elimination rules to it, we immediately arrive at just what we need to be able to apply the introduction rule, returning to <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>.
+This shows that in a sense nothing is lost when we introduce a conjunction: we can always eliminate it again to get back everything we put in.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>16</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009C/</fr:uri>
+            <fr:display-uri>009C</fr:display-uri>
+            <fr:route>/lectures/009C/</fr:route>
+            <fr:title text="Expansion">Expansion</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Expansion is the flipside of reduction.
+We use reductions to argue that, given our introduction rules, our elimination rules don't give us <html:em>too much</html:em>, don't allow us to reach conclusions via local peaks that we couldn't reach otherwise.
+On the other hand, expansions show that, given our introduction rules, our elimination rules give us <html:em>enough</html:em>: we don't <html:em>lose</html:em> information by using our rules.</html:p>
+            <html:p>The idea here is that, from assuming a compound sentence and applying its elimination rule(s), we should be able to arrive directly at enough to be able to introduce that very compound sentence again.</html:p>
+            <html:p>Think again about tonk: it doesn't give us expansions either.
+From an assumption of <fr:tex display="inline"><![CDATA[A \# B]]></fr:tex>, we can eliminate the tonk to arrive at <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+But we can't use <fr:tex display="inline"><![CDATA[\#]]></fr:tex> I from <fr:tex display="inline"><![CDATA[B]]></fr:tex> to arrive back at <fr:tex display="inline"><![CDATA[A \# B]]></fr:tex>; we would need to have an <fr:tex display="inline"><![CDATA[A]]></fr:tex> to do that.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009D/</fr:uri>
+                <fr:display-uri>009D</fr:display-uri>
+                <fr:route>/lectures/009D/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>What about this proof?</html:p>
+                <html:p>
+                  <fr:resource hash="ba0bb2a14aa064d3fa9e9a3c96e3752b">
+                    <fr:resource-content>
+                      <html:img src="/lectures/ba0bb2a14aa064d3fa9e9a3c96e3752b.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{A \# B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \# E:\quad }}
+\UnaryInfC{\ensuremath{B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \# I:\quad }}
+\UnaryInfC{\ensuremath{B \# A\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \# E:\quad }}
+\UnaryInfC{\ensuremath{A\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \# I:\quad }}
+\UnaryInfC{\ensuremath{A \# B\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Doesn't that show that by assuming <fr:tex display="inline"><![CDATA[A \# B]]></fr:tex> and applying the elimination rule, we can get enough to be able to reintroduce <fr:tex display="inline"><![CDATA[A \# B]]></fr:tex>?</html:p>
+                <html:p>Well, not in the sense we're aiming for with expansion.
+The key is in noting that this isn't <html:em>direct</html:em>; we had to exploit tonk's other non-reducing funny business to be able to pull this off.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>However, once again tonk is the outlier; we can show expansion for our other connectives.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009E/</fr:uri>
+                <fr:display-uri>009E</fr:display-uri>
+                <fr:route>/lectures/009E/</fr:route>
+                <fr:title text="Expansion for conjunction">Expansion for conjunction</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Here is expansion for conjunction:</html:p>
+                <html:p>
+                  <fr:resource hash="16eb34cdf7b37770ca8dfe1ac996ccf6">
+                    <fr:resource-content>
+                      <html:img src="/lectures/16eb34cdf7b37770ca8dfe1ac996ccf6.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{A \land  B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{A\vphantom{|}}}
+\AxiomC{\ensuremath{A \land  B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>By assuming <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> and applying both elimination rules to it, we immediately arrive at just what we need to be able to apply the introduction rule, returning to <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>.
+This shows that in a sense nothing is lost when we introduce a conjunction: we can always eliminate it again to get back everything we put in.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009F/</fr:uri>
+                <fr:display-uri>009F</fr:display-uri>
+                <fr:route>/lectures/009F/</fr:route>
+                <fr:title text="Expansion for implication">Expansion for implication</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Let's take a look now at expansion for implication:</html:p>
+                <html:p>
+                  <fr:resource hash="c97566f673db078b3b1189ba06f5e482">
+                    <fr:resource-content>
+                      <html:img src="/lectures/c97566f673db078b3b1189ba06f5e482.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+\AxiomC{\ensuremath{[A]^9\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\BinaryInfC{\ensuremath{B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^9:\quad }}
+\UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Note that here we needed to assume something extra to be able to eliminate <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> at all.
+But that extra assumption is taken care of directly by the introduction rule; this is a clean balance indeed!</html:p>
+                <html:p>You can see the introduction rule for implication as saying that <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> packages up a proof of <fr:tex display="inline"><![CDATA[B]]></fr:tex> from <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+The expansion step shows that you can unpackage this implication to get exactly that.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009G/</fr:uri>
+                <fr:display-uri>009G</fr:display-uri>
+                <fr:route>/lectures/009G/</fr:route>
+                <fr:title text="Expansion for disjunction">Expansion for disjunction</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Here is expansion for disjunction:</html:p>
+                <html:p>
+                  <fr:resource hash="d14a89bec2b8c39649e918d1622de124">
+                    <fr:resource-content>
+                      <html:img src="/lectures/d14a89bec2b8c39649e918d1622de124.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{A \lor  B\vphantom{|}}}
+\AxiomC{\ensuremath{[A]^3\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+\UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
+\AxiomC{\ensuremath{[B]^3\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+\UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \lor  E^3:\quad }}
+\TrinaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Here, we can see that eliminating <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex> gives us just enough to, by using both introduction rules in the appropriate way, get it back.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009H/</fr:uri>
+                <fr:display-uri>009H</fr:display-uri>
+                <fr:route>/lectures/009H/</fr:route>
+                <fr:title text="Expansion for negation">Expansion for negation</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>As with their reductions, expansion for negation is very like expansion for implication:</html:p>
+                <html:p>
+                  <fr:resource hash="0898b83d9e730cbf09136af43d63b626">
+                    <fr:resource-content>
+                      <html:img src="/lectures/0898b83d9e730cbf09136af43d63b626.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{\neg  A\vphantom{|}}}
+\AxiomC{\ensuremath{[A]^2\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+\BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \neg  I^2:\quad }}
+\UnaryInfC{\ensuremath{\neg  A\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009I/</fr:uri>
+                <fr:display-uri>009I</fr:display-uri>
+                <fr:route>/lectures/009I/</fr:route>
+                <fr:title text="Expansion for verum and falsum">Expansion for verum and falsum</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>For verum and falsum, there are two ways to look at it.
+You might think that, since verum has no elimination rules and falsum no introduction rules, there is nothing to show here, so we're all set.
+That was the situation with reduction, after all.</html:p>
+                <html:p>I do think there's something to be said for that way of thinking.
+But we can also think of things another way.</html:p>
+                <html:p>For verum, we might note that <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex> tells us that we can conclude verum from <html:em>nothing at all</html:em>.
+The fact that verum has no elimination rule, then, is indeed perfectly balanced with this.
+The nothing that we get from verum via its (nonexistent) elimination rule is indeed exactly what it takes to introduce it.</html:p>
+                <html:p>And for falsum, we can simply note the proof:</html:p>
+                <html:p>
+                  <fr:resource hash="84f88bae7d53ae0bb50d12d66ab16830">
+                    <fr:resource-content>
+                      <html:img src="/lectures/84f88bae7d53ae0bb50d12d66ab16830.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{\bot \vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+\UnaryInfC{\ensuremath{\bot \vphantom{|}}}
+\DP]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>This shows that by eliminating falsum we get enough to conclude falsum, using all of its (zero) introduction rules.</html:p>
+                <html:p>Either way we think about things, then, verum and falsum do obey expansion.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>5</fr:month>
+                      <fr:day>16</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/009J/</fr:uri>
+                    <fr:display-uri>009J</fr:display-uri>
+                    <fr:route>/lectures/009J/</fr:route>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>It might seem like not much hangs on the difference between those two ways of thinking, since verum and falsum both turn out to obey expansion either way.
+But if we start to consider other possible connectives, we can see the difference.</html:p>
+                    <html:p>Imagine a nullary connective <fr:tex display="inline"><![CDATA[!]]></fr:tex>, for example, that has no introduction rules and the following elimination rule:</html:p>
+                    <html:p>
+                      <fr:resource hash="7a2e1250065feb17e4662c40dc973820">
+                        <fr:resource-content>
+                          <html:img src="/lectures/7a2e1250065feb17e4662c40dc973820.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{!\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  !E:\quad }}
+\UnaryInfC{\ensuremath{p\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>Since this has no introduction rules, we can certainly handle reductions for it: no local peaks can ever arise.
+But what about expansion?
+Is its elimination rule really powerful enough to get everything we can get from <fr:tex display="inline"><![CDATA[!]]></fr:tex>?
+I'd be tempted to say no it isn't: since there's no way to prove <fr:tex display="inline"><![CDATA[!]]></fr:tex> from <fr:tex display="inline"><![CDATA[p]]></fr:tex>, the elimination rule doesn't give us enough.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

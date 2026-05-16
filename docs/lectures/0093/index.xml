@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>5</fr:month>
+      <fr:day>15</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/0093/</fr:uri>
+    <fr:display-uri>0093</fr:display-uri>
+    <fr:route>/lectures/0093/</fr:route>
+    <fr:title text="Reduction for conjunction">Reduction for conjunction</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Suppose we have a local peak for conjunction.
+Since conjunction has one introduction rule and two elimination rules, there are two possible ways this could arise.
+The general forms of these two ways are:</html:p>
+    <html:p>
+      <fr:resource hash="a7b192e6dd02273afb4b668ef1689113">
+        <fr:resource-content>
+          <html:img src="/lectures/a7b192e6dd02273afb4b668ef1689113.svg" />
+        </fr:resource-content>
+        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{A\vphantom{|}}}
+\AxiomC{\ensuremath{B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{A\vphantom{|}}}
+\DP
+\hspace{3em}
+\AxiomC{\ensuremath{A\vphantom{|}}}
+\AxiomC{\ensuremath{B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+\UnaryInfC{\ensuremath{B\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+      </fr:resource>
+    </html:p>
+    <html:p>Now, think for a moment: if you come across a proof with the shape on the left, what do you have?
+You have a proof of <fr:tex display="inline"><![CDATA[A]]></fr:tex> with the open assumptions <fr:tex display="inline"><![CDATA[A, B]]></fr:tex>.
+That suffices to be a proof of any argument <fr:tex display="inline"><![CDATA[\Gamma , A, B \;/\; A]]></fr:tex>.
+Could you provide a proof of that same argument that does not have this local peak?</html:p>
+    <html:p>Totally! Just a single assumption of <fr:tex display="inline"><![CDATA[A]]></fr:tex> would do. And similarly, for the form on the right, any argument that this form is a proof of also has as a proof just a single assumption of <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+So when it comes to our conjunction rules, these do allow us to flatten any local peaks.</html:p>
+    <html:p>There's an important move I just made in the above reasoning, and I want to linger on it a bit here before we go on to other connectives.
+Consider the following instance of the left-hand form above:</html:p>
+    <html:p>
+      <fr:resource hash="6a08ad065b238bdc543e7d91c7dbd0c2">
+        <fr:resource-content>
+          <html:img src="/lectures/6a08ad065b238bdc543e7d91c7dbd0c2.svg" />
+        </fr:resource-content>
+        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+\AxiomC{\ensuremath{r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{(p \lor  q) \land  r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{p \lor  q\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+      </fr:resource>
+    </html:p>
+    <html:p>As we've seen, I've suggested that we can do the same work just by assuming <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>.
+But what is 'the same work'?
+There are a number of ways to understand this, some more complex and precise.</html:p>
+    <html:p>But for our purposes, we can use a simple answer: for any argument at all that the proof with a local peak is a proof of, the simple assumption of <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> is also a proof of that same argument.
+After all, if the proof with the local peak is a proof of an argument, that argument must have the conclusion <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, and it must have <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[r]]></fr:tex> among its premises.
+So the assumption of <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, which is a proof with conclusion <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> and the lone open assumption <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, is also a proof of that argument, whatever it is.</html:p>
+    <html:p>Note that there are some arguments, like for example <fr:tex display="inline"><![CDATA[p \dish  q, r \land  s \;/\; p \lor  q]]></fr:tex>, where the above proof with a local peak is <html:em>not</html:em> a proof of the argument but the simple assumption of <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> is. one.
+That's fine: the reduced proof, in this case the assumption of <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, can be a proof of <html:em>more</html:em> arguments than the original.
+We just need to find a way to get rid of the local peak without <html:em>losing</html:em> any arguments.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0091/</fr:uri>
+            <fr:display-uri>0091</fr:display-uri>
+            <fr:route>/lectures/0091/</fr:route>
+            <fr:title text="Flattening local peaks">Flattening local peaks</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>But what is a 'connective like tonk'?
+Here there is substantial disagreement; I'll just explain one line of thought that's proved influential.
+On this line of thought, the trouble with tonk is that by introducing it and then immediately eliminating it, we can get somewhere that we couldn't get otherwise.
+Consider, for example, the following proof using tonk:</html:p>
+            <html:p>
+              <fr:resource hash="83c7d34e40ef99d30bf862acab9ff088">
+                <fr:resource-content>
+                  <html:img src="/lectures/83c7d34e40ef99d30bf862acab9ff088.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+  \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+  \LeftLabel{\ensuremath{\scriptsize  \#I:\quad }}
+  \UnaryInfC{\ensuremath{(p \lor  q) \# (r \land  s)\vphantom{|}}}
+  \LeftLabel{\ensuremath{\scriptsize  \#E:\quad }}
+  \UnaryInfC{\ensuremath{r \land  s\vphantom{|}}}
+  \DP
+  ]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>In NJ, there is no proof at all of <fr:tex display="inline"><![CDATA[p \lor  q \;/\; r \land  s]]></fr:tex>, no proof of <fr:tex display="inline"><![CDATA[r \land  s]]></fr:tex> without some open assumptions other than <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>.
+But once we have tonk in the mix, we get the above proof of this argument.
+On the way of thinking I'm presenting, this is a <html:em>problem</html:em> with tonk.</html:p>
+            <html:p>
+Our connectives, we might think, should be ways of packaging up and unpackaging pieces of information in various forms.
+But if that's so, we shouldn't be able to pull something <html:em>out</html:em> of a package that we didn't put <html:em>in</html:em> it in the first place!
+</html:p>
+            <html:p>So on this way of thinking, what we need for each connective's rules is that, whenever we introduce a connective and then immediately eliminate that same connective, we don't get anywhere that we couldn't have already gotten without doing that.
+Showing that this is the case is what reduction is all about.</html:p>
+            <html:p>In the above proof, we introduce and then immediately eliminate tonk.
+The sentence that bridges the introduction and elimination---in that example, <fr:tex display="inline"><![CDATA[(p \lor  q) \# (r \land  s)]]></fr:tex>---is called a <html:strong>local peak</html:strong>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0092/</fr:uri>
+                <fr:display-uri>0092</fr:display-uri>
+                <fr:route>/lectures/0092/</fr:route>
+                <fr:title text="Local peak">Local peak</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>An occurrence of a sentence is a <html:strong>local peak</html:strong> in a proof iff: it is at the same time the conclusion of an introduction rule and also the leftmost premise of an elimination rule.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>(Note the restriction to 'leftmost' there; we'll talk about it soon.)</html:p>
+            <html:p>Reduction is then the process of flattening local peaks in a proof: finding a way to get a proof that works <html:em>without</html:em> the local peak to achieve the same result.
+As we've seen above, this is not always possible once tonk is in our language.
+But we can do it with all our more familiar connectives.
+Let's look connective by connective at how this works.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0093/</fr:uri>
+                <fr:display-uri>0093</fr:display-uri>
+                <fr:route>/lectures/0093/</fr:route>
+                <fr:title text="Reduction for conjunction">Reduction for conjunction</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Suppose we have a local peak for conjunction.
+Since conjunction has one introduction rule and two elimination rules, there are two possible ways this could arise.
+The general forms of these two ways are:</html:p>
+                <html:p>
+                  <fr:resource hash="a7b192e6dd02273afb4b668ef1689113">
+                    <fr:resource-content>
+                      <html:img src="/lectures/a7b192e6dd02273afb4b668ef1689113.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{A\vphantom{|}}}
+\AxiomC{\ensuremath{B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{A\vphantom{|}}}
+\DP
+\hspace{3em}
+\AxiomC{\ensuremath{A\vphantom{|}}}
+\AxiomC{\ensuremath{B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+\UnaryInfC{\ensuremath{B\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Now, think for a moment: if you come across a proof with the shape on the left, what do you have?
+You have a proof of <fr:tex display="inline"><![CDATA[A]]></fr:tex> with the open assumptions <fr:tex display="inline"><![CDATA[A, B]]></fr:tex>.
+That suffices to be a proof of any argument <fr:tex display="inline"><![CDATA[\Gamma , A, B \;/\; A]]></fr:tex>.
+Could you provide a proof of that same argument that does not have this local peak?</html:p>
+                <html:p>Totally! Just a single assumption of <fr:tex display="inline"><![CDATA[A]]></fr:tex> would do. And similarly, for the form on the right, any argument that this form is a proof of also has as a proof just a single assumption of <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+So when it comes to our conjunction rules, these do allow us to flatten any local peaks.</html:p>
+                <html:p>There's an important move I just made in the above reasoning, and I want to linger on it a bit here before we go on to other connectives.
+Consider the following instance of the left-hand form above:</html:p>
+                <html:p>
+                  <fr:resource hash="6a08ad065b238bdc543e7d91c7dbd0c2">
+                    <fr:resource-content>
+                      <html:img src="/lectures/6a08ad065b238bdc543e7d91c7dbd0c2.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
+\AxiomC{\ensuremath{r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{(p \lor  q) \land  r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{p \lor  q\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>As we've seen, I've suggested that we can do the same work just by assuming <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>.
+But what is 'the same work'?
+There are a number of ways to understand this, some more complex and precise.</html:p>
+                <html:p>But for our purposes, we can use a simple answer: for any argument at all that the proof with a local peak is a proof of, the simple assumption of <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> is also a proof of that same argument.
+After all, if the proof with the local peak is a proof of an argument, that argument must have the conclusion <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, and it must have <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[r]]></fr:tex> among its premises.
+So the assumption of <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, which is a proof with conclusion <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> and the lone open assumption <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, is also a proof of that argument, whatever it is.</html:p>
+                <html:p>Note that there are some arguments, like for example <fr:tex display="inline"><![CDATA[p \dish  q, r \land  s \;/\; p \lor  q]]></fr:tex>, where the above proof with a local peak is <html:em>not</html:em> a proof of the argument but the simple assumption of <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> is. one.
+That's fine: the reduced proof, in this case the assumption of <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, can be a proof of <html:em>more</html:em> arguments than the original.
+We just need to find a way to get rid of the local peak without <html:em>losing</html:em> any arguments.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0094/</fr:uri>
+                <fr:display-uri>0094</fr:display-uri>
+                <fr:route>/lectures/0094/</fr:route>
+                <fr:title text="Reduction for implication">Reduction for implication</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Suppose we have introduced an implication only to immediately eliminate it.
+We want to make sure that this process doesn't smuggle any new information in; we should only be able to get out of an implication what we put in.
+When we introduce an implication and immediately eliminate it, here's what we end up looking at:
+</html:p>
+                <html:p>
+                  <fr:resource hash="62063d13322b3f4eac0de47455c8f6fd">
+                    <fr:resource-content>
+                      <html:img src="/lectures/62063d13322b3f4eac0de47455c8f6fd.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+            \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+            \noLine
+            \UnaryInfC{\ensuremath{B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+              \AxiomC{\ensuremath{A\vphantom{|}}}
+              \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+              \BinaryInfC{\ensuremath{B\vphantom{|}}}
+              \DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Recall that this doesn't mean that any assumptions of <fr:tex display="inline"><![CDATA[A]]></fr:tex> <html:em>must</html:em> be discharged.
+But it does mean that some of them might be.
+In any particular case, of course, we will be able to tell whether or not any have.
+Let's look at a couple of examples.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>5</fr:month>
+                      <fr:day>16</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0095/</fr:uri>
+                    <fr:display-uri>0095</fr:display-uri>
+                    <fr:route>/lectures/0095/</fr:route>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>In this first example, we will consider a case where no discharge actually happens:</html:p>
+                    <html:p>
+                      <fr:resource hash="b05ccbaa4029b4c628bb3e459e0e75dc">
+                        <fr:resource-content>
+                          <html:img src="/lectures/b05ccbaa4029b4c628bb3e459e0e75dc.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{p \land  q\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{p\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^3:\quad }}
+\UnaryInfC{\ensuremath{(q \lor  r) \rightarrow  p\vphantom{|}}}
+\AxiomC{\ensuremath{r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+\UnaryInfC{\ensuremath{q \lor  r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\BinaryInfC{\ensuremath{p\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>In this proof we have a local peak at <fr:tex display="inline"><![CDATA[(q \lor  r) \rightarrow  p]]></fr:tex>, and this local peak is introduced by a step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> that does not discharge any open assumptions.
+The overall proof is a proof of any argument with the conclusion <fr:tex display="inline"><![CDATA[p]]></fr:tex> and with <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[r]]></fr:tex> among its premises.
+Can you spot a way to use pieces of this proof to get a proof of any such argument, without going through the local peak?</html:p>
+                    <html:p>Here's one:</html:p>
+                    <html:p>
+                      <fr:resource hash="83623a44e8a80329a9c5995bc9b9c2d1">
+                        <fr:resource-content>
+                          <html:img src="/lectures/83623a44e8a80329a9c5995bc9b9c2d1.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{p \land  q\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{p\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>This is just the top left bit of the original proof; it already did everything we need!
+As in the case of conjunction, this smaller proof is a proof of even more arguments than the original, since there is no longer any need to have <fr:tex display="inline"><![CDATA[r]]></fr:tex> among the argument's premises; but this is still no problem.
+The smaller proof proves all the arguments that the original one does.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>Let's generalise this to see how it works more generally, but still just for those cases where the step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> introducing the local peak doesn't discharge anything.
+In these cases, we're looking at something like this:</html:p>
+                <html:p>
+                  <fr:resource hash="aa23c594e6e892f0030218aeae95ffc5">
+                    <fr:resource-content>
+                      <html:img src="/lectures/aa23c594e6e892f0030218aeae95ffc5.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{\vphantom{|}}}
+            \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+            \noLine
+            \UnaryInfC{\ensuremath{B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+              \AxiomC{\ensuremath{A\vphantom{|}}}
+              \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+              \BinaryInfC{\ensuremath{B\vphantom{|}}}
+              \DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>And we can simplify this directly to:</html:p>
+                <html:p>
+                  <fr:resource hash="ca72af6af29e67b8a6c5f9c7d62b19e7">
+                    <fr:resource-content>
+                      <html:img src="/lectures/ca72af6af29e67b8a6c5f9c7d62b19e7.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{\vphantom{|}}}
+            \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+            \noLine
+            \UnaryInfC{\ensuremath{B\vphantom{|}}}
+            \DP
+            ]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>That is, however the <fr:tex display="inline"><![CDATA[B]]></fr:tex> in the original proof is proved, we can just keep that part of the original proof and throw the rest away.
+The resulting proof has conclusion <fr:tex display="inline"><![CDATA[B]]></fr:tex>, just like the original proof, and its open assumptions, whatever they are, must be a subset of the original proof's open assumptions.
+So whenever the larger proof is a proof of any argument, the smaller proof is a proof of that argument as well.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>5</fr:month>
+                      <fr:day>16</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0097/</fr:uri>
+                    <fr:display-uri>0097</fr:display-uri>
+                    <fr:route>/lectures/0097/</fr:route>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>That takes care of cases where the <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> that introduces the local peak doesn't discharge anything.
+But what about when it <html:em>does</html:em>?
+Here we have more work to do.
+Let's look at an example:</html:p>
+                    <html:p>
+                      <fr:resource hash="7ebb0829411a59ee7925c12751860d20">
+                        <fr:resource-content>
+                          <html:img src="/lectures/7ebb0829411a59ee7925c12751860d20.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{p \rightarrow  (r \rightarrow  q)\vphantom{|}}}
+\AxiomC{\ensuremath{[p \land  r]^5\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{p\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\BinaryInfC{\ensuremath{r \rightarrow  q\vphantom{|}}}
+\AxiomC{\ensuremath{[p \land  r]^5\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+\UnaryInfC{\ensuremath{r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\BinaryInfC{\ensuremath{q\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^5:\quad }}
+\UnaryInfC{\ensuremath{(p \land  r) \rightarrow  q\vphantom{|}}}
+\AxiomC{\ensuremath{p\vphantom{|}}}
+\AxiomC{\ensuremath{r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\BinaryInfC{\ensuremath{q\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>This is a proof of any argument with <fr:tex display="inline"><![CDATA[q]]></fr:tex> as a conclusion and <fr:tex display="inline"><![CDATA[p \rightarrow  (r \rightarrow  q), p, r]]></fr:tex> among its premises.
+But if we try clipping out just the bit above the local peak on the left, like we did in the cases without discharge, we end up here:</html:p>
+                    <html:p>
+                      <fr:resource hash="c4af543d46df4f2d8d05b36b064e6dc8">
+                        <fr:resource-content>
+                          <html:img src="/lectures/c4af543d46df4f2d8d05b36b064e6dc8.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{p \rightarrow  (r \rightarrow  q)\vphantom{|}}}
+\AxiomC{\ensuremath{p \land  r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{p\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\BinaryInfC{\ensuremath{r \rightarrow  q\vphantom{|}}}
+\AxiomC{\ensuremath{p \land  r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+\UnaryInfC{\ensuremath{r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\BinaryInfC{\ensuremath{q\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>Call that piece L (for left). Since we've removed the local peak, we don't have the discharging rule <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> in place anymore to discharge the assumptions of <fr:tex display="inline"><![CDATA[p \land  r]]></fr:tex>, so these are open assumptions in piece L, even though they were not open the larger one.
+As a result, there are arguments, such as <fr:tex display="inline"><![CDATA[p \rightarrow  (r \rightarrow  q), p, r \;/\; q]]></fr:tex>, that are proved by the larger proof but not by piece L.
+So there's an issue to solve.</html:p>
+                    <html:p>The solution is to note that, in the larger proof, there was another bit of it feeding into the <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>, besides the introduction that created the local peak:</html:p>
+                    <html:p>
+                      <fr:resource hash="3264f4c3629f13688ec7326a3ab2ebee">
+                        <fr:resource-content>
+                          <html:img src="/lectures/3264f4c3629f13688ec7326a3ab2ebee.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{p\vphantom{|}}}
+\AxiomC{\ensuremath{r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>Call that piece R (for right). This is a proof of our 'extra' assumption <fr:tex display="inline"><![CDATA[p \land  r]]></fr:tex>, and its open assumptions in turn were open in the original proof.
+So we can plug piece R in at the originally-discharged assumptions of <fr:tex display="inline"><![CDATA[p \land  r]]></fr:tex> that are sitting open in piece L.
+This gets us to:</html:p>
+                    <html:p>
+                      <fr:resource hash="3580a33ccb338cc43b55d98121e74d60">
+                        <fr:resource-content>
+                          <html:img src="/lectures/3580a33ccb338cc43b55d98121e74d60.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{p \rightarrow  (r \rightarrow  q)\vphantom{|}}}
+\AxiomC{\ensuremath{p\vphantom{|}}}
+\AxiomC{\ensuremath{r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{p\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\BinaryInfC{\ensuremath{r \rightarrow  q\vphantom{|}}}
+\AxiomC{\ensuremath{p\vphantom{|}}}
+\AxiomC{\ensuremath{r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+\UnaryInfC{\ensuremath{r\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\BinaryInfC{\ensuremath{q\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>Make sure you see how this is built by combining piece L and piece R from the original proof: we have lifted piece L out, noted that it has extra open assumptions, and then plugged in a copy of piece R at each of these.
+The result in this case is a proof of <fr:tex display="inline"><![CDATA[q]]></fr:tex> with open assumptions <fr:tex display="inline"><![CDATA[p \rightarrow  (r \rightarrow  q), p, r]]></fr:tex>, the same as our original proof.
+But we no longer have the local peak at <fr:tex display="inline"><![CDATA[(p \land  r) \rightarrow  q]]></fr:tex> that the original proof had.</html:p>
+                    <html:p>(There are, however, two new local peaks in this proof, both of the sentence <fr:tex display="inline"><![CDATA[p \land  r]]></fr:tex>.
+This is a sign that removing all local peaks from a whole proof might be a complex affair, since the process of removing one can create others.
+We won't look deeper into that this semester, but it's really at the heart of deep study of natural deduction systems.)</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>Once again, let's see if we can generalise this.
+When we have a local peak using implication, it looks like:
+</html:p>
+                <html:p>
+                  <fr:resource hash="7d60cfc68bd31649fba6e6e355333479">
+                    <fr:resource-content>
+                      <html:img src="/lectures/7d60cfc68bd31649fba6e6e355333479.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+            \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+            \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+            \noLine
+            \UnaryInfC{\ensuremath{B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+              \AxiomC{\ensuremath{\vphantom{|}}}
+              \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+              \noLine
+              \UnaryInfC{\ensuremath{A\vphantom{|}}}
+              \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+              \BinaryInfC{\ensuremath{B\vphantom{|}}}
+              \DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Here the two dotted-line parts correspond to piece L and piece R.
+Since the indicated step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> can have discharged assumptions of <fr:tex display="inline"><![CDATA[A]]></fr:tex>, piece L might have <fr:tex display="inline"><![CDATA[A]]></fr:tex> as an open assumption even though the whole proof does not; that's the issue we're working on handling.</html:p>
+                <html:p>We can reduce the above to this result:</html:p>
+                <html:p>
+                  <fr:resource hash="805cacc879b71ba99677c93ed4f082fe">
+                    <fr:resource-content>
+                      <html:img src="/lectures/805cacc879b71ba99677c93ed4f082fe.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{\vphantom{|}}}
+\noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{A\vphantom{|}}}
+\noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{B\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>This is just piece R plugged in above piece L, whatever those pieces were in the original proof.
+As we saw in the above example, this might indicate multiple copies of piece R, since we need one copy of piece R for every open assumption discharged by the <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> that created the local peak.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>5</fr:month>
+                      <fr:day>16</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/0096/</fr:uri>
+                    <fr:display-uri>0096</fr:display-uri>
+                    <fr:route>/lectures/0096/</fr:route>
+                    <fr:title text="Keeping to the left">Keeping to the left</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Recall that we only have a local peak when the implication introduced is the <html:em>leftmost</html:em> input to the implication elimination.
+What about a proof that looks like this?</html:p>
+                    <html:p>
+                      <fr:resource hash="521cc2ada2429539b7c2575758a73725">
+                        <fr:resource-content>
+                          <html:img src="/lectures/521cc2ada2429539b7c2575758a73725.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{(A \rightarrow  B) \rightarrow  C\vphantom{|}}}
+            \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+            \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+            \noLine
+            \UnaryInfC{\ensuremath{B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \BinaryInfC{\ensuremath{C\vphantom{|}}}
+            \DP
+]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>Here there's nothing to do; this is just not a local peak.
+The implication that we're eliminating here is <fr:tex display="inline"><![CDATA[(A \rightarrow  B) \rightarrow  C]]></fr:tex>; that is, this is the sentence whose main connective is the one that needs to link up with the elimination rule we're using.
+This is one reason we always care about the order of the inputs into rules like <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>: it makes it easy to see this distinction at a glance, and lets us just say 'leftmost' in defining local peaks.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0098/</fr:uri>
+                <fr:display-uri>0098</fr:display-uri>
+                <fr:route>/lectures/0098/</fr:route>
+                <fr:title text="Reduction for disjunction">Reduction for disjunction</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Now that you've seen how it works for conjunction and implication, you're all set for disjunction; nothing new here.
+Since disjunction has two introduction rules and one elimination rule, a local peak can arise in one of two ways.
+Let's look at <fr:tex display="inline"><![CDATA[\lor  I_l]]></fr:tex> first:</html:p>
+                <html:p>
+                  <fr:resource hash="61f53670005f4dcd6c970ad6f8f6b852">
+                    <fr:resource-content>
+                      <html:img src="/lectures/61f53670005f4dcd6c970ad6f8f6b852.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{A\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+\UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
+\AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+\noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{C\vphantom{|}}}
+\AxiomC{\ensuremath{[B]^n\vphantom{|}}}
+\noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{C\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \lor  E^n:\quad }}
+\TrinaryInfC{\ensuremath{C\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Here, we can just take the <fr:tex display="inline"><![CDATA[A]]></fr:tex> that comes into the <fr:tex display="inline"><![CDATA[\lor  I_l]]></fr:tex> and plug it for any discharged assumptions of <fr:tex display="inline"><![CDATA[A]]></fr:tex> in the middle subproof, getting to:</html:p>
+                <html:p>
+                  <fr:resource hash="386c710d23876334750c4f687337e112">
+                    <fr:resource-content>
+                      <html:img src="/lectures/386c710d23876334750c4f687337e112.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{A\vphantom{|}}}
+\noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{C\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>This is exactly as in the case of implication, except that here we had to make sure to take the middle subproof, since that's the one that might discharge <fr:tex display="inline"><![CDATA[A]]></fr:tex>, which is what we have on the left.
+What about when the local peak is created from <fr:tex display="inline"><![CDATA[\lor  I_r]]></fr:tex> instead?
+Like this:</html:p>
+                <html:p>
+                  <fr:resource hash="da6d3c7b7dd1e6f9e06931b376e2b51a">
+                    <fr:resource-content>
+                      <html:img src="/lectures/da6d3c7b7dd1e6f9e06931b376e2b51a.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+\UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
+\AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+\noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{C\vphantom{|}}}
+\AxiomC{\ensuremath{[B]^n\vphantom{|}}}
+\noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{C\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \lor  E^n:\quad }}
+\TrinaryInfC{\ensuremath{C\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Here, we would want to take the rightmost subproof instead of the middle one, since what we have on the left is a <fr:tex display="inline"><![CDATA[B]]></fr:tex>, and that's what might be discharged on the right.
+So we would arrive at:</html:p>
+                <html:p>
+                  <fr:resource hash="386c710d23876334750c4f687337e112">
+                    <fr:resource-content>
+                      <html:img src="/lectures/386c710d23876334750c4f687337e112.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{A\vphantom{|}}}
+\noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{C\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>In both of these reduced proofs, just as with implication, we would need to copy over the left <fr:tex display="inline"><![CDATA[A]]></fr:tex> or <fr:tex display="inline"><![CDATA[B]]></fr:tex>, whichever one we have, as many times as there are assumptions discharged in the subproof we're selecting.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009A/</fr:uri>
+                <fr:display-uri>009A</fr:display-uri>
+                <fr:route>/lectures/009A/</fr:route>
+                <fr:title text="Reduction for negation">Reduction for negation</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Reduction for negation is even more like implication than disjunction is.
+When we have a local peak for negation, we have:</html:p>
+                <html:p>
+                  <fr:resource hash="e3df7c4598d196e3d190f3bbbee71a03">
+                    <fr:resource-content>
+                      <html:img src="/lectures/e3df7c4598d196e3d190f3bbbee71a03.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{[A]^n\vphantom{|}}}
+\noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{\bot \vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \neg  I^n:\quad }}
+\UnaryInfC{\ensuremath{\neg  A\vphantom{|}}}
+\AxiomC{\ensuremath{A\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+\BinaryInfC{\ensuremath{\bot \vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Just like for implication, we take the right input to the elimination rule and plug it in for any assumptions of <fr:tex display="inline"><![CDATA[A]]></fr:tex> discharged in the left input, arriving at:</html:p>
+                <html:p>
+                  <fr:resource hash="99d743daed33befb9008e1590261c26f">
+                    <fr:resource-content>
+                      <html:img src="/lectures/99d743daed33befb9008e1590261c26f.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{A\vphantom{|}}}
+\noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{\bot \vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/0099/</fr:uri>
+                <fr:display-uri>0099</fr:display-uri>
+                <fr:route>/lectures/0099/</fr:route>
+                <fr:title text="Reduction for verum and falsum">Reduction for verum and falsum</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Remember that the idea of reduction steps is to show that we can flatten <html:em>all</html:em> local peaks that can be produced by the introduction and elimination rules for a connective.</html:p>
+                <html:p>When it comes to verum and falsum, however, there can never be any local peaks: verum has no elimination rules and falsum has no introduction rules!
+So there is nothing to worry about: we have succeeded at flattening all of the local peaks these connectives can produce, since there are no such local peaks.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

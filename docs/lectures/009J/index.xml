@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>5</fr:month>
+      <fr:day>16</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/009J/</fr:uri>
+    <fr:display-uri>009J</fr:display-uri>
+    <fr:route>/lectures/009J/</fr:route>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>It might seem like not much hangs on the difference between those two ways of thinking, since verum and falsum both turn out to obey expansion either way.
+But if we start to consider other possible connectives, we can see the difference.</html:p>
+    <html:p>Imagine a nullary connective <fr:tex display="inline"><![CDATA[!]]></fr:tex>, for example, that has no introduction rules and the following elimination rule:</html:p>
+    <html:p>
+      <fr:resource hash="7a2e1250065feb17e4662c40dc973820">
+        <fr:resource-content>
+          <html:img src="/lectures/7a2e1250065feb17e4662c40dc973820.svg" />
+        </fr:resource-content>
+        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+        <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{!\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  !E:\quad }}
+\UnaryInfC{\ensuremath{p\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+      </fr:resource>
+    </html:p>
+    <html:p>Since this has no introduction rules, we can certainly handle reductions for it: no local peaks can ever arise.
+But what about expansion?
+Is its elimination rule really powerful enough to get everything we can get from <fr:tex display="inline"><![CDATA[!]]></fr:tex>?
+I'd be tempted to say no it isn't: since there's no way to prove <fr:tex display="inline"><![CDATA[!]]></fr:tex> from <fr:tex display="inline"><![CDATA[p]]></fr:tex>, the elimination rule doesn't give us enough.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>16</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009I/</fr:uri>
+            <fr:display-uri>009I</fr:display-uri>
+            <fr:route>/lectures/009I/</fr:route>
+            <fr:title text="Expansion for verum and falsum">Expansion for verum and falsum</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>For verum and falsum, there are two ways to look at it.
+You might think that, since verum has no elimination rules and falsum no introduction rules, there is nothing to show here, so we're all set.
+That was the situation with reduction, after all.</html:p>
+            <html:p>I do think there's something to be said for that way of thinking.
+But we can also think of things another way.</html:p>
+            <html:p>For verum, we might note that <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex> tells us that we can conclude verum from <html:em>nothing at all</html:em>.
+The fact that verum has no elimination rule, then, is indeed perfectly balanced with this.
+The nothing that we get from verum via its (nonexistent) elimination rule is indeed exactly what it takes to introduce it.</html:p>
+            <html:p>And for falsum, we can simply note the proof:</html:p>
+            <html:p>
+              <fr:resource hash="84f88bae7d53ae0bb50d12d66ab16830">
+                <fr:resource-content>
+                  <html:img src="/lectures/84f88bae7d53ae0bb50d12d66ab16830.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{\bot \vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+\UnaryInfC{\ensuremath{\bot \vphantom{|}}}
+\DP]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>This shows that by eliminating falsum we get enough to conclude falsum, using all of its (zero) introduction rules.</html:p>
+            <html:p>Either way we think about things, then, verum and falsum do obey expansion.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>16</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009J/</fr:uri>
+                <fr:display-uri>009J</fr:display-uri>
+                <fr:route>/lectures/009J/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>It might seem like not much hangs on the difference between those two ways of thinking, since verum and falsum both turn out to obey expansion either way.
+But if we start to consider other possible connectives, we can see the difference.</html:p>
+                <html:p>Imagine a nullary connective <fr:tex display="inline"><![CDATA[!]]></fr:tex>, for example, that has no introduction rules and the following elimination rule:</html:p>
+                <html:p>
+                  <fr:resource hash="7a2e1250065feb17e4662c40dc973820">
+                    <fr:resource-content>
+                      <html:img src="/lectures/7a2e1250065feb17e4662c40dc973820.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{!\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  !E:\quad }}
+\UnaryInfC{\ensuremath{p\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Since this has no introduction rules, we can certainly handle reductions for it: no local peaks can ever arise.
+But what about expansion?
+Is its elimination rule really powerful enough to get everything we can get from <fr:tex display="inline"><![CDATA[!]]></fr:tex>?
+I'd be tempted to say no it isn't: since there's no way to prove <fr:tex display="inline"><![CDATA[!]]></fr:tex> from <fr:tex display="inline"><![CDATA[p]]></fr:tex>, the elimination rule doesn't give us enough.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
