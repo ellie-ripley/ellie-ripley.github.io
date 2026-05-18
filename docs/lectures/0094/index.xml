@@ -1112,16 +1112,16 @@ Like this:</html:p>
                 <html:p>Here, we would want to take the rightmost subproof instead of the middle one, since what we have on the left is a <fr:tex display="inline"><![CDATA[B]]></fr:tex>, and that's what might be discharged on the right.
 So we would arrive at:</html:p>
                 <html:p>
-                  <fr:resource hash="386c710d23876334750c4f687337e112">
+                  <fr:resource hash="20a9f035cf8bc15dbe55ec32179f40a5">
                     <fr:resource-content>
-                      <html:img src="/lectures/386c710d23876334750c4f687337e112.svg" />
+                      <html:img src="/lectures/20a9f035cf8bc15dbe55ec32179f40a5.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
   \newcommand {\DP }{\DisplayProof }
   ]]></fr:resource-source>
                     <fr:resource-source type="latex" part="body"><![CDATA[
-\AxiomC{\ensuremath{A\vphantom{|}}}
+\AxiomC{\ensuremath{B\vphantom{|}}}
 \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
 \noLine
 \UnaryInfC{\ensuremath{C\vphantom{|}}}
