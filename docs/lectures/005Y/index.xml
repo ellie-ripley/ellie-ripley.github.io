@@ -1181,7 +1181,7 @@ But we can make use of the other proof we've assumed we have: the one of <fr:tex
     <html:li><fr:link href="/lectures/007I/" title="Lecture 9: Intuitionistic logic" uri="https://negation.rocks/lectures/007I/" display-uri="007I" type="local">Lecture 9: Intuitionistic logic</fr:link></html:li>
     <html:li><fr:link href="/lectures/0089/" title="Lecture 10: Intuitionistic models" uri="https://negation.rocks/lectures/0089/" display-uri="0089" type="local">Lecture 10: Intuitionistic models</fr:link></html:li>
     <html:li><fr:link href="/lectures/008Y/" title="Lecture 11: Harmony" uri="https://negation.rocks/lectures/008Y/" display-uri="008Y" type="local">Lecture 11: Harmony</fr:link></html:li></html:ul></html:li>
-  <html:li>[Lecture 12: further directions]</html:li></html:ul>
+  <html:li><fr:link href="/lectures/009L/" title="Lecture 12: soundness and completeness" uri="https://negation.rocks/lectures/009L/" display-uri="009L" type="local">Lecture 12: Soundness and completeness</fr:link></html:li></html:ul>
           </fr:mainmatter>
         </fr:tree>
       </fr:mainmatter>

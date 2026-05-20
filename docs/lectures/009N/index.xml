@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>5</fr:month>
+      <fr:day>20</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/009N/</fr:uri>
+    <fr:display-uri>009N</fr:display-uri>
+    <fr:route>/lectures/009N/</fr:route>
+    <fr:title text="Assumptions">Assumptions</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Recall that we can, in NJ, assume any sentence we like, just by writing it down.
+That is, for any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, that sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> itself is a proof: a proof with the conclusion <fr:tex display="inline"><![CDATA[A]]></fr:tex> and the open assumption <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+I want to argue that all these proofs are safe.
+What arguments is such a proof a proof of?
+Well, any argument with conclusion <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[A]]></fr:tex> among its premises: that is, any argument with the form <fr:tex display="inline"><![CDATA[\Gamma , A / A]]></fr:tex>.
+So the first thing I need to do is to show that none of these arguments have any counterexamples.
+</html:p>
+    <html:p>But recall how counterexamples work in our models: a counterexample to <fr:tex display="inline"><![CDATA[\Gamma , A / A]]></fr:tex> would be a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> containing a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> such that every sentence in <fr:tex display="inline"><![CDATA[\Gamma , A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>, but where <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>.
+That is, to have a counterexample to this argument, we would need to have some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(A, x) = Y]]></fr:tex> and also <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>.
+That can't happen, though: <fr:tex display="inline"><![CDATA[M(A, x)]]></fr:tex> might be <fr:tex display="inline"><![CDATA[Y]]></fr:tex>, or it might be <fr:tex display="inline"><![CDATA[?]]></fr:tex>, but it can't be both!
+So indeed there can be no counterexamples to any argument proved just by assumption.
+These tiny proofs are indeed safe.
+</html:p>
+    <html:p>Now, the rest of the way to soundness requires us to consider every individual rule of NJ.
+I won't go through all of that here, since it's a lot of rules!
+But I will go through a few different examples, so that you can see the kind of reasoning that is used to demonstrate soundness.
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009M/</fr:uri>
+            <fr:display-uri>009M</fr:display-uri>
+            <fr:route>/lectures/009M/</fr:route>
+            <fr:title text="Soundness">Soundness</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Let's start with soundness.
+It's usually easier to show that soundness holds than that completeness does, and this case is no exception.
+What we need to show is that any argument that has a proof cannot have a counterexample.
+</html:p>
+            <html:p>The following is not standard terminology (I don't think there is standard terminology for this), but it will come in handy in these notes.
+I'll call a proof <html:em>safe</html:em> to mean that it is not a proof of any argument that has a counterexample.
+So soundness is the claim that every proof is safe.
+</html:p>
+            <html:p>I'll show that every proof is safe by <fr:link href="/lectures/005A/" title="Reasoning by induction" uri="https://negation.rocks/lectures/005A/" display-uri="005A" type="local">induction</fr:link> on proofs.
+Here's what that means.
+I'll start by considering the very smallest proofs, proofs that consist either just of a single assumption or else a single step of <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>, and I'll show that these proofs are all safe.
+Then, I'll turn to the various rules of NJ that we use to build larger proofs out of smaller ones, and I'll show that, as long as all the smaller proofs are safe, then the resulting larger proof must be safe as well.
+That's enough to show that every proof is safe: all our starting points for proofs are safe, and all our ways of building up larger proofs, as long as they only start from safe proofs, can only produce more safe proofs.
+So we have no way to build a proof that is not safe.
+Let's see this in detail.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009N/</fr:uri>
+                <fr:display-uri>009N</fr:display-uri>
+                <fr:route>/lectures/009N/</fr:route>
+                <fr:title text="Assumptions">Assumptions</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Recall that we can, in NJ, assume any sentence we like, just by writing it down.
+That is, for any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, that sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> itself is a proof: a proof with the conclusion <fr:tex display="inline"><![CDATA[A]]></fr:tex> and the open assumption <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+I want to argue that all these proofs are safe.
+What arguments is such a proof a proof of?
+Well, any argument with conclusion <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[A]]></fr:tex> among its premises: that is, any argument with the form <fr:tex display="inline"><![CDATA[\Gamma , A / A]]></fr:tex>.
+So the first thing I need to do is to show that none of these arguments have any counterexamples.
+</html:p>
+                <html:p>But recall how counterexamples work in our models: a counterexample to <fr:tex display="inline"><![CDATA[\Gamma , A / A]]></fr:tex> would be a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> containing a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> such that every sentence in <fr:tex display="inline"><![CDATA[\Gamma , A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>, but where <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>.
+That is, to have a counterexample to this argument, we would need to have some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(A, x) = Y]]></fr:tex> and also <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>.
+That can't happen, though: <fr:tex display="inline"><![CDATA[M(A, x)]]></fr:tex> might be <fr:tex display="inline"><![CDATA[Y]]></fr:tex>, or it might be <fr:tex display="inline"><![CDATA[?]]></fr:tex>, but it can't be both!
+So indeed there can be no counterexamples to any argument proved just by assumption.
+These tiny proofs are indeed safe.
+</html:p>
+                <html:p>Now, the rest of the way to soundness requires us to consider every individual rule of NJ.
+I won't go through all of that here, since it's a lot of rules!
+But I will go through a few different examples, so that you can see the kind of reasoning that is used to demonstrate soundness.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009O/</fr:uri>
+                <fr:display-uri>009O</fr:display-uri>
+                <fr:route>/lectures/009O/</fr:route>
+                <fr:title text="Verum introduction">Verum introduction</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>In NJ, we almost always start proofs with assumptions.
+But there is another rule we have that can generate a proof from nowhere: the rule <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>:</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/007F/</fr:uri>
+                    <fr:display-uri>007F</fr:display-uri>
+                    <fr:route>/lectures/007F/</fr:route>
+                    <fr:title text="Verum introduction:">Verum introduction:</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+                      <fr:resource hash="cdb6057c70d96542095ce27641d7c422">
+                        <fr:resource-content>
+                          <html:img src="/lectures/cdb6057c70d96542095ce27641d7c422.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\vphantom{\top }\vphantom{|}}}\LeftLabel{\ensuremath{\scriptsize  \top  I:\quad }}\UnaryInfC{\ensuremath{\top \vphantom{|}}}\DP]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>So we also need to be sure that whenever that is a proof of an argument, that the argument has no counterexamples.</html:p>
+                <html:p>Note, however, that in any application of <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>, the conclusion of the rule must be <fr:tex display="inline"><![CDATA[\top ]]></fr:tex>.
+So this is a proof of (all and only) arguments with the form <fr:tex display="inline"><![CDATA[\Gamma  \;/\; \top ]]></fr:tex>.</html:p>
+                <html:p>Indeed, none of these arguments can have any counterexamples.
+Forget about <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>: a counterexample to any such argument would have to assign the value <fr:tex display="inline"><![CDATA[?]]></fr:tex> to the sentence <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> at some point.
+But that's not allowed by how values work in intuitionistic models, so that can't happen.</html:p>
+                <html:p>The proof that consists of just a single application of <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>, then, is also safe.
+Between that and assumptions, those are the only ways proofs can get started in NJ.
+Our other rules all take smaller proofs and build them up into larger ones.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009P/</fr:uri>
+                <fr:display-uri>009P</fr:display-uri>
+                <fr:route>/lectures/009P/</fr:route>
+                <fr:title text="Conjunction elimination">Conjunction elimination</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Let's look, for example, at the rule <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>.
+When <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>\ is the last step of a proof, the proof as a whole looks something like this:</html:p>
+                <html:p>
+                  <fr:resource hash="7281f5035a9a4030303288c3626ff251">
+                    <fr:resource-content>
+                      <html:img src="/lectures/7281f5035a9a4030303288c3626ff251.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{\vdots \vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{A \land  B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{A\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Call that whole thing 'the bigger proof', and call the proof before this very last step (the whole rest of the proof, ending in <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>) 'the smaller proof'.
+What I want to argue is that, as long as the smaller proof is safe, then the bigger proof must be safe as well.
+To make this point, I'll work the other way around: showing that if the bigger proof <html:em>isn't</html:em> safe, then the smaller one must already not have been safe.
+</html:p>
+                <html:p>So, suppose that the bigger proof <html:em>is</html:em> somehow a proof of some argument that has a counterexample.
+That argument must be some <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>; since it has a counterexample, there must be some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(C, x) = Y]]></fr:tex> for every <fr:tex display="inline"><![CDATA[C]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, but where <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>.
+However, recall how conjunction works in our models: if <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>, then <fr:tex display="inline"><![CDATA[M(A \land  B, x) = ?]]></fr:tex> as well.
+So we also have a counterexample---this same point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the same model <fr:tex display="inline"><![CDATA[M]]></fr:tex>---to the argument <fr:tex display="inline"><![CDATA[\Gamma  / A \land  B]]></fr:tex>.
+But since the bigger proof is a proof of the argument <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>, the smaller proof is a proof of the argument <fr:tex display="inline"><![CDATA[\Gamma  / A \land  B]]></fr:tex>.
+</html:p>
+                <html:p>What does that tell us?
+It tells us that we can't use the rule <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>\ to build an unsafe proof unless we somehow <html:em>already have</html:em> an unsafe proof.
+And that's what we need here.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009Q/</fr:uri>
+                <fr:display-uri>009Q</fr:display-uri>
+                <fr:route>/lectures/009Q/</fr:route>
+                <fr:title text="Conjunction introduction">Conjunction introduction</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Now, let's look at a slightly more complex rule: conjunction introduction.
+When <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> is the last step of a proof, the proof as a whole looks like this:</html:p>
+                <html:p>
+                  <fr:resource hash="e83c5222920f93ddb46f307f37d85e36">
+                    <fr:resource-content>
+                      <html:img src="/lectures/e83c5222920f93ddb46f307f37d85e36.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{\vdots1\vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{A\vphantom{|}}}
+\AxiomC{\ensuremath{\vdots2\vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>We want to know that, so long as both the proofs <fr:tex display="inline"><![CDATA[\vdots 1]]></fr:tex> and <fr:tex display="inline"><![CDATA[\vdots 2]]></fr:tex> are safe, then this whole proof must also be safe.
+To show that, I'll use a similar strategy as before: suppose that the whole proof here is <html:em>not</html:em> safe, and see what that can tell us about <fr:tex display="inline"><![CDATA[\vdots 1]]></fr:tex> and <fr:tex display="inline"><![CDATA[\vdots 2]]></fr:tex>.
+</html:p>
+                <html:p>So suppose that this whole proof is not safe.
+Then it is a proof of some argument <fr:tex display="inline"><![CDATA[\Gamma  / A \land  B]]></fr:tex> that has a counterexample.
+So there is some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(C, x) = Y]]></fr:tex> for every <fr:tex display="inline"><![CDATA[C]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, but <fr:tex display="inline"><![CDATA[M(A \land  B, x) = ?]]></fr:tex>.
+Recalling how conjunction works in our models, this means that either <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex> or <fr:tex display="inline"><![CDATA[M(B, x) = ?]]></fr:tex>.
+</html:p>
+                <html:p>If the former is the case---so <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>---then <fr:tex display="inline"><![CDATA[\vdots 1]]></fr:tex> is not safe, since it is a proof of <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>; and if the latter is the case---so <fr:tex display="inline"><![CDATA[M(B, x) = ?]]></fr:tex>---then <fr:tex display="inline"><![CDATA[\vdots 2]]></fr:tex> is not safe, since it is a proof of <fr:tex display="inline"><![CDATA[\Gamma  / B]]></fr:tex>.</html:p>
+                <html:p>Note that we don't need to know what the open assumptions of this proof are, or how they are split between <fr:tex display="inline"><![CDATA[\vdots 1]]></fr:tex> and <fr:tex display="inline"><![CDATA[\vdots 2]]></fr:tex>.
+It's enough to know that all the open assumptions of the full proof occur in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>; then it must also be the case that all the open assumptions of <fr:tex display="inline"><![CDATA[\vdots 1]]></fr:tex> occur in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, and that all the open assumptions of <fr:tex display="inline"><![CDATA[\vdots 2]]></fr:tex> occur in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+That's all we need.</html:p>
+                <html:p>So either way, we know that they can't <html:em>both</html:em> be safe.
+With this rule as well, then, we can't build up an unsafe proof unless we already have one in hand.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009R/</fr:uri>
+                <fr:display-uri>009R</fr:display-uri>
+                <fr:route>/lectures/009R/</fr:route>
+                <fr:title text="Implication introduction">Implication introduction</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Let's look now at a discharging rule: <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>.
+When this is the last step of a proof, the proof as a whole looks like this:</html:p>
+                <html:p>
+                  <fr:resource hash="85ea9f7a723ab5da6ed3274871d6030e">
+                    <fr:resource-content>
+                      <html:img src="/lectures/85ea9f7a723ab5da6ed3274871d6030e.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[
+  \AxiomC{\ensuremath{[A]^{n}\vphantom{|}}}
+  \noLine
+  \UnaryInfC{\ensuremath{\vdots \vphantom{|}}}
+  \noLine
+  \UnaryInfC{\ensuremath{B\vphantom{|}}}
+  \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^{n}:\quad }}
+  \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+  \DP
+]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+                <html:p>Here, the smaller proof we are working from, represented above by <fr:tex display="inline"><![CDATA[\vdots ]]></fr:tex>, has the conclusion <fr:tex display="inline"><![CDATA[B]]></fr:tex>, and it <html:em>may</html:em> have <fr:tex display="inline"><![CDATA[A]]></fr:tex> as an open assumption even if the overall proof does not (because all such open <fr:tex display="inline"><![CDATA[A]]></fr:tex>s may be discharged at this <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>).
+</html:p>
+                <html:p>Again, we'll suppose that the larger proof above is unsafe, and reason from this to show that that smaller proof too must be unsafe.
+So suppose that the larger proof is unsafe; then this is a proof of some <fr:tex display="inline"><![CDATA[\Gamma  / A \rightarrow  B]]></fr:tex> where there is a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> such that <fr:tex display="inline"><![CDATA[M(C, x) = Y]]></fr:tex> for every <fr:tex display="inline"><![CDATA[C]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, but <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, x) = ?]]></fr:tex>.
+Once again, we think about how the connective in question works in our models.
+(Is this starting to feel formulaic? Good! That feeling means that you're getting a sense of how reasoning towards soundness usually works: it is indeed pretty formulaic.)</html:p>
+                <html:p>If <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, x) = ?]]></fr:tex>, then that means there is some point <fr:tex display="inline"><![CDATA[y]]></fr:tex> in the model <fr:tex display="inline"><![CDATA[M]]></fr:tex> that is reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex>, where <fr:tex display="inline"><![CDATA[M(A, y) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(B, y) = ?]]></fr:tex>.
+But recall that our models exhibit <html:em>persistence</html:em>: since everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>, and <fr:tex display="inline"><![CDATA[y]]></fr:tex> is reachable <fr:tex display="inline"><![CDATA[x]]></fr:tex>, it follows that everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> as well.
+So the point <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> is a counterexample to the argument <fr:tex display="inline"><![CDATA[\Gamma , A / B]]></fr:tex>.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>5</fr:month>
+                      <fr:day>20</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/009S/</fr:uri>
+                    <fr:display-uri>009S</fr:display-uri>
+                    <fr:route>/lectures/009S/</fr:route>
+                    <fr:taxon>Side note</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>If you're paying extremely close attention here, you might have noticed that this rule is slightly different than the preceding rules, in the following way: for <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex> and <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex>, we showed that if some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> shows that the larger proof is unsafe, then that same <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> shows that the smaller proof is unsafe as well.
+But here, for <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, we've showed something different: that if some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> shows that the larger proof is unsafe, then there is <html:em>some</html:em> point <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> that shows that the smaller proof is unsafe as well.
+The point <fr:tex display="inline"><![CDATA[y]]></fr:tex> might be the same as the point <fr:tex display="inline"><![CDATA[x]]></fr:tex>, but it doesn't have to be, and there is no particular reason to expect that it will be.
+</html:p>
+                    <html:p>Why the difference?
+(It has nothing to do with the fact that <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> is a discharging rule; <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> too is a discharging rule, but would go with <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex> and <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> here.)
+This is because knowing the values of <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> at a point in a model is enough to know the value of <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> at that point, but not enough to know the value of <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> at that point.
+To get the value of <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> at a point in a model, we need to consider other points in the model as well.
+It's that difference between conjunction and implication that manifests here in the soundness proof.
+</html:p>
+                    <html:p>This is a very subtle difference!
+It won't be important for our purposes here.
+But if you want to understand how a soundness proof really works deep down, this is the kind of subtle detail to watch for.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>And that is enough to show that the smaller proof here is unsafe: since the whole proof is a proof of <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>, the smaller proof is a proof of <fr:tex display="inline"><![CDATA[\Gamma , A / B]]></fr:tex>.
+</html:p>
+                <html:p>The rule <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, then, is like the other rules we've looked at: it cannot give rise to an unsafe proof if we do not already have one.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009T/</fr:uri>
+                <fr:display-uri>009T</fr:display-uri>
+                <fr:route>/lectures/009T/</fr:route>
+                <fr:title text="The other rules">The other rules</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>That's only a few rules, and a complete demonstration of soundness has to consider <html:em>every</html:em> rule of NJ.
+But the other rules don't involve any extra complications.
+We've seen how to handle rules that take multiple subproofs like <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex>, and rules that do discharging like <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>.
+The trickiest rule to handle, as always, is <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex>, but all the trickiness comes from these two features separately; no new difficulties come from combining them.
+For each of these rules, we can only use the rule to produce an unsafe proof if we already have some unsafe proof as its input.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009U/</fr:uri>
+                <fr:display-uri>009U</fr:display-uri>
+                <fr:route>/lectures/009U/</fr:route>
+                <fr:title text="Summing up soundness">Summing up soundness</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>This, then, is a usual strategy for demonstrating soundness: we show that all our smallest proofs (assumptions) are safe, and that our rules could never make an unsafe proof unless we already had some smaller unsafe proof.
+Where, then, could an unsafe proof come from?
+There can't be any.
+So all our proofs are safe---and that's soundness.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

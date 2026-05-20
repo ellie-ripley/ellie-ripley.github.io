@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>5</fr:month>
+      <fr:day>20</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/009S/</fr:uri>
+    <fr:display-uri>009S</fr:display-uri>
+    <fr:route>/lectures/009S/</fr:route>
+    <fr:taxon>Side note</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>If you're paying extremely close attention here, you might have noticed that this rule is slightly different than the preceding rules, in the following way: for <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex> and <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex>, we showed that if some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> shows that the larger proof is unsafe, then that same <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> shows that the smaller proof is unsafe as well.
+But here, for <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, we've showed something different: that if some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> shows that the larger proof is unsafe, then there is <html:em>some</html:em> point <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> that shows that the smaller proof is unsafe as well.
+The point <fr:tex display="inline"><![CDATA[y]]></fr:tex> might be the same as the point <fr:tex display="inline"><![CDATA[x]]></fr:tex>, but it doesn't have to be, and there is no particular reason to expect that it will be.
+</html:p>
+    <html:p>Why the difference?
+(It has nothing to do with the fact that <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> is a discharging rule; <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> too is a discharging rule, but would go with <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex> and <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> here.)
+This is because knowing the values of <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> at a point in a model is enough to know the value of <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> at that point, but not enough to know the value of <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> at that point.
+To get the value of <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> at a point in a model, we need to consider other points in the model as well.
+It's that difference between conjunction and implication that manifests here in the soundness proof.
+</html:p>
+    <html:p>This is a very subtle difference!
+It won't be important for our purposes here.
+But if you want to understand how a soundness proof really works deep down, this is the kind of subtle detail to watch for.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009R/</fr:uri>
+            <fr:display-uri>009R</fr:display-uri>
+            <fr:route>/lectures/009R/</fr:route>
+            <fr:title text="Implication introduction">Implication introduction</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Let's look now at a discharging rule: <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>.
+When this is the last step of a proof, the proof as a whole looks like this:</html:p>
+            <html:p>
+              <fr:resource hash="85ea9f7a723ab5da6ed3274871d6030e">
+                <fr:resource-content>
+                  <html:img src="/lectures/85ea9f7a723ab5da6ed3274871d6030e.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+  \AxiomC{\ensuremath{[A]^{n}\vphantom{|}}}
+  \noLine
+  \UnaryInfC{\ensuremath{\vdots \vphantom{|}}}
+  \noLine
+  \UnaryInfC{\ensuremath{B\vphantom{|}}}
+  \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^{n}:\quad }}
+  \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+  \DP
+]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>Here, the smaller proof we are working from, represented above by <fr:tex display="inline"><![CDATA[\vdots ]]></fr:tex>, has the conclusion <fr:tex display="inline"><![CDATA[B]]></fr:tex>, and it <html:em>may</html:em> have <fr:tex display="inline"><![CDATA[A]]></fr:tex> as an open assumption even if the overall proof does not (because all such open <fr:tex display="inline"><![CDATA[A]]></fr:tex>s may be discharged at this <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>).
+</html:p>
+            <html:p>Again, we'll suppose that the larger proof above is unsafe, and reason from this to show that that smaller proof too must be unsafe.
+So suppose that the larger proof is unsafe; then this is a proof of some <fr:tex display="inline"><![CDATA[\Gamma  / A \rightarrow  B]]></fr:tex> where there is a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> such that <fr:tex display="inline"><![CDATA[M(C, x) = Y]]></fr:tex> for every <fr:tex display="inline"><![CDATA[C]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, but <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, x) = ?]]></fr:tex>.
+Once again, we think about how the connective in question works in our models.
+(Is this starting to feel formulaic? Good! That feeling means that you're getting a sense of how reasoning towards soundness usually works: it is indeed pretty formulaic.)</html:p>
+            <html:p>If <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, x) = ?]]></fr:tex>, then that means there is some point <fr:tex display="inline"><![CDATA[y]]></fr:tex> in the model <fr:tex display="inline"><![CDATA[M]]></fr:tex> that is reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex>, where <fr:tex display="inline"><![CDATA[M(A, y) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(B, y) = ?]]></fr:tex>.
+But recall that our models exhibit <html:em>persistence</html:em>: since everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>, and <fr:tex display="inline"><![CDATA[y]]></fr:tex> is reachable <fr:tex display="inline"><![CDATA[x]]></fr:tex>, it follows that everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> as well.
+So the point <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> is a counterexample to the argument <fr:tex display="inline"><![CDATA[\Gamma , A / B]]></fr:tex>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009S/</fr:uri>
+                <fr:display-uri>009S</fr:display-uri>
+                <fr:route>/lectures/009S/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>If you're paying extremely close attention here, you might have noticed that this rule is slightly different than the preceding rules, in the following way: for <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex> and <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex>, we showed that if some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> shows that the larger proof is unsafe, then that same <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> shows that the smaller proof is unsafe as well.
+But here, for <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, we've showed something different: that if some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> shows that the larger proof is unsafe, then there is <html:em>some</html:em> point <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> that shows that the smaller proof is unsafe as well.
+The point <fr:tex display="inline"><![CDATA[y]]></fr:tex> might be the same as the point <fr:tex display="inline"><![CDATA[x]]></fr:tex>, but it doesn't have to be, and there is no particular reason to expect that it will be.
+</html:p>
+                <html:p>Why the difference?
+(It has nothing to do with the fact that <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> is a discharging rule; <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> too is a discharging rule, but would go with <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex> and <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> here.)
+This is because knowing the values of <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> at a point in a model is enough to know the value of <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> at that point, but not enough to know the value of <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> at that point.
+To get the value of <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> at a point in a model, we need to consider other points in the model as well.
+It's that difference between conjunction and implication that manifests here in the soundness proof.
+</html:p>
+                <html:p>This is a very subtle difference!
+It won't be important for our purposes here.
+But if you want to understand how a soundness proof really works deep down, this is the kind of subtle detail to watch for.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>And that is enough to show that the smaller proof here is unsafe: since the whole proof is a proof of <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>, the smaller proof is a proof of <fr:tex display="inline"><![CDATA[\Gamma , A / B]]></fr:tex>.
+</html:p>
+            <html:p>The rule <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, then, is like the other rules we've looked at: it cannot give rise to an unsafe proof if we do not already have one.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

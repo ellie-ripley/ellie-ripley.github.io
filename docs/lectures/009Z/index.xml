@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>5</fr:month>
+      <fr:day>20</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/009Z/</fr:uri>
+    <fr:display-uri>009Z</fr:display-uri>
+    <fr:route>/lectures/009Z/</fr:route>
+    <fr:title text="Prime theory">Prime theory</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>A theory is <html:strong>prime</html:strong> when, for every disjunction <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex> that the theory contains, the theory also contains either <fr:tex display="inline"><![CDATA[A]]></fr:tex> or <fr:tex display="inline"><![CDATA[B]]></fr:tex>.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009W/</fr:uri>
+            <fr:display-uri>009W</fr:display-uri>
+            <fr:route>/lectures/009W/</fr:route>
+            <fr:title text="The canonical frame">The canonical frame</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Here's where the trick happens: we're going to use the proof system NJ to specify what the points are in the canonical model, and which ones are reachable from which.
+Since a model can use anything at all as its points, this is allowed.
+</html:p>
+            <html:p>The first key notion is the idea of a <html:em>theory</html:em>.
+Here's what a theory is:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009X/</fr:uri>
+                <fr:display-uri>009X</fr:display-uri>
+                <fr:route>/lectures/009X/</fr:route>
+                <fr:title text="Theory">Theory</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> of sentences is a <html:strong>theory</html:strong> iff, whenever there is any proof in NJ of any argument <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>, then <fr:tex display="inline"><![CDATA[A]]></fr:tex> is already a member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>This will turn out to mean that all theories contain infinitely many sentences, so I can't list out the members of any particular theory in full.
+But we can still think through some examples that might help get the feel.
+</html:p>
+            <html:p>First, note that <fr:tex display="inline"><![CDATA[p, q / p \land  q]]></fr:tex> is provable in NJ.
+So any theory that contains both <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> must also contain <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>.
+There are lots and lots of sets of sentences that contain <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> without containing <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>; those sets are therefore not theories.
+</html:p>
+            <html:p>Second, note that since <fr:tex display="inline"><![CDATA[A / \neg  \neg  A]]></fr:tex> is provable in NJ for any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, whenever any theory contains any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, it must also contain <fr:tex display="inline"><![CDATA[\neg  \neg  A]]></fr:tex>, and <fr:tex display="inline"><![CDATA[\neg \neg \neg \neg  A]]></fr:tex>, and <fr:tex display="inline"><![CDATA[\neg \neg \neg \neg \neg \neg  A]]></fr:tex>, and so on forever.
+Also, NJ has many proofs of arguments with no premises, such as <fr:tex display="inline"><![CDATA[/ p \rightarrow  p]]></fr:tex>; that means that every theory must contain <fr:tex display="inline"><![CDATA[p \rightarrow  p]]></fr:tex>.
+And indeed, every theory must contain every <fr:link href="/lectures/004Q/" title="Theorem" uri="https://negation.rocks/lectures/004Q/" display-uri="004Q" type="local">theorem</fr:link> of intuitionistic logic.
+</html:p>
+            <html:p>So theories are certain special sets of sentences.
+One way to specify a theory is to give any set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> of sentences, and then think of the set of all sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex> is provable in NJ.
+To show that that resulting set is always a theory, we would in fact need to appeal to the reflexivity, monotonicity, and transitivity of intuitionistic logic---but <fr:link href="/lectures/007Y/" title="Four properties" uri="https://negation.rocks/lectures/007Y/" display-uri="007Y" type="local">as we've seen</fr:link>, this all holds.
+And in fact, this resulting set is always a theory.
+</html:p>
+            <html:p>Consider, for example, the set of all <fr:tex display="inline"><![CDATA[A]]></fr:tex> such that <fr:tex display="inline"><![CDATA[p \lor  q / A]]></fr:tex> is provable in NJ.
+This theory includes all intuitionistic theorems, and it also includes sentences like <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \lor  p]]></fr:tex> and <fr:tex display="inline"><![CDATA[(r \land  s) \rightarrow  ((p \lor  (q \lor  q)) \lor  p)]]></fr:tex>, and many more besides.
+But there is something this theory leaves unsettled: it includes <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, but it does not include <fr:tex display="inline"><![CDATA[p]]></fr:tex> and it does not include <fr:tex display="inline"><![CDATA[q]]></fr:tex>, since neither <fr:tex display="inline"><![CDATA[p \lor  q / p]]></fr:tex> nor <fr:tex display="inline"><![CDATA[p \lor  q / q]]></fr:tex> is provable in NJ.
+</html:p>
+            <html:p>It turns out that we want to focus not on just any theories, but on those theories that are <html:em>not</html:em> unsettled in this way.
+The word for this is <html:em>prime</html:em>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009Z/</fr:uri>
+                <fr:display-uri>009Z</fr:display-uri>
+                <fr:route>/lectures/009Z/</fr:route>
+                <fr:title text="Prime theory">Prime theory</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A theory is <html:strong>prime</html:strong> when, for every disjunction <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex> that the theory contains, the theory also contains either <fr:tex display="inline"><![CDATA[A]]></fr:tex> or <fr:tex display="inline"><![CDATA[B]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>For now, just take that on board; we'll see the importance of it later.
+</html:p>
+            <html:p>The <html:em>canonical frame</html:em> has as its points all the prime theories but one.
+We leave out the set of all sentences---it's technically a prime theory, but it would get in the way later.
+Our points are all the other prime theories.
+And as its connections between points, we say that one prime theory <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> can reach another prime theory <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> when <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Sigma ]]></fr:tex>.
+This is an infinitely large frame, but it's perfectly well-specified; we know what its points are, and what reachability is between these points.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

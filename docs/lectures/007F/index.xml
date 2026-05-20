@@ -54,6 +54,69 @@
             </fr:authors>
             <fr:date>
               <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009O/</fr:uri>
+            <fr:display-uri>009O</fr:display-uri>
+            <fr:route>/lectures/009O/</fr:route>
+            <fr:title text="Verum introduction">Verum introduction</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>In NJ, we almost always start proofs with assumptions.
+But there is another rule we have that can generate a proof from nowhere: the rule <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007F/</fr:uri>
+                <fr:display-uri>007F</fr:display-uri>
+                <fr:route>/lectures/007F/</fr:route>
+                <fr:title text="Verum introduction:">Verum introduction:</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <fr:resource hash="cdb6057c70d96542095ce27641d7c422">
+                    <fr:resource-content>
+                      <html:img src="/lectures/cdb6057c70d96542095ce27641d7c422.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\vphantom{\top }\vphantom{|}}}\LeftLabel{\ensuremath{\scriptsize  \top  I:\quad }}\UnaryInfC{\ensuremath{\top \vphantom{|}}}\DP]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>So we also need to be sure that whenever that is a proof of an argument, that the argument has no counterexamples.</html:p>
+            <html:p>Note, however, that in any application of <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>, the conclusion of the rule must be <fr:tex display="inline"><![CDATA[\top ]]></fr:tex>.
+So this is a proof of (all and only) arguments with the form <fr:tex display="inline"><![CDATA[\Gamma  \;/\; \top ]]></fr:tex>.</html:p>
+            <html:p>Indeed, none of these arguments can have any counterexamples.
+Forget about <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>: a counterexample to any such argument would have to assign the value <fr:tex display="inline"><![CDATA[?]]></fr:tex> to the sentence <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> at some point.
+But that's not allowed by how values work in intuitionistic models, so that can't happen.</html:p>
+            <html:p>The proof that consists of just a single application of <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>, then, is also safe.
+Between that and assumptions, those are the only ways proofs can get started in NJ.
+Our other rules all take smaller proofs and build them up into larger ones.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
               <fr:month>4</fr:month>
               <fr:day>15</fr:day>
             </fr:date>

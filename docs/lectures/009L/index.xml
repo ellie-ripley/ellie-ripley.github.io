@@ -1,0 +1,1905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/lectures/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/lectures/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>5</fr:month>
+      <fr:day>20</fr:day>
+    </fr:date>
+    <fr:uri>https://negation.rocks/lectures/009L/</fr:uri>
+    <fr:display-uri>009L</fr:display-uri>
+    <fr:route>/lectures/009L/</fr:route>
+    <fr:title text="Lecture 12: soundness and completeness">Lecture 12: soundness and completeness</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>We've now met both intuitionistic logic and classical logic two different ways: both via models and via proofs.
+For classical logic, we have the proof system LK, and valuations in the classical matrix as models.
+For intuitionistic logic, we have the proof system LJ, and the new kind of intuitionistic models that we looked at <fr:link href="/lectures/0089/" title="Lecture 10: Intuitionistic models" uri="https://negation.rocks/lectures/0089/" display-uri="0089" type="local">recently</fr:link>.
+</html:p>
+    <html:p>So far, though, you have only my assurances that these really are two different ways of looking at the same logic.
+Let's focus on intuitionistic logic: I've claimed that any argument has a proof in NJ if and only if there is no counterexample to it among our intuitionistic models.
+You might even believe me!
+But we haven't yet looked at why this is the case, or how we might come to know something like that.
+</html:p>
+    <html:p>This involves us in our final topic for the semester: <html:em>soundness and completeness</html:em>.
+Soundness and completeness are two different connections that can hold between a proof system and a model system, based on the logics they determine.
+Here's what these words mean.</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>5</fr:month>
+          <fr:day>20</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/009Y/</fr:uri>
+        <fr:display-uri>009Y</fr:display-uri>
+        <fr:route>/lectures/009Y/</fr:route>
+        <fr:title text="Soundness, completeness">Soundness, completeness</fr:title>
+        <fr:taxon>Definition</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>A proof system is <html:strong>sound for</html:strong> a particular system of models when the logic determined by the proof system is weaker than the logic determined by the models.</html:p>
+        <html:p>A proof system is <html:strong>complete for</html:strong> a particular system of models when the logic determined by the proof system is stronger than the logic determined by the models.</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <html:p>Let's think this through.
+When a proof system is sound for a model system, then every argument that has a proof must have no counterexample.
+That is, no argument has both a proof in the proof system and also a counterexample in the model system; in this sense the proofs and the models <html:em>do not clash</html:em> with each other.
+</html:p>
+    <html:p>And then a proof system is complete for a model system, then every argument that has no proof must have a counterexample.
+So when this happens, every argument either has a proof in the proof system or a counterexample in the model system.
+</html:p>
+    <html:p>When a proof system is both sound and complete for a model system, then, that means that the logic determined by the proof system is <html:em>the same logic</html:em> as the logic determined by the model system.
+This can be very convenient for studying the logic in question.
+If we want to show that an argument is valid in that logic, we can produce a proof of it, which ensures (by soundness) that there will be no counterexample to it.
+And if we want to show that an argument is invalid in that logic, we can produce a counterexample of it, which ensures (also by soundness) that there will be no proof of it.
+Completeness then ensures that one of these or the other will happen: every argument has either a proof or a counterexample.
+</html:p>
+    <html:p>In the rest of these notes, then, I'll go through reasoning that shows that NJ is both sound and complete for our intuitionistic models from last time.
+This will both help the ideas of soundness and completeness sink in, and also show some of the techniques that logicians use to set up matching proof and model systems.
+</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>5</fr:month>
+          <fr:day>20</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/009M/</fr:uri>
+        <fr:display-uri>009M</fr:display-uri>
+        <fr:route>/lectures/009M/</fr:route>
+        <fr:title text="Soundness">Soundness</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>Let's start with soundness.
+It's usually easier to show that soundness holds than that completeness does, and this case is no exception.
+What we need to show is that any argument that has a proof cannot have a counterexample.
+</html:p>
+        <html:p>The following is not standard terminology (I don't think there is standard terminology for this), but it will come in handy in these notes.
+I'll call a proof <html:em>safe</html:em> to mean that it is not a proof of any argument that has a counterexample.
+So soundness is the claim that every proof is safe.
+</html:p>
+        <html:p>I'll show that every proof is safe by <fr:link href="/lectures/005A/" title="Reasoning by induction" uri="https://negation.rocks/lectures/005A/" display-uri="005A" type="local">induction</fr:link> on proofs.
+Here's what that means.
+I'll start by considering the very smallest proofs, proofs that consist either just of a single assumption or else a single step of <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>, and I'll show that these proofs are all safe.
+Then, I'll turn to the various rules of NJ that we use to build larger proofs out of smaller ones, and I'll show that, as long as all the smaller proofs are safe, then the resulting larger proof must be safe as well.
+That's enough to show that every proof is safe: all our starting points for proofs are safe, and all our ways of building up larger proofs, as long as they only start from safe proofs, can only produce more safe proofs.
+So we have no way to build a proof that is not safe.
+Let's see this in detail.</html:p>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009N/</fr:uri>
+            <fr:display-uri>009N</fr:display-uri>
+            <fr:route>/lectures/009N/</fr:route>
+            <fr:title text="Assumptions">Assumptions</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Recall that we can, in NJ, assume any sentence we like, just by writing it down.
+That is, for any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, that sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> itself is a proof: a proof with the conclusion <fr:tex display="inline"><![CDATA[A]]></fr:tex> and the open assumption <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+I want to argue that all these proofs are safe.
+What arguments is such a proof a proof of?
+Well, any argument with conclusion <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[A]]></fr:tex> among its premises: that is, any argument with the form <fr:tex display="inline"><![CDATA[\Gamma , A / A]]></fr:tex>.
+So the first thing I need to do is to show that none of these arguments have any counterexamples.
+</html:p>
+            <html:p>But recall how counterexamples work in our models: a counterexample to <fr:tex display="inline"><![CDATA[\Gamma , A / A]]></fr:tex> would be a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> containing a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> such that every sentence in <fr:tex display="inline"><![CDATA[\Gamma , A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>, but where <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>.
+That is, to have a counterexample to this argument, we would need to have some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(A, x) = Y]]></fr:tex> and also <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>.
+That can't happen, though: <fr:tex display="inline"><![CDATA[M(A, x)]]></fr:tex> might be <fr:tex display="inline"><![CDATA[Y]]></fr:tex>, or it might be <fr:tex display="inline"><![CDATA[?]]></fr:tex>, but it can't be both!
+So indeed there can be no counterexamples to any argument proved just by assumption.
+These tiny proofs are indeed safe.
+</html:p>
+            <html:p>Now, the rest of the way to soundness requires us to consider every individual rule of NJ.
+I won't go through all of that here, since it's a lot of rules!
+But I will go through a few different examples, so that you can see the kind of reasoning that is used to demonstrate soundness.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009O/</fr:uri>
+            <fr:display-uri>009O</fr:display-uri>
+            <fr:route>/lectures/009O/</fr:route>
+            <fr:title text="Verum introduction">Verum introduction</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>In NJ, we almost always start proofs with assumptions.
+But there is another rule we have that can generate a proof from nowhere: the rule <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/007F/</fr:uri>
+                <fr:display-uri>007F</fr:display-uri>
+                <fr:route>/lectures/007F/</fr:route>
+                <fr:title text="Verum introduction:">Verum introduction:</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+                  <fr:resource hash="cdb6057c70d96542095ce27641d7c422">
+                    <fr:resource-content>
+                      <html:img src="/lectures/cdb6057c70d96542095ce27641d7c422.svg" />
+                    </fr:resource-content>
+                    <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                    <fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\vphantom{\top }\vphantom{|}}}\LeftLabel{\ensuremath{\scriptsize  \top  I:\quad }}\UnaryInfC{\ensuremath{\top \vphantom{|}}}\DP]]></fr:resource-source>
+                  </fr:resource>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>So we also need to be sure that whenever that is a proof of an argument, that the argument has no counterexamples.</html:p>
+            <html:p>Note, however, that in any application of <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>, the conclusion of the rule must be <fr:tex display="inline"><![CDATA[\top ]]></fr:tex>.
+So this is a proof of (all and only) arguments with the form <fr:tex display="inline"><![CDATA[\Gamma  \;/\; \top ]]></fr:tex>.</html:p>
+            <html:p>Indeed, none of these arguments can have any counterexamples.
+Forget about <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>: a counterexample to any such argument would have to assign the value <fr:tex display="inline"><![CDATA[?]]></fr:tex> to the sentence <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> at some point.
+But that's not allowed by how values work in intuitionistic models, so that can't happen.</html:p>
+            <html:p>The proof that consists of just a single application of <fr:tex display="inline"><![CDATA[\top  I]]></fr:tex>, then, is also safe.
+Between that and assumptions, those are the only ways proofs can get started in NJ.
+Our other rules all take smaller proofs and build them up into larger ones.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009P/</fr:uri>
+            <fr:display-uri>009P</fr:display-uri>
+            <fr:route>/lectures/009P/</fr:route>
+            <fr:title text="Conjunction elimination">Conjunction elimination</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Let's look, for example, at the rule <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>.
+When <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>\ is the last step of a proof, the proof as a whole looks something like this:</html:p>
+            <html:p>
+              <fr:resource hash="7281f5035a9a4030303288c3626ff251">
+                <fr:resource-content>
+                  <html:img src="/lectures/7281f5035a9a4030303288c3626ff251.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{\vdots \vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{A \land  B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\UnaryInfC{\ensuremath{A\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>Call that whole thing 'the bigger proof', and call the proof before this very last step (the whole rest of the proof, ending in <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>) 'the smaller proof'.
+What I want to argue is that, as long as the smaller proof is safe, then the bigger proof must be safe as well.
+To make this point, I'll work the other way around: showing that if the bigger proof <html:em>isn't</html:em> safe, then the smaller one must already not have been safe.
+</html:p>
+            <html:p>So, suppose that the bigger proof <html:em>is</html:em> somehow a proof of some argument that has a counterexample.
+That argument must be some <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>; since it has a counterexample, there must be some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(C, x) = Y]]></fr:tex> for every <fr:tex display="inline"><![CDATA[C]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, but where <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>.
+However, recall how conjunction works in our models: if <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>, then <fr:tex display="inline"><![CDATA[M(A \land  B, x) = ?]]></fr:tex> as well.
+So we also have a counterexample---this same point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the same model <fr:tex display="inline"><![CDATA[M]]></fr:tex>---to the argument <fr:tex display="inline"><![CDATA[\Gamma  / A \land  B]]></fr:tex>.
+But since the bigger proof is a proof of the argument <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>, the smaller proof is a proof of the argument <fr:tex display="inline"><![CDATA[\Gamma  / A \land  B]]></fr:tex>.
+</html:p>
+            <html:p>What does that tell us?
+It tells us that we can't use the rule <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>\ to build an unsafe proof unless we somehow <html:em>already have</html:em> an unsafe proof.
+And that's what we need here.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009Q/</fr:uri>
+            <fr:display-uri>009Q</fr:display-uri>
+            <fr:route>/lectures/009Q/</fr:route>
+            <fr:title text="Conjunction introduction">Conjunction introduction</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Now, let's look at a slightly more complex rule: conjunction introduction.
+When <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> is the last step of a proof, the proof as a whole looks like this:</html:p>
+            <html:p>
+              <fr:resource hash="e83c5222920f93ddb46f307f37d85e36">
+                <fr:resource-content>
+                  <html:img src="/lectures/e83c5222920f93ddb46f307f37d85e36.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+\AxiomC{\ensuremath{\vdots1\vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{A\vphantom{|}}}
+\AxiomC{\ensuremath{\vdots2\vphantom{|}}}
+\noLine
+\UnaryInfC{\ensuremath{B\vphantom{|}}}
+\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
+\DP
+]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>We want to know that, so long as both the proofs <fr:tex display="inline"><![CDATA[\vdots 1]]></fr:tex> and <fr:tex display="inline"><![CDATA[\vdots 2]]></fr:tex> are safe, then this whole proof must also be safe.
+To show that, I'll use a similar strategy as before: suppose that the whole proof here is <html:em>not</html:em> safe, and see what that can tell us about <fr:tex display="inline"><![CDATA[\vdots 1]]></fr:tex> and <fr:tex display="inline"><![CDATA[\vdots 2]]></fr:tex>.
+</html:p>
+            <html:p>So suppose that this whole proof is not safe.
+Then it is a proof of some argument <fr:tex display="inline"><![CDATA[\Gamma  / A \land  B]]></fr:tex> that has a counterexample.
+So there is some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(C, x) = Y]]></fr:tex> for every <fr:tex display="inline"><![CDATA[C]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, but <fr:tex display="inline"><![CDATA[M(A \land  B, x) = ?]]></fr:tex>.
+Recalling how conjunction works in our models, this means that either <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex> or <fr:tex display="inline"><![CDATA[M(B, x) = ?]]></fr:tex>.
+</html:p>
+            <html:p>If the former is the case---so <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>---then <fr:tex display="inline"><![CDATA[\vdots 1]]></fr:tex> is not safe, since it is a proof of <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>; and if the latter is the case---so <fr:tex display="inline"><![CDATA[M(B, x) = ?]]></fr:tex>---then <fr:tex display="inline"><![CDATA[\vdots 2]]></fr:tex> is not safe, since it is a proof of <fr:tex display="inline"><![CDATA[\Gamma  / B]]></fr:tex>.</html:p>
+            <html:p>Note that we don't need to know what the open assumptions of this proof are, or how they are split between <fr:tex display="inline"><![CDATA[\vdots 1]]></fr:tex> and <fr:tex display="inline"><![CDATA[\vdots 2]]></fr:tex>.
+It's enough to know that all the open assumptions of the full proof occur in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>; then it must also be the case that all the open assumptions of <fr:tex display="inline"><![CDATA[\vdots 1]]></fr:tex> occur in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, and that all the open assumptions of <fr:tex display="inline"><![CDATA[\vdots 2]]></fr:tex> occur in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+That's all we need.</html:p>
+            <html:p>So either way, we know that they can't <html:em>both</html:em> be safe.
+With this rule as well, then, we can't build up an unsafe proof unless we already have one in hand.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009R/</fr:uri>
+            <fr:display-uri>009R</fr:display-uri>
+            <fr:route>/lectures/009R/</fr:route>
+            <fr:title text="Implication introduction">Implication introduction</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Let's look now at a discharging rule: <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>.
+When this is the last step of a proof, the proof as a whole looks like this:</html:p>
+            <html:p>
+              <fr:resource hash="85ea9f7a723ab5da6ed3274871d6030e">
+                <fr:resource-content>
+                  <html:img src="/lectures/85ea9f7a723ab5da6ed3274871d6030e.svg" />
+                </fr:resource-content>
+                <fr:resource-source type="latex" part="preamble"><![CDATA[
+  \usepackage {bussproofs}
+  \newcommand {\DP }{\DisplayProof }
+  ]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[
+  \AxiomC{\ensuremath{[A]^{n}\vphantom{|}}}
+  \noLine
+  \UnaryInfC{\ensuremath{\vdots \vphantom{|}}}
+  \noLine
+  \UnaryInfC{\ensuremath{B\vphantom{|}}}
+  \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^{n}:\quad }}
+  \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
+  \DP
+]]></fr:resource-source>
+              </fr:resource>
+            </html:p>
+            <html:p>Here, the smaller proof we are working from, represented above by <fr:tex display="inline"><![CDATA[\vdots ]]></fr:tex>, has the conclusion <fr:tex display="inline"><![CDATA[B]]></fr:tex>, and it <html:em>may</html:em> have <fr:tex display="inline"><![CDATA[A]]></fr:tex> as an open assumption even if the overall proof does not (because all such open <fr:tex display="inline"><![CDATA[A]]></fr:tex>s may be discharged at this <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>).
+</html:p>
+            <html:p>Again, we'll suppose that the larger proof above is unsafe, and reason from this to show that that smaller proof too must be unsafe.
+So suppose that the larger proof is unsafe; then this is a proof of some <fr:tex display="inline"><![CDATA[\Gamma  / A \rightarrow  B]]></fr:tex> where there is a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> such that <fr:tex display="inline"><![CDATA[M(C, x) = Y]]></fr:tex> for every <fr:tex display="inline"><![CDATA[C]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, but <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, x) = ?]]></fr:tex>.
+Once again, we think about how the connective in question works in our models.
+(Is this starting to feel formulaic? Good! That feeling means that you're getting a sense of how reasoning towards soundness usually works: it is indeed pretty formulaic.)</html:p>
+            <html:p>If <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, x) = ?]]></fr:tex>, then that means there is some point <fr:tex display="inline"><![CDATA[y]]></fr:tex> in the model <fr:tex display="inline"><![CDATA[M]]></fr:tex> that is reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex>, where <fr:tex display="inline"><![CDATA[M(A, y) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(B, y) = ?]]></fr:tex>.
+But recall that our models exhibit <html:em>persistence</html:em>: since everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>, and <fr:tex display="inline"><![CDATA[y]]></fr:tex> is reachable <fr:tex display="inline"><![CDATA[x]]></fr:tex>, it follows that everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> as well.
+So the point <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> is a counterexample to the argument <fr:tex display="inline"><![CDATA[\Gamma , A / B]]></fr:tex>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009S/</fr:uri>
+                <fr:display-uri>009S</fr:display-uri>
+                <fr:route>/lectures/009S/</fr:route>
+                <fr:taxon>Side note</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>If you're paying extremely close attention here, you might have noticed that this rule is slightly different than the preceding rules, in the following way: for <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex> and <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex>, we showed that if some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> shows that the larger proof is unsafe, then that same <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> shows that the smaller proof is unsafe as well.
+But here, for <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, we've showed something different: that if some point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> shows that the larger proof is unsafe, then there is <html:em>some</html:em> point <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> that shows that the smaller proof is unsafe as well.
+The point <fr:tex display="inline"><![CDATA[y]]></fr:tex> might be the same as the point <fr:tex display="inline"><![CDATA[x]]></fr:tex>, but it doesn't have to be, and there is no particular reason to expect that it will be.
+</html:p>
+                <html:p>Why the difference?
+(It has nothing to do with the fact that <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> is a discharging rule; <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex> too is a discharging rule, but would go with <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex> and <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> here.)
+This is because knowing the values of <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> at a point in a model is enough to know the value of <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> at that point, but not enough to know the value of <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> at that point.
+To get the value of <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> at a point in a model, we need to consider other points in the model as well.
+It's that difference between conjunction and implication that manifests here in the soundness proof.
+</html:p>
+                <html:p>This is a very subtle difference!
+It won't be important for our purposes here.
+But if you want to understand how a soundness proof really works deep down, this is the kind of subtle detail to watch for.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>And that is enough to show that the smaller proof here is unsafe: since the whole proof is a proof of <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>, the smaller proof is a proof of <fr:tex display="inline"><![CDATA[\Gamma , A / B]]></fr:tex>.
+</html:p>
+            <html:p>The rule <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>, then, is like the other rules we've looked at: it cannot give rise to an unsafe proof if we do not already have one.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009T/</fr:uri>
+            <fr:display-uri>009T</fr:display-uri>
+            <fr:route>/lectures/009T/</fr:route>
+            <fr:title text="The other rules">The other rules</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>That's only a few rules, and a complete demonstration of soundness has to consider <html:em>every</html:em> rule of NJ.
+But the other rules don't involve any extra complications.
+We've seen how to handle rules that take multiple subproofs like <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex>, and rules that do discharging like <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>.
+The trickiest rule to handle, as always, is <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex>, but all the trickiness comes from these two features separately; no new difficulties come from combining them.
+For each of these rules, we can only use the rule to produce an unsafe proof if we already have some unsafe proof as its input.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009U/</fr:uri>
+            <fr:display-uri>009U</fr:display-uri>
+            <fr:route>/lectures/009U/</fr:route>
+            <fr:title text="Summing up soundness">Summing up soundness</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>This, then, is a usual strategy for demonstrating soundness: we show that all our smallest proofs (assumptions) are safe, and that our rules could never make an unsafe proof unless we already had some smaller unsafe proof.
+Where, then, could an unsafe proof come from?
+There can't be any.
+So all our proofs are safe---and that's soundness.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>5</fr:month>
+          <fr:day>20</fr:day>
+        </fr:date>
+        <fr:uri>https://negation.rocks/lectures/009V/</fr:uri>
+        <fr:display-uri>009V</fr:display-uri>
+        <fr:route>/lectures/009V/</fr:route>
+        <fr:title text="Completeness">Completeness</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>Onwards, then, to completeness.
+Recall: to say that NJ is <html:em>complete</html:em> for our intuitionistic models means that the logic determined by NJ is stronger than the logic determined by the models.
+That is to say that every argument has either a counterexample in these models or a proof in NJ.
+</html:p>
+        <html:p>It would be enough to show that, if there is no proof of some argument, then there is a counterexample to it.
+To show that this is the case, I'll again use a usual method: building what's known as a <html:em>canonical model</html:em>.
+This is one particular model that, all by itself, will do all the counterexampling we need.
+Note that this goes farther than we need.
+For completeness, it would be enough if every unprovable argument had some counterexample or other; they don't all need to have the <html:em>same</html:em> model as a counterexample.
+But in fact our canonical model will, all at once, provide a counterexample to <html:em>every</html:em> unprovable argument---so it more than gets the job done.
+</html:p>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/009W/</fr:uri>
+            <fr:display-uri>009W</fr:display-uri>
+            <fr:route>/lectures/009W/</fr:route>
+            <fr:title text="The canonical frame">The canonical frame</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Here's where the trick happens: we're going to use the proof system NJ to specify what the points are in the canonical model, and which ones are reachable from which.
+Since a model can use anything at all as its points, this is allowed.
+</html:p>
+            <html:p>The first key notion is the idea of a <html:em>theory</html:em>.
+Here's what a theory is:</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009X/</fr:uri>
+                <fr:display-uri>009X</fr:display-uri>
+                <fr:route>/lectures/009X/</fr:route>
+                <fr:title text="Theory">Theory</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> of sentences is a <html:strong>theory</html:strong> iff, whenever there is any proof in NJ of any argument <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>, then <fr:tex display="inline"><![CDATA[A]]></fr:tex> is already a member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>This will turn out to mean that all theories contain infinitely many sentences, so I can't list out the members of any particular theory in full.
+But we can still think through some examples that might help get the feel.
+</html:p>
+            <html:p>First, note that <fr:tex display="inline"><![CDATA[p, q / p \land  q]]></fr:tex> is provable in NJ.
+So any theory that contains both <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> must also contain <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>.
+There are lots and lots of sets of sentences that contain <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex> without containing <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex>; those sets are therefore not theories.
+</html:p>
+            <html:p>Second, note that since <fr:tex display="inline"><![CDATA[A / \neg  \neg  A]]></fr:tex> is provable in NJ for any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, whenever any theory contains any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, it must also contain <fr:tex display="inline"><![CDATA[\neg  \neg  A]]></fr:tex>, and <fr:tex display="inline"><![CDATA[\neg \neg \neg \neg  A]]></fr:tex>, and <fr:tex display="inline"><![CDATA[\neg \neg \neg \neg \neg \neg  A]]></fr:tex>, and so on forever.
+Also, NJ has many proofs of arguments with no premises, such as <fr:tex display="inline"><![CDATA[/ p \rightarrow  p]]></fr:tex>; that means that every theory must contain <fr:tex display="inline"><![CDATA[p \rightarrow  p]]></fr:tex>.
+And indeed, every theory must contain every <fr:link href="/lectures/004Q/" title="Theorem" uri="https://negation.rocks/lectures/004Q/" display-uri="004Q" type="local">theorem</fr:link> of intuitionistic logic.
+</html:p>
+            <html:p>So theories are certain special sets of sentences.
+One way to specify a theory is to give any set <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> of sentences, and then think of the set of all sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex> is provable in NJ.
+To show that that resulting set is always a theory, we would in fact need to appeal to the reflexivity, monotonicity, and transitivity of intuitionistic logic---but <fr:link href="/lectures/007Y/" title="Four properties" uri="https://negation.rocks/lectures/007Y/" display-uri="007Y" type="local">as we've seen</fr:link>, this all holds.
+And in fact, this resulting set is always a theory.
+</html:p>
+            <html:p>Consider, for example, the set of all <fr:tex display="inline"><![CDATA[A]]></fr:tex> such that <fr:tex display="inline"><![CDATA[p \lor  q / A]]></fr:tex> is provable in NJ.
+This theory includes all intuitionistic theorems, and it also includes sentences like <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \lor  p]]></fr:tex> and <fr:tex display="inline"><![CDATA[(r \land  s) \rightarrow  ((p \lor  (q \lor  q)) \lor  p)]]></fr:tex>, and many more besides.
+But there is something this theory leaves unsettled: it includes <fr:tex display="inline"><![CDATA[p \lor  q]]></fr:tex>, but it does not include <fr:tex display="inline"><![CDATA[p]]></fr:tex> and it does not include <fr:tex display="inline"><![CDATA[q]]></fr:tex>, since neither <fr:tex display="inline"><![CDATA[p \lor  q / p]]></fr:tex> nor <fr:tex display="inline"><![CDATA[p \lor  q / q]]></fr:tex> is provable in NJ.
+</html:p>
+            <html:p>It turns out that we want to focus not on just any theories, but on those theories that are <html:em>not</html:em> unsettled in this way.
+The word for this is <html:em>prime</html:em>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>20</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/009Z/</fr:uri>
+                <fr:display-uri>009Z</fr:display-uri>
+                <fr:route>/lectures/009Z/</fr:route>
+                <fr:title text="Prime theory">Prime theory</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A theory is <html:strong>prime</html:strong> when, for every disjunction <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex> that the theory contains, the theory also contains either <fr:tex display="inline"><![CDATA[A]]></fr:tex> or <fr:tex display="inline"><![CDATA[B]]></fr:tex>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>For now, just take that on board; we'll see the importance of it later.
+</html:p>
+            <html:p>The <html:em>canonical frame</html:em> has as its points all the prime theories but one.
+We leave out the set of all sentences---it's technically a prime theory, but it would get in the way later.
+Our points are all the other prime theories.
+And as its connections between points, we say that one prime theory <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> can reach another prime theory <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> when <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Sigma ]]></fr:tex>.
+This is an infinitely large frame, but it's perfectly well-specified; we know what its points are, and what reachability is between these points.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/00A0/</fr:uri>
+            <fr:display-uri>00A0</fr:display-uri>
+            <fr:route>/lectures/00A0/</fr:route>
+            <fr:title text="The canonical valuation">The canonical valuation</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Now, we need to assign to each point in this canonical frame some set of atomic sentences, to serve as the canonical valuation; and we need to make sure that this is done in a way that obeys the requirement: when <fr:tex display="inline"><![CDATA[x R y]]></fr:tex>, then the set assigned to <fr:tex display="inline"><![CDATA[x]]></fr:tex> is a subset of the set assigned to <fr:tex display="inline"><![CDATA[y]]></fr:tex>.
+</html:p>
+            <html:p>Here's the choice I'll make: remember that every point <html:em>already is</html:em> a particular set of sentences (a prime theory).
+So to every point, I'll assign the set of atomic sentences that the point contains.
+Since reachability in the canonical frame is determined by being subsets in the first place, this choice obeys the requirement.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/00A1/</fr:uri>
+            <fr:display-uri>00A1</fr:display-uri>
+            <fr:route>/lectures/00A1/</fr:route>
+            <fr:title text="The priming lemma">The priming lemma</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>So we now have our canonical model: the canonical frame and the canonical valuation.
+What remains is just to show that this really does the right thing, that it really does provide a counterexample to every argument that has no NJ proof.
+We'll get there with two more steps, traditionally called the "priming lemma" and the "truth lemma".
+"Lemma" is a maths word for "a claim that we demonstrate, not for its own sake, but on the road to showing something else".
+In this case, that something else is completeness.
+</html:p>
+            <html:p>The priming lemma is the following claim: that whenever we have an argument <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex> that is not provable in NJ, then there is some prime theory <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> such that: <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Sigma ]]></fr:tex>, and <fr:tex display="inline"><![CDATA[A]]></fr:tex> is not a member of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>.</html:p>
+            <html:p>Note that, since <fr:tex display="inline"><![CDATA[A]]></fr:tex> is not a member of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, it follows that <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> is not the set of all sentences.
+So <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> is not just a prime theory, but one of the prime theories that occurs in the canonical frame.</html:p>
+            <html:p>Since <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> is a theory, to say that <fr:tex display="inline"><![CDATA[A]]></fr:tex> is not in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> means that there is no NJ proof of <fr:tex display="inline"><![CDATA[\Sigma  / A]]></fr:tex>.
+So in other words, the priming lemma tells us that when we have an argument <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex> with no proof in NJ, we can add to its premises, taking nothing away, to reach a new argument <fr:tex display="inline"><![CDATA[\Sigma  / A]]></fr:tex> that also has no proof, but where <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> is a prime theory.
+</html:p>
+            <html:p>Why should we believe the priming lemma?
+Here's one line of reasoning.
+First, line up every sentence in our language into one big list.
+It doesn't matter what order these sentences come in; we just need them to come in some order or other.
+I'll call the sentences in this list <fr:tex display="inline"><![CDATA[A_{1}, A_{2}, A_{3}, \ldots ]]></fr:tex>.
+It's crucial that this list contains <html:em>every</html:em> sentence in the language, so it will certainly be infinite.
+</html:p>
+            <html:p>Now, we start from our argument <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex> that we know has no proof in NJ.
+We're going to go through our entire list of formulas one by one, in order, and make a list of <html:em>sets</html:em> of formulas <fr:tex display="inline"><![CDATA[\Gamma _{1}, \Gamma _{2}, \Gamma _{3}, \ldots ]]></fr:tex>.
+Here's how.
+First, we just let <fr:tex display="inline"><![CDATA[\Gamma _{1} = \Gamma ]]></fr:tex>; we start from the premises of our starting argument.
+Then, at every step <fr:tex display="inline"><![CDATA[n]]></fr:tex>, we consider both <fr:tex display="inline"><![CDATA[\Gamma _{n}]]></fr:tex> and <fr:tex display="inline"><![CDATA[A_{n}]]></fr:tex>.
+If the argument <fr:tex display="inline"><![CDATA[\Gamma _{n}, A_{n} / A]]></fr:tex> has a proof in NJ, then we leave <fr:tex display="inline"><![CDATA[A_{n}]]></fr:tex> out, and set <fr:tex display="inline"><![CDATA[\Gamma _{n + 1} = \Gamma _{n}]]></fr:tex>.
+And if the argument <fr:tex display="inline"><![CDATA[\Gamma _{n}, A_{n} / A]]></fr:tex> has no proof in NJ, then we add <fr:tex display="inline"><![CDATA[A_{n}]]></fr:tex> in, and set <fr:tex display="inline"><![CDATA[\Gamma _{n + 1} = \Gamma _{n}, A_{n}]]></fr:tex>.
+So at every step <fr:tex display="inline"><![CDATA[n]]></fr:tex>, either we add <fr:tex display="inline"><![CDATA[A_{n}]]></fr:tex> to our current set <fr:tex display="inline"><![CDATA[\Gamma _{n}]]></fr:tex> to make the new set <fr:tex display="inline"><![CDATA[\Gamma _{n + 1}]]></fr:tex>, or else we leave it out, depending on whether we <html:em>can</html:em> add it without reaching a valid argument.
+</html:p>
+            <html:p>For example, suppose we have the argument <fr:tex display="inline"><![CDATA[p \lor  q / p]]></fr:tex>, which indeed has no proof in NJ, and suppose our ordering of sentences starts with <fr:tex display="inline"><![CDATA[p, q, q \lor  p, q \land  p, \ldots ]]></fr:tex>.
+Then:
+<html:ul><html:li><fr:tex display="inline"><![CDATA[\Gamma _{1} = \{p \lor  q\}]]></fr:tex>.</html:li>
+  <html:li><fr:tex display="inline"><![CDATA[\Gamma _{2} = \{p \lor  q\}]]></fr:tex> again. It can't be <fr:tex display="inline"><![CDATA[\{p \lor  q, p\}]]></fr:tex>, since <fr:tex display="inline"><![CDATA[p \lor  q, p / p]]></fr:tex> <html:em>does</html:em> have an NJ proof.</html:li>
+  <html:li><fr:tex display="inline"><![CDATA[\Gamma _{3} = \{p \lor  q, q\}]]></fr:tex>. Now, since <fr:tex display="inline"><![CDATA[p \lor  q, q / p]]></fr:tex> has no NJ proof, we do add in the <fr:tex display="inline"><![CDATA[q]]></fr:tex>.</html:li>
+  <html:li><fr:tex display="inline"><![CDATA[\Gamma _{4} = \{p \lor  q, q, q \lor  p\}]]></fr:tex>. Again, we can add the next sentence in our list, since <fr:tex display="inline"><![CDATA[p \lor  q, q, q \lor  p / p]]></fr:tex> has no proof.</html:li>
+  <html:li><fr:tex display="inline"><![CDATA[\Gamma _{5} = \{p \lor  q, q, q \lor  p\}]]></fr:tex>. We cannot add <fr:tex display="inline"><![CDATA[q \land  p]]></fr:tex>, since <fr:tex display="inline"><![CDATA[p \lor  q, q, q\lor  p, q \land  p / p]]></fr:tex> does have an NJ proof. So we skip over it.</html:li>
+  <html:li> and so on...</html:li></html:ul></html:p>
+            <html:p>Now, imagine doing this until it's done.
+That is, we consider every sentence in the language, in some order or other, adding in the ones we can and skipping over the others.
+Note that, once a sentence is in some <fr:tex display="inline"><![CDATA[\Gamma _{m}]]></fr:tex>, it is in all later <fr:tex display="inline"><![CDATA[\Gamma _{n}]]></fr:tex>s: we only add, never remove.
+So we can consider the set <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> of all the sentences that make it in to <html:em>any</html:em> <fr:tex display="inline"><![CDATA[\Gamma _{m}]]></fr:tex>, anywhere in this process.
+This will turn out to be our desired prime theory.
+</html:p>
+            <html:p>Certainly <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Sigma ]]></fr:tex>, since <fr:tex display="inline"><![CDATA[\Gamma  = \Gamma _{1}]]></fr:tex>, and we only added things along the way.
+And certainly <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> does not contain <fr:tex display="inline"><![CDATA[A]]></fr:tex>: I don't know where <fr:tex display="inline"><![CDATA[A]]></fr:tex> occurs in our list of formulas, but wherever it occurs it could not have been added.
+If <fr:tex display="inline"><![CDATA[A]]></fr:tex> was, say, <fr:tex display="inline"><![CDATA[A_{17}]]></fr:tex>, then at step 17 we'd be asking whether <fr:tex display="inline"><![CDATA[\Gamma _{17}, A / A]]></fr:tex> has an NJ proof.
+Since it does, we'd skip over <fr:tex display="inline"><![CDATA[A]]></fr:tex> and set <fr:tex display="inline"><![CDATA[\Gamma _{18} = \Gamma _{17}]]></fr:tex>.
+And that would be that.
+<fr:tex display="inline"><![CDATA[A]]></fr:tex> may not have been <fr:tex display="inline"><![CDATA[A_{17}]]></fr:tex> in particular, but wherever <fr:tex display="inline"><![CDATA[A]]></fr:tex> occurs in the list, that's what would have happened there.
+</html:p>
+            <html:p>So we still need to show that <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> is a prime theory, but as long as it is one, we've got the priming lemma.
+In fact, I'm going to skip over the reasoning that shows that here.
+You might want to see how far you can get putting it together!
+You will need to note that intuitionistic logic---defined as we have, as provability in NJ---is reflexive, monotonic, and transitive.
+</html:p>
+            <html:p>But since my goal here is to give you a bird's-eye view of the completeness reasoning, I'll take the priming lemma for granted going forwards, even though I haven't here gone through the full reasoning that it would take to demonstrate it.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/00A2/</fr:uri>
+            <fr:display-uri>00A2</fr:display-uri>
+            <fr:route>/lectures/00A2/</fr:route>
+            <fr:title text="The truth lemma">The truth lemma</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>The other part of the reasoning we need to reach completeness is the so-called <html:em>truth lemma</html:em>.
+This lemma says that, whenever a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a member of a prime theory <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, then in the canonical model <fr:tex display="inline"><![CDATA[M]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A, \Gamma ) = Y]]></fr:tex>; and that whenever <fr:tex display="inline"><![CDATA[A]]></fr:tex> is not a member of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> then we have <fr:tex display="inline"><![CDATA[M(A, \Gamma ) = ?]]></fr:tex>.
+That is, when we evaluate the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> in the canonical model, we find that at every point in the model, <fr:tex display="inline"><![CDATA[A]]></fr:tex>'s value matches perfectly with whether or not <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a member of that point.
+This depends on the way we've set up the canonical model, and as we'll see it also depends on the priming lemma.
+</html:p>
+            <html:p>To show the truth lemma, we proceed again by induction.
+Let's start from atomic formulas.
+For atomic formulas, we've set things up to guarantee the truth lemma directly by our choice of the canonical valuation.
+This valuation directly assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to all atomic sentences in a given point, and <fr:tex display="inline"><![CDATA[?]]></fr:tex> to the others.
+So this part is all set.
+</html:p>
+            <html:p>The rest of the reasoning towards the truth lemma goes connective by connective.
+To show that the truth lemma holds for a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, we consider <fr:tex display="inline"><![CDATA[A]]></fr:tex>'s main connective.
+Then, assuming that the truth lemma holds for all of <fr:tex display="inline"><![CDATA[A]]></fr:tex>'s components, if any, we show that it must hold for <fr:tex display="inline"><![CDATA[A]]></fr:tex> as well.
+<html:ul><html:li><fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>: This one's quick. There is only one prime theory that contains <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>: the set of all sentences.</html:li>
+        And we've deliberately left that prime theory out of our canonical frame.
+        (This is why we did that.)
+        So there is no point <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> in the canonical frame containing <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex>.
+        And indeed, <fr:tex display="inline"><![CDATA[M(\bot , \Gamma ) = ?]]></fr:tex> at every point, because of how <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> works in any model.
+        So we have the needed perfect match.
+  <html:li><fr:tex display="inline"><![CDATA[\top ]]></fr:tex>: This one's quick too. Since <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> is a theorem of intuitionistic logic, it is a member of every theory, and so of every prime theory.
+  And <fr:tex display="inline"><![CDATA[M(\top , \Gamma ) = Y]]></fr:tex> at every point, because of how <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> works in any model.
+  So we again have the needed perfect match.</html:li>
+  <html:li><fr:tex display="inline"><![CDATA[\land ]]></fr:tex>: Take any <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> and any prime theory <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</html:li>
+        We know that <fr:tex display="inline"><![CDATA[M(A \land  B, \Gamma ) = Y]]></fr:tex> if and only if <fr:tex display="inline"><![CDATA[M(A, \Gamma ) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(B, \Gamma ) = Y]]></fr:tex>.
+        Supposing that the truth lemma holds for <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, that holds if and only if both <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+        And since all of <fr:tex display="inline"><![CDATA[A, B / A \land  B]]></fr:tex> and <fr:tex display="inline"><![CDATA[A \land  B / A]]></fr:tex> and <fr:tex display="inline"><![CDATA[A \land  B / B]]></fr:tex> are provable in NJ, this in turn holds if and only if <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> as well.
+
+
+<html:p>        Take a look back over that last paragraph; it moves quick, but it's reasoning like that where a lot of the punch of completeness lies.
+        Note that the paragraph uses both the way we handle conjunction in our models, and also certain arguments that are provable in our proof system.
+        Since completeness is about getting our models and our proof system to align in certain ways, there has to be some place where it all comes together: the truth lemma is really where that is.
+</html:p>
+
+  <html:li><fr:tex display="inline"><![CDATA[\lor ]]></fr:tex>: Take any <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex> and any prime theory <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</html:li>
+        We know that <fr:tex display="inline"><![CDATA[M(A \lor  B, \Gamma ) = Y]]></fr:tex> if and only if either <fr:tex display="inline"><![CDATA[M(A, \Gamma ) = Y]]></fr:tex> or <fr:tex display="inline"><![CDATA[M(B, \Gamma ) = Y]]></fr:tex>.
+        Supposing that the truth lemma holds for <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, that holds if and only if either <fr:tex display="inline"><![CDATA[A]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> or <fr:tex display="inline"><![CDATA[B]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+        And since <fr:tex display="inline"><![CDATA[A / A \lor  B]]></fr:tex> and <fr:tex display="inline"><![CDATA[B / A \lor  B]]></fr:tex> are both provable in NJ, and since <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is prime, this in turn holds if and only if <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> as well.
+
+        <html:p>Note that here---unlike in the case of conjunction---we needed to appeal to the fact that <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is <html:em>prime</html:em>.
+        In fact, this is the only place that really matters.
+        If we are working in a language without disjunction, we can forget all about primeness; everywhere else it comes up it's causing us to do more work.
+        We do that work so that we can bring primeness to this one place where it's needed: this one part of the truth lemma.</html:p>
+        
+  <html:li><fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex>: Take any <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> and any prime theory <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</html:li>
+        Here it's convenient to consider two cases: either <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> is in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> or it isn't.
+        If it is in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>: since <fr:tex display="inline"><![CDATA[A \rightarrow  B, A / B]]></fr:tex> is provable in NJ, that would mean that every prime theory <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Sigma ]]></fr:tex> is such that: either <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> doesn't contain <fr:tex display="inline"><![CDATA[A]]></fr:tex> or <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> does contain <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+        Supposing that the truth lemma holds for both <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, this would mean that: for every prime theory <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, either <fr:tex display="inline"><![CDATA[M(A, \Sigma ) = ?]]></fr:tex> or <fr:tex display="inline"><![CDATA[M(B, \Sigma ) = Y]]></fr:tex>.
+        And that, in turn, would mean that <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, \Gamma ) = Y]]></fr:tex>.
+
+        <html:p>Now, we consider the other case: where <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> is not in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.
+        That would mean that <fr:tex display="inline"><![CDATA[\Gamma , A / B]]></fr:tex> has no NJ proof: if it did have one, then we could add to that proof with a step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>\ to reach a proof of <fr:tex display="inline"><![CDATA[\Gamma  / A \rightarrow  B]]></fr:tex>; and since <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is a theory that does not contain <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex>, there must be no such proof.
+        So since <fr:tex display="inline"><![CDATA[\Gamma , A / B]]></fr:tex> has no NJ proof, by the priming lemma there is some prime theory <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> that contains everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> together with <fr:tex display="inline"><![CDATA[A]]></fr:tex>, but does not contain <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+        Supposing that the truth lemma holds for <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, this means that <fr:tex display="inline"><![CDATA[M(A, \Sigma ) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(B, \Sigma ) = ?]]></fr:tex>.
+        Since <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> contains everything in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, it is reachable from <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> in our canonical frame.
+        And so <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, \Gamma ) = ?]]></fr:tex>, since <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> can reach a point <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> where <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> but <fr:tex display="inline"><![CDATA[B]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex>.</html:p>
+
+        Here, we make the first use of the priming lemma.
+        When <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> is not in a prime theory <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, we want to make sure that <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, \Gamma ) = ?]]></fr:tex>.
+        But by the way implication works in our models, this requires the existence of a certain point somewhere in the model.
+        It's the priming lemma that does that work for us here.
+
+  <html:li><fr:tex display="inline"><![CDATA[\neg ]]></fr:tex>: In every theory, for any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, either the theory contains both <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> and <fr:tex display="inline"><![CDATA[A \rightarrow  \bot ]]></fr:tex> or neither of them.</html:li>
+        And in every model <fr:tex display="inline"><![CDATA[M]]></fr:tex>, at every point <fr:tex display="inline"><![CDATA[x]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(\neg  A, x) = M(A \rightarrow  \bot , x)]]></fr:tex>.
+        So the fact that we've already covered <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex> suffices; <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> is taken care of as well.
+
+</html:ul></html:p>
+            <html:p>To pull together the truth lemma: I've now argued that, in our canonical model, every point assigns values to sentences in accord with what that point itself contains: <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to all the sentences it does contain, and <fr:tex display="inline"><![CDATA[?]]></fr:tex> to all the sentences it does not.
+I did this by induction on formulas: first showing that atomic formulas have to work like this, and then showing that all our connectives will produce sentences that work like this, as long as their components all work like this.
+So any sentence we can form must indeed work like this.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>5</fr:month>
+              <fr:day>20</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/00A3/</fr:uri>
+            <fr:display-uri>00A3</fr:display-uri>
+            <fr:route>/lectures/00A3/</fr:route>
+            <fr:title text="Pulling completeness together">Pulling completeness together</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>That's it!
+To pull this all together to show completeness, recall what we're really after: that every argument has either a proof or a counterexample.
+So take any argument <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>.
+If it has a proof, great! We're done.
+</html:p>
+            <html:p>If it does not have a proof, then by the priming lemma there is some prime theory <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> where <fr:tex display="inline"><![CDATA[\Gamma  \subseteq  \Sigma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[A]]></fr:tex> is not a member of <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>.
+Then, by the truth lemma, this would mean that in the canonical model, <fr:tex display="inline"><![CDATA[M(C, \Sigma ) = Y]]></fr:tex> for every sentence <fr:tex display="inline"><![CDATA[C]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(A, \Sigma ) = ?]]></fr:tex>.
+Since every sentence in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> is also in <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>, this means that the canonical model is a counterexample to the argument <fr:tex display="inline"><![CDATA[\Gamma  / A]]></fr:tex>, at the point <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex>.
+</html:p>
+            <html:p>I left one significant gap in the reasoning above: in the demonstration of the priming lemma.
+That gap can be closed, but it would require a little bit more firepower than we've built up to this semester.
+The rest of the reasoning laid out above is complex and fiddly, but it uses only ideas we've encountered this semester.
+Don't worry if you don't understand all of it all at once!
+Indeed, don't worry if you never do---after all, the semester's basically over now!
+Think of this reasoning, though, as the kind of thing that you're now ready to tackle, if and when you choose to put the time into it.
+</html:p>
+            <html:p>And stay rocking!
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>11</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0004/</fr:uri>
+            <fr:display-uri>0004</fr:display-uri>
+            <fr:route>/lectures/0004/</fr:route>
+            <fr:title text="Table of Contents">Table of Contents</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:ul><html:li><fr:link href="/lectures/0002/" title="About this unit" uri="https://negation.rocks/lectures/0002/" display-uri="0002" type="local">About this unit</fr:link></html:li>
+  <html:li>Section A: Preliminaries
+  <html:ul><html:li><fr:link href="/lectures/0005/" title="Lecture 1: Introduction and languages" uri="https://negation.rocks/lectures/0005/" display-uri="0005" type="local">Lecture 1: Introduction and languages</fr:link></html:li>
+    <html:li><fr:link href="/lectures/0011/" title="Lecture 2: Functions and substitutions" uri="https://negation.rocks/lectures/0011/" display-uri="0011" type="local">Lecture 2: Functions and substitutions</fr:link></html:li>
+    <html:li><fr:link href="/lectures/002H/" title="Lecture 3: Sets, arguments, and logics" uri="https://negation.rocks/lectures/002H/" display-uri="002H" type="local">Lecture 3: Sets, arguments, and logics</fr:link></html:li></html:ul></html:li>
+  <html:li>Section B: Structures and matrices
+  <html:ul><html:li><fr:link href="/lectures/0034/" title="Lecture 4: Structures" uri="https://negation.rocks/lectures/0034/" display-uri="0034" type="local">Lecture 4: Structures</fr:link></html:li>
+    <html:li><fr:link href="/lectures/004L/" title="Matrices and counterexamples" uri="https://negation.rocks/lectures/004L/" display-uri="004L" type="local">Lecture 5: Matrices and counterexamples</fr:link></html:li>
+    <html:li><fr:link href="/lectures/0053/" title="Lecture 6: Using matrices to compare logics" uri="https://negation.rocks/lectures/0053/" display-uri="0053" type="local">Lecture 6: Using matrices to compare logics</fr:link></html:li>
+    <html:li><fr:link href="/lectures/005Y/" title="Lecture 7: The limits of matrices" uri="https://negation.rocks/lectures/005Y/" display-uri="005Y" type="local">Lecture 7: The limits of matrices</fr:link></html:li></html:ul></html:li>
+  <html:li>Section C: Exploring intuitionistic logic
+  <html:ul><html:li><fr:link href="/lectures/006M/" title="Lecture 8: Natural deduction" uri="https://negation.rocks/lectures/006M/" display-uri="006M" type="local">Lecture 8: Natural deduction</fr:link></html:li>
+    <html:li><fr:link href="/lectures/007I/" title="Lecture 9: Intuitionistic logic" uri="https://negation.rocks/lectures/007I/" display-uri="007I" type="local">Lecture 9: Intuitionistic logic</fr:link></html:li>
+    <html:li><fr:link href="/lectures/0089/" title="Lecture 10: Intuitionistic models" uri="https://negation.rocks/lectures/0089/" display-uri="0089" type="local">Lecture 10: Intuitionistic models</fr:link></html:li>
+    <html:li><fr:link href="/lectures/008Y/" title="Lecture 11: Harmony" uri="https://negation.rocks/lectures/008Y/" display-uri="008Y" type="local">Lecture 11: Harmony</fr:link></html:li></html:ul></html:li>
+  <html:li><fr:link href="/lectures/009L/" title="Lecture 12: soundness and completeness" uri="https://negation.rocks/lectures/009L/" display-uri="009L" type="local">Lecture 12: Soundness and completeness</fr:link></html:li></html:ul>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>29</fr:day>
+            </fr:date>
+            <fr:uri>https://negation.rocks/lectures/0089/</fr:uri>
+            <fr:display-uri>0089</fr:display-uri>
+            <fr:route>/lectures/0089/</fr:route>
+            <fr:title text="Lecture 10: Intuitionistic models">Lecture 10: Intuitionistic models</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>This week, we'll return to thinking about models.
+We'll look at the most usual models used for intuitionistic logic, which is a logic we haven't so far seen through a model-theoretic lens.
+</html:p>
+            <html:p>Remember that when we're thinking about a logic model-theoretically, the central notion we use is the idea of <html:em>counterexamples</html:em>.
+We need to say what our models are, and we need to say what it takes for a model to be a counterexample to an argument.
+Then the arguments we count as valid are the ones that have no counterexamples.
+</html:p>
+            <html:p>In the first half of the unit, the models we looked at were <html:em>valuations</html:em> in <html:em>structures</html:em>.
+It is possible to make models for intuitionistic logic that way, but it's a pain in the rear.
+Intuitionistic logic is a matrix logic, so it is possible to give a single matrix that determines intuitionistic logic perfectly.
+But the structure that matrix is built on is infinitely large; it has infinitely many truth values.
+So it's not like our simple three- and four-valued critters from earlier in the semester.
+</html:p>
+            <html:p>Because of this, we'll use a different kind of model altogether, not involving structures at all.
+The keys are:
+<html:ul><html:li>what a model <html:em>is</html:em>, and</html:li>
+<html:li>what it takes to for one of them to be a <html:em>counterexample</html:em> to an argument.</html:li></html:ul></html:p>
+            <html:p>That much is familiar at this point.
+But our models for intuitionistic logic will not be valuations in structures, so much will also be different!</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008A/</fr:uri>
+                <fr:display-uri>008A</fr:display-uri>
+                <fr:route>/lectures/008A/</fr:route>
+                <fr:title text="The models">The models</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>    The models we'll use for intuitionistic logic have two components: a <html:em>frame</html:em> and a <html:em>valuation</html:em> on that frame.
+    (As we'll see, these valuations are different from the kinds of valuations in structures we looked at earlier in the semester.)
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/008B/</fr:uri>
+                    <fr:display-uri>008B</fr:display-uri>
+                    <fr:route>/lectures/008B/</fr:route>
+                    <fr:title text="Frames">Frames</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>    First, though, frames.
+    The easiest way to think of frames, I think, is as a bunch of points with some collection of arrows between them.
+    For example, this is a frame:
+</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>4</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/008U/</fr:uri>
+                        <fr:display-uri>008U</fr:display-uri>
+                        <fr:route>/lectures/008U/</fr:route>
+                        <fr:taxon>Example</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>
+                          <fr:resource hash="6f241065d2cc0b77b1a6db1e1c168ec2">
+                            <fr:resource-content>
+                              <html:img src="/lectures/6f241065d2cc0b77b1a6db1e1c168ec2.svg" />
+                            </fr:resource-content>
+                            <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                            <fr:resource-source type="latex" part="body"><![CDATA[
+      \begin {tikzcd}
+        1 \arrow [r] & 2 \arrow [d, bend left]& 4\\
+        & 3\arrow [u, bend left]\\
+      \end {tikzcd}]]></fr:resource-source>
+                          </fr:resource>
+                        </html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>    For later reference, let's name this frame "`Example frame 1"'.
+    In Example frame 1, I've named the points 1, 2, 3, 4; in general I will use numbers for points.
+    As so often when we use numbers, though, their numeric properties don't matter; it never matters which number we use for what, and we'll never add them or anything.
+    I'm just using numbers as a convenient stock of tags.
+</html:p>
+                    <html:p>    In a frame, you can connect points with arrows any way you like.
+    This could include no connections at all, or every point connected to every other point, or some selection in between, as we see above.
+</html:p>
+                    <html:p>    There are only two things we need to keep track of about a frame: what its points are, and which points are <html:em>reachable</html:em> from which points.
+    To think about reaching a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> from a point <fr:tex display="inline"><![CDATA[y]]></fr:tex>, imagine that you are standing at <fr:tex display="inline"><![CDATA[y]]></fr:tex> and trying to get to <fr:tex display="inline"><![CDATA[x]]></fr:tex>, and that you can only travel along arrows, and only in the direction that the arrows indicate.
+    If it is possible to get from <fr:tex display="inline"><![CDATA[y]]></fr:tex> to <fr:tex display="inline"><![CDATA[x]]></fr:tex> in this way, then <fr:tex display="inline"><![CDATA[y]]></fr:tex> can reach <fr:tex display="inline"><![CDATA[x]]></fr:tex>, and we write <fr:tex display="inline"><![CDATA[y R x]]></fr:tex> to have a quick way to say this.
+    We can also say that <fr:tex display="inline"><![CDATA[x]]></fr:tex> is reachable from <fr:tex display="inline"><![CDATA[y]]></fr:tex> to mean the same thing.
+    You don't have to move at all if you don't need to, so every point is automatically reachable from itself.
+</html:p>
+                    <html:p>    For example, in Example frame 1, all of the following reachability claims are true, and no others:
+  <html:ul><html:li><fr:tex display="inline"><![CDATA[1 R 1]]></fr:tex>, and <fr:tex display="inline"><![CDATA[2 R 2]]></fr:tex>, and <fr:tex display="inline"><![CDATA[3 R 3]]></fr:tex>, and <fr:tex display="inline"><![CDATA[4 R 4]]></fr:tex></html:li>
+      <html:li><fr:tex display="inline"><![CDATA[1 R 2]]></fr:tex></html:li>
+      <html:li><fr:tex display="inline"><![CDATA[1 R 3]]></fr:tex></html:li>
+      <html:li><fr:tex display="inline"><![CDATA[2 R 3]]></fr:tex></html:li>
+      <html:li><fr:tex display="inline"><![CDATA[3 R 2]]></fr:tex></html:li></html:ul></html:p>
+                    <html:p>    And that's all we need to know about Example frame 1.
+    Note that we have <fr:tex display="inline"><![CDATA[1 R 3]]></fr:tex> here, even though there is no arrow in the diagram directly from 1 to 3.
+    We can still reach 3 from 1 along the arrows, by first stepping to 2 and then to 3.
+    (Or by doing that and then stepping around the loop connecting 2 and 3 any number of times.)</html:p>
+                    <html:p>
+    In fact, since every point is reachable from itself, we don't even <html:em>really</html:em> need to keep track of the points in a frame separately; if we know what's reachable from what, we will automatically have a list of all the points.</html:p>
+                    <html:p>    Any way of setting up points and arrows determines some story about reachability among those points, so any way of setting up points and arrows gives us a frame.
+</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>4</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/008C/</fr:uri>
+                        <fr:display-uri>008C</fr:display-uri>
+                        <fr:route>/lectures/008C/</fr:route>
+                        <fr:taxon>Side note</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>You might note that, if we added to the diagram of Example frame 1 a new arrow directly from 1 to 3, that wouldn't have any effect on what's reachable from what, since we already have <fr:tex display="inline"><![CDATA[1 R 3]]></fr:tex> in this frame.
+    Since reachability is all that matters to a frame, if we're being picky we'd say that the points-and-arrows depiction I've given you isn't Example frame 1 itself, but rather a <html:em>presentation</html:em> of Example frame 1; and adding an arrow from 1 to 3 would give us a different presentation of the very same frame.
+    For our purposes, though, we don't need to be this picky; points-and-arrows gives a nice way to think about frames, as long as you remember that all that really matters is <html:em>reachability</html:em>.</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>4</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/008F/</fr:uri>
+                        <fr:display-uri>008F</fr:display-uri>
+                        <fr:route>/lectures/008F/</fr:route>
+                        <fr:title text="Frame, point, reachable">Frame, point, reachable</fr:title>
+                        <fr:taxon>Definition</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>A <html:strong>frame</html:strong> is some set of things, called <html:strong>points</html:strong>, with some arrows between them, in any configuration.
+(We usually use numbers for points, but that's not very important; it's just convenient.)
+
+All that matters about a frame is which points are <html:em>reachable</html:em> from which points.
+Every point can reach itself, plus points can reach along any arrows in the frame, and they can follow chains of arrows: anywhere that a particular point can reach in this way is <html:strong>reachable</html:strong> from that starting point.
+(Any reaching along an arrow or along a chain of arrows must follow the direction of all the arrows in question.)</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>    Example frame 1 is finite, and of course any frame that I can depict like this will be finite.
+    But there is no restriction in general to finite frames; a frame can certainly contain infinitely many points if you like.
+    As long as it's clearly specified what's reachable from what, there's no problem with this.</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>4</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/008D/</fr:uri>
+                        <fr:display-uri>008D</fr:display-uri>
+                        <fr:route>/lectures/008D/</fr:route>
+                        <fr:taxon>Side note</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>If you're interested in the details: what matters about reachability here is just that it's a <html:em>preorder</html:em>.
+    I won't define "preorder" here, since it's not a concept we'll need.
+    But if you already know what a preorder is, or <fr:link href="https://en.wikipedia.org/wiki/Preorder" type="external">if you feel like looking it up</fr:link>, that's exactly what we're using here.
+    Using points and arrows, and then thinking about reachability via those arrows, is just a hopefully-at-least-somewhat-intuitive way of getting at preorders.</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>        That's all pretty abstract so far, and it's at that abstract level that logic really lives and breathes.
+        It can sometimes help to have a more concrete way of thinking about things, though.
+</html:p>
+                    <html:p>        One way these models are sometimes thought of is as representing a kind of temporal growth of knowledge.
+        In this way of thinking, each point in a model represents a particular stage of knowledge, and as we move around a frame, along the given paths, we get to points that have more and more knowledge.
+        On this way of thinking about models, when <fr:tex display="inline"><![CDATA[x]]></fr:tex> and <fr:tex display="inline"><![CDATA[y]]></fr:tex> are points in a model, and <fr:tex display="inline"><![CDATA[x R y]]></fr:tex>, that means something like: if we're at stage <fr:tex display="inline"><![CDATA[x]]></fr:tex> of knowledge, there is something we could learn, without forgetting anything, that would move us to stage <fr:tex display="inline"><![CDATA[y]]></fr:tex>.
+</html:p>
+                    <html:p>        On the other hand, when it's not the case that <fr:tex display="inline"><![CDATA[x R y]]></fr:tex>, that means something like: if we're at stage <fr:tex display="inline"><![CDATA[x]]></fr:tex> of knowledge, there's no way we could learn any more than we already know and end up at <fr:tex display="inline"><![CDATA[y]]></fr:tex>.
+        Since <fr:tex display="inline"><![CDATA[y]]></fr:tex> doesn't preserve everything we already have at <fr:tex display="inline"><![CDATA[x]]></fr:tex>, we would have to forget something to get from <fr:tex display="inline"><![CDATA[x]]></fr:tex> to <fr:tex display="inline"><![CDATA[y]]></fr:tex>.
+</html:p>
+                    <html:p>        On this interpretation, we're thinking about knowledge as something that can never be lost.
+        (Or at least we're not thinking about what losing it would be like.)
+        We're only concerned with which sets are subsets of which others: which can be extended <html:em>without losing anything</html:em> to reach which others.
+        That's probably not a great theory of how knowledge actually works!
+        (For example, I know where my keys are right now; but maybe tomorrow I won't.)
+        So don't get too distracted by this kind of interpretation; it's just here to give the flavour.
+        If you can imagine a kind of cumulative development of knowledge, that never loses anything as it goes, that's the kind of picture.
+        Other interpretations of frames are of course possible, but hopefully this helps sink in an image.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/008E/</fr:uri>
+                    <fr:display-uri>008E</fr:display-uri>
+                    <fr:route>/lectures/008E/</fr:route>
+                    <fr:title text="Valuations on frames">Valuations on frames</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>    Now, once we have a frame, to reach a model we need a <html:em>valuation</html:em> on that frame.
+    These valuations are like our valuations on structures in some ways but not in others.
+    What will be familiar is that these valuations start by assigning values to atomic formulas, and work up from there in specified ways to assign values to compound formulas.
+    But the way this works will be new.
+</html:p>
+                    <html:p>    We work with two values in these models, which I'll call <fr:tex display="inline"><![CDATA[Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[?]]></fr:tex>.
+    I've chosen these names to suggest the knowledge interpretaion explained above: roughly, something gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> when it's known (Yes), and the value <fr:tex display="inline"><![CDATA[?]]></fr:tex> when it's not known.
+    It's <fr:tex display="inline"><![CDATA[?]]></fr:tex> and not something like <fr:tex display="inline"><![CDATA[N]]></fr:tex> because when something is not known, it might later come to be known or it might not; it's not yet a No, just a <fr:tex display="inline"><![CDATA[?]]></fr:tex>.
+</html:p>
+                    <html:p>    As I mentioned above, what's known or not might vary between points in a model.
+    So different sentences can get different values at <html:em>different points</html:em> in a model.
+    When we're keeping track of assigning these values to sentences, then, we always need to have in mind both a particular model <html:em>and</html:em> a particular point in that model.
+    To indicate the value that a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> takes at the point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the model <fr:tex display="inline"><![CDATA[M]]></fr:tex>, I write <fr:tex display="inline"><![CDATA[M(A, x)]]></fr:tex>.
+    So if <fr:tex display="inline"><![CDATA[A]]></fr:tex> takes the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> there, then <fr:tex display="inline"><![CDATA[M(A, x) = Y]]></fr:tex>.
+</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>4</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/008G/</fr:uri>
+                        <fr:display-uri>008G</fr:display-uri>
+                        <fr:route>/lectures/008G/</fr:route>
+                        <fr:title text="Atomic sentences">Atomic sentences</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>    These valuations on a frame start from assigning values to atomic formulas, and then on this basis we can calculate the values assigned to compound formulas.
+    We do this by assigning to each point in the frame some <html:em>set</html:em> of atomic formulas, to be understood as the set of atomic formulas that get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at that point.
+</html:p>
+                        <html:p>    But unlike when we're dealing with valuations on structures, here the assignment of values to atomic formulas is not completely unconstrained.
+    Recall the knowledge interpretation: when <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in a frame, we want that to mean that we can move from <fr:tex display="inline"><![CDATA[x]]></fr:tex> to <fr:tex display="inline"><![CDATA[y]]></fr:tex> without losing any knowledge that's present at <fr:tex display="inline"><![CDATA[x]]></fr:tex>.
+    So our valuations are constrained in this way: if <fr:tex display="inline"><![CDATA[M(p, x) = Y]]></fr:tex>, and <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>, then we must have <fr:tex display="inline"><![CDATA[M(p, y) = Y]]></fr:tex> as well.
+    That goes for any atomic sentence, not just <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+    In other words, when <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in a frame, then the set of atomic formulas a valuation assigns to <fr:tex display="inline"><![CDATA[x]]></fr:tex> must be a <html:em>subset</html:em> of the set it assigns to <fr:tex display="inline"><![CDATA[y]]></fr:tex>.
+</html:p>
+                        <fr:tree show-metadata="false">
+                          <fr:frontmatter>
+                            <fr:authors>
+                              <fr:author>
+                                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                              </fr:author>
+                            </fr:authors>
+                            <fr:date>
+                              <fr:year>2026</fr:year>
+                              <fr:month>4</fr:month>
+                              <fr:day>29</fr:day>
+                            </fr:date>
+                            <fr:uri>https://negation.rocks/lectures/008H/</fr:uri>
+                            <fr:display-uri>008H</fr:display-uri>
+                            <fr:route>/lectures/008H/</fr:route>
+                            <fr:title text="Valuation on a frame">Valuation on a frame</fr:title>
+                            <fr:taxon>Definition</fr:taxon>
+                          </fr:frontmatter>
+                          <fr:mainmatter>
+                            <html:p>A <html:strong>valuation on a frame</html:strong> is a choice of a set of atomic sentences for each point in the frame, subject to the condition that for all points <fr:tex display="inline"><![CDATA[x, y]]></fr:tex> in the frame, if <fr:tex display="inline"><![CDATA[x R y]]></fr:tex>, then the set assigned to <fr:tex display="inline"><![CDATA[x]]></fr:tex> must be a subset of the set assigned to <fr:tex display="inline"><![CDATA[y]]></fr:tex>.</html:p>
+                          </fr:mainmatter>
+                        </fr:tree>
+                        <html:p>    For an example, return to Example frame 1.
+    Let's assign sets of atomics to points as follows: 1 gets <fr:tex display="inline"><![CDATA[\{p, q\}]]></fr:tex>; 2 gets <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex>; 3 gets <fr:tex display="inline"><![CDATA[\{p, q, r\}]]></fr:tex>; and 4 gets <fr:tex display="inline"><![CDATA[\{q, s\}]]></fr:tex>.
+    This meets our requirement: whenever one point is reachable from another in this frame, the point we're reaching from gets a subset of the set assigned to the point we're reaching to.
+    Note as well that when we have a loop of reachability, like between 2 and 3 in this frame, then that means that every point in the loop must be assigned the very same set of atomics.
+</html:p>
+                        <html:p>    In this model, I've assigned only a finite set of atomics to each point.
+    But this is not required at all; any choice of sets of atomics is a valuation, so long as it connects to reachability in the required way.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>4</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/008I/</fr:uri>
+                        <fr:display-uri>008I</fr:display-uri>
+                        <fr:route>/lectures/008I/</fr:route>
+                        <fr:title text="Compound sentences">Compound sentences</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>        That's what an intuitionistic model is: a frame, plus a set of atomics chosen for each point in the frame, such that whenever <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in the frame, the set assigned to <fr:tex display="inline"><![CDATA[x]]></fr:tex> is a subset of the set assigned to <fr:tex display="inline"><![CDATA[y]]></fr:tex>.</html:p>
+                        <fr:tree show-metadata="false">
+                          <fr:frontmatter>
+                            <fr:authors>
+                              <fr:author>
+                                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                              </fr:author>
+                            </fr:authors>
+                            <fr:date>
+                              <fr:year>2026</fr:year>
+                              <fr:month>4</fr:month>
+                              <fr:day>29</fr:day>
+                            </fr:date>
+                            <fr:uri>https://negation.rocks/lectures/008J/</fr:uri>
+                            <fr:display-uri>008J</fr:display-uri>
+                            <fr:route>/lectures/008J/</fr:route>
+                            <fr:title text="Intuitionistic model">Intuitionistic model</fr:title>
+                            <fr:taxon>Definition</fr:taxon>
+                          </fr:frontmatter>
+                          <fr:mainmatter>
+                            <html:p>An <html:strong>intuitionistic model</html:strong> is a <fr:link href="/lectures/008F/" title="Frame, point, reachable" uri="https://negation.rocks/lectures/008F/" display-uri="008F" type="local">frame</fr:link>, plus a <fr:link href="/lectures/008H/" title="Valuation on a frame" uri="https://negation.rocks/lectures/008H/" display-uri="008H" type="local">valuation on that frame</fr:link>.</html:p>
+                          </fr:mainmatter>
+                        </fr:tree>
+                        <html:p>On this basis, we can calculate values for every formula of our language at every point in the model.
+        Here's how.
+</html:p>
+                        <html:p>        As before, for any <html:em>atomic</html:em> sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, we will have <fr:tex display="inline"><![CDATA[M(A, x) = Y]]></fr:tex> if <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a member of the set assigned to the point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the model <fr:tex display="inline"><![CDATA[M]]></fr:tex>.
+        For compound sentences, we proceed by way of the main connective of the sentence.
+        I'll discuss <fr:tex display="inline"><![CDATA[\land , \lor , \top , \bot ]]></fr:tex> first, since those are simpler; I'll put off <fr:tex display="inline"><![CDATA[\neg , \rightarrow ]]></fr:tex> for now.</html:p>
+                        <html:p>            No matter what model <fr:tex display="inline"><![CDATA[M]]></fr:tex> we're in, and no matter what point <fr:tex display="inline"><![CDATA[x]]></fr:tex> we're at inside the model <fr:tex display="inline"><![CDATA[M]]></fr:tex>:
+            <html:ul><html:li><fr:tex display="inline"><![CDATA[M(A \land  B, x) = Y]]></fr:tex> if both <fr:tex display="inline"><![CDATA[M(A, x) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(B, x) = Y]]></fr:tex>, and otherwise <fr:tex display="inline"><![CDATA[M(A \land  B, x) = ?]]></fr:tex>;</html:li>
+            <html:li><fr:tex display="inline"><![CDATA[M(A \lor  B, x) = ?]]></fr:tex> if both <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(B, x) = ?]]></fr:tex>, and otherwise <fr:tex display="inline"><![CDATA[M(A \lor  B, x) = Y]]></fr:tex>;</html:li>
+            <html:li><fr:tex display="inline"><![CDATA[M(\top , x) = Y]]></fr:tex>; and</html:li>
+            <html:li><fr:tex display="inline"><![CDATA[M(\bot , x) = ?]]></fr:tex>.</html:li></html:ul></html:p>
+                        <html:p>            As you can see, this is just like the Boolean structure, but with <fr:tex display="inline"><![CDATA[Y]]></fr:tex> playing the role of <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> and <fr:tex display="inline"><![CDATA[?]]></fr:tex> the role of <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex>.
+            The difference of the names of the values isn't really important; it's just there to be reminiscent of a difference in how these values are often interpreted.
+            For example, where our clause for conjunction in the classical case is often taken to indicate that a conjunction is <html:em>true</html:em> iff both conjuncts are true, here the corresponding clause is meant to indicate that a conjunction is <html:em>known</html:em> iff both conjuncts are known.</html:p>
+                        <fr:tree show-metadata="false">
+                          <fr:frontmatter>
+                            <fr:authors>
+                              <fr:author>
+                                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                              </fr:author>
+                            </fr:authors>
+                            <fr:date>
+                              <fr:year>2026</fr:year>
+                              <fr:month>4</fr:month>
+                              <fr:day>29</fr:day>
+                            </fr:date>
+                            <fr:uri>https://negation.rocks/lectures/008K/</fr:uri>
+                            <fr:display-uri>008K</fr:display-uri>
+                            <fr:route>/lectures/008K/</fr:route>
+                            <fr:taxon>Side note</fr:taxon>
+                          </fr:frontmatter>
+                          <fr:mainmatter>
+                            <html:p>This should lead you to wonder about disjunction: surely it's possible to know a disjunction without knowing either disjunct, but the clause we have here seems to rule this out.
+            In fact, there is another way to proceed that would be more careful about disjunction, for just this reason; we're working this way because it's simpler, even though it strains the knowledge interpretation.
+            Our method is based on what are sometimes called "Kripke models"; the more involved method would work with what are called "Beth models".
+            Both kinds of model determine intuitionistic logic.
+</html:p>
+                          </fr:mainmatter>
+                        </fr:tree>
+                        <html:p>            If that were all there was to it, though, then there would be no point in bundling up multiple points into a frame.
+            Where that stuff comes into play is with the remaining connectives: <fr:tex display="inline"><![CDATA[\neg ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\rightarrow ]]></fr:tex>.
+            To give a value to <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> at a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in a model, we don't just look at <fr:tex display="inline"><![CDATA[x]]></fr:tex> itself.
+            Instead, we look at every point that's <html:em>reachable</html:em> from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the model.
+            Remember, every point is reachable from itself; so this includes looking at <fr:tex display="inline"><![CDATA[x]]></fr:tex>.
+            But it often includes more.
+</html:p>
+                        <html:p>            For <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> to get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at a point <fr:tex display="inline"><![CDATA[x]]></fr:tex>, what's required is that at <html:em>every</html:em> point reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the model, <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex>.
+            The idea is that it's not enough in general for us to know <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> just that we don't yet know <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+            Something more is needed.
+            What's needed is that there is <html:em>no way</html:em> to extend our knowledge where we could come to know <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+            Or at least, that's the idea that these models go with.
+</html:p>
+                        <html:p>            The idea for implication is similar.
+            Again, to give a value to <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> at a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in a model <fr:tex display="inline"><![CDATA[M]]></fr:tex>, we look at every point reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>.
+            For <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> to get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex>, what's required is this: that there's no way to extend our knowledge to know <fr:tex display="inline"><![CDATA[A]]></fr:tex> without also knowing <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+            That is, we require that every point <fr:tex display="inline"><![CDATA[y]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(A, y)= Y]]></fr:tex> also gives us <fr:tex display="inline"><![CDATA[M(B, y) = Y]]></fr:tex>.
+</html:p>
+                        <html:p>            Let's look at some examples, using a new example model, which I'l call <fr:tex display="inline"><![CDATA[M]]></fr:tex>:
+</html:p>
+                        <html:p>
+                          <fr:resource hash="9df6136b00cbf1cc12f4ea692bb0bf55">
+                            <fr:resource-content>
+                              <html:img src="/lectures/9df6136b00cbf1cc12f4ea692bb0bf55.svg" />
+                            </fr:resource-content>
+                            <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                            <fr:resource-source type="latex" part="body"><![CDATA[
+            \begin {tikzcd}
+                &1: \{p, q, r, s, t\}\\
+                &2: \{p, q, r, s\} \arrow [u]\\
+                3: \{p, q\}\arrow [ur]&&4: \{p, r\}\arrow [ul]\\
+                &5: \{p\}\arrow [ul]\arrow [ur]\\
+            \end {tikzcd}]]></fr:resource-source>
+                          </fr:resource>
+                        </html:p>
+                        <html:p>
+            Here, I've indicated the valuation along with the frame, by putting at each point the set of atomic sentences assigned to that point.
+            Here are some example calculations of values of various compound sentences at points in <fr:tex display="inline"><![CDATA[M]]></fr:tex>:
+            <html:ul><html:li><fr:tex display="inline"><![CDATA[M(\neg  q, 5) = ?]]></fr:tex>.
+                Even though we have <fr:tex display="inline"><![CDATA[M(q, 5) = ?]]></fr:tex>, the fact that <fr:tex display="inline"><![CDATA[M(q, 3) = Y]]></fr:tex>, together with the fact that <fr:tex display="inline"><![CDATA[5 R 3]]></fr:tex>, forces this result.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M(\neg  u, 2) = Y]]></fr:tex>.
+                Here, we have two points we need to check: <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[1]]></fr:tex>.
+                Since both of these points assign the value <fr:tex display="inline"><![CDATA[?]]></fr:tex> to the atomic sentence <fr:tex display="inline"><![CDATA[u]]></fr:tex>, we have this result.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M(q \rightarrow  r, 5) = ?]]></fr:tex>.
+                Since we have <fr:tex display="inline"><![CDATA[M(q, 3) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(r, 3) = ?]]></fr:tex>, this result follows.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M(r \rightarrow  q, 5) = ?]]></fr:tex>.
+                Since we have <fr:tex display="inline"><![CDATA[M(r, 4) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(q, 4) = ?]]></fr:tex>, this result follows.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M((q \rightarrow  r) \lor  (r \rightarrow  q), 5) = ?]]></fr:tex>.
+                We've seen that both of the components of this disjunction take value <fr:tex display="inline"><![CDATA[?]]></fr:tex> at <fr:tex display="inline"><![CDATA[5]]></fr:tex>, so the disjunction does as well.
+
+
+<html:p>                Note what's happened here: we've got a reflection at <fr:tex display="inline"><![CDATA[5]]></fr:tex> of what's going on at both <fr:tex display="inline"><![CDATA[3]]></fr:tex> and <fr:tex display="inline"><![CDATA[4]]></fr:tex>: in particular, <fr:tex display="inline"><![CDATA[3]]></fr:tex> gives us <fr:tex display="inline"><![CDATA[q]]></fr:tex> without <fr:tex display="inline"><![CDATA[r]]></fr:tex> and <fr:tex display="inline"><![CDATA[4]]></fr:tex> gives us <fr:tex display="inline"><![CDATA[r]]></fr:tex> without <fr:tex display="inline"><![CDATA[q]]></fr:tex>.
+                Our connectives are giving us a way to "look around" inside the model, in a limited way.
+</html:p></html:li>
+
+<html:li><fr:tex display="inline"><![CDATA[M((q \land  r) \rightarrow  s, 5) = Y]]></fr:tex>.
+                Here, we need to check every point, since every point is reachable from <fr:tex display="inline"><![CDATA[5]]></fr:tex>.
+                What we see is that there are only two points that give the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex>\ to <fr:tex display="inline"><![CDATA[q \land  r]]></fr:tex>; these are <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[1]]></fr:tex>.
+                And both of these points also give the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[s]]></fr:tex>.
+                So we have the result.</html:li>
+                
+                <html:li><fr:tex display="inline"><![CDATA[M((q \land  r) \rightarrow  t, 5) = ?]]></fr:tex>.
+                Again, we check every point, and see that just <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[1]]></fr:tex> give the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex>\ to <fr:tex display="inline"><![CDATA[q \land  r]]></fr:tex>.
+                This time, though, one of them (viz <fr:tex display="inline"><![CDATA[2]]></fr:tex>) gives <fr:tex display="inline"><![CDATA[?]]></fr:tex> to the consequent <fr:tex display="inline"><![CDATA[t]]></fr:tex>.
+                So we get this result instead.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M((q \land  r) \rightarrow  t, 2) = ?]]></fr:tex>.
+                This time we only need to look at <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[1]]></fr:tex>, but since <fr:tex display="inline"><![CDATA[2]]></fr:tex> still gives <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to the antecedent and <fr:tex display="inline"><![CDATA[?]]></fr:tex> to the consequent, it's the same result.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M((q \land  r) \rightarrow  t, 1) = Y]]></fr:tex>.
+                Here, we only need to look at <fr:tex display="inline"><![CDATA[1]]></fr:tex> itself, since <fr:tex display="inline"><![CDATA[1]]></fr:tex> is the only point reachable from <fr:tex display="inline"><![CDATA[1]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>.
+                And here, we have the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> for both <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex>.
+                So we get this result.</html:li>
+                <html:li><fr:tex display="inline"><![CDATA[M(\neg  ((q \land  r) \rightarrow  t), 2) = ?]]></fr:tex>.
+                Here, we look at <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[1]]></fr:tex>, since these are the points reachable from <fr:tex display="inline"><![CDATA[2]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex>.
+                At each of these, we ask: what is the value of <fr:tex display="inline"><![CDATA[(q \land  r) \rightarrow  t]]></fr:tex> here?
+                As we've seen, it's <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[1]]></fr:tex> and <fr:tex display="inline"><![CDATA[?]]></fr:tex> at <fr:tex display="inline"><![CDATA[2]]></fr:tex>.
+                So we have this result.</html:li></html:ul></html:p>
+                        <html:p>Let's wrap all this up in a definition for later reference:</html:p>
+                        <fr:tree show-metadata="false">
+                          <fr:frontmatter>
+                            <fr:authors>
+                              <fr:author>
+                                <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                              </fr:author>
+                            </fr:authors>
+                            <fr:date>
+                              <fr:year>2026</fr:year>
+                              <fr:month>4</fr:month>
+                              <fr:day>29</fr:day>
+                            </fr:date>
+                            <fr:uri>https://negation.rocks/lectures/008L/</fr:uri>
+                            <fr:display-uri>008L</fr:display-uri>
+                            <fr:route>/lectures/008L/</fr:route>
+                            <fr:title text="Evaluating sentences in intuitionistic models">Evaluating sentences in intuitionistic models</fr:title>
+                            <fr:taxon>Definition</fr:taxon>
+                          </fr:frontmatter>
+                          <fr:mainmatter>
+                            <html:p>Given an <fr:link href="/lectures/008J/" title="Intuitionistic model" uri="https://negation.rocks/lectures/008J/" display-uri="008J" type="local">intuitionistic model</fr:link> <fr:tex display="inline"><![CDATA[M]]></fr:tex> and a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in it, we assign values to every sentence at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the model as follows:
+<html:ul><html:li>atomic: for any atomic sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A, x) = Y]]></fr:tex> iff <fr:tex display="inline"><![CDATA[A]]></fr:tex> is in the set of atomic sentences assigned to <fr:tex display="inline"><![CDATA[x]]></fr:tex> by the model, and otherwise <fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>.</html:li>
+<html:li>conjunction: for any sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A \land  B, x) = Y]]></fr:tex> iff <fr:tex display="inline"><![CDATA[M(A, x) = M(B, x) = Y]]></fr:tex>, and otherwise <fr:tex display="inline"><![CDATA[M(A \land  B, x) = ?]]></fr:tex>.</html:li>
+<html:li>disjunction: for any sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A \lor  B, x) = ?]]></fr:tex> iff <fr:tex display="inline"><![CDATA[M(A, x) = M(B, x) = ?]]></fr:tex>, and otherwise <fr:tex display="inline"><![CDATA[M(A \lor  B, x) = Y]]></fr:tex>.</html:li>
+<html:li>verum and falsum: always, <fr:tex display="inline"><![CDATA[M(\top , x) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(\bot , x) = ?]]></fr:tex>.</html:li>
+<html:li>negation: for any sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(\neg  A, x) = Y]]></fr:tex> iff every point <fr:tex display="inline"><![CDATA[y]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> is such that <fr:tex display="inline"><![CDATA[M(A, y) = ?]]></fr:tex>; otherwise, <fr:tex display="inline"><![CDATA[M(\neg  A, x) = ?]]></fr:tex>.</html:li>
+<html:li>implication: for any sentences <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, x) = ?]]></fr:tex> iff there is some point <fr:tex display="inline"><![CDATA[y]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> with <fr:tex display="inline"><![CDATA[M(A, y) = Y]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(B, y) = ?]]></fr:tex>; otherwise <fr:tex display="inline"><![CDATA[M(A \rightarrow  B, x)]]></fr:tex> = <fr:tex display="inline"><![CDATA[Y]]></fr:tex>.</html:li></html:ul></html:p>
+                          </fr:mainmatter>
+                        </fr:tree>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>4</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/008M/</fr:uri>
+                        <fr:display-uri>008M</fr:display-uri>
+                        <fr:route>/lectures/008M/</fr:route>
+                        <fr:title text="Persistence">Persistence</fr:title>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>            We can also do some more general reasoning about possible values at points.
+            The most important thing to notice here is called <html:em>persistence</html:em>: in any model <fr:tex display="inline"><![CDATA[N]]></fr:tex>, at any points <fr:tex display="inline"><![CDATA[x]]></fr:tex> and <fr:tex display="inline"><![CDATA[y]]></fr:tex>, if <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> and <fr:tex display="inline"><![CDATA[N(A, x) = Y]]></fr:tex>, then <fr:tex display="inline"><![CDATA[N(A, y) = Y]]></fr:tex> as well.
+            That is, as our knowledge of atomic sentences grows, moving along the paths in our frame, the same thing happens with compound sentences as well.
+            We never lose knowledge of any sentence, atomic or compound, as long as we move only to reachable points.
+            For atomic formulas, we have forced this directly, with our restrictions on valuations.
+            But for compound sentences, this is a more complex point; it's true because of the interactions between the various connectives.
+</html:p>
+                        <html:p>            To see that persistence is true, we can bring back our old friend <fr:link href="/lectures/005A/" title="Reasoning by induction" uri="https://negation.rocks/lectures/005A/" display-uri="005A" type="local"><html:em>induction</html:em></fr:link>.
+            We want to show that persistence holds for absolutely every sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+            Recall that induction has two main parts: first, we show that persistence holds for atomic sentences.
+            Then, we go connective by connective, showing that for any compound sentence, as long as persistence holds of its components, then it holds of the compound sentence itself.
+            That's enough to show that persistence holds for every sentence. We'd have no way to build a sentence where it failed, since we'd have to build the sentence ultimately from atomics using connectives.
+</html:p>
+                        <html:p>            So first, let's look at persistence for atomics.
+            This says that in any model <fr:tex display="inline"><![CDATA[N]]></fr:tex>, for any points <fr:tex display="inline"><![CDATA[x]]></fr:tex> and <fr:tex display="inline"><![CDATA[y]]></fr:tex> and any atomic sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, if <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> and <fr:tex display="inline"><![CDATA[N(A, x) = Y]]></fr:tex>, then <fr:tex display="inline"><![CDATA[N(A, y) = Y]]></fr:tex> as well.
+            Here, though, this is required as we specify a valuation; any way to make this fail doesn't count as a valuation at all.
+            That is, persistence does indeed hold for atomics.
+            That's the first part done!
+</html:p>
+                        <html:p>            On to the connectives.
+</html:p>
+                        <html:p>
+                          <html:ul><html:li> For a conjunction <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>: we need to show that <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex> is persistent, as long as <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are.
+                So we assume that <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are persistent, since if they're not we don't need to worry about <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>.
+                Suppose, then, that <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[N]]></fr:tex>, and that <fr:tex display="inline"><![CDATA[N(A \land  B, x) = Y]]></fr:tex>.
+                By the way values are assigned to conjunctions, this means that both <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> also get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex>.
+                And since both <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are persistent, they both must get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex> as well.
+                But then <fr:tex display="inline"><![CDATA[N(A \land  B, y) = Y]]></fr:tex>, and this is all we need.</html:li>
+                <html:li> For a disjunction <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex>, the reasoning is very similar to conjunction.
+                Again, we assume that <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are persistent, since if they're not we don't need to worry about <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex>.
+                Suppose, then, that <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[N]]></fr:tex>, and that <fr:tex display="inline"><![CDATA[N(A \lor  B, x) = Y]]></fr:tex>.
+                By the way values are assigned to disjunctions, this means at least one of <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> also gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex>.
+                And since both <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are persistent, at least one of them must get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex> as well.
+                But then <fr:tex display="inline"><![CDATA[N(A \lor  B, y) = Y]]></fr:tex>, and this is all we need.</html:li>
+                <html:li> Showing that <fr:tex display="inline"><![CDATA[\bot ]]></fr:tex> is persistent is quick: it never takes the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> anywhere, so we're all set!</html:li>
+                <html:li>Similarly for <fr:tex display="inline"><![CDATA[\top ]]></fr:tex>; since it takes the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> everywhere, we're good!</html:li>
+                <html:li> For a negation <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex>: we need to show that <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> is persistent as long as <fr:tex display="inline"><![CDATA[A]]></fr:tex> is.
+                So suppose <fr:tex display="inline"><![CDATA[A]]></fr:tex> is persistent, and that <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[N]]></fr:tex> with <fr:tex display="inline"><![CDATA[N(\neg  A, x) = Y]]></fr:tex>.
+                That means that in every point reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex>, the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex>.
+                Now, since <fr:tex display="inline"><![CDATA[y]]></fr:tex> is itself reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex>, every place reachable from <fr:tex display="inline"><![CDATA[y]]></fr:tex> is also reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex>---go from <fr:tex display="inline"><![CDATA[x]]></fr:tex> to <fr:tex display="inline"><![CDATA[y]]></fr:tex> first, and then on to wherever.
+                So in all these points reachable from <fr:tex display="inline"><![CDATA[y]]></fr:tex>, the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex>.
+                And that's enough for it to be the case that <fr:tex display="inline"><![CDATA[N(\neg  A, y) = Y]]></fr:tex>.</html:li>
+                <html:li> Finally, implication: we need to show that <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> is persistent as long as <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are.
+                So suppose <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are persistent, and that <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> in some model <fr:tex display="inline"><![CDATA[N]]></fr:tex> with <fr:tex display="inline"><![CDATA[N(A \rightarrow  B, x) = Y]]></fr:tex>.
+                Then in every point reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex>, if the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> in that superset, then so does <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+                Now, since <fr:tex display="inline"><![CDATA[y]]></fr:tex> is itself reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex>, every point reachable from <fr:tex display="inline"><![CDATA[y]]></fr:tex> is also reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex>.
+                So in all these points reachable from <fr:tex display="inline"><![CDATA[y]]></fr:tex>, if the sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> in that superset, then so does <fr:tex display="inline"><![CDATA[B]]></fr:tex>.
+                And that's enough for it to be the case that <fr:tex display="inline"><![CDATA[N(A \rightarrow  B, y) = Y]]></fr:tex>.</html:li></html:ul>
+                        </html:p>
+                        <html:p>            That's enough to show that persistence really does hold in these models, no matter what sentence we're looking at.
+</html:p>
+                        <html:p>            You can use persistence when you're reasoning about what's possible in these models.
+            For example, let's suppose we have some model <fr:tex display="inline"><![CDATA[N]]></fr:tex> and a point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex> where <fr:tex display="inline"><![CDATA[N(A, x) = Y]]></fr:tex>.
+            Now that we know persistence holds, this is enough to see that <fr:tex display="inline"><![CDATA[N(\neg \neg  A, x) = Y]]></fr:tex> as well.
+            Here's how the reasoning might go:
+            
+            <html:p>
+                To show that <fr:tex display="inline"><![CDATA[N(\neg \neg  A, x) = Y]]></fr:tex>, we need to know that for every point <fr:tex display="inline"><![CDATA[y]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in the model <fr:tex display="inline"><![CDATA[N]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[N(\neg A, y) = ?]]></fr:tex>.
+                That in turn means that we need to know that there is some <fr:tex display="inline"><![CDATA[z]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[y]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex> with <fr:tex display="inline"><![CDATA[N(A, z) = Y]]></fr:tex>.
+                So what we need to show is this: every point reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex> <html:em>itself</html:em> has some point reachable from <html:em>it</html:em> in <fr:tex display="inline"><![CDATA[N]]></fr:tex> where <fr:tex display="inline"><![CDATA[A]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex>.
+</html:p>
+
+<html:p>                But now take any <fr:tex display="inline"><![CDATA[y]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[x]]></fr:tex> in <fr:tex display="inline"><![CDATA[N]]></fr:tex>.
+                <html:em>Since <fr:tex display="inline"><![CDATA[A]]></fr:tex> is persistent</html:em>, we know that <fr:tex display="inline"><![CDATA[N(A, y) = Y]]></fr:tex>.
+                Also, <fr:tex display="inline"><![CDATA[y]]></fr:tex> is reachable from itself.
+                So we've shown what was needed.
+            </html:p></html:p>
+                        <html:p>Note that this reasoning needed to appeal to persistence to get where it needed to go.
+            This is usual; in reasoning about these models, you will often need to pay attention to persistence.</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008N/</fr:uri>
+                <fr:display-uri>008N</fr:display-uri>
+                <fr:route>/lectures/008N/</fr:route>
+                <fr:title text="Counterexamples">Counterexamples</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>    Okay; those are our models.
+    To get a logic from these, we need to do the usual model-theoretic thing.
+    That is, we need to say which models are counterexamples to which arguments.
+    As you might expect, this will make use of the values assigned by the models at various points.
+</html:p>
+                <html:p>    In fact, it's easiest to say what it takes for a <html:em>point</html:em> in a model to be a counterexample to an argument.
+    A model then gets to be a counterexample to an argument by containing a point that's a counterexample to that argument.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/008O/</fr:uri>
+                    <fr:display-uri>008O</fr:display-uri>
+                    <fr:route>/lectures/008O/</fr:route>
+                    <fr:title text="Intuitionistic counterexample">Intuitionistic counterexample</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>    A point <fr:tex display="inline"><![CDATA[x]]></fr:tex> in a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> is a <html:strong>counterexample</html:strong> to the argument <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A]]></fr:tex> when it meets two conditions:
+<html:ul><html:li>for every sentence <fr:tex display="inline"><![CDATA[B]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> we have <fr:tex display="inline"><![CDATA[M(B, x) = Y]]></fr:tex>; and</html:li>
+<html:li><fr:tex display="inline"><![CDATA[M(A, x) = ?]]></fr:tex>.</html:li></html:ul></html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <html:p>
+    This is basically just a designated-value approach again, with <fr:tex display="inline"><![CDATA[Y]]></fr:tex> designated and <fr:tex display="inline"><![CDATA[?]]></fr:tex> undesignated, except that we need to remember that sentences need both a model and a point in that model to get any value at all.
+</html:p>
+                <html:p>    Before we see some examples, let me remind you: the logic this determines is exactly intuitionistic logic, the same logic determined by the proof system NJ.
+    That is, if an argument has a proof in NJ, then no model provides a counterexample to it; and if an argument has no proof in NJ, then there is a model that provides a counterexample to it.
+    So all the examples of counterexamples will be to arguments that have no proof in NJ, since those are the only arguments that have any counterexamples at all.</html:p>
+                <html:p>Do note that, at least for now, you have to trust me on this: that these models determine the same logic as the proof system NJ.
+That's certainly not obvious!
+And we haven't looked at all at why it might be so.
+But it is indeed so.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/008P/</fr:uri>
+                    <fr:display-uri>008P</fr:display-uri>
+                    <fr:route>/lectures/008P/</fr:route>
+                    <fr:title text="Examples of intuitionistic counterexamples">Examples of intuitionistic counterexamples</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>4</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/008Q/</fr:uri>
+                        <fr:display-uri>008Q</fr:display-uri>
+                        <fr:route>/lectures/008Q/</fr:route>
+                        <fr:taxon>Example</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>        You might recall that in intuitionistic logic, the argument <fr:tex display="inline"><![CDATA[\neg  \neg  p \;/\; p]]></fr:tex> is not valid.
+        So it must have a counterexample.
+        Here is one:</html:p>
+                        <html:p>
+                          <fr:resource hash="f1a7d0a3f6c04d5be23e616b23fbb414">
+                            <fr:resource-content>
+                              <html:img src="/lectures/f1a7d0a3f6c04d5be23e616b23fbb414.svg" />
+                            </fr:resource-content>
+                            <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                            <fr:resource-source type="latex" part="body"><![CDATA[\begin {tikzcd}
+         1: \{\} \arrow [r] & 2: \{p\}
+        \end {tikzcd}]]></fr:resource-source>
+                          </fr:resource>
+                        </html:p>
+                        <html:p>In this model, both points assign <fr:tex display="inline"><![CDATA[?]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>; this is because each of them can reach some point that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>.
+        (For both points, this reachable place is 2.)
+</html:p>
+                        <html:p>        Because of this, in turn, both points assign <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  \neg  p]]></fr:tex>; neither of them can reach anywhere in the model that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>.
+        So 1 assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[\neg  \neg  p]]></fr:tex> and <fr:tex display="inline"><![CDATA[?]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>; it is our counterexample, as it occurs in this model.
+</html:p>
+                        <html:p>        Here's how you might interpret this: in intuitionistic logic, we might see <fr:tex display="inline"><![CDATA[\neg  A]]></fr:tex> as saying something like "I know something that rules out my ever coming to know <fr:tex display="inline"><![CDATA[A]]></fr:tex>".
+        And we might know something that rules out our ever coming to know something that rules out our ever coming to know <fr:tex display="inline"><![CDATA[A]]></fr:tex>, without yet actually knowing <fr:tex display="inline"><![CDATA[A]]></fr:tex>.
+</html:p>
+                        <html:p>        Looking at this model, we've got a situation at the point 1 where we don't yet know <fr:tex display="inline"><![CDATA[p]]></fr:tex>, but there's no way in the model to ever come to know <fr:tex display="inline"><![CDATA[\neg  p]]></fr:tex>.
+        So we <html:em>do</html:em> know <fr:tex display="inline"><![CDATA[\neg \neg  p]]></fr:tex>.
+        That means that the argument <fr:tex display="inline"><![CDATA[\neg \neg  p \;/\; p]]></fr:tex> can have a known premise and an unknown conclusion, so intuitionistic logic judges it invalid.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>4</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/008R/</fr:uri>
+                        <fr:display-uri>008R</fr:display-uri>
+                        <fr:route>/lectures/008R/</fr:route>
+                        <fr:taxon>Example</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>        Here's another example: in intuitionistic logic, the argument from <fr:tex display="inline"><![CDATA[(p \land  q) \rightarrow  r]]></fr:tex> to <fr:tex display="inline"><![CDATA[(p \rightarrow  r) \lor  (q \rightarrow  r)]]></fr:tex> fails.
+        So it must have a counterexample.
+        Here is one: let the model <fr:tex display="inline"><![CDATA[M]]></fr:tex> be:
+</html:p>
+                        <html:p>
+                          <fr:resource hash="ffd46402b0f460c1308e31e9fd96ff36">
+                            <fr:resource-content>
+                              <html:img src="/lectures/ffd46402b0f460c1308e31e9fd96ff36.svg" />
+                            </fr:resource-content>
+                            <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                            <fr:resource-source type="latex" part="body"><![CDATA[        \begin {tikzcd}
+         & 4 : \{p, q, r\}\\
+        2: \{p\} \arrow [ur] & & 3: \{q\} \arrow [ul]\\
+        & 1: \{\} \arrow [ur] \arrow [ul] &\\
+        \end {tikzcd}]]></fr:resource-source>
+                          </fr:resource>
+                        </html:p>
+                        <html:p>        Now, think about the values of the sentences in the argument at the point 1 in this model.
+        We have <fr:tex display="inline"><![CDATA[M((p \land  q) \rightarrow  r, 1) = Y]]></fr:tex>, since the only point reachable from 1 that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[p \land  q]]></fr:tex> in this model is 4, and 4 also assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        But both <fr:tex display="inline"><![CDATA[p \rightarrow  r]]></fr:tex> and <fr:tex display="inline"><![CDATA[q \rightarrow  r]]></fr:tex> get value <fr:tex display="inline"><![CDATA[?]]></fr:tex> at 1, for <fr:tex display="inline"><![CDATA[p \rightarrow  r]]></fr:tex> because of the presence of <fr:tex display="inline"><![CDATA[2]]></fr:tex> in the model and for <fr:tex display="inline"><![CDATA[q \rightarrow  r]]></fr:tex> because of the presence of <fr:tex display="inline"><![CDATA[3]]></fr:tex> in the model.
+        So their disjunction also gets a <fr:tex display="inline"><![CDATA[?]]></fr:tex> at <fr:tex display="inline"><![CDATA[1]]></fr:tex>.
+        This gives the premise of this argument getting a <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at <fr:tex display="inline"><![CDATA[1]]></fr:tex> in this model, and the conclusion getting a <fr:tex display="inline"><![CDATA[?]]></fr:tex> there.
+        So we have our counterexample.
+</html:p>
+                        <html:p>        This model pictures a certain kind of dependency: if we have both <fr:tex display="inline"><![CDATA[p]]></fr:tex> and <fr:tex display="inline"><![CDATA[q]]></fr:tex>, then we must have <fr:tex display="inline"><![CDATA[r]]></fr:tex> as well, but neither <fr:tex display="inline"><![CDATA[p]]></fr:tex> nor <fr:tex display="inline"><![CDATA[q]]></fr:tex> on its own is enough for <fr:tex display="inline"><![CDATA[r]]></fr:tex>.
+        This is a common kind of dependency: everything from light switches to the law includes situations where two things need to come together to suffice for something else, where neither one would suffice on its own.
+        Our intuitionistic models can picture this very straightforwardly, as this example shows.
+</html:p>
+                        <html:p>        However, <html:em>all</html:em> of the logics K3, LP, FDE, and classical logic validate this argument.
+        So this seems to be one way in which intuitionistic implication is more flexible than the implications of all those logics.
+</html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008S/</fr:uri>
+                <fr:display-uri>008S</fr:display-uri>
+                <fr:route>/lectures/008S/</fr:route>
+                <fr:title text="Special kinds of models">Special kinds of models</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>    I'll close these notes by looking at two special kinds of models, models that obey certain extra restrictions.
+    Since models are potential counterexamples, every extra restriction we impose on models removes some potential counterexamples.
+    That means that we'll end up with <html:em>stronger</html:em> logics.
+    </html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/008T/</fr:uri>
+                    <fr:display-uri>008T</fr:display-uri>
+                    <fr:route>/lectures/008T/</fr:route>
+                    <fr:title text="Total models">Total models</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        All the talk of "stages of development of knowledge" in these models suggests that we might be able to see reachability as a kind of temporal flow within a model, with earlier points being able to reach later points.
+        And you might think that time is totally ordered: that for any distinct times <fr:tex display="inline"><![CDATA[x]]></fr:tex> and <fr:tex display="inline"><![CDATA[y]]></fr:tex>, either <fr:tex display="inline"><![CDATA[x]]></fr:tex> is before <fr:tex display="inline"><![CDATA[y]]></fr:tex> or <fr:tex display="inline"><![CDATA[y]]></fr:tex> is before <fr:tex display="inline"><![CDATA[x]]></fr:tex>.
+</html:p>
+                    <html:p>        Our models, though, don't have to reflect this.
+        For example, think of <fr:link href="/lectures/008U/" title="https://negation.rocks/lectures/008U/" uri="https://negation.rocks/lectures/008U/" display-uri="008U" type="local">this earlier example model</fr:link>.
+        Points 2 and 3 can each reach the other one, and point 4 can't reach or be reached by anything but itself.
+        There's no great way to understand reachability in this frame as a total temporal order.
+</html:p>
+                    <html:p>        We can restrict attention, though, to a special kind of model called <html:strong>total</html:strong> models, where this is required.
+        For a model to be total means that, whenever there are two distinct points <fr:tex display="inline"><![CDATA[x]]></fr:tex> and <fr:tex display="inline"><![CDATA[y]]></fr:tex> in it, then either <fr:tex display="inline"><![CDATA[x R y]]></fr:tex> or <fr:tex display="inline"><![CDATA[y R x]]></fr:tex>.
+        For example, <fr:link href="/lectures/008Q/" title="https://negation.rocks/lectures/008Q/" uri="https://negation.rocks/lectures/008Q/" display-uri="008Q" type="local">the counterexample I gave above to the argument <fr:tex display="inline"><![CDATA[\neg  \neg  p / p]]></fr:tex></fr:link> is a total model.
+</html:p>
+                    <html:p>        Suppose we restrict our attention, then, to total models.
+        What logic results?
+        That is, what if we only take a counterexample into account when it is a total model?
+        We won't <html:em>lose</html:em> any valid arguments from intuitionistic logic: if an argument has no counterexamples at all, then it certainly has no total counterexamples.
+        That's how we can be sure the resulting logic is stronger than intuitionistic logic.
+        But will we <html:em>gain</html:em> any valid arguments?
+        Another way to ask this: are there arguments that do have counterexamples, but that have no total counterexamples?
+</html:p>
+                    <html:p>        As it happens, there are.
+        Consider the argument <fr:tex display="inline"><![CDATA[\;/\; (q \rightarrow  r) \lor  (r \rightarrow  q)]]></fr:tex>.
+        Here is a counterexample to the argument:
+</html:p>
+                    <html:p>
+                      <fr:resource hash="681d459bbdb85f596e16b94ee9f87346">
+                        <fr:resource-content>
+                          <html:img src="/lectures/681d459bbdb85f596e16b94ee9f87346.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[        \begin {tikzcd}
+         2 : \{q\} && 3: \{r\}\\
+         & 1 : \{\} \arrow [ul] \arrow [ur] &\\
+        \end {tikzcd}]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>4</fr:month>
+                          <fr:day>29</fr:day>
+                        </fr:date>
+                        <fr:uri>https://negation.rocks/lectures/008V/</fr:uri>
+                        <fr:display-uri>008V</fr:display-uri>
+                        <fr:route>/lectures/008V/</fr:route>
+                        <fr:taxon>Exercise</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter><html:p>        Double-check that this model really is a counterexample.
+        Which point in the model provides the counterexample?
+</html:p>
+
+	
+	
+	
+	<fr:tree show-metadata="false" expanded="false" toc="false" numbered="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>29</fr:day></fr:date><fr:taxon>Solution</fr:taxon></fr:frontmatter><fr:mainmatter><html:p>It's 1.
+The sentence <fr:tex display="inline"><![CDATA[q \rightarrow  r]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at 3, so <fr:tex display="inline"><![CDATA[(q \rightarrow  r) \lor  (r \rightarrow  q)]]></fr:tex> also gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> there.
+And <fr:tex display="inline"><![CDATA[r \rightarrow  q]]></fr:tex> gets the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> at 2.
+But at 1, both <fr:tex display="inline"><![CDATA[q \rightarrow  r]]></fr:tex> and <fr:tex display="inline"><![CDATA[r \rightarrow  q]]></fr:tex> get the value <fr:tex display="inline"><![CDATA[?]]></fr:tex>; the first because 2 is reachable from 1, and the second because 3 is reachable from 1.
+So <fr:tex display="inline"><![CDATA[(q \rightarrow  r) \lor  (r \rightarrow  q)]]></fr:tex> also gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex> at 1.</html:p></fr:mainmatter></fr:tree></fr:mainmatter>
+                    </fr:tree>
+                    <html:p>        But although this argument has a counterexample, it does not have a counterexample that is <html:em>total</html:em>.
+        To see this, think what a counterexample to this argument must be like.
+        It must be a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> containing a point <fr:tex display="inline"><![CDATA[1]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(q \rightarrow  r, 1) = ?]]></fr:tex> and <fr:tex display="inline"><![CDATA[M(r \rightarrow  q, 1) = ?]]></fr:tex>.
+        Since <fr:tex display="inline"><![CDATA[M(q \rightarrow  r, 1) = ?]]></fr:tex>, there must be some <fr:tex display="inline"><![CDATA[2]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[1]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(q, 2) = Y]]></fr:tex> but <fr:tex display="inline"><![CDATA[M(r, 2) = ?]]></fr:tex>.
+        And since <fr:tex display="inline"><![CDATA[M(r \rightarrow  q, 1) = ?]]></fr:tex>, there must be some <fr:tex display="inline"><![CDATA[3]]></fr:tex> reachable from <fr:tex display="inline"><![CDATA[1]]></fr:tex> in <fr:tex display="inline"><![CDATA[M]]></fr:tex> where <fr:tex display="inline"><![CDATA[M(r, 3) = Y]]></fr:tex> but <fr:tex display="inline"><![CDATA[M(q, 3) = ?]]></fr:tex>.
+        Think, though, about <fr:tex display="inline"><![CDATA[2]]></fr:tex> and <fr:tex display="inline"><![CDATA[3]]></fr:tex>.
+        Neither of these can be reachable from the other.
+        (Make sure you see why!)
+        So <fr:tex display="inline"><![CDATA[M]]></fr:tex> cannot be total.
+        As such, there are no total counterexamples to this argument.
+</html:p>
+                    <html:p>        The logic of total models, then, is properly stronger than intuitionistic logic.
+        It's a logic typically known either as LC or as Gödel-Dummett logic.</html:p>
+                    <html:p>We met Dummett in an earlier reading on natural deduction.
+        Kurt Gödel was a 20th century Austrian logician.
+        He is responsible for two of the most important results in 20th century logic: the completeness theorem and the incompleteness theorem.
+        At the outset of WW2 he fled to the US, where he became close friends with Albert Einstein.
+        He later developed a fear of being poisoned, so significant that he eventually refused to eat and starved himself to death.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>4</fr:month>
+                      <fr:day>29</fr:day>
+                    </fr:date>
+                    <fr:uri>https://negation.rocks/lectures/008W/</fr:uri>
+                    <fr:display-uri>008W</fr:display-uri>
+                    <fr:route>/lectures/008W/</fr:route>
+                    <fr:title text="One-point models">One-point models</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>        We can go even farther, though.
+        Suppose we restrict our models yet again, down to models that contain just a single point.
+        In such models, the only point reachable from the point is just that point itself.
+</html:p>
+                    <html:p>        All these models are total, so this is really an additional restriction.
+        Again, then, we must end up at a stronger logic, but the question arises: is it properly stronger?
+</html:p>
+                    <html:p>        As you can check, the point in a one-point model is basically exactly  a Boolean valuation, even for implication and negation.
+        After all, a Boolean valuation assigns <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> unless it assigns <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {T}}]]></fr:tex> to <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {\mathbf {F}}]]></fr:tex> to <fr:tex display="inline"><![CDATA[B]]></fr:tex>, while our lone point in a model assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> unless there's somewhere reachable from it that assigns <fr:tex display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[?]]></fr:tex> to <fr:tex display="inline"><![CDATA[B]]></fr:tex>; if the valuation is itself the only thing around to be reached, these amount to the same thing.
+        The same thing happens with negation.
+        And for conjunction, disjunction, verum, and falsum, they already matched.
+</html:p>
+                    <html:p>        This means you can see Boolean valuations as just a special kind of intuitionistic model. 
+        Our intuitionistic models are more flexible, since they can contain multiple points, but they do not need to do this, and so Boolean valuations remain available even in this more general setting.
+</html:p>
+                    <html:p>        This means that if we restrict our attention to one-point models, we end up with a different logic than intuitionistic logic: we arrive at classical logic.
+        What about LC; is there a difference between classical logic and LC?
+        Indeed there is.
+</html:p>
+                    <html:p>        We've already seen a counterexample to <fr:tex display="inline"><![CDATA[\neg \neg  p \;/\; p]]></fr:tex>: the model</html:p>
+                    <html:p>
+                      <fr:resource hash="abfc6646de74d90259a69ce3178f899c">
+                        <fr:resource-content>
+                          <html:img src="/lectures/abfc6646de74d90259a69ce3178f899c.svg" />
+                        </fr:resource-content>
+                        <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {tikz-cd}]]></fr:resource-source>
+                        <fr:resource-source type="latex" part="body"><![CDATA[
+        \begin {tikzcd}
+         1 : \{\} \arrow [r] & 2: \{p\}
+        \end {tikzcd}]]></fr:resource-source>
+                      </fr:resource>
+                    </html:p>
+                    <html:p>        As you can see, the model is total.
+        So this argument is invalid in LC, just like it's invalid in intuitionistic logic.
+        But it is valid in classical logic.
+        So classical logic is not just stronger than LC; they are distinct logics.
+</html:p>
+                    <html:p>        There is a whole field of logic devoted to studying logics in between intuitionistic logic and classical logic in strength.
+        When such logics are reflexive, monotonic, transitive, and substitution invariant, they are known as <html:em>intermediate logics</html:em>.
+        The study of intermediate logics, like the study of many other kinds of logics, proceeds by using both proof systems and model systems.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>29</fr:day>
+                </fr:date>
+                <fr:uri>https://negation.rocks/lectures/008X/</fr:uri>
+                <fr:display-uri>008X</fr:display-uri>
+                <fr:route>/lectures/008X/</fr:route>
+                <fr:title text="Summing up">Summing up</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>This week, we saw one way to provide models for intuitionistic logic.
+Each of these models has two components: a frame, and a valuation on that frame.
+You can think of a frame as a bunch of points with some collection of arrows between them; all that really matters is which of these points are reachable from which.
+A valuation on a frame assigns some set of atomic formulas to each point in the frame, subject to the condition that when <fr:tex display="inline"><![CDATA[x R y]]></fr:tex>, the set assigned to <fr:tex display="inline"><![CDATA[x]]></fr:tex> must be a subset of the set assigned to <fr:tex display="inline"><![CDATA[y]]></fr:tex>.
+Given a model, we can calculate a value for every sentence at every point in the model.
+</html:p>
+                <html:p> A counterexample to an argument is a model containing a point at which all the premises get the value <fr:tex display="inline"><![CDATA[Y]]></fr:tex> but the conclusion gets the value <fr:tex display="inline"><![CDATA[?]]></fr:tex>.
+Using this notion of counterexample with these models, we arrive at intuitionistic logic.
+We have also looked at some stronger logics that we can arrive at by considering certain special kinds of these models.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
