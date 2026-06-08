@@ -19,6 +19,19 @@
     - Slides
 
 - presLocations:
+  - Polysemy, Ad Hoc Concepts, and Vagueness, Melbourne, April 2026
+  - Workshop on Nonclassical Logics and Probability, Melbourne, August 2025
+  presTitle: "Vagueness and probabilistic consequence"
+  presAuthors:
+    Other:
+      - paulEgre
+      - me
+  presExtras:
+    - - Slides
+      - ./docs/vpc-slides.pdf
+      - Slides
+
+- presLocations:
   - AAP 2025, University of Queensland, July 2025
   presTitle: "Vagueness and nonclassical probability"
   presAuthors:
