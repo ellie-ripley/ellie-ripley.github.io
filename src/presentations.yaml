@@ -1,4 +1,14 @@
 - presLocations:
+  - Transgressing Boundaries, Louvain-la-Neuve, June 2026
+  presTitle: "Genderqueer logic and mayonnaise"
+  presAuthors:
+    Solo: []
+  presExtras:
+  - - Slides
+    - ./docs/glm-slides.pdf
+    - Slides
+    
+- presLocations:
   - Reasoning in Language Models and in Logic, Melbourne, December 2025
   presTitle: "What does Frege's argument show (about cognition)?"
   presAuthors:
