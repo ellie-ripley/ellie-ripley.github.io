@@ -37,38 +37,38 @@
     <html:p>It can help to look at a proof of this argument in NK to see what's up:
 </html:p>
     <html:p>
-      <fr:resource hash="b7f1dc57a63a7e119bc9b145e444dcbb">
+      <fr:resource hash="f07ffaf6711db5d43c185498e694f466">
         <fr:resource-content>
-          <html:img src="/lectures/b7f1dc57a63a7e119bc9b145e444dcbb.svg" />
+          <html:img src="/lectures/f07ffaf6711db5d43c185498e694f466.svg" />
         </fr:resource-content>
         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
   \newcommand {\DP }{\DisplayProof }
   ]]></fr:resource-source>
         <fr:resource-source type="latex" part="body"><![CDATA[              \AxiomC{\ensuremath{\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  LEM:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  LEM\quad }}
               \UnaryInfC{\ensuremath{p \lor  \neg  p\vphantom{|}}}
               \AxiomC{\ensuremath{\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  LEM:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  LEM\quad }}
               \UnaryInfC{\ensuremath{q \lor  \neg  q\vphantom{|}}}
               \AxiomC{\ensuremath{\neg  (p \land  q)\vphantom{|}}}
               \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
               \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
               \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \neg  E\quad }}
               \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \bot  E\quad }}
               \UnaryInfC{\ensuremath{\neg  p \lor  \neg  q\vphantom{|}}}
               \AxiomC{\ensuremath{[\neg  q]^1\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \lor  I_r\quad }}
               \UnaryInfC{\ensuremath{\neg  p \lor  \neg  q\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \lor  E^1\quad }}
               \TrinaryInfC{\ensuremath{\neg  p \lor  \neg  q\vphantom{|}}}
               \AxiomC{\ensuremath{[\neg  p]^2\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \lor  I_l\quad }}
               \UnaryInfC{\ensuremath{\neg  p \lor  \neg  q\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \lor  E^2:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \lor  E^2\quad }}
               \TrinaryInfC{\ensuremath{\neg  p \lor  \neg  q\vphantom{|}}}
               \DP]]></fr:resource-source>
       </fr:resource>
@@ -79,9 +79,9 @@
         On its own, that gives no guarantee that there isn't some <html:em>other</html:em> proof in NJ of this argument; but in fact there isn't.
         And I think, by meditating on this piece of the above proof, you can start to see why that's so:</html:p>
     <html:p>
-      <fr:resource hash="0c87e5fbbf8a7563429858eede938ea1">
+      <fr:resource hash="3892adf278d6133b5e44de46a9ed8534">
         <fr:resource-content>
-          <html:img src="/lectures/0c87e5fbbf8a7563429858eede938ea1.svg" />
+          <html:img src="/lectures/3892adf278d6133b5e44de46a9ed8534.svg" />
         </fr:resource-content>
         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -90,9 +90,9 @@
         <fr:resource-source type="latex" part="body"><![CDATA[  \AxiomC{\ensuremath{\neg  (p \land  q)\vphantom{|}}}
                         \AxiomC{\ensuremath{p\vphantom{|}}}
                         \AxiomC{\ensuremath{q\vphantom{|}}}
-                        \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                        \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
                         \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
-                        \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+                        \LeftLabel{\ensuremath{\scriptsize  \neg  E\quad }}
                     \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
                     \DP]]></fr:resource-source>
       </fr:resource>
@@ -104,9 +104,9 @@
     <html:p>        If we wanted to discharge both the <fr:tex display="inline"><![CDATA[p]]></fr:tex> and the <fr:tex display="inline"><![CDATA[q]]></fr:tex>, we could even do that, arriving here for example:
 </html:p>
     <html:p>
-      <fr:resource hash="58cabe787fb6471265117311912c40a7">
+      <fr:resource hash="81c2a4b8eedd46beb632514bdd99860b">
         <fr:resource-content>
-          <html:img src="/lectures/58cabe787fb6471265117311912c40a7.svg" />
+          <html:img src="/lectures/81c2a4b8eedd46beb632514bdd99860b.svg" />
         </fr:resource-content>
         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -116,13 +116,13 @@
             \AxiomC{\ensuremath{\neg  (p \land  q)\vphantom{|}}}
                         \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
                         \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-                        \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                        \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
                         \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
-                        \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+                        \LeftLabel{\ensuremath{\scriptsize  \neg  E\quad }}
                     \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \neg  I^1:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \neg  I^1\quad }}
                 \UnaryInfC{\ensuremath{\neg  q\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2\quad }}
             \UnaryInfC{\ensuremath{p \rightarrow  \neg  q\vphantom{|}}}
             \DP
             ]]></fr:resource-source>
@@ -325,9 +325,9 @@
         For any <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, there is a proof of <fr:tex display="inline"><![CDATA[A \rightarrow  B, A \;/\; B]]></fr:tex>, consisting of just assumptions of <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> and <fr:tex display="inline"><![CDATA[A]]></fr:tex>, followed by a single step of <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>.
         For example, the following proof is a proof of <fr:tex display="inline"><![CDATA[p \rightarrow  q, p \;/\; q]]></fr:tex>:</html:p>
                 <html:p>
-                  <fr:resource hash="5d3b72cfa90aa250822f09313c329df0">
+                  <fr:resource hash="4dd078487b2c65a0d215cbb042b08be0">
                     <fr:resource-content>
-                      <html:img src="/lectures/5d3b72cfa90aa250822f09313c329df0.svg" />
+                      <html:img src="/lectures/4dd078487b2c65a0d215cbb042b08be0.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -336,7 +336,7 @@
                     <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{p \rightarrow  q\vphantom{|}}}
             \AxiomC{\ensuremath{p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
             \BinaryInfC{\ensuremath{q\vphantom{|}}}
             \DP]]></fr:resource-source>
                   </fr:resource>
@@ -444,9 +444,9 @@
         Since we've discharged any open assumptions of <fr:tex display="inline"><![CDATA[A]]></fr:tex>, the resulting proof will have all its open assumptions contained in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>; thus, it is a proof of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A \rightarrow  B]]></fr:tex>.
         For example, consider the following proof of <fr:tex display="inline"><![CDATA[p, q \lor  r \;/\; (p \land  q) \lor  r]]></fr:tex>:</html:p>
                 <html:p>
-                  <fr:resource hash="f3c568508e8c4127a388954a2f5c8f54">
+                  <fr:resource hash="996cb368c232a8fc5ee4f4f3a1cc8e71">
                     <fr:resource-content>
-                      <html:img src="/lectures/f3c568508e8c4127a388954a2f5c8f54.svg" />
+                      <html:img src="/lectures/996cb368c232a8fc5ee4f4f3a1cc8e71.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -457,14 +457,14 @@
             \AxiomC{\ensuremath{q \lor  r\vphantom{|}}}
             \AxiomC{\ensuremath{p\vphantom{|}}}
             \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l\quad }}
             \UnaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
             \AxiomC{\ensuremath{[r]^1\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r\quad }}
             \UnaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1\quad }}
             \TrinaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
             \DP]]></fr:resource-source>
                   </fr:resource>
@@ -472,9 +472,9 @@
                 <html:p>        We can extend this proof with one step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>\ to reach the following proof of <fr:tex display="inline"><![CDATA[p \;/\; (q \lor  r) \rightarrow  ((p \land  q) \lor  r)]]></fr:tex>:
 </html:p>
                 <html:p>
-                  <fr:resource hash="edde8b357901982f9c761842c4ade1c4">
+                  <fr:resource hash="1c9d4d37c1c1b802a4204ce96f021ef9">
                     <fr:resource-content>
-                      <html:img src="/lectures/edde8b357901982f9c761842c4ade1c4.svg" />
+                      <html:img src="/lectures/1c9d4d37c1c1b802a4204ce96f021ef9.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -483,16 +483,16 @@
                     <fr:resource-source type="latex" part="body"><![CDATA[            \AxiomC{\ensuremath{[q \lor  r]^2\vphantom{|}}}
             \AxiomC{\ensuremath{p\vphantom{|}}}
             \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l\quad }}
             \UnaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
             \AxiomC{\ensuremath{[r]^1\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r\quad }}
             \UnaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1\quad }}
             \TrinaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2\quad }}
             \UnaryInfC{\ensuremath{(q \lor  r) \rightarrow  ((p \land  q) \lor  r)\vphantom{|}}}
             \DP]]></fr:resource-source>
                   </fr:resource>
@@ -539,38 +539,38 @@
                 <html:p>It can help to look at a proof of this argument in NK to see what's up:
 </html:p>
                 <html:p>
-                  <fr:resource hash="b7f1dc57a63a7e119bc9b145e444dcbb">
+                  <fr:resource hash="f07ffaf6711db5d43c185498e694f466">
                     <fr:resource-content>
-                      <html:img src="/lectures/b7f1dc57a63a7e119bc9b145e444dcbb.svg" />
+                      <html:img src="/lectures/f07ffaf6711db5d43c185498e694f466.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
   \newcommand {\DP }{\DisplayProof }
   ]]></fr:resource-source>
                     <fr:resource-source type="latex" part="body"><![CDATA[              \AxiomC{\ensuremath{\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  LEM:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  LEM\quad }}
               \UnaryInfC{\ensuremath{p \lor  \neg  p\vphantom{|}}}
               \AxiomC{\ensuremath{\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  LEM:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  LEM\quad }}
               \UnaryInfC{\ensuremath{q \lor  \neg  q\vphantom{|}}}
               \AxiomC{\ensuremath{\neg  (p \land  q)\vphantom{|}}}
               \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
               \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
               \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \neg  E\quad }}
               \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \bot  E\quad }}
               \UnaryInfC{\ensuremath{\neg  p \lor  \neg  q\vphantom{|}}}
               \AxiomC{\ensuremath{[\neg  q]^1\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \lor  I_r\quad }}
               \UnaryInfC{\ensuremath{\neg  p \lor  \neg  q\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \lor  E^1\quad }}
               \TrinaryInfC{\ensuremath{\neg  p \lor  \neg  q\vphantom{|}}}
               \AxiomC{\ensuremath{[\neg  p]^2\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \lor  I_l\quad }}
               \UnaryInfC{\ensuremath{\neg  p \lor  \neg  q\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \lor  E^2:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \lor  E^2\quad }}
               \TrinaryInfC{\ensuremath{\neg  p \lor  \neg  q\vphantom{|}}}
               \DP]]></fr:resource-source>
                   </fr:resource>
@@ -581,9 +581,9 @@
         On its own, that gives no guarantee that there isn't some <html:em>other</html:em> proof in NJ of this argument; but in fact there isn't.
         And I think, by meditating on this piece of the above proof, you can start to see why that's so:</html:p>
                 <html:p>
-                  <fr:resource hash="0c87e5fbbf8a7563429858eede938ea1">
+                  <fr:resource hash="3892adf278d6133b5e44de46a9ed8534">
                     <fr:resource-content>
-                      <html:img src="/lectures/0c87e5fbbf8a7563429858eede938ea1.svg" />
+                      <html:img src="/lectures/3892adf278d6133b5e44de46a9ed8534.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -592,9 +592,9 @@
                     <fr:resource-source type="latex" part="body"><![CDATA[  \AxiomC{\ensuremath{\neg  (p \land  q)\vphantom{|}}}
                         \AxiomC{\ensuremath{p\vphantom{|}}}
                         \AxiomC{\ensuremath{q\vphantom{|}}}
-                        \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                        \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
                         \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
-                        \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+                        \LeftLabel{\ensuremath{\scriptsize  \neg  E\quad }}
                     \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
                     \DP]]></fr:resource-source>
                   </fr:resource>
@@ -606,9 +606,9 @@
                 <html:p>        If we wanted to discharge both the <fr:tex display="inline"><![CDATA[p]]></fr:tex> and the <fr:tex display="inline"><![CDATA[q]]></fr:tex>, we could even do that, arriving here for example:
 </html:p>
                 <html:p>
-                  <fr:resource hash="58cabe787fb6471265117311912c40a7">
+                  <fr:resource hash="81c2a4b8eedd46beb632514bdd99860b">
                     <fr:resource-content>
-                      <html:img src="/lectures/58cabe787fb6471265117311912c40a7.svg" />
+                      <html:img src="/lectures/81c2a4b8eedd46beb632514bdd99860b.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -618,13 +618,13 @@
             \AxiomC{\ensuremath{\neg  (p \land  q)\vphantom{|}}}
                         \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
                         \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-                        \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                        \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
                         \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
-                        \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+                        \LeftLabel{\ensuremath{\scriptsize  \neg  E\quad }}
                     \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \neg  I^1:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \neg  I^1\quad }}
                 \UnaryInfC{\ensuremath{\neg  q\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2\quad }}
             \UnaryInfC{\ensuremath{p \rightarrow  \neg  q\vphantom{|}}}
             \DP
             ]]></fr:resource-source>

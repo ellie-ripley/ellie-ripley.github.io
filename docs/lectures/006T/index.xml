@@ -81,9 +81,9 @@ However, some of the coolest work going in proof theory at the moment works diff
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:p>
-                  <fr:resource hash="9b9a5c601f91d5b1d20396d149653da3">
+                  <fr:resource hash="fe146e117a6e314963b4a6bb94c04720">
                     <fr:resource-content>
-                      <html:img src="/lectures/9b9a5c601f91d5b1d20396d149653da3.svg" />
+                      <html:img src="/lectures/fe146e117a6e314963b4a6bb94c04720.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -94,13 +94,13 @@ However, some of the coolest work going in proof theory at the moment works diff
             \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
             \noLine
             \UnaryInfC{\ensuremath{B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n\quad }}
             \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
             \DP
             \hskip 1cm
             \AxiomC{\ensuremath{A \rightarrow  B\vphantom{|}}}
             \AxiomC{\ensuremath{A\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
             \BinaryInfC{\ensuremath{B\vphantom{|}}}
             \DP    
             ]]></fr:resource-source>
@@ -114,9 +114,9 @@ However, some of the coolest work going in proof theory at the moment works diff
         This rule says that whenever you have a proof of an implication, and you also have a proof of its antecedent, then you can put those proofs together with a step of <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>, giving you a proof of the consequent.
         For example, here is a proof that uses <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>:</html:p>
             <html:p>
-              <fr:resource hash="bc8ecbb959a2c8dfde252ef9efe411ec">
+              <fr:resource hash="7f3e1caebb755e01bbf72da42273987c">
                 <fr:resource-content>
-                  <html:img src="/lectures/bc8ecbb959a2c8dfde252ef9efe411ec.svg" />
+                  <html:img src="/lectures/7f3e1caebb755e01bbf72da42273987c.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -124,14 +124,14 @@ However, some of the coolest work going in proof theory at the moment works diff
   ]]></fr:resource-source>
                 <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{(p \rightarrow  (q \land  t)) \land  p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
             \UnaryInfC{\ensuremath{p \rightarrow  (q \land  t)\vphantom{|}}}    
             \AxiomC{\ensuremath{(p \rightarrow  (q \land  t)) \land  p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
             \UnaryInfC{\ensuremath{p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
             \BinaryInfC{\ensuremath{q \land  t\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
             \UnaryInfC{\ensuremath{t\vphantom{|}}}
             \DP
             ]]></fr:resource-source>
@@ -191,9 +191,9 @@ However, some of the coolest work going in proof theory at the moment works diff
             <html:p>        That, anyway, is the kind of view of implication that lies behind these rules: thinking of implication as recording in a single sentence the same kind of connection between distinct sentences that we build up in the course of a proof.
         So, for example, we can have a proof that uses <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> like so:</html:p>
             <html:p>
-              <fr:resource hash="46f661ac8c0554a3484b9a328fbb026a">
+              <fr:resource hash="033043e028f0c90c8d4785933cca56fe">
                 <fr:resource-content>
-                  <html:img src="/lectures/46f661ac8c0554a3484b9a328fbb026a.svg" />
+                  <html:img src="/lectures/033043e028f0c90c8d4785933cca56fe.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -201,9 +201,9 @@ However, some of the coolest work going in proof theory at the moment works diff
   ]]></fr:resource-source>
                 <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{[p \land  q]^1\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
             \UnaryInfC{\ensuremath{p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1\quad }}
             \UnaryInfC{\ensuremath{(p \land  q) \rightarrow  p\vphantom{|}}}
             \DP
             ]]></fr:resource-source>
@@ -247,9 +247,9 @@ However, some of the coolest work going in proof theory at the moment works diff
           </fr:frontmatter>
           <fr:mainmatter>
             <html:p>
-              <fr:resource hash="8f738b694af34985853fa0fc106c522a">
+              <fr:resource hash="3bfed3b80fc3cb250ccecf920a36cf23">
                 <fr:resource-content>
-                  <html:img src="/lectures/8f738b694af34985853fa0fc106c522a.svg" />
+                  <html:img src="/lectures/3bfed3b80fc3cb250ccecf920a36cf23.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -258,17 +258,17 @@ However, some of the coolest work going in proof theory at the moment works diff
                 <fr:resource-source type="latex" part="body"><![CDATA[
                     \AxiomC{\ensuremath{[p \rightarrow  ((p \land  r) \rightarrow  q)]^1\vphantom{|}}}
                     \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}    
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}    
                 \BinaryInfC{\ensuremath{(p \land  r) \rightarrow  q\vphantom{|}}}
                     \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
                     \AxiomC{\ensuremath{r\vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
                 \BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
             \BinaryInfC{\ensuremath{q\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2\quad }}
             \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1\quad }}
             \UnaryInfC{\ensuremath{(p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))\vphantom{|}}}
             \DP
             ]]></fr:resource-source>

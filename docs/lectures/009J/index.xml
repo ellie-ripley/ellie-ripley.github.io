@@ -22,9 +22,9 @@
 But if we start to consider other possible connectives, we can see the difference.</html:p>
     <html:p>Imagine a nullary connective <fr:tex display="inline"><![CDATA[!]]></fr:tex>, for example, that has no introduction rules and the following elimination rule:</html:p>
     <html:p>
-      <fr:resource hash="7a2e1250065feb17e4662c40dc973820">
+      <fr:resource hash="5ebdcc876731bf028c3d9a77198b53e7">
         <fr:resource-content>
-          <html:img src="/lectures/7a2e1250065feb17e4662c40dc973820.svg" />
+          <html:img src="/lectures/5ebdcc876731bf028c3d9a77198b53e7.svg" />
         </fr:resource-content>
         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -32,7 +32,7 @@ But if we start to consider other possible connectives, we can see the differenc
   ]]></fr:resource-source>
         <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{!\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  !E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  !E\quad }}
 \UnaryInfC{\ensuremath{p\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -85,9 +85,9 @@ The fact that verum has no elimination rule, then, is indeed perfectly balanced 
 The nothing that we get from verum via its (nonexistent) elimination rule is indeed exactly what it takes to introduce it.</html:p>
             <html:p>And for falsum, we can simply note the proof:</html:p>
             <html:p>
-              <fr:resource hash="84f88bae7d53ae0bb50d12d66ab16830">
+              <fr:resource hash="34ac8827af93c388d8b8d56289fa87ce">
                 <fr:resource-content>
-                  <html:img src="/lectures/84f88bae7d53ae0bb50d12d66ab16830.svg" />
+                  <html:img src="/lectures/34ac8827af93c388d8b8d56289fa87ce.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -95,7 +95,7 @@ The nothing that we get from verum via its (nonexistent) elimination rule is ind
   ]]></fr:resource-source>
                 <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{\bot \vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \bot  E\quad }}
 \UnaryInfC{\ensuremath{\bot \vphantom{|}}}
 \DP]]></fr:resource-source>
               </fr:resource>
@@ -124,9 +124,9 @@ The nothing that we get from verum via its (nonexistent) elimination rule is ind
 But if we start to consider other possible connectives, we can see the difference.</html:p>
                 <html:p>Imagine a nullary connective <fr:tex display="inline"><![CDATA[!]]></fr:tex>, for example, that has no introduction rules and the following elimination rule:</html:p>
                 <html:p>
-                  <fr:resource hash="7a2e1250065feb17e4662c40dc973820">
+                  <fr:resource hash="5ebdcc876731bf028c3d9a77198b53e7">
                     <fr:resource-content>
-                      <html:img src="/lectures/7a2e1250065feb17e4662c40dc973820.svg" />
+                      <html:img src="/lectures/5ebdcc876731bf028c3d9a77198b53e7.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -134,7 +134,7 @@ But if we start to consider other possible connectives, we can see the differenc
   ]]></fr:resource-source>
                     <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{!\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  !E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  !E\quad }}
 \UnaryInfC{\ensuremath{p\vphantom{|}}}
 \DP
 ]]></fr:resource-source>

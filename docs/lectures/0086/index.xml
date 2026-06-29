@@ -147,9 +147,9 @@
         Since we've discharged any open assumptions of <fr:tex display="inline"><![CDATA[A]]></fr:tex>, the resulting proof will have all its open assumptions contained in <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>; thus, it is a proof of <fr:tex display="inline"><![CDATA[\Gamma  \;/\; A \rightarrow  B]]></fr:tex>.
         For example, consider the following proof of <fr:tex display="inline"><![CDATA[p, q \lor  r \;/\; (p \land  q) \lor  r]]></fr:tex>:</html:p>
             <html:p>
-              <fr:resource hash="f3c568508e8c4127a388954a2f5c8f54">
+              <fr:resource hash="996cb368c232a8fc5ee4f4f3a1cc8e71">
                 <fr:resource-content>
-                  <html:img src="/lectures/f3c568508e8c4127a388954a2f5c8f54.svg" />
+                  <html:img src="/lectures/996cb368c232a8fc5ee4f4f3a1cc8e71.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -160,14 +160,14 @@
             \AxiomC{\ensuremath{q \lor  r\vphantom{|}}}
             \AxiomC{\ensuremath{p\vphantom{|}}}
             \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l\quad }}
             \UnaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
             \AxiomC{\ensuremath{[r]^1\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r\quad }}
             \UnaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1\quad }}
             \TrinaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
             \DP]]></fr:resource-source>
               </fr:resource>
@@ -175,9 +175,9 @@
             <html:p>        We can extend this proof with one step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>\ to reach the following proof of <fr:tex display="inline"><![CDATA[p \;/\; (q \lor  r) \rightarrow  ((p \land  q) \lor  r)]]></fr:tex>:
 </html:p>
             <html:p>
-              <fr:resource hash="edde8b357901982f9c761842c4ade1c4">
+              <fr:resource hash="1c9d4d37c1c1b802a4204ce96f021ef9">
                 <fr:resource-content>
-                  <html:img src="/lectures/edde8b357901982f9c761842c4ade1c4.svg" />
+                  <html:img src="/lectures/1c9d4d37c1c1b802a4204ce96f021ef9.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -186,16 +186,16 @@
                 <fr:resource-source type="latex" part="body"><![CDATA[            \AxiomC{\ensuremath{[q \lor  r]^2\vphantom{|}}}
             \AxiomC{\ensuremath{p\vphantom{|}}}
             \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{p \land  q\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l\quad }}
             \UnaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
             \AxiomC{\ensuremath{[r]^1\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r\quad }}
             \UnaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1\quad }}
             \TrinaryInfC{\ensuremath{(p \land  q) \lor  r\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2\quad }}
             \UnaryInfC{\ensuremath{(q \lor  r) \rightarrow  ((p \land  q) \lor  r)\vphantom{|}}}
             \DP]]></fr:resource-source>
               </fr:resource>

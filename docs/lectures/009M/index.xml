@@ -109,15 +109,15 @@ But there is another rule we have that can generate a proof from nowhere: the ru
           </fr:frontmatter>
           <fr:mainmatter>
             <html:p>
-              <fr:resource hash="cdb6057c70d96542095ce27641d7c422">
+              <fr:resource hash="d39e6208c0beacb8f227b913c519b9e0">
                 <fr:resource-content>
-                  <html:img src="/lectures/cdb6057c70d96542095ce27641d7c422.svg" />
+                  <html:img src="/lectures/d39e6208c0beacb8f227b913c519b9e0.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
   \newcommand {\DP }{\DisplayProof }
   ]]></fr:resource-source>
-                <fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\vphantom{\top }\vphantom{|}}}\LeftLabel{\ensuremath{\scriptsize  \top  I:\quad }}\UnaryInfC{\ensuremath{\top \vphantom{|}}}\DP]]></fr:resource-source>
+                <fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\vphantom{\top }\vphantom{|}}}\LeftLabel{\ensuremath{\scriptsize  \top  I\quad }}\UnaryInfC{\ensuremath{\top \vphantom{|}}}\DP]]></fr:resource-source>
               </fr:resource>
             </html:p>
           </fr:mainmatter>
@@ -154,9 +154,9 @@ Our other rules all take smaller proofs and build them up into larger ones.</htm
         <html:p>Let's look, for example, at the rule <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>.
 When <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>\ is the last step of a proof, the proof as a whole looks something like this:</html:p>
         <html:p>
-          <fr:resource hash="7281f5035a9a4030303288c3626ff251">
+          <fr:resource hash="46a81d30c31be0288dbf43f8e84debf6">
             <fr:resource-content>
-              <html:img src="/lectures/7281f5035a9a4030303288c3626ff251.svg" />
+              <html:img src="/lectures/46a81d30c31be0288dbf43f8e84debf6.svg" />
             </fr:resource-content>
             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -166,7 +166,7 @@ When <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>\ is the last step 
 \AxiomC{\ensuremath{\vdots \vphantom{|}}}
 \noLine
 \UnaryInfC{\ensuremath{A \land  B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
 \UnaryInfC{\ensuremath{A\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -208,9 +208,9 @@ And that's what we need here.</html:p>
         <html:p>Now, let's look at a slightly more complex rule: conjunction introduction.
 When <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> is the last step of a proof, the proof as a whole looks like this:</html:p>
         <html:p>
-          <fr:resource hash="e83c5222920f93ddb46f307f37d85e36">
+          <fr:resource hash="3c7cf258c9982253432681cd4c161fbf">
             <fr:resource-content>
-              <html:img src="/lectures/e83c5222920f93ddb46f307f37d85e36.svg" />
+              <html:img src="/lectures/3c7cf258c9982253432681cd4c161fbf.svg" />
             </fr:resource-content>
             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -223,7 +223,7 @@ When <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> is the last step of 
 \AxiomC{\ensuremath{\vdots2\vphantom{|}}}
 \noLine
 \UnaryInfC{\ensuremath{B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
 \BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -266,9 +266,9 @@ With this rule as well, then, we can't build up an unsafe proof unless we alread
         <html:p>Let's look now at a discharging rule: <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>.
 When this is the last step of a proof, the proof as a whole looks like this:</html:p>
         <html:p>
-          <fr:resource hash="85ea9f7a723ab5da6ed3274871d6030e">
+          <fr:resource hash="9595a745d765185e29f9e5969033817f">
             <fr:resource-content>
-              <html:img src="/lectures/85ea9f7a723ab5da6ed3274871d6030e.svg" />
+              <html:img src="/lectures/9595a745d765185e29f9e5969033817f.svg" />
             </fr:resource-content>
             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -280,7 +280,7 @@ When this is the last step of a proof, the proof as a whole looks like this:</ht
   \UnaryInfC{\ensuremath{\vdots \vphantom{|}}}
   \noLine
   \UnaryInfC{\ensuremath{B\vphantom{|}}}
-  \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^{n}:\quad }}
+  \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^{n}\quad }}
   \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
   \DP
 ]]></fr:resource-source>
@@ -576,15 +576,15 @@ But there is another rule we have that can generate a proof from nowhere: the ru
                       </fr:frontmatter>
                       <fr:mainmatter>
                         <html:p>
-                          <fr:resource hash="cdb6057c70d96542095ce27641d7c422">
+                          <fr:resource hash="d39e6208c0beacb8f227b913c519b9e0">
                             <fr:resource-content>
-                              <html:img src="/lectures/cdb6057c70d96542095ce27641d7c422.svg" />
+                              <html:img src="/lectures/d39e6208c0beacb8f227b913c519b9e0.svg" />
                             </fr:resource-content>
                             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
   \newcommand {\DP }{\DisplayProof }
   ]]></fr:resource-source>
-                            <fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\vphantom{\top }\vphantom{|}}}\LeftLabel{\ensuremath{\scriptsize  \top  I:\quad }}\UnaryInfC{\ensuremath{\top \vphantom{|}}}\DP]]></fr:resource-source>
+                            <fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\vphantom{\top }\vphantom{|}}}\LeftLabel{\ensuremath{\scriptsize  \top  I\quad }}\UnaryInfC{\ensuremath{\top \vphantom{|}}}\DP]]></fr:resource-source>
                           </fr:resource>
                         </html:p>
                       </fr:mainmatter>
@@ -621,9 +621,9 @@ Our other rules all take smaller proofs and build them up into larger ones.</htm
                     <html:p>Let's look, for example, at the rule <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>.
 When <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>\ is the last step of a proof, the proof as a whole looks something like this:</html:p>
                     <html:p>
-                      <fr:resource hash="7281f5035a9a4030303288c3626ff251">
+                      <fr:resource hash="46a81d30c31be0288dbf43f8e84debf6">
                         <fr:resource-content>
-                          <html:img src="/lectures/7281f5035a9a4030303288c3626ff251.svg" />
+                          <html:img src="/lectures/46a81d30c31be0288dbf43f8e84debf6.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -633,7 +633,7 @@ When <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>\ is the last step 
 \AxiomC{\ensuremath{\vdots \vphantom{|}}}
 \noLine
 \UnaryInfC{\ensuremath{A \land  B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
 \UnaryInfC{\ensuremath{A\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -675,9 +675,9 @@ And that's what we need here.</html:p>
                     <html:p>Now, let's look at a slightly more complex rule: conjunction introduction.
 When <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> is the last step of a proof, the proof as a whole looks like this:</html:p>
                     <html:p>
-                      <fr:resource hash="e83c5222920f93ddb46f307f37d85e36">
+                      <fr:resource hash="3c7cf258c9982253432681cd4c161fbf">
                         <fr:resource-content>
-                          <html:img src="/lectures/e83c5222920f93ddb46f307f37d85e36.svg" />
+                          <html:img src="/lectures/3c7cf258c9982253432681cd4c161fbf.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -690,7 +690,7 @@ When <fr:tex display="inline"><![CDATA[\land  I]]></fr:tex> is the last step of 
 \AxiomC{\ensuremath{\vdots2\vphantom{|}}}
 \noLine
 \UnaryInfC{\ensuremath{B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
 \BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -733,9 +733,9 @@ With this rule as well, then, we can't build up an unsafe proof unless we alread
                     <html:p>Let's look now at a discharging rule: <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>.
 When this is the last step of a proof, the proof as a whole looks like this:</html:p>
                     <html:p>
-                      <fr:resource hash="85ea9f7a723ab5da6ed3274871d6030e">
+                      <fr:resource hash="9595a745d765185e29f9e5969033817f">
                         <fr:resource-content>
-                          <html:img src="/lectures/85ea9f7a723ab5da6ed3274871d6030e.svg" />
+                          <html:img src="/lectures/9595a745d765185e29f9e5969033817f.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -747,7 +747,7 @@ When this is the last step of a proof, the proof as a whole looks like this:</ht
   \UnaryInfC{\ensuremath{\vdots \vphantom{|}}}
   \noLine
   \UnaryInfC{\ensuremath{B\vphantom{|}}}
-  \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^{n}:\quad }}
+  \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^{n}\quad }}
   \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
   \DP
 ]]></fr:resource-source>

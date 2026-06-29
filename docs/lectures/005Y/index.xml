@@ -1048,9 +1048,9 @@ But we can make use of the other proof we've assumed we have: the one of <fr:tex
             <html:p>        This example uses only rules from NM, so it works in any of our three systems.
         Here are two simple proofs in NM:</html:p>
             <html:p>
-              <fr:resource hash="5d3b72cfa90aa250822f09313c329df0">
+              <fr:resource hash="4dd078487b2c65a0d215cbb042b08be0">
                 <fr:resource-content>
-                  <html:img src="/lectures/5d3b72cfa90aa250822f09313c329df0.svg" />
+                  <html:img src="/lectures/4dd078487b2c65a0d215cbb042b08be0.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -1059,15 +1059,15 @@ But we can make use of the other proof we've assumed we have: the one of <fr:tex
                 <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{p \rightarrow  q\vphantom{|}}}
             \AxiomC{\ensuremath{p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
             \BinaryInfC{\ensuremath{q\vphantom{|}}}
             \DP]]></fr:resource-source>
               </fr:resource>
             </html:p>
             <html:p>
-              <fr:resource hash="93e058b223e4424705afcc5fe814299a">
+              <fr:resource hash="3f7070b8e58fb3b337cadd46bc22e64c">
                 <fr:resource-content>
-                  <html:img src="/lectures/93e058b223e4424705afcc5fe814299a.svg" />
+                  <html:img src="/lectures/3f7070b8e58fb3b337cadd46bc22e64c.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -1076,7 +1076,7 @@ But we can make use of the other proof we've assumed we have: the one of <fr:tex
                 <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{r\vphantom{|}}}
             \AxiomC{\ensuremath{q\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{r \land  q\vphantom{|}}}
             \DP]]></fr:resource-source>
               </fr:resource>
@@ -1086,9 +1086,9 @@ But we can make use of the other proof we've assumed we have: the one of <fr:tex
         And indeed there is: we take the first example proof here, and plug it into the top of the second, replacing each open assumption of <fr:tex display="inline"><![CDATA[q]]></fr:tex> in the second proof with a copy of the first proof.
         The result looks like this:</html:p>
             <html:p>
-              <fr:resource hash="e48d900759509ce58fc9dcdcb4cffde4">
+              <fr:resource hash="67a9e03fb2d61f88efc68db45b141498">
                 <fr:resource-content>
-                  <html:img src="/lectures/e48d900759509ce58fc9dcdcb4cffde4.svg" />
+                  <html:img src="/lectures/67a9e03fb2d61f88efc68db45b141498.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -1098,9 +1098,9 @@ But we can make use of the other proof we've assumed we have: the one of <fr:tex
             \AxiomC{\ensuremath{r\vphantom{|}}}
             \AxiomC{\ensuremath{p \rightarrow  q\vphantom{|}}}
             \AxiomC{\ensuremath{p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
             \BinaryInfC{\ensuremath{q\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{r \land  q\vphantom{|}}}
             \DP
             ]]></fr:resource-source>
@@ -1123,9 +1123,9 @@ But we can make use of the other proof we've assumed we have: the one of <fr:tex
         After all, imagine we had a rule like this:
 </html:p>
             <html:p>
-              <fr:resource hash="17b84f00f06ad9cd39683a54aca51d66">
+              <fr:resource hash="a9502b225708be935b568acd84c5f184">
                 <fr:resource-content>
-                  <html:img src="/lectures/17b84f00f06ad9cd39683a54aca51d66.svg" />
+                  <html:img src="/lectures/a9502b225708be935b568acd84c5f184.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -1133,7 +1133,7 @@ But we can make use of the other proof we've assumed we have: the one of <fr:tex
   ]]></fr:resource-source>
                 <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  {FAKE\ RULE}:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  {FAKE\ RULE}\quad }}
             \UnaryInfC{\ensuremath{p\vphantom{|}}}
             \DP
             ]]></fr:resource-source>

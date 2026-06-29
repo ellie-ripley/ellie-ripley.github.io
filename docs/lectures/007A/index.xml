@@ -19,9 +19,9 @@
   </fr:frontmatter>
   <fr:mainmatter>
     <html:p>
-      <fr:resource hash="bf25bab590601242e79d3a30a6c5318d">
+      <fr:resource hash="6805153b946b6dc5f0223652d8eed7ad">
         <fr:resource-content>
-          <html:img src="/lectures/bf25bab590601242e79d3a30a6c5318d.svg" />
+          <html:img src="/lectures/6805153b946b6dc5f0223652d8eed7ad.svg" />
         </fr:resource-content>
         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -30,17 +30,17 @@
         <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{A\vphantom{|}}}
             \AxiomC{\ensuremath{B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
             \DP
             \hskip 1cm
             \AxiomC{\ensuremath{A \land  B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
             \UnaryInfC{\ensuremath{A\vphantom{|}}}
             \DP
             \hskip 1cm
             \AxiomC{\ensuremath{A \land  B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
             \UnaryInfC{\ensuremath{B\vphantom{|}}}
             \DP
         ]]></fr:resource-source>
@@ -80,41 +80,41 @@
           </fr:frontmatter>
           <fr:mainmatter>
             <html:ul><html:li>The rule of assumption: just write down a sentence to assume it, giving a proof of that sentence from itself.</html:li>
-<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007A/</fr:uri><fr:display-uri>007A</fr:display-uri><fr:route>/lectures/007A/</fr:route><fr:title text="Conjunction introduction and elimination:">Conjunction introduction and elimination:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="bf25bab590601242e79d3a30a6c5318d"><fr:resource-content><html:img src="/lectures/bf25bab590601242e79d3a30a6c5318d.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
+<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007A/</fr:uri><fr:display-uri>007A</fr:display-uri><fr:route>/lectures/007A/</fr:route><fr:title text="Conjunction introduction and elimination:">Conjunction introduction and elimination:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="6805153b946b6dc5f0223652d8eed7ad"><fr:resource-content><html:img src="/lectures/6805153b946b6dc5f0223652d8eed7ad.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
   \newcommand {\DP }{\DisplayProof }
   ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{A\vphantom{|}}}
             \AxiomC{\ensuremath{B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
             \DP
             \hskip 1cm
             \AxiomC{\ensuremath{A \land  B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
             \UnaryInfC{\ensuremath{A\vphantom{|}}}
             \DP
             \hskip 1cm
             \AxiomC{\ensuremath{A \land  B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
             \UnaryInfC{\ensuremath{B\vphantom{|}}}
             \DP
         ]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li>
-<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007B/</fr:uri><fr:display-uri>007B</fr:display-uri><fr:route>/lectures/007B/</fr:route><fr:title text="Disjunction introduction:">Disjunction introduction:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="5552c53085ec061bc147e7dc7ab96ba5"><fr:resource-content><html:img src="/lectures/5552c53085ec061bc147e7dc7ab96ba5.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
+<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007B/</fr:uri><fr:display-uri>007B</fr:display-uri><fr:route>/lectures/007B/</fr:route><fr:title text="Disjunction introduction:">Disjunction introduction:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="1a07f53fa2bf101821a9aa50e770e6a9"><fr:resource-content><html:img src="/lectures/1a07f53fa2bf101821a9aa50e770e6a9.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
   \newcommand {\DP }{\DisplayProof }
   ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{A\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_l\quad }}
             \UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
             \DP
             \hskip 1cm
             \AxiomC{\ensuremath{B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}    
+            \LeftLabel{\ensuremath{\scriptsize  \lor  I_r\quad }}    
             \UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
             \DP    
             ]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li>
-<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007C/</fr:uri><fr:display-uri>007C</fr:display-uri><fr:route>/lectures/007C/</fr:route><fr:title text="Disjunction elimination:">Disjunction elimination:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="f935792074fefd9ce79689e5aa449a75"><fr:resource-content><html:img src="/lectures/f935792074fefd9ce79689e5aa449a75.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
+<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007C/</fr:uri><fr:display-uri>007C</fr:display-uri><fr:route>/lectures/007C/</fr:route><fr:title text="Disjunction elimination:">Disjunction elimination:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="8f4a52ad9a7995af973ac3fc04e21aa0"><fr:resource-content><html:img src="/lectures/8f4a52ad9a7995af973ac3fc04e21aa0.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
   \newcommand {\DP }{\DisplayProof }
   ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
@@ -127,11 +127,11 @@
                 \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
                 \noLine
             \UnaryInfC{\ensuremath{C\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  E^n:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^n\quad }}
             \TrinaryInfC{\ensuremath{C\vphantom{|}}}
             \DP
             ]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li>
-<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007D/</fr:uri><fr:display-uri>007D</fr:display-uri><fr:route>/lectures/007D/</fr:route><fr:title text="Implication introduction and elimination:">Implication introduction and elimination:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="9b9a5c601f91d5b1d20396d149653da3"><fr:resource-content><html:img src="/lectures/9b9a5c601f91d5b1d20396d149653da3.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
+<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007D/</fr:uri><fr:display-uri>007D</fr:display-uri><fr:route>/lectures/007D/</fr:route><fr:title text="Implication introduction and elimination:">Implication introduction and elimination:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="fe146e117a6e314963b4a6bb94c04720"><fr:resource-content><html:img src="/lectures/fe146e117a6e314963b4a6bb94c04720.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
   \newcommand {\DP }{\DisplayProof }
   ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
@@ -139,21 +139,21 @@
             \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
             \noLine
             \UnaryInfC{\ensuremath{B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n\quad }}
             \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
             \DP
             \hskip 1cm
             \AxiomC{\ensuremath{A \rightarrow  B\vphantom{|}}}
             \AxiomC{\ensuremath{A\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
             \BinaryInfC{\ensuremath{B\vphantom{|}}}
             \DP    
             ]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li>
-<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007F/</fr:uri><fr:display-uri>007F</fr:display-uri><fr:route>/lectures/007F/</fr:route><fr:title text="Verum introduction:">Verum introduction:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="cdb6057c70d96542095ce27641d7c422"><fr:resource-content><html:img src="/lectures/cdb6057c70d96542095ce27641d7c422.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
+<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007F/</fr:uri><fr:display-uri>007F</fr:display-uri><fr:route>/lectures/007F/</fr:route><fr:title text="Verum introduction:">Verum introduction:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="d39e6208c0beacb8f227b913c519b9e0"><fr:resource-content><html:img src="/lectures/d39e6208c0beacb8f227b913c519b9e0.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
   \newcommand {\DP }{\DisplayProof }
-  ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\vphantom{\top }\vphantom{|}}}\LeftLabel{\ensuremath{\scriptsize  \top  I:\quad }}\UnaryInfC{\ensuremath{\top \vphantom{|}}}\DP]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li>
-<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007G/</fr:uri><fr:display-uri>007G</fr:display-uri><fr:route>/lectures/007G/</fr:route><fr:title text="Negation introduction and elimination:">Negation introduction and elimination:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="63cfb5fb77f4dec01b2a973fa1cbc2e4"><fr:resource-content><html:img src="/lectures/63cfb5fb77f4dec01b2a973fa1cbc2e4.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
+  ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\AxiomC{\ensuremath{\vphantom{\top }\vphantom{|}}}\LeftLabel{\ensuremath{\scriptsize  \top  I\quad }}\UnaryInfC{\ensuremath{\top \vphantom{|}}}\DP]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li>
+<html:li><fr:tree show-metadata="false"><fr:frontmatter><fr:authors><fr:author><fr:link href="/lectures/ellieripley/" title="Ellie Ripley" uri="https://negation.rocks/lectures/ellieripley/" display-uri="ellieripley" type="local">Ellie Ripley</fr:link></fr:author></fr:authors><fr:date><fr:year>2026</fr:year><fr:month>4</fr:month><fr:day>15</fr:day></fr:date><fr:uri>https://negation.rocks/lectures/007G/</fr:uri><fr:display-uri>007G</fr:display-uri><fr:route>/lectures/007G/</fr:route><fr:title text="Negation introduction and elimination:">Negation introduction and elimination:</fr:title></fr:frontmatter><fr:mainmatter><html:p><fr:resource hash="dae7917f44b90bf03d483916046501a2"><fr:resource-content><html:img src="/lectures/dae7917f44b90bf03d483916046501a2.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
   \newcommand {\DP }{\DisplayProof }
   ]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[
@@ -161,13 +161,13 @@
             \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
             \noLine
             \UnaryInfC{\ensuremath{\bot \vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \neg  I^n:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  I^n\quad }}
             \UnaryInfC{\ensuremath{\neg  A\vphantom{|}}}
             \DP
             \hskip 2cm
             \AxiomC{\ensuremath{\neg  A\vphantom{|}}}
             \AxiomC{\ensuremath{A\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \neg  E\quad }}
             \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
             \DP
             ]]></fr:resource-source></fr:resource></html:p></fr:mainmatter></fr:tree></html:li></html:ul>
@@ -223,9 +223,9 @@
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:p>
-                  <fr:resource hash="bf25bab590601242e79d3a30a6c5318d">
+                  <fr:resource hash="6805153b946b6dc5f0223652d8eed7ad">
                     <fr:resource-content>
-                      <html:img src="/lectures/bf25bab590601242e79d3a30a6c5318d.svg" />
+                      <html:img src="/lectures/6805153b946b6dc5f0223652d8eed7ad.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -234,17 +234,17 @@
                     <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{A\vphantom{|}}}
             \AxiomC{\ensuremath{B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
             \DP
             \hskip 1cm
             \AxiomC{\ensuremath{A \land  B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
             \UnaryInfC{\ensuremath{A\vphantom{|}}}
             \DP
             \hskip 1cm
             \AxiomC{\ensuremath{A \land  B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
             \UnaryInfC{\ensuremath{B\vphantom{|}}}
             \DP
         ]]></fr:resource-source>
@@ -262,16 +262,16 @@
         Since this is a proof whose conclusion is a conjunction, we can extend it via <fr:tex display="inline"><![CDATA[\land  E_l]]></fr:tex>.
         That would give us the following proof:</html:p>
             <html:p>
-              <fr:resource hash="55af88a92d7313b2398a3587a7134f5a">
+              <fr:resource hash="0369862c8ee89d3df8e25a4187be19f5">
                 <fr:resource-content>
-                  <html:img src="/lectures/55af88a92d7313b2398a3587a7134f5a.svg" />
+                  <html:img src="/lectures/0369862c8ee89d3df8e25a4187be19f5.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
   \newcommand {\DP }{\DisplayProof }
   ]]></fr:resource-source>
                 <fr:resource-source type="latex" part="body"><![CDATA[   \AxiomC{\ensuremath{p \land  (q \rightarrow  r)\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
             \UnaryInfC{\ensuremath{p\vphantom{|}}}
             \DP
         ]]></fr:resource-source>
@@ -283,9 +283,9 @@
             <html:p>        The rule <fr:tex display="inline"><![CDATA[\land  E_r]]></fr:tex>  is very similar, but it allows us to conclude the right component of the conjunction rather than the left.
         So a new example proof using <fr:tex display="inline"><![CDATA[\land  E_r]]></fr:tex> might look like this:</html:p>
             <html:p>
-              <fr:resource hash="87c5dc45962cd695bf8dc8820bf407a5">
+              <fr:resource hash="3e58d85882eea71dc83aefdca7013fd9">
                 <fr:resource-content>
-                  <html:img src="/lectures/87c5dc45962cd695bf8dc8820bf407a5.svg" />
+                  <html:img src="/lectures/3e58d85882eea71dc83aefdca7013fd9.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -294,7 +294,7 @@
                 <fr:resource-source type="latex" part="body"><![CDATA[
 
             \AxiomC{\ensuremath{(p \lor  q) \land  (r \rightarrow  \neg  r)\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
             \UnaryInfC{\ensuremath{r \rightarrow  \neg  r\vphantom{|}}}
             \DP
             ]]></fr:resource-source>
@@ -307,9 +307,9 @@
         It can be used to combine any two proofs: if the conclusion of the left proof is <fr:tex display="inline"><![CDATA[A]]></fr:tex> and the conclusion of the right proof is <fr:tex display="inline"><![CDATA[B]]></fr:tex>, then the conclusion of the resulting proof will be <fr:tex display="inline"><![CDATA[A \land  B]]></fr:tex>.
         For example, we can use this rule to combine the two most recent example proofs into a larger proof, giving us this:</html:p>
             <html:p>
-              <fr:resource hash="466604efa52a1cd7262d1d8898e8fcfd">
+              <fr:resource hash="535c9ca18104a166eb30c4ca18b212bf">
                 <fr:resource-content>
-                  <html:img src="/lectures/466604efa52a1cd7262d1d8898e8fcfd.svg" />
+                  <html:img src="/lectures/535c9ca18104a166eb30c4ca18b212bf.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -318,12 +318,12 @@
                 <fr:resource-source type="latex" part="body"><![CDATA[
         
             \AxiomC{\ensuremath{p \land  (q \rightarrow  r)\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
             \UnaryInfC{\ensuremath{p\vphantom{|}}}
             \AxiomC{\ensuremath{(p \lor  q) \land  (r \rightarrow  \neg  r)\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
             \UnaryInfC{\ensuremath{r \rightarrow  \neg  r\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{p \land  (r \rightarrow  \neg  r)\vphantom{|}}}
             \DP
             ]]></fr:resource-source>

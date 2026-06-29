@@ -187,9 +187,9 @@
         For any <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex>, there is a proof of <fr:tex display="inline"><![CDATA[A \rightarrow  B, A \;/\; B]]></fr:tex>, consisting of just assumptions of <fr:tex display="inline"><![CDATA[A \rightarrow  B]]></fr:tex> and <fr:tex display="inline"><![CDATA[A]]></fr:tex>, followed by a single step of <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>.
         For example, the following proof is a proof of <fr:tex display="inline"><![CDATA[p \rightarrow  q, p \;/\; q]]></fr:tex>:</html:p>
             <html:p>
-              <fr:resource hash="5d3b72cfa90aa250822f09313c329df0">
+              <fr:resource hash="4dd078487b2c65a0d215cbb042b08be0">
                 <fr:resource-content>
-                  <html:img src="/lectures/5d3b72cfa90aa250822f09313c329df0.svg" />
+                  <html:img src="/lectures/4dd078487b2c65a0d215cbb042b08be0.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -198,7 +198,7 @@
                 <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{p \rightarrow  q\vphantom{|}}}
             \AxiomC{\ensuremath{p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
             \BinaryInfC{\ensuremath{q\vphantom{|}}}
             \DP]]></fr:resource-source>
               </fr:resource>

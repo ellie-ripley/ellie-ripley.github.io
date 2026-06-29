@@ -67,9 +67,9 @@ But if you want to understand how a soundness proof really works deep down, this
             <html:p>Let's look now at a discharging rule: <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex>.
 When this is the last step of a proof, the proof as a whole looks like this:</html:p>
             <html:p>
-              <fr:resource hash="85ea9f7a723ab5da6ed3274871d6030e">
+              <fr:resource hash="9595a745d765185e29f9e5969033817f">
                 <fr:resource-content>
-                  <html:img src="/lectures/85ea9f7a723ab5da6ed3274871d6030e.svg" />
+                  <html:img src="/lectures/9595a745d765185e29f9e5969033817f.svg" />
                 </fr:resource-content>
                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -81,7 +81,7 @@ When this is the last step of a proof, the proof as a whole looks like this:</ht
   \UnaryInfC{\ensuremath{\vdots \vphantom{|}}}
   \noLine
   \UnaryInfC{\ensuremath{B\vphantom{|}}}
-  \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^{n}:\quad }}
+  \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^{n}\quad }}
   \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
   \DP
 ]]></fr:resource-source>

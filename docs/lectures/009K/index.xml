@@ -108,9 +108,9 @@ There are two parts to this harmony, which go by a number of different names: <h
 Tonk is a binary connective, and I'll write it with the symbol <fr:tex display="inline"><![CDATA[\#]]></fr:tex>.</html:p>
                     <html:p>Like our other connectives, I will give tonk its own introduction and elimination rules, as follows:</html:p>
                     <html:p>
-                      <fr:resource hash="05be1249440a431ba1bf6083804a0896">
+                      <fr:resource hash="2e1f88d9ae283c4b724330319f8c362d">
                         <fr:resource-content>
-                          <html:img src="/lectures/05be1249440a431ba1bf6083804a0896.svg" />
+                          <html:img src="/lectures/2e1f88d9ae283c4b724330319f8c362d.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -118,12 +118,12 @@ Tonk is a binary connective, and I'll write it with the symbol <fr:tex display="
   ]]></fr:resource-source>
                         <fr:resource-source type="latex" part="body"><![CDATA[
   \AxiomC{\ensuremath{A\vphantom{|}}}
-  \LeftLabel{\ensuremath{\scriptsize  \#I:\quad }}
+  \LeftLabel{\ensuremath{\scriptsize  \#I\quad }}
   \UnaryInfC{\ensuremath{A \# B\vphantom{|}}}
   \DP
   \hskip 1cm
   \AxiomC{\ensuremath{A \# B\vphantom{|}}}
-  \LeftLabel{\ensuremath{\scriptsize  \#E:\quad }}
+  \LeftLabel{\ensuremath{\scriptsize  \#E\quad }}
   \UnaryInfC{\ensuremath{B\vphantom{|}}}
   \DP
 ]]></fr:resource-source>
@@ -132,9 +132,9 @@ Tonk is a binary connective, and I'll write it with the symbol <fr:tex display="
                     <html:p>Note that tonk's introduction rule is a lot like our rule <fr:tex display="inline"><![CDATA[\lor  I_l]]></fr:tex>, and that its elimination rule is a lot like our rule <fr:tex display="inline"><![CDATA[\land  E_r]]></fr:tex>; the difference is just that the tonk rules use the connective tonk, rather than disjunction or conjunction.</html:p>
                     <html:p>If we have tonk in our language and these rules in our proof system, then for any sentences <fr:tex display="inline"><![CDATA[A, B]]></fr:tex> at all, we can build the following proof:</html:p>
                     <html:p>
-                      <fr:resource hash="7fc86d5929a2563f2eebfb2a6c7272d9">
+                      <fr:resource hash="ba0de3192245f9a79815491c03b75106">
                         <fr:resource-content>
-                          <html:img src="/lectures/7fc86d5929a2563f2eebfb2a6c7272d9.svg" />
+                          <html:img src="/lectures/ba0de3192245f9a79815491c03b75106.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -142,9 +142,9 @@ Tonk is a binary connective, and I'll write it with the symbol <fr:tex display="
   ]]></fr:resource-source>
                         <fr:resource-source type="latex" part="body"><![CDATA[
   \AxiomC{\ensuremath{A\vphantom{|}}}
-  \LeftLabel{\ensuremath{\scriptsize  \#I:\quad }}
+  \LeftLabel{\ensuremath{\scriptsize  \#I\quad }}
   \UnaryInfC{\ensuremath{A \# B\vphantom{|}}}
-  \LeftLabel{\ensuremath{\scriptsize  \#E:\quad }}
+  \LeftLabel{\ensuremath{\scriptsize  \#E\quad }}
   \UnaryInfC{\ensuremath{B\vphantom{|}}}
   \DP
   ]]></fr:resource-source>
@@ -153,9 +153,9 @@ Tonk is a binary connective, and I'll write it with the symbol <fr:tex display="
                     <html:p>As that is a proof of <fr:tex display="inline"><![CDATA[\Gamma , A \;/\; B]]></fr:tex> for any <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>, and the sentences <fr:tex display="inline"><![CDATA[A, B]]></fr:tex> are themselves arbitrary, this has the result that every argument with at least one premise turns out to be valid in the resulting logic.</html:p>
                     <html:p>Moreover, if we also have <fr:tex display="inline"><![CDATA[\top ]]></fr:tex> with its rule in the system, then we can get the following proof for any sentence <fr:tex display="inline"><![CDATA[B]]></fr:tex> at all:</html:p>
                     <html:p>
-                      <fr:resource hash="e205666afd34cc81164ee84176be0071">
+                      <fr:resource hash="7d5a539cebbf2f27858d5b72b31975f5">
                         <fr:resource-content>
-                          <html:img src="/lectures/e205666afd34cc81164ee84176be0071.svg" />
+                          <html:img src="/lectures/7d5a539cebbf2f27858d5b72b31975f5.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -163,11 +163,11 @@ Tonk is a binary connective, and I'll write it with the symbol <fr:tex display="
   ]]></fr:resource-source>
                         <fr:resource-source type="latex" part="body"><![CDATA[
   \AxiomC{\ensuremath{\vphantom{|}}}
-  \LeftLabel{\ensuremath{\scriptsize  \top  I:\quad }}
+  \LeftLabel{\ensuremath{\scriptsize  \top  I\quad }}
   \UnaryInfC{\ensuremath{\top \vphantom{|}}}
-  \LeftLabel{\ensuremath{\scriptsize  \#I:\quad }}
+  \LeftLabel{\ensuremath{\scriptsize  \#I\quad }}
   \UnaryInfC{\ensuremath{\top  \# B\vphantom{|}}}
-  \LeftLabel{\ensuremath{\scriptsize  \#E:\quad }}
+  \LeftLabel{\ensuremath{\scriptsize  \#E\quad }}
   \UnaryInfC{\ensuremath{B\vphantom{|}}}
   \DP
 ]]></fr:resource-source>
@@ -208,9 +208,9 @@ Here there is substantial disagreement; I'll just explain one line of thought th
 On this line of thought, the trouble with tonk is that by introducing it and then immediately eliminating it, we can get somewhere that we couldn't get otherwise.
 Consider, for example, the following proof using tonk:</html:p>
                     <html:p>
-                      <fr:resource hash="83c7d34e40ef99d30bf862acab9ff088">
+                      <fr:resource hash="4ba0348d37f71f8c891052d94708a1e3">
                         <fr:resource-content>
-                          <html:img src="/lectures/83c7d34e40ef99d30bf862acab9ff088.svg" />
+                          <html:img src="/lectures/4ba0348d37f71f8c891052d94708a1e3.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -218,9 +218,9 @@ Consider, for example, the following proof using tonk:</html:p>
   ]]></fr:resource-source>
                         <fr:resource-source type="latex" part="body"><![CDATA[
   \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
-  \LeftLabel{\ensuremath{\scriptsize  \#I:\quad }}
+  \LeftLabel{\ensuremath{\scriptsize  \#I\quad }}
   \UnaryInfC{\ensuremath{(p \lor  q) \# (r \land  s)\vphantom{|}}}
-  \LeftLabel{\ensuremath{\scriptsize  \#E:\quad }}
+  \LeftLabel{\ensuremath{\scriptsize  \#E\quad }}
   \UnaryInfC{\ensuremath{r \land  s\vphantom{|}}}
   \DP
   ]]></fr:resource-source>
@@ -286,9 +286,9 @@ Let's look connective by connective at how this works.</html:p>
 Since conjunction has one introduction rule and two elimination rules, there are two possible ways this could arise.
 The general forms of these two ways are:</html:p>
                         <html:p>
-                          <fr:resource hash="a7b192e6dd02273afb4b668ef1689113">
+                          <fr:resource hash="7938ba1fc4c967a7998818044b9ecf59">
                             <fr:resource-content>
-                              <html:img src="/lectures/a7b192e6dd02273afb4b668ef1689113.svg" />
+                              <html:img src="/lectures/7938ba1fc4c967a7998818044b9ecf59.svg" />
                             </fr:resource-content>
                             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -297,17 +297,17 @@ The general forms of these two ways are:</html:p>
                             <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{A\vphantom{|}}}
 \AxiomC{\ensuremath{B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
 \BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
 \UnaryInfC{\ensuremath{A\vphantom{|}}}
 \DP
 \hspace{3em}
 \AxiomC{\ensuremath{A\vphantom{|}}}
 \AxiomC{\ensuremath{B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
 \BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
 \UnaryInfC{\ensuremath{B\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -322,9 +322,9 @@ So when it comes to our conjunction rules, these do allow us to flatten any loca
                         <html:p>There's an important move I just made in the above reasoning, and I want to linger on it a bit here before we go on to other connectives.
 Consider the following instance of the left-hand form above:</html:p>
                         <html:p>
-                          <fr:resource hash="6a08ad065b238bdc543e7d91c7dbd0c2">
+                          <fr:resource hash="78ccc66362824ec6ad4e114cd4cbc77c">
                             <fr:resource-content>
-                              <html:img src="/lectures/6a08ad065b238bdc543e7d91c7dbd0c2.svg" />
+                              <html:img src="/lectures/78ccc66362824ec6ad4e114cd4cbc77c.svg" />
                             </fr:resource-content>
                             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -333,9 +333,9 @@ Consider the following instance of the left-hand form above:</html:p>
                             <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
 \AxiomC{\ensuremath{r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
 \BinaryInfC{\ensuremath{(p \lor  q) \land  r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
 \UnaryInfC{\ensuremath{p \lor  q\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -375,9 +375,9 @@ We want to make sure that this process doesn't smuggle any new information in; w
 When we introduce an implication and immediately eliminate it, here's what we end up looking at:
 </html:p>
                         <html:p>
-                          <fr:resource hash="62063d13322b3f4eac0de47455c8f6fd">
+                          <fr:resource hash="8cc63cb78ee91468b571f415c79b423b">
                             <fr:resource-content>
-                              <html:img src="/lectures/62063d13322b3f4eac0de47455c8f6fd.svg" />
+                              <html:img src="/lectures/8cc63cb78ee91468b571f415c79b423b.svg" />
                             </fr:resource-content>
                             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -388,10 +388,10 @@ When we introduce an implication and immediately eliminate it, here's what we en
             \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
             \noLine
             \UnaryInfC{\ensuremath{B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n\quad }}
             \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
               \AxiomC{\ensuremath{A\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
               \BinaryInfC{\ensuremath{B\vphantom{|}}}
               \DP
 ]]></fr:resource-source>
@@ -421,9 +421,9 @@ Let's look at a couple of examples.</html:p>
                           <fr:mainmatter>
                             <html:p>In this first example, we will consider a case where no discharge actually happens:</html:p>
                             <html:p>
-                              <fr:resource hash="b05ccbaa4029b4c628bb3e459e0e75dc">
+                              <fr:resource hash="d86866dbda913c29196600573f44a510">
                                 <fr:resource-content>
-                                  <html:img src="/lectures/b05ccbaa4029b4c628bb3e459e0e75dc.svg" />
+                                  <html:img src="/lectures/d86866dbda913c29196600573f44a510.svg" />
                                 </fr:resource-content>
                                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -431,14 +431,14 @@ Let's look at a couple of examples.</html:p>
   ]]></fr:resource-source>
                                 <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{p \land  q\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
 \UnaryInfC{\ensuremath{p\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^3:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^3\quad }}
 \UnaryInfC{\ensuremath{(q \lor  r) \rightarrow  p\vphantom{|}}}
 \AxiomC{\ensuremath{r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \lor  I_r\quad }}
 \UnaryInfC{\ensuremath{q \lor  r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
 \BinaryInfC{\ensuremath{p\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -449,9 +449,9 @@ The overall proof is a proof of any argument with the conclusion <fr:tex display
 Can you spot a way to use pieces of this proof to get a proof of any such argument, without going through the local peak?</html:p>
                             <html:p>Here's one:</html:p>
                             <html:p>
-                              <fr:resource hash="83623a44e8a80329a9c5995bc9b9c2d1">
+                              <fr:resource hash="be8a340a5245453a4055b916e923b068">
                                 <fr:resource-content>
-                                  <html:img src="/lectures/83623a44e8a80329a9c5995bc9b9c2d1.svg" />
+                                  <html:img src="/lectures/be8a340a5245453a4055b916e923b068.svg" />
                                 </fr:resource-content>
                                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -459,7 +459,7 @@ Can you spot a way to use pieces of this proof to get a proof of any such argume
   ]]></fr:resource-source>
                                 <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{p \land  q\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
 \UnaryInfC{\ensuremath{p\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -473,9 +473,9 @@ The smaller proof proves all the arguments that the original one does.</html:p>
                         <html:p>Let's generalise this to see how it works more generally, but still just for those cases where the step of <fr:tex display="inline"><![CDATA[\rightarrow  I]]></fr:tex> introducing the local peak doesn't discharge anything.
 In these cases, we're looking at something like this:</html:p>
                         <html:p>
-                          <fr:resource hash="aa23c594e6e892f0030218aeae95ffc5">
+                          <fr:resource hash="be54c1abf3c8343b2e7ecbc2891bcac6">
                             <fr:resource-content>
-                              <html:img src="/lectures/aa23c594e6e892f0030218aeae95ffc5.svg" />
+                              <html:img src="/lectures/be54c1abf3c8343b2e7ecbc2891bcac6.svg" />
                             </fr:resource-content>
                             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -486,10 +486,10 @@ In these cases, we're looking at something like this:</html:p>
             \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
             \noLine
             \UnaryInfC{\ensuremath{B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n\quad }}
             \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
               \AxiomC{\ensuremath{A\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
               \BinaryInfC{\ensuremath{B\vphantom{|}}}
               \DP
 ]]></fr:resource-source>
@@ -540,9 +540,9 @@ But what about when it <html:em>does</html:em>?
 Here we have more work to do.
 Let's look at an example:</html:p>
                             <html:p>
-                              <fr:resource hash="7ebb0829411a59ee7925c12751860d20">
+                              <fr:resource hash="327c5947d87ca01299f38674e4194806">
                                 <fr:resource-content>
-                                  <html:img src="/lectures/7ebb0829411a59ee7925c12751860d20.svg" />
+                                  <html:img src="/lectures/327c5947d87ca01299f38674e4194806.svg" />
                                 </fr:resource-content>
                                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -551,22 +551,22 @@ Let's look at an example:</html:p>
                                 <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{p \rightarrow  (r \rightarrow  q)\vphantom{|}}}
 \AxiomC{\ensuremath{[p \land  r]^5\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
 \UnaryInfC{\ensuremath{p\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
 \BinaryInfC{\ensuremath{r \rightarrow  q\vphantom{|}}}
 \AxiomC{\ensuremath{[p \land  r]^5\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
 \UnaryInfC{\ensuremath{r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
 \BinaryInfC{\ensuremath{q\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^5:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^5\quad }}
 \UnaryInfC{\ensuremath{(p \land  r) \rightarrow  q\vphantom{|}}}
 \AxiomC{\ensuremath{p\vphantom{|}}}
 \AxiomC{\ensuremath{r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
 \BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
 \BinaryInfC{\ensuremath{q\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -575,9 +575,9 @@ Let's look at an example:</html:p>
                             <html:p>This is a proof of any argument with <fr:tex display="inline"><![CDATA[q]]></fr:tex> as a conclusion and <fr:tex display="inline"><![CDATA[p \rightarrow  (r \rightarrow  q), p, r]]></fr:tex> among its premises.
 But if we try clipping out just the bit above the local peak on the left, like we did in the cases without discharge, we end up here:</html:p>
                             <html:p>
-                              <fr:resource hash="c4af543d46df4f2d8d05b36b064e6dc8">
+                              <fr:resource hash="6facc684d080448e29eba6bf78f2042f">
                                 <fr:resource-content>
-                                  <html:img src="/lectures/c4af543d46df4f2d8d05b36b064e6dc8.svg" />
+                                  <html:img src="/lectures/6facc684d080448e29eba6bf78f2042f.svg" />
                                 </fr:resource-content>
                                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -586,14 +586,14 @@ But if we try clipping out just the bit above the local peak on the left, like w
                                 <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{p \rightarrow  (r \rightarrow  q)\vphantom{|}}}
 \AxiomC{\ensuremath{p \land  r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
 \UnaryInfC{\ensuremath{p\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
 \BinaryInfC{\ensuremath{r \rightarrow  q\vphantom{|}}}
 \AxiomC{\ensuremath{p \land  r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
 \UnaryInfC{\ensuremath{r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
 \BinaryInfC{\ensuremath{q\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -604,9 +604,9 @@ As a result, there are arguments, such as <fr:tex display="inline"><![CDATA[p \r
 So there's an issue to solve.</html:p>
                             <html:p>The solution is to note that, in the larger proof, there was another bit of it feeding into the <fr:tex display="inline"><![CDATA[\rightarrow  E]]></fr:tex>, besides the introduction that created the local peak:</html:p>
                             <html:p>
-                              <fr:resource hash="3264f4c3629f13688ec7326a3ab2ebee">
+                              <fr:resource hash="caa83feeb47e62e1e58b550db58eeb10">
                                 <fr:resource-content>
-                                  <html:img src="/lectures/3264f4c3629f13688ec7326a3ab2ebee.svg" />
+                                  <html:img src="/lectures/caa83feeb47e62e1e58b550db58eeb10.svg" />
                                 </fr:resource-content>
                                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -615,7 +615,7 @@ So there's an issue to solve.</html:p>
                                 <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{p\vphantom{|}}}
 \AxiomC{\ensuremath{r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
 \BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -625,9 +625,9 @@ So there's an issue to solve.</html:p>
 So we can plug piece R in at the originally-discharged assumptions of <fr:tex display="inline"><![CDATA[p \land  r]]></fr:tex> that are sitting open in piece L.
 This gets us to:</html:p>
                             <html:p>
-                              <fr:resource hash="3580a33ccb338cc43b55d98121e74d60">
+                              <fr:resource hash="0277a8ca09d5e1d4ec8d1bbacc1566ba">
                                 <fr:resource-content>
-                                  <html:img src="/lectures/3580a33ccb338cc43b55d98121e74d60.svg" />
+                                  <html:img src="/lectures/0277a8ca09d5e1d4ec8d1bbacc1566ba.svg" />
                                 </fr:resource-content>
                                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -637,19 +637,19 @@ This gets us to:</html:p>
 \AxiomC{\ensuremath{p \rightarrow  (r \rightarrow  q)\vphantom{|}}}
 \AxiomC{\ensuremath{p\vphantom{|}}}
 \AxiomC{\ensuremath{r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
 \BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
 \UnaryInfC{\ensuremath{p\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
 \BinaryInfC{\ensuremath{r \rightarrow  q\vphantom{|}}}
 \AxiomC{\ensuremath{p\vphantom{|}}}
 \AxiomC{\ensuremath{r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
 \BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
 \UnaryInfC{\ensuremath{r\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
 \BinaryInfC{\ensuremath{q\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -667,9 +667,9 @@ We won't look deeper into that this semester, but it's really at the heart of de
 When we have a local peak using implication, it looks like:
 </html:p>
                         <html:p>
-                          <fr:resource hash="7d60cfc68bd31649fba6e6e355333479">
+                          <fr:resource hash="4dde79f0cf8e9ab9a46b2ca70a6f389f">
                             <fr:resource-content>
-                              <html:img src="/lectures/7d60cfc68bd31649fba6e6e355333479.svg" />
+                              <html:img src="/lectures/4dde79f0cf8e9ab9a46b2ca70a6f389f.svg" />
                             </fr:resource-content>
                             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -680,13 +680,13 @@ When we have a local peak using implication, it looks like:
             \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
             \noLine
             \UnaryInfC{\ensuremath{B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n\quad }}
             \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
               \AxiomC{\ensuremath{\vphantom{|}}}
               \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
               \noLine
               \UnaryInfC{\ensuremath{A\vphantom{|}}}
-              \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+              \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
               \BinaryInfC{\ensuremath{B\vphantom{|}}}
               \DP
 ]]></fr:resource-source>
@@ -739,9 +739,9 @@ As we saw in the above example, this might indicate multiple copies of piece R, 
                             <html:p>Recall that we only have a local peak when the implication introduced is the <html:em>leftmost</html:em> input to the implication elimination.
 What about a proof that looks like this?</html:p>
                             <html:p>
-                              <fr:resource hash="521cc2ada2429539b7c2575758a73725">
+                              <fr:resource hash="1fd76c60c0fd3a0d049f4ce7d6152e03">
                                 <fr:resource-content>
-                                  <html:img src="/lectures/521cc2ada2429539b7c2575758a73725.svg" />
+                                  <html:img src="/lectures/1fd76c60c0fd3a0d049f4ce7d6152e03.svg" />
                                 </fr:resource-content>
                                 <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -753,9 +753,9 @@ What about a proof that looks like this?</html:p>
             \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
             \noLine
             \UnaryInfC{\ensuremath{B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^n\quad }}
             \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
             \BinaryInfC{\ensuremath{C\vphantom{|}}}
             \DP
 ]]></fr:resource-source>
@@ -790,9 +790,9 @@ This is one reason we always care about the order of the inputs into rules like 
 Since disjunction has two introduction rules and one elimination rule, a local peak can arise in one of two ways.
 Let's look at <fr:tex display="inline"><![CDATA[\lor  I_l]]></fr:tex> first:</html:p>
                         <html:p>
-                          <fr:resource hash="61f53670005f4dcd6c970ad6f8f6b852">
+                          <fr:resource hash="f05c6d588f8fae800338dc2d51492d11">
                             <fr:resource-content>
-                              <html:img src="/lectures/61f53670005f4dcd6c970ad6f8f6b852.svg" />
+                              <html:img src="/lectures/f05c6d588f8fae800338dc2d51492d11.svg" />
                             </fr:resource-content>
                             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -800,7 +800,7 @@ Let's look at <fr:tex display="inline"><![CDATA[\lor  I_l]]></fr:tex> first:</ht
   ]]></fr:resource-source>
                             <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{A\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \lor  I_l\quad }}
 \UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
 \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
 \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
@@ -810,7 +810,7 @@ Let's look at <fr:tex display="inline"><![CDATA[\lor  I_l]]></fr:tex> first:</ht
 \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
 \noLine
 \UnaryInfC{\ensuremath{C\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \lor  E^n:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \lor  E^n\quad }}
 \TrinaryInfC{\ensuremath{C\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -839,9 +839,9 @@ Let's look at <fr:tex display="inline"><![CDATA[\lor  I_l]]></fr:tex> first:</ht
 What about when the local peak is created from <fr:tex display="inline"><![CDATA[\lor  I_r]]></fr:tex> instead?
 Like this:</html:p>
                         <html:p>
-                          <fr:resource hash="da6d3c7b7dd1e6f9e06931b376e2b51a">
+                          <fr:resource hash="14a654ce8657d6574a59a0ef3fca5ddb">
                             <fr:resource-content>
-                              <html:img src="/lectures/da6d3c7b7dd1e6f9e06931b376e2b51a.svg" />
+                              <html:img src="/lectures/14a654ce8657d6574a59a0ef3fca5ddb.svg" />
                             </fr:resource-content>
                             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -849,7 +849,7 @@ Like this:</html:p>
   ]]></fr:resource-source>
                             <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \lor  I_l\quad }}
 \UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
 \AxiomC{\ensuremath{[A]^n\vphantom{|}}}
 \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
@@ -859,7 +859,7 @@ Like this:</html:p>
 \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
 \noLine
 \UnaryInfC{\ensuremath{C\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \lor  E^n:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \lor  E^n\quad }}
 \TrinaryInfC{\ensuremath{C\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -909,9 +909,9 @@ So we would arrive at:</html:p>
                         <html:p>Reduction for negation is even more like implication than disjunction is.
 When we have a local peak for negation, we have:</html:p>
                         <html:p>
-                          <fr:resource hash="e3df7c4598d196e3d190f3bbbee71a03">
+                          <fr:resource hash="2961c18f9e5a9f3fb2b2598d9eb7c600">
                             <fr:resource-content>
-                              <html:img src="/lectures/e3df7c4598d196e3d190f3bbbee71a03.svg" />
+                              <html:img src="/lectures/2961c18f9e5a9f3fb2b2598d9eb7c600.svg" />
                             </fr:resource-content>
                             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -922,10 +922,10 @@ When we have a local peak for negation, we have:</html:p>
 \noLine\UnaryInfC{\ensuremath{\ensuremath{}\vdots \vphantom{|}}}
 \noLine
 \UnaryInfC{\ensuremath{\bot \vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \neg  I^n:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \neg  I^n\quad }}
 \UnaryInfC{\ensuremath{\neg  A\vphantom{|}}}
 \AxiomC{\ensuremath{A\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \neg  E\quad }}
 \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -1054,9 +1054,9 @@ But we can't use <fr:tex display="inline"><![CDATA[\#]]></fr:tex> I from <fr:tex
                   <fr:mainmatter>
                     <html:p>What about this proof?</html:p>
                     <html:p>
-                      <fr:resource hash="ba0bb2a14aa064d3fa9e9a3c96e3752b">
+                      <fr:resource hash="7f34955845a6fe9f36f6017de574a716">
                         <fr:resource-content>
-                          <html:img src="/lectures/ba0bb2a14aa064d3fa9e9a3c96e3752b.svg" />
+                          <html:img src="/lectures/7f34955845a6fe9f36f6017de574a716.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -1064,13 +1064,13 @@ But we can't use <fr:tex display="inline"><![CDATA[\#]]></fr:tex> I from <fr:tex
   ]]></fr:resource-source>
                         <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{A \# B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \# E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \# E\quad }}
 \UnaryInfC{\ensuremath{B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \# I:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \# I\quad }}
 \UnaryInfC{\ensuremath{B \# A\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \# E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \# E\quad }}
 \UnaryInfC{\ensuremath{A\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \# I:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \# I\quad }}
 \UnaryInfC{\ensuremath{A \# B\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -1102,9 +1102,9 @@ The key is in noting that this isn't <html:em>direct</html:em>; we had to exploi
                   <fr:mainmatter>
                     <html:p>Here is expansion for conjunction:</html:p>
                     <html:p>
-                      <fr:resource hash="16eb34cdf7b37770ca8dfe1ac996ccf6">
+                      <fr:resource hash="fe54319d7b60ac9580dc07168059ac6d">
                         <fr:resource-content>
-                          <html:img src="/lectures/16eb34cdf7b37770ca8dfe1ac996ccf6.svg" />
+                          <html:img src="/lectures/fe54319d7b60ac9580dc07168059ac6d.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -1112,12 +1112,12 @@ The key is in noting that this isn't <html:em>direct</html:em>; we had to exploi
   ]]></fr:resource-source>
                         <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{A \land  B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
 \UnaryInfC{\ensuremath{A\vphantom{|}}}
 \AxiomC{\ensuremath{A \land  B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  E_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  E_l\quad }}
 \UnaryInfC{\ensuremath{B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
 \BinaryInfC{\ensuremath{A \land  B\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -1147,9 +1147,9 @@ This shows that in a sense nothing is lost when we introduce a conjunction: we c
                   <fr:mainmatter>
                     <html:p>Let's take a look now at expansion for implication:</html:p>
                     <html:p>
-                      <fr:resource hash="c97566f673db078b3b1189ba06f5e482">
+                      <fr:resource hash="0d38992d1497608151e7839e9d20049e">
                         <fr:resource-content>
-                          <html:img src="/lectures/c97566f673db078b3b1189ba06f5e482.svg" />
+                          <html:img src="/lectures/0d38992d1497608151e7839e9d20049e.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -1158,9 +1158,9 @@ This shows that in a sense nothing is lost when we introduce a conjunction: we c
                         <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{A \rightarrow  B\vphantom{|}}}
 \AxiomC{\ensuremath{[A]^9\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
 \BinaryInfC{\ensuremath{B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^9:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^9\quad }}
 \UnaryInfC{\ensuremath{A \rightarrow  B\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -1192,9 +1192,9 @@ The expansion step shows that you can unpackage this implication to get exactly 
                   <fr:mainmatter>
                     <html:p>Here is expansion for disjunction:</html:p>
                     <html:p>
-                      <fr:resource hash="d14a89bec2b8c39649e918d1622de124">
+                      <fr:resource hash="8af47ad7ca40f12da03d396c94eecabd">
                         <fr:resource-content>
-                          <html:img src="/lectures/d14a89bec2b8c39649e918d1622de124.svg" />
+                          <html:img src="/lectures/8af47ad7ca40f12da03d396c94eecabd.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -1203,12 +1203,12 @@ The expansion step shows that you can unpackage this implication to get exactly 
                         <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{A \lor  B\vphantom{|}}}
 \AxiomC{\ensuremath{[A]^3\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \lor  I_l:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \lor  I_l\quad }}
 \UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
 \AxiomC{\ensuremath{[B]^3\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \lor  I_r:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \lor  I_r\quad }}
 \UnaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \lor  E^3:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \lor  E^3\quad }}
 \TrinaryInfC{\ensuremath{A \lor  B\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -1237,9 +1237,9 @@ The expansion step shows that you can unpackage this implication to get exactly 
                   <fr:mainmatter>
                     <html:p>As with their reductions, expansion for negation is very like expansion for implication:</html:p>
                     <html:p>
-                      <fr:resource hash="0898b83d9e730cbf09136af43d63b626">
+                      <fr:resource hash="818eccef5794ffe83a99dec7b106393f">
                         <fr:resource-content>
-                          <html:img src="/lectures/0898b83d9e730cbf09136af43d63b626.svg" />
+                          <html:img src="/lectures/818eccef5794ffe83a99dec7b106393f.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -1248,9 +1248,9 @@ The expansion step shows that you can unpackage this implication to get exactly 
                         <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{\neg  A\vphantom{|}}}
 \AxiomC{\ensuremath{[A]^2\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \neg  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \neg  E\quad }}
 \BinaryInfC{\ensuremath{\bot \vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \neg  I^2:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \neg  I^2\quad }}
 \UnaryInfC{\ensuremath{\neg  A\vphantom{|}}}
 \DP
 ]]></fr:resource-source>
@@ -1286,9 +1286,9 @@ The fact that verum has no elimination rule, then, is indeed perfectly balanced 
 The nothing that we get from verum via its (nonexistent) elimination rule is indeed exactly what it takes to introduce it.</html:p>
                     <html:p>And for falsum, we can simply note the proof:</html:p>
                     <html:p>
-                      <fr:resource hash="84f88bae7d53ae0bb50d12d66ab16830">
+                      <fr:resource hash="34ac8827af93c388d8b8d56289fa87ce">
                         <fr:resource-content>
-                          <html:img src="/lectures/84f88bae7d53ae0bb50d12d66ab16830.svg" />
+                          <html:img src="/lectures/34ac8827af93c388d8b8d56289fa87ce.svg" />
                         </fr:resource-content>
                         <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -1296,7 +1296,7 @@ The nothing that we get from verum via its (nonexistent) elimination rule is ind
   ]]></fr:resource-source>
                         <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{\bot \vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  \bot  E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  \bot  E\quad }}
 \UnaryInfC{\ensuremath{\bot \vphantom{|}}}
 \DP]]></fr:resource-source>
                       </fr:resource>
@@ -1325,9 +1325,9 @@ The nothing that we get from verum via its (nonexistent) elimination rule is ind
 But if we start to consider other possible connectives, we can see the difference.</html:p>
                         <html:p>Imagine a nullary connective <fr:tex display="inline"><![CDATA[!]]></fr:tex>, for example, that has no introduction rules and the following elimination rule:</html:p>
                         <html:p>
-                          <fr:resource hash="7a2e1250065feb17e4662c40dc973820">
+                          <fr:resource hash="5ebdcc876731bf028c3d9a77198b53e7">
                             <fr:resource-content>
-                              <html:img src="/lectures/7a2e1250065feb17e4662c40dc973820.svg" />
+                              <html:img src="/lectures/5ebdcc876731bf028c3d9a77198b53e7.svg" />
                             </fr:resource-content>
                             <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -1335,7 +1335,7 @@ But if we start to consider other possible connectives, we can see the differenc
   ]]></fr:resource-source>
                             <fr:resource-source type="latex" part="body"><![CDATA[
 \AxiomC{\ensuremath{!\vphantom{|}}}
-\LeftLabel{\ensuremath{\scriptsize  !E:\quad }}
+\LeftLabel{\ensuremath{\scriptsize  !E\quad }}
 \UnaryInfC{\ensuremath{p\vphantom{|}}}
 \DP
 ]]></fr:resource-source>

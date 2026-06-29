@@ -24,9 +24,9 @@
         <html:strong>THIS IS NOT A PROOF:</html:strong>
       </html:p>
       <html:p>
-        <fr:resource hash="c85ecab3a3741dc1f0f3e8ff4b599108">
+        <fr:resource hash="26a0b67bedddaeb99d63f76db6588b53">
           <fr:resource-content>
-            <html:img src="/lectures/c85ecab3a3741dc1f0f3e8ff4b599108.svg" />
+            <html:img src="/lectures/26a0b67bedddaeb99d63f76db6588b53.svg" />
           </fr:resource-content>
           <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -35,21 +35,21 @@
           <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
                 \AxiomC{\ensuremath{q \land  p\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
                 \UnaryInfC{\ensuremath{[p]^1\vphantom{|}}}
                 \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
                 \AxiomC{\ensuremath{p\vphantom{|}}}
                 \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
                 \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
                 \BinaryInfC{\ensuremath{p\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
-        \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  E^1\quad }}
         \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
-        \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+        \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2\quad }}
         \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
         \DP
         ]]></fr:resource-source>
@@ -125,9 +125,9 @@
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:p>
-                  <fr:resource hash="8f738b694af34985853fa0fc106c522a">
+                  <fr:resource hash="3bfed3b80fc3cb250ccecf920a36cf23">
                     <fr:resource-content>
-                      <html:img src="/lectures/8f738b694af34985853fa0fc106c522a.svg" />
+                      <html:img src="/lectures/3bfed3b80fc3cb250ccecf920a36cf23.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -136,17 +136,17 @@
                     <fr:resource-source type="latex" part="body"><![CDATA[
                     \AxiomC{\ensuremath{[p \rightarrow  ((p \land  r) \rightarrow  q)]^1\vphantom{|}}}
                     \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}    
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}    
                 \BinaryInfC{\ensuremath{(p \land  r) \rightarrow  q\vphantom{|}}}
                     \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
                     \AxiomC{\ensuremath{r\vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
                 \BinaryInfC{\ensuremath{p \land  r\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
             \BinaryInfC{\ensuremath{q\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2\quad }}
             \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1\quad }}
             \UnaryInfC{\ensuremath{(p \rightarrow  ((p \land  r) \rightarrow  q) \rightarrow  (p \rightarrow  q))\vphantom{|}}}
             \DP
             ]]></fr:resource-source>
@@ -183,9 +183,9 @@
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:p>
-                  <fr:resource hash="f6b61dc28cd50c5f9f99d1fa067002ae">
+                  <fr:resource hash="d195b8b20353f10f95d7e0b0e3766a1c">
                     <fr:resource-content>
-                      <html:img src="/lectures/f6b61dc28cd50c5f9f99d1fa067002ae.svg" />
+                      <html:img src="/lectures/d195b8b20353f10f95d7e0b0e3766a1c.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -193,9 +193,9 @@
   ]]></fr:resource-source>
                     <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1\quad }}
             \UnaryInfC{\ensuremath{q \rightarrow  p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2\quad }}
             \UnaryInfC{\ensuremath{p \rightarrow  (q \rightarrow  p)\vphantom{|}}}
             \DP
             ]]></fr:resource-source>
@@ -216,9 +216,9 @@
 </html:p>
                 <html:p>        For contrast, consider the following proof:</html:p>
                 <html:p>
-                  <fr:resource hash="6b0dbf0750ec59076b5cefe784be000a">
+                  <fr:resource hash="0b8ce13db0668c06c97e86f5374cd6da">
                     <fr:resource-content>
-                      <html:img src="/lectures/6b0dbf0750ec59076b5cefe784be000a.svg" />
+                      <html:img src="/lectures/0b8ce13db0668c06c97e86f5374cd6da.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -226,9 +226,9 @@
   ]]></fr:resource-source>
                     <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1\quad }}
             \UnaryInfC{\ensuremath{q \rightarrow  p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2\quad }}
             \UnaryInfC{\ensuremath{p \rightarrow  (q \rightarrow  p)\vphantom{|}}}
             \DP
             ]]></fr:resource-source>
@@ -265,9 +265,9 @@
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:p>
-                  <fr:resource hash="efc2e3b2b0dcdd2bd41497e605319e9e">
+                  <fr:resource hash="52b651f59ef56e32492d97cc945a65e1">
                     <fr:resource-content>
-                      <html:img src="/lectures/efc2e3b2b0dcdd2bd41497e605319e9e.svg" />
+                      <html:img src="/lectures/52b651f59ef56e32492d97cc945a65e1.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -277,18 +277,18 @@
                 \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
                     \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
                     \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
                 \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
                     \AxiomC{\ensuremath{p\vphantom{|}}}
                     \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
                     \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
                     \BinaryInfC{\ensuremath{p\vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
                 \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1\quad }}
             \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2\quad }}
             \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
             \DP
   ]]></fr:resource-source>
@@ -300,9 +300,9 @@
         Consider the state of the proof when it reaches the step <fr:tex display="inline"><![CDATA[\lor  E]]></fr:tex><fr:tex display="inline"><![CDATA[^1]]></fr:tex>.
         Before we decide exactly how to discharge <fr:tex display="inline"><![CDATA[p]]></fr:tex> with this rule, we're looking at something like this:</html:p>
                 <html:p>
-                  <fr:resource hash="611d83ec591eb5892b15d332e4eae841">
+                  <fr:resource hash="0fe728551c3cc4d47e113a35b45afe95">
                     <fr:resource-content>
-                      <html:img src="/lectures/611d83ec591eb5892b15d332e4eae841.svg" />
+                      <html:img src="/lectures/0fe728551c3cc4d47e113a35b45afe95.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -312,16 +312,16 @@
             \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
                     \AxiomC{\ensuremath{p^\star \vphantom{|}}}
                     \AxiomC{\ensuremath{p^\dagger \vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
                 \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
                     \AxiomC{\ensuremath{p^\ddagger \vphantom{|}}}
                     \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
                     \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
                     \BinaryInfC{\ensuremath{p\vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
                 \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1\quad }}
             \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
             \DP
             ]]></fr:resource-source>
@@ -370,9 +370,9 @@
                     <html:strong>THIS IS NOT A PROOF:</html:strong>
                   </html:p>
                   <html:p>
-                    <fr:resource hash="29d50ca7732690a374db597ebca0e36b">
+                    <fr:resource hash="94e7e1146dbd7322cfdae1474458d5d0">
                       <fr:resource-content>
-                        <html:img src="/lectures/29d50ca7732690a374db597ebca0e36b.svg" />
+                        <html:img src="/lectures/94e7e1146dbd7322cfdae1474458d5d0.svg" />
                       </fr:resource-content>
                       <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -382,20 +382,20 @@
                 \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
                     \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
                     \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
                 \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
                     \AxiomC{\ensuremath{p\vphantom{|}}}
                     \AxiomC{\ensuremath{[q \rightarrow  p]\vphantom{|}}}
                     \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
                     \BinaryInfC{\ensuremath{p\vphantom{|}}}
-                    \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                    \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
                 \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \lor  E^1\quad }}
             \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1\quad }}
             \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I\quad }}
             \UnaryInfC{\ensuremath{(q \rightarrow  p) \rightarrow  (p \rightarrow  (p \land  p))\vphantom{|}}}
             \DP
             ]]></fr:resource-source>
@@ -440,9 +440,9 @@
                     <html:strong>THIS IS NOT A PROOF:</html:strong>
                   </html:p>
                   <html:p>
-                    <fr:resource hash="c85ecab3a3741dc1f0f3e8ff4b599108">
+                    <fr:resource hash="26a0b67bedddaeb99d63f76db6588b53">
                       <fr:resource-content>
-                        <html:img src="/lectures/c85ecab3a3741dc1f0f3e8ff4b599108.svg" />
+                        <html:img src="/lectures/26a0b67bedddaeb99d63f76db6588b53.svg" />
                       </fr:resource-content>
                       <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -451,21 +451,21 @@
                       <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
                 \AxiomC{\ensuremath{q \land  p\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \land  E_r:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \land  E_r\quad }}
                 \UnaryInfC{\ensuremath{[p]^1\vphantom{|}}}
                 \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
                 \AxiomC{\ensuremath{p\vphantom{|}}}
                 \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
                 \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
                 \BinaryInfC{\ensuremath{p\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
-        \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  E^1\quad }}
         \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
-        \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+        \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2\quad }}
         \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
         \DP
         ]]></fr:resource-source>
@@ -504,9 +504,9 @@
                     <html:strong>THIS IS NOT A PROOF:</html:strong>
                   </html:p>
                   <html:p>
-                    <fr:resource hash="141b08ecf47cb876f7b4887f19b57787">
+                    <fr:resource hash="c4e23b8de374e37f742f362d24197a54">
                       <fr:resource-content>
-                        <html:img src="/lectures/141b08ecf47cb876f7b4887f19b57787.svg" />
+                        <html:img src="/lectures/c4e23b8de374e37f742f362d24197a54.svg" />
                       </fr:resource-content>
                       <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -516,18 +516,18 @@
             \AxiomC{\ensuremath{p \lor  q\vphantom{|}}}
                 \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
                 \AxiomC{\ensuremath{[p]^2\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}    
                 \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
                 \AxiomC{\ensuremath{q \rightarrow  p\vphantom{|}}}
                 \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
                 \BinaryInfC{\ensuremath{p\vphantom{|}}}
-                \LeftLabel{\ensuremath{\scriptsize  \land  I:\quad }}
+                \LeftLabel{\ensuremath{\scriptsize  \land  I\quad }}
             \BinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
-        \LeftLabel{\ensuremath{\scriptsize  \lor  E^1:\quad }}
+        \LeftLabel{\ensuremath{\scriptsize  \lor  E^1\quad }}
         \TrinaryInfC{\ensuremath{p \land  p\vphantom{|}}}
-        \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2:\quad }}
+        \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^2\quad }}
         \UnaryInfC{\ensuremath{p \rightarrow  (p \land  p)\vphantom{|}}}
         \DP
         ]]></fr:resource-source>
@@ -544,9 +544,9 @@
                   <html:strong>THIS IS NOT A PROOF:</html:strong>
                 </html:p>
                 <html:p>
-                  <fr:resource hash="c6325a0ee5a595941b3a3b2f16c26bc6">
+                  <fr:resource hash="32f8383bcee84207135bd457ef86c4db">
                     <fr:resource-content>
-                      <html:img src="/lectures/c6325a0ee5a595941b3a3b2f16c26bc6.svg" />
+                      <html:img src="/lectures/32f8383bcee84207135bd457ef86c4db.svg" />
                     </fr:resource-content>
                     <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -554,10 +554,10 @@
   ]]></fr:resource-source>
                     <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{q\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1\quad }}
             \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
             \AxiomC{\ensuremath{[p]^1\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
             \BinaryInfC{\ensuremath{q\vphantom{|}}}
             \DP
             ]]></fr:resource-source>
@@ -595,9 +595,9 @@
                     <html:strong>THIS IS NOT A PROOF:</html:strong>
                   </html:p>
                   <html:p>
-                    <fr:resource hash="29c8e9d6a98f8b80034f3fae86dbce16">
+                    <fr:resource hash="bc52ebe2cca828d4a4755cc6d3570330">
                       <fr:resource-content>
-                        <html:img src="/lectures/29c8e9d6a98f8b80034f3fae86dbce16.svg" />
+                        <html:img src="/lectures/bc52ebe2cca828d4a4755cc6d3570330.svg" />
                       </fr:resource-content>
                       <fr:resource-source type="latex" part="preamble"><![CDATA[
   \usepackage {bussproofs}
@@ -605,10 +605,10 @@
   ]]></fr:resource-source>
                       <fr:resource-source type="latex" part="body"><![CDATA[
             \AxiomC{\ensuremath{[q]^1\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  I^1\quad }}
             \UnaryInfC{\ensuremath{p \rightarrow  q\vphantom{|}}}
             \AxiomC{\ensuremath{p\vphantom{|}}}
-            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E:\quad }}
+            \LeftLabel{\ensuremath{\scriptsize  \rightarrow  E\quad }}
             \BinaryInfC{\ensuremath{q\vphantom{|}}}
             \DP
             ]]></fr:resource-source>
