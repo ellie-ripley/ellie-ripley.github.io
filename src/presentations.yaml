@@ -1,4 +1,16 @@
 - presLocations:
+  - Directions in Relevant Logic 3, Bochum, July 2026
+  presTitle: "Restricted quantification in substructural arithmetic"
+  presAuthors:
+    Other:
+      - me
+      - zachWeber
+  presExtras:
+  - - Slides
+    - ./docs/rqsa-slides.pdf
+    - Slides
+  
+- presLocations:
   - Transgressing Boundaries, Louvain-la-Neuve, June 2026
   presTitle: "Genderqueer logic and mayonnaise"
   presAuthors:
@@ -19,6 +31,7 @@
     - Slides
 
 - presLocations:
+  - Bilateralism in Bochum, Bochum, July 2026
   - Polysemy, Ad Hoc Concepts, and Vagueness, Melbourne, April 2026
   - Workshop on Nonclassical Logics and Probability, Melbourne, August 2025
   presTitle: "Vagueness and probabilistic consequence"
