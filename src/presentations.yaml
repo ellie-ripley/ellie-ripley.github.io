@@ -41,8 +41,11 @@
       - me
   presExtras:
     - - Slides
+      - ./docs/vbpc-slides.pdf
+      - Slides (v2)
+    - - Slides
       - ./docs/vpc-slides.pdf
-      - Slides
+      - Slides (v1)
 
 - presLocations:
   - AAP 2025, University of Queensland, July 2025
