@@ -1,3 +1,16 @@
+
+- presLocations:
+  - Buenos Aires Logic Group, November 2026
+  presTitle: "Quantificational paradoxes and methodology"
+  presAuthors:
+    Other:
+      - me
+      - zachWeber
+  presExtras:
+  - - Slides
+    - ./docs/qpm-slides-ba.pdf
+    - Slides
+    
 - presLocations:
   - Directions in Relevant Logic 3, Bochum, July 2026
   presTitle: "Restricted quantification in substructural arithmetic"
