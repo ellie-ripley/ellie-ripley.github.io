@@ -1,3 +1,30 @@
+- presLocations:
+  - Transgressing Boundaries, Louvain-la-Neuve, June 2026
+  - Theorising Transphobia and Dehumanisation, Melbourne, November 2026
+  presTitle: "Genderqueer logic and mayonnaise"
+  presAuthors:
+    Solo: []
+  presExtras:
+  - - Slides
+    - ./docs/mayogender-slides.pdf
+    - Slides
+    
+- presLocations:
+  - Bilateralism in Bochum, Bochum, July 2026
+  - Polysemy, Ad Hoc Concepts, and Vagueness, Melbourne, April 2026
+  - Workshop on Nonclassical Logics and Probability, Melbourne, August 2025
+  presTitle: "Vagueness and probabilistic consequence"
+  presAuthors:
+    Other:
+      - paulEgre
+      - me
+  presExtras:
+    - - Slides
+      - ./docs/vbpc-slides.pdf
+      - Slides (v2)
+    - - Slides
+      - ./docs/vpc-slides.pdf
+      - Slides (v1)
 
 - presLocations:
   - Buenos Aires Logic Group, November 2026
@@ -24,17 +51,6 @@
     - Slides
   
 - presLocations:
-  - Transgressing Boundaries, Louvain-la-Neuve, June 2026
-  - Theorising Transphobia and Dehumanisation, Melbourne, November 2026
-  presTitle: "Genderqueer logic and mayonnaise"
-  presAuthors:
-    Solo: []
-  presExtras:
-  - - Slides
-    - ./docs/mayogender-slides.pdf
-    - Slides
-    
-- presLocations:
   - Reasoning in Language Models and in Logic, Melbourne, December 2025
   presTitle: "What does Frege's argument show (about cognition)?"
   presAuthors:
@@ -43,23 +59,6 @@
   - - Slides
     - ./docs/wfas-slides.html
     - Slides
-
-- presLocations:
-  - Bilateralism in Bochum, Bochum, July 2026
-  - Polysemy, Ad Hoc Concepts, and Vagueness, Melbourne, April 2026
-  - Workshop on Nonclassical Logics and Probability, Melbourne, August 2025
-  presTitle: "Vagueness and probabilistic consequence"
-  presAuthors:
-    Other:
-      - paulEgre
-      - me
-  presExtras:
-    - - Slides
-      - ./docs/vbpc-slides.pdf
-      - Slides (v2)
-    - - Slides
-      - ./docs/vpc-slides.pdf
-      - Slides (v1)
 
 - presLocations:
   - AAP 2025, University of Queensland, July 2025
